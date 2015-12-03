@@ -34,10 +34,6 @@ AC_CHECK_FUNCS([gettimeofday mkdir pow strchr strcspn strstr])
 
 AC_CONFIG_FILES([
 Makefile
-doc/Makefile
-
-katepart/Makefile
-	katepart/syntax/Makefile
 	
 math/Makefile
 	math/prover/Makefile
