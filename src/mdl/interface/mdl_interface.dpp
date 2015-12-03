@@ -1,0 +1,62 @@
+/*****************************************************************************/
+/* Project name:    mdl - mathematics development language                   */
+/* File Name:       mdl_interface.dpp                                        */
+/* Description:     declaration interfaces for mdl abstract interfaces       */
+/* Copyright:       (c) 2006-2009 Dmitri Vlasov                              */
+/* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
+/* Email:           vlasov at academ.org                                     */
+/* URL:             http://mathdevlanguage.sourceforge.net                   */
+/* Modified by:                                                              */
+/* License:         GNU General Public License Version 3                     */
+/*****************************************************************************/
+
+#ifndef MDL_INTERFACE_DPP_
+#define MDL_INTERFACE_DPP_
+
+#include "mdl/types/mdl_types.hpp"
+
+#include "mdl/interface/block/mdl_interface_block.dpp"
+#include "mdl/interface/evaluation/mdl_interface_evaluation.dpp"
+#include "mdl/interface/header/mdl_interface_header.dpp"
+#include "mdl/interface/object/mdl_interface_object.dpp"
+#include "mdl/interface/proof/mdl_interface_proof.dpp"
+#include "mdl/prover/interface/mdl_prover_interface.dpp"
+
+namespace mdl {
+namespace interface {
+
+	class Comments;
+	class Components;
+	class Contents;
+	class Identificator;
+	class Import;
+	class Source;
+	class Theory;
+}
+
+	using interface :: Comments;
+	using interface :: Components;
+	using interface :: Contents;
+	using interface :: Identificator;
+	using interface :: Import;
+	using interface :: Theory;
+
+namespace vector {
+
+	typedef
+		Vector<mdl :: Identificator, storage :: ByPointer, allocator :: Heap>
+		Identificator;
+	typedef
+		Vector<mdl :: Theory*, storage :: ByValue, allocator :: Heap>
+		Theory;
+
+namespace parser {
+
+	typedef
+		Vector<mdl :: Identificator*, storage :: ByValue, allocator :: Heap>
+		Identificator;
+}
+}
+}
+
+#endif /*MDL_INTERFACE_DPP_*/

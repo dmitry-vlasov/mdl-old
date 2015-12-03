@@ -1,0 +1,72 @@
+/*****************************************************************************/
+/* Project name:    del - mathematics development language                   */
+/* File Name:       del_interface_model_queue.dpp                            */
+/* Description:     declaration interfaces for model abstract interfaces     */
+/* Copyright:       (c) 2006-2009 Dmitri Vlasov                              */
+/* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
+/* Email:           vlasov at academ.org                                     */
+/* URL:             http://mathdevlanguage.sourceforge.net                   */
+/* Modified by:                                                              */
+/* License:         GNU General Public License Version 3                     */
+/*****************************************************************************/
+
+#ifndef DEL_INTERFACE_MODEL_QUEUE_DPP_
+#define DEL_INTERFACE_MODEL_QUEUE_DPP_
+
+#include "del/types/del_types.hpp"
+
+namespace del {
+namespace interface {
+namespace model {
+namespace queue {
+
+	class Domain;
+	class Element;
+	class Map;
+	class Model;
+	class Predicate;
+	class PredicateMap;
+	class Range;
+	class Relation;
+	class RelationMap;
+}
+}
+}
+
+namespace model {
+namespace queue {
+
+	using interface :: model :: queue :: Domain;
+	using interface :: model :: queue :: Element;
+	using interface :: model :: queue :: Map;
+	using interface :: model :: queue :: Model;
+	using interface :: model :: queue :: Predicate;
+	using interface :: model :: queue :: PredicateMap;
+	using interface :: model :: queue :: Range;
+	using interface :: model :: queue :: Relation;
+	using interface :: model :: queue :: RelationMap;
+
+namespace vector {
+
+	typedef
+		del :: vector :: Vector<const queue :: Domain*, storage :: ByValue, allocator :: Heap>
+		Domain;
+	typedef
+		del :: vector :: Vector<const queue :: Range*, storage :: ByValue, allocator :: Heap>
+		Range;
+}
+namespace set {
+
+	typedef
+		del :: set :: Set<queue :: Domain*, storage :: ByValue, allocator :: Heap>
+		Domain;
+	typedef
+		del :: set :: Set<queue :: Range*, storage :: ByValue, allocator :: Heap>
+		Range;
+}
+}
+}
+
+}
+
+#endif /*DEL_INTERFACE_MODEL_QUEUE_DPP_*/

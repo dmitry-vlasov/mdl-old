@@ -1,0 +1,38 @@
+/*****************************************************************************/
+/* Project name:    mdl - mathematics development language                   */
+/* File Name:       mdl_form_header_term.dpp                                 */
+/* Description:     interface declarations for terms module                  */
+/* Copyright:       (c) 2006-2009 Dmitri Vlasov                              */
+/* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
+/* Email:           vlasov at academ.org                                     */
+/* URL:             http://mathdevlanguage.sourceforge.net                   */
+/* Modified by:                                                              */
+/* License:         GNU General Public License Version 3                     */
+/*****************************************************************************/
+
+#ifndef MDL_FORM_HEADER_TERM_DPP_
+#define MDL_FORM_HEADER_TERM_DPP_
+
+namespace mdl {
+namespace form {
+namespace header {
+namespace term {
+
+	class Defiendum;
+	class Definiens;
+	class Definition;
+	class Rule;
+}
+}
+
+namespace term {
+
+	using header :: term :: Defiendum;
+	using header :: term :: Definiens;
+	using header :: term :: Rule;
+}
+
+}
+}
+
+#endif /*MDL_FORM_HEADER_TERM_DPP_*/

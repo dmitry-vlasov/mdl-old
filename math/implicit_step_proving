@@ -1,0 +1,109 @@
+#!/bin/sh
+
+# mm/mdl test for proving the implicit steps
+# 1) first argument - the name of the source file to be 
+#    translated
+# 2) second argument - the build directory from the top of
+#    the project. By default, it's empty.
+
+if [ -z $1 ] 
+then echo "NO INPUT FILE."; exit
+fi;
+
+file=$1
+
+if [ -z $2 ] 
+then dir='';
+else dir=$2'/';
+fi;
+
+echo "================================================";
+echo "translation: ${file}.mm --> ${file}_implicit.rus";
+echo "================================================";
+echo;
+../${dir}src/mm/mm \
+	-v -w -t \
+	--explicit-disjointed \
+	--implicit-steps \
+	--mem-all --info-all \
+	--correct-grammar grammar.corr \
+	--correct-symbol symbol.corr \
+	-o ${file}_implicit.rus \
+	\
+	${file}.mm;
+
+if [ $? != 0 ] 
+then echo "TEST FAILED."; exit
+fi;
+
+# prover parameters
+
+prover_volume=256   # megabyte
+min_prove_time=5000 # milliseconds, equal to 5 sec.
+
+echo "======================================================";
+echo "proving: ${file}_implicit.mdl --> ${file}_explicit.rus";
+echo "======================================================";
+echo;
+
+../${dir}src/mdl/mdl \
+	-v -w \
+	--prove \
+	--prover-volume $prover_volume \
+	--min-prove-time $min_prove_time \
+	--optimal-search \
+	--mem-all --info-all \
+	-o ${file}_explicit.rus \
+	\
+	${file}_implicit.rus;
+
+if [ $? != 0 ] 
+then echo "TEST FAILED."; exit
+fi;
+
+echo "==========================================================";
+echo "translation: ${file}_explicit.rus --> ${file}_explicit.smm";
+echo "==========================================================";
+echo;
+
+../${dir}src/mdl/mdl \
+	-v -t -w \
+	--mem-all --info-all \
+	-o ${file}_explicit.smm \
+	\
+	${file}_explicit.rus;
+
+if [ $? != 0 ] 
+then echo "TEST FAILED."; exit
+fi;
+
+echo "=============================================";
+echo "verifying: ${file}_explicit.smm with metamath";
+echo "=============================================";
+echo;
+
+../${dir}metamath/metamath \
+	"read ${file}_explicit.smm" \
+	'verify proof *' \
+	exit 
+
+if [ $? != 0 ] 
+then echo "TEST FAILED."; exit
+fi;
+
+echo "========================================";
+echo "verifying: ${file}_explicit.smm with smm" ;
+echo "========================================";
+echo;
+
+../${dir}src/smm/smm \
+	-v --show-stack \
+	--mem-all --info-all \
+	\
+	${file}_explicit.smm;
+
+if [ $? != 0 ] 
+then echo "TEST FAILED."; exit
+else echo "\n\nTests successfully passed :)"; 
+fi;
+

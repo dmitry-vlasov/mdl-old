@@ -1,0 +1,56 @@
+/*****************************************************************************/
+/* Project name:    nstd - non-standard library                              */
+/* File name:       nstd_type_list.dpp                                       */
+/* Description:     declarations for type list module                        */
+/* Copyright:       (c) 2006-2009 Dmitri Vlasov                              */
+/* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
+/* Email:           vlasov at academ.org                                     */
+/* URL:             http://mathdevlanguage.sourceforge.net                   */
+/* Modified by:                                                              */
+/* License:         GNU General Public License Version 3                     */
+/*****************************************************************************/
+
+#ifndef NSTD_TYPE_LIST_DPP_
+#define NSTD_TYPE_LIST_DPP_
+
+namespace nstd {
+namespace type {
+namespace list {
+
+	template<class, int>
+	struct Access;
+	template<class, class>
+	struct Append;
+	template<class, class>
+	struct Erase;
+	template<class, class>
+	struct EraseAll;
+	template<class>
+	struct EraseDublicates;
+	template<class>
+	struct Generator_1;
+	template<class, class>
+	struct Generator_2;
+	template<class, class, class>
+	struct Generator_3;
+	template<class,class, class, class>
+	struct Generator_4;
+	template<class, class, class, class, class>
+	struct Generator_5;
+	template<class, class>
+	struct IndexOf;
+	template<class>
+	struct Length;
+	template<class, class>
+	struct List;
+	template<class, class, class>
+	struct Replace;
+	template<class, class, class>
+	struct ReplaceAll;
+}
+	using list :: List;
+}
+}
+
+
+#endif /*NSTD_TYPE_LIST_DPP_*/

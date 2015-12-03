@@ -1,0 +1,34 @@
+/*****************************************************************************/
+/* Project name:    nstd - non-standard library                              */
+/* File name:       nstd_memory.dpp                                          */
+/* Description:     declarations for memory managers module                  */
+/* Copyright:       (c) 2006-2009 Dmitri Vlasov                              */
+/* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
+/* Email:           vlasov at academ.org                                     */
+/* URL:             http://mathdevlanguage.sourceforge.net                   */
+/* Modified by:                                                              */
+/* License:         GNU General Public License Version 3                     */
+/*****************************************************************************/
+
+#ifndef NSTD_MEMORY_DPP_
+#define NSTD_MEMORY_DPP_
+
+#include "memory/allocator/nstd_memory_allocator.dpp"
+#include "memory/exception/nstd_memory_exception.dpp"
+#include "memory/storage/nstd_memory_storage.dpp"
+#include "memory/unit/nstd_memory_unit.dpp"
+
+namespace nstd {
+namespace memory {
+
+	template<class, class>
+	class Factory;
+	template<class>
+	class Interval;
+	class Space;
+	class Unit;
+	class UsageMessage;
+}
+}
+
+#endif /*NSTD_MEMORY_DPP_*/

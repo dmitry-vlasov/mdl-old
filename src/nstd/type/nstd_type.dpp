@@ -1,0 +1,41 @@
+/*****************************************************************************/
+/* Project name:    nstd - non-standard library                              */
+/* File name:       nstd_type.dpp                                            */
+/* Description:     declarations for type metafunctions module               */
+/* Copyright:       (c) 2006-2009 Dmitri Vlasov                              */
+/* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
+/* Email:           vlasov at academ.org                                     */
+/* URL:             http://mathdevlanguage.sourceforge.net                   */
+/* Modified by:                                                              */
+/* License:         GNU General Public License Version 3                     */
+/*****************************************************************************/
+
+#ifndef NSTD_TYPE_DPP_
+#define NSTD_TYPE_DPP_
+
+#include "type/constant/nstd_type_constant.dpp"
+#include "type/list/nstd_type_list.dpp"
+#include "type/traits/nstd_type_traits.dpp"
+#include "type/undefined/nstd_type_undefined.dpp"
+
+namespace nstd {
+namespace type {
+
+	template<class, class>
+	class Alternator;
+	template<bool>
+	class Assert;
+	template<class, class>
+	class Equality;
+	template<bool, class, class>
+	class Selector;
+	template<bool, int, int>
+	class Switch;
+	template<class>
+	struct Unconst;
+	template<class>
+	struct Unpointer;
+}
+}
+
+#endif /*NSTD_TYPE_DPP_*/

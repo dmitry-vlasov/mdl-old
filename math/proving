@@ -1,0 +1,115 @@
+#!/bin/sh
+
+# mm/mdl prover test for the small part of propositional calculus.
+# To run this test type $: ./proving prop_small
+#
+# 1) first argument - the name of the source file to be 
+#    compressed
+# 2) second argument - the build directory from the top of
+#    the project. By default, it's empty.
+
+if [ -z $1 ] 
+then echo "NO INPUT FILE."; exit
+fi;
+
+file=$1
+
+if [ -z $2 ] 
+then dir='';
+else dir=$2'/';
+fi;
+
+echo "=========================================================";
+echo "translation: ${file}.mm --> ${file}_proofless.rus";
+echo "=========================================================";
+echo;
+../${dir}src/mm/mm \
+	-v -w -t --remove-proofs \
+	--mem-all --info-all \
+	--correct-grammar grammar.corr \
+	--correct-symbol symbol.corr \
+	-o ${file}_proofless.rus \
+	\
+	${file}.mm;
+
+if [ $? != 0 ] 
+then echo "TEST FAILED."; exit
+fi;
+
+# prover parameters
+
+prover_volume=64     # megabytes
+stack_volume=4       # megabytes
+max_prove_time=10    # minutes
+max_s_complexity=12  # symbols
+max_e_complexity=128 # symbols
+
+echo "============================================================";
+echo "proving: ${file}_proofless.rus --> ${file}_proved.rus";
+echo "============================================================";
+echo;
+
+#	--max-s-complexity $max_s_complexity \
+#	--max-e-complexity $max_e_complexity \
+
+../${dir}src/mdl/mdl \
+	-v -p -w \
+	--prover-volume $prover_volume \
+	--stack-volume $stack_volume \
+	--max-prove-time $max_prove_time \
+	--optimal-search \
+	--mem-all --info-all \
+	-o ${file}_proved.rus \
+	\
+	${file}_proofless.rus;
+
+if [ $? != 0 ] 
+then echo "TEST FAILED."; exit
+fi;
+
+echo "==============================================================";
+echo "translation: ${file}_proved.rus --> ${file}_proved.smm";
+echo "==============================================================";
+echo;
+
+../${dir}src/mdl/mdl \
+	-v -t -w \
+	--mem-all --info-all \
+	-o ${file}_proved.smm \
+	\
+	${file}_proved.rus;
+
+if [ $? != 0 ] 
+then echo "TEST FAILED."; exit
+fi;
+
+echo "================================================";
+echo "verifying: ${file}_proved.smm with metamath";
+echo "================================================";
+echo;
+
+../${dir}metamath/metamath \
+	"read ${file}_proved.smm" \
+	'verify proof *' \
+	exit 
+
+if [ $? != 0 ] 
+then echo "TEST FAILED."; exit
+fi;
+
+echo "===========================================";
+echo "verifying: ${file}_proved.smm with smm" ;
+echo "===========================================";
+echo;
+
+../${dir}src/smm/smm \
+	-v --show-stack \
+	--mem-all --info-all \
+	\
+	${file}_proved.smm;
+
+if [ $? != 0 ] 
+then echo "TEST FAILED."; exit
+else echo "\n\nTTests successfully passed :)"; 
+fi;
+

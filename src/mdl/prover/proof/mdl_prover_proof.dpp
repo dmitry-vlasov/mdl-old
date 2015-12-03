@@ -1,0 +1,32 @@
+/*****************************************************************************/
+/* Project name:    mdl - mathematics development language                   */
+/* File Name:       mdl_prover_proof.dpp                                     */
+/* Description:     declarations for module for proofs in variant tree       */
+/* Copyright:       (c) 2006-2009 Dmitri Vlasov                              */
+/* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
+/* Email:           vlasov at academ.org                                     */
+/* URL:             http://mathdevlanguage.sourceforge.net                   */
+/* Modified by:                                                              */
+/* License:         GNU General Public License Version 3                     */
+/*****************************************************************************/
+
+#ifndef MDL_PROVER_PROOF_DPP_
+#define MDL_PROVER_PROOF_DPP_
+
+namespace mdl {
+namespace prover {
+namespace proof {
+
+	template<class>
+	class Hyp;
+	template<class>
+	class Prop;
+	template<class>
+	class Ref;
+	template<class>
+	class Top;
+}
+}
+}
+
+#endif /*MDL_PROVER_PROOF_DPP_*/

@@ -1,0 +1,34 @@
+/*****************************************************************************/
+/* Project name:    nstd - non-standard library                              */
+/* File name:       nstd_equation.dpp                                        */
+/* Description:     equation solving module                                  */
+/* Copyright:       (c) 2006-2009 Dmitri Vlasov                              */
+/* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
+/* Email:           vlasov at academ.org                                     */
+/* URL:             http://mathdevlanguage.sourceforge.net                   */
+/* Modified by:                                                              */
+/* License:         GNU General Public License Version 3                     */
+/*****************************************************************************/
+
+#ifndef NSTD_EQUATION_DPP_
+#define NSTD_EQUATION_DPP_
+
+//#define DEBUG_EQUATION_MONOTONIC
+//#define DEBUG_EQUATION_LINEAR
+
+namespace nstd {
+namespace equation {
+
+	typedef int Integer;
+	typedef double Real;
+
+	class Boundaries;
+	class Interval;
+	template<class A>
+	class Linear;
+	class Monotonic;
+	class ValueInf;
+}
+}
+
+#endif /*NSTD_EQUATION_DPP_*/

@@ -1,0 +1,1674 @@
+del_main.o: del_main.cpp ../../src/del/del.dpp \
+ ../../src/del/auxiliary/del_auxiliary.dpp \
+ ../../src/del/interface/del_interface.dpp \
+ ../../src/del/types/del_types.hpp ../../src/nsgl/nsgl \
+ ../../src/nsgl/nsgl.dpp ../../src/nsgl/config/nsgl_config.dpp \
+ ../../src/nsgl/lexer/nsgl_lexer.dpp \
+ ../../src/nsgl/number/nsgl_number.dpp \
+ ../../src/nsgl/system/nsgl_system.dpp ../../src/nsgl/nsgl.hpp \
+ ../../src/nsgl/config/nsgl_config.hpp \
+ ../../src/nsgl/config/nsgl_config_Base.hpp ../../src/nstl/nstl.hpp \
+ ../../src/nstl/nstl_chars.hpp \
+ ../../src/nstl/container/nstl_container.hpp \
+ ../../src/nstl/container/continual/nstl_container_continual.hpp \
+ ../../src/nstl/container/continual/nstl_container_continual_Block.hpp \
+ /usr/include/c++/4.4/exception \
+ /usr/include/c++/4.4/i686-linux-gnu/bits/c++config.h \
+ /usr/include/c++/4.4/i686-linux-gnu/bits/os_defines.h \
+ /usr/include/features.h /usr/include/bits/predefs.h \
+ /usr/include/sys/cdefs.h /usr/include/bits/wordsize.h \
+ /usr/include/gnu/stubs.h /usr/include/gnu/stubs-32.h \
+ /usr/include/c++/4.4/i686-linux-gnu/bits/cpu_defines.h \
+ /usr/include/c++/4.4/iostream /usr/include/c++/4.4/ostream \
+ /usr/include/c++/4.4/ios /usr/include/c++/4.4/iosfwd \
+ /usr/include/c++/4.4/bits/stringfwd.h \
+ /usr/include/c++/4.4/bits/postypes.h /usr/include/c++/4.4/cwchar \
+ /usr/include/c++/4.4/cstddef \
+ /usr/lib/gcc/i686-linux-gnu/4.4.5/include/stddef.h /usr/include/wchar.h \
+ /usr/include/stdio.h /usr/lib/gcc/i686-linux-gnu/4.4.5/include/stdarg.h \
+ /usr/include/bits/wchar.h /usr/include/xlocale.h \
+ /usr/include/c++/4.4/bits/char_traits.h \
+ /usr/include/c++/4.4/bits/stl_algobase.h \
+ /usr/include/c++/4.4/bits/functexcept.h \
+ /usr/include/c++/4.4/exception_defines.h \
+ /usr/include/c++/4.4/bits/cpp_type_traits.h \
+ /usr/include/c++/4.4/ext/type_traits.h \
+ /usr/include/c++/4.4/ext/numeric_traits.h \
+ /usr/include/c++/4.4/bits/stl_pair.h /usr/include/c++/4.4/bits/move.h \
+ /usr/include/c++/4.4/bits/concept_check.h \
+ /usr/include/c++/4.4/bits/stl_iterator_base_types.h \
+ /usr/include/c++/4.4/bits/stl_iterator_base_funcs.h \
+ /usr/include/c++/4.4/bits/stl_iterator.h \
+ /usr/include/c++/4.4/debug/debug.h /usr/include/c++/4.4/bits/localefwd.h \
+ /usr/include/c++/4.4/i686-linux-gnu/bits/c++locale.h \
+ /usr/include/c++/4.4/clocale /usr/include/locale.h \
+ /usr/include/bits/locale.h /usr/include/c++/4.4/cctype \
+ /usr/include/ctype.h /usr/include/bits/types.h \
+ /usr/include/bits/typesizes.h /usr/include/endian.h \
+ /usr/include/bits/endian.h /usr/include/bits/byteswap.h \
+ /usr/include/c++/4.4/bits/ios_base.h \
+ /usr/include/c++/4.4/ext/atomicity.h \
+ /usr/include/c++/4.4/i686-linux-gnu/bits/gthr.h \
+ /usr/include/c++/4.4/i686-linux-gnu/bits/gthr-default.h \
+ /usr/include/pthread.h /usr/include/sched.h /usr/include/time.h \
+ /usr/include/bits/sched.h /usr/include/bits/time.h \
+ /usr/include/bits/pthreadtypes.h /usr/include/bits/setjmp.h \
+ /usr/include/unistd.h /usr/include/bits/posix_opt.h \
+ /usr/include/bits/environments.h /usr/include/bits/confname.h \
+ /usr/include/getopt.h \
+ /usr/include/c++/4.4/i686-linux-gnu/bits/atomic_word.h \
+ /usr/include/c++/4.4/bits/locale_classes.h /usr/include/c++/4.4/string \
+ /usr/include/c++/4.4/bits/allocator.h \
+ /usr/include/c++/4.4/i686-linux-gnu/bits/c++allocator.h \
+ /usr/include/c++/4.4/ext/new_allocator.h /usr/include/c++/4.4/new \
+ /usr/include/c++/4.4/bits/ostream_insert.h \
+ /usr/include/c++/4.4/cxxabi-forced.h \
+ /usr/include/c++/4.4/bits/stl_function.h \
+ /usr/include/c++/4.4/backward/binders.h \
+ /usr/include/c++/4.4/bits/basic_string.h \
+ /usr/include/c++/4.4/initializer_list \
+ /usr/include/c++/4.4/bits/basic_string.tcc \
+ /usr/include/c++/4.4/bits/locale_classes.tcc \
+ /usr/include/c++/4.4/streambuf /usr/include/c++/4.4/bits/streambuf.tcc \
+ /usr/include/c++/4.4/bits/basic_ios.h \
+ /usr/include/c++/4.4/bits/locale_facets.h /usr/include/c++/4.4/cwctype \
+ /usr/include/wctype.h \
+ /usr/include/c++/4.4/i686-linux-gnu/bits/ctype_base.h \
+ /usr/include/c++/4.4/bits/streambuf_iterator.h \
+ /usr/include/c++/4.4/i686-linux-gnu/bits/ctype_inline.h \
+ /usr/include/c++/4.4/bits/locale_facets.tcc \
+ /usr/include/c++/4.4/bits/basic_ios.tcc \
+ /usr/include/c++/4.4/bits/ostream.tcc /usr/include/c++/4.4/istream \
+ /usr/include/c++/4.4/bits/istream.tcc \
+ ../../src/nstl/memory/nstl_memory.hpp \
+ ../../src/nstl/memory/allocator/nstl_memory_allocator.hpp \
+ ../../src/nstl/memory/allocator/nstl_memory_allocator_Boxed.hpp \
+ ../../src/nstl/memory/nstl_memory_Interval.hpp \
+ ../../src/nstl/memory/nstl_memory.dpp \
+ ../../src/nstl/memory/allocator/nstl_memory_allocator.dpp \
+ ../../src/nstl/memory/exception/nstl_memory_exception.dpp \
+ ../../src/nstl/memory/storage/nstl_memory_storage.dpp \
+ ../../src/nstl/memory/unit/nstl_memory_unit.dpp ../../src/nstl/nstl.tpp \
+ /usr/include/stdint.h /usr/include/c++/4.4/fstream \
+ /usr/include/c++/4.4/bits/codecvt.h /usr/include/c++/4.4/cstdio \
+ /usr/include/libio.h /usr/include/_G_config.h \
+ /usr/include/bits/stdio_lim.h /usr/include/bits/sys_errlist.h \
+ /usr/include/c++/4.4/i686-linux-gnu/bits/basic_file.h \
+ /usr/include/c++/4.4/i686-linux-gnu/bits/c++io.h \
+ /usr/include/c++/4.4/bits/fstream.tcc \
+ ../../src/nstl/memory/exception/nstl_memory_exception.hpp \
+ ../../src/nstl/memory/exception/nstl_memory_exception_EmptyStackPop.hpp \
+ ../../src/nstl/memory/exception/nstl_memory_exception_Exception.hpp \
+ ../../src/nstl/memory/exception/nstl_memory_exception_LimitReached.hpp \
+ ../../src/nstl/memory/exception/nstl_memory_exception_MemoryInitFailure.hpp \
+ ../../src/nstl/memory/exception/nstl_memory_exception_MemoryLeaks.hpp \
+ ../../src/nstl/memory/exception/nstl_memory_exception_OutOfMemory.hpp \
+ ../../src/nstl/memory/exception/nstl_memory_exception_StackOverflow.hpp \
+ ../../src/nstl/memory/nstl_memory_Interval.ipp \
+ ../../src/nstl/memory/allocator/nstl_memory_allocator_Method.hpp \
+ ../../src/nstl/memory/allocator/nstl_memory_allocator_Heap.hpp \
+ ../../src/nstl/memory/allocator/nstl_memory_allocator_Stack.hpp \
+ ../../src/nstl/memory/allocator/nstl_memory_allocator_Standard.hpp \
+ ../../src/nstl/memory/storage/nstl_memory_storage.hpp \
+ ../../src/nstl/memory/storage/nstl_memory_storage_Array.hpp \
+ ../../src/nstl/memory/storage/nstl_memory_storage_Scalar.hpp \
+ ../../src/nstl/memory/storage/nstl_memory_storage_Vector.hpp \
+ ../../src/nstl/memory/unit/nstl_memory_unit.hpp \
+ ../../src/nstl/memory/unit/nstl_memory_unit_Block.hpp \
+ ../../src/nstl/memory/unit/nstl_memory_unit_Boxed.hpp \
+ ../../src/nstl/memory/unit/nstl_memory_unit_Disposed.hpp \
+ ../../src/nstl/map/nstl_map.dpp \
+ ../../src/nstl/container/nstl_container.dpp \
+ ../../src/nstl/container/continual/nstl_container_continual.dpp \
+ ../../src/nstl/container/discrete/nstl_container_discrete.dpp \
+ ../../src/nstl/container/storage/nstl_container_storage.dpp \
+ ../../src/nstl/memory/unit/nstl_memory_unit_Tank.hpp \
+ ../../src/nstl/memory/unit/nstl_memory_unit_Heap.hpp \
+ ../../src/nstl/memory/unit/nstl_memory_unit_PointerStack.hpp \
+ ../../src/nstl/memory/unit/nstl_memory_unit_Stack.hpp \
+ ../../src/nstl/memory/unit/nstl_memory_unit_Standard.hpp \
+ ../../src/nstl/memory/nstl_memory_Factory.hpp \
+ ../../src/nstl/memory/nstl_memory_ignorableDifference.hpp \
+ ../../src/nstl/memory/nstl_memory_Space.hpp \
+ ../../src/nstl/memory/nstl_memory_UsageMessage.hpp \
+ ../../src/nstl/container/continual/nstl_container_continual_Collection.hpp \
+ ../../src/nstl/nstl.dpp ../../src/nstl/container/nstl_container.dpp \
+ ../../src/nstl/map/nstl_map.dpp ../../src/nstl/memory/nstl_memory.dpp \
+ ../../src/nstl/type/nstl_type.dpp \
+ ../../src/nstl/type/constant/nstl_type_constant.dpp \
+ ../../src/nstl/type/list/nstl_type_list.dpp \
+ ../../src/nstl/type/traits/nstl_type_traits.dpp \
+ ../../src/nstl/type/traits/indicator/nstl_type_traits_indicator.dpp \
+ ../../src/nstl/type/undefined/nstl_type_undefined.dpp \
+ ../../src/nstl/container/continual/nstl_container_continual_Collection.ipp \
+ ../../src/nstl/nstl_Undefined.hpp \
+ ../../src/nstl/type/undefined/nstl_type_undefined_Type.hpp \
+ ../../src/nstl/type/undefined/nstl_type_undefined_Bool.hpp \
+ ../../src/nstl/type/traits/nstl_type_traits_Type.hpp \
+ ../../src/nstl/type/traits/nstl_type_traits_Bool.hpp \
+ ../../src/nstl/type/traits/indicator/nstl_type_traits_indicator_bool.hpp \
+ ../../src/nstl/type/traits/nstl_type_traits_Empty.hpp \
+ ../../src/nstl/type/traits/indicator/nstl_type_traits_indicator_Empty.hpp \
+ ../../src/nstl/type/constant/nstl_type_constant.hpp \
+ ../../src/nstl/type/constant/nstl_type_constant_Null.hpp \
+ ../../src/nstl/type/constant/nstl_type_constant_Empty.hpp \
+ ../../src/nstl/type/traits/nstl_type_traits_Floating.hpp \
+ ../../src/nstl/type/traits/indicator/nstl_type_traits_indicator_floatings.hpp \
+ ../../src/nstl/type/traits/indicator/nstl_type_traits_indicator_double.hpp \
+ ../../src/nstl/type/traits/indicator/nstl_type_traits_indicator_float.hpp \
+ ../../src/nstl/type/traits/nstl_type_traits_Integer.hpp \
+ ../../src/nstl/type/traits/indicator/nstl_type_traits_indicator_integers.hpp \
+ ../../src/nstl/type/traits/indicator/nstl_type_traits_indicator_char.hpp \
+ ../../src/nstl/type/traits/indicator/nstl_type_traits_indicator_int.hpp \
+ ../../src/nstl/type/traits/indicator/nstl_type_traits_indicator_long_long.hpp \
+ ../../src/nstl/type/traits/indicator/nstl_type_traits_indicator_long.hpp \
+ ../../src/nstl/type/traits/indicator/nstl_type_traits_indicator_short.hpp \
+ ../../src/nstl/type/traits/indicator/nstl_type_traits_indicator_signed.hpp \
+ ../../src/nstl/type/traits/indicator/nstl_type_traits_indicator_digits.hpp \
+ ../../src/nstl/type/traits/nstl_type_traits_Null.hpp \
+ ../../src/nstl/type/traits/indicator/nstl_type_traits_indicator_Null.hpp \
+ ../../src/nstl/type/traits/nstl_type_traits_Pointer.hpp \
+ ../../src/nstl/type/traits/indicator/nstl_type_traits_indicator_Pointer.hpp \
+ ../../src/nstl/type/traits/nstl_type_traits_Void.hpp \
+ ../../src/nstl/type/traits/indicator/nstl_type_traits_indicator_void.hpp \
+ ../../src/nstl/type/undefined/nstl_type_undefined_Char.hpp \
+ ../../src/nstl/type/undefined/nstl_type_undefined_Empty.hpp \
+ ../../src/nstl/type/undefined/nstl_type_undefined_Floating.hpp \
+ ../../src/nstl/type/undefined/nstl_type_undefined_Integer.hpp \
+ ../../src/nstl/type/undefined/nstl_type_undefined_Object.hpp \
+ ../../src/nstl/type/undefined/nstl_type_undefined_Pointer.hpp \
+ ../../src/nstl/type/undefined/nstl_type_undefined_Void.hpp \
+ /usr/include/c++/4.4/typeinfo \
+ ../../src/nstl/container/continual/nstl_container_continual_Block.ipp \
+ ../../src/nstl/container/continual/nstl_container_continual_Resizable.hpp \
+ ../../src/nstl/container/continual/nstl_container_continual_Resizable.ipp \
+ ../../src/nstl/container/discrete/nstl_container_discrete.hpp \
+ ../../src/nstl/container/discrete/nstl_container_discrete_Direction.hpp \
+ ../../src/nstl/container/discrete/nstl_container_discrete_Bidirectional.hpp \
+ ../../src/nstl/container/discrete/nstl_container_discrete_Unidirectional.hpp \
+ ../../src/nstl/container/discrete/nstl_container_discrete_Unidirectional.ipp \
+ ../../src/nstl/container/discrete/nstl_container_discrete_Bidirectional.ipp \
+ ../../src/nstl/container/storage/nstl_container_storage.hpp \
+ ../../src/nstl/container/storage/nstl_container_storage_ByAggregation.hpp \
+ ../../src/nstl/container/storage/nstl_container_storage_ByAggregation.ipp \
+ ../../src/nstl/container/storage/nstl_container_storage_ByInheritance.hpp \
+ ../../src/nstl/container/storage/nstl_container_storage_ByInheritance.ipp \
+ ../../src/nstl/container/storage/nstl_container_storage_ByPointer.hpp \
+ ../../src/nstl/container/storage/nstl_container_storage_ByPointer.ipp \
+ ../../src/nstl/container/storage/nstl_container_storage_ByValue.hpp \
+ ../../src/nstl/container/storage/nstl_container_storage_ByValue.ipp \
+ ../../src/nstl/container/storage/nstl_container_storage_None.hpp \
+ ../../src/nstl/container/storage/nstl_container_storage_None.ipp \
+ ../../src/nstl/container/nstl_container_Array.hpp \
+ ../../src/nstl/container/nstl_container_Array.ipp \
+ ../../src/nstl/container/nstl_container_Bit.hpp \
+ ../../src/nstl/container/nstl_container_List.hpp \
+ ../../src/nstl/container/nstl_container_List.ipp \
+ ../../src/nstl/container/nstl_container_LongVector.hpp \
+ ../../src/nstl/container/nstl_container_Vector.hpp \
+ ../../src/nstl/container/nstl_container_Vector.ipp \
+ ../../src/nstl/container/nstl_container_LongVector.ipp \
+ ../../src/nstl/container/nstl_container_Set.hpp \
+ ../../src/nstl/container/nstl_container_Set.ipp \
+ ../../src/nstl/container/nstl_container_Stack.hpp \
+ ../../src/nstl/container/nstl_container_Stack.ipp \
+ ../../src/nstl/map/nstl_map.hpp \
+ ../../src/nstl/map/nstl_map_FastVector.hpp \
+ ../../src/nstl/map/nstl_map_FastVector.ipp \
+ ../../src/nstl/map/nstl_map_Scalar.hpp \
+ ../../src/nstl/map/nstl_map_Scalar.ipp \
+ ../../src/nstl/map/nstl_map_String.hpp ../../src/nstl/nstl_String.hpp \
+ ../../src/nstl/memory/nstl_memory.hpp \
+ ../../src/nstl/container/nstl_container_Vector.hpp \
+ ../../src/nstl/container/storage/nstl_container_storage_ByValue.hpp \
+ ../../src/nstl/nstl_manipulator.hpp ../../src/nstl/nstl.dpp \
+ ../../src/nstl/map/nstl_map_Vector.hpp \
+ ../../src/nstl/map/nstl_map_Node.hpp \
+ ../../src/nstl/map/nstl_map_Node.ipp \
+ ../../src/nstl/map/nstl_map_Vector.ipp \
+ ../../src/nstl/map/nstl_map_String.ipp \
+ ../../src/nstl/memory/nstl_memory.hpp ../../src/nstl/type/nstl_type.hpp \
+ ../../src/nstl/type/list/nstl_type_list.hpp \
+ ../../src/nstl/type/list/nstl_type_list_Access.hpp \
+ ../../src/nstl/type/list/nstl_type_list_List.hpp \
+ ../../src/nstl/type/list/nstl_type_list_Append.hpp \
+ ../../src/nstl/type/list/nstl_type_list_Erase.hpp \
+ ../../src/nstl/type/list/nstl_type_list_EraseAll.hpp \
+ ../../src/nstl/type/list/nstl_type_list_EraseDublicates.hpp \
+ ../../src/nstl/type/list/nstl_type_list_Generators.hpp \
+ ../../src/nstl/type/list/nstl_type_list_IndexOf.hpp \
+ ../../src/nstl/type/list/nstl_type_list_Length.hpp \
+ ../../src/nstl/type/list/nstl_type_list_Replace.hpp \
+ ../../src/nstl/type/list/nstl_type_list_ReplaceAll.hpp \
+ ../../src/nstl/type/traits/nstl_type_traits.hpp \
+ ../../src/nstl/type/traits/indicator/nstl_type_traits_indicator.hpp \
+ ../../src/nstl/type/undefined/nstl_type_undefined.hpp \
+ ../../src/nstl/type/undefined/nstl_type_undefined_Type.hpp \
+ ../../src/nstl/type/undefined/nstl_type_undefined_Defined.hpp \
+ ../../src/nstl/type/nstl_type_Alternator.hpp \
+ ../../src/nstl/type/nstl_type.dpp \
+ ../../src/nstl/type/nstl_type_Assert.hpp \
+ ../../src/nstl/type/nstl_type_Equality.hpp \
+ ../../src/nstl/type/nstl_type_Map.hpp \
+ ../../src/nstl/type/nstl_type_Selector.hpp \
+ ../../src/nstl/type/nstl_type_Switch.hpp \
+ ../../src/nstl/type/nstl_type_Unconst.hpp \
+ ../../src/nstl/type/nstl_type_Unpointer.hpp \
+ ../../src/nstl/nstl_Object.hpp ../../src/nstl/nstl_String.hpp \
+ ../../src/nstl/nstl_Static.hpp ../../src/nstl/nstl_Undefined.hpp \
+ ../../src/nsgl/config/nsgl_config.dpp \
+ ../../src/nsgl/config/nsgl_config_Config.hpp \
+ ../../src/nsgl/config/nsgl_config_General.hpp \
+ ../../src/nsgl/config/nsgl_config_Paths.hpp ../../src/nsgl/nsgl_Path.hpp \
+ ../../src/nsgl/config/nsgl_config_Program.hpp \
+ ../../src/nsgl/config/nsgl_config_Memory.hpp \
+ ../../src/nsgl/lexer/nsgl_lexer.hpp \
+ ../../src/nsgl/lexer/nsgl_lexer_Buffer.hpp \
+ ../../src/nsgl/lexer/nsgl_lexer.dpp \
+ ../../src/nsgl/lexer/nsgl_lexer_Char.hpp \
+ ../../src/nsgl/lexer/nsgl_lexer_Comments.hpp \
+ ../../src/nsgl/lexer/nsgl_lexer_ExpressionScaner.hpp \
+ ../../src/nsgl/lexer/nsgl_lexer_Source.hpp \
+ ../../src/nsgl/lexer/nsgl_lexer_Location.hpp \
+ ../../src/nsgl/lexer/nsgl_lexer_Indent.hpp \
+ ../../src/nsgl/lexer/nsgl_lexer_Position.hpp \
+ ../../src/nsgl/lexer/nsgl_lexer.ipp \
+ ../../src/nsgl/lexer/nsgl_lexer_Buffer.ipp \
+ ../../src/nsgl/lexer/nsgl_lexer_Char.ipp \
+ ../../src/nsgl/lexer/nsgl_lexer_Comments.ipp \
+ ../../src/nsgl/lexer/nsgl_lexer_Indent.ipp \
+ ../../src/nsgl/lexer/nsgl_lexer_Location.ipp \
+ ../../src/nsgl/lexer/nsgl_lexer_Position.ipp \
+ ../../src/nsgl/lexer/nsgl_lexer_Source.ipp \
+ ../../src/nsgl/number/nsgl_number.hpp \
+ ../../src/nsgl/number/nsgl_number_Integer.hpp ../../src/nstl/nstl \
+ ../../src/nstl/nstl.tpp ../../src/nstl/nstl.hpp ../../src/nstl/nstl.ipp \
+ ../../src/nstl/container/nstl_container.ipp \
+ ../../src/nstl/container/continual/nstl_container_continual.ipp \
+ ../../src/nstl/container/discrete/nstl_container_discrete.ipp \
+ ../../src/nstl/container/storage/nstl_container_storage.ipp \
+ ../../src/nstl/container/nstl_container_Bit.ipp \
+ ../../src/nstl/map/nstl_map.ipp ../../src/nstl/memory/nstl_memory.ipp \
+ ../../src/nstl/memory/allocator/nstl_memory_allocator.ipp \
+ ../../src/nstl/memory/allocator/nstl_memory_allocator_Boxed.ipp \
+ ../../src/nstl/memory/allocator/nstl_memory_allocator_Heap.ipp \
+ ../../src/nstl/memory/allocator/nstl_memory_allocator_Stack.ipp \
+ ../../src/nstl/memory/allocator/nstl_memory_allocator_Standard.ipp \
+ ../../src/nstl/memory/exception/nstl_memory_exception.ipp \
+ ../../src/nstl/memory/storage/nstl_memory_storage.ipp \
+ ../../src/nstl/memory/storage/nstl_memory_storage_Array.ipp \
+ ../../src/nstl/memory/storage/nstl_memory_storage_Scalar.ipp \
+ ../../src/nstl/memory/storage/nstl_memory_storage_Vector.ipp \
+ ../../src/nstl/memory/unit/nstl_memory_unit.ipp \
+ ../../src/nstl/memory/unit/nstl_memory_unit_Block.ipp \
+ ../../src/nstl/memory/unit/nstl_memory_unit_Boxed.ipp \
+ ../../src/nstl/memory/unit/nstl_memory_unit_Disposed.ipp \
+ ../../src/nstl/memory/unit/nstl_memory_unit_Heap.ipp \
+ ../../src/nstl/memory/unit/nstl_memory_unit_PointerStack.ipp \
+ ../../src/nstl/memory/unit/nstl_memory_unit_Stack.ipp \
+ ../../src/nstl/memory/unit/nstl_memory_unit_Standard.ipp \
+ ../../src/nstl/memory/unit/nstl_memory_unit_Tank.ipp \
+ ../../src/nstl/memory/nstl_memory_Factory.ipp \
+ ../../src/nstl/memory/nstl_memory_Space.ipp \
+ ../../src/nstl/memory/nstl_memory_UsageMessage.ipp \
+ /usr/include/c++/4.4/iomanip ../../src/nstl/nstl_manipulator.ipp \
+ ../../src/nstl/nstl_Object.ipp ../../src/nstl/nstl_String.ipp \
+ /usr/include/c++/4.4/sstream /usr/include/c++/4.4/bits/sstream.tcc \
+ ../../src/nstl/nstl_Static.ipp ../../src/nstl/nstl.cpp \
+ ../../src/nstl/memory/nstl_memory.cpp \
+ ../../src/nstl/memory/exception/nstl_memory_exception.cpp \
+ ../../src/nstl/memory/exception/nstl_memory_exception_EmptyStackPop.cpp \
+ ../../src/nstl/memory/exception/nstl_memory_exception_Exception.cpp \
+ ../../src/nstl/memory/exception/nstl_memory_exception_LimitReached.cpp \
+ ../../src/nstl/memory/exception/nstl_memory_exception_MemoryInitFailure.cpp \
+ ../../src/nstl/memory/exception/nstl_memory_exception_MemoryLeaks.cpp \
+ ../../src/nstl/memory/exception/nstl_memory_exception_OutOfMemory.cpp \
+ ../../src/nstl/memory/exception/nstl_memory_exception_StackOverflow.cpp \
+ ../../src/nstl/memory/unit/nstl_memory_unit.cpp \
+ ../../src/nstl/memory/unit/nstl_memory_unit_Boxed.cpp \
+ ../../src/nstl/memory/unit/nstl_memory_unit_Disposed.cpp \
+ ../../src/nstl/memory/unit/nstl_memory_unit_Heap.cpp \
+ ../../src/nstl/memory/unit/nstl_memory_unit_PointerStack.cpp \
+ ../../src/nstl/memory/unit/nstl_memory_unit_Stack.cpp \
+ ../../src/nstl/memory/unit/nstl_memory_unit_Standard.cpp \
+ ../../src/nstl/memory/unit/nstl_memory_unit_Tank.cpp \
+ ../../src/nstl/memory/nstl_memory_ignorableDifference.cpp \
+ ../../src/nstl/memory/nstl_memory_Space.cpp \
+ ../../src/nstl/memory/nstl_memory_UsageMessage.cpp \
+ ../../src/nstl/nstl_Object.cpp \
+ ../../src/nsgl/number/nsgl_number_Natural.hpp \
+ ../../src/nsgl/number/nsgl_number_Rational.hpp \
+ ../../src/nsgl/number/nsgl_number_Real.hpp \
+ ../../src/nsgl/system/nsgl_system.hpp ../../src/nsgl/nsgl_Counter.hpp \
+ ../../src/nsgl/nsgl.dpp ../../src/nsgl/nsgl_Error.hpp \
+ ../../src/nsgl/lexer/nsgl_lexer_Location.hpp \
+ ../../src/nsgl/nsgl_NameTable.hpp ../../src/nsgl/nsgl_Path.hpp \
+ ../../src/nsgl/nsgl_Timer.hpp ../../src/nsgl/nsgl.ipp \
+ ../../src/nsgl/config/nsgl_config.ipp \
+ ../../src/nsgl/lexer/nsgl_lexer.ipp \
+ ../../src/nsgl/system/nsgl_system.ipp ../../src/nsgl/nsgl_Counter.ipp \
+ ../../src/nsgl/nsgl_Error.ipp ../../src/nsgl/nsgl_NameTable.ipp \
+ ../../src/nsgl/nsgl_Path.ipp ../../src/nsgl/nsgl_Timer.ipp \
+ /usr/include/c++/4.4/ctime ../../src/nsgl/nsgl.cpp \
+ ../../src/nstl/nstl.cpp ../../src/nsgl/config/nsgl_config.cpp \
+ ../../src/nsgl/config/nsgl_config_Base.cpp \
+ ../../src/nsgl/config/nsgl_config_Config.cpp \
+ ../../src/nsgl/config/nsgl_config_General.cpp \
+ ../../src/nsgl/config/nsgl_config_Memory.cpp \
+ ../../src/nsgl/config/nsgl_config_Paths.cpp \
+ ../../src/nsgl/system/nsgl_system.hpp \
+ ../../src/nsgl/config/nsgl_config_Program.cpp ../../config.h \
+ ../../src/nsgl/lexer/nsgl_lexer.cpp \
+ ../../src/nsgl/lexer/nsgl_lexer_Buffer.cpp \
+ ../../src/nsgl/lexer/nsgl_lexer_Char.cpp \
+ ../../src/nsgl/lexer/nsgl_lexer_Indent.cpp \
+ ../../src/nsgl/lexer/nsgl_lexer_Location.cpp \
+ ../../src/nsgl/lexer/nsgl_lexer_Position.cpp \
+ ../../src/nsgl/lexer/nsgl_lexer_Source.cpp \
+ ../../src/nsgl/system/nsgl_system.cpp /usr/include/sys/stat.h \
+ /usr/include/bits/stat.h \
+ ../../src/del/types/allocator/del_types_allocator.hpp \
+ ../../src/del/types/array/del_types_array.hpp \
+ types/storage/del_types_storage.hpp types/value/del_types_value.hpp \
+ types/value/undefined/del_types_value_undefined.hpp \
+ ../../src/del/types/chars/del_types_chars.hpp \
+ ../../src/del/types/exception/del_types_exception.hpp \
+ ../../src/del/types/index/del_types_index.hpp \
+ types/index/undefined/del_types_index_undefined.hpp \
+ ../../src/del/types/lexer/del_types_lexer.hpp \
+ ../../src/del/types/list/del_types_list.hpp \
+ types/list/connectivity/del_types_list_connectivity.hpp \
+ ../../src/del/types/manipulator/del_types_manipulator.hpp \
+ ../../src/del/types/map/del_types_map.hpp \
+ ../../src/del/types/set/del_types_set.hpp \
+ types/set/index/del_types_set_index.hpp \
+ types/set/value/del_types_set_value.hpp \
+ ../../src/del/types/storage/del_types_storage.hpp \
+ ../../src/del/types/value/del_types_value.hpp \
+ ../../src/del/types/vector/del_types_vector.hpp \
+ types/vector/index/del_types_vector_index.hpp \
+ types/vector/value/del_types_vector_value.hpp \
+ ../../src/del/lexer/del_lexer.dpp ../../src/del/math/del_math.dpp \
+ ../../src/del/model/del_model.dpp ../../src/del/parser/del_parser.dpp \
+ ../../src/del/source/del_source.dpp ../../src/del/del.hpp \
+ ../../src/del/auxiliary/del_auxiliary.hpp \
+ ../../src/del/auxiliary/del_auxiliary_Config.hpp \
+ ../../src/del/auxiliary/del_auxiliary_Error.hpp \
+ ../../src/del/auxiliary/del_auxiliary_Log.hpp \
+ ../../src/del/interface/del_interface.hpp \
+ ../../src/del/interface/del_interface_Answer.hpp \
+ ../../src/del/interface/del_interface_Writable.hpp \
+ ../../src/del/interface/del_interface_Object.hpp \
+ ../../src/del/interface/del_interface_Cloneable.hpp \
+ ../../src/del/interface/del_interface_Comments.hpp \
+ ../../src/del/interface/del_interface_Formula.hpp \
+ ../../src/del/interface/del_interface_Model.hpp \
+ ../../src/del/interface/del_interface_Question.hpp \
+ ../../src/del/interface/del_interface_Solvable.hpp \
+ ../../src/del/interface/del_interface_Source.hpp \
+ ../../src/del/interface/del_interface_Term.hpp \
+ ../../src/del/interface/del_interface_Theory.hpp \
+ ../../src/del/interface/del_interface_Variables.hpp \
+ ../../src/del/auxiliary/del_auxiliary_Output.hpp \
+ ../../src/del/auxiliary/del_auxiliary_Table.hpp \
+ ../../src/del/auxiliary/del_auxiliary_Timers.hpp \
+ ../../src/del/auxiliary/del_auxiliary_Timers.ipp \
+ ../../src/del/auxiliary/del_auxiliary_Volume.hpp \
+ ../../src/del/lexer/del_lexer.hpp \
+ ../../src/del/lexer/del_lexer_CommentScaner.hpp \
+ ../../src/del/lexer/del_lexer_Token.hpp \
+ ../../src/del/lexer/del_lexer_Token.ipp \
+ ../../src/del/lexer/del_lexer_Token.cpp \
+ ../../src/del/lexer/del_lexer_Lexer.hpp \
+ ../../src/del/lexer/del_lexer_Scaner.hpp \
+ ../../src/del/lexer/del_lexer_NameScaner.hpp \
+ ../../src/del/lexer/del_lexer_WhitespaceScaner.hpp \
+ ../../src/del/lexer/del_lexer_Scaner.ipp \
+ ../../src/del/lexer/del_lexer_Lexer.ipp ../../src/del/math/del_math.hpp \
+ ../../src/del/math/del_math_Math.hpp \
+ ../../src/del/math/del_math_Theories.hpp \
+ ../../src/del/math/del_math_Theories.ipp \
+ ../../src/del/math/del_math_Math.ipp ../../src/del/model/del_model.hpp \
+ ../../src/del/model/del_model_ConceptMap.hpp \
+ ../../src/del/model/del_model_Model.hpp \
+ ../../src/del/model/del_model_RelationMap.hpp \
+ ../../src/del/model/del_model_Relation.hpp \
+ ../../src/del/model/del_model_Variables.hpp \
+ ../../src/del/parser/del_parser.hpp \
+ ../../src/del/parser/del_parser_Answer.hpp \
+ ../../src/del/parser/del_parser_Formula.hpp \
+ ../../src/del/parser/del_parser_Question.hpp \
+ ../../src/del/parser/del_parser_Source.hpp \
+ ../../src/del/parser/del_parser_Term.hpp \
+ ../../src/del/parser/del_parser_Theory.hpp \
+ ../../src/del/source/del_source.hpp \
+ ../../src/del/source/formula/del_source_formula.hpp \
+ ../../src/del/source/formula/del_source_formula_Formula.hpp \
+ ../../src/del/source/formula/del_source_formula_Identity.hpp \
+ ../../src/del/source/formula/del_source_formula_Subset.hpp \
+ ../../src/del/source/term/del_source_term.hpp \
+ ../../src/del/source/term/del_source_term_Exists.hpp \
+ ../../src/del/source/term/del_source_term_Term.hpp \
+ ../../src/del/source/term/del_source_term_Intersect.hpp \
+ ../../src/del/source/term/del_source_term_Top.hpp \
+ ../../src/del/source/term/del_source_term_Variable.hpp \
+ ../../src/del/source/del_source_Answer.hpp \
+ ../../src/del/source/del_source_Comments.hpp \
+ ../../src/del/source/del_source_Question.hpp \
+ ../../src/del/source/del_source_Source.hpp \
+ ../../src/del/source/del_source_Theory.hpp ../../src/del/del_Del.hpp \
+ ../../src/del/del.cpp ../../src/del/auxiliary/del_auxiliary.cpp \
+ ../../src/del/auxiliary/del_auxiliary_Config.cpp \
+ ../../src/del/auxiliary/del_auxiliary_Error.cpp \
+ ../../src/del/auxiliary/del_auxiliary_Log.cpp \
+ ../../src/del/auxiliary/del_auxiliary_Output.cpp \
+ ../../src/del/auxiliary/del_auxiliary_Table.cpp \
+ ../../src/del/auxiliary/del_auxiliary_Timers.cpp \
+ ../../src/del/auxiliary/del_auxiliary_Volume.cpp \
+ ../../src/del/interface/del_interface.cpp \
+ ../../src/del/interface/del_interface_Object.cpp \
+ ../../src/del/interface/del_interface_Writable.cpp \
+ ../../src/del/lexer/del_lexer.cpp \
+ ../../src/del/lexer/del_lexer_CommentScaner.cpp \
+ ../../src/del/lexer/del_lexer_Lexer.cpp \
+ ../../src/del/lexer/del_lexer_Scaner.cpp \
+ ../../src/del/lexer/del_lexer_WhitespaceScaner.cpp \
+ ../../src/del/math/del_math.cpp ../../src/del/math/del_math_Math.cpp \
+ ../../src/del/math/del_math_Theories.cpp auxiliary/del_auxiliary.hpp \
+ math/del_math.hpp ../../src/del/model/del_model.cpp \
+ ../../src/del/model/del_model_ConceptMap.cpp \
+ ../../src/del/model/del_model_Model.cpp \
+ ../../src/del/model/del_model_RelationMap.cpp \
+ ../../src/del/model/del_model_Relation.cpp \
+ ../../src/del/model/del_model_Variables.cpp \
+ ../../src/del/parser/del_parser.cpp \
+ ../../src/del/parser/del_parser_Answer.cpp \
+ ../../src/del/parser/del_parser_Formula.cpp \
+ ../../src/del/parser/del_parser_Question.cpp \
+ ../../src/del/parser/del_parser_Source.cpp \
+ ../../src/del/parser/del_parser_Term.cpp \
+ ../../src/del/parser/del_parser_Theory.cpp \
+ ../../src/del/source/del_source.cpp \
+ ../../src/del/source/formula/del_source_formula.cpp \
+ ../../src/del/source/formula/del_source_formula_Formula.cpp \
+ ../../src/del/source/formula/del_source_formula_Identity.cpp \
+ ../../src/del/source/formula/del_source_formula_Subset.cpp \
+ ../../src/del/source/term/del_source_term.cpp \
+ ../../src/del/source/term/del_source_term_Exists.cpp \
+ ../../src/del/source/term/del_source_term_Intersect.cpp \
+ ../../src/del/source/term/del_source_term_Term.cpp \
+ ../../src/del/source/term/del_source_term_Top.cpp \
+ ../../src/del/source/term/del_source_term_Variable.cpp \
+ ../../src/del/source/del_source_Answer.cpp \
+ ../../src/del/source/del_source_Comments.cpp \
+ ../../src/del/source/del_source_Question.cpp \
+ ../../src/del/source/del_source_Source.cpp \
+ ../../src/del/source/del_source_Theory.cpp \
+ ../../src/del/types/del_types.cpp ../../src/nsgl/nsgl.cpp \
+ ../../src/del/del_Del.cpp
+
+../../src/del/del.dpp:
+
+../../src/del/auxiliary/del_auxiliary.dpp:
+
+../../src/del/interface/del_interface.dpp:
+
+../../src/del/types/del_types.hpp:
+
+../../src/nsgl/nsgl:
+
+../../src/nsgl/nsgl.dpp:
+
+../../src/nsgl/config/nsgl_config.dpp:
+
+../../src/nsgl/lexer/nsgl_lexer.dpp:
+
+../../src/nsgl/number/nsgl_number.dpp:
+
+../../src/nsgl/system/nsgl_system.dpp:
+
+../../src/nsgl/nsgl.hpp:
+
+../../src/nsgl/config/nsgl_config.hpp:
+
+../../src/nsgl/config/nsgl_config_Base.hpp:
+
+../../src/nstl/nstl.hpp:
+
+../../src/nstl/nstl_chars.hpp:
+
+../../src/nstl/container/nstl_container.hpp:
+
+../../src/nstl/container/continual/nstl_container_continual.hpp:
+
+../../src/nstl/container/continual/nstl_container_continual_Block.hpp:
+
+/usr/include/c++/4.4/exception:
+
+/usr/include/c++/4.4/i686-linux-gnu/bits/c++config.h:
+
+/usr/include/c++/4.4/i686-linux-gnu/bits/os_defines.h:
+
+/usr/include/features.h:
+
+/usr/include/bits/predefs.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/bits/wordsize.h:
+
+/usr/include/gnu/stubs.h:
+
+/usr/include/gnu/stubs-32.h:
+
+/usr/include/c++/4.4/i686-linux-gnu/bits/cpu_defines.h:
+
+/usr/include/c++/4.4/iostream:
+
+/usr/include/c++/4.4/ostream:
+
+/usr/include/c++/4.4/ios:
+
+/usr/include/c++/4.4/iosfwd:
+
+/usr/include/c++/4.4/bits/stringfwd.h:
+
+/usr/include/c++/4.4/bits/postypes.h:
+
+/usr/include/c++/4.4/cwchar:
+
+/usr/include/c++/4.4/cstddef:
+
+/usr/lib/gcc/i686-linux-gnu/4.4.5/include/stddef.h:
+
+/usr/include/wchar.h:
+
+/usr/include/stdio.h:
+
+/usr/lib/gcc/i686-linux-gnu/4.4.5/include/stdarg.h:
+
+/usr/include/bits/wchar.h:
+
+/usr/include/xlocale.h:
+
+/usr/include/c++/4.4/bits/char_traits.h:
+
+/usr/include/c++/4.4/bits/stl_algobase.h:
+
+/usr/include/c++/4.4/bits/functexcept.h:
+
+/usr/include/c++/4.4/exception_defines.h:
+
+/usr/include/c++/4.4/bits/cpp_type_traits.h:
+
+/usr/include/c++/4.4/ext/type_traits.h:
+
+/usr/include/c++/4.4/ext/numeric_traits.h:
+
+/usr/include/c++/4.4/bits/stl_pair.h:
+
+/usr/include/c++/4.4/bits/move.h:
+
+/usr/include/c++/4.4/bits/concept_check.h:
+
+/usr/include/c++/4.4/bits/stl_iterator_base_types.h:
+
+/usr/include/c++/4.4/bits/stl_iterator_base_funcs.h:
+
+/usr/include/c++/4.4/bits/stl_iterator.h:
+
+/usr/include/c++/4.4/debug/debug.h:
+
+/usr/include/c++/4.4/bits/localefwd.h:
+
+/usr/include/c++/4.4/i686-linux-gnu/bits/c++locale.h:
+
+/usr/include/c++/4.4/clocale:
+
+/usr/include/locale.h:
+
+/usr/include/bits/locale.h:
+
+/usr/include/c++/4.4/cctype:
+
+/usr/include/ctype.h:
+
+/usr/include/bits/types.h:
+
+/usr/include/bits/typesizes.h:
+
+/usr/include/endian.h:
+
+/usr/include/bits/endian.h:
+
+/usr/include/bits/byteswap.h:
+
+/usr/include/c++/4.4/bits/ios_base.h:
+
+/usr/include/c++/4.4/ext/atomicity.h:
+
+/usr/include/c++/4.4/i686-linux-gnu/bits/gthr.h:
+
+/usr/include/c++/4.4/i686-linux-gnu/bits/gthr-default.h:
+
+/usr/include/pthread.h:
+
+/usr/include/sched.h:
+
+/usr/include/time.h:
+
+/usr/include/bits/sched.h:
+
+/usr/include/bits/time.h:
+
+/usr/include/bits/pthreadtypes.h:
+
+/usr/include/bits/setjmp.h:
+
+/usr/include/unistd.h:
+
+/usr/include/bits/posix_opt.h:
+
+/usr/include/bits/environments.h:
+
+/usr/include/bits/confname.h:
+
+/usr/include/getopt.h:
+
+/usr/include/c++/4.4/i686-linux-gnu/bits/atomic_word.h:
+
+/usr/include/c++/4.4/bits/locale_classes.h:
+
+/usr/include/c++/4.4/string:
+
+/usr/include/c++/4.4/bits/allocator.h:
+
+/usr/include/c++/4.4/i686-linux-gnu/bits/c++allocator.h:
+
+/usr/include/c++/4.4/ext/new_allocator.h:
+
+/usr/include/c++/4.4/new:
+
+/usr/include/c++/4.4/bits/ostream_insert.h:
+
+/usr/include/c++/4.4/cxxabi-forced.h:
+
+/usr/include/c++/4.4/bits/stl_function.h:
+
+/usr/include/c++/4.4/backward/binders.h:
+
+/usr/include/c++/4.4/bits/basic_string.h:
+
+/usr/include/c++/4.4/initializer_list:
+
+/usr/include/c++/4.4/bits/basic_string.tcc:
+
+/usr/include/c++/4.4/bits/locale_classes.tcc:
+
+/usr/include/c++/4.4/streambuf:
+
+/usr/include/c++/4.4/bits/streambuf.tcc:
+
+/usr/include/c++/4.4/bits/basic_ios.h:
+
+/usr/include/c++/4.4/bits/locale_facets.h:
+
+/usr/include/c++/4.4/cwctype:
+
+/usr/include/wctype.h:
+
+/usr/include/c++/4.4/i686-linux-gnu/bits/ctype_base.h:
+
+/usr/include/c++/4.4/bits/streambuf_iterator.h:
+
+/usr/include/c++/4.4/i686-linux-gnu/bits/ctype_inline.h:
+
+/usr/include/c++/4.4/bits/locale_facets.tcc:
+
+/usr/include/c++/4.4/bits/basic_ios.tcc:
+
+/usr/include/c++/4.4/bits/ostream.tcc:
+
+/usr/include/c++/4.4/istream:
+
+/usr/include/c++/4.4/bits/istream.tcc:
+
+../../src/nstl/memory/nstl_memory.hpp:
+
+../../src/nstl/memory/allocator/nstl_memory_allocator.hpp:
+
+../../src/nstl/memory/allocator/nstl_memory_allocator_Boxed.hpp:
+
+../../src/nstl/memory/nstl_memory_Interval.hpp:
+
+../../src/nstl/memory/nstl_memory.dpp:
+
+../../src/nstl/memory/allocator/nstl_memory_allocator.dpp:
+
+../../src/nstl/memory/exception/nstl_memory_exception.dpp:
+
+../../src/nstl/memory/storage/nstl_memory_storage.dpp:
+
+../../src/nstl/memory/unit/nstl_memory_unit.dpp:
+
+../../src/nstl/nstl.tpp:
+
+/usr/include/stdint.h:
+
+/usr/include/c++/4.4/fstream:
+
+/usr/include/c++/4.4/bits/codecvt.h:
+
+/usr/include/c++/4.4/cstdio:
+
+/usr/include/libio.h:
+
+/usr/include/_G_config.h:
+
+/usr/include/bits/stdio_lim.h:
+
+/usr/include/bits/sys_errlist.h:
+
+/usr/include/c++/4.4/i686-linux-gnu/bits/basic_file.h:
+
+/usr/include/c++/4.4/i686-linux-gnu/bits/c++io.h:
+
+/usr/include/c++/4.4/bits/fstream.tcc:
+
+../../src/nstl/memory/exception/nstl_memory_exception.hpp:
+
+../../src/nstl/memory/exception/nstl_memory_exception_EmptyStackPop.hpp:
+
+../../src/nstl/memory/exception/nstl_memory_exception_Exception.hpp:
+
+../../src/nstl/memory/exception/nstl_memory_exception_LimitReached.hpp:
+
+../../src/nstl/memory/exception/nstl_memory_exception_MemoryInitFailure.hpp:
+
+../../src/nstl/memory/exception/nstl_memory_exception_MemoryLeaks.hpp:
+
+../../src/nstl/memory/exception/nstl_memory_exception_OutOfMemory.hpp:
+
+../../src/nstl/memory/exception/nstl_memory_exception_StackOverflow.hpp:
+
+../../src/nstl/memory/nstl_memory_Interval.ipp:
+
+../../src/nstl/memory/allocator/nstl_memory_allocator_Method.hpp:
+
+../../src/nstl/memory/allocator/nstl_memory_allocator_Heap.hpp:
+
+../../src/nstl/memory/allocator/nstl_memory_allocator_Stack.hpp:
+
+../../src/nstl/memory/allocator/nstl_memory_allocator_Standard.hpp:
+
+../../src/nstl/memory/storage/nstl_memory_storage.hpp:
+
+../../src/nstl/memory/storage/nstl_memory_storage_Array.hpp:
+
+../../src/nstl/memory/storage/nstl_memory_storage_Scalar.hpp:
+
+../../src/nstl/memory/storage/nstl_memory_storage_Vector.hpp:
+
+../../src/nstl/memory/unit/nstl_memory_unit.hpp:
+
+../../src/nstl/memory/unit/nstl_memory_unit_Block.hpp:
+
+../../src/nstl/memory/unit/nstl_memory_unit_Boxed.hpp:
+
+../../src/nstl/memory/unit/nstl_memory_unit_Disposed.hpp:
+
+../../src/nstl/map/nstl_map.dpp:
+
+../../src/nstl/container/nstl_container.dpp:
+
+../../src/nstl/container/continual/nstl_container_continual.dpp:
+
+../../src/nstl/container/discrete/nstl_container_discrete.dpp:
+
+../../src/nstl/container/storage/nstl_container_storage.dpp:
+
+../../src/nstl/memory/unit/nstl_memory_unit_Tank.hpp:
+
+../../src/nstl/memory/unit/nstl_memory_unit_Heap.hpp:
+
+../../src/nstl/memory/unit/nstl_memory_unit_PointerStack.hpp:
+
+../../src/nstl/memory/unit/nstl_memory_unit_Stack.hpp:
+
+../../src/nstl/memory/unit/nstl_memory_unit_Standard.hpp:
+
+../../src/nstl/memory/nstl_memory_Factory.hpp:
+
+../../src/nstl/memory/nstl_memory_ignorableDifference.hpp:
+
+../../src/nstl/memory/nstl_memory_Space.hpp:
+
+../../src/nstl/memory/nstl_memory_UsageMessage.hpp:
+
+../../src/nstl/container/continual/nstl_container_continual_Collection.hpp:
+
+../../src/nstl/nstl.dpp:
+
+../../src/nstl/container/nstl_container.dpp:
+
+../../src/nstl/map/nstl_map.dpp:
+
+../../src/nstl/memory/nstl_memory.dpp:
+
+../../src/nstl/type/nstl_type.dpp:
+
+../../src/nstl/type/constant/nstl_type_constant.dpp:
+
+../../src/nstl/type/list/nstl_type_list.dpp:
+
+../../src/nstl/type/traits/nstl_type_traits.dpp:
+
+../../src/nstl/type/traits/indicator/nstl_type_traits_indicator.dpp:
+
+../../src/nstl/type/undefined/nstl_type_undefined.dpp:
+
+../../src/nstl/container/continual/nstl_container_continual_Collection.ipp:
+
+../../src/nstl/nstl_Undefined.hpp:
+
+../../src/nstl/type/undefined/nstl_type_undefined_Type.hpp:
+
+../../src/nstl/type/undefined/nstl_type_undefined_Bool.hpp:
+
+../../src/nstl/type/traits/nstl_type_traits_Type.hpp:
+
+../../src/nstl/type/traits/nstl_type_traits_Bool.hpp:
+
+../../src/nstl/type/traits/indicator/nstl_type_traits_indicator_bool.hpp:
+
+../../src/nstl/type/traits/nstl_type_traits_Empty.hpp:
+
+../../src/nstl/type/traits/indicator/nstl_type_traits_indicator_Empty.hpp:
+
+../../src/nstl/type/constant/nstl_type_constant.hpp:
+
+../../src/nstl/type/constant/nstl_type_constant_Null.hpp:
+
+../../src/nstl/type/constant/nstl_type_constant_Empty.hpp:
+
+../../src/nstl/type/traits/nstl_type_traits_Floating.hpp:
+
+../../src/nstl/type/traits/indicator/nstl_type_traits_indicator_floatings.hpp:
+
+../../src/nstl/type/traits/indicator/nstl_type_traits_indicator_double.hpp:
+
+../../src/nstl/type/traits/indicator/nstl_type_traits_indicator_float.hpp:
+
+../../src/nstl/type/traits/nstl_type_traits_Integer.hpp:
+
+../../src/nstl/type/traits/indicator/nstl_type_traits_indicator_integers.hpp:
+
+../../src/nstl/type/traits/indicator/nstl_type_traits_indicator_char.hpp:
+
+../../src/nstl/type/traits/indicator/nstl_type_traits_indicator_int.hpp:
+
+../../src/nstl/type/traits/indicator/nstl_type_traits_indicator_long_long.hpp:
+
+../../src/nstl/type/traits/indicator/nstl_type_traits_indicator_long.hpp:
+
+../../src/nstl/type/traits/indicator/nstl_type_traits_indicator_short.hpp:
+
+../../src/nstl/type/traits/indicator/nstl_type_traits_indicator_signed.hpp:
+
+../../src/nstl/type/traits/indicator/nstl_type_traits_indicator_digits.hpp:
+
+../../src/nstl/type/traits/nstl_type_traits_Null.hpp:
+
+../../src/nstl/type/traits/indicator/nstl_type_traits_indicator_Null.hpp:
+
+../../src/nstl/type/traits/nstl_type_traits_Pointer.hpp:
+
+../../src/nstl/type/traits/indicator/nstl_type_traits_indicator_Pointer.hpp:
+
+../../src/nstl/type/traits/nstl_type_traits_Void.hpp:
+
+../../src/nstl/type/traits/indicator/nstl_type_traits_indicator_void.hpp:
+
+../../src/nstl/type/undefined/nstl_type_undefined_Char.hpp:
+
+../../src/nstl/type/undefined/nstl_type_undefined_Empty.hpp:
+
+../../src/nstl/type/undefined/nstl_type_undefined_Floating.hpp:
+
+../../src/nstl/type/undefined/nstl_type_undefined_Integer.hpp:
+
+../../src/nstl/type/undefined/nstl_type_undefined_Object.hpp:
+
+../../src/nstl/type/undefined/nstl_type_undefined_Pointer.hpp:
+
+../../src/nstl/type/undefined/nstl_type_undefined_Void.hpp:
+
+/usr/include/c++/4.4/typeinfo:
+
+../../src/nstl/container/continual/nstl_container_continual_Block.ipp:
+
+../../src/nstl/container/continual/nstl_container_continual_Resizable.hpp:
+
+../../src/nstl/container/continual/nstl_container_continual_Resizable.ipp:
+
+../../src/nstl/container/discrete/nstl_container_discrete.hpp:
+
+../../src/nstl/container/discrete/nstl_container_discrete_Direction.hpp:
+
+../../src/nstl/container/discrete/nstl_container_discrete_Bidirectional.hpp:
+
+../../src/nstl/container/discrete/nstl_container_discrete_Unidirectional.hpp:
+
+../../src/nstl/container/discrete/nstl_container_discrete_Unidirectional.ipp:
+
+../../src/nstl/container/discrete/nstl_container_discrete_Bidirectional.ipp:
+
+../../src/nstl/container/storage/nstl_container_storage.hpp:
+
+../../src/nstl/container/storage/nstl_container_storage_ByAggregation.hpp:
+
+../../src/nstl/container/storage/nstl_container_storage_ByAggregation.ipp:
+
+../../src/nstl/container/storage/nstl_container_storage_ByInheritance.hpp:
+
+../../src/nstl/container/storage/nstl_container_storage_ByInheritance.ipp:
+
+../../src/nstl/container/storage/nstl_container_storage_ByPointer.hpp:
+
+../../src/nstl/container/storage/nstl_container_storage_ByPointer.ipp:
+
+../../src/nstl/container/storage/nstl_container_storage_ByValue.hpp:
+
+../../src/nstl/container/storage/nstl_container_storage_ByValue.ipp:
+
+../../src/nstl/container/storage/nstl_container_storage_None.hpp:
+
+../../src/nstl/container/storage/nstl_container_storage_None.ipp:
+
+../../src/nstl/container/nstl_container_Array.hpp:
+
+../../src/nstl/container/nstl_container_Array.ipp:
+
+../../src/nstl/container/nstl_container_Bit.hpp:
+
+../../src/nstl/container/nstl_container_List.hpp:
+
+../../src/nstl/container/nstl_container_List.ipp:
+
+../../src/nstl/container/nstl_container_LongVector.hpp:
+
+../../src/nstl/container/nstl_container_Vector.hpp:
+
+../../src/nstl/container/nstl_container_Vector.ipp:
+
+../../src/nstl/container/nstl_container_LongVector.ipp:
+
+../../src/nstl/container/nstl_container_Set.hpp:
+
+../../src/nstl/container/nstl_container_Set.ipp:
+
+../../src/nstl/container/nstl_container_Stack.hpp:
+
+../../src/nstl/container/nstl_container_Stack.ipp:
+
+../../src/nstl/map/nstl_map.hpp:
+
+../../src/nstl/map/nstl_map_FastVector.hpp:
+
+../../src/nstl/map/nstl_map_FastVector.ipp:
+
+../../src/nstl/map/nstl_map_Scalar.hpp:
+
+../../src/nstl/map/nstl_map_Scalar.ipp:
+
+../../src/nstl/map/nstl_map_String.hpp:
+
+../../src/nstl/nstl_String.hpp:
+
+../../src/nstl/memory/nstl_memory.hpp:
+
+../../src/nstl/container/nstl_container_Vector.hpp:
+
+../../src/nstl/container/storage/nstl_container_storage_ByValue.hpp:
+
+../../src/nstl/nstl_manipulator.hpp:
+
+../../src/nstl/nstl.dpp:
+
+../../src/nstl/map/nstl_map_Vector.hpp:
+
+../../src/nstl/map/nstl_map_Node.hpp:
+
+../../src/nstl/map/nstl_map_Node.ipp:
+
+../../src/nstl/map/nstl_map_Vector.ipp:
+
+../../src/nstl/map/nstl_map_String.ipp:
+
+../../src/nstl/memory/nstl_memory.hpp:
+
+../../src/nstl/type/nstl_type.hpp:
+
+../../src/nstl/type/list/nstl_type_list.hpp:
+
+../../src/nstl/type/list/nstl_type_list_Access.hpp:
+
+../../src/nstl/type/list/nstl_type_list_List.hpp:
+
+../../src/nstl/type/list/nstl_type_list_Append.hpp:
+
+../../src/nstl/type/list/nstl_type_list_Erase.hpp:
+
+../../src/nstl/type/list/nstl_type_list_EraseAll.hpp:
+
+../../src/nstl/type/list/nstl_type_list_EraseDublicates.hpp:
+
+../../src/nstl/type/list/nstl_type_list_Generators.hpp:
+
+../../src/nstl/type/list/nstl_type_list_IndexOf.hpp:
+
+../../src/nstl/type/list/nstl_type_list_Length.hpp:
+
+../../src/nstl/type/list/nstl_type_list_Replace.hpp:
+
+../../src/nstl/type/list/nstl_type_list_ReplaceAll.hpp:
+
+../../src/nstl/type/traits/nstl_type_traits.hpp:
+
+../../src/nstl/type/traits/indicator/nstl_type_traits_indicator.hpp:
+
+../../src/nstl/type/undefined/nstl_type_undefined.hpp:
+
+../../src/nstl/type/undefined/nstl_type_undefined_Type.hpp:
+
+../../src/nstl/type/undefined/nstl_type_undefined_Defined.hpp:
+
+../../src/nstl/type/nstl_type_Alternator.hpp:
+
+../../src/nstl/type/nstl_type.dpp:
+
+../../src/nstl/type/nstl_type_Assert.hpp:
+
+../../src/nstl/type/nstl_type_Equality.hpp:
+
+../../src/nstl/type/nstl_type_Map.hpp:
+
+../../src/nstl/type/nstl_type_Selector.hpp:
+
+../../src/nstl/type/nstl_type_Switch.hpp:
+
+../../src/nstl/type/nstl_type_Unconst.hpp:
+
+../../src/nstl/type/nstl_type_Unpointer.hpp:
+
+../../src/nstl/nstl_Object.hpp:
+
+../../src/nstl/nstl_String.hpp:
+
+../../src/nstl/nstl_Static.hpp:
+
+../../src/nstl/nstl_Undefined.hpp:
+
+../../src/nsgl/config/nsgl_config.dpp:
+
+../../src/nsgl/config/nsgl_config_Config.hpp:
+
+../../src/nsgl/config/nsgl_config_General.hpp:
+
+../../src/nsgl/config/nsgl_config_Paths.hpp:
+
+../../src/nsgl/nsgl_Path.hpp:
+
+../../src/nsgl/config/nsgl_config_Program.hpp:
+
+../../src/nsgl/config/nsgl_config_Memory.hpp:
+
+../../src/nsgl/lexer/nsgl_lexer.hpp:
+
+../../src/nsgl/lexer/nsgl_lexer_Buffer.hpp:
+
+../../src/nsgl/lexer/nsgl_lexer.dpp:
+
+../../src/nsgl/lexer/nsgl_lexer_Char.hpp:
+
+../../src/nsgl/lexer/nsgl_lexer_Comments.hpp:
+
+../../src/nsgl/lexer/nsgl_lexer_ExpressionScaner.hpp:
+
+../../src/nsgl/lexer/nsgl_lexer_Source.hpp:
+
+../../src/nsgl/lexer/nsgl_lexer_Location.hpp:
+
+../../src/nsgl/lexer/nsgl_lexer_Indent.hpp:
+
+../../src/nsgl/lexer/nsgl_lexer_Position.hpp:
+
+../../src/nsgl/lexer/nsgl_lexer.ipp:
+
+../../src/nsgl/lexer/nsgl_lexer_Buffer.ipp:
+
+../../src/nsgl/lexer/nsgl_lexer_Char.ipp:
+
+../../src/nsgl/lexer/nsgl_lexer_Comments.ipp:
+
+../../src/nsgl/lexer/nsgl_lexer_Indent.ipp:
+
+../../src/nsgl/lexer/nsgl_lexer_Location.ipp:
+
+../../src/nsgl/lexer/nsgl_lexer_Position.ipp:
+
+../../src/nsgl/lexer/nsgl_lexer_Source.ipp:
+
+../../src/nsgl/number/nsgl_number.hpp:
+
+../../src/nsgl/number/nsgl_number_Integer.hpp:
+
+../../src/nstl/nstl:
+
+../../src/nstl/nstl.tpp:
+
+../../src/nstl/nstl.hpp:
+
+../../src/nstl/nstl.ipp:
+
+../../src/nstl/container/nstl_container.ipp:
+
+../../src/nstl/container/continual/nstl_container_continual.ipp:
+
+../../src/nstl/container/discrete/nstl_container_discrete.ipp:
+
+../../src/nstl/container/storage/nstl_container_storage.ipp:
+
+../../src/nstl/container/nstl_container_Bit.ipp:
+
+../../src/nstl/map/nstl_map.ipp:
+
+../../src/nstl/memory/nstl_memory.ipp:
+
+../../src/nstl/memory/allocator/nstl_memory_allocator.ipp:
+
+../../src/nstl/memory/allocator/nstl_memory_allocator_Boxed.ipp:
+
+../../src/nstl/memory/allocator/nstl_memory_allocator_Heap.ipp:
+
+../../src/nstl/memory/allocator/nstl_memory_allocator_Stack.ipp:
+
+../../src/nstl/memory/allocator/nstl_memory_allocator_Standard.ipp:
+
+../../src/nstl/memory/exception/nstl_memory_exception.ipp:
+
+../../src/nstl/memory/storage/nstl_memory_storage.ipp:
+
+../../src/nstl/memory/storage/nstl_memory_storage_Array.ipp:
+
+../../src/nstl/memory/storage/nstl_memory_storage_Scalar.ipp:
+
+../../src/nstl/memory/storage/nstl_memory_storage_Vector.ipp:
+
+../../src/nstl/memory/unit/nstl_memory_unit.ipp:
+
+../../src/nstl/memory/unit/nstl_memory_unit_Block.ipp:
+
+../../src/nstl/memory/unit/nstl_memory_unit_Boxed.ipp:
+
+../../src/nstl/memory/unit/nstl_memory_unit_Disposed.ipp:
+
+../../src/nstl/memory/unit/nstl_memory_unit_Heap.ipp:
+
+../../src/nstl/memory/unit/nstl_memory_unit_PointerStack.ipp:
+
+../../src/nstl/memory/unit/nstl_memory_unit_Stack.ipp:
+
+../../src/nstl/memory/unit/nstl_memory_unit_Standard.ipp:
+
+../../src/nstl/memory/unit/nstl_memory_unit_Tank.ipp:
+
+../../src/nstl/memory/nstl_memory_Factory.ipp:
+
+../../src/nstl/memory/nstl_memory_Space.ipp:
+
+../../src/nstl/memory/nstl_memory_UsageMessage.ipp:
+
+/usr/include/c++/4.4/iomanip:
+
+../../src/nstl/nstl_manipulator.ipp:
+
+../../src/nstl/nstl_Object.ipp:
+
+../../src/nstl/nstl_String.ipp:
+
+/usr/include/c++/4.4/sstream:
+
+/usr/include/c++/4.4/bits/sstream.tcc:
+
+../../src/nstl/nstl_Static.ipp:
+
+../../src/nstl/nstl.cpp:
+
+../../src/nstl/memory/nstl_memory.cpp:
+
+../../src/nstl/memory/exception/nstl_memory_exception.cpp:
+
+../../src/nstl/memory/exception/nstl_memory_exception_EmptyStackPop.cpp:
+
+../../src/nstl/memory/exception/nstl_memory_exception_Exception.cpp:
+
+../../src/nstl/memory/exception/nstl_memory_exception_LimitReached.cpp:
+
+../../src/nstl/memory/exception/nstl_memory_exception_MemoryInitFailure.cpp:
+
+../../src/nstl/memory/exception/nstl_memory_exception_MemoryLeaks.cpp:
+
+../../src/nstl/memory/exception/nstl_memory_exception_OutOfMemory.cpp:
+
+../../src/nstl/memory/exception/nstl_memory_exception_StackOverflow.cpp:
+
+../../src/nstl/memory/unit/nstl_memory_unit.cpp:
+
+../../src/nstl/memory/unit/nstl_memory_unit_Boxed.cpp:
+
+../../src/nstl/memory/unit/nstl_memory_unit_Disposed.cpp:
+
+../../src/nstl/memory/unit/nstl_memory_unit_Heap.cpp:
+
+../../src/nstl/memory/unit/nstl_memory_unit_PointerStack.cpp:
+
+../../src/nstl/memory/unit/nstl_memory_unit_Stack.cpp:
+
+../../src/nstl/memory/unit/nstl_memory_unit_Standard.cpp:
+
+../../src/nstl/memory/unit/nstl_memory_unit_Tank.cpp:
+
+../../src/nstl/memory/nstl_memory_ignorableDifference.cpp:
+
+../../src/nstl/memory/nstl_memory_Space.cpp:
+
+../../src/nstl/memory/nstl_memory_UsageMessage.cpp:
+
+../../src/nstl/nstl_Object.cpp:
+
+../../src/nsgl/number/nsgl_number_Natural.hpp:
+
+../../src/nsgl/number/nsgl_number_Rational.hpp:
+
+../../src/nsgl/number/nsgl_number_Real.hpp:
+
+../../src/nsgl/system/nsgl_system.hpp:
+
+../../src/nsgl/nsgl_Counter.hpp:
+
+../../src/nsgl/nsgl.dpp:
+
+../../src/nsgl/nsgl_Error.hpp:
+
+../../src/nsgl/lexer/nsgl_lexer_Location.hpp:
+
+../../src/nsgl/nsgl_NameTable.hpp:
+
+../../src/nsgl/nsgl_Path.hpp:
+
+../../src/nsgl/nsgl_Timer.hpp:
+
+../../src/nsgl/nsgl.ipp:
+
+../../src/nsgl/config/nsgl_config.ipp:
+
+../../src/nsgl/lexer/nsgl_lexer.ipp:
+
+../../src/nsgl/system/nsgl_system.ipp:
+
+../../src/nsgl/nsgl_Counter.ipp:
+
+../../src/nsgl/nsgl_Error.ipp:
+
+../../src/nsgl/nsgl_NameTable.ipp:
+
+../../src/nsgl/nsgl_Path.ipp:
+
+../../src/nsgl/nsgl_Timer.ipp:
+
+/usr/include/c++/4.4/ctime:
+
+../../src/nsgl/nsgl.cpp:
+
+../../src/nstl/nstl.cpp:
+
+../../src/nsgl/config/nsgl_config.cpp:
+
+../../src/nsgl/config/nsgl_config_Base.cpp:
+
+../../src/nsgl/config/nsgl_config_Config.cpp:
+
+../../src/nsgl/config/nsgl_config_General.cpp:
+
+../../src/nsgl/config/nsgl_config_Memory.cpp:
+
+../../src/nsgl/config/nsgl_config_Paths.cpp:
+
+../../src/nsgl/system/nsgl_system.hpp:
+
+../../src/nsgl/config/nsgl_config_Program.cpp:
+
+../../config.h:
+
+../../src/nsgl/lexer/nsgl_lexer.cpp:
+
+../../src/nsgl/lexer/nsgl_lexer_Buffer.cpp:
+
+../../src/nsgl/lexer/nsgl_lexer_Char.cpp:
+
+../../src/nsgl/lexer/nsgl_lexer_Indent.cpp:
+
+../../src/nsgl/lexer/nsgl_lexer_Location.cpp:
+
+../../src/nsgl/lexer/nsgl_lexer_Position.cpp:
+
+../../src/nsgl/lexer/nsgl_lexer_Source.cpp:
+
+../../src/nsgl/system/nsgl_system.cpp:
+
+/usr/include/sys/stat.h:
+
+/usr/include/bits/stat.h:
+
+../../src/del/types/allocator/del_types_allocator.hpp:
+
+../../src/del/types/array/del_types_array.hpp:
+
+types/storage/del_types_storage.hpp:
+
+types/value/del_types_value.hpp:
+
+types/value/undefined/del_types_value_undefined.hpp:
+
+../../src/del/types/chars/del_types_chars.hpp:
+
+../../src/del/types/exception/del_types_exception.hpp:
+
+../../src/del/types/index/del_types_index.hpp:
+
+types/index/undefined/del_types_index_undefined.hpp:
+
+../../src/del/types/lexer/del_types_lexer.hpp:
+
+../../src/del/types/list/del_types_list.hpp:
+
+types/list/connectivity/del_types_list_connectivity.hpp:
+
+../../src/del/types/manipulator/del_types_manipulator.hpp:
+
+../../src/del/types/map/del_types_map.hpp:
+
+../../src/del/types/set/del_types_set.hpp:
+
+types/set/index/del_types_set_index.hpp:
+
+types/set/value/del_types_set_value.hpp:
+
+../../src/del/types/storage/del_types_storage.hpp:
+
+../../src/del/types/value/del_types_value.hpp:
+
+../../src/del/types/vector/del_types_vector.hpp:
+
+types/vector/index/del_types_vector_index.hpp:
+
+types/vector/value/del_types_vector_value.hpp:
+
+../../src/del/lexer/del_lexer.dpp:
+
+../../src/del/math/del_math.dpp:
+
+../../src/del/model/del_model.dpp:
+
+../../src/del/parser/del_parser.dpp:
+
+../../src/del/source/del_source.dpp:
+
+../../src/del/del.hpp:
+
+../../src/del/auxiliary/del_auxiliary.hpp:
+
+../../src/del/auxiliary/del_auxiliary_Config.hpp:
+
+../../src/del/auxiliary/del_auxiliary_Error.hpp:
+
+../../src/del/auxiliary/del_auxiliary_Log.hpp:
+
+../../src/del/interface/del_interface.hpp:
+
+../../src/del/interface/del_interface_Answer.hpp:
+
+../../src/del/interface/del_interface_Writable.hpp:
+
+../../src/del/interface/del_interface_Object.hpp:
+
+../../src/del/interface/del_interface_Cloneable.hpp:
+
+../../src/del/interface/del_interface_Comments.hpp:
+
+../../src/del/interface/del_interface_Formula.hpp:
+
+../../src/del/interface/del_interface_Model.hpp:
+
+../../src/del/interface/del_interface_Question.hpp:
+
+../../src/del/interface/del_interface_Solvable.hpp:
+
+../../src/del/interface/del_interface_Source.hpp:
+
+../../src/del/interface/del_interface_Term.hpp:
+
+../../src/del/interface/del_interface_Theory.hpp:
+
+../../src/del/interface/del_interface_Variables.hpp:
+
+../../src/del/auxiliary/del_auxiliary_Output.hpp:
+
+../../src/del/auxiliary/del_auxiliary_Table.hpp:
+
+../../src/del/auxiliary/del_auxiliary_Timers.hpp:
+
+../../src/del/auxiliary/del_auxiliary_Timers.ipp:
+
+../../src/del/auxiliary/del_auxiliary_Volume.hpp:
+
+../../src/del/lexer/del_lexer.hpp:
+
+../../src/del/lexer/del_lexer_CommentScaner.hpp:
+
+../../src/del/lexer/del_lexer_Token.hpp:
+
+../../src/del/lexer/del_lexer_Token.ipp:
+
+../../src/del/lexer/del_lexer_Token.cpp:
+
+../../src/del/lexer/del_lexer_Lexer.hpp:
+
+../../src/del/lexer/del_lexer_Scaner.hpp:
+
+../../src/del/lexer/del_lexer_NameScaner.hpp:
+
+../../src/del/lexer/del_lexer_WhitespaceScaner.hpp:
+
+../../src/del/lexer/del_lexer_Scaner.ipp:
+
+../../src/del/lexer/del_lexer_Lexer.ipp:
+
+../../src/del/math/del_math.hpp:
+
+../../src/del/math/del_math_Math.hpp:
+
+../../src/del/math/del_math_Theories.hpp:
+
+../../src/del/math/del_math_Theories.ipp:
+
+../../src/del/math/del_math_Math.ipp:
+
+../../src/del/model/del_model.hpp:
+
+../../src/del/model/del_model_ConceptMap.hpp:
+
+../../src/del/model/del_model_Model.hpp:
+
+../../src/del/model/del_model_RelationMap.hpp:
+
+../../src/del/model/del_model_Relation.hpp:
+
+../../src/del/model/del_model_Variables.hpp:
+
+../../src/del/parser/del_parser.hpp:
+
+../../src/del/parser/del_parser_Answer.hpp:
+
+../../src/del/parser/del_parser_Formula.hpp:
+
+../../src/del/parser/del_parser_Question.hpp:
+
+../../src/del/parser/del_parser_Source.hpp:
+
+../../src/del/parser/del_parser_Term.hpp:
+
+../../src/del/parser/del_parser_Theory.hpp:
+
+../../src/del/source/del_source.hpp:
+
+../../src/del/source/formula/del_source_formula.hpp:
+
+../../src/del/source/formula/del_source_formula_Formula.hpp:
+
+../../src/del/source/formula/del_source_formula_Identity.hpp:
+
+../../src/del/source/formula/del_source_formula_Subset.hpp:
+
+../../src/del/source/term/del_source_term.hpp:
+
+../../src/del/source/term/del_source_term_Exists.hpp:
+
+../../src/del/source/term/del_source_term_Term.hpp:
+
+../../src/del/source/term/del_source_term_Intersect.hpp:
+
+../../src/del/source/term/del_source_term_Top.hpp:
+
+../../src/del/source/term/del_source_term_Variable.hpp:
+
+../../src/del/source/del_source_Answer.hpp:
+
+../../src/del/source/del_source_Comments.hpp:
+
+../../src/del/source/del_source_Question.hpp:
+
+../../src/del/source/del_source_Source.hpp:
+
+../../src/del/source/del_source_Theory.hpp:
+
+../../src/del/del_Del.hpp:
+
+../../src/del/del.cpp:
+
+../../src/del/auxiliary/del_auxiliary.cpp:
+
+../../src/del/auxiliary/del_auxiliary_Config.cpp:
+
+../../src/del/auxiliary/del_auxiliary_Error.cpp:
+
+../../src/del/auxiliary/del_auxiliary_Log.cpp:
+
+../../src/del/auxiliary/del_auxiliary_Output.cpp:
+
+../../src/del/auxiliary/del_auxiliary_Table.cpp:
+
+../../src/del/auxiliary/del_auxiliary_Timers.cpp:
+
+../../src/del/auxiliary/del_auxiliary_Volume.cpp:
+
+../../src/del/interface/del_interface.cpp:
+
+../../src/del/interface/del_interface_Object.cpp:
+
+../../src/del/interface/del_interface_Writable.cpp:
+
+../../src/del/lexer/del_lexer.cpp:
+
+../../src/del/lexer/del_lexer_CommentScaner.cpp:
+
+../../src/del/lexer/del_lexer_Lexer.cpp:
+
+../../src/del/lexer/del_lexer_Scaner.cpp:
+
+../../src/del/lexer/del_lexer_WhitespaceScaner.cpp:
+
+../../src/del/math/del_math.cpp:
+
+../../src/del/math/del_math_Math.cpp:
+
+../../src/del/math/del_math_Theories.cpp:
+
+auxiliary/del_auxiliary.hpp:
+
+math/del_math.hpp:
+
+../../src/del/model/del_model.cpp:
+
+../../src/del/model/del_model_ConceptMap.cpp:
+
+../../src/del/model/del_model_Model.cpp:
+
+../../src/del/model/del_model_RelationMap.cpp:
+
+../../src/del/model/del_model_Relation.cpp:
+
+../../src/del/model/del_model_Variables.cpp:
+
+../../src/del/parser/del_parser.cpp:
+
+../../src/del/parser/del_parser_Answer.cpp:
+
+../../src/del/parser/del_parser_Formula.cpp:
+
+../../src/del/parser/del_parser_Question.cpp:
+
+../../src/del/parser/del_parser_Source.cpp:
+
+../../src/del/parser/del_parser_Term.cpp:
+
+../../src/del/parser/del_parser_Theory.cpp:
+
+../../src/del/source/del_source.cpp:
+
+../../src/del/source/formula/del_source_formula.cpp:
+
+../../src/del/source/formula/del_source_formula_Formula.cpp:
+
+../../src/del/source/formula/del_source_formula_Identity.cpp:
+
+../../src/del/source/formula/del_source_formula_Subset.cpp:
+
+../../src/del/source/term/del_source_term.cpp:
+
+../../src/del/source/term/del_source_term_Exists.cpp:
+
+../../src/del/source/term/del_source_term_Intersect.cpp:
+
+../../src/del/source/term/del_source_term_Term.cpp:
+
+../../src/del/source/term/del_source_term_Top.cpp:
+
+../../src/del/source/term/del_source_term_Variable.cpp:
+
+../../src/del/source/del_source_Answer.cpp:
+
+../../src/del/source/del_source_Comments.cpp:
+
+../../src/del/source/del_source_Question.cpp:
+
+../../src/del/source/del_source_Source.cpp:
+
+../../src/del/source/del_source_Theory.cpp:
+
+../../src/del/types/del_types.cpp:
+
+../../src/nsgl/nsgl.cpp:
+
+../../src/del/del_Del.cpp:

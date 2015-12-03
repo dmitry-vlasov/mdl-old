@@ -1,0 +1,37 @@
+/*****************************************************************************/
+/* Project name:    mdl - mathematics development language                   */
+/* File name:       mdl_expression_node.hpp                                  */
+/* Description:     declarations for expression nodes module                 */
+/* Copyright:       (c) 2006-2009 Dmitri Vlasov                              */
+/* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
+/* Email:           vlasov at academ.org                                     */
+/* URL:             http://mathdevlanguage.sourceforge.net                   */
+/* Modified by:                                                              */
+/* License:         GNU General Public License Version 3                     */
+/*****************************************************************************/
+
+#ifndef MDL_EXPRESSION_NODE_DPP_
+#define MDL_EXPRESSION_NODE_DPP_
+
+#include "mdl/expression/node/container/mdl_expression_node_container.dpp"
+#include "mdl/expression/node/prototype/mdl_expression_node_prototype.dpp"
+#include "mdl/expression/node/terms/mdl_expression_node_terms.dpp"
+#include "mdl/expression/node/valued/mdl_expression_node_valued.dpp"
+
+namespace mdl {
+namespace expression {
+namespace node {
+
+	template<class>
+	class Array;
+	template<class>
+	class Forest;
+	template<class>
+	class List;
+	template<class>
+	class Tree;
+}
+}
+}
+
+#endif /*MDL_EXPRESSION_NODE_DPP_*/

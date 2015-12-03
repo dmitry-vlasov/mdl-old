@@ -1,0 +1,54 @@
+/*****************************************************************************/
+/* Project name:    mdl - mathematics development language                   */
+/* File Name:       mdl_study.cpp                                            */
+/* Description:     global studying module                                   */
+/* Copyright:       (c) 2006-2009 Dmitri Vlasov                              */
+/* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
+/* Email:           vlasov at academ.org                                     */
+/* URL:             http://mathdevlanguage.sourceforge.net                   */
+/* Modified by:                                                              */
+/* License:         GNU General Public License Version 3                     */
+/*****************************************************************************/
+
+#ifndef MDL_STUDY_DPP_
+#define MDL_STUDY_DPP_
+
+#include "mdl/study/benchmark/mdl_study_benchmark.dpp"
+#include "mdl/study/lexp/mdl_study_lexp.dpp"
+#include "mdl/study/teach/mdl_study_teach.dpp"
+#include "mdl/study/tune/mdl_study_tune.dpp"
+
+namespace mdl {
+namespace study {
+
+	const value :: Real TIME_RESERVE_FACTOR = 1; //1.2;
+
+	enum {
+		SAMPLE_SIZE_MIN  = 3,
+		SAMPLE_SIZE_MAX  = 128
+	};
+	// studying steps
+	enum Step {
+		LEAF_STEP     = 0,
+		OPTIMIZE_STEP = 1,
+		STEPS_NUM     = 2
+	};
+	// optimization phases
+	enum Phase {
+		SAMPLE_BUILD_PHASE = 0,
+		PRECISION_PHASE    = 1,
+		GROUPING_PHASE     = 2,
+		PHASES_NUM         = 3
+	};
+
+	typedef
+		set :: value :: Integer
+		Set;
+
+	class Experience;
+	class Fitness;
+	class Sample;
+}
+}
+
+#endif /*MDL_STUDY_DPP_*/

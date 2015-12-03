@@ -1,0 +1,84 @@
+/*****************************************************************************/
+/* Project name:    mdl - mathematics development language                   */
+/* File Name:       mdl_interface_object.dpp                                 */
+/* Description:     interface declarations for module for object interfaces  */
+/* Copyright:       (c) 2006-2009 Dmitri Vlasov                              */
+/* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
+/* Email:           vlasov at academ.org                                     */
+/* URL:             http://mathdevlanguage.sourceforge.net                   */
+/* Modified by:                                                              */
+/* License:         GNU General Public License Version 3                     */
+/*****************************************************************************/
+
+#ifndef MDL_INTERFACE_OBJECT_DPP_
+#define MDL_INTERFACE_OBJECT_DPP_
+
+namespace mdl {
+namespace interface {
+namespace object {
+
+	class Buildable;
+	template<class>
+	class Cloneable;
+	class Expressive;
+	class Identifiable;
+	class Object;
+	class Provable;
+	class Typing;
+	class Verifiable;
+	class Writable;
+}
+}
+
+namespace object {
+
+	using interface :: object :: Buildable;
+	using interface :: object :: Cloneable;
+	using interface :: object :: Expressive;
+	using interface :: object :: Identifiable;
+	using interface :: object :: Object;
+	using interface :: object :: Provable;
+	using interface :: object :: Typing;
+	using interface :: object :: Verifiable;
+	using interface :: object :: Writable;
+}
+
+namespace vector {
+namespace object {
+
+	typedef
+		Vector<mdl :: object :: Buildable, storage :: ByPointer, allocator :: Heap>
+		Buildable;
+	typedef
+		Vector<mdl :: object :: Identifiable, storage :: ByPointer, allocator :: Heap>
+		Identifiable;
+	typedef
+		Vector<mdl :: object :: Verifiable, storage :: ByPointer, allocator :: Heap>
+		Verifiable;
+	typedef
+		Vector<mdl :: object :: Writable, storage :: ByPointer, allocator :: Heap>
+		Writable;
+}
+}
+
+namespace list {
+namespace object {
+
+	typedef
+		List<mdl :: object :: Buildable, storage :: ByPointer, allocator :: Heap>
+		Buildable;
+	typedef
+		List<mdl :: object :: Identifiable, storage :: ByPointer, allocator :: Heap>
+		Identifiable;
+	typedef
+		List<mdl :: object :: Verifiable, storage :: ByPointer, allocator :: Heap>
+		Verifiable;
+	typedef
+		List<mdl :: object :: Writable, storage :: ByPointer, allocator :: Heap>
+		Writable;
+}
+}
+
+}
+
+#endif /*MDL_INTERFACE_OBJECT_DPP_*/

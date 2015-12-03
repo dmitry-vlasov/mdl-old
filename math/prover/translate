@@ -1,0 +1,50 @@
+#!/bin/bash
+
+if [ -z $1 ] 
+then 
+    echo;
+    echo "Translates src.mm to src.rus for testing";
+    echo "----------------------------------------";
+    echo "1 argument - the name <dir> of the directory to be used";
+    echo "2 argument - the build directory from the top of the project";
+    echo;
+    echo "the directory <dir> must contain:";
+    echo "	file src.mm - the initial metamath source file";
+    echo;
+    exit;
+fi;
+
+dir=$1;
+source=$dir/src.mm;
+target=$dir/src.rus;
+build_dir=$2'/';
+
+if [ -f ./$target ]
+then
+    exit;
+fi;
+
+show_phase="yes";
+#show_phase="no";
+
+if [ $show_phase = "yes" ] 
+then
+    echo "=======================================";
+    echo "translation: ${source} --> ${target}";
+    echo "=======================================";
+    echo;
+fi;
+
+../../${build_dir}src/mm/mm \
+	--verbose-min \
+	--translate \
+	--overwrite \
+	-o $target \
+	\
+	$source;
+
+if [ $? != 0 ] 
+then 
+    echo "TRANSLATION ${source} --> ${target} FAILED."; 
+    exit 1;
+fi;

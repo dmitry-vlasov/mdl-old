@@ -1,0 +1,31 @@
+/*****************************************************************************/
+/* Project name:    mm - decompiler from metamath to mdl                     */
+/* File Name:       mm_ast_source_hypothesis.dpp                             */
+/* Description:     interface declarations for metamath hypothesis module    */
+/* Copyright:       (c) 2006-2009 Dmitri Vlasov                              */
+/* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
+/* Email:           vlasov at academ.org                                     */
+/* URL:             http://mathdevlanguage.sourceforge.net                   */
+/* Modified by:                                                              */
+/* License:         GNU General Public License Version 3                     */
+/*****************************************************************************/
+
+#ifndef MM_AST_SOURCE_HYPOTHESIS_DPP_
+#define MM_AST_SOURCE_HYPOTHESIS_DPP_
+
+namespace mm {
+namespace ast {
+namespace source {
+namespace hypothesis {
+
+	class Essential;
+	class Floating;
+}
+
+	using hypothesis :: Essential;
+	using hypothesis :: Floating;
+}
+}
+}
+
+#endif /* MM_AST_SOURCE_HYPOTHESIS_DPP_ */

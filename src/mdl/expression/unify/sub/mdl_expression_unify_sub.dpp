@@ -1,0 +1,33 @@
+/*****************************************************************************/
+/* Project name:    mdl - mathematics development language                   */
+/* File name:       mdl_expression_unify_sub.dpp                             */
+/* Description:     declarations for substitution unification gear module    */
+/* Copyright:       (c) 2006-2009 Dmitri Vlasov                              */
+/* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
+/* Email:           vlasov at academ.org                                     */
+/* URL:             http://mathdevlanguage.sourceforge.net                   */
+/* Modified by:                                                              */
+/* License:         GNU General Public License Version 3                     */
+/*****************************************************************************/
+
+#ifndef MDL_EXPRESSION_UNIFY_SUB_DPP_
+#define MDL_EXPRESSION_UNIFY_SUB_DPP_
+
+#include "mdl/expression/unify/sub/prod/mdl_expression_unify_sub_prod.dpp"
+#include "mdl/expression/unify/sub/tree/mdl_expression_unify_sub_tree.dpp"
+
+namespace mdl {
+namespace expression {
+namespace unify {
+namespace sub {
+
+	template<class, class>
+	class Finaly;
+	template<class, class>
+	class Multyindex;
+}
+}
+}
+}
+
+#endif /*MDL_EXPRESSION_UNIFY_SUB_DPP_*/

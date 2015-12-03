@@ -1,0 +1,62 @@
+/*****************************************************************************/
+/* Project name:    del - mathematics development language                   */
+/* File Name:       del_interface_model.dpp                                  */
+/* Description:     declaration interfaces for model abstract interfaces     */
+/* Copyright:       (c) 2006-2009 Dmitri Vlasov                              */
+/* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
+/* Email:           vlasov at academ.org                                     */
+/* URL:             http://mathdevlanguage.sourceforge.net                   */
+/* Modified by:                                                              */
+/* License:         GNU General Public License Version 3                     */
+/*****************************************************************************/
+
+#ifndef DEL_INTERFACE_MODEL_DPP_
+#define DEL_INTERFACE_MODEL_DPP_
+
+#include "del/types/del_types.hpp"
+
+#include "del/interface/model/queue/del_interface_model_queue.dpp"
+
+namespace del {
+namespace interface {
+namespace model {
+
+	class Model;
+	class Negative;
+	class Node;
+	class Positive;
+	class Predicate;
+	class PredicateMap;
+	class Relation;
+	class RelationMap;
+}
+}
+
+namespace model {
+
+	using interface :: model :: Model;
+	using interface :: model :: Negative;
+	using interface :: model :: Node;
+	using interface :: model :: Positive;
+	using interface :: model :: Predicate;
+	using interface :: model :: PredicateMap;
+	using interface :: model :: Relation;
+	using interface :: model :: RelationMap;
+
+namespace vector {
+
+	typedef
+		del :: vector :: Vector<const model :: Node*, storage :: ByValue, allocator :: Heap>
+		Node;
+}
+namespace set {
+
+	typedef
+		del :: set :: Set<const model :: Node*, storage :: ByValue, allocator :: Heap>
+		Node;
+}
+}
+	using model :: Model;
+}
+
+#endif /*DEL_INTERFACE_MODEL_DPP_*/

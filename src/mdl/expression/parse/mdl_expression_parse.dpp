@@ -1,0 +1,32 @@
+/*****************************************************************************/
+/* Project name:    mdl - mathematics development language                   */
+/* File name:       mdl_expression_parse.hpp                                 */
+/* Description:     declarations and interface for expression parser module  */
+/* Copyright:       (c) 2006-2009 Dmitri Vlasov                              */
+/* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
+/* Email:           vlasov at academ.org                                     */
+/* URL:             http://mathdevlanguage.sourceforge.net                   */
+/* Modified by:                                                              */
+/* License:         GNU General Public License Version 3                     */
+/*****************************************************************************/
+
+#ifndef MDL_EXPRESSION_PARSE_DPP_
+#define MDL_EXPRESSION_PARSE_DPP_
+
+namespace mdl {
+namespace expression {
+namespace parse {
+
+	class Parser;
+	class Result;
+	template<class>
+	class Term;
+	class Tree;
+	class Unit;
+
+}
+	using parse :: Parser;
+}
+}
+
+#endif /*MDL_EXPRESSION_PARSE_DPP_*/

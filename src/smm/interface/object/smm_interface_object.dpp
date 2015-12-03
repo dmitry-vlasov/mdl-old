@@ -1,0 +1,62 @@
+/*****************************************************************************/
+/* Project name:    smm - verifier for the Simplified MetaMath language      */
+/* File name:       smm_interface_object.dpp                                 */
+/* Description:     interface declarations for object interfaces module      */
+/* Copyright:       (c) 2006-2010 Dmitri Vlasov                              */
+/* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
+/* Email:           vlasov at academ.org                                     */
+/* URL:             http://mathdevlanguage.sourceforge.net                   */
+/* Modified by:                                                              */
+/* License:         GNU General Public License Version 3                     */
+/*****************************************************************************/
+
+#ifndef SMM_INTERFACE_OBJECT_DPP_
+#define SMM_INTERFACE_OBJECT_DPP_
+
+#include "smm/types/smm_types.hpp"
+
+namespace smm {
+namespace interface {
+namespace object {
+
+	class Object;
+	class Verifiable;
+}
+}
+
+namespace object {
+
+	using interface :: object :: Object;
+	using interface :: object :: Verifiable;
+}
+
+namespace  list {
+namespace object {
+
+	typedef
+		List
+		<
+			const smm :: object :: Verifiable,
+			storage :: ByPointer,
+			allocator :: Heap
+		>
+		Verifiable;
+}
+}
+
+namespace vector {
+namespace object {
+
+	typedef
+		Vector
+		<
+			const smm :: object :: Verifiable,
+			storage :: ByPointer,
+			allocator :: Heap
+		>
+		Verifiable;
+}
+}
+}
+
+#endif /* SMM_INTERFACE_OBJECT_DPP_ */

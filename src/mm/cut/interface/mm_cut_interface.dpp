@@ -1,0 +1,26 @@
+/*****************************************************************************/
+/* Project name:    mm - decompiler from metamath to mdl                     */
+/* File name:       mm_cut_interface.dpp                                     */
+/* Description:     abstract interface for mm cutter                         */
+/* Copyright:       (c) 2006-2009 Dmitri Vlasov                              */
+/* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
+/* Email:           vlasov at academ.org                                     */
+/* URL:             http://mathdevlanguage.sourceforge.net                   */
+/* Modified by:                                                              */
+/* License:         GNU General Public License Version 3                     */
+/*****************************************************************************/
+
+#ifndef MM_CUT_INTERFACE_DPP_
+#define MM_CUT_INTERFACE_DPP_
+
+namespace mm {
+namespace cut {
+namespace interface {
+
+	class Includable;
+}
+	using interface :: Includable;
+}
+}
+
+#endif /* MM_CUT_INTERFACE_DPP_ */

@@ -1,0 +1,97 @@
+/*****************************************************************************/
+/* Project name:    mdl - mathematics development language                   */
+/* File Name:       mdl_interface_evaluation.dpp                             */
+/* Description:     module for abstract interface for fitness evaluations    */
+/* Copyright:       (c) 2006-2009 Dmitri Vlasov                              */
+/* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
+/* Email:           vlasov at academ.org                                     */
+/* URL:             http://mathdevlanguage.sourceforge.net                   */
+/* Modified by:                                                              */
+/* License:         GNU General Public License Version 3                     */
+/*****************************************************************************/
+
+#ifndef MDL_INTERFACE_EVALUATION_DPP_
+#define MDL_INTERFACE_EVALUATION_DPP_
+
+namespace mdl {
+namespace interface {
+namespace evaluation {
+
+	class Case;
+	class Function;
+	class Term;
+}
+}
+
+namespace evaluation {
+
+	using interface :: evaluation :: Case;
+	using interface :: evaluation :: Term;
+	using interface :: evaluation :: Function;
+
+namespace vector {
+
+	typedef
+		mdl :: vector :: Vector
+		<
+			mdl :: evaluation :: Case,
+			storage :: ByPointer,
+			allocator :: Heap
+		>
+		Case;
+
+	typedef
+		mdl :: vector :: Vector
+		<
+			mdl :: evaluation :: Function,
+			storage :: ByPointer,
+			allocator :: Heap
+		>
+		Function;
+
+	typedef
+		mdl :: vector :: Vector
+		<
+			mdl :: evaluation :: Term,
+			storage :: ByPointer,
+			allocator :: Heap
+		>
+		Term;
+}
+
+namespace parser {
+namespace vector {
+
+	typedef
+		mdl :: vector :: Vector
+		<
+			mdl :: evaluation :: Case*,
+			storage :: ByValue,
+			allocator :: Heap
+		>
+		Case;
+
+	typedef
+		mdl :: vector :: Vector
+		<
+			mdl :: evaluation :: Function*,
+			storage :: ByValue,
+			allocator :: Heap
+		>
+		Function;
+
+	typedef
+		mdl :: vector :: Vector
+		<
+			mdl :: evaluation :: Term*,
+			storage :: ByValue,
+			allocator :: Heap
+		>
+		Term;
+}
+}
+}
+
+}
+
+#endif /*MDL_INTERFACE_EVALUATION_DPP_*/

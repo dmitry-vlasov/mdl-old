@@ -1,0 +1,44 @@
+/*****************************************************************************/
+/* Project name:    nstd - non-standard library                              */
+/* File name:       nstd_type_undefined.dpp                                  */
+/* Description:     declarations for undefined values module                 */
+/* Copyright:       (c) 2006-2009 Dmitri Vlasov                              */
+/* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
+/* Email:           vlasov at academ.org                                     */
+/* URL:             http://mathdevlanguage.sourceforge.net                   */
+/* Modified by:                                                              */
+/* License:         GNU General Public License Version 3                     */
+/*****************************************************************************/
+
+#ifndef NSTD_TYPE_UNDEFINED_DPP_
+#define NSTD_TYPE_UNDEFINED_DPP_
+
+namespace nstd {
+namespace type {
+namespace undefined {
+
+	template<class>
+	class Bool;
+	template<class>
+	class Char;
+	template<class>
+	class Defined;
+	template<class>
+	class Empty;
+	template<class, bool>
+	class Floating;
+	template<class, bool>
+	class Integer;
+	template<class, bool>
+	class Object;
+	template<class, bool>
+	class Pointer;
+	template<class>
+	class Type;
+	template<class>
+	class Void;
+}
+}
+}
+
+#endif /*NSTD_TYPE_UNDEFINED_DPP_*/

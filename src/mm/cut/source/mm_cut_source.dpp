@@ -1,0 +1,32 @@
+/*****************************************************************************/
+/* Project name:    mm - decompiler from metamath to mdl                     */
+/* File Name:       mm_cut_source.dpp                                        */
+/* Description:     mm cutting block source module                           */
+/* Copyright:       (c) 2006-2009 Dmitri Vlasov                              */
+/* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
+/* Email:           vlasov at academ.org                                     */
+/* URL:             http://mathdevlanguage.sourceforge.net                   */
+/* Modified by:                                                              */
+/* License:         GNU General Public License Version 3                     */
+/*****************************************************************************/
+
+#ifndef MM_CUT_SOURCE_DPP_
+#define MM_CUT_SOURCE_DPP_
+
+#include "mm/types/mm_types.hpp"
+
+namespace mm {
+namespace cut {
+namespace source {
+
+	class Chapter;
+	class Content;
+	class Header;
+	class Section;
+	class Source;
+}
+	using source :: Source;
+}
+}
+
+#endif /*MM_CUT_SOURCE_DPP_*/

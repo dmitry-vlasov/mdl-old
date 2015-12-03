@@ -1,0 +1,36 @@
+#!/bin/sh
+
+# del solver test
+# 1) first argument - the name of the source file to be 
+#    solved (without *.del extension)
+# 2) second argument - the build directory from the top of
+#    the project. By default, it's empty.
+
+if [ -z $1 ] 
+then echo "NO INPUT FILE."; exit
+fi;
+
+file=$1
+
+if [ -z $2 ] 
+then dir='';
+else dir=$2'/';
+fi;
+
+echo "============================================";
+echo "solving: ${file}.del --> ${file}_out.del";
+echo "============================================";
+echo;
+../${dir}src/del/del \
+	-s -v -w \
+	--mem-all --info-all \
+	-o ${file}_out.del \
+	\
+	${file}.del;
+
+if [ $? != 0 ] 
+then echo "TEST FAILED."; exit
+else echo "\n\nfile successfully decomposed :)"; 
+fi;
+
+

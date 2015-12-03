@@ -1,0 +1,45 @@
+/*****************************************************************************/
+/* Project name:    smm - verifier for the Simplified MetaMath language      */
+/* File name:       smm_interface_source.dpp                                 */
+/* Description:     interface declarations for smm interfaces module         */
+/* Copyright:       (c) 2006-2010 Dmitri Vlasov                              */
+/* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
+/* Email:           vlasov at academ.org                                     */
+/* URL:             http://mathdevlanguage.sourceforge.net                   */
+/* Modified by:                                                              */
+/* License:         GNU General Public License Version 3                     */
+/*****************************************************************************/
+
+#ifndef SMM_INTERFACE_SOURCE_DPP_
+#define SMM_INTERFACE_SOURCE_DPP_
+
+namespace smm {
+namespace interface {
+namespace source {
+
+	class Assertion;
+	class Constants;
+	class Inclusion;
+	class Proof;
+	class Source;
+}
+}
+	using interface :: source :: Assertion;
+	using interface :: source :: Constants;
+	using interface :: source :: Inclusion;
+	using interface :: source :: Proof;
+	using interface :: source :: Source;
+
+namespace  vector {
+	typedef
+		Vector
+		<
+			const smm :: Assertion*,
+			storage :: ByValue,
+			allocator :: Heap
+		>
+		Assertion;
+}
+}
+
+#endif /*SMM_INTERFACE_SOURCE_DPP_*/

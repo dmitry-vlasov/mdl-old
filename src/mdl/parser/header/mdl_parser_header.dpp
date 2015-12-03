@@ -1,0 +1,29 @@
+/*****************************************************************************/
+/* Project name:    mdl - mathematics development language                   */
+/* File Name:       mdl_parser_header.dpp                                    */
+/* Description:     declarations for header parser module                    */
+/* Copyright:       (c) 2006-2009 Dmitri Vlasov                              */
+/* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
+/* Email:           vlasov at academ.org                                     */
+/* URL:             http://mathdevlanguage.sourceforge.net                   */
+/* Modified by:                                                              */
+/* License:         GNU General Public License Version 3                     */
+/*****************************************************************************/
+
+#ifndef MDL_PARSER_HEADER_DPP_
+#define MDL_PARSER_HEADER_DPP_
+
+namespace mdl {
+namespace parser {
+namespace header {
+
+	class Disjointed;
+	class Disjointeds;
+	class Line;
+	class Variable;
+	class Variables;
+}
+}
+}
+
+#endif /*MDL_PARSER_HEADER_DPP_*/

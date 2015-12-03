@@ -1,0 +1,55 @@
+/*****************************************************************************/
+/* Project name:    del - mathematics development language                   */
+/* File Name:       del_owl_man_lexer.dpp                                    */
+/* Description:     manchester OWL lexer module                              */
+/* Copyright:       (c) 2006-2009 Dmitri Vlasov                              */
+/* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
+/* Email:           vlasov at academ.org                                     */
+/* URL:             http://mathdevlanguage.sourceforge.net                   */
+/* Modified by:                                                              */
+/* License:         GNU General Public License Version 3                     */
+/*****************************************************************************/
+
+#ifndef DEL_OWL_MAN_LEXER_DPP__
+#define DEL_OWL_MAN_LEXER_DPP__
+
+namespace del {
+namespace owl {
+namespace man {
+namespace lexer {
+
+	typedef
+		nstd :: lexer :: Buffer<>
+		Buffer;
+	typedef
+		nstd :: lexer :: Source<>
+		Source;
+	typedef
+		nstd :: lexer :: Location<>
+		Location;
+
+	using nstd :: lexer :: Comments;
+	using nstd :: lexer :: ExpressionScaner;
+	using nstd :: lexer :: Char;
+	using nstd :: lexer :: Indent;
+	using nstd :: lexer :: Position;
+
+	using namespace nstd :: chars;
+
+	class CommentScaner;
+	class Lexer;
+	class LineScaner;
+	class NameScaner;
+	class Scaner;
+	class StringScaner;
+	class Token;
+	class UpToEmptyLineScaner;
+	class WhitespaceScaner;
+}
+	using lexer :: Lexer;
+	using lexer :: Token;
+}
+}
+}
+
+#endif /*DEL_OWL_MAN_LEXER_DPP__*/

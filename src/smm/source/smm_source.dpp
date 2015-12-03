@@ -1,0 +1,30 @@
+/*****************************************************************************/
+/* Project name:    smm - verifier for the Simplified MetaMath language      */
+/* File Name:       smm_source.dpp                                           */
+/* Description:     declarations for metamath AST tree module                */
+/* Copyright:       (c) 2006-2009 Dmitri Vlasov                              */
+/* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
+/* Email:           vlasov at academ.org                                     */
+/* URL:             http://mathdevlanguage.sourceforge.net                   */
+/* Modified by:                                                              */
+/* License:         GNU General Public License Version 3                     */
+/*****************************************************************************/
+
+#ifndef SMM_SOURCE_DPP_
+#define SMM_SOURCE_DPP_
+
+#include "smm/types/smm_types.hpp"
+
+namespace smm {
+namespace source {
+
+	class Assertion;
+	class Constants;
+	class Inclusion;
+	class Proof;
+	class Reference;
+	class Source;
+}
+}
+
+#endif /*SMM_SOURCE_DPP_*/

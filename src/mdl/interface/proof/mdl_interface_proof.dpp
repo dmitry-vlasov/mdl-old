@@ -1,0 +1,122 @@
+/*****************************************************************************/
+/* Project name:    mdl - mathematics development language                   */
+/* File Name:       mdl_interface_proof.dpp                                  */
+/* Description:     declaration interface for module for proof interfaces    */
+/* Copyright:       (c) 2006-2009 Dmitri Vlasov                              */
+/* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
+/* Email:           vlasov at academ.org                                     */
+/* URL:             http://mathdevlanguage.sourceforge.net                   */
+/* Modified by:                                                              */
+/* License:         GNU General Public License Version 3                     */
+/*****************************************************************************/
+
+#ifndef MDL_INTERFACE_PROOF_DPP_
+#define MDL_INTERFACE_PROOF_DPP_
+
+namespace mdl {
+namespace interface {
+namespace proof {
+
+	class Assertion;
+	class Claim;
+	class Line;
+	class Link;
+	class Node;
+	class Notation;
+	class Provable;
+	class Qed;
+	class Question;
+	class Reference;
+	class References;
+	class Scope;
+	class Scoping;
+	class Step;
+	class Term;
+	class Variable;
+}
+}
+
+namespace proof {
+
+	using interface :: proof :: Assertion;
+	using interface :: proof :: Claim;
+	using interface :: proof :: Line;
+	using interface :: proof :: Link;
+	using interface :: proof :: Node;
+	using interface :: proof :: Notation;
+	using interface :: proof :: Provable;
+	using interface :: proof :: Qed;
+	using interface :: proof :: Question;
+	using interface :: proof :: Reference;
+	using interface :: proof :: References;
+	using interface :: proof :: Scope;
+	using interface :: proof :: Scoping;
+	using interface :: proof :: Step;
+	using interface :: proof :: Term;
+	using interface :: proof :: Variable;
+}
+
+namespace vector {
+namespace proof {
+
+	typedef
+		Vector
+		<
+			mdl :: proof :: Line,
+			storage :: ByPointer,
+			allocator :: Heap
+		>
+		Line;
+
+	typedef
+		Vector
+		<
+			mdl :: proof :: Qed*,
+			storage :: ByValue,
+			allocator :: Heap
+		>
+		Qed;
+
+	typedef
+		Vector
+		<
+			mdl :: proof :: Step*,
+			storage :: ByValue,
+			allocator :: Heap
+		>
+		Step;
+
+	typedef
+		Vector
+		<
+			mdl :: proof :: Reference,
+			storage :: ByPointer,
+			allocator :: Heap
+		>
+		Reference;
+}
+
+namespace parser {
+
+	typedef
+		Vector
+		<
+			mdl :: proof :: Step*,
+			storage :: ByValue,
+			allocator :: Heap
+		>
+		Step;
+
+	typedef
+		Vector
+		<
+			mdl :: proof :: Reference*,
+			storage :: ByValue,
+			allocator :: Heap
+		>
+		Reference;
+}
+}
+}
+
+#endif /*MDL_INTERFACE_PROOF_DPP_*/

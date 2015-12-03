@@ -1,0 +1,70 @@
+/*****************************************************************************/
+/* Project name:    mdl - mathematics development language                   */
+/* File name:       mdl_expression.hpp                                       */
+/* Description:     interface declarations for expression module             */
+/* Copyright:       (c) 2006-2009 Dmitri Vlasov                              */
+/* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
+/* Email:           vlasov at academ.org                                     */
+/* URL:             http://mathdevlanguage.sourceforge.net                   */
+/* Modified by:                                                              */
+/* License:         GNU General Public License Version 3                     */
+/*****************************************************************************/
+
+#ifndef MDL_EXPRESSION_DPP_
+#define MDL_EXPRESSION_DPP_
+
+#include "mdl/expression/build/mdl_expression_build.dpp"
+#include "mdl/expression/direction/mdl_expression_direction.dpp"
+#include "mdl/expression/iterator/mdl_expression_iterator.dpp"
+#include "mdl/expression/node/mdl_expression_node.dpp"
+#include "mdl/expression/parse/mdl_expression_parse.dpp"
+#include "mdl/expression/simify/mdl_expression_simify.dpp"
+#include "mdl/expression/unify/mdl_expression_unify.dpp"
+
+namespace mdl {
+namespace expression {
+
+	template<class>
+	class Array;
+	template<class, class, class, class>
+	class Branching;
+	template
+	<
+		class, template<class> class,
+		template<class, template<class> class, class> class, class
+	>
+	class Bush;
+	template
+	<
+		class, template<class> class,
+		template<class, template<class> class, class> class, class
+	>
+	class Forest;
+	template<template<class> class, class>
+	class Linear;
+	template<class>
+	class List;
+	class Mode;
+	template<class>
+	class Substitution;
+	template<class>
+	class Substiunit;
+	class Symbol;
+	template<class>
+	class Term;
+	template
+	<
+		class, template<class> class,
+		template<class, template<class> class, class> class, class
+	>
+	class Tree;
+
+namespace type {
+	template<class>
+	class Map;
+}
+}
+	using expression :: Symbol;
+}
+
+#endif /*MDL_EXPRESSION_HPP_*/

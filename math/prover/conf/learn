@@ -1,0 +1,10 @@
+--overwrite
+
+#--mem-all 
+#--info-all
+
+--factor-pos-neg 1 
+
+--verbose-max
+
+--config conf/tuned

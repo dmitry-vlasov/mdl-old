@@ -1,0 +1,33 @@
+/*****************************************************************************/
+/* Project name:    nstd - non-standard library                              */
+/* File name:       nstd_config.dpp                                          */
+/* Description:     interface declarations for config module                 */
+/* Copyright:       (c) 2006-2009 Dmitri Vlasov                              */
+/* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
+/* Email:           vlasov at academ.org                                     */
+/* URL:             http://mathdevlanguage.sourceforge.net                   */
+/* Modified by:                                                              */
+/* License:         GNU General Public License Version 3                     */
+/*****************************************************************************/
+
+#ifndef NSTD_CONFIG_DPP_
+#define NSTD_CONFIG_DPP_
+
+#include "nstd/config/option/nstd_config_option.dpp"
+
+namespace nstd {
+namespace config {
+
+	class Base;
+	template<class>
+	class Config;
+	class General;
+	class List;
+	class MemoryInfo;
+	class Paths;
+	class ProgramInfo;
+}
+	using config :: Config;
+}
+
+#endif /* NSTD_CONFIG_DPP_ */

@@ -1,0 +1,21 @@
+theory T_2 = {
+	A ⊑ ∃r.((⊤⊓⊤)⊓B⊓∃s.C),
+	((B⊓⊤)⊓⊤) ⊑ ∃t.(D⊓⊤)
+}
+
+does T_2 ⊨ A ⊑ ∃r.∃t.⊤ ?
+theory T = {
+	A ⊑ ∃r.(B⊓∃s.C⊓⊤),
+	B ⊑ ∃t.D
+}
+
+does T ⊨ A ⊑ ∃r.∃t.⊤ ?
+does T ⊨ A ⊑ ∃s.∃t.⊤ ?
+theory T_1 = {
+	A ⊑ ∃r.(B⊓∃s.C⊓D⊓∃r.(A⊓B⊓C⊓D)),
+	B ⊑ ∃t.D
+}
+
+does T_1 ⊨ A ⊑ ∃r.∃t.⊤ ?
+does T_1 ⊨ A ⊑ ∃s.∃t.⊤ ?
+

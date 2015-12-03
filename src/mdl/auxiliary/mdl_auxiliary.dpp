@@ -1,0 +1,49 @@
+/*****************************************************************************/
+/* Project name:    mdl - mathematics development language                   */
+/* File name:       mdl_auxiliary.dpp                                        */
+/* Description:     declaration auxiliary classes module interface           */
+/* Copyright:       (c) 2006-2009 Dmitri Vlasov                              */
+/* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
+/* Email:           vlasov at academ.org                                     */
+/* URL:             http://mathdevlanguage.sourceforge.net                   */
+/* Modified by:                                                              */
+/* License:         GNU General Public License Version 3                     */
+/*****************************************************************************/
+
+#ifndef MDL_AUXILIARY_DPP_
+#define MDL_AUXILIARY_DPP_
+
+#include "mdl/auxiliary/config/mdl_auxiliary_config.dpp"
+#include "mdl/auxiliary/parameter/mdl_auxiliary_parameter.dpp"
+#include "mdl/auxiliary/pool/mdl_auxiliary_pool.dpp"
+#include "mdl/auxiliary/statistics/mdl_auxiliary_statistics.dpp"
+
+namespace mdl {
+namespace auxiliary {
+
+	class Error;
+	class Format;
+	class Log;
+	class Output;
+	template
+	<
+		class, class,
+		template<class, class, class> class
+	>
+	class Pool;
+	class Symbol;
+	class Table;
+	class Timers;
+	class Volume;
+}
+	using auxiliary :: Error;
+	using auxiliary :: Format;
+	using auxiliary :: Log;
+	using auxiliary :: Output;
+	using auxiliary :: Pool;
+	using auxiliary :: Table;
+	using auxiliary :: Timers;
+	using auxiliary :: Volume;
+}
+
+#endif /*MDL_AUXILIARY_DPP_*/

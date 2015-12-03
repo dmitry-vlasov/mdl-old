@@ -1,0 +1,65 @@
+/*****************************************************************************/
+/* Project name:    del - mathematics development language                   */
+/* File Name:       del_owl_man_source.dpp                                   */
+/* Description:     manchester OWL source module                             */
+/* Copyright:       (c) 2006-2009 Dmitri Vlasov                              */
+/* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
+/* Email:           vlasov at academ.org                                     */
+/* URL:             http://mathdevlanguage.sourceforge.net                   */
+/* Modified by:                                                              */
+/* License:         GNU General Public License Version 3                     */
+/*****************************************************************************/
+
+#ifndef DEL_OWL_MAN_SOURCE_DPP_
+#define DEL_OWL_MAN_SOURCE_DPP_
+
+namespace del {
+namespace owl {
+namespace man {
+namespace source {
+
+	class Annotation;
+	class Annotations;
+	class Characteristics;
+	class Class;
+	class Equivalence;
+	class Namespace;
+	class Ontology;
+	class ObjectProperty;
+	class Source;
+	class Subclass;
+
+namespace vector {
+
+typedef
+	del :: vector :: Vector<const source :: Namespace, storage :: ByPointer, allocator :: Heap>
+	Namespace;
+typedef
+	del :: vector :: Vector<const source :: Annotation, storage :: ByPointer, allocator :: Heap>
+	Annotation;
+typedef
+	del :: vector :: Vector<const source :: Annotations, storage :: ByPointer, allocator :: Heap>
+	Annotations;
+typedef
+	del :: vector :: Vector<const source :: Ontology, storage :: ByPointer, allocator :: Heap>
+	Ontology;
+typedef
+	del :: vector :: Vector<const source :: ObjectProperty, storage :: ByPointer, allocator :: Heap>
+	ObjectProperty;
+typedef
+	del :: vector :: Vector<const source :: Class, storage :: ByPointer, allocator :: Heap>
+	Class;
+typedef
+	del :: vector :: Vector<const source :: Subclass, storage :: ByPointer, allocator :: Heap>
+	Subclass;
+typedef
+	del :: vector :: Vector<const source :: Equivalence, storage :: ByPointer, allocator :: Heap>
+	Equivalence;
+}
+
+}
+}
+}
+}
+
+#endif /*DEL_OWL_MAN_SOURCE_DPP_*/

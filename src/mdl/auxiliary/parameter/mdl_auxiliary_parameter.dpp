@@ -1,0 +1,68 @@
+/*****************************************************************************/
+/* Project name:    mdl - mathematics development language                   */
+/* File name:       mdl_auxiliary_parameter.dpp                              */
+/* Description:     declaration of parameters                                */
+/* Copyright:       (c) 2006-2009 Dmitri Vlasov                              */
+/* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
+/* Email:           vlasov at academ.org                                     */
+/* URL:             http://mathdevlanguage.sourceforge.net                   */
+/* Modified by:                                                              */
+/* License:         GNU General Public License Version 3                     */
+/*****************************************************************************/
+
+#include "mdl/types/mdl_types.hpp"
+
+#ifndef MDL_AUXILIARY_PARAMETER_DPP_
+#define MDL_AUXILIARY_PARAMETER_DPP_
+
+namespace mdl {
+namespace auxiliary {
+namespace parameter {
+
+	class Description;
+	class Iterator;
+	class Parameter;
+	class Triple;
+}
+}
+
+namespace parameter {
+	using auxiliary :: parameter :: Description;
+	using auxiliary :: parameter :: Iterator;
+	using auxiliary :: parameter :: Parameter;
+	using auxiliary :: parameter :: Triple;
+
+namespace vector {
+	typedef
+		mdl :: vector :: Vector
+		<
+			parameter :: Description,
+			storage :: ByPointer,
+			allocator :: Heap
+		>
+		Description;
+
+	typedef
+		mdl :: vector :: Vector
+		<
+			parameter :: Triple,
+			storage :: ByPointer,
+			allocator :: Heap
+		>
+		Triple;
+}
+namespace array {
+	typedef
+		mdl :: array :: Array
+		<
+			parameter :: Description,
+			storage :: ByPointer,
+			allocator :: Heap
+		>
+		Description;
+}
+}
+	using parameter :: Parameter;
+}
+
+#endif /*MDL_AUXILIARY_PARAMETER_DPP_*/

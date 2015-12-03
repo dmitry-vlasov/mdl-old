@@ -1,0 +1,143 @@
+
+Mathematics Development Language
+================================
+
+mdl is an acronym for "Mathematics Development Language".
+This is a language for pure mathematics, build upon a metamath (www.metamath.org)
+language as a high level superstructure. mdl supports fully automatic proving
+facility.
+
+In fact, mdl program is a compiler from a relativily high-level language for the 
+representation of formal mathematics to the simple and robust for checking
+language metamath.
+
+The package contains three programs:
+	- mdl : the mdl prover and the compiler from russell language to metamath.
+	- mm : the decompiler from metamath to mdl.
+	- metamath : original metamath checker, with two language restrictions switched off:
+		a) hypothesis labels are alowed to be not unique
+		b) expressions are alowed to start with a variable  
+	- smm : the verifier for the smm language (simplified metamath)
+and two libraies
+	- nstl : non-standard template library.
+	- nsgl : non-standrad general library.
+
+Also package contains extensive theorem basis math.mm (metamath base), 
+which includes propositional logic, predicate logic, set theory, number systems 
+(natural, rational, real, complex, etc.) and much more. 
+
+For more information on mdl see the website at
+http://mathdevlanguage.sf.net
+http://russellmath.org
+
+Installation
+============
+For installation instructions read INSTALL.
+
+System requirements
+===================
+Full translation tests demand not less then 1Gb of RAM, not less then 150 of
+free space on the hard disk.
+
+Test scripts
+============
+Test scripts may be run to test the system and to obtain working mdl math library
+from the original metamath library. To run tests first compile mdl, mm, smm and
+metamath with the command './configure; make'. Then go to the directory 'math' and 
+run appropriate script.
+
+Translation tests
+=================
+Script 'translation', runs a chain of translations and verification. 
+To run the test on a propositional logic base run:
+    :~$./translation prop    
+To run the test on a whole metamath theorem base run:
+    :~$./translation math 
+
+Two new considerably big files (about 50 Mb each) will appear in this directory:
+	a) math.mdl : decompiled from math.mm theorem base in the mdl language.
+	b) math.smm : result of backwards translation of math.mm to the smm language,
+	which is simplified metamath with an explicit policy of indexing via labeling and
+	more rigid syntactic structure.
+	
+The last step of testing is verification of the resulting math.smm file with a 
+corrected metamath program and a specific smm verifier.
+
+CAUTION: complete test suite, which runs on the whole metamath theorem base, will
+demand about 1Gb of RAM.
+
+Prover test
+===========
+Script 'proving' is used to show the ability of the prover to prove simple theorems
+of propositional logic.
+To run the test on a propositional logic base run:
+    :~$./proving prop_small    
+
+Following files will automatically be created:
+	a) prop_small_proofless.mdl: decompiled from prop_small.mm with all proofs removed,
+	b) prop_small_proved.mdl: proved prop_small_proofless.mdl,
+	c) prop_small_proved.smm: the smm image of prop_small_proved.mdl.
+	
+At the end file prop_small_proved.smm is verified both with metamath and smm programs.
+
+Implicit steps prover test
+==========================
+Script 'implicit_step_proving' is used to show the ability of the prover to fill in 
+the blank information of the implicit proof steps: which assertion may be used at 
+this step and which steps/hypothesis may be used as a premises for this step. 
+To run the tests:
+    :~$./implicit_step_proving prop
+    :~$./implicit_step_proving math    
+
+Following files will automatically be created:
+	a) <file>_implicit.mdl: decompiled from prop_small.mm with the step information removed,
+	b) <file>_explicit.mdl: proved <file>_implicit.mdl, the step information restored,
+	c) <file>_explicit.smm: the smm image of <file>_explicit.mdl.
+	
+At the end file <file>_explicit.smm is verified both with metamath and smm programs.
+
+CAUTION: test on the math.mm theorem base, will demand:
+    a) about 1Gb of RAM
+    b) about 8 hours to prove implicit steps.
+
+Compression tests
+=================
+Script 'compression' is used to show the ability of the prover to compress theorems
+form the metamath base. Compression means that the compressed proof is being reduced
+to the minimum number of step, from which the full proof of the theorem can be restored
+automatically with the prover.   
+To run the test:
+    :~$./compression prop <N>
+    :~$./compression math <N>    
+
+where N is a parameter: one of N proof is being compressed. Recommended value is 30 for
+propositional logic and 300 for the whole metamath base. 
+
+Following files will automatically be created:
+	a) <file>.mdl: decompiled from <file>.mm,
+	b) <file>_compressed.mdl: the compressed image of <file>.mdl,
+	c) <file>_reproved.mdl: the proved image of <file>_compressed.mdl,
+	d) <file>_reproved.smm: the smm image of <file>_reproved.mdl.
+	
+At the end file <file>_reproved.smm is verified both with metamath and smm programs.
+
+CAUTION: test on the math.mm theorem base, will demand about 1Gb of RAM.
+
+Dir translation tests
+=====================
+Script 'dir_translation', does almost the same as a 'translation' test. 
+In addition to translation and verification, it splits the original single
+file math library into a directory structure of mm, mdl and smm sources.  
+ 
+To run the test on a propositional logic base run:
+    :~$./dir_translation prop    
+To run the test on a whole metamath theorem base run:
+    :~$./dir_translation math 
+
+After script is run, following directories will appear:
+	a) mm/: the original metamath base, which is split into the directory structure,
+	b) rus/: the mdl image of mm/,
+	c) smm/: the smm image of rus/.
+	
+CAUTION: complete test suite, which runs on the whole metamath theorem base, will
+demand about 1Gb of RAM.

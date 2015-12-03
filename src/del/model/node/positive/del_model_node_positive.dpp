@@ -1,0 +1,32 @@
+/*****************************************************************************/
+/* Project name:    del - mathematics development language                   */
+/* File name:       del_model_node_positive.dpp                              */
+/* Description:     module for positive model tree nodes                     */
+/* Copyright:       (c) 2006-2010 Dmitri Vlasov                              */
+/* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
+/* Email:           vlasov at academ.org                                     */
+/* URL:             http://mathdevlanguage.sourceforge.net                   */
+/* Modified by:                                                              */
+/* License:         GNU General Public License Version 3                     */
+/*****************************************************************************/
+
+#ifndef DEL_MODEL_NODE_POSITIVE_DPP_
+#define DEL_MODEL_NODE_POSITIVE_DPP_
+
+namespace del {
+namespace model {
+namespace node {
+namespace positive {
+
+	template<class>
+	class Pair;
+	template<class>
+	class Positive;
+	template<class>
+	class Singleton;
+}
+}
+}
+}
+
+#endif /*DEL_MODEL_NODE_POSITIVE_DPP_*/

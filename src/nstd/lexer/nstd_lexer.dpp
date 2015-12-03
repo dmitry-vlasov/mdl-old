@@ -1,0 +1,35 @@
+/*****************************************************************************/
+/* Project name:    nstd - non-standard library                              */
+/* File name:       nstd_lexer.dpp                                           */
+/* Description:     interface declarations for lexer utility module          */
+/* Copyright:       (c) 2006-2009 Dmitri Vlasov                              */
+/* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
+/* Email:           vlasov at academ.org                                     */
+/* URL:             http://mathdevlanguage.sourceforge.net                   */
+/* Modified by:                                                              */
+/* License:         GNU General Public License Version 3                     */
+/*****************************************************************************/
+
+#ifndef NSTD_LEXER_DPP_
+#define NSTD_LEXER_DPP_
+
+namespace nstd {
+namespace lexer {
+
+	template<int>
+	class Buffer;
+	class Char;
+	template<class>
+	class Comments;
+	template<class, class, class>
+	class ExpressionScaner;
+	class Indent;
+	template<class>
+	class Location;
+	class Position;
+	template<int>
+	class Source;
+}
+}
+
+#endif /*NSTD_LEXER_DPP_*/

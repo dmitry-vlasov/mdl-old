@@ -1,0 +1,30 @@
+/*****************************************************************************/
+/* Project name:    del - reasoner for EL                                    */
+/* File Name:       del.dpp                                                  */
+/* Description:     dellarations for del all modules                         */
+/* Copyright:       (c) 2006-2009 Dmitri Vlasov                              */
+/* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
+/* Email:           vlasov at academ.org                                     */
+/* URL:             http://mathdevlanguage.sourceforge.net                   */
+/* Modified by:                                                              */
+/* License:         GNU General Public License Version 3                     */
+/*****************************************************************************/
+
+#ifndef DEL_DPP_
+#define DEL_DPP_
+
+#include "del/auxiliary/del_auxiliary.dpp"
+#include "del/interface/del_interface.dpp"
+#include "del/lexer/del_lexer.dpp"
+#include "del/math/del_math.dpp"
+#include "del/model/del_model.dpp"
+#include "del/owl/del_owl.dpp"
+#include "del/parser/del_parser.dpp"
+#include "del/source/del_source.dpp"
+
+namespace del {
+
+	class Del;
+}
+
+#endif /*DEL_DPP_*/

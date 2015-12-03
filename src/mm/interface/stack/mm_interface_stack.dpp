@@ -1,0 +1,41 @@
+/*****************************************************************************/
+/* Project name:    mm - decompiler from metamath to mdl                     */
+/* File name:       mm_interface_stack.dpp                                   */
+/* Description:     interface declarations for metamath stack module         */
+/* Copyright:       (c) 2006-2009 Dmitri Vlasov                              */
+/* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
+/* Email:           vlasov at academ.org                                     */
+/* URL:             http://mathdevlanguage.sourceforge.net                   */
+/* Modified by:                                                              */
+/* License:         GNU General Public License Version 3                     */
+/*****************************************************************************/
+
+#ifndef MM_INTERFACE_STACK_DPP_
+#define MM_INTERFACE_STACK_DPP_
+
+namespace mm {
+namespace interface {
+namespace stack {
+
+	class Line;
+	typedef
+		nstd :: container :: Stack
+		<
+			Line,
+			storage :: ByPointer,
+			allocator :: Heap
+		>
+		Stack;
+}
+}
+
+namespace stack {
+
+	using interface :: stack :: Line;
+	using interface :: stack :: Stack;
+}
+
+	using stack :: Stack;
+}
+
+#endif /* MM_INTERFACE_STACK_DPP_ */

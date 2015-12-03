@@ -1,0 +1,147 @@
+/*****************************************************************************/
+/* Project name:    mdl - mathematics development language                   */
+/* File Name:       mdl_interface_header_statement.dpp                       */
+/* Description:     declaration interfaces for abstract statements module    */
+/* Copyright:       (c) 2006-2009 Dmitri Vlasov                              */
+/* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
+/* Email:           vlasov at academ.org                                     */
+/* URL:             http://mathdevlanguage.sourceforge.net                   */
+/* Modified by:                                                              */
+/* License:         GNU General Public License Version 3                     */
+/*****************************************************************************/
+
+#ifndef MDL_INTERFACE_HEADER_STATEMENT_DPP_
+#define MDL_INTERFACE_HEADER_STATEMENT_DPP_
+
+namespace mdl {
+namespace interface {
+namespace header {
+namespace statement {
+
+	class Axiomatic;
+	class Definition;
+	class Experience;
+	class Hypothesis;
+	class Proposition;
+	class Provable;
+	class Statement;
+
+	int compareByRate (Proposition*, Proposition*);
+	int compareByExpSize (Proposition*, Proposition*);
+}
+}
+}
+	using interface :: header :: statement :: Hypothesis;
+	using interface :: header :: statement :: Proposition;
+	using interface :: header :: statement :: Statement;
+
+namespace statement {
+
+	using interface :: header :: statement :: Axiomatic;
+	using interface :: header :: statement :: Definition;
+	using interface :: header :: statement :: Experience;
+	using interface :: header :: statement :: Provable;
+
+	using interface :: header :: statement :: compareByRate;
+	using interface :: header :: statement :: compareByExpSize;
+}
+namespace vector {
+
+	typedef
+		Vector
+		<
+			mdl :: Hypothesis,
+			storage :: ByPointer,
+			allocator :: Heap
+		>
+		Hypothesis;
+
+namespace statement {
+
+	typedef
+		Vector
+		<
+			mdl :: statement :: Axiomatic,
+			storage :: ByPointer,
+			allocator :: Heap
+		>
+		Axiomatic;
+
+	typedef
+		Vector
+		<
+			mdl :: statement :: Definition,
+			storage :: ByPointer,
+			allocator :: Heap
+		>
+		Definition;
+
+	typedef
+		Vector
+		<
+			mdl :: statement :: Experience,
+			storage :: ByPointer,
+			allocator :: Heap
+		>
+		Experience;
+
+	typedef
+		Vector
+		<
+			mdl :: statement :: Provable,
+			storage :: ByPointer,
+			allocator :: Heap
+		>
+		Provable;
+}
+namespace parser {
+
+	typedef
+		Vector
+		<
+			mdl :: Hypothesis*,
+			storage :: ByValue,
+			allocator :: Heap
+		>
+		Hypothesis;
+
+	typedef
+		Vector
+		<
+			mdl :: statement :: Axiomatic*,
+			storage :: ByValue,
+			allocator :: Heap
+		>
+		Axiomatic;
+
+	typedef
+		Vector
+		<
+			mdl :: statement :: Definition*,
+			storage :: ByValue,
+			allocator :: Heap
+		>
+		Definition;
+
+	typedef
+		Vector
+		<
+			mdl :: statement :: Experience*,
+			storage :: ByValue,
+			allocator :: Heap
+		>
+		Experience;
+
+	typedef
+		Vector
+		<
+			mdl :: statement :: Provable*,
+			storage :: ByValue,
+			allocator :: Heap
+		>
+		Provable;
+}
+}
+}
+
+#endif /*MDL_INTERFACE_HEADER_STATEMENT_DPP_*/

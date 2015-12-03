@@ -1,0 +1,29 @@
+/*****************************************************************************/
+/* Project name:    smm - verifier for the Simplified MetaMath language      */
+/* File Name:       smm.dpp                                                  */
+/* Description:     declarations for all smm modules                         */
+/* Copyright:       (c) 2006-2010 Dmitri Vlasov                              */
+/* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
+/* Email:           vlasov at academ.org                                     */
+/* URL:             http://mathdevlanguage.sourceforge.net                   */
+/* Modified by:                                                              */
+/* License:         GNU General Public License Version 3                     */
+/*****************************************************************************/
+
+#ifndef SMM_DPP_
+#define SMM_DPP_
+
+#include "smm/auxiliary/smm_auxiliary.dpp"
+#include "smm/expression/smm_expression.dpp"
+#include "smm/interface/smm_interface.dpp"
+#include "smm/lexer/smm_lexer.dpp"
+#include "smm/math/smm_math.dpp"
+#include "smm/parser/smm_parser.dpp"
+#include "smm/source/smm_source.dpp"
+
+namespace smm {
+
+	class Smm;
+}
+
+#endif /* SMM_DPP_ */

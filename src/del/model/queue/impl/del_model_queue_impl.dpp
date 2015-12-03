@@ -1,0 +1,38 @@
+/*****************************************************************************/
+/* Project name:    del - mathematics development language                   */
+/* File name:       del_model_queue_impl.hpp                                 */
+/* Description:     module for model                                         */
+/* Copyright:       (c) 2006-2010 Dmitri Vlasov                              */
+/* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
+/* Email:           vlasov at academ.org                                     */
+/* URL:             http://mathdevlanguage.sourceforge.net                   */
+/* Modified by:                                                              */
+/* License:         GNU General Public License Version 3                     */
+/*****************************************************************************/
+
+#ifndef DEL_MODEL_QUEUE_IMPL_DPP_
+#define DEL_MODEL_QUEUE_IMPL_DPP_
+
+namespace del {
+namespace model {
+namespace queue {
+namespace impl {
+
+	template<class>
+	class Map;
+	template<class>
+	class Model;
+	template<class>
+	class Predicate;
+	template<class>
+	class PredicateMap;
+	template<class>
+	class Relation;
+	template<class>
+	class RelationMap;
+}
+}
+}
+}
+
+#endif /*DEL_MODEL_QUEUE_IMPL_DPP_*/

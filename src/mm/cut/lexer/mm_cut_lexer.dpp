@@ -1,0 +1,52 @@
+/*****************************************************************************/
+/* Project name:    mm - decompiler from metamath to mdl                     */
+/* File Name:       mm_cut_lexer.hpp                                         */
+/* Description:     mm source file cutting lexer module                      */
+/* Copyright:       (c) 2006-2009 Dmitri Vlasov                              */
+/* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
+/* Email:           vlasov at academ.org                                     */
+/* URL:             http://mathdevlanguage.sourceforge.net                   */
+/* Modified by:                                                              */
+/* License:         GNU General Public License Version 3                     */
+/*****************************************************************************/
+
+#ifndef MM_CUT_LEXER_DPP_
+#define MM_CUT_LEXER_DPP_
+
+#include "mm/types/mm_types.hpp"
+
+namespace mm {
+namespace cut {
+namespace lexer {
+
+	enum {
+		BUFFER_SIZE = 8 * 1024 // kilobyte
+	};
+
+	typedef
+		nstd :: lexer :: Buffer<BUFFER_SIZE>
+		Buffer;
+	typedef
+		nstd :: lexer :: Source<BUFFER_SIZE>
+		Source;
+	typedef
+		nstd :: lexer :: Location<Source>
+		Location;
+	using mm :: lexer :: Comments;
+	using mm :: lexer :: ExpressionScaner;
+	using mm :: lexer :: Char;
+	using mm :: lexer :: Indent;
+	using mm :: lexer :: Position;
+
+	class Lexer;
+	class Token;
+	class WhilespaceScaner;
+}
+
+	using lexer :: Lexer;
+	using lexer :: Token;
+	using lexer :: Location;
+}
+}
+
+#endif /*MM_CUT_LEXER_DPP_*/

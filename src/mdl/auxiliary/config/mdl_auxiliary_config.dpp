@@ -1,0 +1,78 @@
+/*****************************************************************************/
+/* Project name:    mdl - mathematics development language                   */
+/* File name:       mdl_auxiliary_config.dpp                                 */
+/* Description:     config module                                            */
+/* Copyright:       (c) 2006-2009 Dmitri Vlasov                              */
+/* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
+/* Email:           vlasov at academ.org                                     */
+/* URL:             http://mathdevlanguage.sourceforge.net                   */
+/* Modified by:                                                              */
+/* License:         GNU General Public License Version 3                     */
+/*****************************************************************************/
+
+#ifndef MDL_AUXILIARY_CONFIG_DPP_
+#define MDL_AUXILIARY_CONFIG_DPP_
+
+#include "mdl/types/mdl_types.hpp"
+
+namespace mdl {
+namespace auxiliary {
+namespace config {
+
+	enum RunMode {
+		NO_WORK        = 0,
+		PROVE_WORK     = 2,
+		CHECK_WORK     = 3,
+		TRANSLATE_WORK = 4,
+		COMPRESS_WORK  = 5,
+		LOOKUP_WORK    = 6,
+		MINE_WORK      = 7,
+		REPROVE_WORK   = 8,
+		LEARN_WORK     = 9,
+		TUNE_WORK      = 10,
+		BENCHMARK_WORK = 11,
+		REFACTOR_WORK  = 12,
+		DEFAULT_WORK   = NO_WORK
+	};
+
+	class Concurrency;
+	class Config;
+	class Info;
+	class Integer;
+	class Location;
+	class Memory;
+	class Mining;
+	class Misc;
+	class Mode;
+	class Paths;
+	class Real;
+	class Refactor;
+	class Search;
+	class Server;
+	class String;
+	class Timing;
+
+	using nstd :: config :: List;
+
+namespace option {
+	using namespace nstd :: config :: option;
+
+	typedef nstd :: config :: option :: Option<value :: Integer> Integer;
+	typedef nstd :: config :: option :: Option<value :: Real> Real;
+	typedef nstd :: config :: option :: Time Time;
+}
+}
+}
+
+namespace option {
+	using namespace auxiliary :: config :: option;
+}
+
+namespace config {
+	using namespace auxiliary :: config;
+}
+	using auxiliary :: config :: Config;
+}
+
+
+#endif /*MDL_AUXILIARY_CONFIG_DPP_*/

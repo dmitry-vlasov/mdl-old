@@ -1,0 +1,29 @@
+/*****************************************************************************/
+/* Project name:    del - mathematics development language                   */
+/* File Name:       del_source_term.dpp                                      */
+/* Description:     declarations for module for term sources                 */
+/* Copyright:       (c) 2006-2009 Dmitri Vlasov                              */
+/* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
+/* Email:           vlasov at academ.org                                     */
+/* URL:             http://mathdevlanguage.sourceforge.net                   */
+/* Modified by:                                                              */
+/* License:         GNU General Public License Version 3                     */
+/*****************************************************************************/
+
+#ifndef DEL_SOURCE_TERM_DPP_
+#define DEL_SOURCE_TERM_DPP_
+
+namespace del {
+namespace source {
+namespace term {
+
+	class Exists;
+	class Intersect;
+	class Term;
+	class Top;
+	class Variable;
+}
+}
+}
+
+#endif /*DEL_SOURCE_TERM_DPP_*/

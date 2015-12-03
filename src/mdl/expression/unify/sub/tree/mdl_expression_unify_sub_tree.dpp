@@ -1,0 +1,43 @@
+/*****************************************************************************/
+/* Project name:    mdl - mathematics development language                   */
+/* File name:       mdl_expression_unify_sub_tree.dpp                        */
+/* Description:     declarations for multy unification gear module           */
+/* Copyright:       (c) 2006-2009 Dmitri Vlasov                              */
+/* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
+/* Email:           vlasov at academ.org                                     */
+/* URL:             http://mathdevlanguage.sourceforge.net                   */
+/* Modified by:                                                              */
+/* License:         GNU General Public License Version 3                     */
+/*****************************************************************************/
+
+#ifndef MDL_EXPRESSION_UNIFY_SUB_TREE_DPP_
+#define MDL_EXPRESSION_UNIFY_SUB_TREE_DPP_
+
+namespace mdl {
+namespace expression {
+namespace unify {
+namespace sub {
+namespace tree {
+
+	template<class, class>
+	class Finalize;
+	template<class, class>
+	class Unifier;
+	template<class, class>
+	class Unify;
+	template<class, class>
+	class Unit;
+}
+}
+}
+}
+
+namespace substitution {
+namespace tree {
+
+	using expression :: unify :: sub :: tree :: Unify;
+}
+}
+}
+
+#endif /*MDL_EXPRESSION_UNIFY_SUB_TREE_DPP_*/

@@ -1,0 +1,42 @@
+/*****************************************************************************/
+/* Project name:    mdl - mathematics development language                   */
+/* File name:       mdl_expression_unify_fact.dpp                            */
+/* Description:     declarations for unification gear module                 */
+/* Copyright:       (c) 2006-2009 Dmitri Vlasov                              */
+/* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
+/* Email:           vlasov at academ.org                                     */
+/* URL:             http://mathdevlanguage.sourceforge.net                   */
+/* Modified by:                                                              */
+/* License:         GNU General Public License Version 3                     */
+/*****************************************************************************/
+
+#ifndef MDL_EXPRESSION_UNIFY_FACT_DPP_
+#define MDL_EXPRESSION_UNIFY_FACT_DPP_
+
+#include "mdl/expression/unify/mdl_expression_unify_direction_Type.hpp"
+#include "mdl/expression/unify/mdl_expression_unify_policy_Type.hpp"
+#include "mdl/expression/unify/mdl_expression_unify_kind_Type.hpp"
+
+namespace mdl {
+namespace expression {
+namespace unify {
+namespace fact {
+
+	template<class, int, int>
+	class Policy;
+	template<class, int, int>
+	class Replacer;
+	template<class, class>
+	class Result;
+	template<class, class, int>
+	class Unifier;
+	template<class, class, int, int, class>
+	class Unify;
+	template<class, class, int, int>
+	class Unit;
+}
+}
+}
+}
+
+#endif /*MDL_EXPRESSION_UNIFY_FACT_DPP_*/

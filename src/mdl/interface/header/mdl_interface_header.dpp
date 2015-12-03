@@ -1,0 +1,82 @@
+/*****************************************************************************/
+/* Project name:    mdl - mathematics development language                   */
+/* File Name:       mdl_interface_header.dpp                                 */
+/* Description:     interface declarations for module for header interfaces  */
+/* Copyright:       (c) 2006-2009 Dmitri Vlasov                              */
+/* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
+/* Email:           vlasov at academ.org                                     */
+/* URL:             http://mathdevlanguage.sourceforge.net                   */
+/* Modified by:                                                              */
+/* License:         GNU General Public License Version 3                     */
+/*****************************************************************************/
+
+#ifndef MDL_INTERFACE_HEADER_DPP_
+#define MDL_INTERFACE_HEADER_DPP_
+
+#include "mdl/interface/header/statement/mdl_interface_header_statement.dpp"
+#include "mdl/interface/header/term/mdl_interface_header_term.dpp"
+
+namespace mdl {
+namespace interface {
+namespace header {
+
+	class Disjointed;
+	class Disjointeds;
+	class Line;
+	class Variable;
+	class Variables;
+}
+}
+
+	using interface :: header :: Disjointeds;
+	using interface :: header :: Variables;
+
+namespace header {
+	using interface :: header :: Disjointed;
+	using interface :: header :: Line;
+	using interface :: header :: Variable;
+}
+
+namespace vector {
+namespace header {
+	typedef
+		Vector
+		<
+			mdl :: header :: Variable,
+			storage :: ByPointer,
+			allocator :: Heap
+		>
+		Variable;
+
+	typedef
+		Vector
+		<
+			mdl :: header :: Disjointed,
+			storage :: ByPointer,
+			allocator :: Heap
+		>
+		Disjointed;
+}
+namespace parser {
+	typedef
+		Vector
+		<
+			mdl :: header :: Variable*,
+			storage :: ByValue,
+			allocator :: Heap
+		>
+		Variable;
+
+	typedef
+		Vector
+		<
+			mdl :: header :: Disjointed*,
+			storage :: ByValue,
+			allocator :: Heap
+		>
+		Disjointed;
+}
+}
+}
+
+#endif /*MDL_INTERFACE_HEADER_DPP_*/

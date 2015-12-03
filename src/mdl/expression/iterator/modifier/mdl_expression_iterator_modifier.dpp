@@ -1,0 +1,40 @@
+/*****************************************************************************/
+/* Project name:    mdl - mathematics development language                   */
+/* File name:       mdl_expression_iterator_modifier.dpp                     */
+/* Description:     declarations for module for iterator modifiers           */
+/* Copyright:       (c) 2006-2009 Dmitri Vlasov                              */
+/* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
+/* Email:           vlasov at academ.org                                     */
+/* URL:             http://mathdevlanguage.sourceforge.net                   */
+/* Modified by:                                                              */
+/* License:         GNU General Public License Version 3                     */
+/*****************************************************************************/
+
+#ifndef MDL_EXPRESSION_ITERATOR_MODIFIER_DPP_
+#define MDL_EXPRESSION_ITERATOR_MODIFIER_DPP_
+
+namespace mdl {
+namespace expression {
+namespace iterator {
+namespace modifier {
+
+	template<class, class>
+	class Array;
+	template<class>
+	class Identity;
+	template<class>
+	class Linforest;
+	template<class>
+	class Lintree;
+	template<class>
+	class Memory;
+	template<class, class>
+	class Pair;
+	template<class>
+	class Trace;
+}
+}
+}
+}
+
+#endif /*MDL_EXPRESSION_ITERATOR_MODIFIER_DPP_*/

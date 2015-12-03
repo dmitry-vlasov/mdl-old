@@ -1,0 +1,36 @@
+/*****************************************************************************/
+/* Project name:    nstd - non-standard library                              */
+/* File name:       nstd_container_storage.dpp                               */
+/* Description:     declarations for storage policies module                 */
+/* Copyright:       (c) 2006-2009 Dmitri Vlasov                              */
+/* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
+/* Email:           vlasov at academ.org                                     */
+/* URL:             http://mathdevlanguage.sourceforge.net                   */
+/* Modified by:                                                              */
+/* License:         GNU General Public License Version 3                     */
+/*****************************************************************************/
+
+#ifndef NSTD_CONTAINER_STORAGE_DPP_
+#define NSTD_CONTAINER_STORAGE_DPP_
+
+namespace nstd {
+namespace container {
+namespace storage {
+
+	template<class>
+	class ByAggregation;
+	template<class>
+	class ByInheritance;
+	template<class>
+	class ByPointer;
+	template<class>
+	class ByValue;
+	template<class>
+	class ByWeakPointer;
+	template<class>
+	class None;
+}
+}
+}
+
+#endif /*NSTD_CONTAINER_STORAGE_DPP_*/

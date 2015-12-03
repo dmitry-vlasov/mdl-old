@@ -1,0 +1,38 @@
+/*****************************************************************************/
+/* Project name:    mm - decompiler from metamath to mdl                     */
+/* File name:       mm_ast_target_assertion.dpp                              */
+/* Description:     interface declarations for mdl assertions module         */
+/* Copyright:       (c) 2006-2009 Dmitri Vlasov                              */
+/* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
+/* Email:           vlasov at academ.org                                     */
+/* URL:             http://mathdevlanguage.sourceforge.net                   */
+/* Modified by:                                                              */
+/* License:         GNU General Public License Version 3                     */
+/*****************************************************************************/
+
+#ifndef MM_AST_TARGET_ASSERTION_DPP_
+#define MM_AST_TARGET_ASSERTION_DPP_
+
+namespace mm {
+namespace ast {
+namespace target {
+namespace assertion {
+
+	class Assertion;
+	class Axiom;
+	class Definition;
+	class Rule;
+	class Statement;
+	class Super;
+	class Theorem;
+}
+	using assertion :: Axiom;
+	using assertion :: Definition;
+	using assertion :: Rule;
+	using assertion :: Super;
+	using assertion :: Theorem;
+}
+}
+}
+
+#endif /* MM_AST_TARGET_ASSERTION_DPP_ */
