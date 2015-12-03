@@ -1,0 +1,34 @@
+/*****************************************************************************/
+/* Project name:    del - mathematics development language                   */
+/* File Name:       del_parser.dpp                                           */
+/* Description:     declarations for del AST parser module                   */
+/* Copyright:       (c) 2006-2009 Dmitri Vlasov                              */
+/* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
+/* Email:           vlasov at academ.org                                     */
+/* URL:             http://mathdevlanguage.sourceforge.net                   */
+/* Modified by:                                                              */
+/* License:         GNU General Public License Version 3                     */
+/*****************************************************************************/
+
+#ifndef DEL_PARSER_DPP_
+#define DEL_PARSER_DPP_
+
+namespace del {
+namespace parser {
+
+	class Answer;
+	class Assertion;
+	class Decompose;
+	class Decomposition;
+	class Formula;
+	class Minimize;
+	class Minimization;
+	class Question;
+	class Signature;
+	class Source;
+	class Term;
+	class Theory;
+}
+}
+
+#endif /*DEL_PARSER_DPP_*/

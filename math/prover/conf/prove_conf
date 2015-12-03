@@ -1,0 +1,7 @@
+#--verbose-max
+#--prove-in-heap
+--prover-volume 256   # megabytes
+--stack-volume 	64    # megabytes
+--max-compress-time 1 # minutes
+--max-prove-time    1 # minutes
+--optimal-search

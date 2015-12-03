@@ -1,0 +1,68 @@
+/*****************************************************************************/
+/* Project name:    mm - decompiler from metamath to mdl                     */
+/* File name:       mm_interface_source.dpp                                  */
+/* Description:     interface declarations for metamath interfaces module    */
+/* Copyright:       (c) 2006-2009 Dmitri Vlasov                              */
+/* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
+/* Email:           vlasov at academ.org                                     */
+/* URL:             http://mathdevlanguage.sourceforge.net                   */
+/* Modified by:                                                              */
+/* License:         GNU General Public License Version 3                     */
+/*****************************************************************************/
+
+#ifndef MM_INTERFACE_SOURCE_DPP_
+#define MM_INTERFACE_SOURCE_DPP_
+
+namespace mm {
+namespace interface {
+namespace source {
+
+	class Assertion;
+	class Block;
+	class Comments;
+	class Constants;
+	class Disjoined;
+	class Hypothesis;
+	class Include;
+	class Proof;
+	class Reference;
+	class Source;
+	class Variables;
+}
+}
+
+namespace source {
+
+	using interface :: source :: Assertion;
+	using interface :: source :: Block;
+	using interface :: source :: Comments;
+	using interface :: source :: Constants;
+	using interface :: source :: Disjoined;
+	using interface :: source :: Hypothesis;
+	using interface :: source :: Include;
+	using interface :: source :: Proof;
+	using interface :: source :: Reference;
+	using interface :: source :: Source;
+	using interface :: source :: Variables;
+}
+
+	using source :: Source;
+
+namespace  vector {
+namespace source {
+	typedef
+		Vector<const mm :: source :: Assertion*, storage :: ByValue, allocator :: Heap>
+		Assertion;
+}
+}
+
+namespace list {
+namespace source {
+	typedef
+		List<const mm :: source :: Reference, storage :: ByPointer, allocator :: Heap>
+		Reference;
+}
+}
+}
+
+#endif /* MM_INTERFACE_SOURCE_DPP_ */

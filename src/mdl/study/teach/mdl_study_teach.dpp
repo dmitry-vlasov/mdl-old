@@ -1,0 +1,28 @@
+/*****************************************************************************/
+/* Project name:    mdl - mathematics development language                   */
+/* File Name:       mdl_study_teach.dpp                                      */
+/* Description:     global studying module: teach                            */
+/* Copyright:       (c) 2006-2009 Dmitri Vlasov                              */
+/* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
+/* Email:           vlasov at academ.org                                     */
+/* URL:             http://mathdevlanguage.sourceforge.net                   */
+/* Modified by:                                                              */
+/* License:         GNU General Public License Version 3                     */
+/*****************************************************************************/
+
+#ifndef MDL_STUDY_TEACH_DPP_
+#define MDL_STUDY_TEACH_DPP_
+
+namespace mdl {
+namespace study {
+namespace teach {
+
+	class Optimization;
+	class Teacher;
+	class Terms;
+}
+	using teach :: Teacher;
+}
+}
+
+#endif /*MDL_STUDY_TEACH_DPP_*/

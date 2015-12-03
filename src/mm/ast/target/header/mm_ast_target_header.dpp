@@ -1,0 +1,40 @@
+/*****************************************************************************/
+/* Project name:    mm - decompiler from metamath to mdl                     */
+/* File name:       mm_ast_target_header.dpp                                 */
+/* Description:     interface declarations for mdl header module             */
+/* Copyright:       (c) 2006-2009 Dmitri Vlasov                              */
+/* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
+/* Email:           vlasov at academ.org                                     */
+/* URL:             http://mathdevlanguage.sourceforge.net                   */
+/* Modified by:                                                              */
+/* License:         GNU General Public License Version 3                     */
+/*****************************************************************************/
+
+#ifndef MM_AST_TARGET_HEADER_DPP_
+#define MM_AST_TARGET_HEADER_DPP_
+
+#include "ast/target/header/proposition/mm_ast_target_header_proposition.dpp"
+#include "ast/target/header/term/mm_ast_target_header_term.dpp"
+
+namespace mm {
+namespace ast {
+namespace target {
+namespace header {
+
+	class Disjoined;
+	class Disjoineds;
+	class Hypothesis;
+	class Line;
+	class Variable;
+	class Variables;
+}
+	using header :: Disjoined;
+	using header :: Disjoineds;
+	using header :: Hypothesis;
+	using header :: Variable;
+	using header :: Variables;
+}
+}
+}
+
+#endif /* MM_AST_TARGET_HEADER_DPP_ */

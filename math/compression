@@ -1,0 +1,144 @@
+#!/bin/sh
+
+# mm/mdl compression test for the specified file
+# 1) first argument - the name of the source file to be 
+#    compressed
+# 2) second argument - the compression factor N (compress one
+#    of N proofs)
+# 3) third argument - the build directory from the top of
+#    the project. By default, it's empty.
+
+if [ -z $1 ] 
+then echo "NO INPUT FILE."; exit
+fi;
+
+file=$1
+
+if [ -z $3 ] 
+then dir='';
+else dir=$3'/';
+fi;
+
+echo "=======================================";
+echo "translation: ${file}.mm --> ${file}.rus";
+echo "=======================================";
+echo;
+../${dir}src/mm/mm \
+	-v -w -t \
+	--mem-all --info-all \
+	--correct-grammar grammar.corr \
+	--correct-symbol symbol.corr \
+	-o ${file}.rus \
+	\
+	${file}.mm
+
+if [ $? != 0 ] 
+then echo "TEST FAILED."; exit
+fi;
+
+# prover parameters
+
+prover_volume=256     # megabytes
+stack_volume=64       # megabyted
+max_compress_time=60  # minutes
+max_prove_time=$max_compress_time
+max_s_complexity=32   # symbols
+max_e_complexity=56   # symbols
+
+echo "===================================================";
+echo "compressing: ${file}.rus --> ${file}_compressed.rus";
+echo "===================================================";
+echo;
+
+if [ -z $2 ] 
+then factor=1;
+else factor=$2;
+fi;
+
+../${dir}src/mdl/mdl \
+	-v -w \
+	--compress-one-of $factor \
+	--prover-volume $prover_volume \
+	--stack-volume $stack_volume \
+	--max-compress-time $max_compress_time \
+	--optimal-search \
+	--max-s-complexity $max_s_complexity \
+	--max-e-complexity $max_e_complexity \
+	--mem-all --info-all \
+	-o ${file}_compressed.rus \
+	\
+	${file}.rus;
+
+if [ $? != 0 ] 
+then echo "TEST FAILED."; exit
+fi;
+
+echo "========================================================";
+echo "proving: ${file}_compressed.rus --> ${file}_reproved.rus";
+echo "=========================================================";
+echo;
+
+../${dir}src/mdl/mdl \
+	-v -w \
+	--prove \
+	--prover-volume $prover_volume \
+	--stack-volume $stack_volume \
+	--max-prove-time $max_prove_time \
+	--optimal-search \
+	--max-s-complexity $max_s_complexity \
+	--max-e-complexity $max_e_complexity \
+	--mem-all --info-all \
+	-o ${file}_reproved.rus \
+	\
+	${file}_compressed.rus;
+
+if [ $? != 0 ] 
+then echo "TEST FAILED."; exit
+fi;
+
+echo "============================================================";
+echo "translation: ${file}_reproved.rus --> ${file}_reproved.smm";
+echo "============================================================";
+echo;
+
+../${dir}src/mdl/mdl \
+	-v -t -w \
+	--mem-all --info-all \
+	-o ${file}_reproved.smm \
+	\
+	${file}_reproved.rus;
+
+if [ $? != 0 ] 
+then echo "TEST FAILED."; exit
+fi;
+
+echo "=============================================";
+echo "verifying: ${file}_reproved.smm with metamath";
+echo "=============================================";
+echo;
+
+../${dir}metamath/metamath \
+	"read ${file}_reproved.smm" \
+	'verify proof *' \
+	exit 
+
+if [ $? != 0 ] 
+then echo "TEST FAILED."; exit
+fi;
+
+echo "========================================";
+echo "verifying: ${file}_reproved.smm with smm";
+echo "========================================";
+echo;
+
+../${dir}src/smm/smm \
+	-v --show-stack \
+	--mem-all --info-all \
+	\
+	${file}_reproved.smm;
+
+if [ $? != 0 ] 
+then echo "TEST FAILED."; exit
+else echo "\n\nTests successfully passed :)"; 
+fi;
+

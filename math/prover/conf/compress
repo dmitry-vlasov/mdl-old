@@ -1,0 +1,9 @@
+--overwrite
+
+--log-compression
+
+#--mem-all 
+#--info-all
+
+--config conf/prove_conf
+

@@ -1,0 +1,10 @@
+
+--overwrite
+
+--log-proving
+
+--factor-pos-neg 1 
+#--mem-all 
+#--info-all
+
+--config conf/prove_conf

@@ -1,0 +1,48 @@
+/*****************************************************************************/
+/* Project name:    nstd - non-standard library                              */
+/* File name:       nstd_interpolation.dpp                                   */
+/* Description:     interpolation module                                     */
+/* Copyright:       (c) 2006-2009 Dmitri Vlasov                              */
+/* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
+/* Email:           vlasov at academ.org                                     */
+/* URL:             http://mathdevlanguage.sourceforge.net                   */
+/* Modified by:                                                              */
+/* License:         GNU General Public License Version 3                     */
+/*****************************************************************************/
+
+#ifndef NSTD_INTERPOLATION_DPP_
+#define NSTD_INTERPOLATION_DPP_
+
+namespace nstd {
+namespace interpolation {
+
+	typedef unsigned int Integer;
+	typedef double Real;
+	typedef bool Bool;
+
+	/*
+	typedef
+		container :: Vector
+		<
+			Real,
+			container :: storage :: ByValue,
+			memory :: allocator :: Heap
+		>
+		RealVector;*/
+
+	template<int, class>
+	class Approximation;
+	template<int, class>
+	class Gradient;
+	template<int, class>
+	class Linear;
+	template<int, class>
+	class Polynomial;
+	template<int, class>
+	class Sample;
+	template<int, class>
+	class Tuner;
+}
+}
+
+#endif /*NSTD_INTERPOLATION_DPP_*/

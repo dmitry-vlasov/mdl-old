@@ -1,0 +1,41 @@
+/*****************************************************************************/
+/* Project name:    nstd - non-standard library                              */
+/* File name:       nstd.dpp                                                 */
+/* Description:     declarations for all nstd library modules                */
+/* Copyright:       (c) 2006-2009 Dmitri Vlasov                              */
+/* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
+/* Email:           vlasov at academ.org                                     */
+/* URL:             http://mathdevlanguage.sourceforge.net                   */
+/* Modified by:                                                              */
+/* License:         GNU General Public License Version 3                     */
+/*****************************************************************************/
+
+#ifndef NSTD_DPP_
+#define NSTD_DPP_
+
+#include "container/nstd_container.dpp"
+#include "map/nstd_map.dpp"
+#include "memory/nstd_memory.dpp"
+#include "type/nstd_type.dpp"
+
+namespace nstd {
+
+	template<class, class>
+	class NameTable;
+	class Object;
+	template<class>
+	class Static;
+	template<class = memory :: allocator :: Standard>
+	class String;
+	template<class>
+	class Undefined;
+}
+
+#include "equation/nstd_equation.dpp"
+#include "interpolation/nstd_interpolation.dpp"
+#include "lexer/nstd_lexer.dpp"
+#include "sampler/nstd_sampler.dpp"
+#include "config/nstd_config.dpp"
+#include "misc/nstd_misc.dpp"
+
+#endif /*NSTD_DPP_*/

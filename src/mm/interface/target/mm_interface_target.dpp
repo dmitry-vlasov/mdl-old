@@ -1,0 +1,89 @@
+/*****************************************************************************/
+/* Project name:    mm - decompiler from metamath to mdl                     */
+/* File name:       mm_interface_target.dpp                                  */
+/* Description:     interface declarations for mdl interfaces module         */
+/* Copyright:       (c) 2006-2009 Dmitri Vlasov                              */
+/* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
+/* Email:           vlasov at academ.org                                     */
+/* URL:             http://mathdevlanguage.sourceforge.net                   */
+/* Modified by:                                                              */
+/* License:         GNU General Public License Version 3                     */
+/*****************************************************************************/
+
+#ifndef MM_INTERFACE_TARGET_DPP_
+#define MM_INTERFACE_TARGET_DPP_
+
+namespace mm {
+namespace interface {
+namespace target {
+
+	class Block;
+	class Comments;
+	class Definition;
+	class Disjoined;
+	class Disjoineds;
+	class Import;
+	class Proof;
+	class Proposition;
+	class Statement;
+	class Step;
+	class Syntactic;
+	class Target;
+	class Theorem;
+	class Term;
+	class Type;
+	class Typing;
+	class Variables;
+}
+}
+
+namespace target {
+
+	using interface :: target :: Block;
+	using interface :: target :: Comments;
+	using interface :: target :: Definition;
+	using interface :: target :: Disjoined;
+	using interface :: target :: Disjoineds;
+	using interface :: target :: Import;
+	using interface :: target :: Proof;
+	using interface :: target :: Proposition;
+	using interface :: target :: Statement;
+	using interface :: target :: Step;
+	using interface :: target :: Syntactic;
+	using interface :: target :: Target;
+	using interface :: target :: Theorem;
+	using interface :: target :: Term;
+	using interface :: target :: Type;
+	using interface :: target :: Typing;
+	using interface :: target :: Variables;
+}
+namespace list {
+namespace target {
+
+	typedef
+		List<const mm :: target :: Step, storage :: ByPointer, allocator :: Heap>
+		Step;
+	typedef
+		List<const mm :: target :: Type*, storage :: ByValue, allocator :: Heap>
+		Type;
+	typedef
+		List<const mm :: target :: Typing, storage :: ByPointer, allocator :: Heap>
+		Typing;
+	typedef
+		List<const mm :: target :: Disjoined, storage :: ByPointer, allocator :: Heap>
+		Disjoined;
+}
+}
+
+namespace vector {
+namespace target {
+
+	typedef
+		Vector<const mm :: target :: Step*, storage :: ByValue, allocator :: Heap>
+		Step;
+}
+}
+	using target :: Target;
+}
+
+#endif /* MM_INTERFACE_TARGET_DPP_ */

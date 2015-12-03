@@ -1,0 +1,40 @@
+/*****************************************************************************/
+/* Project name:    mdl - mathematics development language                   */
+/* File Name:       mdl_form_evaluation_term.dpp                             */
+/* Description:     fitness evaluation terms                                 */
+/* Copyright:       (c) 2006-2009 Dmitri Vlasov                              */
+/* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
+/* Email:           vlasov at academ.org                                     */
+/* URL:             http://mathdevlanguage.sourceforge.net                   */
+/* Modified by:                                                              */
+/* License:         GNU General Public License Version 3                     */
+/*****************************************************************************/
+
+#ifndef MDL_FORM_EVALUATION_TERM_DPP_
+#define MDL_FORM_EVALUATION_TERM_DPP_
+
+namespace mdl {
+namespace form {
+namespace evaluation {
+namespace term {
+
+	class Barrier;
+	class Case;
+	class Const;
+	class ExpAvg;
+	class ExpCplx;
+	class ExpDisp;
+	class ExpEq;
+	class ExpSim;
+	class Forking;
+	class Lexp;
+	class Mult;
+	class SubCplx;
+	class Sum;
+	class WeightedSum;
+}
+}
+}
+}
+
+#endif /*MDL_FORM_EVALUATION_TERM_DPP_*/

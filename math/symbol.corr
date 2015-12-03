@@ -1,0 +1,524 @@
+symbol
+	ascii |-
+	unicode ⊢
+	latex \vdash
+symbol
+	ascii ->
+	unicode →
+	latex \rightarrow
+symbol
+	ascii -.
+	unicode ¬
+	latex \lnot
+symbol
+	ascii <->
+	unicode ↔
+	latex \leftrightarrow
+symbol
+	ascii \/
+	unicode ∨
+	latex \lor
+symbol
+	ascii /\
+	unicode ∧
+	latex \land
+symbol
+	ascii -/\
+	unicode ⊼
+	latex \bar{\wedge}
+symbol
+	ascii A.
+	unicode ∀
+	latex \forall
+symbol
+	ascii E.
+	unicode ∃
+	latex \exists
+symbol
+	ascii =
+	unicode =
+	latex =
+symbol
+	ascii e.
+	unicode ∈
+	latex \in
+symbol
+	ascii [
+	unicode [
+	latex [
+symbol
+	ascii /
+	unicode /
+	latex /
+symbol
+	ascii ]
+	unicode ]
+	latex ]
+symbol
+	ascii E!
+	unicode ∃!
+	latex \exists{!}
+symbol
+	ascii E*
+	unicode ∃*
+	latex \exists^{\ast}
+symbol
+	ascii {
+	unicode {
+	latex \{
+symbol
+	ascii |
+	unicode |
+	latex |
+symbol
+	ascii }
+	unicode }
+	latex \}
+symbol
+	ascii =/=
+	unicode ≠
+	latex \ne
+symbol
+	ascii e/
+	unicode ∉
+	latex \notin
+symbol
+	ascii _V
+	unicode 𝐕
+	latex \rm{V}
+symbol
+	ascii [_
+	unicode [
+	latex [
+symbol
+	ascii ]_
+	unicode ]
+	latex ]
+symbol
+	ascii C_
+	unicode ⊆
+	latex \subseteq
+symbol
+	ascii C.
+	unicode ⊂
+	latex \subset	
+symbol
+	ascii \
+	unicode ∖
+	latex \setminus
+symbol
+	ascii u.
+	unicode ∪
+	latex \cup
+symbol
+	ascii i^i
+	unicode ∩
+	latex \cap
+symbol
+	ascii (/)
+	unicode ∅
+	latex \emptyset
+symbol
+	ascii ,
+	unicode ,
+	latex ,
+symbol
+	ascii ~P
+	unicode Pow 
+	latex \cal{P}
+symbol
+	ascii <.
+	unicode 〈
+	latex \langle
+symbol
+	ascii >.
+	unicode 〉
+	latex \rangle
+symbol
+	ascii U.
+	unicode ⋃
+	latex \bigcup
+symbol
+	ascii |^|
+	unicode ⋂
+	latex \bigcap
+symbol
+	ascii U_
+	unicode ⋃
+	latex \bigcup
+symbol
+	ascii |^|_
+	unicode ⋂
+	latex \bigcap
+symbol
+	ascii _E
+	unicode 𝛜
+	latex \epsilon
+symbol
+	ascii _I
+	unicode Id
+	latex \rm{Id}
+symbol
+	ascii om
+	unicode ω
+	latex \omega
+symbol
+	ascii X.
+	unicode ×
+	latex \times
+symbol
+	ascii `'
+	unicode ⁻¹
+	latex {}^{-1}
+symbol
+	ascii |`
+	unicode ↾
+	latex \upharpoonright
+symbol
+	ascii "
+	unicode "
+	latex ``
+symbol
+	ascii o.
+	unicode ∘
+	latex \circ
+symbol
+	ascii :
+	unicode :
+	latex :
+symbol
+	ascii -->
+	unicode ⟶
+	latex \longrightarrow
+symbol
+	ascii -1-1->
+	unicode ↣
+	latex \rightarrowtail
+symbol
+	ascii -onto->
+	unicode ↠
+	latex \twoheadrightarrow
+symbol
+	ascii -1-1-onto->
+	unicode ⤖
+	latex \rightarrowtail\twoheadrightarrow
+symbol
+	ascii `
+	unicode `
+	latex `
+symbol
+	ascii X_
+	unicode ×_
+	latex \times
+symbol
+	ascii |->
+	unicode ↦
+	latex \mapsto
+symbol
+	ascii ^m
+	unicode ↑m
+	latex \uparrow_m
+symbol
+	ascii ^pm
+	unicode ↑pm
+	latex \uparrow_{pm}
+symbol
+	ascii +o
+	unicode +ₒ
+	latex +_o
+symbol
+	ascii .o
+	unicode ∙ₒ
+	latex \cdot_o
+symbol
+	ascii ^o
+	unicode ↑ₒ
+	latex \uparrow_o
+symbol
+	ascii 1o
+	unicode 1ₒ
+	latex 1_o
+symbol
+	ascii 2o
+	unicode 2ₒ
+	latex 2_o
+symbol
+	ascii /.
+	unicode ∕
+	latex \diagup
+symbol
+	ascii ~~
+	unicode ≈
+	latex \approx
+symbol
+	ascii ~<_
+	unicode ≼
+	latex \preccurlyeq
+symbol
+	ascii ~<
+	unicode ≺
+	latex \prec
+symbol
+	ascii aleph
+	unicode ℵ
+	latex \aleph
+symbol
+	ascii +c
+	unicode +𝐜
+	latex +_c
+symbol
+	ascii R1
+	unicode R₁
+	latex R_1
+symbol
+	ascii .N
+	unicode ∙N
+	latex \cdot_{\cal{N}}
+symbol
+	ascii <N
+	unicode <N
+	latex <_{\cal{N}}
+symbol
+	ascii +pQ
+	unicode +pQ
+	latex +_{p\cal{Q}}
+symbol
+	ascii .pQ
+	unicode ∙pQ
+	latex \cdot_{p\cal{Q}}
+symbol
+	ascii Q.
+	unicode Q.
+	latex \cal{Q}
+symbol
+	ascii .Q
+	unicode ∙Q
+	latex \cdot_{\cal{Q}}
+symbol
+	ascii P.
+	unicode Pos
+	latex \rm{Pos}
+symbol
+	ascii 1P
+	unicode 1Pos
+	latex 1_{\rm{Pos}}
+symbol
+	ascii +P.
+	unicode +Pos
+	latex +_{\rm{Pos}}
+symbol
+	ascii .P.
+	unicode ∙Pos
+	latex \cdot_{\rm{Pos}}
+symbol
+	ascii <P
+	unicode <Pos
+	latex <_{\rm{Pos}}
+symbol
+	ascii +pR
+	unicode <pR
+	latex +_{p\cal{R}}
+symbol
+	ascii .pR
+	unicode ∙pP
+	latex \cdot_{p\cal{R}}
+symbol
+	ascii -1R.
+	unicode -1R
+	latex -1_{\cal{R}}
+symbol
+	ascii .R
+	unicode ∙R
+	latex \cdot_{\cal{R}}
+symbol
+	ascii <R
+	unicode <R
+	latex <_{\cal{R}}
+symbol
+	ascii <RR
+	unicode <ℝ
+	latex <_{\mathbb{R}}
+symbol
+	ascii CC
+	unicode ℂ
+	latex \mathbb{C}
+symbol
+	ascii RR
+	unicode ℝ
+	latex \mathbb{R}
+symbol
+	ascii x.
+	unicode ∙
+	latex \cdot
+symbol
+	ascii +oo
+	unicode +∞
+	latex +\infty
+symbol
+	ascii -oo
+	unicode -∞
+	latex -\infty
+symbol
+	ascii RR*
+	unicode ℝ*
+	latex \mathbb{R}*
+symbol
+	ascii <_
+	unicode ≤
+	latex \le
+symbol
+	ascii NN
+	unicode ℕ
+	latex \mathbb{N}
+symbol
+	ascii NN0
+	unicode ℕ₀
+	latex \mathbb{N}_0
+symbol
+	ascii ZZ
+	unicode ℤ
+	latex \mathbb{Z}
+symbol
+	ascii QQ
+	unicode ℚ
+	latex \mathbb{Q}
+symbol
+	ascii RR+
+	unicode ℝ⁺
+	latex \mathbb{R}^+
+symbol
+	ascii sqr
+	unicode √
+	latex \surd
+symbol
+	ascii Re
+	unicode ℜ
+	latex \Re
+symbol
+	ascii Im
+	unicode ℑ
+	latex \Im
+symbol
+	ascii |_
+	unicode ⌊
+	latex \lfloor
+symbol
+	ascii ==
+	unicode ≡
+	latex \equiv
+symbol
+	ascii seq1
+	unicode seq₁
+	latex \rm{seq}_1
+symbol
+	ascii ZZ>=
+	unicode ℤ≥
+	latex \mathbb{Z}_\ge
+symbol
+	ascii seq0
+	unicode seq₀
+	latex \rm{seq}_0
+symbol
+	ascii ^
+	unicode ↑
+	latex \uparrow
+symbol
+	ascii ~~>
+	unicode ⇝
+	latex \rightsquigarrow
+symbol
+	ascii ...
+	unicode ...
+	latex \ldots
+symbol
+	ascii sum_
+	unicode ∑
+	latex \Sigma
+symbol
+	ascii _e
+	unicode ℇ
+	latex \rm{e}
+symbol
+	ascii pi
+	unicode π
+	latex \pi
+symbol
+	ascii -cn->
+	unicode ‒cn→
+	latex \longrightarrow_{\rm{cn}}
+symbol
+	ascii ~~>m
+	unicode ⇝m
+	latex \rightsquigarrow_{\rm{m}}
+symbol
+	ascii Id
+	unicode _Id
+	latex \rm{Id}
+symbol
+	ascii ^g
+	unicode ↑g
+	latex \uparrow_g
+symbol
+	ascii .s
+	unicode ∙s
+	latex \cdot_s
+symbol
+	ascii .i
+	unicode ∙i
+	latex \cdot_i
+symbol
+	ascii ~~>v
+	unicode ⇝v
+	latex \rightsquigarrow_{\rm{v}}
+symbol
+	ascii _|_
+	unicode ⊥
+	latex \perp
+symbol
+	ascii vH
+	unicode ∨H
+	latex \vee_\mathfrak{H}
+symbol
+	ascii \/H
+	unicode VH
+	latex \bigvee_\mathfrak{H}
+symbol
+	ascii <_op
+	unicode ≤op
+	latex \le_{\rm{op}}
+symbol
+	ascii Lambda
+	unicode Λ
+	latex \Lambda
+symbol
+	ascii <o
+	unicode ⋖
+	latex \lessdot
+symbol
+	ascii 1stc
+	unicode 1stω
+	latex 1^{\rm{st}}\omega
+symbol
+	ascii 2ndc
+	unicode 2ndω
+	latex 2^{\rm{nd}}\omega
+symbol
+	ascii prod_
+	unicode ‏∏
+	latex \Pi
+symbol
+	ascii (+)
+	unicode ⊕
+	latex \oplus
+symbol
+	ascii ~~>t
+	unicode ⇝t
+	latex \rightsquigarrow_{\rm{t}}
+symbol
+	ascii =~ph
+	unicode =~φ
+	latex \mbox{$=$\~{}ph}
+symbol
+	ascii ->..
+	unicode ⇒
+	latex \Longrightarrow

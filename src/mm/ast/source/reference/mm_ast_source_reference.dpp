@@ -1,0 +1,28 @@
+/*****************************************************************************/
+/* Project name:    mm - decompiler from metamath to mdl                     */
+/* File Name:       mm_ast_source_reference.dpp                              */
+/* Description:     declarations for module for proof references             */
+/* Copyright:       (c) 2006-2009 Dmitri Vlasov                              */
+/* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
+/* Email:           vlasov at academ.org                                     */
+/* URL:             http://mathdevlanguage.sourceforge.net                   */
+/* Modified by:                                                              */
+/* License:         GNU General Public License Version 3                     */
+/*****************************************************************************/
+
+#ifndef MM_AST_SOURCE_REFERENCE_DPP_
+#define MM_AST_SOURCE_REFERENCE_DPP_
+
+namespace mm {
+namespace ast {
+namespace source {
+namespace reference {
+
+	class Assertion;
+	class Hypothesis;
+}
+}
+}
+}
+
+#endif /* MM_AST_SOURCE_REFERENCE_DPP_ */

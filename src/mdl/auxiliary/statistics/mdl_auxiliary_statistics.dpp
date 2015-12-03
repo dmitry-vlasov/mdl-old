@@ -1,0 +1,31 @@
+/*****************************************************************************/
+/* Project name:    mdl - mathematics development language                   */
+/* File name:       mdl_auxiliary_statistics.dpp                             */
+/* Description:     declaration module interface for statistics data         */
+/* Copyright:       (c) 2006-2009 Dmitri Vlasov                              */
+/* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
+/* Email:           vlasov at academ.org                                     */
+/* URL:             http://mathdevlanguage.sourceforge.net                   */
+/* Modified by:                                                              */
+/* License:         GNU General Public License Version 3                     */
+/*****************************************************************************/
+
+#ifndef MDL_AUXILIARY_STATISTICS_DPP_
+#define MDL_AUXILIARY_STATISTICS_DPP_
+
+namespace mdl {
+namespace auxiliary {
+namespace statistics {
+
+	class Statistics;
+	class Sample;
+}
+}
+
+namespace statistics {
+	using auxiliary :: statistics :: Sample;
+}
+	using auxiliary :: statistics :: Statistics;
+}
+
+#endif /*MDL_AUXILIARY_STATISTICS_DPP_*/

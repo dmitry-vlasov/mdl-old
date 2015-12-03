@@ -1,0 +1,30 @@
+/*****************************************************************************/
+/* Project name:    mm - decompiler from metamath to mdl                     */
+/* File Name:       mm.dpp                                                   */
+/* Description:     declarations for all mm modules                          */
+/* Copyright:       (c) 2006-2009 Dmitri Vlasov                              */
+/* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
+/* Email:           vlasov at academ.org                                     */
+/* URL:             http://mathdevlanguage.sourceforge.net                   */
+/* Modified by:                                                              */
+/* License:         GNU General Public License Version 3                     */
+/*****************************************************************************/
+
+#ifndef MM_DPP_
+#define MM_DPP_
+
+#include "mm/ast/mm_ast.dpp"
+#include "mm/auxiliary/mm_auxiliary.dpp"
+#include "mm/cut/mm_cut.dpp"
+#include "mm/expression/mm_expression.dpp"
+#include "mm/interface/mm_interface.dpp"
+#include "mm/lexer/mm_lexer.dpp"
+#include "mm/math/mm_math.dpp"
+#include "mm/parser/mm_parser.dpp"
+
+namespace mm {
+
+	class Mm;
+}
+
+#endif /* MM_DPP_ */

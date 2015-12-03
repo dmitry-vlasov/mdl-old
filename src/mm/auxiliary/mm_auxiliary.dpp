@@ -1,0 +1,41 @@
+/*****************************************************************************/
+/* Project name:    mm - decompiler from metamath to mdl                     */
+/* File name:       mm_auxiliary.dpp                                         */
+/* Description:     interface declarations for auxiliary classes module      */
+/* Copyright:       (c) 2006-2009 Dmitri Vlasov                              */
+/* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
+/* Email:           vlasov at academ.org                                     */
+/* URL:             http://mathdevlanguage.sourceforge.net                   */
+/* Modified by:                                                              */
+/* License:         GNU General Public License Version 3                     */
+/*****************************************************************************/
+
+#ifndef MM_AUXILIARY_DPP_
+#define MM_AUXILIARY_DPP_
+
+namespace mm {
+namespace auxiliary {
+
+	class Config;
+	class Corrector;
+	class Error;
+	template<class>
+	class Name;
+	class Output;
+	template<class>
+	class Symbol;
+	class Table;
+	class Timers;
+	class Volume;
+}
+
+	using auxiliary :: Config;
+	using auxiliary :: Corrector;
+	using auxiliary :: Error;
+	using auxiliary :: Output;
+	using auxiliary :: Table;
+	using auxiliary :: Timers;
+	using auxiliary :: Volume;
+}
+
+#endif /* MM_AUXILIARY_DPP_ */

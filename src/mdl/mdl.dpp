@@ -1,0 +1,35 @@
+/*****************************************************************************/
+/* Project name:    mdl - mathematics development language                   */
+/* File Name:       mdl.dpp                                                  */
+/* Description:     declarations for mdl all modules                         */
+/* Copyright:       (c) 2006-2009 Dmitri Vlasov                              */
+/* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
+/* Email:           vlasov at academ.org                                     */
+/* URL:             http://mathdevlanguage.sourceforge.net                   */
+/* Modified by:                                                              */
+/* License:         GNU General Public License Version 3                     */
+/*****************************************************************************/
+
+#ifndef MDL_DPP_
+#define MDL_DPP_
+
+#include "mdl/mdl_macro.hpp"
+
+#include "mdl/auxiliary/mdl_auxiliary.dpp"
+#include "mdl/console/mdl_console.dpp"
+#include "mdl/expression/mdl_expression.dpp"
+#include "mdl/form/mdl_form.dpp"
+#include "mdl/interface/mdl_interface.dpp"
+#include "mdl/lexer/mdl_lexer.dpp"
+#include "mdl/math/mdl_math.dpp"
+#include "mdl/parser/mdl_parser.dpp"
+#include "mdl/prover/mdl_prover.dpp"
+#include "mdl/refactor/mdl_refactor.dpp"
+#include "mdl/study/mdl_study.dpp"
+
+namespace mdl {
+
+	class Engine;
+}
+
+#endif /*MDL_DPP_*/

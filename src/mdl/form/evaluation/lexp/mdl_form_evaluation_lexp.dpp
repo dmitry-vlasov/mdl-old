@@ -1,0 +1,47 @@
+/*****************************************************************************/
+/* Project name:    mdl - mathematics development language                   */
+/* File Name:       mdl_form_evaluation_lexp.dpp                             */
+/* Description:     prover node lexp evaluation module                       */
+/* Copyright:       (c) 2006-2009 Dmitri Vlasov                              */
+/* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
+/* Email:           vlasov at academ.org                                     */
+/* URL:             http://mathdevlanguage.sourceforge.net                   */
+/* Modified by:                                                              */
+/* License:         GNU General Public License Version 3                     */
+/*****************************************************************************/
+
+#ifndef MDL_FORM_EVALUATION_LEXP_DPP_
+#define MDL_FORM_EVALUATION_LEXP_DPP_
+
+namespace mdl {
+namespace form {
+namespace evaluation {
+namespace lexp {
+
+	template<class>
+	class Downhood;
+	class Factors;
+	template<class>
+	class Fris;
+	template<class>
+	class Point;
+	template<class>
+	class Uphood;
+	template<class>
+	class Vector;
+
+	typedef
+		mdl :: set :: value :: Integer
+		Sample;
+
+namespace vector {
+	using mdl :: vector :: value :: Integer;
+	using mdl :: vector :: value :: Real;
+}
+
+}
+}
+}
+}
+
+#endif /*MDL_FORM_EVALUATION_LEXP_DPP_*/

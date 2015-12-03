@@ -1,0 +1,52 @@
+/*****************************************************************************/
+/* Project name:    nstd - non-standard library                              */
+/* File name:       nstd_type_traits_indicator.dpp                           */
+/* Description:     declarations for type indicators module                  */
+/* Copyright:       (c) 2006-2009 Dmitri Vlasov                              */
+/* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
+/* Email:           vlasov at academ.org                                     */
+/* URL:             http://mathdevlanguage.sourceforge.net                   */
+/* Modified by:                                                              */
+/* License:         GNU General Public License Version 3                     */
+/*****************************************************************************/
+
+#ifndef NSTD_TYPE_TRAITS_INDICATOR_DPP_
+#define NSTD_TYPE_TRAITS_INDICATOR_DPP_
+
+namespace nstd {
+namespace type {
+namespace traits {
+namespace indicator {
+
+	template<class>
+	struct bool_;
+	template<class>
+	struct char_;
+	template<class>
+	struct digits_;
+	template<class>
+	struct double_;
+	template<class>
+	struct Empty_;
+	template<class>
+	struct float_;
+	template<class>
+	struct int_;
+	template<class>
+	struct long_long_;
+	template<class>
+	struct Null_;
+	template<class>
+	struct Pointer_;
+	template<class>
+	struct short_;
+	template<class>
+	struct signed_;
+	template<class>
+	struct void_;
+}
+}
+}
+}
+
+#endif /*NSTD_TYPE_TRAITS_INDICATOR_DPP_*/

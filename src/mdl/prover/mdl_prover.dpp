@@ -1,0 +1,38 @@
+/*****************************************************************************/
+/* Project name:    mdl - mathematics development language                   */
+/* File Name:       mdl_prover.dpp                                           */
+/* Description:     declarations for prover module                           */
+/* Copyright:       (c) 2006-2009 Dmitri Vlasov                              */
+/* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
+/* Email:           vlasov at academ.org                                     */
+/* URL:             http://mathdevlanguage.sourceforge.net                   */
+/* Modified by:                                                              */
+/* License:         GNU General Public License Version 3                     */
+/*****************************************************************************/
+
+#ifndef MDL_PROVER_DPP_
+#define MDL_PROVER_DPP_
+
+#include "mdl/prover/data/mdl_prover_data.dpp"
+#include "mdl/prover/evidence/mdl_prover_evidence.dpp"
+#include "mdl/prover/interface/mdl_prover_interface.dpp"
+#include "mdl/prover/node/mdl_prover_node.dpp"
+#include "mdl/prover/proof/mdl_prover_proof.dpp"
+#include "mdl/prover/tree/mdl_prover_tree.dpp"
+
+namespace mdl {
+namespace prover {
+
+	// in graph representation in GML format
+	const value :: Integer _digits_ = 24;
+
+	class Exception;
+	class Mode;
+	class Prover;
+
+	using exception :: OutOfMemory;
+}
+	using prover :: Prover;
+}
+
+#endif /*MDL_PROVER_DPP_*/

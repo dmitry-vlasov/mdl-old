@@ -1,0 +1,46 @@
+/*****************************************************************************/
+/* Project name:    nstd - non-standard library                              */
+/* File name:       nstd_container.dpp                                       */
+/* Description:     declarations for nstd containers module                  */
+/* Copyright:       (c) 2006-2009 Dmitri Vlasov                              */
+/* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
+/* Email:           vlasov at academ.org                                     */
+/* URL:             http://mathdevlanguage.sourceforge.net                   */
+/* Modified by:                                                              */
+/* License:         GNU General Public License Version 3                     */
+/*****************************************************************************/
+
+#ifndef NSTD_CONTAINER_DPP_
+#define NSTD_CONTAINER_DPP_
+
+#include "container/continual/nstd_container_continual.dpp"
+#include "container/discrete/nstd_container_discrete.dpp"
+#include "container/storage/nstd_container_storage.dpp"
+
+namespace nstd {
+namespace container {
+
+	template<class, template<class> class, class>
+	class Array;
+	template<int, class>
+	class Bit;
+	template
+	<
+		class,
+		template<class> class,
+		class,
+		template<class, class, class> class
+	>
+	class List;
+	template<class, class>
+	class Pair;
+	template<class, template<class> class, class>
+	class Set;
+	template<class, template<class> class, class>
+	class Stack;
+	template<class, template<class> class, class>
+	class Vector;
+}
+}
+
+#endif /*NSTD_CONTAINER_DPP_*/

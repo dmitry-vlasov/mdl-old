@@ -1,0 +1,33 @@
+/*****************************************************************************/
+/* Project name:    mm - decompiler from metamath to mdl                     */
+/* File name:       mm_lexer.dpp                                             */
+/* Description:     interface declarations for metamath lexer module         */
+/* Copyright:       (c) 2006-2009 Dmitri Vlasov                              */
+/* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
+/* Email:           vlasov at academ.org                                     */
+/* URL:             http://mathdevlanguage.sourceforge.net                   */
+/* Modified by:                                                              */
+/* License:         GNU General Public License Version 3                     */
+/*****************************************************************************/
+
+#ifndef MM_LEXER_DPP_
+#define MM_LEXER_DPP_
+
+namespace mm {
+namespace lexer {
+
+	class CommentScaner;
+	class IdentificatorScaner;
+	class Lexer;
+	class LiteralScaner;
+	class PathScaner;
+	class Scaner;
+	class Token;
+	class WhilespaceScaner;
+}
+
+	using lexer :: Lexer;
+	using lexer :: Token;
+}
+
+#endif /* MM_LEXER_DPP_ */

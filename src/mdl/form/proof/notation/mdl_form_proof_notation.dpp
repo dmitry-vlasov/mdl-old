@@ -1,0 +1,34 @@
+/*****************************************************************************/
+/* Project name:    mdl - mathematics development language                   */
+/* File Name:       mdl_form_proof_notation.dpp                              */
+/* Description:     interface declaration for module for notation in proof   */
+/* Copyright:       (c) 2006-2009 Dmitri Vlasov                              */
+/* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
+/* Email:           vlasov at academ.org                                     */
+/* URL:             http://mathdevlanguage.sourceforge.net                   */
+/* Modified by:                                                              */
+/* License:         GNU General Public License Version 3                     */
+/*****************************************************************************/
+
+#ifndef MDL_FORM_PROOF_NOTATION_DPP_
+#define MDL_FORM_PROOF_NOTATION_DPP_
+
+namespace mdl {
+namespace form {
+namespace proof {
+namespace notation {
+
+	class Abbreviation;
+	class Meaning;
+	class Notation;
+	class Term;
+}
+
+	typedef
+		notation :: Notation
+		Notation;
+}
+}
+}
+
+#endif /*MDL_FORM_PROOF_NOTATION_DPP_*/

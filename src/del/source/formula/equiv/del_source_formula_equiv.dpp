@@ -1,0 +1,31 @@
+/*****************************************************************************/
+/* Project name:    del - mathematics development language                   */
+/* File Name:       del_source_formula_quiv.dpp                              */
+/* Description:     declarations for module for equivalence formula sources  */
+/* Copyright:       (c) 2006-2009 Dmitri Vlasov                              */
+/* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
+/* Email:           vlasov at academ.org                                     */
+/* URL:             http://mathdevlanguage.sourceforge.net                   */
+/* Modified by:                                                              */
+/* License:         GNU General Public License Version 3                     */
+/*****************************************************************************/
+
+#ifndef DEL_SOURCE_FORMULA_EQUIV_DPP_
+#define DEL_SOURCE_FORMULA_EQUIV_DPP_
+
+namespace del {
+namespace source {
+namespace formula {
+namespace equiv {
+
+	class Definition;
+	class Equivalence;
+	class Identity;
+	class Primitive;
+}
+ 	using namespace equiv;
+}
+}
+}
+
+#endif /*DEL_SOURCE_FORMULA_EQUIV_DPP_*/

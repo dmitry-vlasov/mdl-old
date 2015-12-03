@@ -1,0 +1,64 @@
+/*****************************************************************************/
+/* Project name:    mdl - mathematics development language                   */
+/* File Name:       mdl_interface_block.dpp                                  */
+/* Description:     interface declarations for abstract block module         */
+/* Copyright:       (c) 2006-2009 Dmitri Vlasov                              */
+/* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
+/* Email:           vlasov at academ.org                                     */
+/* URL:             http://mathdevlanguage.sourceforge.net                   */
+/* Modified by:                                                              */
+/* License:         GNU General Public License Version 3                     */
+/*****************************************************************************/
+
+#ifndef MDL_INTERFACE_BLOCK_DPP_
+#define MDL_INTERFACE_BLOCK_DPP_
+
+namespace mdl {
+namespace interface {
+namespace block {
+
+	class Assertion;
+	class Constant;
+	class Definition;
+	class Evaluation;
+	class Proof;
+	class Rule;
+	class Super;
+	class Theorem;
+	class Type;
+}
+}
+	using interface :: block :: Assertion;
+	using interface :: block :: Constant;
+	using interface :: block :: Definition;
+	using interface :: block :: Evaluation;
+	using interface :: block :: Proof;
+	using interface :: block :: Rule;
+	using interface :: block :: Super;
+	using interface :: block :: Theorem;
+	using interface :: block :: Type;
+
+namespace vector {
+
+	typedef
+		Vector<mdl :: Assertion*, storage :: ByValue, allocator :: Heap>
+		Assertion;
+	typedef
+		Vector<mdl :: Evaluation*, storage :: ByValue, allocator :: Heap>
+		Evaluation;
+	typedef
+		Vector<mdl :: Proof*, storage :: ByValue, allocator :: Heap>
+		Proof;
+	typedef
+		Vector<mdl :: Super, storage :: ByPointer, allocator :: Heap>
+		Super;
+	typedef
+		Vector<mdl :: Theorem*, storage :: ByValue, allocator :: Heap>
+		Theorem;
+	typedef
+		Vector<mdl :: Type*, storage :: ByValue, allocator :: Heap>
+		Type;
+}
+}
+
+#endif /*MDL_INTERFACE_BLOCK_DPP_*/

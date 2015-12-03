@@ -1,0 +1,76 @@
+/*****************************************************************************/
+/* Project name:    mm - decompiler from metamath to mdl                     */
+/* File name:       mm_interface_object.dpp                                  */
+/* Description:     interface declarations for object interfaces module      */
+/* Copyright:       (c) 2006-2009 Dmitri Vlasov                              */
+/* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
+/* Email:           vlasov at academ.org                                     */
+/* URL:             http://mathdevlanguage.sourceforge.net                   */
+/* Modified by:                                                              */
+/* License:         GNU General Public License Version 3                     */
+/*****************************************************************************/
+
+#ifndef MM_INTERFACE_OBJECT_DPP_
+#define MM_INTERFACE_OBJECT_DPP_
+
+#include "types/mm_types.hpp"
+
+namespace mm {
+namespace interface {
+namespace object {
+
+	class Expressive;
+	class Labeled;
+	class Object;
+	class Referable;
+	class Targetive;
+	class Translatable;
+	class Verifiable;
+	class Writable;
+}
+}
+
+namespace object {
+
+	using interface :: object :: Expressive;
+	using interface :: object :: Labeled;
+	using interface :: object :: Object;
+	using interface :: object :: Referable;
+	using interface :: object :: Targetive;
+	using interface :: object :: Translatable;
+	using interface :: object :: Verifiable;
+	using interface :: object :: Writable;
+}
+
+namespace  list {
+namespace object {
+
+	typedef
+		List<const mm :: object :: Verifiable*, storage :: ByValue, allocator :: Heap>
+		Verifiable;
+	typedef
+		List<const mm :: object :: Translatable, storage :: ByPointer, allocator :: Heap>
+		Translatable;
+	typedef
+		List<const mm :: object :: Writable, storage :: ByPointer, allocator :: Heap>
+		Writable;
+	typedef
+		List<const mm :: object :: Targetive, storage :: ByPointer, allocator :: Heap>
+		Targetive;
+}
+}
+
+namespace  vector {
+namespace object {
+
+	typedef
+		Vector<const mm :: object :: Verifiable*, storage :: ByValue, allocator :: Heap>
+		Verifiable;
+	typedef
+		Vector<const mm :: object :: Writable*, storage :: ByValue, allocator :: Heap>
+		Writable;
+}
+}
+}
+
+#endif /* MM_INTERFACE_OBJECT_DPP_ */

@@ -1,0 +1,36 @@
+/*****************************************************************************/
+/* Project name:    mdl - mathematics development language                   */
+/* File Name:       mdl_form_proof.dpp                                       */
+/* Description:     declarations for proof module                            */
+/* Copyright:       (c) 2006-2009 Dmitri Vlasov                              */
+/* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
+/* Email:           vlasov at academ.org                                     */
+/* URL:             http://mathdevlanguage.sourceforge.net                   */
+/* Modified by:                                                              */
+/* License:         GNU General Public License Version 3                     */
+/*****************************************************************************/
+
+#ifndef MDL_PROOF_DPP_
+#define MDL_PROOF_DPP_
+
+#include "mdl/form/proof/node/mdl_form_proof_node.dpp"
+#include "mdl/form/proof/notation/mdl_form_proof_notation.dpp"
+#include "mdl/form/proof/scope/mdl_form_proof_scope.dpp"
+#include "mdl/form/proof/step/mdl_form_proof_step.dpp"
+
+namespace mdl {
+namespace form {
+namespace proof {
+
+	class Link;
+	class Proof;
+	class Qed;
+	class Reference;
+	class References;
+	class Step;
+	class Variable;
+}
+}
+}
+
+#endif /*MDL_PROOF_DPP_*/

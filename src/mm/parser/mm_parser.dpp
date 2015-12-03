@@ -1,0 +1,27 @@
+/*****************************************************************************/
+/* Project name:    mm - decompiler from metamath to mdl                     */
+/* File name:       mm_parser.dpp                                            */
+/* Description:     interface declarations for metamath parser module        */
+/* Copyright:       (c) 2006-2009 Dmitri Vlasov                              */
+/* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
+/* Email:           vlasov at academ.org                                     */
+/* URL:             http://mathdevlanguage.sourceforge.net                   */
+/* Modified by:                                                              */
+/* License:         GNU General Public License Version 3                     */
+/*****************************************************************************/
+
+#ifndef MM_PARSER_DPP_
+#define MM_PARSER_DPP_
+
+#include "parser/block/mm_parser_block.dpp"
+
+namespace mm {
+namespace parser {
+
+	class Block;
+	class Include;
+	class Source;
+}
+}
+
+#endif /* MM_PARSER_DPP_ */

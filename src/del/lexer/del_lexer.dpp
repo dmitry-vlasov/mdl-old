@@ -1,0 +1,31 @@
+/*****************************************************************************/
+/* Project name:    del - mathematics development language                   */
+/* File Name:       del_lexer.dpp                                            */
+/* Description:     interface declarations for lexer module                  */
+/* Copyright:       (c) 2006-2009 Dmitri Vlasov                              */
+/* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
+/* Email:           vlasov at academ.org                                     */
+/* URL:             http://mathdevlanguage.sourceforge.net                   */
+/* Modified by:                                                              */
+/* License:         GNU General Public License Version 3                     */
+/*****************************************************************************/
+
+#ifndef DEL_LEXER_DPP__
+#define DEL_LEXER_DPP__
+
+namespace del {
+namespace lexer {
+
+	class CommentScaner;
+	class Lexer;
+	class NameScaner;
+	class PathScaner;
+	class Scaner;
+	class Token;
+	class WhitespaceScaner;
+}
+	using lexer :: Lexer;
+	using lexer :: Token;
+}
+
+#endif /*DEL_LEXER_DPP__*/

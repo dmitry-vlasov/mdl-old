@@ -1,0 +1,38 @@
+/*****************************************************************************/
+/* Project name:    del - mathematics development language                   */
+/* File Name:       del_owl_func_parser.dpp                                  */
+/* Description:     functional OWL2 parser module                            */
+/* Copyright:       (c) 2006-2009 Dmitri Vlasov                              */
+/* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
+/* Email:           vlasov at academ.org                                     */
+/* URL:             http://mathdevlanguage.sourceforge.net                   */
+/* Modified by:                                                              */
+/* License:         GNU General Public License Version 3                     */
+/*****************************************************************************/
+
+#ifndef DEL_OWL_FUNC_PARSER_DPP_
+#define DEL_OWL_FUNC_PARSER_DPP_
+
+namespace del {
+namespace owl {
+namespace func {
+namespace parser {
+
+	class Annotation;
+	class AnnotationAssertion;
+	class Declaration;
+	class EntityAnnotation;
+	class EqClasses;
+	class Namespace;
+	class Ontology;
+	class Prefix;
+	class Source;
+	class SubClasses;
+	class Term;
+	class Unrecognized;
+}
+}
+}
+}
+
+#endif /*DEL_OWL_FUNC_PARSER_DPP_*/

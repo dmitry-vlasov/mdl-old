@@ -1,0 +1,41 @@
+/*****************************************************************************/
+/* Project name:    mm - decompiler from metamath to mdl                     */
+/* File name:       mm_expression.dpp                                        */
+/* Description:     interface declarations for metamath expression module    */
+/* Copyright:       (c) 2006-2009 Dmitri Vlasov                              */
+/* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
+/* Email:           vlasov at academ.org                                     */
+/* URL:             http://mathdevlanguage.sourceforge.net                   */
+/* Modified by:                                                              */
+/* License:         GNU General Public License Version 3                     */
+/*****************************************************************************/
+
+#ifndef MM_EXPRESSION_DPP_
+#define MM_EXPRESSION_DPP_
+
+#include "types/mm_types.hpp"
+
+namespace mm {
+namespace expression {
+
+	class Expression;
+	class Substitution;
+	class Symbol;
+}
+	using expression :: Expression;
+	using expression :: Substitution;
+	using expression :: Symbol;
+
+namespace vector {
+	typedef
+		Vector
+		<
+			const Expression,
+			storage :: ByPointer,
+			allocator :: Heap
+		>
+		Expression;
+}
+}
+
+#endif /* MM_EXPRESSION_DPP_ */

@@ -1,0 +1,35 @@
+/*****************************************************************************/
+/* Project name:    mdl - mathematics development language                   */
+/* File Name:       mdl_form_header.dpp                                      */
+/* Description:     interface declarations for header classes module         */
+/* Copyright:       (c) 2006-2009 Dmitri Vlasov                              */
+/* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
+/* Email:           vlasov at academ.org                                     */
+/* URL:             http://mathdevlanguage.sourceforge.net                   */
+/* Modified by:                                                              */
+/* License:         GNU General Public License Version 3                     */
+/*****************************************************************************/
+
+#ifndef MDL_FORM_HEADER_DPP_
+#define MDL_FORM_HEADER_DPP_
+
+#include "mdl/form/header/statement/mdl_form_header_statement.dpp"
+#include "mdl/form/header/term/mdl_form_header_term.dpp"
+
+namespace mdl {
+namespace form {
+namespace header {
+
+	class Disjointed;
+	class Disjointeds;
+	class Line;
+	class Variable;
+	class Variables;
+}
+
+	using header :: Disjointeds;
+	using header :: Variables;
+}
+}
+
+#endif /*MDL_FORM_HEADER_DPP_*/

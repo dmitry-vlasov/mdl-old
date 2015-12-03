@@ -1,0 +1,222 @@
+#!/bin/bash
+
+if [ -z $1 ] 
+then 
+    echo;
+    echo "Compression of a given theorem proof.";
+    echo "Used for evaluation of learning.";
+    echo "-------------------------------------";
+    echo "1 argument - the name <dir> of the directory to be used";
+    echo "2 argument - the name of the theorem used for compression";
+    echo "3 argument - the build directory from the top of the project";
+    echo;
+    exit;
+fi;
+
+dir=$1;
+theorem=$2;
+
+if [ -z $3 ]
+then
+    build_dir='';
+else
+    build_dir=$3'/';
+fi;
+
+show_phase="no";
+#show_phase="yes";
+clear="yes";
+#clear="no";
+
+learned=$dir/tmp/${theorem}_learned.rus
+source=$dir/tmp/$theorem.rus;
+cp $dir/src.rus $source;
+
+if [ $show_phase = "yes" ] 
+then
+    echo "===================================================";
+    echo "learning: $source --> $learned";
+    echo "===================================================";
+    echo;
+fi;
+
+bench_conf=$dir/tmp/bench.conf;
+#tuned_conf=$dir/tmp/tuned.conf;
+learn_conf=$dir/learn.conf;
+
+time_str=`cat ./$dir/time | grep learn`;
+time_array=($time_str) 
+time=${time_array[1]}
+
+../../${build_dir}src/mdl/mdl \
+	--verbose-med \
+	--overwrite \
+	--learn \
+	--time-limit $time \
+	--exclude-assertion $theorem \
+	--config $bench_conf \
+	--config $learn_conf \
+	-o $learned \
+	\
+	$source;
+	
+if [ $? != 0 ] 
+then 
+    echo "LEARNING FAILED."; 
+    exit 1;
+fi;
+
+if [ $clear = "yes" ]
+then
+    rm $source;
+fi;
+
+compressed=$dir/tmp/${theorem}_compressed.rus
+
+if [ $show_phase = "yes" ] 
+then
+    echo "===========================================================";
+    echo "compressing: $learned --> $compressed";
+    echo "===========================================================";
+    echo;
+fi;
+
+time_str=`cat ./$dir/time | grep compress`;
+time_array=($time_str) 
+time=${time_array[1]}
+
+../../${build_dir}src/mdl/mdl \
+	--verbose-med \
+	--overwrite \
+	--compress \
+	--time-limit $time \
+	--compress-assertion $theorem \
+	--log-compression \
+	-o $compressed \
+	\
+	$learned;
+	
+	
+if [ $? != 0 ] 
+then 
+    echo "COMPRESSION FAILED."; 
+    exit 1;
+fi;
+
+if [ $clear = "yes" ]
+then
+    rm $learned;
+fi;
+
+proved=$dir/tmp/${theorem}_proved.rus
+
+if [ $show_phase = "yes" ] 
+then
+    echo "========================================================";
+    echo "proving: $compressed --> $proved";
+    echo "=========================================================";
+    echo;
+fi;
+
+time_str=`cat ./$dir/time | grep prove`;
+time_array=($time_str) 
+time=${time_array[1]}
+
+../../${build_dir}src/mdl/mdl \
+	--verbose-med \
+	--overwrite \
+	--prove \
+	--time-limit $time \
+	--log-proving \
+	--optimal-search \
+	-o $proved \
+	\
+	$compressed;
+	
+if [ $? != 0 ] 
+then 
+    echo "PROVING FAILED."; 
+    exit 1;
+fi;
+
+if [ $clear = "yes" ]
+then
+    rm $compressed;
+fi;
+
+target=$dir/tmp/${theorem}.smm
+
+if [ $show_phase = "yes" ] 
+then
+    echo "============================================================";
+    echo "translation: $proved --> $target";
+    echo "============================================================";
+    echo;
+fi;
+
+../../${build_dir}src/mdl/mdl \
+	--verbose-min \
+	--overwrite \
+	--translate \
+	-o $target \
+	\
+	$proved;
+
+if [ $? != 0 ] 
+then 
+    echo "TRANSLATION FAILED."; 
+    exit 1;
+fi;
+
+if [ $clear = "yes" ]
+then
+    rm $proved;
+fi;
+
+if [ $show_phase = "yes" ] 
+then 
+    echo "=============================================";
+    echo "verifying: $target with metamath";
+    echo "=============================================";
+    echo;
+
+    ../../${build_dir}metamath/metamath \
+	    "read $target" \
+	    'verify proof *' \
+	    exit; 
+	    
+    if [ $? != 0 ] 
+    then 
+	echo "METAMATH VERIFICATION FAILED."; 
+	exit 1;
+    fi;
+fi;
+
+if [ $show_phase = "yes" ] 
+then
+    echo "========================================";
+    echo "verifying: $target with smm";
+    echo "========================================";
+    echo;
+fi;
+
+../../${build_dir}src/smm/smm \
+	--verbose-min \
+	\
+	$target;
+
+if [ $? != 0 ] 
+then 
+    echo "SMM VERIFICATION FAILED."; 
+    exit 1;
+else
+    if [ $clear = "yes" ]
+    then
+	  rm $target;
+    fi;
+    if [ $show_phase = "yes" ]
+    then
+	echo "Compression successfully completed :)"; 
+    fi;
+fi;
+

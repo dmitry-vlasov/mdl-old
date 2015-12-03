@@ -1,0 +1,55 @@
+/*****************************************************************************/
+/* Project name:    mdl - mathematics development language                   */
+/* File Name:       mdl_prover_interface.dpp                                 */
+/* Description:     declaration interfaces for module for abstract proof tree*/
+/* Copyright:       (c) 2006-2009 Dmitri Vlasov                              */
+/* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
+/* Email:           vlasov at academ.org                                     */
+/* URL:             http://mathdevlanguage.sourceforge.net                   */
+/* Modified by:                                                              */
+/* License:         GNU General Public License Version 3                     */
+/*****************************************************************************/
+
+#ifndef MDL_PROVER_INTERFACE_DPP_
+#define MDL_PROVER_INTERFACE_DPP_
+
+#include "mdl/interface/proof/mdl_interface_proof.dpp"
+
+namespace mdl {
+namespace prover {
+namespace interface {
+
+	template<class A>
+	class Evaluator;
+	template<class A>
+	class Base;
+	template<class A>
+	class Evidence;
+	template<class A>
+	class Evidences;
+	class Experience;
+	template<class A>
+	class Node;
+	template<class A>
+	class Proof;
+	template<class A>
+	class Trainee;
+	template<class A = allocator :: Boxed>
+	class Types;
+
+	class Tree;
+}
+	using interface :: Evaluator;
+	using interface :: Evidence;
+	using interface :: Evidences;
+	using interface :: Experience;
+	using interface :: Node;
+	using interface :: Proof;
+	using interface :: Trainee;
+	using interface :: Types;
+	using interface :: Tree;
+}
+	using prover :: Tree;
+}
+
+#endif /*MDL_PROVER_INTERFACE_DPP_*/

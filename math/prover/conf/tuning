@@ -1,0 +1,14 @@
+# config file for mdl prover learning tuning
+# overwrite target
+-w 
+
+--verbose-max
+--factor-pos-neg 10
+--deep-write 
+#--mem-all 
+#--info-all 
+
+--max-precision 4
+--max-grouping  5
+--max-fris-threshold 90
+--sample-size   10

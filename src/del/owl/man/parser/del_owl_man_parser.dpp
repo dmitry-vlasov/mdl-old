@@ -1,0 +1,36 @@
+/*****************************************************************************/
+/* Project name:    del - mathematics development language                   */
+/* File Name:       del_owl_man_parser.dpp                                   */
+/* Description:     manchester OWL parser module                             */
+/* Copyright:       (c) 2006-2009 Dmitri Vlasov                              */
+/* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
+/* Email:           vlasov at academ.org                                     */
+/* URL:             http://mathdevlanguage.sourceforge.net                   */
+/* Modified by:                                                              */
+/* License:         GNU General Public License Version 3                     */
+/*****************************************************************************/
+
+#ifndef DEL_OWL_MAN_PARSER_DPP_
+#define DEL_OWL_MAN_PARSER_DPP_
+
+namespace del {
+namespace owl {
+namespace man {
+namespace parser {
+
+	class Annotations;
+	class Class;
+	class DisjointWith;
+	class Equivalence;
+	class Namespace;
+	class ObjectProperty;
+	class Ontology;
+	class Source;
+	class Subclass;
+	class Term;
+}
+}
+}
+}
+
+#endif /*DEL_OWL_MAN_PARSER_DPP_*/

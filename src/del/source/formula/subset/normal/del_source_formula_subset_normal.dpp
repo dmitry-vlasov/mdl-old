@@ -1,0 +1,37 @@
+/*****************************************************************************/
+/* Project name:    del - mathematics development language                   */
+/* File Name:       del_source_formula_subset_subset_normal.dpp              */
+/* Description:     module for normal formula sources                        */
+/* Copyright:       (c) 2006-2009 Dmitri Vlasov                              */
+/* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
+/* Email:           vlasov at academ.org                                     */
+/* URL:             http://mathdevlanguage.sourceforge.net                   */
+/* Modified by:                                                              */
+/* License:         GNU General Public License Version 3                     */
+/*****************************************************************************/
+
+#ifndef DEL_SOURCE_FORMULA_SUBSET_NORMAL_DPP_
+#define DEL_SOURCE_FORMULA_SUBSET_NORMAL_DPP_
+
+namespace del {
+namespace source {
+namespace formula {
+namespace subset {
+namespace normal {
+
+	class Conjunction;
+	class Exists;
+	class LeftExists;
+	class Normal;
+	class Primitive;
+	class RightExists;
+	class Simple;
+
+	class Iterator;
+}
+}
+}
+}
+}
+
+#endif /*DEL_SOURCE_FORMULA_SUBSET_NORMAL_DPP_*/

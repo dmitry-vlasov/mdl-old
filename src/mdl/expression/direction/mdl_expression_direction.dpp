@@ -1,0 +1,26 @@
+/*****************************************************************************/
+/* Project name:    mdl - mathematics development language                   */
+/* File name:       mdl_expression_direction.dpp                             */
+/* Description:     module iterator directions declarations                  */
+/* Copyright:       (c) 2006-2009 Dmitri Vlasov                              */
+/* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
+/* Email:           vlasov at academ.org                                     */
+/* URL:             http://mathdevlanguage.sourceforge.net                   */
+/* Modified by:                                                              */
+/* License:         GNU General Public License Version 3                     */
+/*****************************************************************************/
+
+#ifndef MDL_EXPRESSION_DIRECTION_DPP_
+#define MDL_EXPRESSION_DIRECTION_DPP_
+
+namespace mdl {
+namespace expression {
+namespace direction {
+
+	struct Linear;
+	struct Tree;
+}
+}
+}
+
+#endif /*MDL_EXPRESSION_DIRECTION_DPP_*/

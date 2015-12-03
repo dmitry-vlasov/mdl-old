@@ -1,0 +1,81 @@
+#!/bin/sh
+
+# mm/mdl translation test
+# 1) first argument - the name of the source file to be 
+#    translated
+# 2) second argument - the build directory from the top of
+#    the project. By default, it's empty.
+
+if [ -z $1 ] 
+then echo "NO INPUT FILE."; exit
+fi;
+
+file=$1
+
+if [ -z $2 ] 
+then dir='';
+else dir=$2'/';
+fi;
+
+echo "=======================================";
+echo "translation: ${file}.mm --> ${file}.rus";
+echo "=======================================";
+echo;
+../${dir}src/mm/mm \
+	-w -t -v \
+	--correct-grammar grammar.corr \
+	--correct-symbol symbol.corr \
+	--mem-all --info-all \
+	-o ${file}.rus \
+	\
+	${file}.mm;
+
+if [ $? != 0 ] 
+then echo "TEST FAILED."; exit
+fi;
+
+echo "========================================";
+echo "translation: ${file}.rus --> ${file}.smm";
+echo "========================================";
+echo;
+
+../${dir}src/mdl/mdl \
+	-t -w -v \
+	--mem-all --info-all \
+	-o ${file}.smm \
+	${file}.rus;
+
+if [ $? != 0 ] 
+then echo "TEST FAILED."; exit
+fi;
+
+echo "====================================";
+echo "verifying: ${file}.smm with metamath";
+echo "====================================";
+echo;
+
+../${dir}metamath/metamath \
+	"read ${file}.smm" \
+	'verify proof *' \
+	exit 
+
+if [ $? != 0 ] 
+then echo "TEST FAILED."; exit
+fi;
+
+echo "===============================";
+echo "verifying: ${file}.smm with smm" ;
+echo "===============================";
+echo;
+
+../${dir}src/smm/smm \
+	-v --show-stack \
+	--mem-all --info-all \
+	\
+	${file}.smm;
+
+if [ $? != 0 ] 
+then echo "TEST FAILED."; exit
+else echo "\n\nTests successfully passed :)"; 
+fi;
+

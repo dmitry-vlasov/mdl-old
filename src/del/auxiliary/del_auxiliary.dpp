@@ -1,0 +1,39 @@
+/*****************************************************************************/
+/* Project name:    del - mathematics development language                   */
+/* File name:       del_auxiliary.dpp                                        */
+/* Description:     declaration auxiliary classes module interface           */
+/* Copyright:       (c) 2006-2009 Dmitri Vlasov                              */
+/* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
+/* Email:           vlasov at academ.org                                     */
+/* URL:             http://mathdevlanguage.sourceforge.net                   */
+/* Modified by:                                                              */
+/* License:         GNU General Public License Version 3                     */
+/*****************************************************************************/
+
+#ifndef DEL_AUXILIARY_DPP_
+#define DEL_AUXILIARY_DPP_
+
+namespace del {
+namespace auxiliary {
+
+	class Config;
+	class Error;
+	class Log;
+	class Output;
+	class Statistics;
+	class Table;
+	class Timers;
+	class Volume;
+}
+	using auxiliary :: Config;
+	using auxiliary :: Error;
+	using auxiliary :: Log;
+	using auxiliary :: Output;
+	using auxiliary :: Statistics;
+	using auxiliary :: Table;
+	using auxiliary :: Timers;
+	using auxiliary :: Volume;
+}
+
+
+#endif /*DEL_AUXILIARY_DPP_*/

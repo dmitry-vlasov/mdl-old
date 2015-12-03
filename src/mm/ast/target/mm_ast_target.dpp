@@ -1,0 +1,36 @@
+/*****************************************************************************/
+/* Project name:    mm - decompiler from metamath to mdl                     */
+/* File name:       mm_ast_target.dpp                                        */
+/* Description:     declarations for mdl AST module                          */
+/* Copyright:       (c) 2006-2009 Dmitri Vlasov                              */
+/* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
+/* Email:           vlasov at academ.org                                     */
+/* URL:             http://mathdevlanguage.sourceforge.net                   */
+/* Modified by:                                                              */
+/* License:         GNU General Public License Version 3                     */
+/*****************************************************************************/
+
+#ifndef MM_AST_TARGET_DPP_
+#define MM_AST_TARGET_DPP_
+
+#include "ast/target/assertion/mm_ast_target_assertion.dpp"
+#include "ast/target/header/mm_ast_target_header.dpp"
+#include "ast/target/step/mm_ast_target_step.dpp"
+
+namespace mm {
+namespace ast {
+namespace target {
+
+	class Block;
+	class Comments;
+	class Constant;
+	class Import;
+	class Proof;
+	class Target;
+	class Theory;
+	class Type;
+}
+}
+}
+
+#endif /* MM_AST_TARGET_DPP_ */

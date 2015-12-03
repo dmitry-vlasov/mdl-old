@@ -1,0 +1,2417 @@
+/*****************************************************************************/
+/* Project name: Russell language pure mathematics library                   */
+/* File name:    src.rus                                                     */
+/* Description:  Russell language pure mathematics library                   */
+/* Created:      automatically decompiled by mm program from metamath base   */
+/* Email:        vlasov at academ.org                                        */
+/* URL:          http://russellmath.org                                      */
+/* License:      Creative Commons Public Domain Dedication                   */
+/*****************************************************************************/
+
+theory src;
+
+contents of src {
+
+	/* 
+	#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+	                           Pre-logic
+	#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+	 */
+	/*  Declare the primitive constant symbols for propositional calculus.  */
+	/*  Left parenthesis  */
+	constant 
+	{
+		symbol ( ;
+	}
+
+	/*  Right parenthesis  */
+	constant 
+	{
+		symbol ) ;
+	}
+
+	/*  Right arrow (read:  "implies")  */
+	constant 
+	{
+		symbol -> ;
+	}
+
+	/*  Right handle (read:  "not")  */
+	constant 
+	{
+		symbol -. ;
+	}
+
+	type wff ;
+
+	/* 
+	#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+	                           Propositional calculus
+	#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+	 */
+	/* 
+	=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+	        Recursively define primitive wffs for propositional calculus
+	=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+	 */
+	/*  If ` ph ` is a wff, so is ` -. ph ` or "not ` ph ` ."  Part of the
+	     recursive definition of a wff (well-formed formula).  In classical logic
+	     (which is our logic), a wff is interpreted as either true or false.
+	     So if ` ph ` is true, then ` -. ph ` is false; if ` ph ` is false, then
+	     ` -. ph ` is true.  Traditionally, Greek letters are used to represent
+	     wffs, and we follow this convention.  In propositional calculus, we define
+	     only wffs built up from other wffs, i.e. there is no starting or "atomic"
+	     wff.  Later, in predicate calculus, we will extend the basic wff
+	     definition by including atomic wffs ( ~ weq and ~ wel ).  */
+	rule wn (var ph : wff ) 
+	{
+		term : wff = # -. ph ;
+	}
+
+	/*  If ` ph ` and ` ps ` are wff's, so is ` ( ph -> ps ) ` or " ` ph ` implies
+	     ` ps ` ."  Part of the recursive definition of a wff.  The resulting wff
+	     is (interpreted as) false when ` ph ` is true and ` ps ` is false; it is
+	     true otherwise.  (Think of the truth table for an OR gate with input
+	     ` ph ` connected through an inverter.)  The left-hand wff is called the
+	     antecedent, and the right-hand wff is called the consequent.  In the case
+	     of ` ( ph -> ( ps -> ch ) ) ` , the middle ` ps ` may be informally called
+	     either an antecedent or part of the consequent depending on context.  */
+	rule wi (var ph : wff , var ps : wff ) 
+	{
+		term : wff = # ( ph -> ps ) ;
+	}
+
+	/* 
+	=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+	        The axioms of propositional calculus
+	=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+	 */
+	/* 
+	     Postulate the three axioms of classical propositional calculus.
+	   */
+	/*  Axiom _Simp_.  Axiom A1 of [Margaris] p. 49.  One of the 3 axioms of
+	     propositional calculus.  The 3 axioms are also given as Definition 2.1
+	     of [Hamilton] p. 28.  This axiom is called _Simp_ or "the principle of
+	     simplification" in _Principia Mathematica_ (Theorem *2.02 of
+	     [WhiteheadRussell] p. 100) because "it enables us to pass from the joint
+	     assertion of ` ph ` and ` ps ` to the assertion of ` ph ` simply."
+	
+	     _General remarks_:  Propositional calculus (axioms ~ ax-1 through ~ ax-3
+	     and rule ~ ax-mp ) can be thought of as asserting formulas that are
+	     universally "true" when their variables are replaced by any combination
+	     of "true" and "false."  Propositional calculus was first formalized by
+	     Frege in 1879, using as his axioms (in addition to rule ~ ax-mp ) the
+	     wffs ~ ax-1 , ~ ax-2 , ~ pm2.04 , ~ con3 , ~ nega , and ~ negb .  Around
+	     1930, Lukasiewicz simplified the system by eliminating the third (which
+	     follows from the first two, as you can see by looking at the proof of
+	     ~ pm2.04 ) and replacing the last three with our ~ ax-3 .  (Thanks to Ted
+	     Ulrich for this information.)
+	
+	     The theorems of propositional calculus are also called _tautologies_.
+	     Tautologies can be proved very simply using truth tables, based on the
+	     true/false interpretation of propositional calculus.  To do this, we
+	     assign all possible combinations of true and false to the wff variables
+	     and verify that the result (using the rules described in ~ wi and ~ wn )
+	     always evaluates to true.  This is called the _semantic_ approach.  Our
+	     approach is called the _syntactic_ approach, in which everything is
+	     derived from axioms.  A metatheorem called the Completeness Theorem for
+	     Propositional Calculus shows that the two approaches are equivalent and
+	     even provides an algorithm for automatically generating syntactic proofs
+	     from a truth table.  Those proofs, however, tend to be long, and the
+	     much shorter proofs that we show here were found manually.  Truth tables
+	     grow exponentially with the number of variables, but it is unknown if the
+	     same is true of proofs - an answer to this would resolve the P=NP
+	     conjecture in complexity theory.  */
+	axiom ax-1 (var ph : wff , var ps : wff ) 
+	{
+		prop : wff = |- ( ph -> ( ps -> ph ) ) ;
+	}
+
+	/*  Axiom _Frege_.  Axiom A2 of [Margaris] p. 49.  One of the 3 axioms of
+	     propositional calculus.  It "distributes" an antecedent over two
+	     consequents.  This axiom was part of Frege's original system and is known
+	     as _Frege_ in the literature.  It is also proved as Theorem *2.77 of
+	     [WhiteheadRussell] p. 108.  The other direction of this axiom also
+	     turns out to be true, as demonstrated by ~ pm5.41 .  */
+	axiom ax-2 (var ph : wff , var ps : wff , var ch : wff ) 
+	{
+		prop : wff = |- ( ( ph -> ( ps -> ch ) ) -> ( ( ph -> ps ) -> ( ph -> ch ) ) ) ;
+	}
+
+	/*  Axiom _Transp_.  Axiom A3 of [Margaris] p. 49.  One of the 3 axioms of
+	     propositional calculus.  It swaps or "transposes" the order of the
+	     consequents when negation is removed.  An informal example is that the
+	     statement "if there are no clouds in the sky, it is not raining" implies
+	     the statement "if it is raining, there are clouds in the sky."  This
+	     axiom is called _Transp_ or "the principle of transposition" in
+	     _Principia Mathematica_ (Theorem *2.17 of [WhiteheadRussell] p. 103).
+	     We will also use the term "contraposition" for this principle, although
+	     the reader is advised that in the field of philosophical logic,
+	     "contraposition" has a different technical meaning.  */
+	axiom ax-3 (var ph : wff , var ps : wff ) 
+	{
+		prop : wff = |- ( ( -. ph -> -. ps ) -> ( ps -> ph ) ) ;
+	}
+
+	/*  Rule of Modus Ponens.  The postulated inference rule of propositional
+	       calculus.  See e.g. Rule 1 of [Hamilton] p. 73.  The rule says, "if
+	       ` ph ` is true, and ` ph ` implies ` ps ` , then ` ps ` must also be
+	       true."  This rule is sometimes called "detachment," since it detaches
+	       the minor premise from the major premise.  */
+	axiom ax-mp (var ph : wff , var ps : wff ) 
+	{
+		hyp 1 : wff = |- ph ;
+		hyp 2 : wff = |- ( ph -> ps ) ;
+		-----------------
+		prop : wff = |- ps ;
+	}
+
+	/*  Inference derived from axiom ~ ax-1 .  See ~ a1d for an explanation of
+	       our informal use of the terms "inference" and "deduction."  */
+	theorem a1i (var ph : wff , var ps : wff ) 
+	{
+		hyp 1 : wff = |- ph ;
+		-----------------
+		prop : wff = |- ( ps -> ph ) ;
+	}
+
+	/*  [5-Aug-1993]  */ 
+	proof of a1i {
+		step 1 : wff = axiom ax-1 () |- ( ph -> ( ps -> ph ) ) ;
+		step 2 : wff = axiom ax-mp (hyp 1, step 1) |- ( ps -> ph ) ;
+		qed prop = step 2 ;
+	}
+
+	/*  Inference derived from axiom ~ ax-2 .  */
+	theorem a2i (var ph : wff , var ps : wff , var ch : wff ) 
+	{
+		hyp 1 : wff = |- ( ph -> ( ps -> ch ) ) ;
+		-----------------
+		prop : wff = |- ( ( ph -> ps ) -> ( ph -> ch ) ) ;
+	}
+
+	/*  [5-Aug-1993]  */ 
+	proof of a2i {
+		step 1 : wff = axiom ax-2 () |- ( ( ph -> ( ps -> ch ) ) -> ( ( ph -> ps ) -> ( ph -> ch ) ) ) ;
+		step 2 : wff = axiom ax-mp (hyp 1, step 1) |- ( ( ph -> ps ) -> ( ph -> ch ) ) ;
+		qed prop = step 2 ;
+	}
+
+	/*  An inference version of the transitive laws for implication ~ imim2 and
+	       ~ imim1 , which Russell and Whitehead call "the principle of the
+	       syllogism...because...the syllogism in Barbara is derived from them"
+	       (quote after Theorem *2.06 of [WhiteheadRussell] p. 101).  Some authors
+	       call this law a "hypothetical syllogism."
+	
+	       (A bit of trivia:  this is the most commonly referenced assertion in our
+	       database.  In second place is ~ ax-mp , followed by ~ visset , ~ bitr ,
+	       ~ imp , and ~ ex .  The Metamath program command 'show usage' shows the
+	       number of references.)  */
+	theorem syl (var ph : wff , var ps : wff , var ch : wff ) 
+	{
+		hyp 1 : wff = |- ( ph -> ps ) ;
+		hyp 2 : wff = |- ( ps -> ch ) ;
+		-----------------
+		prop : wff = |- ( ph -> ch ) ;
+	}
+
+	/*  [5-Aug-1993]  */ 
+	proof of syl {
+		step 1 : wff = theorem a1i (hyp 2) |- ( ph -> ( ps -> ch ) ) ;
+		step 2 : wff = theorem a2i (step 1) |- ( ( ph -> ps ) -> ( ph -> ch ) ) ;
+		step 3 : wff = axiom ax-mp (hyp 1, step 2) |- ( ph -> ch ) ;
+		qed prop = step 3 ;
+	}
+
+	/*  Inference that swaps (commutes) antecedents in an implication.  */
+	theorem com12 (var ph : wff , var ps : wff , var ch : wff ) 
+	{
+		hyp 1 : wff = |- ( ph -> ( ps -> ch ) ) ;
+		-----------------
+		prop : wff = |- ( ps -> ( ph -> ch ) ) ;
+	}
+
+	/*  [5-Aug-1993]  */ 
+	proof of com12 {
+		step 1 : wff = axiom ax-1 () |- ( ps -> ( ph -> ps ) ) ;
+		step 2 : wff = theorem a2i (hyp 1) |- ( ( ph -> ps ) -> ( ph -> ch ) ) ;
+		step 3 : wff = theorem syl (step 1, step 2) |- ( ps -> ( ph -> ch ) ) ;
+		qed prop = step 3 ;
+	}
+
+	/*  Deduction introducing an embedded antecedent.  (The proof was revised by
+	       Stefan Allan, 20-Mar-06.)
+	
+	       _Naming convention_:  We often call a theorem a "deduction" and suffix
+	       its label with "d" whenever the hypotheses and conclusion are each
+	       prefixed with the same antecedent.  This allows us to use the theorem in
+	       places where (in traditional textbook formalizations) the standard
+	       Deduction Theorem would be used; here ` ph ` would be replaced with a
+	       conjunction ( ~ df-an ) of the hypotheses of the would-be deduction.  By
+	       contrast, we tend to call the simpler version with no common antecedent
+	       an "inference" and suffix its label with "i"; compare theorem ~ a1i .
+	       Finally, a "theorem" would be the form with no hypotheses; in this case
+	       the "theorem" form would be the original axiom ~ ax-1 .  In
+	       propositional calculus we usually prove the theorem form first without a
+	       suffix on its label (e.g.  ~ pm2.43 vs.  ~ pm2.43i vs.  ~ pm2.43d ), but
+	       (much) later we often suffix the theorem form's label with "t" as in
+	       ~ negnegt vs. ~ negneg , especially when our "weak deduction theorem"
+	       ~ dedth is used to prove the theorem form from its inference form.  When
+	       an inference is converted to a theorem by eliminating an "is a set"
+	       hypothesis, we sometimes suffix the theorem form with "g" (for somewhat
+	       overstated "generalized") as in ~ uniex vs.  ~ uniexg .  */
+	theorem a1d (var ph : wff , var ps : wff , var ch : wff ) 
+	{
+		hyp 1 : wff = |- ( ph -> ps ) ;
+		-----------------
+		prop : wff = |- ( ph -> ( ch -> ps ) ) ;
+	}
+
+	/*  [20-Mar-2006]  */ /*  [5-Aug-1993]  */ 
+	proof of a1d {
+		step 1 : wff = axiom ax-1 () |- ( ps -> ( ch -> ps ) ) ;
+		step 2 : wff = theorem syl (hyp 1, step 1) |- ( ph -> ( ch -> ps ) ) ;
+		qed prop = step 2 ;
+	}
+
+	/*  Deduction distributing an embedded antecedent.  */
+	theorem a2d (var ph : wff , var ps : wff , var ch : wff , var th : wff ) 
+	{
+		hyp 1 : wff = |- ( ph -> ( ps -> ( ch -> th ) ) ) ;
+		-----------------
+		prop : wff = |- ( ph -> ( ( ps -> ch ) -> ( ps -> th ) ) ) ;
+	}
+
+	/*  [23-Jun-1994]  */ 
+	proof of a2d {
+		step 1 : wff = axiom ax-2 () |- ( ( ps -> ( ch -> th ) ) -> ( ( ps -> ch ) -> ( ps -> th ) ) ) ;
+		step 2 : wff = theorem syl (hyp 1, step 1) |- ( ph -> ( ( ps -> ch ) -> ( ps -> th ) ) ) ;
+		qed prop = step 2 ;
+	}
+
+	/*  A closed form of syllogism (see ~ syl ).  Theorem *2.05 of
+	     [WhiteheadRussell] p. 100.  */
+	theorem imim2 (var ph : wff , var ps : wff , var ch : wff ) 
+	{
+		prop : wff = |- ( ( ph -> ps ) -> ( ( ch -> ph ) -> ( ch -> ps ) ) ) ;
+	}
+
+	/*  [5-Aug-1993]  */ 
+	proof of imim2 {
+		step 1 : wff = axiom ax-1 () |- ( ( ph -> ps ) -> ( ch -> ( ph -> ps ) ) ) ;
+		step 2 : wff = theorem a2d (step 1) |- ( ( ph -> ps ) -> ( ( ch -> ph ) -> ( ch -> ps ) ) ) ;
+		qed prop = step 2 ;
+	}
+
+	/*  A closed form of syllogism (see ~ syl ).  Theorem *2.06 of
+	     [WhiteheadRussell] p. 100.  */
+	theorem imim1 (var ph : wff , var ps : wff , var ch : wff ) 
+	{
+		prop : wff = |- ( ( ph -> ps ) -> ( ( ps -> ch ) -> ( ph -> ch ) ) ) ;
+	}
+
+	/*  [5-Aug-1993]  */ 
+	proof of imim1 {
+		step 1 : wff = theorem imim2 () |- ( ( ps -> ch ) -> ( ( ph -> ps ) -> ( ph -> ch ) ) ) ;
+		step 2 : wff = theorem com12 (step 1) |- ( ( ph -> ps ) -> ( ( ps -> ch ) -> ( ph -> ch ) ) ) ;
+		qed prop = step 2 ;
+	}
+
+	/*  Inference adding common consequents in an implication, thereby
+	       interchanging the original antecedent and consequent.  */
+	theorem imim1i (var ph : wff , var ps : wff , var ch : wff ) 
+	{
+		hyp 1 : wff = |- ( ph -> ps ) ;
+		-----------------
+		prop : wff = |- ( ( ps -> ch ) -> ( ph -> ch ) ) ;
+	}
+
+	/*  [5-Aug-1993]  */ 
+	proof of imim1i {
+		step 1 : wff = theorem imim1 () |- ( ( ph -> ps ) -> ( ( ps -> ch ) -> ( ph -> ch ) ) ) ;
+		step 2 : wff = axiom ax-mp (hyp 1, step 1) |- ( ( ps -> ch ) -> ( ph -> ch ) ) ;
+		qed prop = step 2 ;
+	}
+
+	/*  Inference adding common antecedents in an implication.  */
+	theorem imim2i (var ph : wff , var ps : wff , var ch : wff ) 
+	{
+		hyp 1 : wff = |- ( ph -> ps ) ;
+		-----------------
+		prop : wff = |- ( ( ch -> ph ) -> ( ch -> ps ) ) ;
+	}
+
+	/*  [5-Aug-1993]  */ 
+	proof of imim2i {
+		step 1 : wff = theorem a1i (hyp 1) |- ( ch -> ( ph -> ps ) ) ;
+		step 2 : wff = theorem a2i (step 1) |- ( ( ch -> ph ) -> ( ch -> ps ) ) ;
+		qed prop = step 2 ;
+	}
+
+	/*  Inference joining two implications.  */
+	theorem imim12i (var ph : wff , var ps : wff , var ch : wff , var th : wff ) 
+	{
+		hyp 1 : wff = |- ( ph -> ps ) ;
+		hyp 2 : wff = |- ( ch -> th ) ;
+		-----------------
+		prop : wff = |- ( ( ps -> ch ) -> ( ph -> th ) ) ;
+	}
+
+	/*  [5-Aug-1993]  */ 
+	proof of imim12i {
+		step 1 : wff = theorem imim2i (hyp 2) |- ( ( ps -> ch ) -> ( ps -> th ) ) ;
+		step 2 : wff = theorem imim1i (hyp 1) |- ( ( ps -> th ) -> ( ph -> th ) ) ;
+		step 3 : wff = theorem syl (step 1, step 2) |- ( ( ps -> ch ) -> ( ph -> th ) ) ;
+		qed prop = step 3 ;
+	}
+
+	/*  Inference adding three nested antecedents.  */
+	theorem imim3i (var ph : wff , var ps : wff , var ch : wff , var th : wff ) 
+	{
+		hyp 1 : wff = |- ( ph -> ( ps -> ch ) ) ;
+		-----------------
+		prop : wff = |- ( ( th -> ph ) -> ( ( th -> ps ) -> ( th -> ch ) ) ) ;
+	}
+
+	/*  [19-Dec-2006]  */ /*  [19-Dec-2006]  */ 
+	proof of imim3i {
+		step 1 : wff = theorem imim2i (hyp 1) |- ( ( th -> ph ) -> ( th -> ( ps -> ch ) ) ) ;
+		step 2 : wff = theorem a2d (step 1) |- ( ( th -> ph ) -> ( ( th -> ps ) -> ( th -> ch ) ) ) ;
+		qed prop = step 2 ;
+	}
+
+	/*  Inference chaining two syllogisms.  */
+	theorem _3syl (var ph : wff , var ps : wff , var ch : wff , var th : wff ) 
+	{
+		hyp 1 : wff = |- ( ph -> ps ) ;
+		hyp 2 : wff = |- ( ps -> ch ) ;
+		hyp 3 : wff = |- ( ch -> th ) ;
+		-----------------
+		prop : wff = |- ( ph -> th ) ;
+	}
+
+	/*  [5-Aug-1993]  */ 
+	proof of _3syl {
+		step 1 : wff = theorem syl (hyp 1, hyp 2) |- ( ph -> ch ) ;
+		step 2 : wff = theorem syl (step 1, hyp 3) |- ( ph -> th ) ;
+		qed prop = step 2 ;
+	}
+
+	/*  A syllogism rule of inference.  The second premise is used to replace
+	       the second antecedent of the first premise.  */
+	theorem syl5 (var ph : wff , var ps : wff , var ch : wff , var th : wff ) 
+	{
+		hyp 1 : wff = |- ( ph -> ( ps -> ch ) ) ;
+		hyp 2 : wff = |- ( th -> ps ) ;
+		-----------------
+		prop : wff = |- ( ph -> ( th -> ch ) ) ;
+	}
+
+	/*  [5-Aug-1993]  */ 
+	proof of syl5 {
+		step 1 : wff = theorem imim1i (hyp 2) |- ( ( ps -> ch ) -> ( th -> ch ) ) ;
+		step 2 : wff = theorem syl (hyp 1, step 1) |- ( ph -> ( th -> ch ) ) ;
+		qed prop = step 2 ;
+	}
+
+	/*  A syllogism rule of inference.  The second premise is used to replace
+	       the consequent of the first premise.  */
+	theorem syl6 (var ph : wff , var ps : wff , var ch : wff , var th : wff ) 
+	{
+		hyp 1 : wff = |- ( ph -> ( ps -> ch ) ) ;
+		hyp 2 : wff = |- ( ch -> th ) ;
+		-----------------
+		prop : wff = |- ( ph -> ( ps -> th ) ) ;
+	}
+
+	/*  [5-Aug-1993]  */ 
+	proof of syl6 {
+		step 1 : wff = theorem imim2i (hyp 2) |- ( ( ps -> ch ) -> ( ps -> th ) ) ;
+		step 2 : wff = theorem syl (hyp 1, step 1) |- ( ph -> ( ps -> th ) ) ;
+		qed prop = step 2 ;
+	}
+
+	/*  A syllogism rule of inference.  The second premise is used to replace
+	       the third antecedent of the first premise.  */
+	theorem syl7 (var ph : wff , var ps : wff , var ch : wff , var th : wff , var ta : wff ) 
+	{
+		hyp 1 : wff = |- ( ph -> ( ps -> ( ch -> th ) ) ) ;
+		hyp 2 : wff = |- ( ta -> ch ) ;
+		-----------------
+		prop : wff = |- ( ph -> ( ps -> ( ta -> th ) ) ) ;
+	}
+
+	/*  [5-Aug-1993]  */ 
+	proof of syl7 {
+		step 1 : wff = theorem imim1i (hyp 2) |- ( ( ch -> th ) -> ( ta -> th ) ) ;
+		step 2 : wff = theorem syl6 (hyp 1, step 1) |- ( ph -> ( ps -> ( ta -> th ) ) ) ;
+		qed prop = step 2 ;
+	}
+
+	/*  A syllogism rule of inference.  The second premise is used to replace
+	       the consequent of the first premise.  */
+	theorem syl8 (var ph : wff , var ps : wff , var ch : wff , var th : wff , var ta : wff ) 
+	{
+		hyp 1 : wff = |- ( ph -> ( ps -> ( ch -> th ) ) ) ;
+		hyp 2 : wff = |- ( th -> ta ) ;
+		-----------------
+		prop : wff = |- ( ph -> ( ps -> ( ch -> ta ) ) ) ;
+	}
+
+	/*  [1-Aug-1994]  */ 
+	proof of syl8 {
+		step 1 : wff = theorem imim2i (hyp 2) |- ( ( ch -> th ) -> ( ch -> ta ) ) ;
+		step 2 : wff = theorem syl6 (hyp 1, step 1) |- ( ph -> ( ps -> ( ch -> ta ) ) ) ;
+		qed prop = step 2 ;
+	}
+
+	/*  Deduction adding nested antecedents.  */
+	theorem imim2d (var ph : wff , var ps : wff , var ch : wff , var th : wff ) 
+	{
+		hyp 1 : wff = |- ( ph -> ( ps -> ch ) ) ;
+		-----------------
+		prop : wff = |- ( ph -> ( ( th -> ps ) -> ( th -> ch ) ) ) ;
+	}
+
+	/*  [5-Aug-1993]  */ 
+	proof of imim2d {
+		step 1 : wff = theorem a1d (hyp 1) |- ( ph -> ( th -> ( ps -> ch ) ) ) ;
+		step 2 : wff = theorem a2d (step 1) |- ( ph -> ( ( th -> ps ) -> ( th -> ch ) ) ) ;
+		qed prop = step 2 ;
+	}
+
+	/*  A modus ponens deduction.  */
+	theorem mpd (var ph : wff , var ps : wff , var ch : wff ) 
+	{
+		hyp 1 : wff = |- ( ph -> ps ) ;
+		hyp 2 : wff = |- ( ph -> ( ps -> ch ) ) ;
+		-----------------
+		prop : wff = |- ( ph -> ch ) ;
+	}
+
+	/*  [5-Aug-1993]  */ 
+	proof of mpd {
+		step 1 : wff = theorem a2i (hyp 2) |- ( ( ph -> ps ) -> ( ph -> ch ) ) ;
+		step 2 : wff = axiom ax-mp (hyp 1, step 1) |- ( ph -> ch ) ;
+		qed prop = step 2 ;
+	}
+
+	/*  Syllogism deduction.  (The proof was shortened by Mel L. O'Cat,
+	       19-Feb-2008.  See ~ syldOLD for previous version.)  */
+	theorem syld (var ph : wff , var ps : wff , var ch : wff , var th : wff ) 
+	{
+		hyp 1 : wff = |- ( ph -> ( ps -> ch ) ) ;
+		hyp 2 : wff = |- ( ph -> ( ch -> th ) ) ;
+		-----------------
+		prop : wff = |- ( ph -> ( ps -> th ) ) ;
+	}
+
+	/*  [19-Feb-2008]  */ /*  [5-Aug-1993]  */ 
+	proof of syld {
+		step 1 : wff = theorem imim2d (hyp 2) |- ( ph -> ( ( ps -> ch ) -> ( ps -> th ) ) ) ;
+		step 2 : wff = theorem mpd (hyp 1, step 1) |- ( ph -> ( ps -> th ) ) ;
+		qed prop = step 2 ;
+	}
+
+	/*  Syllogism deduction.  (The proof was shortened by Mel L. O'Cat,
+	       7-Aug-2004.)  */
+	theorem syldOLD (var ph : wff , var ps : wff , var ch : wff , var th : wff ) 
+	{
+		hyp 1 : wff = |- ( ph -> ( ps -> ch ) ) ;
+		hyp 2 : wff = |- ( ph -> ( ch -> th ) ) ;
+		-----------------
+		prop : wff = |- ( ph -> ( ps -> th ) ) ;
+	}
+
+	/*  [7-Aug-2004]  */ /*  [5-Aug-1993]  */ 
+	proof of syldOLD {
+		step 1 : wff = theorem imim2d (hyp 2) |- ( ph -> ( ( ps -> ch ) -> ( ps -> th ) ) ) ;
+		step 2 : wff = theorem a2i (step 1) |- ( ( ph -> ( ps -> ch ) ) -> ( ph -> ( ps -> th ) ) ) ;
+		step 3 : wff = axiom ax-mp (hyp 1, step 2) |- ( ph -> ( ps -> th ) ) ;
+		qed prop = step 3 ;
+	}
+
+	/*  Deduction adding nested consequents.  */
+	theorem imim1d (var ph : wff , var ps : wff , var ch : wff , var th : wff ) 
+	{
+		hyp 1 : wff = |- ( ph -> ( ps -> ch ) ) ;
+		-----------------
+		prop : wff = |- ( ph -> ( ( ch -> th ) -> ( ps -> th ) ) ) ;
+	}
+
+	/*  [3-Apr-1994]  */ 
+	proof of imim1d {
+		step 1 : wff = theorem imim1 () |- ( ( ps -> ch ) -> ( ( ch -> th ) -> ( ps -> th ) ) ) ;
+		step 2 : wff = theorem syl (hyp 1, step 1) |- ( ph -> ( ( ch -> th ) -> ( ps -> th ) ) ) ;
+		qed prop = step 2 ;
+	}
+
+	/*  Deduction combining antecedents and consequents.  */
+	theorem imim12d (var ph : wff , var ps : wff , var ch : wff , var th : wff , var ta : wff ) 
+	{
+		hyp 1 : wff = |- ( ph -> ( ps -> ch ) ) ;
+		hyp 2 : wff = |- ( ph -> ( th -> ta ) ) ;
+		-----------------
+		prop : wff = |- ( ph -> ( ( ch -> th ) -> ( ps -> ta ) ) ) ;
+	}
+
+	/*  [7-Aug-1994]  */ 
+	proof of imim12d {
+		step 1 : wff = theorem imim1d (hyp 1) |- ( ph -> ( ( ch -> th ) -> ( ps -> th ) ) ) ;
+		step 2 : wff = theorem imim2d (hyp 2) |- ( ph -> ( ( ps -> th ) -> ( ps -> ta ) ) ) ;
+		step 3 : wff = theorem syld (step 1, step 2) |- ( ph -> ( ( ch -> th ) -> ( ps -> ta ) ) ) ;
+		qed prop = step 3 ;
+	}
+
+	/*  Swap antecedents.  Theorem *2.04 of [WhiteheadRussell] p. 100.  */
+	theorem pm2_04 (var ph : wff , var ps : wff , var ch : wff ) 
+	{
+		prop : wff = |- ( ( ph -> ( ps -> ch ) ) -> ( ps -> ( ph -> ch ) ) ) ;
+	}
+
+	/*  [5-Aug-1993]  */ 
+	proof of pm2_04 {
+		step 1 : wff = axiom ax-2 () |- ( ( ph -> ( ps -> ch ) ) -> ( ( ph -> ps ) -> ( ph -> ch ) ) ) ;
+		step 2 : wff = axiom ax-1 () |- ( ps -> ( ph -> ps ) ) ;
+		step 3 : wff = theorem syl5 (step 1, step 2) |- ( ( ph -> ( ps -> ch ) ) -> ( ps -> ( ph -> ch ) ) ) ;
+		qed prop = step 3 ;
+	}
+
+	/*  Theorem *2.83 of [WhiteheadRussell] p. 108.  */
+	theorem pm2_83 (var ph : wff , var ps : wff , var ch : wff , var th : wff ) 
+	{
+		prop : wff = |- ( ( ph -> ( ps -> ch ) ) -> ( ( ph -> ( ch -> th ) ) -> ( ph -> ( ps -> th ) ) ) ) ;
+	}
+
+	/*  [13-Jan-2005]  */ /*  [3-Jan-2005]  */ 
+	proof of pm2_83 {
+		step 1 : wff = theorem imim1 () |- ( ( ps -> ch ) -> ( ( ch -> th ) -> ( ps -> th ) ) ) ;
+		step 2 : wff = theorem imim3i (step 1) |- ( ( ph -> ( ps -> ch ) ) -> ( ( ph -> ( ch -> th ) ) -> ( ph -> ( ps -> th ) ) ) ) ;
+		qed prop = step 2 ;
+	}
+
+	/*  Commutation of antecedents.  Swap 2nd and 3rd.  */
+	theorem com23 (var ph : wff , var ps : wff , var ch : wff , var th : wff ) 
+	{
+		hyp 1 : wff = |- ( ph -> ( ps -> ( ch -> th ) ) ) ;
+		-----------------
+		prop : wff = |- ( ph -> ( ch -> ( ps -> th ) ) ) ;
+	}
+
+	/*  [5-Aug-1993]  */ 
+	proof of com23 {
+		step 1 : wff = theorem pm2_04 () |- ( ( ps -> ( ch -> th ) ) -> ( ch -> ( ps -> th ) ) ) ;
+		step 2 : wff = theorem syl (hyp 1, step 1) |- ( ph -> ( ch -> ( ps -> th ) ) ) ;
+		qed prop = step 2 ;
+	}
+
+	/*  Commutation of antecedents.  Swap 1st and 3rd.  */
+	theorem com13 (var ph : wff , var ps : wff , var ch : wff , var th : wff ) 
+	{
+		hyp 1 : wff = |- ( ph -> ( ps -> ( ch -> th ) ) ) ;
+		-----------------
+		prop : wff = |- ( ch -> ( ps -> ( ph -> th ) ) ) ;
+	}
+
+	/*  [25-Apr-1994]  */ 
+	proof of com13 {
+		step 1 : wff = theorem com12 (hyp 1) |- ( ps -> ( ph -> ( ch -> th ) ) ) ;
+		step 2 : wff = theorem com23 (step 1) |- ( ps -> ( ch -> ( ph -> th ) ) ) ;
+		step 3 : wff = theorem com12 (step 2) |- ( ch -> ( ps -> ( ph -> th ) ) ) ;
+		qed prop = step 3 ;
+	}
+
+	/*  Commutation of antecedents.  Rotate left.  */
+	theorem com3l (var ph : wff , var ps : wff , var ch : wff , var th : wff ) 
+	{
+		hyp 1 : wff = |- ( ph -> ( ps -> ( ch -> th ) ) ) ;
+		-----------------
+		prop : wff = |- ( ps -> ( ch -> ( ph -> th ) ) ) ;
+	}
+
+	/*  [25-Apr-1994]  */ 
+	proof of com3l {
+		step 1 : wff = theorem com23 (hyp 1) |- ( ph -> ( ch -> ( ps -> th ) ) ) ;
+		step 2 : wff = theorem com13 (step 1) |- ( ps -> ( ch -> ( ph -> th ) ) ) ;
+		qed prop = step 2 ;
+	}
+
+	/*  Commutation of antecedents.  Rotate right.  */
+	theorem com3r (var ph : wff , var ps : wff , var ch : wff , var th : wff ) 
+	{
+		hyp 1 : wff = |- ( ph -> ( ps -> ( ch -> th ) ) ) ;
+		-----------------
+		prop : wff = |- ( ch -> ( ph -> ( ps -> th ) ) ) ;
+	}
+
+	/*  [25-Apr-1994]  */ 
+	proof of com3r {
+		step 1 : wff = theorem com3l (hyp 1) |- ( ps -> ( ch -> ( ph -> th ) ) ) ;
+		step 2 : wff = theorem com3l (step 1) |- ( ch -> ( ph -> ( ps -> th ) ) ) ;
+		qed prop = step 2 ;
+	}
+
+	/*  Commutation of antecedents.  Swap 3rd and 4th.  */
+	theorem com34 (var ph : wff , var ps : wff , var ch : wff , var th : wff , var ta : wff ) 
+	{
+		hyp 1 : wff = |- ( ph -> ( ps -> ( ch -> ( th -> ta ) ) ) ) ;
+		-----------------
+		prop : wff = |- ( ph -> ( ps -> ( th -> ( ch -> ta ) ) ) ) ;
+	}
+
+	/*  [25-Apr-1994]  */ 
+	proof of com34 {
+		step 1 : wff = theorem pm2_04 () |- ( ( ch -> ( th -> ta ) ) -> ( th -> ( ch -> ta ) ) ) ;
+		step 2 : wff = theorem syl6 (hyp 1, step 1) |- ( ph -> ( ps -> ( th -> ( ch -> ta ) ) ) ) ;
+		qed prop = step 2 ;
+	}
+
+	/*  Commutation of antecedents.  Swap 2nd and 4th.  */
+	theorem com24 (var ph : wff , var ps : wff , var ch : wff , var th : wff , var ta : wff ) 
+	{
+		hyp 1 : wff = |- ( ph -> ( ps -> ( ch -> ( th -> ta ) ) ) ) ;
+		-----------------
+		prop : wff = |- ( ph -> ( th -> ( ch -> ( ps -> ta ) ) ) ) ;
+	}
+
+	/*  [25-Apr-1994]  */ 
+	proof of com24 {
+		step 1 : wff = theorem com34 (hyp 1) |- ( ph -> ( ps -> ( th -> ( ch -> ta ) ) ) ) ;
+		step 2 : wff = theorem com23 (step 1) |- ( ph -> ( th -> ( ps -> ( ch -> ta ) ) ) ) ;
+		step 3 : wff = theorem com34 (step 2) |- ( ph -> ( th -> ( ch -> ( ps -> ta ) ) ) ) ;
+		qed prop = step 3 ;
+	}
+
+	/*  Commutation of antecedents.  Swap 1st and 4th.  */
+	theorem com14 (var ph : wff , var ps : wff , var ch : wff , var th : wff , var ta : wff ) 
+	{
+		hyp 1 : wff = |- ( ph -> ( ps -> ( ch -> ( th -> ta ) ) ) ) ;
+		-----------------
+		prop : wff = |- ( th -> ( ps -> ( ch -> ( ph -> ta ) ) ) ) ;
+	}
+
+	/*  [25-Apr-1994]  */ 
+	proof of com14 {
+		step 1 : wff = theorem com34 (hyp 1) |- ( ph -> ( ps -> ( th -> ( ch -> ta ) ) ) ) ;
+		step 2 : wff = theorem com13 (step 1) |- ( th -> ( ps -> ( ph -> ( ch -> ta ) ) ) ) ;
+		step 3 : wff = theorem com34 (step 2) |- ( th -> ( ps -> ( ch -> ( ph -> ta ) ) ) ) ;
+		qed prop = step 3 ;
+	}
+
+	/*  Commutation of antecedents.  Rotate left.  (The proof was shortened by
+	       Mel L. O'Cat, 15-Aug-2004.)  */
+	theorem com4l (var ph : wff , var ps : wff , var ch : wff , var th : wff , var ta : wff ) 
+	{
+		hyp 1 : wff = |- ( ph -> ( ps -> ( ch -> ( th -> ta ) ) ) ) ;
+		-----------------
+		prop : wff = |- ( ps -> ( ch -> ( th -> ( ph -> ta ) ) ) ) ;
+	}
+
+	/*  [15-Aug-2004]  */ /*  [25-Apr-1994]  */ 
+	proof of com4l {
+		step 1 : wff = theorem com14 (hyp 1) |- ( th -> ( ps -> ( ch -> ( ph -> ta ) ) ) ) ;
+		step 2 : wff = theorem com3l (step 1) |- ( ps -> ( ch -> ( th -> ( ph -> ta ) ) ) ) ;
+		qed prop = step 2 ;
+	}
+
+	/*  Commutation of antecedents.  Rotate twice.  */
+	theorem com4t (var ph : wff , var ps : wff , var ch : wff , var th : wff , var ta : wff ) 
+	{
+		hyp 1 : wff = |- ( ph -> ( ps -> ( ch -> ( th -> ta ) ) ) ) ;
+		-----------------
+		prop : wff = |- ( ch -> ( th -> ( ph -> ( ps -> ta ) ) ) ) ;
+	}
+
+	/*  [25-Apr-1994]  */ 
+	proof of com4t {
+		step 1 : wff = theorem com4l (hyp 1) |- ( ps -> ( ch -> ( th -> ( ph -> ta ) ) ) ) ;
+		step 2 : wff = theorem com4l (step 1) |- ( ch -> ( th -> ( ph -> ( ps -> ta ) ) ) ) ;
+		qed prop = step 2 ;
+	}
+
+	/*  Commutation of antecedents.  Rotate right.  */
+	theorem com4r (var ph : wff , var ps : wff , var ch : wff , var th : wff , var ta : wff ) 
+	{
+		hyp 1 : wff = |- ( ph -> ( ps -> ( ch -> ( th -> ta ) ) ) ) ;
+		-----------------
+		prop : wff = |- ( th -> ( ph -> ( ps -> ( ch -> ta ) ) ) ) ;
+	}
+
+	/*  [25-Apr-1994]  */ 
+	proof of com4r {
+		step 1 : wff = theorem com4t (hyp 1) |- ( ch -> ( th -> ( ph -> ( ps -> ta ) ) ) ) ;
+		step 2 : wff = theorem com4l (step 1) |- ( th -> ( ph -> ( ps -> ( ch -> ta ) ) ) ) ;
+		qed prop = step 2 ;
+	}
+
+	/*  Deduction introducing a nested embedded antecedent.  (The proof was
+	       shortened by Mel L. O'Cat, 15-Jan-2008.)  */
+	theorem a1dd (var ph : wff , var ps : wff , var ch : wff , var th : wff ) 
+	{
+		hyp 1 : wff = |- ( ph -> ( ps -> ch ) ) ;
+		-----------------
+		prop : wff = |- ( ph -> ( ps -> ( th -> ch ) ) ) ;
+	}
+
+	/*  [15-Jan-2008]  */ /*  [17-Dec-2004]  */ 
+	proof of a1dd {
+		step 1 : wff = axiom ax-1 () |- ( ch -> ( th -> ch ) ) ;
+		step 2 : wff = theorem syl6 (hyp 1, step 1) |- ( ph -> ( ps -> ( th -> ch ) ) ) ;
+		qed prop = step 2 ;
+	}
+
+	/*  A double modus ponens inference.  */
+	theorem mp2 (var ph : wff , var ps : wff , var ch : wff ) 
+	{
+		hyp 1 : wff = |- ph ;
+		hyp 2 : wff = |- ps ;
+		hyp 3 : wff = |- ( ph -> ( ps -> ch ) ) ;
+		-----------------
+		prop : wff = |- ch ;
+	}
+
+	/*  [5-Apr-1994]  */ 
+	proof of mp2 {
+		step 1 : wff = axiom ax-mp (hyp 1, hyp 3) |- ( ps -> ch ) ;
+		step 2 : wff = axiom ax-mp (hyp 2, step 1) |- ch ;
+		qed prop = step 2 ;
+	}
+
+	/*  A nested modus ponens inference.  (The proof was shortened by Stefan
+	       Allan, 20-Mar-06.  */
+	theorem mpi (var ph : wff , var ps : wff , var ch : wff ) 
+	{
+		hyp 1 : wff = |- ps ;
+		hyp 2 : wff = |- ( ph -> ( ps -> ch ) ) ;
+		-----------------
+		prop : wff = |- ( ph -> ch ) ;
+	}
+
+	/*  [20-Mar-2006]  */ /*  [5-Aug-1993]  */ 
+	proof of mpi {
+		step 1 : wff = theorem a1i (hyp 1) |- ( ph -> ps ) ;
+		step 2 : wff = theorem mpd (step 1, hyp 2) |- ( ph -> ch ) ;
+		qed prop = step 2 ;
+	}
+
+	/*  A doubly nested modus ponens inference.  */
+	theorem mpii (var ph : wff , var ps : wff , var ch : wff , var th : wff ) 
+	{
+		hyp 1 : wff = |- ch ;
+		hyp 2 : wff = |- ( ph -> ( ps -> ( ch -> th ) ) ) ;
+		-----------------
+		prop : wff = |- ( ph -> ( ps -> th ) ) ;
+	}
+
+	/*  [31-Dec-1993]  */ 
+	proof of mpii {
+		step 1 : wff = theorem com23 (hyp 2) |- ( ph -> ( ch -> ( ps -> th ) ) ) ;
+		step 2 : wff = theorem mpi (hyp 1, step 1) |- ( ph -> ( ps -> th ) ) ;
+		qed prop = step 2 ;
+	}
+
+	/*  A nested modus ponens deduction.  */
+	theorem mpdd (var ph : wff , var ps : wff , var ch : wff , var th : wff ) 
+	{
+		hyp 1 : wff = |- ( ph -> ( ps -> ch ) ) ;
+		hyp 2 : wff = |- ( ph -> ( ps -> ( ch -> th ) ) ) ;
+		-----------------
+		prop : wff = |- ( ph -> ( ps -> th ) ) ;
+	}
+
+	/*  [13-Dec-2004]  */ /*  [12-Dec-2004]  */ 
+	proof of mpdd {
+		step 1 : wff = theorem a2d (hyp 2) |- ( ph -> ( ( ps -> ch ) -> ( ps -> th ) ) ) ;
+		step 2 : wff = theorem mpd (hyp 1, step 1) |- ( ph -> ( ps -> th ) ) ;
+		qed prop = step 2 ;
+	}
+
+	/*  A nested modus ponens deduction.  */
+	theorem mpid (var ph : wff , var ps : wff , var ch : wff , var th : wff ) 
+	{
+		hyp 1 : wff = |- ( ph -> ch ) ;
+		hyp 2 : wff = |- ( ph -> ( ps -> ( ch -> th ) ) ) ;
+		-----------------
+		prop : wff = |- ( ph -> ( ps -> th ) ) ;
+	}
+
+	/*  [16-Dec-2004]  */ /*  [14-Dec-2004]  */ 
+	proof of mpid {
+		step 1 : wff = theorem a1d (hyp 1) |- ( ph -> ( ps -> ch ) ) ;
+		step 2 : wff = theorem mpdd (step 1, hyp 2) |- ( ph -> ( ps -> th ) ) ;
+		qed prop = step 2 ;
+	}
+
+	/*  A nested modus ponens deduction.  (The proof was shortened by Mel L.
+	       O'Cat, 15-Jan-2008.)  */
+	theorem mpdi (var ph : wff , var ps : wff , var ch : wff , var th : wff ) 
+	{
+		hyp 1 : wff = |- ( ps -> ch ) ;
+		hyp 2 : wff = |- ( ph -> ( ps -> ( ch -> th ) ) ) ;
+		-----------------
+		prop : wff = |- ( ph -> ( ps -> th ) ) ;
+	}
+
+	/*  [15-Jan-2008]  */ /*  [16-Apr-2005]  */ 
+	proof of mpdi {
+		step 1 : wff = theorem a1i (hyp 1) |- ( ph -> ( ps -> ch ) ) ;
+		step 2 : wff = theorem mpdd (step 1, hyp 2) |- ( ph -> ( ps -> th ) ) ;
+		qed prop = step 2 ;
+	}
+
+	/*  Modus ponens inference with commutation of antecedents.  */
+	theorem mpcom (var ph : wff , var ps : wff , var ch : wff ) 
+	{
+		hyp 1 : wff = |- ( ps -> ph ) ;
+		hyp 2 : wff = |- ( ph -> ( ps -> ch ) ) ;
+		-----------------
+		prop : wff = |- ( ps -> ch ) ;
+	}
+
+	/*  [17-Mar-1996]  */ 
+	proof of mpcom {
+		step 1 : wff = theorem com12 (hyp 2) |- ( ps -> ( ph -> ch ) ) ;
+		step 2 : wff = theorem mpd (hyp 1, step 1) |- ( ps -> ch ) ;
+		qed prop = step 2 ;
+	}
+
+	/*  Nested syllogism deduction.  */
+	theorem syldd (var ph : wff , var ps : wff , var ch : wff , var th : wff , var ta : wff ) 
+	{
+		hyp 1 : wff = |- ( ph -> ( ps -> ( ch -> th ) ) ) ;
+		hyp 2 : wff = |- ( ph -> ( ps -> ( th -> ta ) ) ) ;
+		-----------------
+		prop : wff = |- ( ph -> ( ps -> ( ch -> ta ) ) ) ;
+	}
+
+	/*  [13-Dec-2004]  */ /*  [12-Dec-2004]  */ 
+	proof of syldd {
+		step 1 : wff = theorem imim2 () |- ( ( th -> ta ) -> ( ( ch -> th ) -> ( ch -> ta ) ) ) ;
+		step 2 : wff = theorem syl6 (hyp 2, step 1) |- ( ph -> ( ps -> ( ( ch -> th ) -> ( ch -> ta ) ) ) ) ;
+		step 3 : wff = theorem mpdd (hyp 1, step 2) |- ( ph -> ( ps -> ( ch -> ta ) ) ) ;
+		qed prop = step 3 ;
+	}
+
+	/*  Syllogism inference with commutation of antecedents.  (The proof was
+	       shortened by Mel O'Cat, 2-Feb-06 and shortened further by Stefan Allan,
+	       23-Feb-06.)  */
+	theorem sylcom (var ph : wff , var ps : wff , var ch : wff , var th : wff ) 
+	{
+		hyp 1 : wff = |- ( ph -> ( ps -> ch ) ) ;
+		hyp 2 : wff = |- ( ps -> ( ch -> th ) ) ;
+		-----------------
+		prop : wff = |- ( ph -> ( ps -> th ) ) ;
+	}
+
+	/*  [24-Feb-2006]  */ /*  [29-Aug-2004]  */ 
+	proof of sylcom {
+		step 1 : wff = theorem a2i (hyp 2) |- ( ( ps -> ch ) -> ( ps -> th ) ) ;
+		step 2 : wff = theorem syl (hyp 1, step 1) |- ( ph -> ( ps -> th ) ) ;
+		qed prop = step 2 ;
+	}
+
+	/*  Syllogism inference with commuted antecedents.  */
+	theorem syl5com (var ph : wff , var ps : wff , var ch : wff , var th : wff ) 
+	{
+		hyp 1 : wff = |- ( ph -> ( ps -> ch ) ) ;
+		hyp 2 : wff = |- ( th -> ps ) ;
+		-----------------
+		prop : wff = |- ( th -> ( ph -> ch ) ) ;
+	}
+
+	/*  [25-May-2005]  */ /*  [24-May-2005]  */ 
+	proof of syl5com {
+		step 1 : wff = theorem a1d (hyp 2) |- ( th -> ( ph -> ps ) ) ;
+		step 2 : wff = theorem sylcom (step 1, hyp 1) |- ( th -> ( ph -> ch ) ) ;
+		qed prop = step 2 ;
+	}
+
+	/*  Syllogism inference with commuted antecedents.  */
+	theorem syl6com (var ph : wff , var ps : wff , var ch : wff , var th : wff ) 
+	{
+		hyp 1 : wff = |- ( ph -> ( ps -> ch ) ) ;
+		hyp 2 : wff = |- ( ch -> th ) ;
+		-----------------
+		prop : wff = |- ( ps -> ( ph -> th ) ) ;
+	}
+
+	/*  [26-May-2005]  */ /*  [25-May-2005]  */ 
+	proof of syl6com {
+		step 1 : wff = theorem syl6 (hyp 1, hyp 2) |- ( ph -> ( ps -> th ) ) ;
+		step 2 : wff = theorem com12 (step 1) |- ( ps -> ( ph -> th ) ) ;
+		qed prop = step 2 ;
+	}
+
+	/*  Syllogism inference with common nested antecedent.  */
+	theorem syli (var ph : wff , var ps : wff , var ch : wff , var th : wff ) 
+	{
+		hyp 1 : wff = |- ( ps -> ( ph -> ch ) ) ;
+		hyp 2 : wff = |- ( ch -> ( ph -> th ) ) ;
+		-----------------
+		prop : wff = |- ( ps -> ( ph -> th ) ) ;
+	}
+
+	/*  [5-Nov-2004]  */ /*  [4-Nov-2004]  */ 
+	proof of syli {
+		step 1 : wff = theorem com12 (hyp 2) |- ( ph -> ( ch -> th ) ) ;
+		step 2 : wff = theorem sylcom (hyp 1, step 1) |- ( ps -> ( ph -> th ) ) ;
+		qed prop = step 2 ;
+	}
+
+	/*  A nested syllogism deduction.  (The proof was shortened by Josh
+	       Purinton, 29-Dec-00 and shortened further by Mel O'Cat, 2-Feb-06.)  */
+	theorem syl5d (var ph : wff , var ps : wff , var ch : wff , var th : wff , var ta : wff ) 
+	{
+		hyp 1 : wff = |- ( ph -> ( ps -> ( ch -> th ) ) ) ;
+		hyp 2 : wff = |- ( ph -> ( ta -> ch ) ) ;
+		-----------------
+		prop : wff = |- ( ph -> ( ps -> ( ta -> th ) ) ) ;
+	}
+
+	/*  [3-Feb-2006]  */ /*  [5-Aug-1993]  */ 
+	proof of syl5d {
+		step 1 : wff = theorem a1d (hyp 2) |- ( ph -> ( ps -> ( ta -> ch ) ) ) ;
+		step 2 : wff = theorem syldd (step 1, hyp 1) |- ( ph -> ( ps -> ( ta -> th ) ) ) ;
+		qed prop = step 2 ;
+	}
+
+	/*  A nested syllogism deduction.  (The proof was shortened by Josh
+	       Purinton, 29-Dec-00 and shortened further by Mel O'Cat, 2-Feb-06.)  */
+	theorem syl6d (var ph : wff , var ps : wff , var ch : wff , var th : wff , var ta : wff ) 
+	{
+		hyp 1 : wff = |- ( ph -> ( ps -> ( ch -> th ) ) ) ;
+		hyp 2 : wff = |- ( ph -> ( th -> ta ) ) ;
+		-----------------
+		prop : wff = |- ( ph -> ( ps -> ( ch -> ta ) ) ) ;
+	}
+
+	/*  [3-Feb-2006]  */ /*  [5-Aug-1993]  */ 
+	proof of syl6d {
+		step 1 : wff = theorem a1d (hyp 2) |- ( ph -> ( ps -> ( th -> ta ) ) ) ;
+		step 2 : wff = theorem syldd (hyp 1, step 1) |- ( ph -> ( ps -> ( ch -> ta ) ) ) ;
+		qed prop = step 2 ;
+	}
+
+	/*  A nested syllogism inference with different antecedents.  (The proof
+	       was shortened by Josh Purinton, 29-Dec-00.)  */
+	theorem syl9 (var ph : wff , var ps : wff , var ch : wff , var th : wff , var ta : wff ) 
+	{
+		hyp 1 : wff = |- ( ph -> ( ps -> ch ) ) ;
+		hyp 2 : wff = |- ( th -> ( ch -> ta ) ) ;
+		-----------------
+		prop : wff = |- ( ph -> ( th -> ( ps -> ta ) ) ) ;
+	}
+
+	/*  [5-Aug-1993]  */ 
+	proof of syl9 {
+		step 1 : wff = theorem a1i (hyp 2) |- ( ph -> ( th -> ( ch -> ta ) ) ) ;
+		step 2 : wff = theorem syl5d (step 1, hyp 1) |- ( ph -> ( th -> ( ps -> ta ) ) ) ;
+		qed prop = step 2 ;
+	}
+
+	/*  A nested syllogism inference with different antecedents.  */
+	theorem syl9r (var ph : wff , var ps : wff , var ch : wff , var th : wff , var ta : wff ) 
+	{
+		hyp 1 : wff = |- ( ph -> ( ps -> ch ) ) ;
+		hyp 2 : wff = |- ( th -> ( ch -> ta ) ) ;
+		-----------------
+		prop : wff = |- ( th -> ( ph -> ( ps -> ta ) ) ) ;
+	}
+
+	/*  [5-Aug-1993]  */ 
+	proof of syl9r {
+		step 1 : wff = theorem syl9 (hyp 1, hyp 2) |- ( ph -> ( th -> ( ps -> ta ) ) ) ;
+		step 2 : wff = theorem com12 (step 1) |- ( th -> ( ph -> ( ps -> ta ) ) ) ;
+		qed prop = step 2 ;
+	}
+
+	/*  Principle of identity.  Theorem *2.08 of [WhiteheadRussell] p. 101.
+	     For another version of the proof directly from axioms, see ~ id1 .
+	     (The proof was shortened by Stefan Allan, 20-Mar-06.)  */
+	theorem id (var ph : wff ) 
+	{
+		prop : wff = |- ( ph -> ph ) ;
+	}
+
+	/*  [20-Mar-2006]  */ /*  [20-Mar-2006]  */ 
+	proof of id {
+		step 1 : wff = axiom ax-1 () |- ( ph -> ( ph -> ph ) ) ;
+		step 2 : wff = axiom ax-1 () |- ( ph -> ( ( ph -> ph ) -> ph ) ) ;
+		step 3 : wff = theorem mpd (step 1, step 2) |- ( ph -> ph ) ;
+		qed prop = step 3 ;
+	}
+
+	/*  Principle of identity.  Theorem *2.08 of [WhiteheadRussell] p. 101.  This
+	     version is proved directly from the axioms for demonstration purposes.
+	     This proof is a very popular example in the literature and is identical,
+	     step for step, to the proofs of Theorem 1 of [Margaris] p. 51,
+	     Example 2.7(a) of [Hamilton] p. 31, Lemma 10.3 of [BellMachover] p. 36,
+	     and Lemma 1.8 of [Mendelson] p. 36.  It is also
+	     "Our first proof" in Hirst and Hirst's _A Primer for Logic and Proof_
+	     p. 16 (PDF p. 22) at
+	     ~ http://www.mathsci.appstate.edu/~~jlh/primer/hirst.pdf .
+	     For a shorter version of the proof that takes advantage of previously
+	     proved theorems, see ~ id .  */
+	theorem id1 (var ph : wff ) 
+	{
+		prop : wff = |- ( ph -> ph ) ;
+	}
+
+	/*  [5-Aug-1993]  */ 
+	proof of id1 {
+		step 1 : wff = axiom ax-1 () |- ( ph -> ( ph -> ph ) ) ;
+		step 2 : wff = axiom ax-1 () |- ( ph -> ( ( ph -> ph ) -> ph ) ) ;
+		step 3 : wff = axiom ax-2 () |- ( ( ph -> ( ( ph -> ph ) -> ph ) ) -> ( ( ph -> ( ph -> ph ) ) -> ( ph -> ph ) ) ) ;
+		step 4 : wff = axiom ax-mp (step 2, step 3) |- ( ( ph -> ( ph -> ph ) ) -> ( ph -> ph ) ) ;
+		step 5 : wff = axiom ax-mp (step 1, step 4) |- ( ph -> ph ) ;
+		qed prop = step 5 ;
+	}
+
+	/*  Principle of identity with antecedent.  */
+	theorem idd (var ph : wff , var ps : wff ) 
+	{
+		prop : wff = |- ( ph -> ( ps -> ps ) ) ;
+	}
+
+	/*  [26-Nov-1995]  */ 
+	proof of idd {
+		step 1 : wff = theorem id () |- ( ps -> ps ) ;
+		step 2 : wff = theorem a1i (step 1) |- ( ph -> ( ps -> ps ) ) ;
+		qed prop = step 2 ;
+	}
+
+	/*  This theorem, called "Assertion," can be thought of as closed form of
+	     modus ponens.  Theorem *2.27 of [WhiteheadRussell] p. 104.  */
+	theorem pm2_27 (var ph : wff , var ps : wff ) 
+	{
+		prop : wff = |- ( ph -> ( ( ph -> ps ) -> ps ) ) ;
+	}
+
+	/*  [5-Aug-1993]  */ 
+	proof of pm2_27 {
+		step 1 : wff = theorem id () |- ( ( ph -> ps ) -> ( ph -> ps ) ) ;
+		step 2 : wff = theorem com12 (step 1) |- ( ph -> ( ( ph -> ps ) -> ps ) ) ;
+		qed prop = step 2 ;
+	}
+
+	/*  Absorption of redundant antecedent.  Also called the "Contraction" or
+	     "Hilbert" axiom.  Theorem *2.43 of [WhiteheadRussell] p. 106.  (The proof
+	     was shortened by Mel L. O'Cat, 15-Aug-2004.)  */
+	theorem pm2_43 (var ph : wff , var ps : wff ) 
+	{
+		prop : wff = |- ( ( ph -> ( ph -> ps ) ) -> ( ph -> ps ) ) ;
+	}
+
+	/*  [15-Aug-2004]  */ /*  [5-Aug-1993]  */ 
+	proof of pm2_43 {
+		step 1 : wff = theorem pm2_27 () |- ( ph -> ( ( ph -> ps ) -> ps ) ) ;
+		step 2 : wff = theorem a2i (step 1) |- ( ( ph -> ( ph -> ps ) ) -> ( ph -> ps ) ) ;
+		qed prop = step 2 ;
+	}
+
+	/*  Inference absorbing redundant antecedent.  */
+	theorem pm2_43i (var ph : wff , var ps : wff ) 
+	{
+		hyp 1 : wff = |- ( ph -> ( ph -> ps ) ) ;
+		-----------------
+		prop : wff = |- ( ph -> ps ) ;
+	}
+
+	/*  [5-Aug-1993]  */ 
+	proof of pm2_43i {
+		step 1 : wff = theorem pm2_43 () |- ( ( ph -> ( ph -> ps ) ) -> ( ph -> ps ) ) ;
+		step 2 : wff = axiom ax-mp (hyp 1, step 1) |- ( ph -> ps ) ;
+		qed prop = step 2 ;
+	}
+
+	/*  Deduction absorbing redundant antecedent.  (The proof was shortened by
+	       Mel O'Cat, 3-Feb-06.)  */
+	theorem pm2_43d (var ph : wff , var ps : wff , var ch : wff ) 
+	{
+		hyp 1 : wff = |- ( ph -> ( ps -> ( ps -> ch ) ) ) ;
+		-----------------
+		prop : wff = |- ( ph -> ( ps -> ch ) ) ;
+	}
+
+	/*  [4-Feb-2006]  */ /*  [18-Aug-1993]  */ 
+	proof of pm2_43d {
+		step 1 : wff = theorem idd () |- ( ph -> ( ps -> ps ) ) ;
+		step 2 : wff = theorem mpdd (step 1, hyp 1) |- ( ph -> ( ps -> ch ) ) ;
+		qed prop = step 2 ;
+	}
+
+	/*  Inference absorbing redundant antecedent.  (The proof was shortened by
+	       Mel O'Cat, 3-Feb-06.)  */
+	theorem pm2_43a (var ph : wff , var ps : wff , var ch : wff ) 
+	{
+		hyp 1 : wff = |- ( ps -> ( ph -> ( ps -> ch ) ) ) ;
+		-----------------
+		prop : wff = |- ( ps -> ( ph -> ch ) ) ;
+	}
+
+	/*  [4-Feb-2006]  */ /*  [7-Nov-1995]  */ 
+	proof of pm2_43a {
+		step 1 : wff = axiom ax-1 () |- ( ps -> ( ph -> ps ) ) ;
+		step 2 : wff = theorem mpdd (step 1, hyp 1) |- ( ps -> ( ph -> ch ) ) ;
+		qed prop = step 2 ;
+	}
+
+	/*  Inference absorbing redundant antecedent.  */
+	theorem pm2_43b (var ph : wff , var ps : wff , var ch : wff ) 
+	{
+		hyp 1 : wff = |- ( ps -> ( ph -> ( ps -> ch ) ) ) ;
+		-----------------
+		prop : wff = |- ( ph -> ( ps -> ch ) ) ;
+	}
+
+	/*  [31-Oct-1995]  */ 
+	proof of pm2_43b {
+		step 1 : wff = theorem pm2_43a (hyp 1) |- ( ps -> ( ph -> ch ) ) ;
+		step 2 : wff = theorem com12 (step 1) |- ( ph -> ( ps -> ch ) ) ;
+		qed prop = step 2 ;
+	}
+
+	/*  A syllogism inference combined with contraction.  */
+	theorem sylc (var ph : wff , var ps : wff , var ch : wff , var th : wff ) 
+	{
+		hyp 1 : wff = |- ( ph -> ( ps -> ch ) ) ;
+		hyp 2 : wff = |- ( th -> ph ) ;
+		hyp 3 : wff = |- ( th -> ps ) ;
+		-----------------
+		prop : wff = |- ( th -> ch ) ;
+	}
+
+	/*  [4-May-1994]  */ 
+	proof of sylc {
+		step 1 : wff = theorem syl (hyp 2, hyp 1) |- ( th -> ( ps -> ch ) ) ;
+		step 2 : wff = theorem mpd (hyp 3, step 1) |- ( th -> ch ) ;
+		qed prop = step 2 ;
+	}
+
+	/*  Converse of axiom ~ ax-2 .  Theorem *2.86 of [WhiteheadRussell] p. 108.  */
+	theorem pm2_86 (var ph : wff , var ps : wff , var ch : wff ) 
+	{
+		prop : wff = |- ( ( ( ph -> ps ) -> ( ph -> ch ) ) -> ( ph -> ( ps -> ch ) ) ) ;
+	}
+
+	/*  [25-Apr-1994]  */ 
+	proof of pm2_86 {
+		step 1 : wff = axiom ax-1 () |- ( ps -> ( ph -> ps ) ) ;
+		step 2 : wff = theorem imim1i (step 1) |- ( ( ( ph -> ps ) -> ( ph -> ch ) ) -> ( ps -> ( ph -> ch ) ) ) ;
+		step 3 : wff = theorem com23 (step 2) |- ( ( ( ph -> ps ) -> ( ph -> ch ) ) -> ( ph -> ( ps -> ch ) ) ) ;
+		qed prop = step 3 ;
+	}
+
+	/*  Inference based on ~ pm2.86 .  */
+	theorem pm2_86i (var ph : wff , var ps : wff , var ch : wff ) 
+	{
+		hyp 1 : wff = |- ( ( ph -> ps ) -> ( ph -> ch ) ) ;
+		-----------------
+		prop : wff = |- ( ph -> ( ps -> ch ) ) ;
+	}
+
+	/*  [5-Aug-1993]  */ 
+	proof of pm2_86i {
+		step 1 : wff = theorem pm2_86 () |- ( ( ( ph -> ps ) -> ( ph -> ch ) ) -> ( ph -> ( ps -> ch ) ) ) ;
+		step 2 : wff = axiom ax-mp (hyp 1, step 1) |- ( ph -> ( ps -> ch ) ) ;
+		qed prop = step 2 ;
+	}
+
+	/*  Deduction based on ~ pm2.86 .  */
+	theorem pm2_86d (var ph : wff , var ps : wff , var ch : wff , var th : wff ) 
+	{
+		hyp 1 : wff = |- ( ph -> ( ( ps -> ch ) -> ( ps -> th ) ) ) ;
+		-----------------
+		prop : wff = |- ( ph -> ( ps -> ( ch -> th ) ) ) ;
+	}
+
+	/*  [29-Jun-1995]  */ 
+	proof of pm2_86d {
+		step 1 : wff = theorem pm2_86 () |- ( ( ( ps -> ch ) -> ( ps -> th ) ) -> ( ps -> ( ch -> th ) ) ) ;
+		step 2 : wff = theorem syl (hyp 1, step 1) |- ( ph -> ( ps -> ( ch -> th ) ) ) ;
+		qed prop = step 2 ;
+	}
+
+	/*  The Linearity Axiom of the infinite-valued sentential logic (L-infinity)
+	     of Lukasiewicz.  (Contributed by Mel L. O'Cat, 12-Aug-2004.)  */
+	theorem loolin (var ph : wff , var ps : wff ) 
+	{
+		prop : wff = |- ( ( ( ph -> ps ) -> ( ps -> ph ) ) -> ( ps -> ph ) ) ;
+	}
+
+	/*  [14-Aug-2004]  */ /*  [12-Aug-2004]  */ 
+	proof of loolin {
+		step 1 : wff = axiom ax-1 () |- ( ps -> ( ph -> ps ) ) ;
+		step 2 : wff = theorem imim1i (step 1) |- ( ( ( ph -> ps ) -> ( ps -> ph ) ) -> ( ps -> ( ps -> ph ) ) ) ;
+		step 3 : wff = theorem pm2_43d (step 2) |- ( ( ( ph -> ps ) -> ( ps -> ph ) ) -> ( ps -> ph ) ) ;
+		qed prop = step 3 ;
+	}
+
+	/*  An alternate for the Linearity Axiom of the infinite-valued sentential
+	     logic (L-infinity) of Lukasiewicz, due to Barbara Wozniakowska, _Reports
+	     on Mathematical Logic_ 10, 129-137 (1978).  (Contributed by Mel L. O'Cat,
+	     8-Aug-2004.)  */
+	theorem loowoz (var ph : wff , var ps : wff , var ch : wff ) 
+	{
+		prop : wff = |- ( ( ( ph -> ps ) -> ( ph -> ch ) ) -> ( ( ps -> ph ) -> ( ps -> ch ) ) ) ;
+	}
+
+	/*  [9-Aug-2004]  */ /*  [8-Aug-2004]  */ 
+	proof of loowoz {
+		step 1 : wff = axiom ax-1 () |- ( ps -> ( ph -> ps ) ) ;
+		step 2 : wff = theorem imim1i (step 1) |- ( ( ( ph -> ps ) -> ( ph -> ch ) ) -> ( ps -> ( ph -> ch ) ) ) ;
+		step 3 : wff = theorem a2d (step 2) |- ( ( ( ph -> ps ) -> ( ph -> ch ) ) -> ( ( ps -> ph ) -> ( ps -> ch ) ) ) ;
+		qed prop = step 3 ;
+	}
+
+	/*  Inference rule derived from axiom ~ ax-3 .  */
+	theorem a3i (var ph : wff , var ps : wff ) 
+	{
+		hyp 1 : wff = |- ( -. ph -> -. ps ) ;
+		-----------------
+		prop : wff = |- ( ps -> ph ) ;
+	}
+
+	/*  [5-Aug-1993]  */ 
+	proof of a3i {
+		step 1 : wff = axiom ax-3 () |- ( ( -. ph -> -. ps ) -> ( ps -> ph ) ) ;
+		step 2 : wff = axiom ax-mp (hyp 1, step 1) |- ( ps -> ph ) ;
+		qed prop = step 2 ;
+	}
+
+	/*  Deduction derived from axiom ~ ax-3 .  */
+	theorem a3d (var ph : wff , var ps : wff , var ch : wff ) 
+	{
+		hyp 1 : wff = |- ( ph -> ( -. ps -> -. ch ) ) ;
+		-----------------
+		prop : wff = |- ( ph -> ( ch -> ps ) ) ;
+	}
+
+	/*  [26-Mar-1995]  */ 
+	proof of a3d {
+		step 1 : wff = axiom ax-3 () |- ( ( -. ps -> -. ch ) -> ( ch -> ps ) ) ;
+		step 2 : wff = theorem syl (hyp 1, step 1) |- ( ph -> ( ch -> ps ) ) ;
+		qed prop = step 2 ;
+	}
+
+	/*  From a wff and its negation, anything is true.  Theorem *2.21 of
+	     [WhiteheadRussell] p. 104.  Also called the Duns Scotus law.  */
+	theorem pm2_21 (var ph : wff , var ps : wff ) 
+	{
+		prop : wff = |- ( -. ph -> ( ph -> ps ) ) ;
+	}
+
+	/*  [5-Aug-1993]  */ 
+	proof of pm2_21 {
+		step 1 : wff = axiom ax-1 () |- ( -. ph -> ( -. ps -> -. ph ) ) ;
+		step 2 : wff = theorem a3d (step 1) |- ( -. ph -> ( ph -> ps ) ) ;
+		qed prop = step 2 ;
+	}
+
+	/*  A contradiction implies anything.  Inference from ~ pm2.21 .  */
+	theorem pm2_21i (var ph : wff , var ps : wff ) 
+	{
+		hyp 1 : wff = |- -. ph ;
+		-----------------
+		prop : wff = |- ( ph -> ps ) ;
+	}
+
+	/*  [16-Sep-1993]  */ 
+	proof of pm2_21i {
+		step 1 : wff = theorem a1i (hyp 1) |- ( -. ps -> -. ph ) ;
+		step 2 : wff = theorem a3i (step 1) |- ( ph -> ps ) ;
+		qed prop = step 2 ;
+	}
+
+	/*  A contradiction implies anything.  Deduction from ~ pm2.21 .  */
+	theorem pm2_21d (var ph : wff , var ps : wff , var ch : wff ) 
+	{
+		hyp 1 : wff = |- ( ph -> -. ps ) ;
+		-----------------
+		prop : wff = |- ( ph -> ( ps -> ch ) ) ;
+	}
+
+	/*  [10-Feb-1996]  */ 
+	proof of pm2_21d {
+		step 1 : wff = theorem a1d (hyp 1) |- ( ph -> ( -. ch -> -. ps ) ) ;
+		step 2 : wff = theorem a3d (step 1) |- ( ph -> ( ps -> ch ) ) ;
+		qed prop = step 2 ;
+	}
+
+	/*  Theorem *2.24 of [WhiteheadRussell] p. 104.  */
+	theorem pm2_24 (var ph : wff , var ps : wff ) 
+	{
+		prop : wff = |- ( ph -> ( -. ph -> ps ) ) ;
+	}
+
+	/*  [6-Jan-2005]  */ /*  [3-Jan-2005]  */ 
+	proof of pm2_24 {
+		step 1 : wff = theorem pm2_21 () |- ( -. ph -> ( ph -> ps ) ) ;
+		step 2 : wff = theorem com12 (step 1) |- ( ph -> ( -. ph -> ps ) ) ;
+		qed prop = step 2 ;
+	}
+
+	/*  A contradiction implies anything.  Inference from ~ pm2.24 .  */
+	theorem pm2_24ii (var ph : wff , var ps : wff ) 
+	{
+		hyp 1 : wff = |- ph ;
+		hyp 2 : wff = |- -. ph ;
+		-----------------
+		prop : wff = |- ps ;
+	}
+
+	/*  [27-Feb-2008]  */ /*  [27-Feb-2008]  */ 
+	proof of pm2_24ii {
+		step 1 : wff = theorem pm2_21i (hyp 2) |- ( ph -> ps ) ;
+		step 2 : wff = axiom ax-mp (hyp 1, step 1) |- ps ;
+		qed prop = step 2 ;
+	}
+
+	/*  Proof by contradiction.  Theorem *2.18 of [WhiteheadRussell] p. 103.
+	     Also called the Law of Clavius.  */
+	theorem pm2_18 (var ph : wff ) 
+	{
+		prop : wff = |- ( ( -. ph -> ph ) -> ph ) ;
+	}
+
+	/*  [5-Aug-1993]  */ 
+	proof of pm2_18 {
+		step 1 : wff = theorem pm2_21 () |- ( -. ph -> ( ph -> -. ( -. ph -> ph ) ) ) ;
+		step 2 : wff = theorem a2i (step 1) |- ( ( -. ph -> ph ) -> ( -. ph -> -. ( -. ph -> ph ) ) ) ;
+		step 3 : wff = theorem a3d (step 2) |- ( ( -. ph -> ph ) -> ( ( -. ph -> ph ) -> ph ) ) ;
+		step 4 : wff = theorem pm2_43i (step 3) |- ( ( -. ph -> ph ) -> ph ) ;
+		qed prop = step 4 ;
+	}
+
+	/*  Peirce's axiom.  This odd-looking theorem is the "difference" between
+	     an intuitionistic system of propositional calculus and a classical system
+	     and is not accepted by intuitionists.  When Peirce's axiom is added to an
+	     intuitionistic system, the system becomes equivalent to our classical
+	     system ~ ax-1 through ~ ax-3 .  A curious fact about this
+	     theorem is that it requires ~ ax-3 for its proof even though the
+	     result has no negation connectives in it.  */
+	theorem peirce (var ph : wff , var ps : wff ) 
+	{
+		prop : wff = |- ( ( ( ph -> ps ) -> ph ) -> ph ) ;
+	}
+
+	/*  [5-Aug-1993]  */ 
+	proof of peirce {
+		step 1 : wff = theorem pm2_21 () |- ( -. ph -> ( ph -> ps ) ) ;
+		step 2 : wff = theorem imim1i (step 1) |- ( ( ( ph -> ps ) -> ph ) -> ( -. ph -> ph ) ) ;
+		step 3 : wff = theorem pm2_18 () |- ( ( -. ph -> ph ) -> ph ) ;
+		step 4 : wff = theorem syl (step 2, step 3) |- ( ( ( ph -> ps ) -> ph ) -> ph ) ;
+		qed prop = step 4 ;
+	}
+
+	/*  The Inversion Axiom of the infinite-valued sentential logic (L-infinity)
+	     of Lukasiewicz.  Using ~ dfor2 , we can see that this essentially
+	     expresses "disjunction commutes."  Theorem *2.69 of [WhiteheadRussell]
+	     p. 108.  */
+	theorem looinv (var ph : wff , var ps : wff ) 
+	{
+		prop : wff = |- ( ( ( ph -> ps ) -> ps ) -> ( ( ps -> ph ) -> ph ) ) ;
+	}
+
+	/*  [20-Aug-2004]  */ /*  [12-Aug-2004]  */ 
+	proof of looinv {
+		step 1 : wff = theorem imim1 () |- ( ( ( ph -> ps ) -> ps ) -> ( ( ps -> ph ) -> ( ( ph -> ps ) -> ph ) ) ) ;
+		step 2 : wff = theorem peirce () |- ( ( ( ph -> ps ) -> ph ) -> ph ) ;
+		step 3 : wff = theorem syl6 (step 1, step 2) |- ( ( ( ph -> ps ) -> ps ) -> ( ( ps -> ph ) -> ph ) ) ;
+		qed prop = step 3 ;
+	}
+
+	/*  Converse of double negation.  Theorem *2.14 of [WhiteheadRussell] p. 102.
+	     (The proof was shortened by David Harvey, 5-Sep-99.  An even shorter
+	     proof found by Josh Purinton, 29-Dec-00.)  */
+	theorem nega (var ph : wff ) 
+	{
+		prop : wff = |- ( -. -. ph -> ph ) ;
+	}
+
+	/*  [5-Aug-1993]  */ 
+	proof of nega {
+		step 1 : wff = theorem pm2_21 () |- ( -. -. ph -> ( -. ph -> ph ) ) ;
+		step 2 : wff = theorem pm2_18 () |- ( ( -. ph -> ph ) -> ph ) ;
+		step 3 : wff = theorem syl (step 1, step 2) |- ( -. -. ph -> ph ) ;
+		qed prop = step 3 ;
+	}
+
+	/*  Inference from double negation.  */
+	theorem negai (var ph : wff ) 
+	{
+		hyp 1 : wff = |- -. -. ph ;
+		-----------------
+		prop : wff = |- ph ;
+	}
+
+	/*  [27-Feb-2008]  */ /*  [27-Feb-2008]  */ 
+	proof of negai {
+		step 1 : wff = theorem nega () |- ( -. -. ph -> ph ) ;
+		step 2 : wff = axiom ax-mp (hyp 1, step 1) |- ph ;
+		qed prop = step 2 ;
+	}
+
+	/*  Converse of double negation.  Theorem *2.12 of [WhiteheadRussell]
+	     p. 101.  */
+	theorem negb (var ph : wff ) 
+	{
+		prop : wff = |- ( ph -> -. -. ph ) ;
+	}
+
+	/*  [5-Aug-1993]  */ 
+	proof of negb {
+		step 1 : wff = theorem nega () |- ( -. -. -. ph -> -. ph ) ;
+		step 2 : wff = theorem a3i (step 1) |- ( ph -> -. -. ph ) ;
+		qed prop = step 2 ;
+	}
+
+	/*  Infer double negation.  */
+	theorem negbi (var ph : wff ) 
+	{
+		hyp 1 : wff = |- ph ;
+		-----------------
+		prop : wff = |- -. -. ph ;
+	}
+
+	/*  [27-Feb-2008]  */ /*  [27-Feb-2008]  */ 
+	proof of negbi {
+		step 1 : wff = theorem negb () |- ( ph -> -. -. ph ) ;
+		step 2 : wff = axiom ax-mp (hyp 1, step 1) |- -. -. ph ;
+		qed prop = step 2 ;
+	}
+
+	/*  Reductio ad absurdum.  Theorem *2.01 of [WhiteheadRussell] p. 100.  */
+	theorem pm2_01 (var ph : wff ) 
+	{
+		prop : wff = |- ( ( ph -> -. ph ) -> -. ph ) ;
+	}
+
+	/*  [18-Aug-1993]  */ 
+	proof of pm2_01 {
+		step 1 : wff = theorem nega () |- ( -. -. ph -> ph ) ;
+		step 2 : wff = theorem imim1i (step 1) |- ( ( ph -> -. ph ) -> ( -. -. ph -> -. ph ) ) ;
+		step 3 : wff = theorem pm2_18 () |- ( ( -. -. ph -> -. ph ) -> -. ph ) ;
+		step 4 : wff = theorem syl (step 2, step 3) |- ( ( ph -> -. ph ) -> -. ph ) ;
+		qed prop = step 4 ;
+	}
+
+	/*  Deduction based on reductio ad absurdum.  */
+	theorem pm2_01d (var ph : wff , var ps : wff ) 
+	{
+		hyp 1 : wff = |- ( ph -> ( ps -> -. ps ) ) ;
+		-----------------
+		prop : wff = |- ( ph -> -. ps ) ;
+	}
+
+	/*  [18-Aug-1993]  */ 
+	proof of pm2_01d {
+		step 1 : wff = theorem pm2_01 () |- ( ( ps -> -. ps ) -> -. ps ) ;
+		step 2 : wff = theorem syl (hyp 1, step 1) |- ( ph -> -. ps ) ;
+		qed prop = step 2 ;
+	}
+
+	/*  Contraposition.  Theorem *2.03 of [WhiteheadRussell] p. 100.  */
+	theorem con2 (var ph : wff , var ps : wff ) 
+	{
+		prop : wff = |- ( ( ph -> -. ps ) -> ( ps -> -. ph ) ) ;
+	}
+
+	/*  [5-Aug-1993]  */ 
+	proof of con2 {
+		step 1 : wff = theorem nega () |- ( -. -. ph -> ph ) ;
+		step 2 : wff = theorem imim1i (step 1) |- ( ( ph -> -. ps ) -> ( -. -. ph -> -. ps ) ) ;
+		step 3 : wff = theorem a3d (step 2) |- ( ( ph -> -. ps ) -> ( ps -> -. ph ) ) ;
+		qed prop = step 3 ;
+	}
+
+	/*  A contraposition deduction.  */
+	theorem con2d (var ph : wff , var ps : wff , var ch : wff ) 
+	{
+		hyp 1 : wff = |- ( ph -> ( ps -> -. ch ) ) ;
+		-----------------
+		prop : wff = |- ( ph -> ( ch -> -. ps ) ) ;
+	}
+
+	/*  [19-Aug-1993]  */ 
+	proof of con2d {
+		step 1 : wff = theorem con2 () |- ( ( ps -> -. ch ) -> ( ch -> -. ps ) ) ;
+		step 2 : wff = theorem syl (hyp 1, step 1) |- ( ph -> ( ch -> -. ps ) ) ;
+		qed prop = step 2 ;
+	}
+
+	/*  Contraposition.  Theorem *2.15 of [WhiteheadRussell] p. 102.  */
+	theorem con1 (var ph : wff , var ps : wff ) 
+	{
+		prop : wff = |- ( ( -. ph -> ps ) -> ( -. ps -> ph ) ) ;
+	}
+
+	/*  [5-Aug-1993]  */ 
+	proof of con1 {
+		step 1 : wff = theorem negb () |- ( ps -> -. -. ps ) ;
+		step 2 : wff = theorem imim2i (step 1) |- ( ( -. ph -> ps ) -> ( -. ph -> -. -. ps ) ) ;
+		step 3 : wff = theorem a3d (step 2) |- ( ( -. ph -> ps ) -> ( -. ps -> ph ) ) ;
+		qed prop = step 3 ;
+	}
+
+	/*  A contraposition deduction.  */
+	theorem con1d (var ph : wff , var ps : wff , var ch : wff ) 
+	{
+		hyp 1 : wff = |- ( ph -> ( -. ps -> ch ) ) ;
+		-----------------
+		prop : wff = |- ( ph -> ( -. ch -> ps ) ) ;
+	}
+
+	/*  [5-Aug-1993]  */ 
+	proof of con1d {
+		step 1 : wff = theorem con1 () |- ( ( -. ps -> ch ) -> ( -. ch -> ps ) ) ;
+		step 2 : wff = theorem syl (hyp 1, step 1) |- ( ph -> ( -. ch -> ps ) ) ;
+		qed prop = step 2 ;
+	}
+
+	/*  Contraposition.  Theorem *2.16 of [WhiteheadRussell] p. 103.  */
+	theorem con3 (var ph : wff , var ps : wff ) 
+	{
+		prop : wff = |- ( ( ph -> ps ) -> ( -. ps -> -. ph ) ) ;
+	}
+
+	/*  [5-Aug-1993]  */ 
+	proof of con3 {
+		step 1 : wff = theorem negb () |- ( ps -> -. -. ps ) ;
+		step 2 : wff = theorem imim2i (step 1) |- ( ( ph -> ps ) -> ( ph -> -. -. ps ) ) ;
+		step 3 : wff = theorem con2d (step 2) |- ( ( ph -> ps ) -> ( -. ps -> -. ph ) ) ;
+		qed prop = step 3 ;
+	}
+
+	/*  A contraposition deduction.  */
+	theorem con3d (var ph : wff , var ps : wff , var ch : wff ) 
+	{
+		hyp 1 : wff = |- ( ph -> ( ps -> ch ) ) ;
+		-----------------
+		prop : wff = |- ( ph -> ( -. ch -> -. ps ) ) ;
+	}
+
+	/*  [5-Aug-1993]  */ 
+	proof of con3d {
+		step 1 : wff = theorem con3 () |- ( ( ps -> ch ) -> ( -. ch -> -. ps ) ) ;
+		step 2 : wff = theorem syl (hyp 1, step 1) |- ( ph -> ( -. ch -> -. ps ) ) ;
+		qed prop = step 2 ;
+	}
+
+	/*  A contraposition inference.  */
+	theorem con1i (var ph : wff , var ps : wff ) 
+	{
+		hyp 1 : wff = |- ( -. ph -> ps ) ;
+		-----------------
+		prop : wff = |- ( -. ps -> ph ) ;
+	}
+
+	/*  [5-Aug-1993]  */ 
+	proof of con1i {
+		step 1 : wff = theorem negb () |- ( ps -> -. -. ps ) ;
+		step 2 : wff = theorem syl (hyp 1, step 1) |- ( -. ph -> -. -. ps ) ;
+		step 3 : wff = theorem a3i (step 2) |- ( -. ps -> ph ) ;
+		qed prop = step 3 ;
+	}
+
+	/*  A contraposition inference.  */
+	theorem con2i (var ph : wff , var ps : wff ) 
+	{
+		hyp 1 : wff = |- ( ph -> -. ps ) ;
+		-----------------
+		prop : wff = |- ( ps -> -. ph ) ;
+	}
+
+	/*  [5-Aug-1993]  */ 
+	proof of con2i {
+		step 1 : wff = theorem nega () |- ( -. -. ph -> ph ) ;
+		step 2 : wff = theorem syl (step 1, hyp 1) |- ( -. -. ph -> -. ps ) ;
+		step 3 : wff = theorem a3i (step 2) |- ( ps -> -. ph ) ;
+		qed prop = step 3 ;
+	}
+
+	/*  A contraposition inference.  */
+	theorem con3i (var ph : wff , var ps : wff ) 
+	{
+		hyp 1 : wff = |- ( ph -> ps ) ;
+		-----------------
+		prop : wff = |- ( -. ps -> -. ph ) ;
+	}
+
+	/*  [5-Aug-1993]  */ 
+	proof of con3i {
+		step 1 : wff = theorem nega () |- ( -. -. ph -> ph ) ;
+		step 2 : wff = theorem syl (step 1, hyp 1) |- ( -. -. ph -> ps ) ;
+		step 3 : wff = theorem con1i (step 2) |- ( -. ps -> -. ph ) ;
+		qed prop = step 3 ;
+	}
+
+	/*  This is NOT theorem *2.37 of [WhiteheadRussell] p. 105.  */
+	theorem pm2_37OLD (var ph : wff , var ps : wff , var ch : wff ) 
+	{
+		prop : wff = |- ( ( ps -> ch ) -> ( ( -. ps -> ph ) -> ( -. ph -> ch ) ) ) ;
+	}
+
+	/*  [23-Jan-2005]  */ /*  [3-Jan-2005]  */ 
+	proof of pm2_37OLD {
+		step 1 : wff = theorem con1 () |- ( ( -. ps -> ph ) -> ( -. ph -> ps ) ) ;
+		step 2 : wff = theorem imim1d (step 1) |- ( ( -. ps -> ph ) -> ( ( ps -> ch ) -> ( -. ph -> ch ) ) ) ;
+		step 3 : wff = theorem com12 (step 2) |- ( ( ps -> ch ) -> ( ( -. ps -> ph ) -> ( -. ph -> ch ) ) ) ;
+		qed prop = step 3 ;
+	}
+
+	/*  Theorem *2.5 of [WhiteheadRussell] p. 107.  */
+	theorem pm2_5 (var ph : wff , var ps : wff ) 
+	{
+		prop : wff = |- ( -. ( ph -> ps ) -> ( -. ph -> ps ) ) ;
+	}
+
+	/*  [27-Jan-2005]  */ /*  [3-Jan-2005]  */ 
+	proof of pm2_5 {
+		step 1 : wff = theorem pm2_21 () |- ( -. ph -> ( ph -> ps ) ) ;
+		step 2 : wff = theorem con3i (step 1) |- ( -. ( ph -> ps ) -> -. -. ph ) ;
+		step 3 : wff = theorem pm2_21d (step 2) |- ( -. ( ph -> ps ) -> ( -. ph -> ps ) ) ;
+		qed prop = step 3 ;
+	}
+
+	/*  Theorem *2.51 of [WhiteheadRussell] p. 107.  */
+	theorem pm2_51 (var ph : wff , var ps : wff ) 
+	{
+		prop : wff = |- ( -. ( ph -> ps ) -> ( ph -> -. ps ) ) ;
+	}
+
+	/*  [27-Jan-2005]  */ /*  [3-Jan-2005]  */ 
+	proof of pm2_51 {
+		step 1 : wff = axiom ax-1 () |- ( ps -> ( ph -> ps ) ) ;
+		step 2 : wff = theorem con3i (step 1) |- ( -. ( ph -> ps ) -> -. ps ) ;
+		step 3 : wff = theorem a1d (step 2) |- ( -. ( ph -> ps ) -> ( ph -> -. ps ) ) ;
+		qed prop = step 3 ;
+	}
+
+	/*  Theorem *2.52 of [WhiteheadRussell] p. 107.  */
+	theorem pm2_52 (var ph : wff , var ps : wff ) 
+	{
+		prop : wff = |- ( -. ( ph -> ps ) -> ( -. ph -> -. ps ) ) ;
+	}
+
+	/*  [27-Jan-2005]  */ /*  [3-Jan-2005]  */ 
+	proof of pm2_52 {
+		step 1 : wff = axiom ax-1 () |- ( ps -> ( ph -> ps ) ) ;
+		step 2 : wff = theorem con3i (step 1) |- ( -. ( ph -> ps ) -> -. ps ) ;
+		step 3 : wff = theorem a1d (step 2) |- ( -. ( ph -> ps ) -> ( -. ph -> -. ps ) ) ;
+		qed prop = step 3 ;
+	}
+
+	/*  Theorem *2.521 of [WhiteheadRussell] p. 107.  */
+	theorem pm2_521 (var ph : wff , var ps : wff ) 
+	{
+		prop : wff = |- ( -. ( ph -> ps ) -> ( ps -> ph ) ) ;
+	}
+
+	/*  [6-Feb-2005]  */ /*  [3-Jan-2005]  */ 
+	proof of pm2_521 {
+		step 1 : wff = theorem pm2_52 () |- ( -. ( ph -> ps ) -> ( -. ph -> -. ps ) ) ;
+		step 2 : wff = theorem a3d (step 1) |- ( -. ( ph -> ps ) -> ( ps -> ph ) ) ;
+		qed prop = step 2 ;
+	}
+
+	/*  Inference version of ~ pm2.24 .  */
+	theorem pm2_24i (var ph : wff , var ps : wff ) 
+	{
+		hyp 1 : wff = |- ph ;
+		-----------------
+		prop : wff = |- ( -. ph -> ps ) ;
+	}
+
+	/*  [20-Aug-2001]  */ 
+	proof of pm2_24i {
+		step 1 : wff = theorem a1i (hyp 1) |- ( -. ps -> ph ) ;
+		step 2 : wff = theorem con1i (step 1) |- ( -. ph -> ps ) ;
+		qed prop = step 2 ;
+	}
+
+	/*  Deduction version of ~ pm2.21 .  */
+	theorem pm2_24d (var ph : wff , var ps : wff , var ch : wff ) 
+	{
+		hyp 1 : wff = |- ( ph -> ps ) ;
+		-----------------
+		prop : wff = |- ( ph -> ( -. ps -> ch ) ) ;
+	}
+
+	/*  [31-Jan-2006]  */ /*  [30-Jan-2006]  */ 
+	proof of pm2_24d {
+		step 1 : wff = theorem a1d (hyp 1) |- ( ph -> ( -. ch -> ps ) ) ;
+		step 2 : wff = theorem con1d (step 1) |- ( ph -> ( -. ps -> ch ) ) ;
+		qed prop = step 2 ;
+	}
+
+	/*  The rule of modus tollens.  */
+	theorem mto (var ph : wff , var ps : wff ) 
+	{
+		hyp 1 : wff = |- -. ps ;
+		hyp 2 : wff = |- ( ph -> ps ) ;
+		-----------------
+		prop : wff = |- -. ph ;
+	}
+
+	/*  [19-Aug-1993]  */ 
+	proof of mto {
+		step 1 : wff = theorem con3i (hyp 2) |- ( -. ps -> -. ph ) ;
+		step 2 : wff = axiom ax-mp (hyp 1, step 1) |- -. ph ;
+		qed prop = step 2 ;
+	}
+
+	/*  Modus tollens inference.  */
+	theorem mtoi (var ph : wff , var ps : wff , var ch : wff ) 
+	{
+		hyp 1 : wff = |- -. ch ;
+		hyp 2 : wff = |- ( ph -> ( ps -> ch ) ) ;
+		-----------------
+		prop : wff = |- ( ph -> -. ps ) ;
+	}
+
+	/*  [5-Jul-1994]  */ 
+	proof of mtoi {
+		step 1 : wff = theorem con3d (hyp 2) |- ( ph -> ( -. ch -> -. ps ) ) ;
+		step 2 : wff = theorem mpi (hyp 1, step 1) |- ( ph -> -. ps ) ;
+		qed prop = step 2 ;
+	}
+
+	/*  Modus tollens deduction.  */
+	theorem mtod (var ph : wff , var ps : wff , var ch : wff ) 
+	{
+		hyp 1 : wff = |- ( ph -> -. ch ) ;
+		hyp 2 : wff = |- ( ph -> ( ps -> ch ) ) ;
+		-----------------
+		prop : wff = |- ( ph -> -. ps ) ;
+	}
+
+	/*  [3-Apr-1994]  */ 
+	proof of mtod {
+		step 1 : wff = theorem con3d (hyp 2) |- ( ph -> ( -. ch -> -. ps ) ) ;
+		step 2 : wff = theorem mpd (hyp 1, step 1) |- ( ph -> -. ps ) ;
+		qed prop = step 2 ;
+	}
+
+	/*  A rule similar to modus tollens.  */
+	theorem mt2 (var ph : wff , var ps : wff ) 
+	{
+		hyp 1 : wff = |- ps ;
+		hyp 2 : wff = |- ( ph -> -. ps ) ;
+		-----------------
+		prop : wff = |- -. ph ;
+	}
+
+	/*  [19-Aug-1993]  */ 
+	proof of mt2 {
+		step 1 : wff = theorem con2i (hyp 2) |- ( ps -> -. ph ) ;
+		step 2 : wff = axiom ax-mp (hyp 1, step 1) |- -. ph ;
+		qed prop = step 2 ;
+	}
+
+	/*  Modus tollens inference.  */
+	theorem mt2i (var ph : wff , var ps : wff , var ch : wff ) 
+	{
+		hyp 1 : wff = |- ch ;
+		hyp 2 : wff = |- ( ph -> ( ps -> -. ch ) ) ;
+		-----------------
+		prop : wff = |- ( ph -> -. ps ) ;
+	}
+
+	/*  [26-Mar-1995]  */ 
+	proof of mt2i {
+		step 1 : wff = theorem con2d (hyp 2) |- ( ph -> ( ch -> -. ps ) ) ;
+		step 2 : wff = theorem mpi (hyp 1, step 1) |- ( ph -> -. ps ) ;
+		qed prop = step 2 ;
+	}
+
+	/*  Modus tollens deduction.  */
+	theorem mt2d (var ph : wff , var ps : wff , var ch : wff ) 
+	{
+		hyp 1 : wff = |- ( ph -> ch ) ;
+		hyp 2 : wff = |- ( ph -> ( ps -> -. ch ) ) ;
+		-----------------
+		prop : wff = |- ( ph -> -. ps ) ;
+	}
+
+	/*  [4-Jul-1994]  */ 
+	proof of mt2d {
+		step 1 : wff = theorem con2d (hyp 2) |- ( ph -> ( ch -> -. ps ) ) ;
+		step 2 : wff = theorem mpd (hyp 1, step 1) |- ( ph -> -. ps ) ;
+		qed prop = step 2 ;
+	}
+
+	/*  A rule similar to modus tollens.  */
+	theorem mt3 (var ph : wff , var ps : wff ) 
+	{
+		hyp 1 : wff = |- -. ps ;
+		hyp 2 : wff = |- ( -. ph -> ps ) ;
+		-----------------
+		prop : wff = |- ph ;
+	}
+
+	/*  [18-May-1994]  */ 
+	proof of mt3 {
+		step 1 : wff = theorem con1i (hyp 2) |- ( -. ps -> ph ) ;
+		step 2 : wff = axiom ax-mp (hyp 1, step 1) |- ph ;
+		qed prop = step 2 ;
+	}
+
+	/*  Modus tollens inference.  */
+	theorem mt3i (var ph : wff , var ps : wff , var ch : wff ) 
+	{
+		hyp 1 : wff = |- -. ch ;
+		hyp 2 : wff = |- ( ph -> ( -. ps -> ch ) ) ;
+		-----------------
+		prop : wff = |- ( ph -> ps ) ;
+	}
+
+	/*  [26-Mar-1995]  */ 
+	proof of mt3i {
+		step 1 : wff = theorem con1d (hyp 2) |- ( ph -> ( -. ch -> ps ) ) ;
+		step 2 : wff = theorem mpi (hyp 1, step 1) |- ( ph -> ps ) ;
+		qed prop = step 2 ;
+	}
+
+	/*  Modus tollens deduction.  */
+	theorem mt3d (var ph : wff , var ps : wff , var ch : wff ) 
+	{
+		hyp 1 : wff = |- ( ph -> -. ch ) ;
+		hyp 2 : wff = |- ( ph -> ( -. ps -> ch ) ) ;
+		-----------------
+		prop : wff = |- ( ph -> ps ) ;
+	}
+
+	/*  [26-Mar-1995]  */ 
+	proof of mt3d {
+		step 1 : wff = theorem con1d (hyp 2) |- ( ph -> ( -. ch -> ps ) ) ;
+		step 2 : wff = theorem mpd (hyp 1, step 1) |- ( ph -> ps ) ;
+		qed prop = step 2 ;
+	}
+
+	/*  Modus tollens deduction.  */
+	theorem mt4d (var ph : wff , var ps : wff , var ch : wff ) 
+	{
+		hyp 1 : wff = |- ( ph -> ps ) ;
+		hyp 2 : wff = |- ( ph -> ( -. ch -> -. ps ) ) ;
+		-----------------
+		prop : wff = |- ( ph -> ch ) ;
+	}
+
+	/*  [18-Jun-2006]  */ /*  [9-Jun-2006]  */ 
+	proof of mt4d {
+		step 1 : wff = theorem a3d (hyp 2) |- ( ph -> ( ps -> ch ) ) ;
+		step 2 : wff = theorem mpd (hyp 1, step 1) |- ( ph -> ch ) ;
+		qed prop = step 2 ;
+	}
+
+	/*  A negated syllogism inference.  */
+	theorem nsyl (var ph : wff , var ps : wff , var ch : wff ) 
+	{
+		hyp 1 : wff = |- ( ph -> -. ps ) ;
+		hyp 2 : wff = |- ( ch -> ps ) ;
+		-----------------
+		prop : wff = |- ( ph -> -. ch ) ;
+	}
+
+	/*  [31-Dec-1993]  */ 
+	proof of nsyl {
+		step 1 : wff = theorem con3i (hyp 2) |- ( -. ps -> -. ch ) ;
+		step 2 : wff = theorem syl (hyp 1, step 1) |- ( ph -> -. ch ) ;
+		qed prop = step 2 ;
+	}
+
+	/*  A negated syllogism deduction.  */
+	theorem nsyld (var ph : wff , var ps : wff , var ch : wff , var ta : wff ) 
+	{
+		hyp 1 : wff = |- ( ph -> ( ps -> -. ch ) ) ;
+		hyp 2 : wff = |- ( ph -> ( ta -> ch ) ) ;
+		-----------------
+		prop : wff = |- ( ph -> ( ps -> -. ta ) ) ;
+	}
+
+	/*  [10-Apr-2005]  */ /*  [9-Apr-2005]  */ 
+	proof of nsyld {
+		step 1 : wff = theorem con3d (hyp 2) |- ( ph -> ( -. ch -> -. ta ) ) ;
+		step 2 : wff = theorem syld (hyp 1, step 1) |- ( ph -> ( ps -> -. ta ) ) ;
+		qed prop = step 2 ;
+	}
+
+	/*  A negated syllogism inference.  */
+	theorem nsyl2 (var ph : wff , var ps : wff , var ch : wff ) 
+	{
+		hyp 1 : wff = |- ( ph -> -. ps ) ;
+		hyp 2 : wff = |- ( -. ch -> ps ) ;
+		-----------------
+		prop : wff = |- ( ph -> ch ) ;
+	}
+
+	/*  [26-Jun-1994]  */ 
+	proof of nsyl2 {
+		step 1 : wff = theorem con1i (hyp 2) |- ( -. ps -> ch ) ;
+		step 2 : wff = theorem syl (hyp 1, step 1) |- ( ph -> ch ) ;
+		qed prop = step 2 ;
+	}
+
+	/*  A negated syllogism inference.  */
+	theorem nsyl3 (var ph : wff , var ps : wff , var ch : wff ) 
+	{
+		hyp 1 : wff = |- ( ph -> -. ps ) ;
+		hyp 2 : wff = |- ( ch -> ps ) ;
+		-----------------
+		prop : wff = |- ( ch -> -. ph ) ;
+	}
+
+	/*  [1-Dec-1995]  */ 
+	proof of nsyl3 {
+		step 1 : wff = theorem con2i (hyp 1) |- ( ps -> -. ph ) ;
+		step 2 : wff = theorem syl (hyp 2, step 1) |- ( ch -> -. ph ) ;
+		qed prop = step 2 ;
+	}
+
+	/*  A negated syllogism inference.  */
+	theorem nsyl4 (var ph : wff , var ps : wff , var ch : wff ) 
+	{
+		hyp 1 : wff = |- ( ph -> ps ) ;
+		hyp 2 : wff = |- ( -. ph -> ch ) ;
+		-----------------
+		prop : wff = |- ( -. ch -> ps ) ;
+	}
+
+	/*  [15-Feb-1996]  */ 
+	proof of nsyl4 {
+		step 1 : wff = theorem con1i (hyp 2) |- ( -. ch -> ph ) ;
+		step 2 : wff = theorem syl (step 1, hyp 1) |- ( -. ch -> ps ) ;
+		qed prop = step 2 ;
+	}
+
+	/*  A negated syllogism inference.  */
+	theorem nsyli (var ph : wff , var ps : wff , var ch : wff , var th : wff ) 
+	{
+		hyp 1 : wff = |- ( ph -> ( ps -> ch ) ) ;
+		hyp 2 : wff = |- ( th -> -. ch ) ;
+		-----------------
+		prop : wff = |- ( ph -> ( th -> -. ps ) ) ;
+	}
+
+	/*  [3-May-1994]  */ 
+	proof of nsyli {
+		step 1 : wff = theorem con3d (hyp 1) |- ( ph -> ( -. ch -> -. ps ) ) ;
+		step 2 : wff = theorem syl5 (step 1, hyp 2) |- ( ph -> ( th -> -. ps ) ) ;
+		qed prop = step 2 ;
+	}
+
+	/*  Theorem *3.2 of [WhiteheadRussell] p. 111, expressed with primitive
+	     connectives.  (The proof was shortened by Josh Purinton, 29-Dec-00.)  */
+	theorem pm3_2im (var ph : wff , var ps : wff ) 
+	{
+		prop : wff = |- ( ph -> ( ps -> -. ( ph -> -. ps ) ) ) ;
+	}
+
+	/*  [5-Aug-1993]  */ 
+	proof of pm3_2im {
+		step 1 : wff = theorem pm2_27 () |- ( ph -> ( ( ph -> -. ps ) -> -. ps ) ) ;
+		step 2 : wff = theorem con2d (step 1) |- ( ph -> ( ps -> -. ( ph -> -. ps ) ) ) ;
+		qed prop = step 2 ;
+	}
+
+	/*  Theorem 8 of [Margaris] p. 60.  (The proof was shortened by Josh Purinton,
+	     29-Dec-00.)  */
+	theorem mth8 (var ph : wff , var ps : wff ) 
+	{
+		prop : wff = |- ( ph -> ( -. ps -> -. ( ph -> ps ) ) ) ;
+	}
+
+	/*  [5-Aug-1993]  */ 
+	proof of mth8 {
+		step 1 : wff = theorem pm2_27 () |- ( ph -> ( ( ph -> ps ) -> ps ) ) ;
+		step 2 : wff = theorem con3d (step 1) |- ( ph -> ( -. ps -> -. ( ph -> ps ) ) ) ;
+		qed prop = step 2 ;
+	}
+
+	/*  Theorem *2.61 of [WhiteheadRussell] p. 107.  Useful for eliminating an
+	     antecedent.  (The proof was shortened by Mel L. O'Cat, 19-Feb-2008.)  */
+	theorem pm2_61 (var ph : wff , var ps : wff ) 
+	{
+		prop : wff = |- ( ( ph -> ps ) -> ( ( -. ph -> ps ) -> ps ) ) ;
+	}
+
+	/*  [6-Mar-2008]  */ /*  [5-Aug-1993]  */ 
+	proof of pm2_61 {
+		step 1 : wff = theorem con1 () |- ( ( -. ph -> ps ) -> ( -. ps -> ph ) ) ;
+		step 2 : wff = theorem imim1d (step 1) |- ( ( -. ph -> ps ) -> ( ( ph -> ps ) -> ( -. ps -> ps ) ) ) ;
+		step 3 : wff = theorem pm2_18 () |- ( ( -. ps -> ps ) -> ps ) ;
+		step 4 : wff = theorem syl6com (step 2, step 3) |- ( ( ph -> ps ) -> ( ( -. ph -> ps ) -> ps ) ) ;
+		qed prop = step 4 ;
+	}
+
+	/*  Theorem *2.61 of [WhiteheadRussell] p. 107.  Useful for eliminating an
+	     antecedent.  (The proof was shortened by Mel L. O'Cat, 19-Feb-2008.)  */
+	theorem pm2_61-ocatOLD (var ph : wff , var ps : wff ) 
+	{
+		prop : wff = |- ( ( ph -> ps ) -> ( ( -. ph -> ps ) -> ps ) ) ;
+	}
+
+	/*  [19-Feb-2008]  */ /*  [5-Aug-1993]  */ 
+	proof of pm2_61-ocatOLD {
+		step 1 : wff = theorem pm2_37OLD () |- ( ( ph -> ps ) -> ( ( -. ph -> ps ) -> ( -. ps -> ps ) ) ) ;
+		step 2 : wff = theorem pm2_18 () |- ( ( -. ps -> ps ) -> ps ) ;
+		step 3 : wff = theorem syl6 (step 1, step 2) |- ( ( ph -> ps ) -> ( ( -. ph -> ps ) -> ps ) ) ;
+		qed prop = step 3 ;
+	}
+
+	/*  Theorem *2.61 of [WhiteheadRussell] p. 107.  Useful for eliminating an
+	     antecedent.  */
+	theorem pm2_61OLD (var ph : wff , var ps : wff ) 
+	{
+		prop : wff = |- ( ( ph -> ps ) -> ( ( -. ph -> ps ) -> ps ) ) ;
+	}
+
+	/*  [5-Aug-1993]  */ 
+	proof of pm2_61OLD {
+		step 1 : wff = theorem imim2 () |- ( ( ph -> ps ) -> ( ( -. ps -> ph ) -> ( -. ps -> ps ) ) ) ;
+		step 2 : wff = theorem pm2_18 () |- ( ( -. ps -> ps ) -> ps ) ;
+		step 3 : wff = theorem syl6 (step 1, step 2) |- ( ( ph -> ps ) -> ( ( -. ps -> ph ) -> ps ) ) ;
+		step 4 : wff = theorem con1 () |- ( ( -. ph -> ps ) -> ( -. ps -> ph ) ) ;
+		step 5 : wff = theorem syl5 (step 3, step 4) |- ( ( ph -> ps ) -> ( ( -. ph -> ps ) -> ps ) ) ;
+		qed prop = step 5 ;
+	}
+
+	/*  Inference eliminating an antecedent.  */
+	theorem pm2_61i (var ph : wff , var ps : wff ) 
+	{
+		hyp 1 : wff = |- ( ph -> ps ) ;
+		hyp 2 : wff = |- ( -. ph -> ps ) ;
+		-----------------
+		prop : wff = |- ps ;
+	}
+
+	/*  [5-Apr-1994]  */ 
+	proof of pm2_61i {
+		step 1 : wff = theorem pm2_61 () |- ( ( ph -> ps ) -> ( ( -. ph -> ps ) -> ps ) ) ;
+		step 2 : wff = theorem mp2 (hyp 1, hyp 2, step 1) |- ps ;
+		qed prop = step 2 ;
+	}
+
+	/*  Deduction eliminating an antecedent.  */
+	theorem pm2_61d (var ph : wff , var ps : wff , var ch : wff ) 
+	{
+		hyp 1 : wff = |- ( ph -> ( ps -> ch ) ) ;
+		hyp 2 : wff = |- ( ph -> ( -. ps -> ch ) ) ;
+		-----------------
+		prop : wff = |- ( ph -> ch ) ;
+	}
+
+	/*  [27-Apr-1994]  */ 
+	proof of pm2_61d {
+		step 1 : wff = theorem com12 (hyp 1) |- ( ps -> ( ph -> ch ) ) ;
+		step 2 : wff = theorem com12 (hyp 2) |- ( -. ps -> ( ph -> ch ) ) ;
+		step 3 : wff = theorem pm2_61i (step 1, step 2) |- ( ph -> ch ) ;
+		qed prop = step 3 ;
+	}
+
+	/*  Inference eliminating an antecedent.  */
+	theorem pm2_61d1 (var ph : wff , var ps : wff , var ch : wff ) 
+	{
+		hyp 1 : wff = |- ( ph -> ( ps -> ch ) ) ;
+		hyp 2 : wff = |- ( -. ps -> ch ) ;
+		-----------------
+		prop : wff = |- ( ph -> ch ) ;
+	}
+
+	/*  [20-Jul-2005]  */ /*  [15-Jul-2005]  */ 
+	proof of pm2_61d1 {
+		step 1 : wff = theorem a1i (hyp 2) |- ( ph -> ( -. ps -> ch ) ) ;
+		step 2 : wff = theorem pm2_61d (hyp 1, step 1) |- ( ph -> ch ) ;
+		qed prop = step 2 ;
+	}
+
+	/*  Inference eliminating an antecedent.  */
+	theorem pm2_61d2 (var ph : wff , var ps : wff , var ch : wff ) 
+	{
+		hyp 1 : wff = |- ( ph -> ( -. ps -> ch ) ) ;
+		hyp 2 : wff = |- ( ps -> ch ) ;
+		-----------------
+		prop : wff = |- ( ph -> ch ) ;
+	}
+
+	/*  [18-Aug-1993]  */ 
+	proof of pm2_61d2 {
+		step 1 : wff = theorem a1i (hyp 2) |- ( ph -> ( ps -> ch ) ) ;
+		step 2 : wff = theorem pm2_61d (step 1, hyp 1) |- ( ph -> ch ) ;
+		qed prop = step 2 ;
+	}
+
+	/*  Inference eliminating two antecedents.  (The proof was shortened by Josh
+	       Purinton,  29-Dec-00.)  */
+	theorem pm2_61ii (var ph : wff , var ps : wff , var ch : wff ) 
+	{
+		hyp 1 : wff = |- ( -. ph -> ( -. ps -> ch ) ) ;
+		hyp 2 : wff = |- ( ph -> ch ) ;
+		hyp 3 : wff = |- ( ps -> ch ) ;
+		-----------------
+		prop : wff = |- ch ;
+	}
+
+	/*  [5-Aug-1993]  */ 
+	proof of pm2_61ii {
+		step 1 : wff = theorem pm2_61d2 (hyp 1, hyp 3) |- ( -. ph -> ch ) ;
+		step 2 : wff = theorem pm2_61i (hyp 2, step 1) |- ch ;
+		qed prop = step 2 ;
+	}
+
+	/*  Inference eliminating two antecedents.  */
+	theorem pm2_61nii (var ph : wff , var ps : wff , var ch : wff ) 
+	{
+		hyp 1 : wff = |- ( ph -> ( ps -> ch ) ) ;
+		hyp 2 : wff = |- ( -. ph -> ch ) ;
+		hyp 3 : wff = |- ( -. ps -> ch ) ;
+		-----------------
+		prop : wff = |- ch ;
+	}
+
+	/*  [5-Aug-1993]  */ 
+	proof of pm2_61nii {
+		step 1 : wff = theorem com12 (hyp 1) |- ( ps -> ( ph -> ch ) ) ;
+		step 2 : wff = theorem pm2_61d1 (step 1, hyp 2) |- ( ps -> ch ) ;
+		step 3 : wff = theorem pm2_61i (step 2, hyp 3) |- ch ;
+		qed prop = step 3 ;
+	}
+
+	/*  Inference eliminating three antecedents.  */
+	theorem pm2_61iii (var ph : wff , var ps : wff , var ch : wff , var th : wff ) 
+	{
+		hyp 1 : wff = |- ( -. ph -> ( -. ps -> ( -. ch -> th ) ) ) ;
+		hyp 2 : wff = |- ( ph -> th ) ;
+		hyp 3 : wff = |- ( ps -> th ) ;
+		hyp 4 : wff = |- ( ch -> th ) ;
+		-----------------
+		prop : wff = |- th ;
+	}
+
+	/*  [2-Jan-2002]  */ 
+	proof of pm2_61iii {
+		step 1 : wff = theorem a1d (hyp 2) |- ( ph -> ( -. ch -> th ) ) ;
+		step 2 : wff = theorem a1d (step 1) |- ( ph -> ( -. ps -> ( -. ch -> th ) ) ) ;
+		step 3 : wff = theorem pm2_61i (step 2, hyp 1) |- ( -. ps -> ( -. ch -> th ) ) ;
+		step 4 : wff = theorem pm2_61ii (step 3, hyp 3, hyp 4) |- th ;
+		qed prop = step 4 ;
+	}
+
+	/*  Theorem *2.6 of [WhiteheadRussell] p. 107.  */
+	theorem pm2_6 (var ph : wff , var ps : wff ) 
+	{
+		prop : wff = |- ( ( -. ph -> ps ) -> ( ( ph -> ps ) -> ps ) ) ;
+	}
+
+	/*  [1-Feb-2005]  */ /*  [3-Jan-2005]  */ 
+	proof of pm2_6 {
+		step 1 : wff = theorem pm2_61 () |- ( ( ph -> ps ) -> ( ( -. ph -> ps ) -> ps ) ) ;
+		step 2 : wff = theorem com12 (step 1) |- ( ( -. ph -> ps ) -> ( ( ph -> ps ) -> ps ) ) ;
+		qed prop = step 2 ;
+	}
+
+	/*  Theorem *2.65 of [WhiteheadRussell] p. 107.  Useful for eliminating a
+	     consequent.  */
+	theorem pm2_65 (var ph : wff , var ps : wff ) 
+	{
+		prop : wff = |- ( ( ph -> ps ) -> ( ( ph -> -. ps ) -> -. ph ) ) ;
+	}
+
+	/*  [5-Aug-1993]  */ 
+	proof of pm2_65 {
+		step 1 : wff = theorem pm3_2im () |- ( ph -> ( ps -> -. ( ph -> -. ps ) ) ) ;
+		step 2 : wff = theorem a2i (step 1) |- ( ( ph -> ps ) -> ( ph -> -. ( ph -> -. ps ) ) ) ;
+		step 3 : wff = theorem con2d (step 2) |- ( ( ph -> ps ) -> ( ( ph -> -. ps ) -> -. ph ) ) ;
+		qed prop = step 3 ;
+	}
+
+	/*  Inference rule for proof by contradiction.  */
+	theorem pm2_65i (var ph : wff , var ps : wff ) 
+	{
+		hyp 1 : wff = |- ( ph -> ps ) ;
+		hyp 2 : wff = |- ( ph -> -. ps ) ;
+		-----------------
+		prop : wff = |- -. ph ;
+	}
+
+	/*  [18-May-1994]  */ 
+	proof of pm2_65i {
+		step 1 : wff = theorem nsyl (hyp 2, hyp 1) |- ( ph -> -. ph ) ;
+		step 2 : wff = theorem pm2_01 () |- ( ( ph -> -. ph ) -> -. ph ) ;
+		step 3 : wff = axiom ax-mp (step 1, step 2) |- -. ph ;
+		qed prop = step 3 ;
+	}
+
+	/*  Deduction rule for proof by contradiction.  */
+	theorem pm2_65d (var ph : wff , var ps : wff , var ch : wff ) 
+	{
+		hyp 1 : wff = |- ( ph -> ( ps -> ch ) ) ;
+		hyp 2 : wff = |- ( ph -> ( ps -> -. ch ) ) ;
+		-----------------
+		prop : wff = |- ( ph -> -. ps ) ;
+	}
+
+	/*  [26-Jun-1994]  */ 
+	proof of pm2_65d {
+		step 1 : wff = theorem pm2_65 () |- ( ( ps -> ch ) -> ( ( ps -> -. ch ) -> -. ps ) ) ;
+		step 2 : wff = theorem sylc (step 1, hyp 1, hyp 2) |- ( ph -> -. ps ) ;
+		qed prop = step 2 ;
+	}
+
+	/*  Inference joining the antecedents of two premises.  (The proof was
+	       shortened by Mel L. O'Cat, 19-Feb-2008.)  */
+	theorem ja (var ph : wff , var ps : wff , var ch : wff ) 
+	{
+		hyp 1 : wff = |- ( -. ph -> ch ) ;
+		hyp 2 : wff = |- ( ps -> ch ) ;
+		-----------------
+		prop : wff = |- ( ( ph -> ps ) -> ch ) ;
+	}
+
+	/*  [19-Feb-2008]  */ /*  [5-Aug-1993]  */ 
+	proof of ja {
+		step 1 : wff = theorem imim2i (hyp 2) |- ( ( ph -> ps ) -> ( ph -> ch ) ) ;
+		step 2 : wff = theorem pm2_61d1 (step 1, hyp 1) |- ( ( ph -> ps ) -> ch ) ;
+		qed prop = step 2 ;
+	}
+
+	/*  Inference joining the antecedents of two premises.  (The proof was
+	       shortened by Mel L. O'Cat, 30-Aug-2004.)  */
+	theorem jaOLD (var ph : wff , var ps : wff , var ch : wff ) 
+	{
+		hyp 1 : wff = |- ( -. ph -> ch ) ;
+		hyp 2 : wff = |- ( ps -> ch ) ;
+		-----------------
+		prop : wff = |- ( ( ph -> ps ) -> ch ) ;
+	}
+
+	/*  [30-Aug-2004]  */ /*  [5-Aug-1993]  */ 
+	proof of jaOLD {
+		step 1 : wff = theorem pm2_27 () |- ( ph -> ( ( ph -> ps ) -> ps ) ) ;
+		step 2 : wff = theorem syl6 (step 1, hyp 2) |- ( ph -> ( ( ph -> ps ) -> ch ) ) ;
+		step 3 : wff = theorem a1d (hyp 1) |- ( -. ph -> ( ( ph -> ps ) -> ch ) ) ;
+		step 4 : wff = theorem pm2_61i (step 2, step 3) |- ( ( ph -> ps ) -> ch ) ;
+		qed prop = step 4 ;
+	}
+
+	/*  Inference joining the consequents of two premises.  */
+	theorem jc (var ph : wff , var ps : wff , var ch : wff ) 
+	{
+		hyp 1 : wff = |- ( ph -> ps ) ;
+		hyp 2 : wff = |- ( ph -> ch ) ;
+		-----------------
+		prop : wff = |- ( ph -> -. ( ps -> -. ch ) ) ;
+	}
+
+	/*  [5-Aug-1993]  */ 
+	proof of jc {
+		step 1 : wff = theorem pm3_2im () |- ( ps -> ( ch -> -. ( ps -> -. ch ) ) ) ;
+		step 2 : wff = theorem sylc (step 1, hyp 1, hyp 2) |- ( ph -> -. ( ps -> -. ch ) ) ;
+		qed prop = step 2 ;
+	}
+
+	/*  Simplification.  Similar to Theorem *3.26 (Simp) of [WhiteheadRussell]
+	     p. 112.  */
+	theorem pm3_26im (var ph : wff , var ps : wff ) 
+	{
+		prop : wff = |- ( -. ( ph -> -. ps ) -> ph ) ;
+	}
+
+	/*  [5-Aug-1993]  */ 
+	proof of pm3_26im {
+		step 1 : wff = theorem pm2_21 () |- ( -. ph -> ( ph -> -. ps ) ) ;
+		step 2 : wff = theorem con1i (step 1) |- ( -. ( ph -> -. ps ) -> ph ) ;
+		qed prop = step 2 ;
+	}
+
+	/*  Simplification.  Similar to Theorem *3.27 (Simp) of [WhiteheadRussell]
+	     p. 112.  */
+	theorem pm3_27im (var ph : wff , var ps : wff ) 
+	{
+		prop : wff = |- ( -. ( ph -> -. ps ) -> ps ) ;
+	}
+
+	/*  [5-Aug-1993]  */ 
+	proof of pm3_27im {
+		step 1 : wff = axiom ax-1 () |- ( -. ps -> ( ph -> -. ps ) ) ;
+		step 2 : wff = theorem con1i (step 1) |- ( -. ( ph -> -. ps ) -> ps ) ;
+		qed prop = step 2 ;
+	}
+
+	/*  Importation theorem expressed with primitive connectives.  */
+	theorem impt (var ph : wff , var ps : wff , var ch : wff ) 
+	{
+		prop : wff = |- ( ( ph -> ( ps -> ch ) ) -> ( -. ( ph -> -. ps ) -> ch ) ) ;
+	}
+
+	/*  [25-Apr-1994]  */ 
+	proof of impt {
+		step 1 : wff = theorem con3 () |- ( ( ps -> ch ) -> ( -. ch -> -. ps ) ) ;
+		step 2 : wff = theorem imim2i (step 1) |- ( ( ph -> ( ps -> ch ) ) -> ( ph -> ( -. ch -> -. ps ) ) ) ;
+		step 3 : wff = theorem com23 (step 2) |- ( ( ph -> ( ps -> ch ) ) -> ( -. ch -> ( ph -> -. ps ) ) ) ;
+		step 4 : wff = theorem con1d (step 3) |- ( ( ph -> ( ps -> ch ) ) -> ( -. ( ph -> -. ps ) -> ch ) ) ;
+		qed prop = step 4 ;
+	}
+
+	/*  Exportation theorem expressed with primitive connectives.  */
+	theorem expt (var ph : wff , var ps : wff , var ch : wff ) 
+	{
+		prop : wff = |- ( ( -. ( ph -> -. ps ) -> ch ) -> ( ph -> ( ps -> ch ) ) ) ;
+	}
+
+	/*  [5-Aug-1993]  */ 
+	proof of expt {
+		step 1 : wff = theorem pm3_2im () |- ( ph -> ( ps -> -. ( ph -> -. ps ) ) ) ;
+		step 2 : wff = theorem imim1d (step 1) |- ( ph -> ( ( -. ( ph -> -. ps ) -> ch ) -> ( ps -> ch ) ) ) ;
+		step 3 : wff = theorem com12 (step 2) |- ( ( -. ( ph -> -. ps ) -> ch ) -> ( ph -> ( ps -> ch ) ) ) ;
+		qed prop = step 3 ;
+	}
+
+	/*  An importation inference.  */
+	theorem impi (var ph : wff , var ps : wff , var ch : wff ) 
+	{
+		hyp 1 : wff = |- ( ph -> ( ps -> ch ) ) ;
+		-----------------
+		prop : wff = |- ( -. ( ph -> -. ps ) -> ch ) ;
+	}
+
+	/*  [5-Aug-1993]  */ 
+	proof of impi {
+		step 1 : wff = theorem impt () |- ( ( ph -> ( ps -> ch ) ) -> ( -. ( ph -> -. ps ) -> ch ) ) ;
+		step 2 : wff = axiom ax-mp (hyp 1, step 1) |- ( -. ( ph -> -. ps ) -> ch ) ;
+		qed prop = step 2 ;
+	}
+
+	/*  An exportation inference.  */
+	theorem expi (var ph : wff , var ps : wff , var ch : wff ) 
+	{
+		hyp 1 : wff = |- ( -. ( ph -> -. ps ) -> ch ) ;
+		-----------------
+		prop : wff = |- ( ph -> ( ps -> ch ) ) ;
+	}
+
+	/*  [5-Aug-1993]  */ 
+	proof of expi {
+		step 1 : wff = theorem expt () |- ( ( -. ( ph -> -. ps ) -> ch ) -> ( ph -> ( ps -> ch ) ) ) ;
+		step 2 : wff = axiom ax-mp (hyp 1, step 1) |- ( ph -> ( ps -> ch ) ) ;
+		qed prop = step 2 ;
+	}
+
+	/*  Theorem used to justify definition of biconditional ~ def-bi .  (The proof
+	     was shortened by Josh Purinton, 29-Dec-00.)  */
+	theorem bijust (var ph : wff ) 
+	{
+		prop : wff = |- -. ( ( ph -> ph ) -> -. ( ph -> ph ) ) ;
+	}
+
+	/*  [11-May-1999]  */ 
+	proof of bijust {
+		step 1 : wff = theorem id () |- ( ph -> ph ) ;
+		step 2 : wff = theorem pm2_01 () |- ( ( ( ph -> ph ) -> -. ( ph -> ph ) ) -> -. ( ph -> ph ) ) ;
+		step 3 : wff = theorem mt2 (step 1, step 2) |- -. ( ( ph -> ph ) -> -. ( ph -> ph ) ) ;
+		qed prop = step 3 ;
+	}
+
+}
+

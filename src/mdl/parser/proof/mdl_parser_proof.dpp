@@ -1,0 +1,32 @@
+/*****************************************************************************/
+/* Project name:    mdl - mathematics development language                   */
+/* File Name:       mdl_parser_proof.hpp                                     */
+/* Description:     declarations for proof parser module                     */
+/* Copyright:       (c) 2006-2009 Dmitri Vlasov                              */
+/* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
+/* Email:           vlasov at academ.org                                     */
+/* URL:             http://mathdevlanguage.sourceforge.net                   */
+/* Modified by:                                                              */
+/* License:         GNU General Public License Version 3                     */
+/*****************************************************************************/
+
+#ifndef MDL_PARSER_PROOF_DPP_
+#define MDL_PARSER_PROOF_DPP_
+
+namespace mdl {
+namespace parser {
+namespace proof {
+
+	class Link;
+	class Notation;
+	class Proof;
+	class Qed;
+	class Reference;
+	class References;
+	class Step;
+	class Variable;
+}
+}
+}
+
+#endif /*MDL_PARSER_PROOF_DPP_*/

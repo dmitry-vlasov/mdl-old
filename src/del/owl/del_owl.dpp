@@ -1,0 +1,19 @@
+/*****************************************************************************/
+/* Project name:    del - mathematics development language                   */
+/* File Name:       del_owl.dpp                                              */
+/* Description:     del OWL import module                                    */
+/* Copyright:       (c) 2006-2009 Dmitri Vlasov                              */
+/* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
+/* Email:           vlasov at academ.org                                     */
+/* URL:             http://mathdevlanguage.sourceforge.net                   */
+/* Modified by:                                                              */
+/* License:         GNU General Public License Version 3                     */
+/*****************************************************************************/
+
+#ifndef DEL_OWL_DPP_
+#define DEL_OWL_DPP_
+
+#include "del/owl/func/del_owl_func.dpp"
+#include "del/owl/man/del_owl_man.dpp"
+
+#endif /*DEL_OWL_DPP_*/

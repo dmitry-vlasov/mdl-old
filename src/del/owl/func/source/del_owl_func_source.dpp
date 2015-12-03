@@ -1,0 +1,114 @@
+/*****************************************************************************/
+/* Project name:    del - mathematics development language                   */
+/* File Name:       del_owl_func_source.dpp                                  */
+/* Description:     functional OWL2 source module                            */
+/* Copyright:       (c) 2006-2009 Dmitri Vlasov                              */
+/* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
+/* Email:           vlasov at academ.org                                     */
+/* URL:             http://mathdevlanguage.sourceforge.net                   */
+/* Modified by:                                                              */
+/* License:         GNU General Public License Version 3                     */
+/*****************************************************************************/
+
+#ifndef DEL_OWL_FUNC_SOURCE_DPP_
+#define DEL_OWL_FUNC_SOURCE_DPP_
+
+namespace del {
+namespace owl {
+namespace func {
+namespace source {
+
+	class Annotation;
+	class AnnotationAssertion;
+	class Declaration;
+	class EntityAnnotation;
+	class Namespace;
+	class Ontology;
+	class Prefix;
+	class Source;
+	class TransitiveObjectProperty;
+	class Unrecognized;
+
+namespace vector {
+
+	using del :: vector :: String;
+
+typedef
+	del :: vector :: Vector
+	<
+		const source :: Annotation,
+		storage :: ByPointer,
+		allocator :: Heap
+	>
+	Annotation;
+
+typedef
+	del :: vector :: Vector
+	<
+		const source :: AnnotationAssertion,
+		storage :: ByPointer,
+		allocator :: Heap
+	>
+	AnnotationAssertion;
+
+typedef
+	del :: vector :: Vector
+	<
+		const source :: EntityAnnotation,
+		storage :: ByPointer,
+		allocator :: Heap
+	>
+	EntityAnnotation;
+
+typedef
+	del :: vector :: Vector
+	<
+		const source :: Declaration,
+		storage :: ByPointer,
+		allocator :: Heap
+	>
+	Declaration;
+
+typedef
+	del :: vector :: Vector
+	<
+		const source :: Namespace,
+		storage :: ByPointer,
+		allocator :: Heap
+	>
+	Namespace;
+
+typedef
+	del :: vector :: Vector
+	<
+		const source :: Prefix,
+		storage :: ByPointer,
+		allocator :: Heap
+	>
+	Prefix;
+
+typedef
+	del :: vector :: Vector
+	<
+		const source :: TransitiveObjectProperty,
+		storage :: ByPointer,
+		allocator :: Heap
+	>
+	TransitiveObjectProperty;
+
+typedef
+	del :: vector :: Vector
+	<
+		const source :: Unrecognized,
+		storage :: ByPointer,
+		allocator :: Heap
+	>
+	Unrecognized;
+}
+
+}
+}
+}
+}
+
+#endif /*DEL_OWL_FUNC_SOURCE_DPP_*/

@@ -1,0 +1,32 @@
+/*****************************************************************************/
+/* Project name:    smm - verifier for the Simplified MetaMath language      */
+/* File name:       smm_parser.dpp                                           */
+/* Description:     interface declarations for smm parser module             */
+/* Copyright:       (c) 2006-2010 Dmitri Vlasov                              */
+/* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
+/* Email:           vlasov at academ.org                                     */
+/* URL:             http://mathdevlanguage.sourceforge.net                   */
+/* Modified by:                                                              */
+/* License:         GNU General Public License Version 3                     */
+/*****************************************************************************/
+
+#ifndef SMM_PARSER_DPP_
+#define SMM_PARSER_DPP_
+
+#include "smm/lexer/smm_lexer.hpp"
+
+namespace smm {
+namespace parser {
+
+	class Assertion;
+	class Inclusion;
+	template<Token :: Type, bool, bool, Token :: Type>
+	class Line;
+	class Proof;
+	class Source;
+	template<Token :: Type, bool, Token :: Type>
+	class Vector;
+}
+}
+
+#endif /*SMM_PARSER_DPP_*/

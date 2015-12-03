@@ -1,0 +1,5040 @@
+qsid.1 $e |- ( A e. _V ) $.
+fnbr.2 $e |- ( C e. _V ) $.
+climadd.1 $e |- ( F e. _V ) $.
+climadd.2 $e |- ( G e. _V ) $.
+climad.1 $e |- ( F e. _V ) $.
+climad.2 $e |- ( G e. _V ) $.
+climadd2.1 $e |- ( F e. _V ) $.
+climadd2.2 $e |- ( G e. _V ) $.
+climaddc3.1 $e |- ( F e. _V ) $.
+climaddc2.1 $e |- ( F e. _V ) $.
+climmul.1 $e |- ( F e. _V ) $.
+climmul.2 $e |- ( G e. _V ) $.
+clmulc.2 $e |- ( F e. _V ) $.
+clmmulc.2 $e |- ( F e. _V ) $.
+climserzle2.0 $e |- ( G e. _V ) $.
+climserzl2.0 $e |- ( G e. _V ) $.
+climcvg3.1 $e |- ( N e. ZZ ) $.
+ssenen.3 $e |- ( C e. _V ) $.
+soi.1 $e |- ( A e. _V ) $.
+tfrlem.2 $e |- ( F = U. A ) $.
+tz7.44.2 $e |- ( F Fn On ) $.
+abianfp.1 $e |- ( A e. _V ) $.
+th3q.1 $e |- ( R e. _V ) $.
+th3q.2 $e |- ( Er R ) $.
+sbthlem.1 $e |- ( A e. _V ) $.
+sbthlem.2 $e |- 
+( D = 
+{ x | 
+	( 
+		( x C_ A ) /\ 
+		( 
+			( g " ( B \ ( f " x ) ) ) C_ 
+			( A \ x )
+		) 
+	) 
+} 
+) $.
+mapenlem.2 $e |- ( B e. _V ) $.
+mapenlem.4 $e |- ( D e. _V ) $.
+mapdom1.1 $e |- ( A e. _V ) $.
+mapdom1.2 $e |- ( B e. _V ) $.
+xpmapen.1 $e |- ( A e. _V ) $.
+xpmapen.2 $e |- ( B e. _V ) $.
+xpmapen.3 $e |- ( C e. _V ) $.
+xpmapenlem.6 $e |- 
+( S = 
+{ <. z , w >. | 
+	( 
+		( z e. C ) /\ 
+		( w = 
+			<. 
+				( U. dom { y } ` z ) , 
+				( U. ran { y } ` z ) 
+			>. 
+		) 
+	) 
+} 
+) $.
+inf3lem.1 $e |- 
+( G = 
+{ <. y , z >. | 
+	( z = 
+		{ w e. x | 
+			( ( w i^i x ) C_ y ) 
+		} 
+	) 
+} 
+) $.
+inf3lem.2 $e |- ( F = ( rec ( G , (/) ) |` om ) ) $.
+inf3lem.3 $e |- ( A e. _V ) $.
+inf3lem.4 $e |- ( B e. _V ) $.
+tz9.12lem.1 $e |- ( A e. _V ) $.
+tz9.12lem.2 $e |- 
+( F = 
+{ <. z , w >. | 
+	( w = |^| 
+		{ v e. On | 
+			( z e. ( R1 ` v ) ) 
+		} 
+	) 
+} 
+) $.
+aceq5lem.2 $e |- ( B = ( U. A i^i y ) ) $.
+kmlem14.1 $e |- 
+( ph <-> 
+	( 
+		( z e. y ) -> 
+		( 
+			( 
+				( v e. x ) /\ ( y =/= v ) 
+			) /\ 
+			( z e. v ) 
+		) 
+	) 
+) $.
+kmlem14.2 $e |- 
+( ps <-> 
+	( 
+		( z e. x ) -> 
+		( 
+			( 
+				( v e. z ) /\ ( v e. y ) 
+			) /\ 
+			( 
+				(
+					( u e. z ) /\ ( u e. y ) 
+				) -> 
+				( u = v ) 
+			) 
+		) 
+	) 
+) $.
+kmlem14.3 $e |- 
+( ch <-> 
+	A. z e. x E! v ( v e. ( z i^i y ) ) 
+) $.
+zornlem.5 $e |- ( D = { z e. A | A. g e. ( F " x ) ( g R z ) } ) $.
+supsrlem.1 $e |- ( C e. R. ) $.
+supsrlem4.1 $e |- ( D e. _V ) $.
+om2uz.1 $e |- ( C e. ZZ ) $.
+shftfval.1 $e |- ( F e. _V ) $.
+sqrlem1.1 $e |- ( A e. RR ) $.
+sqrlem1.2 $e |- ( 0 < A ) $.
+sqrlem9.4 $e |- ( C e. RR ) $.
+sqrlem9.6 $e |- ( A < ( B x. B ) ) $.
+sqrlem15.4 $e |- ( 0 < B ) $.
+climadd.3 $e |- ( H e. _V ) $.
+climadd.4 $e |- ( A e. _V ) $.
+climadd.5 $e |- ( B e. _V ) $.
+climmul.3 $e |- ( H e. _V ) $.
+climmul.4 $e |- ( A e. _V ) $.
+climmul.5 $e |- ( B e. _V ) $.
+caucvg.1 $e |- ( F : NN --> RR ) $.
+caucvg.2 $e |- A. z e. RR 
+( 
+	( 0 < z ) -> 
+	E. w e. NN A. y e. NN 
+		(
+			( w < y ) -> 
+			( ( abs ` ( ( F ` y ) - ( F ` w ) ) ) < z ) 
+		) 
+) $.
+ser1cmp2.4 $e |- ( ( ( x e. NN ) /\ ( B < x ) ) -> ( ( G ` x ) <_ ( F ` x ) ) ) $.
+erelem1.2 $e |- ( G = { <. x , y >. | ( ( x e. NN ) /\ ( y = ( 1 / ( ! ` x ) ) ) ) } ) $.
+ruclem5.0 $e |- ( F : NN --> RR ) $.
+ruclem.3 $e |- ( G = ( 1st o. ( D seq1 C ) ) ) $.
+ruclem.4 $e |- ( H = ( 2nd o. ( D seq1 C ) ) ) $.
+infxpidmlem.1 $e |- 
+( H = 
+{ f | 
+( 
+	( f = (/) ) \/ 
+	E. t 
+		( 
+			( 
+				( om ~<_ t ) /\ 
+				( t C_ A ) 
+			) /\
+                      	( f : ( t X. t ) -1-1-onto-> t ) 
+		) 
+) 
+} 
+) $.
+infxpidmlem.2 $e |- ( A e. _V ) $.
+infmap2lem.1 $e |- ( A e. _V ) $.
+projlem5.9 $e |- ( N e. NN ) $.
+osumlem1.3 $e |- ( B C_ ( _|_ ` A ) ) $.
+lnophrmlem.2 $e |- ( B e. ~H ) $.
+lnophrmlem.3 $e |- ( T e. LinOp ) $.
+nmcopex.1 $e |- ( T e. LinOp ) $.
+nmcopex.2 $e |- ( T e. ConOp ) $.
+nmcfnex.1 $e |- ( T e. LinFn ) $.
+nmcfnex.2 $e |- ( T e. ConFn ) $.
+cnlnadjlem.1 $e |- ( T e. LinOp ) $.
+cnlnadjlem.2 $e |- ( T e. ConOp ) $.
+cnlnadjlem.5 $e |- ( F = { <. y , u >. | ( ( y e. ~H ) /\ ( u = B ) ) } ) $.
+hmopidmch.1 $e |- ( H = { x e. ~H | ( ( T ` x ) = x ) } ) $.
+strlem3.4 $e |- ( B e. CH ) $.
+mdsymlem1.3 $e |- ( C = ( A vH p ) ) $.
+rankr1b.1 $e |- ( A e. _V ) $.
+zorn2lem.5 $e |- ( D = { z e. A | A. g e. ( F " x ) ( g R z ) } ) $.
+infmcvg.2 $e |- ( S = -u sup ( R , RR , < ) ) $.
+infmcvg.4 $e |- E. z e. RR A. w e. R ( w <_ z ) $.
+infmcvg.5 $e |- ( F = { <. j , v >. | ( ( j e. NN ) /\ ( v = ( M ` ( f ` j ) ) ) ) } ) $.
+isummulc1a.1 $e |- ( A e. _V ) $.
+ivthlem4.6 $e |- ( C = sup ( S , RR , < ) ) $.
+ivthlem6.10 $e |- 
+( 
+	ps <-> 
+	A. w e. ( A [,] B )
+		( 
+			( ( abs ` ( C - w ) ) < D ) -> 
+			( U < ( F ` w ) ) 
+		) 
+) $.
+ivthlem6.11 $e |- 
+( 
+	ch <-> 
+	A. w e. ( A [,] B ) 
+		( 
+			( ( abs ` ( C - w ) ) < D ) -> 
+			( ( F ` w ) < U )
+		) 
+) $.
+ivthlem6.12 $e |- 
+( P = if 
+	(
+		( B <_ ( C + D ) ) , 
+		B , 
+		( C + D ) 
+	) 
+) $.
+ivthlem4OLD.6 $e |- ( C = sup ( S , RR , < ) ) $.
+ivthlem6OLD.10 $e |- 
+( 
+	ps <-> 
+	A. w e. ( A [,] B ) 
+		( 
+			( ( abs ` ( C - w ) ) < D ) -> 
+			( U < ( F ` w ) )
+		) 
+) $.
+ivthlem6OLD.11 $e |- 
+( 
+	ch <-> 
+	A. w e. ( A [,] B ) 
+		( 
+			( ( abs ` ( C - w ) ) < D ) -> 
+			( ( F ` w ) < U )
+		) 
+) $.
+eirrlem2.2 $e |- ( P e. ZZ ) $.
+acdc2lem.1 $e |- ( A e. _V ) $.
+acdc2lem.3 $e |- 
+( G = 
+	( S seq1 
+		( 
+			{ <. 1 , c >. } u. 
+			( _I |` ( NN \ { 1 } ) ) 
+		) 
+	) 
+) $.
+acdc5lem.1 $e |- ( A e. _V ) $.
+acdc5lem.3 $e |- 
+( G = 
+	( S seq1 
+		( 
+			{ <. 1 , c >. } u. 
+			( _I |` ( NN \ { 1 } ) ) 
+		) 
+	) 
+) $.
+infunabs.2 $e |- ( B e. _V ) $.
+metcnf.3 $e |- ( J = ( Open ` C ) ) $.
+metcn.2 $e |- ( J = ( Open ` C ) ) $.
+metcn.4 $e |- ( K = ( Open ` D ) ) $.
+metcnp4.1 $e |- ( X = dom dom C ) $.
+metcnp4.3 $e |- ( Y = dom dom D ) $.
+metcnp4.c $e |- ( J = ( Open ` C ) ) $.
+metcnp4.d $e |- ( K = ( Open ` D ) ) $.
+xplm.b $e |- ( S e. _V ) $.
+bopcn.j $e |- ( J = ( Open ` C ) ) $.
+bopcn.k $e |- ( K = ( Open ` D ) ) $.
+bopcn.5 $e |- ( O : ( CC X. CC ) --> CC ) $.
+bopcn.10 $e |- 
+( 
+	( 
+		( 
+			( F ~~> ( 1st ` q ) ) /\ 
+			( G ~~> ( 2nd ` q ) ) 
+		) /\ 
+		( 
+			( 1 e. ZZ ) /\ 
+			A. m e. ( ZZ>= ` 1 ) 
+				( 
+					( ( F ` m ) e. CC ) /\ 
+					( ( G ` m ) e. CC ) /\ 
+					( ( H ` m ) = ( ( F ` m ) O ( G ` m ) ) )
+				) 
+		) 
+	) -> 
+	( H ~~> ( ( 1st ` q ) O ( 2nd ` q ) ) )
+) $.
+bopcn.8 $e |- 
+( H = 
+	{ <. k , r >. | 
+		( 
+			( k e. NN ) /\ 
+			( r = ( O ` ( h ` k ) ) )
+		) 
+	} 
+) $.
+bopcn.9 $e |- 
+( 
+	( 
+		( ( 1st ` ( h ` k ) ) e. CC ) /\ 
+		( ( 2nd ` ( h ` k ) ) e. CC ) 
+	) -> 
+	(
+		( 
+			( 1st ` ( h ` k ) ) O ( 2nd ` ( h ` k ) ) 
+		) e. CC 
+	)
+) $.
+bcthlem6.3 $e |- ( X = dom dom D ) $.
+nvm.1 $e |- ( X = ( BaseSet ` U ) ) $.
+imsmetlem.7 $e |- ( M = ( inv ` G ) ) $.
+ipfval.7 $e |- ( P = ( .i ` U ) ) $.
+ipfval.2 $e |- ( G = ( +v ` U ) ) $.
+ip1cni.1 $e |- ( X = ( BaseSet ` U ) ) $.
+ip1cni.2 $e |- ( G = ( +v ` U ) ) $.
+ip1cni.7 $e |- ( P = ( .i ` U ) ) $.
+ip1cni.8 $e |- ( C = ( IndMet ` U ) ) $.
+ip1cni.d $e |- ( D = ( abs o. - ) ) $.
+ip1cni.j $e |- ( J = ( Open ` C ) ) $.
+ip1cni.k $e |- ( K = ( Open ` D ) ) $.
+ip1cni.f $e |- ( F = { <. w , v >. | ( ( w e. X ) /\ ( v = ( w P A ) ) ) } ) $.
+ip1cni.9 $e |- ( U e. NrmCVec ) $.
+ip1cni.a $e |- ( A e. X ) $.
+ip1cnilem.4 $e |- ( S = ( .s ` U ) ) $.
+ip1cnilem.6 $e |- ( N = ( norm ` U ) ) $.
+ip1i.7 $e |- ( P = ( .i ` U ) ) $.
+ip0iOLD.j $e |- ( J e. CC ) $.
+ip1i.m $e |- ( M = ( -v ` U ) ) $.
+ip0i.j $e |- ( J e. CC ) $.
+ubthlem4.9 $e |- ( D = ( IndMet ` U ) ) $.
+ubthlem4.10 $e |- ( J = ( Open ` D ) ) $.
+ubthlem7.m $e |- ( M = ( -v ` U ) ) $.
+ubthlem10.1 $e |- ( X = ( BaseSet ` U ) ) $.
+ubthlem10.2 $e |- ( Y = ( BaseSet ` W ) ) $.
+ubthlem10.3 $e |- ( N = ( norm ` W ) ) $.
+ubthlem10.4 $e |- ( O = ( U normOp W ) ) $.
+ubthlem10.5 $e |- ( B = ( U BLnOp W ) ) $.
+ubthlem10.6 $e |- ( T : NN --> B ) $.
+ubthlem10.7 $e |- ( U e. NrmCVec ) $.
+ubthlem10.8 $e |- ( W e. NrmCVec ) $.
+ubthlem10.9 $e |- ( D = ( IndMet ` U ) ) $.
+ubthlem10.n $e |- ( L = ( norm ` U ) ) $.
+ubthlem10.g $e |- ( G = ( +v ` U ) ) $.
+ubthlem10.m $e |- ( M = ( -v ` U ) ) $.
+ubthlem10.r $e |- ( R = ( .s ` U ) ) $.
+ubthlem10.z $e |- ( Z = ( 0v ` U ) ) $.
+htthlem3.1 $e |- ( X = ( BaseSet ` U ) ) $.
+htthlem3.p $e |- ( P = ( .i ` U ) ) $.
+htthlem3.l $e |- ( L = ( U LnOp U ) ) $.
+htthlem3.b $e |- ( B = ( U BLnOp U ) ) $.
+htthlem3.u $e |- ( U e. CHil ) $.
+htthlem3.t $e |- ( T e. L ) $.
+htthlem3.c $e |- ( C = <. <. + , x. >. , abs >. ) $.
+htthlem3.d $e |- ( D = ( U BLnOp C ) ) $.
+htthlem3.n $e |- ( N = ( norm ` U ) ) $.
+htthlem3.o $e |- ( O = ( U normOp C ) ) $.
+htthlem3.a $e |- 
+( 
+	( 
+		( x e. X ) /\ 
+		( y e. X )
+	) -> 
+	( 
+		( ( T ` x ) P y ) = ( x P ( T ` y ) )
+	) 
+) $.
+htthlem3.f $e |- 
+( F = 
+	{ <. m , w >. | 
+		( 
+			( m e. NN ) /\ 
+			( w = 
+				{ <. v , u >. | 
+					( 
+						( v e. X ) /\ 
+						( u = ( ( T ` v ) P ( f ` m ) ) )
+					) 
+				} 
+			)
+		) 
+	} 
+) $.
+cosh111lem1.4 $e |- ( 0 <_ B ) $.
+circgrp.1 $e |- 
+( C = 
+	{ w e. CC | 
+		( ( abs ` w ) = 1  )
+	} 
+) $.
+ghomgrpilem1.1 $e |- ( G e. Grp ) $.
+ghomgrpilem1.2 $e |- ( H e. Grp ) $.
+ghomgrpilem1.3 $e |- ( F e. ( G GrpHom H ) ) $.
+ghomgrpilem1.4 $e |- ( X = ran G ) $.
+ghomgrpilem1.5 $e |- ( U = ( Id ` G ) ) $.
+ghomgrpilem1.6 $e |- ( N = ( inv ` G ) ) $.
+ghomgrpilem1.7 $e |- ( W = ran H ) $.
+ghomgrpilem1.8 $e |- ( T = ( Id ` H ) ) $.
+ghomgrpilem1.9 $e |- ( M = ( inv ` H ) ) $.
+ghomgrpilem1.10 $e |- ( Z = ran F ) $.
+ghomgrpilem1.11 $e |- ( S = ( H |` ( Z X. Z ) ) ) $.
+cayleylem1.1 $e |- ( G e. Grp ) $.
+cayleylem1.2 $e |- ( P = { f | f : X -1-1-onto-> X } ) $.
+cayleylem1.3 $e |- ( X = ran G ) $.
+cayleylem1.4 $e |- ( U = ( Id ` G ) ) $.
+cayleylem1.5 $e |- ( H = ( SymGrp ` X ) ) $.
+cayleylem1.6 $e |- 
+( F = 
+	{ <. g , h >. | 
+		( 
+			( g e. X ) /\ 
+			( h = 
+				{ <. a , b >. | 
+					( ( a e. X ) /\ ( b = ( g G a ) ) ) 
+				} 
+			)
+		) 
+	} 
+) $.
+cayleylem1.7 $e |- ( Y = ran F ) $.
+cayleylem1.8 $e |- ( S = ( H |` ( Y X. Y ) ) ) $.
+ismonc.3 $e |- ( R = ( o_ ` T ) ) $.
+imonclem.3 $e |- ( R = ( o_ ` T ) ) $.
+hims.4 $e |- ( 0h = ( 0v ` U ) ) $.
+hlimlm.4 $e |- ( 0h = ( 0v ` U ) ) $.
+hilcompl.4 $e |- ( 0h = ( 0v ` U ) ) $.
+lnophmlem.1 $e |- ( A e. ~H ) $.
+lnophmlem.2 $e |- ( B e. ~H ) $.
+lnophmlem.3 $e |- ( T e. LinOp ) $.
+lnophmlem.4 $e |- A. x e. ~H ( ( x .ih ( T ` x ) ) e. RR ) $.
+hstrlem3.4 $e |- ( B e. CH ) $.
+
+
+
+$( ******************** $)
+
+
+cv $a class x $.
+wceq $a wff ( A = B ) $.
+weq $a wff ( x = y ) $.
+ax-8 $a |- ( ( x = y ) -> ( ( x = z ) -> ( y = z ) ) ) $.
+ax-9 $a |- -. A. x -. ( x = y ) $.
+ax-9o $a |- ( A. x ( ( x = y ) -> A. x ph ) -> ph ) $.
+ax-10 $a |- ( A. x ( x = y ) -> A. y ( y = x ) ) $.
+ax-10o $a |- ( A. x ( x = y ) -> ( A. x ph -> A. y ph ) ) $.
+ax-11 $a |- ( ( x = y ) -> ( A. y ph -> A. x ( ( x = y ) -> ph ) ) ) $.
+ax-11o $a |- ( -. A. x ( x = y ) -> ( ( x = y ) -> ( ph -> A. x ( ( x = y ) -> ph ) ) ) ) $.
+ax-12 $a |- ( -. A. z ( z = x ) -> ( -. A. z ( z = y ) -> ( ( x = y ) -> A. z ( x = y ) ) ) ) $.
+wcel $a wff ( A e. B ) $.
+wel $a wff ( x e. y ) $.
+ax-13 $a |- ( ( x = y ) -> ( ( x e. z ) -> ( y e. z ) ) ) $.
+ax-14 $a |- ( ( x = y ) -> ( ( z e. x ) -> ( z e. y ) ) ) $.
+ax-15 $a |- ( -. A. z ( z = x ) -> ( -. A. z ( z = y ) -> ( ( x e. y ) -> A. z ( x e. y ) ) ) ) $.
+ax9 $a |- ( A. x ( ( x = y ) -> A. x ph ) -> ph ) $.
+wsbc $a wff [ A / x ] ph $.
+df-sb $a |- ( [ y / x ] ph <-> ( ( ( x = y ) -> ph ) /\ E. x ( ( x = y ) /\ ph ) ) ) $.
+ax-16 $a |- ( A. x ( x = y ) -> ( ph -> A. x ph ) ) $.
+ax-17 $a |- ( ph -> A. x ph ) $.
+weu $a wff E! x ph $.
+wmo $a wff E* x ph $.
+df-eu $a |- ( E! x ph <-> E. y A. x ( ph <-> ( x = y ) ) ) $.
+df-mo $a |- ( E* x ph <-> ( E. x ph -> E! x ph ) ) $.
+ax-ext $a |- ( A. z ( ( z e. x ) <-> ( z e. y ) ) -> ( x = y ) ) $.
+ax-rep $a |- ( A. w E. y A. z ( A. y ph -> ( z = y ) ) -> E. y A. z ( ( z e. y ) <-> E. w ( ( w e. x ) /\ A. y ph ) ) ) $.
+ax-un $a |- E. y A. z ( E. w ( ( z e. w ) /\ ( w e. x ) ) -> ( z e. y ) ) $.
+ax-pow $a |- E. y A. z ( A. w ( ( w e. z ) -> ( w e. x ) ) -> ( z e. y ) ) $.
+ax-reg $a |- ( E. y ( y e. x ) -> E. y ( ( y e. x ) /\ A. z ( ( z e. y ) -> -. ( z e. x ) ) ) ) $.
+ax-sep $a |- E. y A. x ( ( x e. y ) <-> ( ( x e. z ) /\ ph ) ) $.
+ax-nul $a |- E. x A. y -. ( y e. x ) $.
+ax-pr $a |- E. z A. w ( ( ( w = x ) \/ ( w = y ) ) -> ( w e. z ) ) $.
+ax-inf $a |- E. y ( ( x e. y ) /\ A. z ( ( z e. y ) -> E. w ( ( z e. w ) /\ ( w e. y ) ) ) ) $.
+ax-ac $a |- E. y A. z A. w ( ( ( z e. w ) /\ ( w e. x ) ) -> E. v A. u ( E. t ( ( ( u e. w ) /\ ( w e. t ) ) /\ ( ( u e. t ) /\ ( t e. y ) ) ) <-> ( u = v ) ) ) $.
+cab $a class { x | ph } $.
+df-clab $a |- ( ( x e. { y | ph } ) <-> [ x / y ] ph ) $.
+df-cleq.1 $e |- ( A. x ( ( x e. y ) <-> ( x e. z ) ) -> ( y = z ) )  $.
+df-cleq $a |- ( ( A = B ) <-> A. x ( ( x e. A ) <-> ( x e. B ) ) ) $.
+df-clel $a |- ( ( A e. B ) <-> E. x ( ( x = A ) /\ ( x e. B ) ) ) $.
+wne $a wff ( A =/= B ) $.
+wnel $a wff ( A e/ B ) $.
+df-ne $a |- ( ( A =/= B ) <-> -. ( A = B ) ) $.
+df-nel $a |- ( ( A e/ B ) <-> -. ( A e. B ) ) $.
+wral $a wff A. x e. A ph $.
+wrex $a wff E. x e. A ph $.
+wreu $a wff E! x e. A ph $.
+crab $a class { x e. A | ph } $.
+df-ral $a |- ( A. x e. A ph <-> A. x ( ( x e. A ) -> ph ) ) $.
+df-rex $a |- ( E. x e. A ph <-> E. x ( ( x e. A ) /\ ph ) ) $.
+df-reu $a |- ( E! x e. A ph <-> E! x ( ( x e. A ) /\ ph ) ) $.
+df-rab $a |- ( { x e. A | ph } = { x | ( ( x e. A ) /\ ph ) } ) $.
+cvv $a class _V $.
+df-v $a |- ( _V = { x | ( x = x ) } ) $.
+df-sbc $a |- ( [ A / x ] ph <-> ( A e. { x | ph } ) ) $.
+csb $a class [_ A / x ]_ B $.
+df-csb $a |- ( [_ A / x ]_ B = { y | [ A / x ] ( y e. B ) } ) $.
+cdif $a class ( A \ B ) $.
+cun $a class ( A u. B ) $.
+cin $a class ( A i^i B ) $.
+wss $a wff ( A C_ B ) $.
+wpss $a wff ( A C. B ) $.
+df-dif $a |- ( ( A \ B ) = { x | ( ( x e. A ) /\ -. ( x e. B ) ) } ) $.
+df-un $a |- ( ( A u. B ) = { x | ( ( x e. A ) \/ ( x e. B ) ) } ) $.
+df-in $a |- ( ( A i^i B ) = { x | ( ( x e. A ) /\ ( x e. B ) ) } ) $.
+df-ss $a |- ( ( A C_ B ) <-> ( ( A i^i B ) = A ) ) $.
+df-pss $a |- ( ( A C. B ) <-> ( ( A C_ B ) /\ ( A =/= B ) ) ) $.
+c0 $a class (/) $.
+df-nul $a |- ( (/) = ( _V \ _V ) ) $.
+cif $a class if ( ph , A , B ) $.
+df-if $a |- 
+( if ( ph , A , B ) = 
+	{ x | 
+		( 
+			( 
+				( x e. A ) /\ ph 
+			) \/ 
+			( 
+				( x e. B ) /\ -. ph 
+			) 
+		) 
+	} 
+) $.
+df-pw $a |- ( ~P A = { x | ( x C_ A ) } ) $.
+csn $a class { A } $.
+cpr $a class { A , B } $.
+cop $a class <. A , B >. $.
+df-sn $a |- ( { A } = { x | ( x = A ) } ) $.
+df-pr $a |- ( { A , B } = ( { A } u. { B } ) ) $.
+ctp $a class { A , B , C } $.
+df-tp $a |- ( { A , B , C } = ( { A , B } u. { C } ) ) $.
+df-op $a |- ( <. A , B >. = { { A } , { A , B } } ) $.
+cuni $a class U. A $.
+df-uni $a |- ( U. A = { x | E. y ( ( x e. y ) /\ ( y e. A ) ) } ) $.
+cint $a class |^| A $.
+df-int $a |- ( |^| A = { x | A. y ( ( y e. A ) -> ( x e. y ) ) } ) $.
+ciun $a class U_ x e. A B $.
+ciin $a class |^|_ x e. A B $.
+df-iun $a |- ( U_ x e. A B = { y | E. x e. A ( y e. B ) } ) $.
+df-iin $a |- ( |^|_ x e. A B = { y | A. x e. A ( y e. B ) } ) $.
+wtr $a wff Tr A $.
+df-tr $a |- ( Tr A <-> ( U. A C_ A ) ) $.
+wbr $a wff ( A R B ) $.
+copab $a class { <. x , y >. | ph } $.
+
+wpo $a wff ( R Po A ) $.
+wor $a wff ( R Or A ) $.
+csup $a class sup ( A , B , R ) $.
+wfr $a wff ( R Fr A ) $.
+wwe $a wff ( R We A ) $.
+df-br $a |- ( ( A R B ) <-> ( <. A , B >. e. R ) ) $.
+df-opab $a |- ( { <. x , y >. | ph } = { z | E. x E. y ( ( z = <. x , y >. ) /\ ph ) } ) $.
+df-eprel $a |- ( _E = { <. x , y >. | ( x e. y ) } ) $.
+df-id $a |- ( _I = { <. x , y >. | ( x = y ) } ) $.
+df-po $a |- ( ( R Po A ) <-> A. x e. A A. y e. A A. z e. A ( -. ( x R x ) /\ ( ( ( x R y ) /\ ( y R z ) ) -> ( x R z ) ) ) ) $.
+df-so $a |- ( ( R Or A ) <-> ( ( R Po A ) /\ A. x e. A A. y e. A ( ( x R y ) \/ ( x = y ) \/ ( y R x ) ) ) ) $.
+df-sup $a |- ( sup ( B , A , R ) = U. { x e. A | ( A. y e. B -. ( x R y ) /\ A. y e. A ( ( y R x ) -> E. z e. B ( y R z ) ) ) } ) $.
+df-fr $a |- ( ( R Fr A ) <-> A. x ( ( ( x C_ A ) /\ ( x =/= (/) ) ) -> E. y e. x A. z e. x -. ( z R y ) ) ) $.
+df-we $a |- ( ( R We A ) <-> ( ( R Fr A ) /\ ( R Or A ) ) ) $.
+
+df-ord $a |- ( Ord A <-> ( Tr A /\ ( _E We A ) ) ) $.
+df-on $a |- ( On = { x | Ord x } ) $.
+df-lim $a |- ( Lim A <-> ( Ord A /\ ( A =/= (/) ) /\ ( A = U. A ) ) ) $.
+df-suc $a |- ( suc A = ( A u. { A } ) ) $.
+df-pm $a |- ( ^pm = 
+{ <. <. x , y >. , z >. | 
+	( z = 
+		{ f | 
+			( 
+				Fun f /\ 
+				( 
+					f C_ 
+					( y X. x ) 
+				)
+			) 
+		} 
+	)
+} 
+) $.
+df-ixp $a |- 
+( X_ x e. A B = 
+	{ f | 
+		( 
+			( f Fn A ) /\ 
+			A. x e. A ( ( f ` x ) e. B )
+		) 
+	} 
+) $.
+com $a class om $.
+df-om $a |- ( om = { x | ( Ord x /\ A. y ( Lim y -> ( x e. y ) ) ) } ) $.
+cxp $a class ( A X. B ) $.
+cres $a class ( A |` B ) $.
+cima $a class ( A " B ) $.
+ccom $a class ( A o. B ) $.
+wfn $a wff ( A Fn B ) $.
+wf $a wff ( F : A --> B ) $.
+wf1 $a wff ( F : A -1-1-> B ) $.
+wfo $a wff ( F : A -onto-> B ) $.
+wf1o $a wff ( F : A -1-1-onto-> B ) $.
+cfv $a class ( F ` A ) $.
+wiso $a wff ( H Isom R , S ( A , B ) ) $.
+df-xp $a |- ( ( A X. B ) = { <. x , y >. | ( ( x e. A ) /\ ( y e. B ) ) } ) $.
+df-rel $a |- ( Rel A <-> ( A C_ ( _V X. _V ) ) ) $.
+df-cnv $a |- ( `' A = { <. x , y >. | ( y A x ) } ) $.
+df-co $a |- ( ( A o. B ) = { <. x , y >. | E. z ( ( x B z ) /\ ( z A y ) ) } ) $.
+df-dm $a |- ( dom A = { x | E. y ( x A y ) } ) $.
+df-rn $a |- ( ran A = dom `' A ) $.
+df-res $a |- ( ( A |` B ) = ( A i^i ( B X. _V ) ) ) $.
+df-ima $a |- ( ( A " B ) = ran ( A |` B ) ) $.
+df-fun $a |- ( Fun A <-> ( Rel A /\ ( ( A o. `' A ) C_ _I ) ) ) $.
+df-fn $a |- ( ( A Fn B ) <-> ( Fun A /\ ( dom A = B ) ) ) $.
+df-f $a |- ( ( F : A --> B ) <-> ( ( F Fn A ) /\ ( ran F C_ B ) ) ) $.
+df-f1 $a |- ( ( F : A -1-1-> B ) <-> ( ( F : A --> B ) /\ Fun `' F ) ) $.
+df-fo $a |- ( ( F : A -onto-> B ) <-> ( ( F Fn A ) /\ ( ran F = B ) ) ) $.
+df-f1o $a |- ( ( F : A -1-1-onto-> B ) <-> ( ( F : A -1-1-> B ) /\ ( F : A -onto-> B ) ) ) $.
+df-fv $a |- ( ( F ` A ) = U. { x | ( ( F " { A } ) = { x } ) } ) $.
+df-iso $a |- ( ( H Isom R , S ( A , B ) ) <-> ( ( H : A -1-1-onto-> B ) /\ A. x e. A A. y e. A ( ( x R y ) <-> ( ( H ` x ) S ( H ` y ) ) ) ) ) $.
+crdg $a class rec ( A , B ) $.
+df-rdg $a |- 
+( rec ( F , A ) = U. { f | E. x e. On 
+   ( 
+     ( f Fn x ) /\ A. y e. x 
+       ( 
+          ( f ` y ) = 
+          ( 
+              { <. g , z >. | 
+	         ( z = if 
+		    ( 
+		       ( g = (/) ) , 
+		       A , 
+		       if ( Lim dom g , 
+		            U. ran g , 
+			    ( F ` ( g ` U. dom g ) ) 
+		           ) 
+		    ) 
+		 )
+              } ` 
+             ( f |` y ) 
+          ) 
+       )
+   ) } 
+) $.
+co $aclass ( A F B ) $.
+copab2 $aclass { <. <. x , y >. , z >. | ph } $.
+df-opr $a|- ( ( A F B ) = ( F ` <. A , B >. ) ) $.
+df-oprab $a |- ( { <. <. x , y >. , z >. | ph } = { w | E. x E. y E. z ( ( w = <. <. x , y >. , z >. ) /\ ph ) } ) $.
+df-1st $a |- ( 1st = { <. x , y >. | ( y = U. dom { x } ) } ) $.
+df-2nd $a |- ( 2nd = { <. x , y >. | ( y = U. ran { x } ) } ) $.
+df-1o $a |- ( 1o = suc (/) ) $.
+df-2o $a |- ( 2o = suc 1o ) $.
+df-oadd $a |- ( +o = { <. <. x , y >. , z >. | ( ( ( x e. On ) /\ ( y e. On ) ) /\ ( z = ( rec ( { <. w , v >. | ( v = suc w ) } , x ) ` y ) ) ) } ) $.
+df-omul $a |- ( .o = { <. <. x , y >. , z >. | ( ( ( x e. On ) /\ ( y e. On ) ) /\ ( z = ( rec ( { <. w , v >. | ( v = ( w +o x ) ) } , (/) ) ` y ) ) ) } ) $.
+df-oexp $a |- 
+( ^o = 
+	{ <. <. x , y >. , z >. | 
+		( 
+			( 
+				( x e. On ) /\ 
+				( y e. On ) 
+			) /\ 
+			( z = if 
+				( 
+					( x = (/) ) , 
+					( 1o \ y ) , 
+					( rec 
+						( 
+							{ <. w , v >. | 
+								( v = ( w .o x ) ) 
+							} , 1o 
+						) ` y 
+					) 
+				) 
+			) 
+		) 
+	} 
+) $.
+wer $a wff Er R $.
+cec $a class [ A ] R $.
+cqs $a class ( A /. R ) $.
+df-er $a |- ( Er R <-> ( ( `' R u. ( R o. R ) ) C_ R ) ) $.
+df-ec $a |- ( [ A ] R = ( R " { A } ) ) $.
+df-qs $a |- ( ( A /. R ) = { y | E. x e. A ( y = [ x ] R ) } ) $.
+cm $a class ^m $.
+df-map $a |- ( ^m = { <. <. x , y >. , z >. | ( z = { f | ( f : y --> x ) } ) } ) $.
+cen $a class ~~ $.
+cdom $a class ~<_ $.
+csdm $a class ~< $.
+df-en $a |- ( ~~ = { <. x , y >. | E. f ( f : x -1-1-onto-> y ) } ) $.
+df-dom $a |- ( ~<_ = { <. x , y >. | E. f ( f : x -1-1-> y ) } ) $.
+df-sdom $a |- ( ~< = ( ~<_ \ ~~ ) ) $.
+cr1 $a class R1 $.
+crnk $a class rank $.
+df-r1 $a |- ( R1 = rec ( { <. x , y >. | ( y = ~P x ) } , (/) ) ) $.
+df-rank $a |- 
+( rank = 
+   { <. x , y >. | ( y = |^| { z e. On | ( x e. ( R1 ` suc z ) ) } ) 
+   } 
+) $.
+ccrd $a class card $.
+cale $a class aleph $.
+ccf $a class cf $.
+df-card $a |- ( card = { <. x , y >. | ( y = |^| { z e. On | ( z ~~ x ) } ) } ) $.
+df-aleph $a |- ( aleph = rec ( { <. x , y >. | ( y = |^| { z e. On | ( x ~< z ) } ) } , om ) ) $.
+df-cf $a |- 
+( cf = { <. x , y >. | 
+              ( ( x e. On ) /\
+	        ( y = |^| 
+		    { z | E. w 
+		          ( 
+			     ( z = ( card ` w ) ) /\
+			     (
+			         ( w C_ x ) /\ 
+				 A. v e. x E. u e. w
+				       ( v C_ u ) 
+			     ) 
+			  ) 
+		    }
+		 )
+	      ) 
+          } 
+) $.
+ccda $a class +c $.
+df-cda $a |- ( +c = { <. <. x , y >. , z >. | ( z = ( ( x X. { (/) } ) u. ( y X. { 1o } ) ) ) } ) $.
+ax-groth $a|- 
+E. y ( ( x e. y ) /\ 
+           A. z e. y 
+	      ( 
+	          A. w ( ( w C_ z ) -> ( w e. y ) ) /\ 
+		  E. w e. y A. v ( ( v C_ z ) -> ( v e. w ) ) ) /\ 
+		  A. z ( ( z C_ y ) -> ( ( z ~~ y ) \/ ( z e. y ) ) 
+	      ) 
+        ) 
+$.
+cnpi $a class N. $.
+cpli $a class +N $.
+cmi $a class .N $.
+clti $a class <N $.
+cplpq $a class +pQ $.
+cmpq $a class .pQ $.
+ceq $a class ~Q $.
+cnq $a class Q. $.
+c1q $a class 1Q $.
+cplq $a class +Q $.
+cmq $a class .Q $.
+crq $a class *Q $.
+cltq $a class <Q $.
+cnp $a class P. $.
+c1p $a class 1P $.
+cpp $a class +P. $.
+cmp $a class .P. $.
+cltp $a class <P $.
+cplpr $a class +pR $.
+cmpr $a class .pR $.
+cer $a class ~R $.
+cnr $a class R. $.
+c0r $a class 0R $.
+c1r $a class 1R $.
+cm1r $a class -1R $.
+cplr $a class +R $.
+cmr $a class .R $.
+cltr $a class <R $.
+df-ni $a |- ( N. = ( om \ { (/) } ) ) $.
+df-pli $a |- ( +N = ( +o |` ( N. X. N. ) ) ) $.
+df-mi $a |- ( .N = ( .o |` ( N. X. N. ) ) ) $.
+df-lti $a |- ( <N = ( _E i^i ( N. X. N. ) ) ) $.
+df-plpq $a |- 
+( +pQ = 
+   { <. <. x , y >. , z >. | 
+      ( ( ( x e. ( N. X. N. ) ) /\ ( y e. ( N. X. N. ) ) ) /\ 
+        E. w E. v E. u E. f 
+	   ( 
+	       ( ( x = <. w , v >. ) /\ ( y = <. u , f >. ) ) /\ 
+	         ( z = <. ( ( w .N f ) +N ( v .N u ) ) , ( v .N f ) >. )
+	   ) 
+      ) 
+   } 
+) $.
+df-mpq $a |- 
+( .pQ = 
+   { <. <. x , y >. , z >. | 
+      ( 
+          ( ( x e. ( N. X. N. ) ) /\ ( y e. ( N. X. N. ) ) ) /\ 
+	  E. w E. v E. u E. f 
+	     ( 
+	         ( ( x = <. w , v >. ) /\ ( y = <. u , f >. ) ) /\ 
+		 ( z = <. ( w .N u ) , ( v .N f ) >. )
+	     ) 
+      ) 
+   } 
+) $.
+df-enq $a |- 
+( ~Q = 
+   { <. x , y >. | 
+      ( 
+         ( ( x e. ( N. X. N. ) ) /\ ( y e. ( N. X. N. ) ) ) /\ 
+	 E. z E. w E. v E. u 
+	    ( 
+	       ( ( x = <. z , w >. ) /\ ( y = <. v , u >. ) ) /\ 
+	       ( ( z .N u ) = ( w .N v ) )
+	    ) 
+      ) 
+   } 
+) $.
+df-nq $a |- ( Q. = ( ( N. X. N. ) /. ~Q ) ) $.
+df-plq $a |- 
+( +Q = 
+   { <. <. x , y >. , z >. | 
+       ( 
+           ( ( x e. Q. ) /\ ( y e. Q. ) ) /\ 
+	   E. w E. v E. u E. f 
+	      ( 
+	           ( ( x = [ <. w , v >. ] ~Q ) /\ ( y = [ <. u , f >. ] ~Q ) ) /\ 
+		   ( z = [ ( <. w , v >. +pQ <. u , f >. ) ] ~Q )
+	      ) 
+       ) 
+   } 
+) $.
+df-mq $a |- 
+( .Q = 
+   { <. <. x , y >. , z >. | 
+      ( 
+         ( ( x e. Q. ) /\ ( y e. Q. ) ) /\ 
+	 E. w E. v E. u E. f 
+	   ( 
+	      ( ( x = [ <. w , v >. ] ~Q ) /\ ( y = [ <. u , f >. ] ~Q ) ) /\ 
+	      ( z = [ ( <. w , v >. .pQ <. u , f >. ) ] ~Q )
+	   ) 
+      ) 
+   } 
+) $.
+df-rq $a |- ( *Q = { <. x , y >. | ( ( x e. Q. ) /\ ( ( x .Q y ) = 1Q ) ) } ) $.
+df-ltq $a |- 
+( <Q = 
+   { <. x , y >. | 
+      ( 
+         ( ( x e. Q. ) /\ ( y e. Q. ) ) /\ 
+	 E. z E. w E. v E. u 
+	     ( 
+	        ( ( x = [ <. z , w >. ] ~Q ) /\ ( y = [ <. v , u >. ] ~Q ) ) /\ 
+		( ( z .N u ) <N ( w .N v ) )
+	     ) 
+      ) 
+   } 
+) $.
+df-1q $a |- ( 1Q = [ <. 1o , 1o >. ] ~Q ) $.
+df-np $a |- 
+( P. = 
+   { x | 
+       ( 
+          (  
+	      ( (/) C. x ) /\ ( x C. Q. ) 
+	  ) /\ 
+	  A. y e. x 
+	    ( 
+	       A. z ( ( z <Q y ) -> ( z e. x ) ) /\ 
+	       E. z e. x ( y <Q z ) 
+	     ) 
+       ) 
+   } 
+) $.
+df-1p $a |- ( 1P = { x | ( x <Q 1Q ) } ) $.
+df-plp $a |- 
+( +P. = 
+   { <. <. x , y >. , z >. | 
+      ( 
+          ( ( x e. P. ) /\ ( y e. P. ) ) /\ 
+	  ( z = { w | E. v e. x E. u e. y ( w = ( v +Q u ) )
+	           } 
+	  ) 
+      ) 
+   } 
+) $.
+df-mp $a |- 
+( .P. = 
+   { <. <. x , y >. , z >. | 
+       ( 
+            ( ( x e. P. ) /\ ( y e. P. ) ) /\ 
+	    ( z = { w | E. v e. x E. u e. y ( w = ( v .Q u ) ) } )
+       ) 
+   } 
+) $.
+df-ltp $a |- 
+( <P = 
+   { <. x , y >. | 
+      ( 
+         ( ( x e. P. ) /\ ( y e. P. ) ) /\ 
+	 ( x C. y )
+      ) 
+   } 
+) $.
+df-plpr $a |- 
+( +pR = 
+   { <. <. x , y >. , z >. | 
+      ( 
+          ( ( x e. ( P. X. P. ) ) /\ ( y e. ( P. X. P. ) ) ) /\ 
+	  E. w E. v E. u E. f 
+	      ( 
+	            ( ( x = <. w , v >. ) /\ ( y = <. u , f >. ) ) /\ 
+		    ( z = <. ( w +P. u ) , ( v +P. f ) >. )
+	      ) 
+      ) 
+   } 
+) $.
+df-mpr $a |- 
+( .pR = 
+   { <. <. x , y >. , z >. | 
+      ( 
+         ( ( x e. ( P. X. P. ) ) /\ ( y e. ( P. X. P. ) ) ) /\ 
+	 E. w E. v E. u E. f 
+	    ( 
+	       ( ( x = <. w , v >. ) /\ ( y = <. u , f >. ) ) /\ 
+	       ( z = <. ( ( w .P. u ) +P. ( v .P. f ) ) , ( ( w .P. f ) +P. ( v .P. u ) ) >. )
+	    ) 
+      ) 
+   } 
+) $.
+df-enr $a |- 
+( ~R = 
+  { <. x , y >. | 
+     ( 
+        ( ( x e. ( P. X. P. ) ) /\ ( y e. ( P. X. P. ) ) ) /\ 
+	E. z E. w E. v E. u 
+	   ( 
+	      ( ( x = <. z , w >. ) /\ ( y = <. v , u >. ) ) /\ 
+	      ( ( z +P. u ) = ( w +P. v ) )
+	   ) 
+     ) 
+  } 
+) $.
+df-nr $a |- ( R. = ( ( P. X. P. ) /. ~R ) ) $.
+df-plr $a |- 
+( +R = 
+   { <. <. x , y >. , z >. | 
+      ( 
+         ( ( x e. R. ) /\ ( y e. R. ) ) /\ 
+	 E. w E. v E. u E. f 
+	    ( 
+	       ( ( x = [ <. w , v >. ] ~R ) /\ ( y = [ <. u , f >. ] ~R ) ) /\ 
+	       ( z = [ ( <. w , v >. +pR <. u , f >. ) ] ~R )
+	    ) 
+      ) 
+   } 
+) $.
+df-mr $a |- 
+( .R = 
+   { <. <. x , y >. , z >. | 
+      ( 
+         ( ( x e. R. ) /\ ( y e. R. ) ) /\ 
+	 E. w E. v E. u E. f 
+	    ( 
+	       ( ( x = [ <. w , v >. ] ~R ) /\ ( y = [ <. u , f >. ] ~R ) ) /\ 
+	       ( z = [ ( <. w , v >. .pR <. u , f >. ) ] ~R )
+	    ) 
+      ) 
+   } 
+) $.
+df-ltr $a |- 
+( <R = 
+   { <. x , y >. | 
+      ( 
+         ( ( x e. R. ) /\ ( y e. R. ) ) /\ 
+	 E. z E. w E. v E. u 
+	     ( 
+	        ( ( x = [ <. z , w >. ] ~R ) /\ ( y = [ <. v , u >. ] ~R ) ) /\ 
+		( ( z +P. u ) <P ( w +P. v ) )
+	     ) 
+      ) 
+   } 
+) $.
+df-0r $a |- ( 0R = [ <. 1P , 1P >. ] ~R ) $.
+df-1r $a |- ( 1R = [ <. ( 1P +P. 1P ) , 1P >. ] ~R ) $.
+df-m1r $a |- ( -1R = [ <. 1P , ( 1P +P. 1P ) >. ] ~R ) $.
+cc $a class CC $.
+cr $a class RR $.
+cc0 $a class 0 $.
+c1 $a class 1 $.
+ci $a class _i $.
+caddc $a class + $.
+cltrr $a class <RR $.
+cmul $a class x. $.
+df-c $a |- ( CC = ( R. X. R. ) ) $.
+df-0 $a |- ( 0 = <. 0R , 0R >. ) $.
+df-1 $a |- ( 1 = <. 1R , 0R >. ) $.
+df-i $a |- ( _i = <. 0R , 1R >. ) $.
+df-r $a |- ( RR = ( R. X. { 0R } ) ) $.
+df-plus $a |- 
+( + = 
+	{ <. <. x , y >. , z >. | 
+		( 
+			( 
+				( x e. CC ) /\ 
+				( y e. CC ) 
+			) /\ 
+			E. w E. v E. u E. f 
+				( 
+					( 
+						( x = <. w , v >. ) /\ 
+						( y = <. u , f >. ) 
+					) /\ 
+					( z = <. ( w +R u ) , ( v +R f ) >. )
+				) 
+		) 
+	} 
+) $.
+df-mul $a |- 
+( x. = 
+	{ <. <. x , y >. , z >. | 
+		( 
+			( 
+				( x e. CC ) /\ 
+				( y e. CC ) 
+			) /\ 
+			E. w E. v E. u E. f 
+				( 
+					( 
+						( x = <. w , v >. ) /\ 
+						( y = <. u , f >. ) 
+					) /\ 
+					( z = 
+						<. ( ( w .R u ) +R ( -1R .R ( v .R f ) ) ) , 
+							( ( v .R u ) +R ( w .R f ) ) >. 
+					) 
+				) 
+		) 
+	} 
+) $.
+df-lt $a |- 
+( <RR = 
+	{ <. x , y >. | 
+		( 
+			( 
+				( x e. RR ) /\ 
+				( y e. RR ) 
+			) /\ 
+			E. z E. w 
+				( 
+					( 
+						( x = <. z , 0R >. ) /\ 
+						( y = <. w , 0R >. ) 
+					) /\ 
+					( z <R w )
+				) 
+		) 
+	} 
+) $.
+cmin $a class - $.
+cneg $a class -u A $.
+cdiv $a class / $.
+cle $a class <_ $.
+cn $a class NN $.
+cn0 $a class NN0 $.
+cz $a class ZZ $.
+cq $a class QQ $.
+df-sub $a |- 
+( - = 
+	{ <. <. x , y >. , z >. | 
+		( 
+			( 
+				( x e. CC ) /\ ( y e. CC ) 
+			) /\ 
+			( z = U. 
+				{ w e. CC | ( ( y + w ) = x ) } 
+			)
+		) 
+	} 
+) $.
+df-neg $a |- ( -u A = ( 0 - A ) ) $.
+df-div $a |- 
+( / = 
+	{ <. <. x , y >. , z >. | 
+		( 
+			( 
+				( x e. CC ) /\ 
+				( y e. ( CC \ { 0 } ) ) 
+			) /\ 
+			( z = U. 
+				{ w e. CC | ( ( y x. w ) = x ) } 
+			)
+		) 
+	} 
+) $.
+cpnf $a class +oo $.
+cmnf $a class -oo $.
+cxr $a class RR* $.
+clt $a class < $.
+df-pnf $a |- ( +oo = ~P U. CC ) $.
+df-mnf $a |- ( -oo = ~P +oo ) $.
+df-xr $a |- ( RR* = ( RR u. { +oo , -oo } ) ) $.
+df-ltxr $a |- 
+( < = 
+	( 
+		( 
+			( <RR i^i ( RR X. RR ) ) u. 
+			{ <. -oo , +oo >. } 
+		) u. 
+		( 
+			( RR X. { +oo } ) u. ( { -oo } X. RR ) 
+		) 
+	) 
+) $.
+df-le $a |- ( <_ = ( ( RR* X. RR* ) \ `' < ) ) $.
+df-n $a |- 
+( NN = |^| 
+	{ x | 
+		( 
+			( 1 e. x ) /\ 
+			A. y e. x ( ( y + 1 ) e. x ) 
+		) 
+	} 
+) $.
+
+df-2 $a |- ( 2 = ( 1 + 1 ) ) $.
+df-3 $a |- ( 3 = ( 2 + 1 ) ) $.
+df-4 $a |- ( 4 = ( 3 + 1 ) ) $.
+df-5 $a |- ( 5 = ( 4 + 1 ) ) $.
+df-6 $a |- ( 6 = ( 5 + 1 ) ) $.
+df-7 $a |- ( 7 = ( 6 + 1 ) ) $.
+df-8 $a |- ( 8 = ( 7 + 1 ) ) $.
+df-9 $a |- ( 9 = ( 8 + 1 ) ) $.
+df-10 $a |- ( 10 = ( 9 + 1 ) ) $.
+
+df-ioo $a |- ( (,) = 
+{ <. <. x , y >. , z >. | 
+	( 
+		( ( x e. RR* ) /\ ( y e. RR* ) ) /\ 
+		( z = { w e. RR* | ( ( x < w ) /\ ( w < y ) ) } )
+	) 
+} 
+) $.
+df-ioc $a |- 
+( (,] = 
+{ <. <. x , y >. , z >. | 
+	( 
+		( ( x e. RR* ) /\ ( y e. RR* ) ) /\ 
+		( z = { w e. RR* | ( ( x < w ) /\ ( w <_ y ) ) } ) 
+	) 
+} 
+) $.
+df-ico $a |- 
+( [,) = 
+{ <. <. x , y >. , z >. | 
+	( 
+		( ( x e. RR* ) /\ ( y e. RR* ) ) /\ 
+		( z = { w e. RR* | ( ( x <_ w ) /\ ( w < y ) ) } ) 
+	) 
+} 
+) $.
+df-icc $a |- 
+( [,] = 
+{ <. <. x , y >. , z >. | 
+	( 
+		( ( x e. RR* ) /\ ( y e. RR* ) ) /\ 
+		( z = { w e. RR* | ( ( x <_ w ) /\ ( w <_ y ) ) } ) 
+	) 
+} 
+) $.
+df-n0 $a |- ( NN0 = ( NN u. { 0 } ) ) $.
+df-rp $a |- ( RR+ = { x e. RR | ( 0 < x ) } ) $.
+df-z $a |- 
+( ZZ = 
+	{ n e. RR | 
+		( 
+			( n = 0 ) \/ 
+			( n e. NN ) \/ 
+			( -u n e. NN ) 
+		) 
+	} 
+) $.
+cfl $a class |_ $.
+df-fl $a |- 
+( |_ = 
+	{ <. x , y >. | 
+		( 
+			( x e. RR ) /\ 
+			( y = U. 
+				{ z e. ZZ | 
+					( 
+						( z <_ x ) /\ 
+						( x < ( z + 1 ) ) 
+					) 
+				} 
+			) 
+		) 
+	} 
+) $.
+df-q $a |- 
+( QQ = 
+	{ x | E. m e. ZZ E. n e. NN 
+		( x = ( m / n ) ) 
+	} 
+) $.
+cseq1 $a class seq1 $.
+df-seq1 $a |- 
+( seq1 = 
+	{ <. <. f , g >. , h >. | 
+		( h = 
+			{ <. x , y >. | 
+				( 
+					( x e. NN ) /\ 
+					( y = 
+						( 2nd ` 
+							( 
+								( rec 
+									( 
+										{ <. z , w >. | 
+											( w = 
+												<. 
+													( ( 1st ` z ) + 1 ) , 
+													( ( 2nd ` z ) f ( g ` ( ( 1st ` z ) + 1 ) ) ) 
+												>. 
+											)
+										} , 
+										<. 1 , ( g ` 1 ) >. 
+									) 
+									o. `' 
+									( 
+										rec 
+										( 
+											{ <. z , w >. | ( w = ( z + 1 ) ) } , 
+											1 
+										) |` om 
+									) 
+								) ` x 
+							) 
+						) 
+					)
+				) 
+			} 
+		)
+	} 
+) $.
+cshi $a class shift $.
+df-shft $a |-
+( shift = 
+	{ <. <. f , x >. , g >. | 
+		( g = 
+			{ <. y , z >. | 
+				( 
+					( y e. CC ) /\ 
+					( z = ( f ` ( y - x ) ) )
+				) 
+			} 
+		)
+	} 
+) $.
+df-uz $a |- 
+( ZZ>= = 
+	{ <. j , y >. | 
+		( 
+			( j e. ZZ ) /\ 
+			( y = 
+				{ k e. ZZ | ( j <_ k ) } 
+			) 
+		) 
+	} 
+) $.
+cfz $a class ... $.
+df-fz $a |- 
+( ... = 
+	{ <. <. m , n >. , z >. | 
+		( 
+			(
+				( m e. ZZ ) /\ ( n e. ZZ )
+			) /\ 
+			( z = 
+				{ k e. ZZ | 
+					( ( m <_ k ) /\ ( k <_ n ) ) 
+				} 
+			)
+		) 
+	} 
+) $.
+climsup $a class limsup $.
+df-limsup $a |- 
+( limsup = 
+	{ <. x , y >. | 
+		( y = sup 
+			( 
+				{ z | E. k e. ZZ 
+					( z = sup 
+						( 
+							( 
+								( x " ( ZZ>= ` k ) ) i^i RR* 
+							) , 
+							RR* , 
+							< 
+						) 
+					) 
+				} , 
+				RR* , 
+				`' < 
+			) 
+		)
+	} 
+) $.
+cseqz $a class seq $.
+cseq0 $a class seq0 $.
+df-seqz $a |- 
+( seq = 
+	{ <. <. x , g >. , h >. | 
+		( h = 
+			( 
+				( 
+					( 
+						( 2nd ` x ) 
+						seq1 
+						( g shift ( 1 - ( 1st ` x ) ) ) 
+					) 
+					shift 
+					( ( 1st ` x ) - 1 ) 
+				) 
+				|` 
+				{ k e. ZZ | ( ( 1st ` x ) <_ k ) } 
+			) 
+		)
+	} 
+) $.
+df-seq0 $a |- 
+( seq0 = 
+	{ <. <. f , g >. , h >. | 
+		( h = 
+			( 
+				( 
+					( f seq1 ( g shift 1 ) ) 
+					shift -u 1 
+				) 
+				|` NN0 
+			) 
+		)
+	} 
+) $.
+cexp $a class ^ $.
+df-exp $a |- 
+( ^ = 
+	{ <. <. x , y >. , z >. | 
+		( 
+			( 
+				( x e. CC ) /\ 
+				( y e. NN0 ) 
+			) /\ 
+			( z = 
+				if 
+				( 
+					( y = 0 ) , 
+					1 , 
+					( 
+						( x. seq1 ( NN X. { x } ) ) ` y 
+					) 
+				) 
+			)
+		) 
+	} 
+) $.
+csqr $a class sqr $.
+df-sqr $a |- 
+( sqr = 
+	{ <. x , y >. | 
+		( 
+			( 
+				( x e. RR ) /\ 
+				( 0 <_ x )
+			) /\ 
+			( y = sup 
+				( 
+					{ z e. RR | 
+						( 
+							( 0 <_ z ) /\ 
+							( ( z x. z ) <_ x ) 
+						) 
+					} , 
+					RR , 
+					< 
+				) 
+			)
+		)
+	} 
+) $.
+cre $a class Re $.
+cim $a class Im $.
+ccj $a class * $.
+cabs $a class abs $.
+df-re $a |- 
+( Re = 
+	{ <. x , y >. | 
+		( 
+			( x e. CC ) /\
+			( y = U. 
+				{ z e. RR | 
+					E. w e. RR 
+						( x = ( z + ( _i x. w ) ) ) 
+				} 
+			) 
+		) 
+	} 
+) $.
+df-im $a |- 
+( Im = 
+	{ <. x , y >. | 
+		( 
+			( x e. CC ) /\ 
+			( y = U. 
+				{ w e. RR | 
+					E. z e. RR 
+						( x = ( z + ( _i x. w ) ) )
+				} 
+			)
+		) 
+	} 
+) $.
+df-cj $a |- 
+( * = 
+	{ <. x , y >. | 
+		( 
+			( x e. CC ) /\ 
+			( y = 
+				( 
+					( Re ` x ) - 
+					( _i x. ( Im ` x ) ) 
+				) 
+			)
+		) 
+	} 
+) $.
+df-abs $a |- 
+( abs = 
+	{ <. x , y >. | 
+		(
+			( x e. CC ) /\ 
+			( y = 
+				( sqr ` 
+					( x x. ( * ` x ) ) 
+				) 
+			)
+		) 
+	} 
+) $.
+cfa $a class ! $.
+df-fac $a |- 
+( ! = 
+	( 
+		{ <. 0 , 1 >. } u.
+		( x. seq1 ( _I |` NN ) )
+	) 
+) $.
+cbc $a class _C $.
+df-bc $a |- 
+( _C = 
+	{ <. <. n , k >. , m >. | 
+		( 
+			( 
+				( n e. NN0 ) /\ 
+				( k e. ZZ ) 
+			) /\ 
+			( m = if 
+				( 
+					( 
+						( 0 <_ k ) /\ 
+						( k <_ n ) 
+					) , 
+					( 
+						( ! ` n ) / 
+						( 
+							( ! ` ( n - k ) ) x. ( ! ` k ) 
+						) 
+					) , 
+					0 
+				) 
+			)
+		) 
+	} 
+) $.
+cli $a class ~~> $.
+cliOLD $a class ~~>OLD $.
+df-climOLD $a |-
+( ~~>OLD = 
+	{ <. f , w >. | 
+		( 
+			( 
+				( f : NN --> CC ) /\ 
+				( w e. CC ) 
+			) /\ 
+			A. x e. RR 
+			( 
+				( 0 < x ) -> 
+				E. y e. NN A. z e. NN 
+				( 
+					( y <_ z ) -> 
+					( ( abs ` ( ( f ` z ) - w ) ) < x )
+				) 
+			) 
+		) 
+	} 
+) $.
+df-clim $a |- 
+( ~~> = 
+	{ <. f , y >. | 
+		( 
+			( y e. CC ) /\ 
+			A. x e. RR 
+				( 
+					( 0 < x ) -> 
+					E. j e. ZZ A. k e. ZZ 
+						( 
+							( j <_ k ) -> 
+							( 
+								( ( f ` k ) e. CC ) /\ 
+								( ( abs ` ( ( f ` k ) - y ) ) < x )
+							) 
+						) 
+				) 
+		) 
+	} 
+) $.
+csu $a class sum_ ( k e. A ) B $.
+df-sum $a |- 
+( sum_ ( k e. A ) B = 
+	( 
+		{ x | 
+			E. m E. n e. ( ZZ>= ` m ) 
+				( 
+					( A = ( m ... n ) ) /\ 
+					( x e. 
+						( 
+							( <. m , + >. seq 
+								( 
+									{ <. k , y >. | ( y = B ) } |` 
+									ZZ 
+								) 
+							) 
+							` n 
+						) 
+					)
+				) 
+		} u. 
+		U. 
+		{ x | 
+			E. m e. ZZ 
+				( 
+					( A = ( ZZ>= ` m ) ) /\ 
+					( 
+						( <. m , + >. seq 
+							( 
+								{ <. k , y >. | ( y = B ) } 
+								|` ZZ 
+							) 
+						) 
+						~~> x 
+					)
+				) 
+		} 
+	) 
+) $.
+cfsuOLD $a class sumOLD $.
+df-fsumOLD $a |- 
+( sumOLD = 
+	{ <. <. x , f >. , z >. | 
+		( z = if 
+			( 
+				( 
+					( 1st ` x ) <_ 
+					( 2nd ` x ) 
+				) , 
+				( 
+					( + seq0 
+						( f shift -u ( 1st ` x ) ) 
+					) ` 
+					( 
+						( 2nd ` x ) - ( 1st ` x ) 
+					) 
+				) , 
+				0 
+			) 
+		)
+	} 
+) $.
+csuOLD $a class sum1oo $.
+df-sumOLD $a |- 
+( sum1oo = 
+	{ <. x , y >. | 
+		( y = U. 
+			{ z | 
+				( ( + seq1 x ) ~~>OLD z ) 
+			} 
+		)
+	} 
+) $.
+ce $a class exp $.
+ceu $a class _e $.
+csin $a class sin $.
+ccos $a class cos $.
+cpi $a class pi $.
+df-ef $a |- 
+( exp = 
+	{ <. x , y >. | 
+		( 
+			( x e. CC ) /\ 
+			( y = sum_ ( k e. NN0 )
+				( ( x ^ k ) / ( ! ` k ) ) 
+			)
+		) 
+	} 
+) $.
+df-e $a |- ( _e = ( exp ` 1 ) ) $.
+df-sin $a |- 
+( sin = 
+	{ <. x , y >. | 
+		( 
+			( x e. CC ) /\ 
+			( y = 
+				( 
+					( 
+						( exp ` ( _i x. x ) ) - 
+						( exp ` ( -u _i x. x ) ) 
+					) / 
+					( 2 x. _i ) 
+				) 
+			)
+		) 
+	} 
+) $.
+df-cos $a |- 
+( cos = 
+	{ <. x , y >. | 
+		(
+			( x e. CC ) /\ 
+			( y = 
+				( 
+					( 
+						( exp ` ( _i x. x ) ) + 
+						( exp ` ( -u _i x. x ) ) 
+					) / 2 
+				) 
+			)
+		) 
+	} 
+) $.
+df-pi $a |- 
+( pi = sup 
+	( 
+		{ x e. RR | 
+			( ( 0 < x ) /\ ( ( sin ` x ) = 0 ) ) 
+		} , 
+		RR , 
+		`' < 
+	) 
+) $.
+
+df-cncf $a |- 
+( -cn-> = 
+{ <. <. a , b >. , s >. | 
+	( 
+		( ( a C_ CC ) /\ ( b C_ CC ) ) /\ 
+		( s = 
+			{ f | 
+				( 
+					( f : a --> b ) /\ 
+					A. x e. a A. y e. RR+ E. z e. RR+ A. w e. a 
+						( 
+							( ( abs ` ( x - w ) ) < z ) -> 
+							( ( abs ` ( ( f ` x ) - ( f ` w ) ) ) < y )
+						) 
+				) 
+			} 
+		)
+	) 
+} 
+) $.
+df-log $a |- 
+( log =
+  `' ( exp |` { x e. CC | ( ( Im ` x ) e. ( -u pi [,) pi ) ) } ) 
+) $.
+df-top $a |- 
+( Top = 
+	{ x | 
+		( A. y 
+			( ( y C_ x ) -> ( U. y e. x ) ) /\ 
+			A. y e. x A. z e. x 
+				( ( y i^i z ) e. x )
+		) 
+	} 
+) $.
+df-topsp $a |- 
+( TopSp = 
+	{ <. x , y >. | 
+		( ( y e. Top ) /\ ( x = U. y ) ) 
+	} 
+) $.
+df-bases $a |- 
+( Bases = 
+	{ x | 
+		A. y e. x A. z e. x 
+			( 
+				( y i^i z ) C_ 
+				U. ( x i^i ~P ( y i^i z ) )
+			)
+	} 
+) $.
+df-topgen $a |- 
+( topGen = 
+	{ <. x , y >. | 
+		( 
+			( x e. Bases ) /\ 
+			( y = 
+				{ z | 
+					( z C_ U. ( x i^i ~P z ) )
+				} 
+			) 
+		)
+	} 
+) $.
+df-cld $a |- 
+( Clsd = 
+	{ <. z , w >. | 
+		( 
+			( z e. Top ) /\ 
+			( w = 
+				{ x | 
+					( 
+						( x C_ U. z ) /\ 
+						( ( U. z \ x ) e. z )
+					) 
+				} 
+			) 
+		) 
+	} 
+) $.
+df-ntr $a |- 
+( int = 
+	{ <. z , w >. | 
+		( 
+			( z e. Top ) /\ 
+			( w = 
+				{ <. x , y >. | 
+					( 
+						( x C_ U. z ) /\ 
+						( y = U. { v e. z | ( v C_ x ) } )
+					) 
+				} 
+			)
+		) 
+	} 
+) $.
+df-cls $a |- 
+( cls = 
+	{ <. z , w >. | 
+		( 
+			( z e. Top ) /\ 
+			( w = 
+				{ <. x , y >. | 
+					( 
+						( x C_ U. z ) /\ 
+						( y = |^| 
+							{ v e. ( Clsd ` z ) | ( x C_ v )
+							} 
+						)
+					) 
+				} 
+			)
+		) 
+	} 
+) $.
+df-nei $a |- 
+( nei = 
+	{ <. j , y >. | 
+		( 
+			( j e. Top ) /\ 
+			( y = 
+				{ <. z , v >. | 
+					( 
+						( z C_ U. j ) /\ 
+						( v = 
+							{ w | 
+								( 
+									( w C_ U. j ) /\ 
+									E. g e. j 
+										(
+											( z C_ g ) /\ 
+											( g C_ w )
+										)
+								)  
+							} 
+						)
+					) 
+				} 
+			)
+		) 
+	} 
+) $.
+df-lp $a |- 
+( limPt = 
+	{ <. z , w >. | 
+		( 
+			( z e. Top ) /\ 
+			( w = 
+				{ <. x , y >. | 
+					( 
+						( x C_ U. z ) /\ 
+						( y = 
+							{ v | 
+								( v e. ( ( cls ` J ) ` ( x \ { v } ) ) 
+								)
+							} 
+						)
+					) 
+				} 
+			)
+		) 
+	} 
+) $.
+df-cn $a |- 
+( Cn = 
+	{ <. <. j , k >. , z >. | 
+		( 
+			( 
+				( j e. Top ) /\ ( k e. Top ) 
+			) /\ 
+			( z = 
+				{ f e. ( U. k ^m U. j ) | A. y e. k 
+					( ( `' f " y ) e. j )
+				} 
+			)
+		) 
+	} 
+) $.
+df-cnp $a |- 
+( CnP = 
+	{ <. <. j , k >. , z >. | 
+		( 
+			( 
+				( j e. Top ) /\ ( k e. Top )
+			) /\ 
+			( z = 
+				{ <. x , y >. | 
+					( 
+						( x e. U. j ) /\ 
+						( y = 
+							{ f e. ( U. k ^m U. j ) | A. w e. k 
+								( 
+									( ( f ` x ) e. w ) -> 
+									E. v e. j 
+										( 
+											( x e. v ) /\ 
+											( ( f " v ) C_ w )
+										) 
+								) 
+							} 
+						)
+					) 
+				} 
+			)
+		) 
+	} 
+) $.
+df-haus $a |- 
+( Haus = 
+	{ j e. Top | A. x e. U. j A. y e. U. j 
+		(
+			( x =/= y ) -> 
+			E. n e. j E. m e. j 
+				( 
+					( x e. n ) /\ 
+					( y e. m ) /\ 
+					( ( n i^i m ) = (/) )
+				) 
+		) 
+	} 
+) $.
+df-met $a |- 
+( Met = 
+	{ x | E. y 
+		( 
+			( x : ( y X. y ) --> RR ) /\ 
+			A. z e. y A. w e. y 
+				( 
+					( ( ( z x w ) = 0 ) <-> ( z = w ) ) /\ 
+					A. v e. y 
+						( ( z x w ) <_ ( ( v x z ) + ( v x w ) ) )
+				) 
+		) 
+	} 
+) $.
+df-ms $a |- 
+( MetSp = 
+	{ <. x , y >. | 
+		( ( y e. Met ) /\ ( x = dom dom y ) ) 
+	} 
+) $.
+df-bl $a |- 
+( ball = 
+	{ <. x , y >. | 
+		( 
+			( x e. Met ) /\ 
+			( y = 
+				{ <. <. z , w >. , v >. | 
+					( 
+						( ( z e. dom dom x ) /\ ( w e. RR ) ) /\ 
+						( 
+							( 0 < w ) /\ 
+							( v = 
+								{ u e. dom dom x | 
+									( ( z x u ) < w )
+								} 
+							) 
+						) 
+					) 
+				} 
+			)
+		) 
+	} 
+) $.
+df-opn $a |- 
+( Open = 
+	{ <. x , y >. | 
+		( 
+			( x e. Met ) /\ 
+			( y = 
+				{ z | 
+					( 
+						( z C_ dom dom x ) /\ 
+						A. w e. z E. v e. ran ( ball ` x ) 
+							( ( w e. v ) /\ ( v C_ z ) ) 
+					) 
+				} 
+			)
+		) 
+	} 
+) $.
+df-lm $a |- 
+( ~~>m = 
+	{ <. z , w >. | 
+		( 
+			( z e. Met ) /\ 
+			( w = 
+				{ <. f , y >. | 
+					( 
+						( f C_ ( CC X. dom dom z ) ) /\ 
+						( y e. dom dom z ) /\ 
+						A. x e. RR 
+							( 
+								( 0 < x ) -> E. j e. ZZ A. k e. ZZ 
+									( 
+										( j <_ k ) -> 
+										( 
+											( ( f ` k ) e. dom dom z ) /\ 
+											( ( ( f ` k ) D y ) < x )
+										) 
+									) 
+							) 
+					) 
+				} 
+			) 
+		) 
+	} 
+) $.
+df-cau $a |- 
+( Cau = 
+	{ <. z , w >. | 
+		( 
+			( z e. Met ) /\ 
+			( w = 
+				{ f | 
+					( 
+						( f C_ ( CC X. dom dom z ) ) /\ 
+						A. x e. RR 
+							( 
+								( 0 < x ) -> 
+								E. j e. ZZ A. k e. ZZ A. m e. ZZ 
+									( 
+										( ( j <_ k ) /\ ( j <_ m ) ) -> 
+										( 
+											( ( f ` k ) e. dom dom z ) /\ 
+											( ( f ` m ) e. dom dom z ) /\ 
+											( ( ( f ` k ) D ( f ` m ) ) < x )
+										) 
+									) 
+							) 
+					) 
+				} 
+			) 
+		) 
+	} 
+) $.
+df-cmet $a |- 
+( CMet = 
+	{ x e. Met | A. f e. ( Cau ` x ) E. y e. dom dom x ( f ( ~~>m ` x ) y )
+	} 
+) $.
+df-grp $a |- 
+( Grp = 
+	{ g | E. t 
+		( 
+			( g : ( t X. t ) --> t ) /\ 
+			A. x e. t A. y e. t A. z e. t 
+				( 
+					( ( x g y ) g z ) = 
+					( x g ( y g z ) ) 
+				) /\ 
+			E. u e. t A. x e. t 
+				( 
+					( ( u g x ) = x ) /\ 
+					E. y e. t 
+						( ( y g x ) = u )
+				) 
+		) 
+	} 
+) $.
+df-gid $a |- 
+( Id = 
+	{ <. g , y >. | 
+		( y = U. 
+			{ u e. ran g | A. x e. ran g 
+				( ( ( u g x ) = x ) /\ ( ( x g u ) = x ) ) 
+			} 
+		)
+	} 
+) $.
+df-ginv $a |- 
+( inv = 
+	{ <. g , f >. | 
+		( 
+			( g e. Grp ) /\ 
+			( f = 
+				{ <. x , y >. | 
+					( 
+						( x e. ran g ) /\ 
+						( y = U. 
+							{ z e. ran g | 
+								( ( z g x ) = ( Id ` g ) )
+							} 
+						)
+					) 
+				} 
+			)
+		) 
+	} 
+) $.
+df-gdiv $a |- 
+( /g = 
+	{ <. g , f >. | 
+		( 
+			( g e. Grp ) /\ 
+			( f = 
+				{ <. <. x , y >. , z >. | 
+					( 
+						( 
+							( x e. ran g ) /\ 
+							( y e. ran g ) 
+						) /\ 
+						( z = 
+							( x g ( ( inv ` g ) ` y ) ) 
+						) 
+					) 
+				} 
+			)
+		) 
+	} 
+) $.
+df-subg $a |- 
+( SubGrp = 
+	{ <. g , s >. | 
+		( 
+			( g e. Grp ) /\ 
+			( s = 
+				{ h e. Grp | 
+					( h C_ g )
+				} 
+			)
+		) 
+	} 
+) $.
+df-abl $a |- 
+( Abel = 
+   { g e. Grp | A. x e. ran g A. y e. ran g 
+        ( 
+          ( x g y ) =
+          ( y g x ) 
+        ) 
+   } 
+) $.
+
+df-ring $a |- 
+( Ring = 
+	{ <. g , h >. | 
+		( 
+			( 
+				( g e. Abel ) /\ ( h : ( ran g X. ran g ) --> ran g )
+			) /\ 
+			( A. x e. ran g A. y e. ran g A. z e. ran g 
+				( 
+					( 
+						( ( x h y ) h z ) = ( x h ( y h z ) )
+					) /\ 
+					( 
+						( x h ( y g z ) ) = ( ( x h y ) g ( x h z ) ) 
+					) /\ 
+					( 
+						( ( x g y ) h z ) = ( ( x h z ) g ( y h z ) )
+					) 
+				) /\ 
+				E. x e. ran g A. y e. ran g 
+					( 
+						( ( y h x ) = y ) /\ ( ( x h y ) = y )
+					) 
+			) 
+		) 
+	} 
+) $.
+df-vc $a |- 
+( CVec = 
+	{ <. g , s >. | 
+		( 
+			( g e. Abel ) /\ 
+			( s :  ( CC X. ran g ) --> ran g ) /\ 
+			A. x e. ran g 
+				( 
+					( ( 1 s x ) = x ) /\ 
+					A. y e. CC 
+						( A. z e. ran g 
+							( 
+								( y s ( x g z ) ) = ( ( y s x ) g ( y s z ) ) 
+							) /\ 
+							A. z e. CC 
+								( 
+									( 
+										( ( y + z ) s x ) = ( ( y s x ) g ( z s x ) ) 
+									) /\ 
+									( 
+										( ( y x. z ) s x ) = ( y s ( z s x ) ) 
+									)
+								) 
+						) 
+				) 
+		) 
+	} 
+) $.
+df-nv $a |- 
+( NrmCVec = 
+	{ <. <. g , s >. , n >. | 
+		( 
+			( <. g , s >. e. CVec ) /\ 
+			( n : ran g --> RR ) /\ 
+			A. x e. ran g 
+				( 
+					( 
+						( ( n ` x ) = 0 ) -> ( x = ( Id ` g ) )
+					) /\ 
+					A. y e. CC 
+						( ( n ` ( y s x ) ) = ( ( abs ` y ) x. ( n ` x ) ) )
+					/\ 
+					A. y e. ran g 
+						( ( n ` ( x g y ) ) <_ ( ( n ` x ) + ( n ` y ) ) )
+				) 
+		) 
+	} 
+) $.
+df-va $a |- ( +v = ( 1st o. 1st ) ) $.
+df-ba $a |- ( BaseSet = { <. x , y >. | ( y = ran ( +v ` x ) ) } ) $.
+df-sm $a |- ( .s = ( 2nd o. 1st ) ) $.
+df-0v $a |- ( 0v = ( Id o. +v ) ) $.
+df-vs $a |- ( -v = ( /g o. +v ) ) $.
+df-nm $a |- ( norm = 2nd ) $.
+df-ims $a |- 
+( IndMet = 
+	{ <. u , d >. | 
+		( 
+			( u e. NrmCVec ) /\ 
+			( d = ( ( norm ` u ) o. ( -v ` u ) ) )
+		) 
+	} 
+) $.
+df-ip $a |- 
+( .i = 
+	{ <. <. w , n >. , p >. | 
+		( 
+			( <. w , n >. e. NrmCVec ) /\ 
+			( p = 
+				{ <. <. x , y >. , z >. | 
+					( 
+						( 
+							( x e. dom n ) /\ ( y e. dom n )
+						) /\ 
+						( z = 
+							( sum_ 
+								( k e. ( 1 ... 4 ) )
+								( 
+									( _i ^ k ) x. 
+									( 
+										( n ` 
+											( x ( 1st ` w ) 
+												( ( _i ^ k ) ( 2nd ` w ) y ) 
+											) 
+										) ^ 2 
+									) 
+								) / 4 
+							) 
+						)
+					) 
+				} 
+			)
+		) 
+	} 
+) $.
+df-ssp $a |- 
+( SubSp = 
+	{ <. u , s >. | 
+		( 
+			( u e. NrmCVec ) /\ 
+			( s = 
+				{ w e. NrmCVec | 
+					( 
+						( ( +v ` w ) C_ ( +v ` u ) ) /\ 
+						( ( .s ` w ) C_ ( .s ` u ) ) /\ 
+						( ( norm ` w ) C_ ( norm ` u ) ) 
+					) 
+				} 
+			) 
+		) 
+	} 
+) $.
+df-lno $a |- 
+( LnOp = 
+	{ <. <. u , w >. , o >. | 
+		( 
+			( ( u e. NrmCVec ) /\ ( w e. NrmCVec ) ) /\ 
+			( o = 
+				{ t | 
+					( 
+						( t : ( BaseSet ` u ) --> ( BaseSet ` w ) ) /\ 
+						A. x e. ( BaseSet ` u ) A. y e. CC A. z e. ( BaseSet ` u ) 
+							( 
+								( t ` ( x ( +v ` u ) ( y ( .s ` u ) z ) ) ) = ( ( t ` x ) ( +v ` w ) ( y ( .s ` w ) ( t ` z ) ) ) 
+							)
+					) 
+				} 
+			)
+		) 
+	} 
+) $.
+df-nmo $a |- 
+( normOp = 
+	{ <. <. u , w >. , n >. | 
+		( 
+			( ( u e. NrmCVec ) /\ ( w e. NrmCVec ) ) /\ 
+			( n = 
+				{ <. t , y >. | 
+					( 
+						( t : ( BaseSet ` u ) --> ( BaseSet ` w ) ) /\ 
+						( y = sup 
+							( 
+								{ x | E. z e. ( BaseSet ` u ) 
+									( 
+										( ( ( norm ` u ) ` z ) <_ 1 ) /\ 
+										( x = ( ( norm ` w ) ` ( t ` z ) ) )
+									) 
+								} , 
+								RR* , 
+								< 
+							) 
+						)
+					) 
+				} 
+			)
+		) 
+	} 
+) $.
+df-blo $a |- 
+( BLnOp = 
+	{ <. <. u , w >. , o >. | 
+		( 
+			( ( u e. NrmCVec ) /\ ( w e. NrmCVec ) ) /\ 
+			( o = 
+				{ t e. ( u LnOp w ) | 
+						( ( ( u normOp w ) ` t ) < +oo )
+				} 
+			)
+		) 
+	} 
+) $.
+df-0o $a |- 
+( 0op = 
+	{ <. <. u , w >. , o >. | 
+		( 
+			( ( u e. NrmCVec ) /\ ( w e. NrmCVec ) ) /\ 
+			( o = 
+				( ( BaseSet ` u ) X. { ( 0v ` w ) } ) 
+			)
+		) 
+	} 
+) $.
+df-aj $a |- 
+( adj = 
+	{ <. <. u , w >. , a >. | 
+		( 
+			( ( u e. NrmCVec ) /\ ( w e. NrmCVec ) ) /\ 
+			( a = 
+				{ <. t , s >. | 
+					( 
+						( t : ( BaseSet ` u ) --> ( BaseSet ` w ) ) /\ 
+						( s : ( BaseSet ` w ) --> ( BaseSet ` u ) ) /\ 
+						A. x e. ( BaseSet ` u ) A. y e. ( BaseSet ` w ) 
+							( 
+								( ( t ` x ) ( .i ` w ) y ) = ( x ( .i ` u ) ( s ` y ) ) 
+							)
+					) 
+				} 
+			)
+		) 
+	} 
+) $.
+df-hmo $a |- 
+( HmOp = 
+	{ <. u , o >. | 
+		( 
+			( u e. NrmCVec ) /\ 
+			( o = 
+				{ t e. dom ( u adj u ) | 
+					( ( ( u adj u ) ` t ) = t )
+				} 
+			)
+		) 
+	} 
+) $.
+df-ph $a |- 
+( CPreHil = 
+	( NrmCVec i^i 
+		{ <. <. g , s >. , n >. | A. x e. ran g A. y e. ran g 
+			( 
+				( ( ( n ` ( x g y ) ) ^ 2 ) + ( ( n ` ( x g ( -u 1 s y ) ) ) ^ 2 ) ) = 
+				( 2 x. ( ( ( n ` x ) ^ 2 ) + ( ( n ` y ) ^ 2 ) ) ) 
+			)
+		} 
+	) 
+) $.
+df-bn $a |- 
+( CBan = 
+	{ u e. NrmCVec | 
+		( ( IndMet ` u ) e. CMet )
+	} 
+) $.
+df-hl $a |- ( CHil = ( CBan i^i CPreHil ) ) $.
+df-ghom $a |- 
+( GrpHom = 
+	{ <. <. g , h >. , s >. | 
+		( 
+			( ( g e. Grp ) /\ ( h e. Grp ) ) /\ 
+			( s = 
+				{ f | 
+					( 
+						( f : ran g --> ran h ) /\ 
+						A. x e. ran g A. y e. ran g 
+							( 
+								( ( f ` x ) h ( f ` y ) ) = ( f ` ( x g y ) ) 
+							)
+					) 
+				} 
+			)
+		) 
+	} 
+) $.
+df-giso $a |- 
+( GrpIso = 
+	{ <. <. g , h >. , s >. | 
+		( 
+			( ( g e. Grp ) /\ ( h e. Grp ) ) /\ 
+			( s = 
+				{ f e. ( g GrpHom h ) | ( f : ran g -1-1-onto-> ran h )
+				} 
+			)
+		) 
+	} 
+) $.
+df-symgrp $a |- 
+( SymGrp = 
+	{ <. x , y >. | 
+		( y = 
+			{ <. <. f , g >. , h >. | 
+				( 
+					( f : x -1-1-onto-> x ) /\ 
+					( g : x -1-1-onto-> x ) /\ 
+					( h = ( f o. g ) )
+				) 
+			} 
+		)
+	} 
+) $.
+df-mpt $a |- 
+( 
+	( x e. A |-> B ) = 
+	{ <. x , y >. | 
+		( ( x e. A ) /\ ( y = B ) ) 
+	} 
+) $.
+df-mpt2 $a |- 
+( 
+	( x e. A , y e. B |-> C ) = 
+	{ <. <. x , y >. , z >. | 
+		( 
+			( 
+				( x e. A ) /\ 
+				( y e. B ) 
+			) /\ 
+			( z = C )
+		) 
+	} 
+) $.
+df-EucTop $a |- 
+( EucTop = 
+	{ x | 
+		( 
+			( x C_ RR ) /\ 
+			A. y e. x E. a e. RR E. b e. RR 
+				( 
+					( y e. ( a (,) b ) ) /\ 
+					( ( a (,) b ) C_ x )
+				) 
+		) 
+	} 
+) $.
+df-homeo $a |- 
+( Homeo = 
+	{ <. <. j , k >. , z >. | 
+		( 
+			( ( j e. Top ) /\ ( k e. Top ) ) /\  
+			( z = 
+				{ f | 
+					(
+						( f : U. j -1-1-onto-> U. k ) /\ 
+						A. x e. j ( ( f " x ) e. k ) /\ 
+						A. x e. k ( ( `' f " x ) e. j )
+					) 
+				} 
+			)
+		) 
+	} 
+) $.
+df-hmph $a |- 
+( ~= = 
+	{ <. x , y >. | 
+		( 
+			( x e. Top ) /\ 
+			( y e. Top ) /\ 
+			E. f ( f e. ( x Homeo y ) )
+		) 
+	} 
+) $.
+df-subsp $a |- 
+( subSp = 
+	{ <. <. x , y >. , z >. | 
+		( 
+			( y e. Top ) /\ 
+			( z = 
+				{ u | E. v e. y 
+					( u = ( v i^i x ) )
+				} 
+			)
+		) 
+	} 
+) $.
+df-fil $a |- 
+( Fil = 
+	{ f | 
+		( 
+			( 
+				-. ( (/) e. f ) /\ 
+				( U. f e. f )
+			) /\ 
+			A. x A. y 
+				( 
+					( 
+						( x e. f ) /\ 
+						( y C_ U. f ) /\ 
+						( x C_ y )
+					) -> 
+					( y e. f )
+				) /\ 
+			A. x e. f A. y e. f 
+				( ( x i^i y ) e. f )
+		) 
+	} 
+) $.
+df-flim $a |- 
+( fLim = 
+	{ <. j , x >. | 
+		( 
+			( j e. Top ) /\ 
+			( x = 
+				{ <. f , y >. | 
+					( 
+						( f e. Fil ) /\ 
+						( U. f = U. j ) /\ 
+						( ( ( nei ` j ) ` y ) C_ f )
+					) 
+				} 
+			)
+		) 
+	} 
+) $.
+df-t0 $a |- 
+( Kol = 
+	{ x e. Top | A. a e. U. x A. b e. U. x E. u e. x 
+		( 
+			( 
+				( a e. u ) /\ 
+				-. ( b e. u ) 
+			) \/ 
+			( 
+				-. ( a e. u ) /\ 
+				( b e. u ) 
+			) 
+		) 
+	} 
+) $.
+df-t1 $a |- 
+( Fre = 
+	{ x e. Top | A. a e. U. x 
+		( { a } e. ( Clsd ` x ) )
+	} 
+) $.
+df-con $a |- 
+( Con = 
+	{ j e. Top | 
+		( 
+			( j i^i ( Clsd ` j ) ) = 
+			{ (/) , U. j } 
+		)
+	} 
+) $.
+df-mgra $a |- 
+( Dgra = 
+	{ <. <. d , c >. , u >. | 
+		( 
+			( d : dom d --> u ) /\ 
+			( c : dom d --> u ) 
+		) 
+	} 
+) $.
+df-alg $a |- 
+( Alg = 
+	{ x | E. d E. c E. j E. r 
+		( 
+			( x = <. <. d , c >. , <. j , r >. >. ) /\ 
+			( 
+				( d : dom d --> dom j ) /\ 
+				( c : dom d --> dom j ) /\ 
+				( j : dom j --> dom d )
+			) /\ 
+			( 
+				Fun r /\ 
+				( dom r C_ ( dom d X. dom d ) ) /\ 
+				( ran r C_ dom d )
+			) 
+		) 
+	} 
+) $.
+df-doma $a |- ( dom_ = ( 1st o. 1st ) ) $.
+df-coda $a |- ( cod_ = ( 2nd o. 1st ) ) $.
+df-ida $a |- ( id_ = ( 1st o. 2nd ) ) $.
+df-cmpa $a |- ( o_ = ( 2nd o. 2nd ) ) $.
+df-ded $a |- 
+( Ded = 
+	{ x | E. d E. c E. j E. r 
+		( 
+			( x = <. <. d , c >. , <. j , r >. >. ) /\ 
+			( 
+				( 
+					( <. <. d , c >. , <. j , r >. >. e. Alg ) /\ 
+					A. a e. dom j 
+						( 
+							( ( d ` ( j ` a ) ) = a ) /\ 
+							( ( c ` ( j ` a ) ) = a )
+						) /\ 
+					A. f e. dom d A. g e. dom d 
+						( 
+							( <. g , f >. e. dom r ) <-> 
+							( ( d ` g ) = ( c ` f ) )
+						) 
+				) /\ 
+				( A. f e. dom d A. g e. dom d 
+					( 
+						( 
+							( d ` g ) = ( c ` f ) 
+						) -> 
+						( 
+							( d ` ( g r f ) ) = ( d ` f ) 
+						)
+					) /\ 
+					A. f e. dom d A. g e. dom d 
+						( 
+							( 
+								( d ` g ) = ( c ` f ) 
+							) -> 
+							(
+								( c ` ( g r f ) ) = ( c ` g ) 
+							)
+						) 
+				) 
+			) 
+		)  
+	} 
+) $.
+df-cat $a |-
+( Cat = 
+	{ x | E. d E. c E. j E. r 
+		( 
+			( x = <. <. d , c >. , <. j , r >. >. ) /\ 
+			( 
+				( 
+					( <. <. d , c >. , <. j , r >. >. e. Ded ) /\ 
+					A. f e. dom d A. g e. dom d A. h e. dom d 
+						( 
+							( 
+								( ( d ` h ) = ( c ` g ) ) /\ 
+								( ( d ` g ) = ( c ` f ) )
+							) -> 
+							( 
+								( h r ( g r f ) ) = ( ( h r g ) r f ) 
+							)
+						) 
+				) /\ 
+				( A. a e. dom j A. f e. dom d 
+					( 
+						( ( c ` f ) = a ) -> ( ( ( j ` a ) r f ) = f )
+					) /\ 
+					A. a e. dom j A. f e. dom d 
+						( 
+							( ( d ` f ) = a ) -> ( ( f r ( j ` a ) ) = f )
+						) 
+				) 
+			) 
+		) 
+	} 
+) $.
+df-hom $a |- 
+( hom = 
+	{ <. x , y >. | 
+		( 
+			( x e. Cat ) /\ 
+			( y = 
+				{ <. <. a , b >. , c >. | 
+					( 
+						( a e. dom ( id_ ` x ) ) /\ 
+						( b e. dom ( id_ ` x ) ) /\ 
+						( c = 
+							{ f | 
+								( 
+									( f e. dom ( dom_ ` x ) ) /\ 
+									( ( ( dom_ ` x ) ` f ) = a ) /\ 
+									( ( ( cod_ ` x ) ` f ) = b )
+								) 
+							} 
+						)
+					) 
+				} 
+			)
+		) 
+	} 
+) $.
+df-mon $a |- 
+( Monic = 
+	{ <. x , y >. | 
+		( 
+			( x e. Cat ) /\ 
+			( y = 
+				{ f | 
+					( 
+						( f e. dom ( dom_ ` x ) ) /\ 
+						A. g e. dom ( dom_ ` x ) A. h e. dom ( dom_ ` x ) 
+							( 
+								( 
+									( ( ( dom_ ` x ) ` g ) = ( ( dom_ ` x ) ` h ) ) /\ 
+									( ( ( cod_ ` x ) ` g ) = ( ( dom_ ` x ) ` f ) ) /\ 
+									( ( ( cod_ ` x ) ` h ) = ( ( dom_ ` x ) ` f ) ) 
+								) -> 
+								( 
+									( 
+										( f ( o_ ` x ) g ) = ( f ( o_ ` x ) h ) 
+									) -> 
+									( g = h )
+								) 
+							) 
+					) 
+				} 
+			) 
+		) 
+	} 
+) $.
+df-epi $a |- 
+( Epi = 
+{ <. x , y >. | 
+  ( 
+      ( x e. Cat ) /\ 
+      ( y = 
+	  { f | 
+	      ( 
+		( f e. dom ( dom_ ` x ) ) /\
+		A. g e. dom ( dom_ ` x ) A. h e. dom ( dom_ ` x )
+		( 
+		    ( 
+			( ( ( cod_ ` x ) ` g ) = ( ( cod_ ` x ) ` h ) ) /\ 
+			( ( ( dom_ ` x ) ` g ) = ( ( cod_ ` x ) ` f ) ) /\ 
+			( ( ( dom_ ` x ) ` h ) = ( ( cod_ ` x ) ` f ) )
+		    ) ->
+		    ( 
+			( ( g ( o_ ` x ) f ) = ( h ( o_ ` x ) f ) 
+			) -> 
+			( g = h ) 
+		    ) 
+		) 
+	      ) 
+	  } 
+      )
+  ) 
+} 
+) $.
+df-func $a |- 
+( Func = 
+	{ <. <. t , u >. , v >. | 
+		( 
+			( ( t e. Cat ) /\ ( u e. Cat ) ) /\ 
+			( v = 
+				{ f | 
+					( 
+						( f : dom ( dom_ ` t ) --> dom ( dom_ ` u ) ) /\ 
+						( A. o e. dom ( id_ ` t ) E. p e. dom ( id_ ` u ) 
+							( 
+								( f ` ( ( id_ ` t ) ` o ) ) = ( ( id_ ` u ) ` p ) 
+							) /\ 
+							( A. m e. dom ( dom_ ` t ) 
+								( 
+									( f ` ( ( id_ ` t ) ` ( ( dom_ ` t ) ` m ) ) ) = 
+									( ( id_ ` u ) ` ( ( dom_ ` u ) ` ( f ` m ) ) ) 
+								) /\ 
+								A. m e. dom ( dom_ ` t ) 
+								( 
+									( f ` ( ( id_ ` t ) ` ( ( cod_ ` t ) ` m ) ) ) = 
+									( ( id_ ` u ) ` ( ( cod_ ` u ) ` ( f ` m ) ) ) 
+								)
+							) /\ 
+							A. m e. dom ( dom_ ` t ) A. n e. dom ( dom_ ` t ) 
+								( 
+									( 
+										( ( cod_ ` t ) ` n ) = 
+										( ( dom_ ` t ) ` m ) 
+									) -> 
+									( 
+										( f ` ( m ( o_ ` t ) n ) ) = 
+										( ( f ` m ) ( o_ ` u ) ( f ` n ) ) 
+									)
+								) 
+						) 
+					) 
+				} 
+			)
+		) 
+	} 
+) $.
+df-subcl $a |- 
+( Subcl = 
+	{ x | A. y A. z 
+		( 
+			( 
+				( y e. x ) /\ 
+				( z C_ y ) 
+			) -> 
+			( z e. x )
+		) 
+	} 
+) $.
+df-hgra $a |- 
+( HypGrph = 
+	{ <. a , b >. | 
+		( 
+			( ( a i^i b ) = (/) ) /\ 
+			( b C_ ( ~P a \ { (/) } ) )
+		) 
+	} 
+) $.
+df-pgra $a |- 
+( PsGrph = 
+	{ <. a , b >. | 
+		( 
+			( ( a i^i b ) = (/) ) /\ 
+			( b C_ ( a u. ( a ^m 2o ) ) )
+		) 
+	} 
+) $.
+df-sgra $a |- 
+( SmpGrph = 
+	{ <. a , b >. | 
+		( 
+			( ( a i^i b ) = (/) ) /\ 
+			( b C_ ( a ^m 2o ) )
+		) 
+	} 
+) $.
+
+
+$( ************************ $)
+
+ax-hilex $a |- ( ~H e. _V ) $.
+ax-hfvadd $a |- ( +h : ( ~H X. ~H ) --> ~H ) $.
+ax-hvaddcl $a |- 
+( 
+	( 
+		( A e. ~H ) /\ 
+		( B e. ~H ) 
+	) -> 
+	( 
+		( A +h B ) e. ~H 
+	)
+) $.
+ax-hvcom $a |- 
+( 
+	( 
+		( A e. ~H ) /\ ( B e. ~H ) 
+	) -> 
+	( 
+		( A +h B ) = ( B +h A ) 
+	)
+) $.
+ax-hvass $a |- 
+( 
+	( 
+		( A e. ~H ) /\ 
+		( B e. ~H ) /\ 
+		( C e. ~H ) 
+	) -> 
+	( 
+		( ( A +h B ) +h C ) = ( A +h ( B +h C ) ) 
+	)
+) $.
+ax-hv0cl $a |- ( 0h e. ~H ) $.
+ax-hvaddid $a |- 
+( 
+	( A e. ~H ) -> ( ( A +h 0h ) = A )
+) $.
+ax-hfvmul $a |- ( .h : ( CC X. ~H ) --> ~H ) $.
+ax-hvmulcl $a |- 
+( 
+	( 
+		( A e. CC ) /\ 
+		( B e. ~H )
+	) -> 
+	( 
+		( A .h B ) e. ~H 
+	)
+) $.
+ax-hvmulid $a |- 
+( 
+	( A e. ~H ) -> 
+	( ( 1 .h A ) = A )
+) $.
+ax-hvmulass $a |- 
+( 
+	( 
+		( A e. CC ) /\ 
+		( B e. CC ) /\ 
+		( C e. ~H ) 
+	) -> 
+	(
+		( ( A x. B ) .h C ) = ( A .h ( B .h C ) ) 
+	)
+) $.
+ax-hvdistr1 $a |- 
+( 
+	( 
+		( A e. CC ) /\ 
+		( B e. ~H ) /\ 
+		( C e. ~H ) 
+	) -> 
+	( 
+		( A .h ( B +h C ) ) = ( ( A .h B ) +h ( A .h C ) )
+	) 
+) $.
+ax-hvdistr2 $a |- 
+( 
+	( 
+		( A e. CC ) /\ 
+		( B e. CC ) /\ 
+		( C e. ~H )
+	) -> 
+	( 
+		( ( A + B ) .h C ) = ( ( A .h C ) +h ( B .h C ) ) 
+	)
+) $.
+ax-hvmul0 $a |- 
+( 
+	( A e. ~H ) -> ( ( 0 .h A ) = 0h )
+) $.
+df-hvsub $a |- 
+( -h = 
+	{ <. <. x , y >. , z >. | 
+		( 
+			( 
+				( x e. ~H ) /\ 
+				( y e. ~H )
+			) /\ 
+			( z = ( x +h ( -u 1 .h y ) ) )
+		) 
+	} 
+) $.
+ax-hicl $a |- 
+( 
+	( 
+		( A e. ~H ) /\ 
+		( B e. ~H ) 
+	) -> 
+	( 
+		( A .ih B ) e. CC 
+	)
+) $.
+ax-his1 $a |- 
+( 
+	( 
+		( A e. ~H ) /\ 
+		( B e. ~H ) 
+	) -> 
+	( 
+		( A .ih B ) = ( * ` ( B .ih A ) ) 
+	)
+) $.
+ax-his2 $a |- 
+( 
+	( 
+		( A e. ~H ) /\ 
+		( B e. ~H ) /\
+		( C e. ~H ) 
+	) -> 
+	( 
+		( ( A +h B ) .ih C ) = ( ( A .ih C ) + ( B .ih C ) ) 
+	)
+) $.
+ax-his3 $a |- 
+( 
+	( 
+		( A e. CC ) /\ 
+		( B e. ~H ) /\ 
+		( C e. ~H ) 
+	) -> 
+	( 
+		( ( A .h B ) .ih C ) = ( A x. ( B .ih C ) )
+	) 
+) $.
+ax-his4 $a |- 
+( 
+	( 
+		( A e. ~H ) /\ 
+		( A =/= 0h ) 
+	) -> 
+	( 0 < ( A .ih A ) )
+) $.
+df-hnorm $a |- 
+( normh = 
+{ <. x , y >. | 
+    ( ( x e. dom dom .ih ) /\ ( y = ( sqr ` ( x .ih x ) ) ) )
+} 
+) $.
+df-hcau $a |- 
+( Cauchy = 
+	{ f | 
+		( 
+			 ( f : NN --> ~H ) /\ 
+			A. x e. RR 
+				( 
+					( 0 < x ) -> 
+					E. y e. NN A. z e. NN A. w e. NN 
+						( 
+							( 
+								( y <_ z ) /\ 
+								( y <_ w ) 
+							) -> 
+							( 
+								( normh ` ( ( f ` z ) -h ( f ` w ) ) ) < x 
+							)
+						) 
+				) 
+		) 
+	} 
+) $.
+df-hlim $a |- 
+( ~~>v = 
+	{ <. f , w >. | 
+		( 
+			( 
+				( f : NN --> ~H ) /\ 
+				( w e. ~H )
+			) /\ 
+			A. x e. RR 
+				( 
+					( 0 < x ) -> 
+					E. y e. NN A. z e. NN 
+						( 
+							( y <_ z ) -> 
+							( 
+								( normh ` ( ( f ` z ) -h w ) ) < x 
+							)
+						) 
+				) 
+		) 
+	} 
+) $.
+ax-hcompl $a |- 
+( 
+	( F e. Cauchy ) -> 
+	E. x e. ~H ( F ~~>v x ) 
+) $.
+df-sh $a |- 
+( SH = 
+	{ h | 
+		( 
+			( 
+				( h C_ ~H ) /\ ( 0h e. h )
+			) /\ 
+			( 
+				A. x e. h A. y e. h 
+					( ( x +h y ) e. h )
+				/\ 
+				A. x e. CC A. y e. h 
+					( ( x .h y ) e. h )
+			) 
+		) 
+	} 
+) $.
+df-ch $a |- 
+( CH = 
+	{ h | 
+		( 
+			( h e. SH ) /\ 
+			A. f A. x 
+				( 
+					( 
+						( f : NN --> h ) /\ 
+						( f ~~>v x )
+					) -> 
+					( x e. h )
+				) 
+		) 
+	} 
+) $.
+df-oc $a |- 
+( _|_ = 
+	{ <. x , y >. | 
+		( 
+			( x C_ ~H ) /\ 
+			( y = 
+				{ z e. ~H | 
+					A. w e. x ( ( z .ih w ) = 0 )
+				} 
+			) 
+		) 
+	} 
+) $.
+df-ch0 $a |- ( 0H = { 0h } ) $.
+df-pj $a |- 
+( proj = 
+	{ <. h , f >. | 
+		( 
+			( h e. CH ) /\
+			( f = 
+				{ <. x , y >. | 
+					( 
+						( x e. ~H ) /\
+						( y = U. 
+							{ z e. h | E. w e. ( _|_ ` h )
+								(  x = ( z +h w ) )
+							} 
+						)
+					) 
+				} 
+			)
+		) 
+	}
+) $.
+df-shsum $a |- 
+( +H = 
+	{ <. <. x , y >. , z >. | 
+		( 
+			( 
+				( x e. SH ) /\ 
+				( y e. SH ) 
+			) /\
+			( z = 
+				{ w e. ~H | E. v e. x E. u e. y 
+					( w = ( v +h u ) ) 
+				} 
+			)
+		) 
+	} 
+) $.
+df-span $a |- 
+( span = 
+	{ <. x , y >. | 
+		(
+			( x C_ ~H ) /\
+			( y = |^| 
+				{ z e. SH | 
+					( x C_ z )
+				} 
+			)
+		) 
+	} 
+) $.
+df-chj $a |- 
+( vH = 
+	{ <. <. x , y >. , z >. | 
+		( 
+			( 
+				( x C_ ~H ) /\ 
+				( y C_ ~H )
+			) /\ 
+			 ( z = 
+			 	( _|_ ` ( _|_ ` ( x u. y ) ) ) 
+			 )
+		) 
+	} 
+) $.
+df-chsup $a |- 
+( \/H = 
+	{ <. x , y >. | 
+		( 
+			( x C_ ~P ~H )
+			/\ 
+			( y = ( _|_ ` ( _|_ ` U. x ) ) )
+		) 
+	} 
+) $.
+df-hosum $a |- 
+( +op = 
+	{ <. <. f , g >. , h >. | 
+		( 
+			( 
+				( f : ~H --> ~H ) /\ 
+				( g : ~H --> ~H )
+			) /\ 
+			( h = 
+				{ <. x , y >. | 
+					( 
+						( x e. ~H ) /\ 
+						( y = ( ( f ` x ) +h ( g ` x ) ) )
+					) 
+				} 
+			)
+		) 
+	} 
+) $.
+df-homul $a |- 
+( .op = 
+	{ <. <. f , g >. , h >. | 
+		( 
+			( 
+				( f e. CC ) /\ 
+				( g : ~H --> ~H )
+			) /\ 
+			( h = 
+				{ <. x , y >. | 
+					( 
+						( x e. ~H ) /\ 
+						( y = ( f .h ( g ` x ) ) )
+					) 
+				} 
+			)
+		) 
+	} 
+) $.
+df-hodif $a |- 
+( -op = 
+	{ <. <. f , g >. , h >. | 
+		( 
+			(
+				( f : ~H --> ~H ) /\ 
+				( g : ~H --> ~H )
+			) /\ 
+			( h = 
+				{ <. x , y >. | 
+					( 
+						( x e. ~H ) /\ 
+						( y = ( ( f ` x ) -h ( g ` x ) ) )
+					) 
+				} 
+			)
+		) 
+	} 
+) $.
+df-hfsum $a |- 
+( +fn = 
+{ <. <. f , g >. , h >. | 
+	( 
+		( ( f : ~H --> CC ) /\ ( g : ~H --> CC ) ) /\
+		( h = 
+			{ <. x , y >. | 
+				( 
+					( x e. ~H ) /\ ( y = ( ( f ` x ) + ( g ` x ) ) )
+				) 
+			}
+		 ) 
+	) 
+} 
+) $.
+ df-hfmul $a |-
+( .fn = 
+{ <. <. f , g >. , h >. | 
+	( 
+		( ( f e. CC ) /\ ( g : ~H --> CC ) ) /\
+		( h = 
+			{ <. x , y >. | 
+				(
+					( x e. ~H ) /\
+					( y = ( f x. ( g ` x ) ) ) 
+				) 
+			} 
+		)
+	) 
+} 
+) $.
+df-cm $a |- 
+( C_H = 
+	{ <. x , y >. | 
+		( 
+			( 
+				( x e. CH ) /\ 
+				( y e. CH )
+			) /\ 
+			( x = 
+				( 
+					( x i^i y ) vH 
+					( x i^i ( _|_ ` y ) ) 
+				) 
+			)
+		) 
+	} 
+) $.
+df-nmop $a |- 
+( normop = 
+	{ <. t , y >. | 
+		( 
+			( t : ~H --> ~H ) /\
+			( y = sup 
+				( 
+					{ x | E. z e. ~H 
+						( 
+							( ( normh ` z ) <_ 1 ) /\ 
+							( x = ( normh ` ( t ` z ) ) )
+						) 
+					} , 
+					RR* , 
+					< 
+				) 
+			) 
+		) 
+	} 
+) $.
+df-cnop $a |- 
+( ConOp = 
+	{ t | 
+		(
+			( t : ~H --> ~H ) /\ 
+			A. x e. ~H A. y e. RR 
+				( 
+					( 0 < y ) -> 
+					E. z e. RR 
+						(
+							( 0 < z ) /\ 
+							A. w e. ~H 
+								( 
+									( 
+										( normh ` ( w -h x ) ) < z 
+									) -> 
+									( 
+										( normh ` ( ( t ` w ) -h ( t ` x ) ) ) < y 
+									)
+								) 
+						) 
+				) 
+		) 
+	} 
+) $.
+df-lnop $a |- 
+( LinOp = 
+	{ t | 
+		( 
+			( t : ~H --> ~H ) /\ 
+			A. x e. CC A. y e. ~H A. z e. ~H 
+				( 
+					( t ` ( ( x .h y ) +h z ) ) = 
+					( ( x .h ( t ` y ) ) +h ( t ` z ) ) 
+				)
+		) 
+	} 
+) $.
+df-bdop $a |- 
+( BndLinOp = 
+	( LinOp i^i 
+		{ t | 
+			(
+				( t : ~H --> ~H ) /\
+				( ( normop ` t ) < +oo )
+			) 
+		} 
+	) 
+) $.
+df-unop $a |- 
+( UniOp = 
+	{ t | 
+		( 
+			( t : ~H -onto-> ~H ) /\ 
+			A. x e. ~H A. y e. ~H 
+				( 
+					( ( t ` x ) .ih ( t ` y ) ) = 
+					( x .ih y ) 
+				)
+		) 
+	} 
+) $.
+df-hmop $a |- 
+( HrmOp = 
+	{ t | 
+		( 
+			( t : ~H --> ~H ) /\ 
+			A. x e. ~H A. y e. ~H 
+				( 
+					( x .ih ( t ` y ) ) = 
+					( ( t ` x ) .ih y ) 
+				)
+		) 
+	} 
+) $.
+df-nmfn $a |- 
+( normfn = 
+	{ <. t , y >. | 
+		( 
+			( t : ~H --> CC ) /\ 
+			( y = sup 
+				( 
+					{ x | E. z e. ~H 
+						( 
+							( ( normh ` z ) <_ 1 ) /\ 
+							( x = ( abs ` ( t ` z ) ) )
+						) 
+					} , 
+					RR* , 
+					< 
+				) 
+			)
+		) 
+	} 
+) $.
+df-nlfn $a |- 
+( null = 
+	{ <. t , y >. | 
+		( 
+			( t : ~H --> CC ) /\
+			( y = 
+				{ x e. ~H | 
+					( ( t ` x ) = 0 )
+				} 
+			)
+		) 
+	} 
+) $.
+df-cnfn $a |- 
+( ConFn = 
+	{ t | 
+		( 
+			( t : ~H --> CC ) /\ 
+			A. x e. ~H A. y e. RR 
+				( 
+					( 0 < y ) -> 
+					E. z e. RR 
+						(
+							( 0 < z ) /\ 
+							A. w e. ~H 
+								( 
+									( 
+										( normh ` ( w -h x ) ) < z 
+									) -> 
+									( 
+										( abs ` ( ( t ` w ) - ( t ` x ) ) ) < y 
+									)
+								) 
+						) 
+				) 
+		) 
+	} 
+) $.
+df-lnfn $a |- 
+( LinFn = 
+	{ t | 
+		( 
+			( t : ~H --> CC ) /\ 
+			A. x e. CC A. y e. ~H A. z e. ~H 
+				( 
+					( t ` ( ( x .h y ) +h z ) ) = 
+					( ( x x. ( t ` y ) ) + ( t ` z ) ) 
+				)
+		) 
+	} 
+) $.
+df-adjh $a |- 
+( adjh = 
+	{ <. t , u >. | 
+		( 
+			( t : ~H --> ~H ) /\ 
+			( u : ~H --> ~H ) /\ 
+			A. x e. ~H A. y e. ~H 
+				( 
+					( ( t ` x ) .ih y ) = 
+					( x .ih ( u ` y ) ) 
+				)
+		) 
+	} 
+) $.
+df-bra $a |- 
+( bra = 
+{ <. x , t >. | 
+	( 
+		( x e. ~H ) /\ 
+		( t  = 
+			{ <. y , z >. | 
+				( ( y e. ~H ) /\ ( z = ( y .ih x ) ) ) 
+			} 
+		)
+	) 
+} 
+) $.
+df-kb $a |- 
+( ketbra = 
+{ <. <. x , y >. , t >. | 
+	( 
+		( ( x e. ~H ) /\ ( y e. ~H ) ) /\ 
+		( t = 
+			{ <. w , v >. | 
+				( 
+					( w e. ~H ) /\ 
+					( v = ( ( w .ih y ) .h x ) )
+				) 
+			} 
+		)
+	) 
+} 
+) $.
+df-leop $a |- 
+( <_op = 
+	{ <. t , u >. | 
+		( 
+			( ( u -op t ) e. HrmOp ) /\ 
+			A. x e. ~H 
+				( 0 <_ ( ( ( u -op t ) ` x ) .ih x ) )
+		) 
+	} 
+) $.
+df-eigvec $a |- 
+( eigvec = 
+{ <. t , y >. | 
+	( 
+		( t : ~H --> ~H ) /\ 
+		( y = 
+			{ x e. ~H | 
+				( 
+					( x =/= 0h ) /\ 
+					E. z e. CC 
+						( ( t ` x ) = ( z .h x ) )
+				) 
+			} 
+		)
+	) 
+} 
+) $.
+ df-eigval $a |- 
+( eigval = 
+	{ <. t , y >. | 
+		( 
+			( t : ~H --> ~H ) /\ 
+			( y = 
+				{ <. x , z >. | 
+					( 
+						( x e. ( eigvec ` t ) ) /\ 
+						( z = 
+							( 
+								( ( t ` x ) .ih x ) / 
+								( ( normh ` x ) ^ 2 ) 
+							) 
+						)
+					) 
+				} 
+			)
+		) 
+	} 
+) $.
+df-spec $a |- 
+( Lambda = 
+	{ <. t , y >. | 
+		( 
+			( t : ~H --> ~H ) /\ 
+			( y  = 
+				{ x e. CC | 
+					-. ( ( t -op ( x .op ( _I |` ~H ) ) ) : ~H -1-1-> ~H )
+				}
+			) 
+		) 
+	}
+) $.
+df-st $a |- 
+( States = 
+	{ f | 
+		( 
+			( 
+				( f : CH --> RR ) /\ 
+			 	A. x e. CH 
+					( 
+						( 0 <_ ( f ` x ) ) /\ 
+						( ( f ` x ) <_ 1 ) 
+					) 
+			) /\ 
+			( 
+				( ( f ` ~H ) = 1 ) /\ 
+				A. x e. CH A. y e. CH 
+					( 
+						( x C_ ( _|_ ` y ) ) -> 
+						( 
+							( f ` ( x vH y ) ) = 
+							( ( f ` x ) + ( f ` y ) ) 
+						)
+					) 
+			) 
+		) 
+	} 
+) $.
+df-hst $a |- 
+( CHStates = 
+{ f | 
+	( 
+		( f : CH --> ~H ) /\
+		( ( normh ` ( f ` ~H ) ) = 1 ) /\ 
+		A. x e. CH A. y e. CH 
+		( 
+			( x C_ ( _|_ ` y ) ) -> 
+			( 
+				( 
+					( ( f ` x ) .ih ( f ` y ) ) = 0 
+				) /\ 
+				( 
+					( f ` ( x vH y ) ) = ( ( f ` x ) +h ( f ` y ) ) 
+				)
+			) 
+		) 
+	) 
+} 
+) 
+$.
+df-cv $a |- 
+( <o = 
+	{ <. x , y >. | 
+		( 
+			( 
+				( x e. CH ) /\ 
+				( y e. CH ) 
+			) /\ 
+			(
+				( x C. y ) /\ 
+				-. E. z e. CH 
+					( 
+						( x C. z ) /\ 
+						( z C. y ) 
+					) 
+			) 
+		) 
+	} 
+) $.
+df-dmd $a |- 
+( MH* = 
+{ <. x , y >. | 
+	( 
+		( ( x e. CH ) /\ ( y e. CH ) ) /\ 
+		A. z e. CH 
+		( 
+			( y C_ z ) -> 
+			( 
+				( ( z i^i x ) vH y ) = ( z i^i ( x vH y ) ) 
+			)
+		) 
+	) 
+} 
+) $.
+df-md $a |- 
+( MH = 
+	{ <. x , y >. | 
+		( 
+			( 
+				( x e. CH ) /\
+				( y e. CH )
+			) /\ 
+			A. z e. CH 
+				( 
+					( z C_ y ) -> 
+					( 
+						( ( z vH x ) i^i y ) = 
+						( z vH ( x i^i y ) ) 
+					)
+				) 
+		) 
+	} 
+) $.
+df-at $a |- ( Atoms = { x e. CH | ( 0H <o x ) } ) $.
+ax-hfi $a |- ( .ih : ( ~H X. ~H ) --> CC ) $.
+df-h0op $a |- ( 0hop = ( proj ` 0H ) ) $.
+df-iop $a |- ( Iop = ( proj ` ~H ) ) $.
+
+$( ********************* $)
+
+isumnn0nna.1 $e |- ( A e. _V ) $.
+qlaxr1.1 $e |- ( A e. CH ) $.
+qlaxr1.2 $e |- ( B e. CH ) $.
+qlaxr1.3 $e |- ( A = B ) $.
+
+qlaxr2.1 $e |- ( A e. CH ) $.
+qlaxr2.2 $e |- ( B e. CH ) $.
+qlaxr2.3 $e |- ( C e. CH ) $.
+qlaxr2.4 $e |- ( A = B ) $.
+qlaxr2.5 $e |- ( B = C ) $.
+
+qlaxr4.1 $e |- ( A e. CH ) $.
+qlaxr4.2 $e |- ( B e. CH ) $.
+qlaxr4.3 $e |- ( A = B ) $.
+
+qlaxr5.1 $e |- ( A e. CH ) $.
+qlaxr5.2 $e |- ( B e. CH ) $.
+qlaxr5.3 $e |- ( C e. CH ) $.
+qlaxr5.4 $e |- ( A = B ) $.
+
+qlaxr3.1 $e |- ( A e. CH ) $.
+qlaxr3.2 $e |- ( B e. CH ) $.
+qlaxr3.3 $e |- ( C e. CH ) $.
+
+$( ************************* $)
+
+axpweq.1 $e |- ( A e. _V ) $.
+df-fin $a |- ( Fin = { x | E. y e. om ( x ~~ y ) } ) $.
+topsinind.1 $e |- ( A e. B ) $.
+brresi.1 $e |- ( B e. _V ) $.
+vacnlem1.1 $e |- ( F e. _V ) $.
+vacnlem1.2 $e |- ( G e. _V ) $.
+vacnlem1.3 $e |- ( H e. _V ) $.
+vacnlem4.1 $e |- ( F e. _V ) $.
+vacnlem4.2 $e |- ( G e. _V ) $.
+mapdiscn.1 $e |- ( F e. C ) $.
+ acdc4lem.2 $e |- 
+( G = 
+{ <. <. j , y >. , z >. | 
+   ( 
+     ( ( j e. NN ) /\ ( y e. A ) ) 
+     /\
+     ( z = ( { ( j + 1 ) } X. ( ( j + 1 ) F y ) ) )
+   ) 
+} 
+) $.
+acdc4lem.4 $e |- ( H = ( 1st o. h ) ) $.
+ufilen.1 $e |- ( X = U. F ) $.
+neificl.1 $e |- ( X = U. J ) $.
+ax-inf2 $a |- 
+E. x 
+( E. y 
+	( ( y e. x ) /\ A. z -. ( z e. y ) ) 
+	/\ 
+	A. y 
+	( 
+		( y e. x ) 
+		->
+		E. z 
+		( 
+			( z e. x ) 
+			/\ 
+			A. w 
+			( 
+				( w e. z ) <-> ( ( w e. y ) \/ ( w = y ) ) 
+			) 
+		) 
+	) 
+) $.
+df-mod $a |- 
+( mod = 
+{ <. <. x , y >. , z >. | 
+	( 
+		( ( x e. RR ) /\ ( y e. RR+ ) )
+          	/\ 
+		( z = 
+			( x - ( y x. ( |_ ` ( x / y ) ) ) ) 
+		)
+	) 
+} 
+) $.
+df-gx $a |- 
+( ^g = 
+{ <. g , f >. | 
+	( 
+		( g e. Grp ) 
+		/\ 
+		( f = 
+			{ <. <. x , y >. , z >. | 
+			( 
+				( ( x e. ran g ) /\ ( y e. ZZ ) ) 
+				/\ 
+				( 
+					z = if 
+					( 
+						( y = 0 ) , 
+						( Id ` g ) , 
+						if 
+						( 
+							( 0 < y ) , 
+							( ( g seq1 ( NN X. { x } ) ) ` y ) , 
+							( ( inv ` g ) ` ( ( g seq1 ( NN X. { x } ) ) ` -u y ) ) 
+						) 
+					) 
+				)
+			) 
+			} 
+		)
+	) 
+} 
+) $.
+df-drng $a |- 
+( DivRing = 
+{ <. g , h >. | 
+	( 
+		( <. g , h >. e. Ring )  
+		/\ 
+		(		
+			( h |` ( ( ran g \ { ( Id ` g ) } ) X. ( ran g \ { ( Id ` g ) } ) ) ) 
+			e. Grp 
+		)
+	) 
+} 
+) $.
+df-sfld $a |- 
+( *-Fld = 
+{ <. r , n >. | 
+	( 
+		( r e. DivRing ) 
+		/\
+   		( n : ran ( 1st ` r ) --> ran ( 1st ` r ) ) 
+		/\
+   		A. x e. dom n A. y e. dom n
+       		( 
+			( ( n ` ( x ( 1st ` r ) y ) ) = ( ( n ` x ) ( 1st ` r ) ( n ` y ) ) )
+			/\ 
+			( ( n ` ( x ( 2nd ` r ) y ) ) = ( ( n ` y ) ( 2nd ` r ) ( n ` x ) ) ) 
+			/\ 
+			( ( n ` ( n ` x ) ) = x )
+		) 
+	) 
+} 
+) $.
+df-ps $a |- 
+( Poset = 
+{ r | 
+	( 
+		Rel r 
+		/\ 
+		( ( r o. r ) C_ r )
+		/\
+		( ( r i^i `' r ) = ( _I |` U. U. r ) ) 
+	) 
+} 
+) $.
+df-spw $a |- 
+( supw = 
+{ <. <. r , x >. , y >. | 
+    E. z 
+    ( 
+      ( z = 
+	{ w e. U. U. r | 
+	  ( 
+	      A. v e. x ( v r w ) /\ 
+	      A. v e. U. U. r 
+	      ( A. u e. x ( u r v ) -> ( w r v ) ) 
+	  ) 
+	} 
+      ) /\
+      ( y = if 
+	 ( 
+	    ( z =/= (/) ) , 
+	    U. z , 
+	    ~P U. U. U. r 
+	 ) 
+      )
+    ) 
+} 
+) $.
+
+df-nfw $a |- ( infw = { <. <. r , x >. , y >. | ( y = ( `' r supw x ) ) } ) $.
+df-jn $a |- 
+( join = 
+{ <. r , w >. | 
+	( w = 
+		{ <. <. x , y >. , z >. | 
+			( 
+				( ( x e. U. U. r ) /\ ( y e. U. U. r ) ) 
+				/\ 
+				( z = ( r supw { x , y } ) )
+			) 
+		} 
+	)
+} 
+) $.
+df-mee $a |- 
+( meet = 
+{ <. r , w >. | 
+	( w = 
+		{ <. <. x , y >. , z >. | 
+			( 
+				( ( x e. U. U. r ) /\ ( y e. U. U. r ) ) 
+				/\ 
+				( z = ( r infw { x , y } ) )
+			) 
+		} 
+	)
+} 
+) $.
+df-la $a |- 
+( Lat = 
+{ r e. Poset | 
+	A. x e. dom r A. y e. dom r 
+	( 
+		( ( r supw { x , y } ) e. dom r )
+		/\ 
+		( ( r infw { x , y } ) e. dom r )
+	) 
+} 
+) $.
+df-hba $a |- ( ~H = ( BaseSet ` <. <. +h , .h >. , normh >. ) ) $.
+df-h0v $a |- ( 0h = ( 0v ` <. <. +h , .h >. , normh >. ) ) $.
+df-gcd $a |- 
+( 
+	gcd ( A , B ) 
+	= 
+	sup 
+	( 
+		{ x e. NN | 
+			( 
+				( ( A / x ) e. NN ) 
+				/\ 
+				( ( B / x ) e. NN )
+			) 
+		} , 
+		NN , 
+		< 
+	) 
+) $.
+trcl-df $a |- 
+( t+ = 
+{ <. x , y >. | 
+	( y = 
+		|^| 
+		{ z | 
+			( 
+				( x C_ z ) 
+				/\ 
+				( ( z o. z ) C_ z )
+			) 
+		} 
+	)
+} 
+) $.
+rtrcl-df $a |- 
+( t* = 
+{ <. x , y >. | 
+	( y = 
+		|^| 
+		{ z | 
+			( 
+				( ( _I |` ( dom x u. ran x ) ) C_ z )
+				/\ 
+				( x C_ z ) 
+				/\ 
+				( ( z o. z ) C_ z )
+			) 
+		} 
+	)
+} 
+) $.
+df-latalg $a |- 
+( LatAlg = 
+{ <. j , m >. | 
+	E. t 
+	( 
+		( j : ( t X. t ) --> t ) /\ 
+		( m : ( t X. t ) --> t ) /\
+    		A. x e. t A. y e. t 
+		( 
+			( ( x j y ) = ( y j x ) ) /\  
+			( ( x m y ) = ( y m x ) ) /\ 
+			( 
+				( ( x m ( x j y ) ) = x ) /\ 
+				( ( x j ( x m y ) ) = x ) /\ 
+				A. z e. t 
+				( 
+					( ( x m ( y m z ) ) = ( ( x m y ) m z ) ) /\ 
+					( ( x j ( y j z ) ) = ( ( x j y ) j z ) )
+				) 
+			) 
+		) 
+	) 
+} 
+) $.
+df-cur1 $a |- 
+( cur1 = 
+{ <. f , g >. | 
+	( 
+		( Fun f /\ Rel dom f ) /\ 
+		( g = 
+			{ <. x , y >. | 
+				( 
+					( x e. dom dom f ) /\ 
+					( y = 
+						( f o. `' ( 2nd |` ( { x } X. _V ) ) ) 
+					)
+				) 
+			} 
+		)
+	) 
+} 
+) $.
+df-cur2 $a |- 
+( cur2 = 
+{ <. f , g >. | 
+	( 
+		Fun f /\ 
+		Rel dom f /\ 
+		( g = 
+			{ <. x , y >. | 
+				( 
+					( x e. ran dom f ) /\ 
+					( y = 
+						( f o. `' ( 1st |` ( _V X. { x } ) ) ) 
+					)
+				) 
+			} 
+		)
+	) 
+} 
+) $.
+df-fi $a |- 
+( fi = 
+{ <. x , y >. | 
+	( y = 
+		{ u | 
+			E. z 
+			( 
+				( z C_ x ) /\ 
+				( z e. Fin ) /\ 
+				( u = |^| z )
+			) 
+		} 
+	)
+} 
+) $.
+df-toset $a |- 
+( Toset = 
+	( Poset i^i 
+		{ r  | 
+			A. x e. U. U. r A. y e. U. U. r 
+				( ( x r y ) \/ ( y r x ) ) 
+		} 
+	) 
+) $.
+df-mxl $a |- 
+( mxl = 
+{ <. <. r , x >. , y >. | 
+	( y = 
+		{ b e. x | A. a e. x -. ( b r a ) } 
+	)
+} 
+) $.
+df-mnl $a |- ( mnl = { <. <. r , x >. , y >. | ( y = ( `' r mxl x ) ) } ) $.
+df-ge $a |- 
+( ge = 
+{ <. <. r , x >. , y >. | 
+	E. z 
+	( 
+		( z = { w e. x | A. a e. x ( a r w ) } ) /\ 
+		( y = if ( ( z =/= (/) ) , U. z , ~P U. U. U. r ) )
+	) 
+} 
+) $.
+df-se $a |- ( se = { <. <. r , x >. , y >. | ( y = ( `' r ge x ) ) } ) $.
+df-com1 $a |- ( Com1 = { g | A. x e. dom dom g A. y e. dom dom g ( ( x g y ) = ( y g x ) ) } ) $.
+df-com2 $a |- ( Com2 = { <. g , h >. | A. a e. ran g A. b e. ran g ( ( a h b ) = ( b h a ) ) } ) $.
+df-ass $a |- ( Ass = { g | A. x e. dom dom g A. y e. dom dom g A. z e. dom dom g ( ( ( x g y ) g z ) = ( x g ( y g z ) ) ) } ) $.
+df-exid $a |- ( ExId = { g | E. x e. dom dom g A. y e. dom dom g ( ( ( y g x ) = y ) /\ ( ( x g y ) = y ) ) } ) $.
+df-mgm $a |- ( Magma = { g | E. t ( g : ( t X. t ) --> t ) } ) $.
+df-gidm $a |- 
+( Idm = 
+{ <. g , y >. | 
+	( y = U. 
+		{ u e. ran g | 
+			A. x e. ran g ( ( ( u g x ) = x ) /\ ( ( x g u ) = x ) ) 
+		} 
+	)
+} 
+) $.
+df-sgr $a |- ( SemiGrp = ( Magma i^i Ass ) ) $.
+df-mnd $a |- ( Mnd = ( SemiGrp i^i ExId ) ) $.
+expsg-df $a |- 
+( ^md = 
+{ <. g , y >. | 
+	( 
+		( g e. Mnd ) /\ 
+		( y = 
+			{ <. <. a , b >. , c >. | 
+				( 
+					( ( a e. ran g ) /\ ( b e. NN0 ) ) /\ 
+					( c = if 
+						( 
+							( b = 0 ) , 
+							1 , 
+							( ( g seq1 ( NN x. { a } ) ) ` b ) 
+						) 
+					) 
+				)
+			} 
+		)
+	) 
+} 
+) $.
+df-unit $a |- 
+( Unit = 
+{ <. r , y >. | 
+	( 
+		( r e. Ring ) /\ 
+		( y = U. 
+			{ u e. ran ( 1st ` r ) | 
+				A. x e. ran ( 1st ` r ) 
+				( 
+					( ( x ( 2nd ` r ) u ) = x ) /\ 
+					( ( u ( 2nd ` r ) x ) = x )
+				) 
+			} 
+		) 
+	)
+} 
+) $.
+df-fld $a |- ( Fld = ( DivRing i^i Com2 ) ) $.
+df-vec $a |- 
+( Vec = 
+{ z | E. g E. h E. a E. b 
+	( 
+		( z = <. <. g , h >. , <. a , b >. >. ) /\
+        	( 
+			( a e. Abel ) /\ 
+			( b : ( ran g X. ran a ) --> ran a ) /\ 
+			A. u e. ran a 
+			( 
+				( ( ( Id ` h ) b u ) = u ) /\ 
+				A. x e. ran g
+           			( 
+					A. v e. ran a ( ( x b ( u a  v ) ) = ( ( x b u ) a ( x b v ) ) ) /\ 
+					A. y e. ran g 
+					( 
+						( ( ( x g y ) b u ) = ( ( x b u ) a ( y b u ) ) ) /\   
+						( ( ( x h y ) b u ) = ( x b ( y b u ) ) ) 
+					) 
+				) 
+			) 
+		) 
+	) 
+} 
+) $.
+df-vr $a |- 
+( RVec = 
+{ <. g , s >. | 
+	( 
+		( g e. Abel ) /\ 
+		( s : ( RR X. ran g ) --> ran g ) /\ 
+		A. x e. ran g 
+		( 
+			( ( 1 s x ) = x ) /\
+       			A. y e. RR 
+			( 
+				A. z e. ran g ( ( y s ( x g z ) ) = ( ( y s x ) g ( y s z ) ) ) /\ 
+				A. z e. RR 
+				( 
+					( ( ( y + z ) s x ) = ( ( y s x ) g ( z s x ) ) ) /\ 
+					( ( ( y x. z ) s x ) = ( y s ( z s x ) ) )
+				) 
+			) 
+		) 
+	) 
+} 
+) $.
+df-mat $a |- 
+( Mat = 
+{ <. x , y >. | 
+	( 
+		( x e. Fld ) /\
+		( y = 
+			{ <. <. a , b >. , c >. | 
+				( 
+					( ( a e. NN ) /\ ( b e. NN ) ) /\ 
+					( c = 
+						{ f | ( f : ( ( 0 ... a ) X. ( 0 ... b ) ) --> ran ( 1st ` x ) )
+						} 
+					)
+				) 
+			} 
+		)
+	) 
+} 
+) $.
+df-amat $a |- 
+( +m = 
+{ <. g , h >. | 
+	( h = 
+		{ <. <. m , n >. , o >. | E. j e. NN E. k e. NN 
+			( 
+				( m : ( ( 1 ... j ) X. ( 1 ... k ) ) --> dom dom g ) /\
+				( n : ( ( 1 ... j ) X. ( 1 ... k ) ) --> dom dom g ) /\
+				( o = 
+					( 
+						x e. ( 1 ... j ) , 
+						y e. ( 1 ... k ) |-> ( ( m ` <. x , y >. ) g ( n ` <. x , y >. ) ) 
+					) 
+				)
+			) 
+		} 
+	)
+} 
+) $.
+df-mmat $a |- 
+( xm = 
+{ <. <. g , h >. , f >. | 
+	( f = 
+		{ <. <. m , n >. , o >. | E. j e. NN E. k e. NN E. l e. NN 
+			(
+				( m : ( ( 1 ... j ) X. ( 1 ... k ) ) --> dom dom g ) /\
+				( n : ( ( 1 ... k ) X. ( 1 ... l ) ) --> dom dom g ) /\
+				( o = 
+					( 
+						x e. ( 1 ... j ) , 
+						y e. ( 1 ... l ) |-> 
+						prod_ z e. ( 1 ... k ) g ( ( m ` <. x , z >. ) h ( n ` <. z , y >. ) ) 
+					) 
+				)
+			) 
+		} 
+	)
+} 
+) $.
+df-smat $a |- 
+( .m = 
+{ <. g , h >. | 
+	( h = 
+		{ <. <. m , a >. , o >. | E. j e. NN E. k e. NN 
+			( 
+				( m : ( ( 1 ... j ) X. ( 1 ... k ) ) --> ran dom g ) /\
+				( a e. dom dom g ) /\ 
+				( o = 
+					( 
+						x e. ( 1 ... j ) , 
+						y e. ( 1 ... k ) |-> ( a g ( m ` <. x , y >. ) ) 
+					) 
+				)
+			) 
+		} 
+	)
+} 
+) $.
+df-raffsp $a |- 
+( RAffSp = 
+{ <. x , y >. | 
+	( 
+		( x e. RVec ) /\ 
+		E. t 
+		( 
+			( y e. ( ( 1st ` x ) GrpHom ( SymGrp ` t ) ) ) /\ 
+			( y : ran ( 1st ` x ) -1-1-> t ) /\
+			A. a e. t A. b e. t E. v e. ran ( 1st ` x ) 
+				( ( ( y ` v ) ` a ) = b )
+		) 
+	) 
+} 
+) $.
+df-flim1 $a |- 
+( fLim1 = 
+{ <. x , y >. | 
+    ( 
+	( x e. Top ) /\ 
+	( y = 
+	    { <. a , b >. | 
+		( 
+		     ( a e. Fil ) /\ 
+		     ( U. a = U. x ) /\ 
+		     ( b = 
+			  { l e. U. x | 
+			      ( ( ( nei ` x ) ` { l } ) C_ a )
+			  } 
+		     )
+		) 
+	    } 
+	)
+    ) 
+} 
+) $.
+df-flim2 $a |- 
+( fLim2 = 
+{ <. <. x , y >. , z >. | 
+  ( 
+    ( x e. Top ) /\ 
+    ( y e. Fil ) /\ 
+    ( z = 
+      { <. a , b >. | 
+	 ( 
+	    ( a : U. y --> U. x ) /\ 
+	    ( b = 
+	      { l | 
+		( ( ( nei ` x ) ` l ) C_ ( a " y ) )
+	      } 
+	    )
+	 ) 
+      } 
+    ) 
+  ) 
+} 
+) $.
+df-comp $a |- 
+( Comp = 
+{ x e. Top | 
+    A. y e. ~P x 
+      ( 
+	  ( U. x = U. y ) -> 
+	  E. z e. ( ~P y i^i Fin )  
+	      ( U. x = U. z  )
+      ) 
+} 
+) $.
+df-isoc $a |- 
+( Iso = 
+{ <. x , y >. | 
+  ( 
+    ( x e. Cat ) /\
+    ( y = 
+      { f e. dom ( dom_ ` x ) | 
+	E. g e. dom ( dom_ ` x ) 
+	(
+	  ( ( dom_ ` g ) = ( cod_ ` f ) ) /\ 
+	  ( ( cod_ ` g ) = ( dom_ ` f ) ) /\
+	  ( 
+	    ( ( f ( o_ ` x ) g ) = ( ( id_ ` x ) ` ( ( dom_ ` x ) ` g ) ) ) /\
+	    ( ( g ( o_ ` x ) f ) = ( ( id_ ` x ) ` ( ( dom_ ` x ) ` f ) ) )
+	  ) 
+	) 
+      } 
+    )
+  ) 
+} 
+) $.
+df-cinv $a |- 
+( cinv = 
+  { <. x , y >. | 
+    ( 
+      ( x e. Cat ) /\ 
+      ( y = 
+	{ <. f , z >. | 
+	  ( 
+	    ( f e. dom ( dom_ ` x ) ) /\ 
+	    ( z = 
+	      { g e. dom ( dom_ ` x ) | 
+		( 
+		  ( ( f ( o_ ` x ) g ) = ( ( id_ ` x ) ` ( ( cod_ ` x ) ` f ) ) ) /\ 
+		  ( ( g ( o_ ` x ) f ) = ( ( id_ ` x ) ` ( ( dom_ ` x ) ` f ) ) )
+		) 
+	      } 
+	    )
+	  ) 
+	}
+      )
+    ) 
+  } 
+) $.
+df-subc $a |- 
+( SubCat = 
+{ <. x , y >. | 
+  ( 
+     ( x e. Cat ) /\ 
+     ( y = 
+	{ a e. Cat | 
+	  ( 
+	    ( ( id_ ` a ) C_ ( id_ ` x ) ) /\ 
+	    ( 
+	      ( ( dom_ ` a ) C_ ( dom_ ` x ) ) /\ 
+	      ( ( cod_ ` a ) C_ ( cod_ ` x ) )
+	    ) /\  
+	    ( ( o_ ` a ) C_ ( o_ ` x ) )
+	  ) 
+	} 
+     )
+  ) 
+} 
+) $.
+df-plig $a |- 
+( Plig = 
+  { x | 
+    ( 
+      A. a e. U. x  A. b e. U. x 
+      ( 
+	( a =/= b ) -> E! l e. x ( ( a e. l ) /\ ( b e. l ) ) 
+      ) /\ 
+      A. l e. x E. a e. U. x E. b e. U. x 
+      ( 
+	( a =/= b ) /\ ( a e. l ) /\ ( b e. l ) 
+      ) /\ 
+      E. a e. U. x E. b e. U. x E. c e. U. x A. l e. x 
+      -. ( ( a e. l ) /\ ( b e. l ) /\ ( c e. l ) ) 
+    ) 
+  } 
+) $.
+iepiclem.3 $e |- ( R = ( o_ ` T ) ) $.
+isepic.3 $e |- ( R = ( o_ ` T ) ) $.
+df-isof $a |- 
+( Isofunc = 
+{ <. <. t , u >. , v >. | 
+  ( 
+    ( ( t e. Cat ) /\ ( u e. Cat ) ) /\ 
+    ( v = 
+      { f  e. ( Func ` <. u , v >. ) | 
+	E. g e. ( Func ` <. v , u >. )
+	( 
+	    ( ( f o. g ) = ( _I |` dom ( dom_ ` v ) ) ) /\ 
+	    ( ( g o. f ) = ( _I |` dom ( dom_ ` u ) ) )
+	) 
+      } 
+    )
+  ) 
+} 
+) $.
+df-1stc $a |- 
+( 1stc = 
+{ x e. Top | 
+    A. y e. U. x E. z e. ~P x 
+    ( 
+	( z ~<_ om ) /\ 
+	A. w e. x 
+	( 
+	    ( y e. w ) -> ( y e. U. ( z i^i ~P w ) )
+	) 
+    ) 
+} 
+) $.
+df-2ndc $a |- 
+( 2ndc = 
+{ x e. Top | 
+    E. y e. Bases ( ( y ~<_ om ) /\ ( ( topGen ` y ) = x ) ) 
+} 
+) $.
+df-fne $a |- 
+( Fne = 
+{ <. x , y >. | 
+    ( 
+      ( U. x = U. y ) /\ 
+      A. z e. x ( z C_ U. ( y i^i ~P z ) )
+    ) 
+} 
+) $.
+df-ref $a |- 
+( Ref = 
+  { <. x , y >. | 
+      ( 
+	( U. x = U. y ) /\ 
+	A. z e. y E. w e. x ( z C_ w )
+      ) 
+  } 
+) $.
+df-fbas $a |- 
+( fBas = 
+{ x | 
+    ( 
+	( x =/= (/) ) /\ 
+	( (/) e/ x ) /\ 
+	A. y e. x A. z e. x 
+	( ( x i^i ~P ( y i^i z ) ) =/= (/) )
+    ) 
+} 
+) $.
+df-fg $a |- 
+( filGen = 
+{ <. x , y >. | 
+  ( 
+    ( x e. fBas ) /\
+    ( y = 
+      { z e. ~P U. x | 
+	( ( x i^i ~P z ) =/= (/) )
+      } 
+    )
+  ) 
+} 
+) $.
+df-ufil $a |- 
+( UFil = 
+{ f e. Fil | 
+    A. x e. ~P U. f 
+    ( 
+      ( x e. f ) \/ ( ( U. f \ x ) e. f )
+    ) 
+} 
+) $.
+df-filmap $a |- 
+( FilMap = 
+{ <. <. x , y >. , z >. | 
+  ( 
+    ( y e. fBas ) /\ 
+    ( z = 
+      { <. f , s >. | 
+	( 
+	   ( f : U. y --> x ) /\ 
+	   ( s = 
+	      ( filGen ` 
+		( 
+		   { w | E. t e. y ( w = ( f " t ) ) } u. { x } 
+		) 
+	      ) 
+	   )
+	) 
+      } 
+    )
+  ) 
+} 
+) $.
+df-flimf $a |- 
+( fLimf = 
+{ <. <. x , y >. , z >. | 
+  ( 
+     ( x e. Top ) /\ 
+     ( y e. Fil ) /\
+     ( z = 
+	{ <. f , s >. | 
+	  ( 
+	    ( f : U. y --> U. x ) /\ 
+	    ( s = 
+		( ( fLim1 ` x ) ` ( ( U. x FilMap y ) ` f ) ) 
+	    )
+	  ) 
+	} 
+     )
+  ) 
+} 
+) $.
+df-fclus $a |- 
+( fClus = 
+{ <. x , y >. | 
+    ( 
+      ( x e. Top ) /\ 
+      ( y = 
+	{ <. a , b >. | 
+	  ( 
+	    ( a e. Fil ) /\ 
+	    ( U. a = U. x ) /\ 
+	    ( b = |^|_ t e. a ( ( cls ` x ) ` t ) )
+	  ) 
+	} 
+      )
+    ) 
+} 
+) $.
+df-fclusf $a |- 
+( fClusf = 
+{ <. <. x , y >. , z >. | 
+    ( 
+      ( x e. Top ) /\ 
+      ( y e. Fil ) /\ 
+      ( z = 
+	{ <. f , s >. | 
+	  ( 
+	    ( f : U. y --> U. x ) /\ 
+	    ( s = ( ( fClus ` x ) ` ( ( U. x FilMap y ) ` f ) ) )
+	  ) 
+	} 
+      )
+    ) 
+} 
+) $.
+df-dir $a |- 
+( Dir = 
+{ d | 
+    ( 
+	( 
+	    Rel d /\ 
+	    ( ( _I |` U. U. d ) C_ d )
+	) /\ 
+	( 
+	    ( ( d o. d ) C_ d ) /\ 
+	    A. x e. U. U. d A. y e. U. U. d E. z e. U. U. d ( ( x d z ) /\ ( y d z ) ) 
+	) 
+    ) 
+} 
+) $.
+df-tail $a |- 
+( tail = 
+{ <. x , y >. | 
+    ( 
+      ( x e. Dir ) /\ 
+      ( y = 
+	{ <. z , w >. | 
+	    ( ( z e. U. U. x ) /\ ( w = { t | ( z x t ) } ) ) 
+	} 
+      )
+    ) 
+} 
+) $.
+df-ga $a |- 
+( GrpAct = 
+{ <. g , m >. | 
+    ( 
+      ( g e. Grp ) /\ 
+      E. s 
+      ( 
+	 ( m : ( ran g X. s ) --> s ) /\ 
+	 A. x e. s 
+	 ( 
+	    ( ( ( Id ` g ) m x ) = x ) /\ 
+	    A. y e. ran g A. z e. ran g 
+	    ( ( ( y g z ) m x ) = ( y m ( z m x ) ) )
+	 ) 
+      ) 
+    ) 
+} 
+) $.
+df-ii $a |- 
+( II = 
+   ( Open ` ( ( abs o. - ) |` ( ( 0 [,] 1 ) X. ( 0 [,] 1 ) ) ) ) 
+) $.
+df-tlm $a |- 
+( ~~>t = 
+{ <. j , r >. | 
+    ( 
+      ( j e. Top ) /\ 
+      ( r = 
+	  { <. f , x >. | 
+	      ( 
+		( f : NN --> U. j ) /\ 
+		( x e. U. j ) /\ 
+		A. u e. ( ( nei ` j ) ` { x } ) E. n e. NN A. m e. ( ZZ>= ` n ) 
+		    ( ( f ` m ) e. u )
+	      ) 
+	  } 
+      )
+    ) 
+} 
+) $.
+df-tx $a |- 
+( tX = 
+{ <. <. r , s >. , t >. | 
+    ( 
+      ( ( r e. Top ) /\ ( s e. Top ) ) /\ 
+      ( t = 
+	  ( topGen ` 
+	      { z | 
+		  E. u e. r E. v e. s ( z = ( u X. v ) )
+	      } 
+	  ) 
+      )
+    ) 
+} 
+) $.
+df-totbnd $a |- 
+( TotBnd = 
+{ m e. Met | 
+    A. d e. RR+ E. v e. Fin 
+    ( 
+	( U. v = dom dom m ) /\ 
+	A. b e. v E. x e. dom dom m 
+	    ( b = ( x ( ball ` m ) d ) )
+    ) 
+} 
+) $.
+df-bnd $a |- 
+( Bnd = 
+{ m e. Met | 
+    A. x e. dom dom m E. r e. RR+ 
+      ( dom dom m = ( x ( ball ` m ) r ) )
+} 
+) $.
+df-ismty $a |- 
+( Ismty = 
+{ <. <. m , n >. , z >. | 
+    ( 
+	( ( m e. Met ) /\ ( n e. Met ) ) /\ 
+	( z = 
+	  { f | 
+	      ( 
+		  ( f : dom dom m -1-1-onto-> dom dom n ) /\ 
+		  A. x e. dom dom m A. y e. dom dom m 
+		    ( ( x m y ) = ( ( f ` x ) n ( f ` y ) ) )
+	      ) 
+	  } 
+	)
+    ) 
+} 
+) $.
+df-rrn $a |- 
+( Rn = 
+{ <. n , r >. | 
+    ( 
+	( n e. NN ) /\ 
+	( r = 
+	    { <. <. x , y >. , d >. | 
+		( 
+		    ( 
+		      ( x e. ( RR ^m ( 1 ... n ) ) ) /\ 
+		      ( y e. ( RR ^m ( 1 ... n ) ) )
+		    ) /\
+                    ( d = 
+			( sqr ` 
+			      sum_ ( k e. ( 1 ... n ) ) 
+			      ( ( ( x ` k ) - ( y ` k ) ) ^ 2 ) 
+			) 
+		    )
+		) 
+	    } 
+	) 
+    ) 
+} 
+) $.
+df-phtpy $a |- 
+( PHtpy = 
+{ <. x , y >. | 
+  ( 
+     ( x e. Top ) /\ 
+     ( y = 
+	{ <. <. f , g >. , z >. | 
+	  ( 
+	    ( 
+	      ( 
+		( f e. ( II Cn x ) ) /\ 
+		( g e. ( II Cn x ) )
+	      ) /\
+              ( 
+		( ( f ` 0 ) = ( g ` 0 ) ) /\ 
+		( ( f ` 1 ) = ( g ` 1 ) ) 
+	      ) 
+	    ) /\ 
+	    ( z = 
+		{ h e. ( ( II tX II ) Cn x ) | 
+		    A. s e. ( 0 [,] 1 ) 
+		    ( 
+			( 
+			    ( ( s h 0 ) = ( f ` s ) ) /\ 
+			    ( ( s h 1 ) = ( g ` s ) )
+			) /\ 
+			( 
+			    ( ( 0 h s ) = ( f ` 0 ) ) /\ 
+			    ( ( 1 h s ) = ( f ` 1 ) )
+			) 
+		    ) 
+		} 
+	    )
+	  ) 
+	} 
+     ) 
+  ) 
+} 
+) $.
+df-phtpc $a |- 
+( =~ph = 
+{ <. x , y >. | 
+  ( 
+     ( x e. Top ) /\ 
+     ( y = 
+	{ <. f , g >. | 
+	    ( 
+	      ( 
+		 ( ( f e. ( II Cn x ) ) /\ ( g e. ( II Cn x ) ) ) /\ 
+		 ( 
+		    ( ( f ` 0 ) = ( g ` 0 ) ) /\ 
+		    ( ( f ` 1 ) = ( g ` 1 ) )
+		 ) 
+	      ) /\ 
+	      ( ( f ( PHtpy ` x ) g ) =/= (/) )
+	    ) 
+	}
+     )
+  ) 
+} 
+) $.
+
+
+
+
+euind.2 $e |- ( ( x = y ) -> ( A = B ) ) $.
+df-cst $a |- 
+( cset = 
+{ <. g , h >. | 
+	( h = 
+		{ <. <. x , y >. , z >. | 
+			( 
+				( x e. ~P dom dom g ) /\ 
+				( y e. ~P dom dom g ) /\  
+				( z = 
+					{ a | E. u e. x E. v e. y 
+						( a = ( u g v ) )
+					} 
+				)
+			) 
+		} 
+	)
+} 
+) $.
+df-lea $a |- ( le = { <. <. r , x >. , y >. | ( y = ( `' r ge x ) ) } ) $.
+df-prod $a |- 
+( prod_ k e. A G B = 
+{ x | E. m E. n e. ( ZZ>= ` m )
+	( 
+		( A = ( m ... n ) ) /\ 
+		( x e. 
+			( 
+				( <. m , G >. seq ( { <. k , y >. | ( y = B ) } |` ZZ ) 
+				) ` n 
+			) 
+		) 
+	) 
+} 
+) $.
+hbprod1.1 $e |- ( ( x e. A ) -> A. k ( x e. A ) ) $.
+df-tofld $a |- 
+( Tofld = 
+{ <. <. g , h >.  , r >. | 
+	( 
+		( <. g , h >. e. Fld ) /\ 
+		( ( r e. Toset ) /\ ( U. U. r = ran g ) ) /\ 
+		A. x e. U. U. r A. y e. U. U. r A. z e. U. U. r 
+		( 
+			( ( x r y ) -> ( ( x g z ) r ( y g z ) ) ) /\ 
+			( ( ( Id ` g ) r z ) -> ( ( x h z ) r ( y h z ) ) ) 
+		) 
+	) 
+} 
+) $.
+df-zd $a |- 
+( zeroDiv = 
+{ <. r , y >. | 
+	( y = 
+		{ a e. ran ( 1st ` r ) | 
+			( 
+				( a =/= ( Id ` ( 1st ` r ) ) ) /\
+        			E. b e. ran ( 1st ` r )
+				( 
+					( b =/= ( Id ` ( 1st ` r ) ) ) /\
+					( ( a ( 2nd ` r ) b ) = ( Id ` ( 1st ` r ) ) )
+				) 
+			) 
+		} 
+	)
+} 
+) $.
+vecrcan.1 $e |- ( plus_w = ( 1st ` ( 2nd ` R ) ) ) $.
+vecrcan.2 $e |- ( W = ran plus_w ) $.
+mulveczer.4 $e |- ( dot_t = ( 2nd ` ( 1st ` R ) ) ) $.
+df-svs $a |- 
+( SubVec = 
+{ <. x , y >. | 
+	( 
+		( x e. Vec ) /\
+       		( y = 
+			{ v e. Vec | 
+				( 
+					( ( 1st ` v ) = ( 1st ` x ) ) /\ 
+					( ( 1st ` ( 2nd ` v ) ) C_ ( 1st ` ( 2nd ` x ) ) ) /\
+					( 
+						( 2nd ` ( 2nd ` v ) ) = 
+						( 
+							( 2nd ` ( 2nd ` x ) ) |` 
+							( 
+								ran ( 1st ` ( 1st ` x ) ) X. 
+								ran ( 1st ` ( 2nd ` v ) ) 
+							) 
+						) 
+					)
+				) 
+			} 
+		)
+	) 
+} 
+) $.
+df-topgrp $a |- 
+( TopGrp = 
+{ <. g , j >. | 
+	( 
+		( ( g e. Grp ) /\ ( j e. Top ) ) /\ 
+		( g e. ( ( j tX j ) Cn j ) ) /\ 
+		( ( inv ` g ) e. ( j Cn j ) )
+	) 
+} 
+) $.
+flimfneic.5 $e |- ( N = ( ( A - B ) (,) ( A + B ) ) ) $.
+df-tsk $a |- 
+( Tarski = 
+{ y |  
+	( 
+		A. z e. y ( ( ~P z C_ y ) /\ E. w e. y ( ~P z C_ w ) ) /\ 
+		A. z e. ~P y ( ( z ~~ y ) \/ ( z e. y ) ) 
+	) 
+} 
+) $.
+df-tskmp $a |- 
+( tarskiMap = 
+{ <. a , b >. | 
+	( b = |^| { y | ( ( a e. y ) /\ ( y e. Tarski ) ) } )
+} 
+) $.
+df-plibg0 $a |- 
+( Plibg0 = 
+{ <. x , y >. | 
+	( 
+		( 
+			( x e. Plig ) /\
+         		Rel y /\ 
+			Rel dom y 
+		) /\ 
+		( 
+			( dom dom y = U. x ) /\ 
+			( ran dom y = U. x ) /\ 
+			( ran y = U. x )
+		) 
+	) 
+} 
+) $.
+df-plibg1 $a |- 
+( Plibg1 = 
+{ <. x , y >. | A. p e. U. x A. q e. U. x A. r e. U. x
+	( 
+		( <. <. p , q >. , r >. e. y ) -> 
+		( 
+			( <. <. r , q >. , p >. e. y ) /\ 
+			E. l e. x ( ( p e. l ) /\ ( q e. l ) /\ ( r e. l ) ) /\ 
+			( ( p =/= q ) /\ ( p =/= r ) /\ ( q =/= r ) ) 
+		) 
+	) 
+} 
+) $.
+df-plibg2 $a |- 
+( Plibg2 = 
+{ <. x , y >. | A. b e. U. x A. d e. U. x 
+	( 
+		( b =/= d ) -> 
+		E. a e. U. x E. c e. U. x E. e e. U. x 
+		( 
+			( <. <. a , b >. , d >. e. y ) /\ 
+			( <. <. b , c >. , d >. e. y ) /\ 
+			( <. <. b , d >. , e >. e. y )
+		) 
+	) 
+} 
+) $.
+df-plibg3 $a |- 
+( Plibg3 = 
+{ <. x , y >. | A. l e. x A. p e. U. x A. q e. U. x A. r e. U. x
+	( 
+		( 
+			( ( p e. l ) /\ ( q e. l ) /\ ( r e. l ) ) /\ 
+			( ( p =/= q ) /\ ( q =/= r ) /\ ( p =/= r ) ) 
+		) ->
+		( 
+			( 
+				( <. <. q , p >. , r >. e. y ) /\ 
+				-. ( <. <. p , q >. , r >. e. y ) /\ 
+				-. ( <. <. p , r >. , q >. e. y )
+			) \/ 
+			( 
+				-. ( <. <. q , p >. , r >. e. y ) /\ 
+				( <. <. p , q >. , r >. e. y ) /\ 
+				-. ( <. <. p , r >. , q >. e. y ) 
+			) \/
+			( 
+				-. ( <. <. q , p >. , r >. e. y ) /\ 
+				-. ( <. <. p , q >. , r >. e. y ) /\
+				( <. <. p , r >. , q >. e. y ) 
+			) 
+		) 
+	) 
+} 
+) $.
+df-plibg4a $a |- 
+( Plibg4a = 
+{ <. x , y >. | A. l e. x A. p e. U. x A. q e. U. x A. r e. U. x
+	( 
+		( 
+			( -. ( p e. l ) /\ -. ( q e. l ) /\ -. ( r e. l ) ) /\
+			( 
+				( 
+					{ a e. U. x | 
+						( ( <. <. p , a >. , q >. e. y ) \/ ( a = p ) \/ ( a = q ) ) 
+					} i^i l 
+				) = (/) 
+			) /\ 
+			( 
+				( 
+					{ a e. U. x | 
+						( ( <. <. q , a >. , r >. e. y ) \/ ( a = q ) \/ ( a = r ) ) 
+					} i^i l 
+				) = (/) 
+			)
+		) -> 
+		( 
+			( 
+				{ a e. U. x | 
+					( ( <. <. p , a >. , r >. e. y ) \/ ( a = p ) \/ ( a = r ) ) 
+				} i^i l 
+			) = (/) 
+		)
+	) 
+} 
+) $.
+df-plibg4b $a |- 
+( Plibg4b = 
+{ <. x , y >. | A. l e. x A. p e. U. x A. q e. U. x A. r e. U. x 
+	( 
+		( 
+			( -. ( p e. l ) /\ -. ( q e. l ) /\ -. ( r e. l ) ) /\
+         		( 
+				( 
+					( 
+						{ a e. U. x | ( <. <. p , a >. , q >. e. y ) } i^i l 
+					) =/= (/) 
+				) /\ 
+				( 
+					( 
+						{ a e. U. x | ( <. <. q , a >. , r >. e. y ) } i^i l 
+					) =/= (/) 
+				)
+			) 
+		) -> 
+		( 
+			( 
+				{ a e. U. x | ( <. <. q , a >. , r >. e. y ) } i^i l 
+			) = (/) 
+		)
+	) 
+} 
+) $.
+df-ptfin $a |- ( PtFin = { x | A. y e. U. x ( { z e. x | ( y e. z ) } e. Fin ) } ) $.
+df-locfin $a |- 
+( LocFin = 
+{ <. x , y >. | 
+	( 
+		( x e. Top ) /\ 
+		( U. x = U. y ) /\ 
+		A. p e. U. x E. n e. ( ( nei ` x ) ` { p } ) 
+			( 
+				{ s e. y | ( ( s i^i n ) =/= (/) ) } e. 
+				Fin 
+			)
+	) 
+} 
+) $.
+df-t0ALT $a |- 
+( Kol2 = 
+{ j e. Top | A. x e. U. j A. y e. U. j 
+	( 
+		( x =/= y ) -> 
+		E. o e. j -. ( ( x e. o ) <-> ( y e. o ) ) 
+	) 
+} 
+) $.
+df-reg $a |- ( Reg = 
+{ j e. Top | A. c e. ( Clsd ` j ) A. x e. U. j 
+	( 
+		( x e/ c ) -> 
+		E. o e. j E. p e. j 
+			( 
+				( c C_ o ) /\ ( x e. p ) /\ ( ( o i^i p ) = (/) )
+			) 
+	) 
+} 
+) $.
+df-nrm $a |- 
+( Nrm = 
+{ j e. Top | A. c e. ( Clsd ` j ) A. d e. ( Clsd ` j ) 
+	( 
+		( ( c i^i d ) = (/) ) -> 
+		E. o e. j E. p e. j 
+			( 
+				( c C_ o ) /\ ( d C_ p ) /\ ( ( o i^i p ) = (/) )
+			) 
+	) 
+} 
+) $.
+ df-prt $a |- 
+( 
+	Prt A <-> 
+	A. x e. A A. y e. A 
+	( ( x = y ) \/ ( ( x i^i y ) = (/) ) ) 
+) $.
+ungr $a |- 
+( Uni = 
+{ u | 
+	( 
+		( 
+			A. x e. u A. y e. x ( y e. u ) /\ 
+			A. x e. u A. y e. u ( { x , y } e. u ) /\ 
+			A. x e. u ( ~P x e. u )
+		) /\ 
+		A. i e. u A. f e. ( u ^m i ) 
+		(
+			U_ k e. i ( f ` k ) e. u  
+		)
+	) 
+} 
+) $.
+df-plibg $a |- ( Plibg = ( Plibg0 i^i ( Plibg1 i^i ( Plibg2 i^i ( Plibg3 i^i ( Plibg4a i^i Plibg4b ) ) ) ) ) ) $.
+2ndcctbss.1 $e |- ( X = U. B ) $.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

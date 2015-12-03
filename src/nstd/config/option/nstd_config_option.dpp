@@ -1,0 +1,32 @@
+/*****************************************************************************/
+/* Project name:    nstd - non-standard library                              */
+/* File name:       nstd_config_option.dpp                                   */
+/* Description:     interface declarations for config module                 */
+/* Copyright:       (c) 2006-2009 Dmitri Vlasov                              */
+/* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
+/* Email:           vlasov at academ.org                                     */
+/* URL:             http://mathdevlanguage.sourceforge.net                   */
+/* Modified by:                                                              */
+/* License:         GNU General Public License Version 3                     */
+/*****************************************************************************/
+
+#ifndef NSTD_CONFIG_OPTION_DPP_
+#define NSTD_CONFIG_OPTION_DPP_
+
+namespace nstd {
+namespace config {
+namespace option {
+
+	template<class>
+	class Option;
+	class Path;
+	class Size;
+	class Time;
+
+	typedef Option<bool>      Bool;
+	typedef Option<String<> > String;
+}
+}
+}
+
+#endif /* NSTD_CONFIG_OPTION_DPP_ */

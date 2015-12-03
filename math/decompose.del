@@ -1,0 +1,343 @@
+
+/********************************************/
+/*  Test 1 (на переименование новых         */
+/*  вспомогательных символов (от приведения */
+/*  к н.ф.) при построении копии)           */
+/********************************************/
+
+signature D0_1 = { }
+theory T0_1 = {
+	∃r.(F⊓G) ⊑ C 
+}
+
+signature S_3 = {
+	relation r,
+	concept F,
+	concept G,
+	concept C
+}
+
+assert
+decomposition_of signature (T0_1, D0_1) = (S_3)
+
+/********************************************/
+/*  Test 2 (неприменение преобразований к   */
+/* формулам, содержащим лишь один не дельта-*/
+/* символ, неприменение разложения s-форм к */
+/* формулам, где в левой/правой части       */
+/* дельта-терм                              */
+/********************************************/
+
+signature D0_2 = {
+	concept D,
+	relation r
+}
+theory T0_2 = {
+	⊤ ⊑ A,
+	B ⊑ ∃r.D,
+	(C⊓E) ≡ D
+}
+
+signature S_4 = {
+	concept C,
+	concept E
+}
+signature S_5 = { concept A }
+signature S_6 = { concept B }
+
+assert
+decomposition_of signature (T0_2, D0_2) = (S_4 ⊔ S_5 ⊔ S_6)
+
+/********************************************/
+/*  Test 0 (тавтологическая теория)         */
+/********************************************/
+
+signature D_0 = { }
+theory T_0 = {
+ (A⊓∃r.B) ⊑ ∃r.B
+}
+
+signature S_0 = { relation r }
+signature S_1 = { concept A }
+signature S_2 = { concept B }
+
+assert 
+decomposition_of signature (T_0, D_0) = (S_0 ⊔ S_1 ⊔ S_2)
+
+/********************************************/
+/*  Test 1 (тавтологическая теория)         */
+/********************************************/
+
+signature D_1 = { }
+theory T_1 = {
+	(A⊓∃r.B) ⊑ ⊤,
+	∃s.A ⊑ ⊤
+}
+
+/* Ответ: {A} {r} {s} {B}*/
+signature S_7 = { relation r }
+signature S_8 = { relation s }
+signature S_9 = { concept A }
+signature S_10 = { concept B }
+
+assert
+decomposition_of signature (T_1, D_1) = (S_7 ⊔ S_8 ⊔ S_9 ⊔ S_10)
+
+/********************************************/
+/*  Test 2 (отщепление в компоненты мощности*/ 
+/*  1 символов из избыточной аксиомы)       */
+/********************************************/
+
+signature D_2 = { }
+theory T_2 = {
+	(A⊓∃r.(B⊓∃s.C)) ⊑ ∃s.F, //тавтология, т.к. правая часть эквивалентна ⊤
+	⊤ ⊑ F,
+	⊤ ⊑ ∃s.E
+}
+
+// Ответ: {A} {r} {B} {C} {s,E} {F}
+signature S_11 = { relation r }
+signature S_12 = {
+	relation s,
+	concept E
+}
+signature S_13 = { concept F }
+signature S_14 = { concept C }
+signature S_15 = { concept A }
+signature S_16 = { concept B }
+
+assert
+decomposition_of signature (T_2, D_2) =
+(S_11 ⊔ S_12 ⊔ S_13 ⊔ S_14 ⊔ S_15 ⊔ S_16)
+
+
+/********************************************/
+/*  Test 3                                  */
+/********************************************/
+
+signature D_3 = { }
+theory T_3 = {
+	∃r.B ⊑ ∃r.C,
+	B ⊑ C
+}
+
+signature S_17 = { relation r }
+signature S_18 = {
+	concept C,
+	concept B
+}
+
+assert
+decomposition_of signature (T_3, D_3) = (S_17 ⊔ S_18)
+
+
+/********************************************/
+/*  Test 4 (проверка одного из шагов проце- */
+/*  дуры нормализации)                      */
+/********************************************/
+
+signature D_4 = { concept D }
+theory T_4 = {
+	(∃r.B⊓∃s.C) ⊑ ∃r.E, // как будет нормализована эта формула?
+	B ⊑ D,
+	D ⊑ B
+}
+
+signature S_19 = {
+	relation r,
+	relation s,
+	concept C,
+	concept E
+}
+signature S_20 = { concept B }
+
+assert
+decomposition_of signature (T_4, D_4) = (S_19⊔S_20)
+
+
+
+/********************************************/
+/*  Test 5 (тест переименования при обнару- */
+/*  жении дельта-независимости)             */
+/********************************************/
+
+signature D_5 = { concept D }
+theory T_5 = {
+	∃r.B ⊑ D,
+	D ⊑ ∃r.B,
+	A ⊑ ∃r.B,
+	∃r.B ⊑ A
+}
+
+// Ответ: {A} {B,r}
+signature S_21 = {
+	relation r,
+	concept B
+}
+signature S_22 = { concept A }
+
+assert
+decomposition_of signature (T_5, D_5) = (S_21 ⊔ S_22)
+
+
+/********************************************/
+/*  Test 6 (для этого теста требуется вклю- */
+/*  чить расщепление s-форм) (пример сущест-*/
+/*  вования промежуточного дельта-терма для */
+/*  неизбыточной формулы A ⊑ B)             */
+/********************************************/
+
+signature D_6 = { concept D }
+theory T_6 = {
+	A ⊑ (B⊓C),
+	D ⊑ B,
+	D ⊑ C,
+	(B⊓C) ⊑ D
+}
+
+signature S_23 = {
+	concept C,
+	concept B
+}
+signature S_24 = { concept A }
+
+assert
+decomposition_of signature (T_6, D_6) = (S_23 ⊔ S_24)
+
+
+/********************************************/
+/*  Test 7 (пример сокращения левой конъюнк-*/
+/*  ции в неизбыточной аксиоме)             */
+/********************************************/
+
+signature D_7 = { concept D }
+theory T_7 = {
+	(A⊓B) ⊑ C,
+	A ⊑ D,
+	D ⊑ B
+}
+
+// Ответ: {A,C,D} {B,D}
+signature S_25 = {
+	concept C,
+	concept A
+}
+signature S_26 = { concept B }
+
+assert
+decomposition_of signature (T_7, D_7) = (S_25 ⊔ S_26)
+
+
+/********************************************/
+/*  Test 8                                  */
+/********************************************/
+
+signature D_8 = {
+	concept D,
+	concept D_1,
+	concept D_2,
+	relation r
+}
+
+theory T_8 = {
+	(A_1⊓A_2⊓A_3⊓A_4) ≡ D,
+	(A_2⊓A_4) ≡ (D_1⊓∃r.A_4),
+	(A_3⊓∃r.A_4) ≡ D_2
+}
+
+// Ответ: {A_1},{A_2,A_3,A_4}
+signature S_27 = { concept A_1 }
+signature S_28 = {
+	concept A_2,
+	concept A_3,
+	concept A_4
+}
+
+assert
+decomposition_of signature (T_8, D_8) = (S_27 ⊔ S_28)
+
+
+/********************************************/
+/*  Test 9                                  */
+/********************************************/
+
+signature D_9 = {
+	relation r,
+	relation s,
+	concept D
+}
+theory T_9 = {
+	C ⊑ ∃s.E,
+	∃r.∃s.E ⊑ E
+}
+
+signature S_29 = {
+	concept C,
+	concept E
+}
+
+assert
+decomposition_of signature (T_9, D_9) = (S_29)
+
+
+/********************************************/
+/*  Test 10                                 */
+/********************************************/
+
+signature D_10 = {
+	relation r,
+	relation s,
+	concept D
+}
+
+theory T_10 = {
+	C ⊑ ∃s.E,
+	∃r.∃s.E ⊑ E,
+	A ⊑ (B⊓C),
+	D ⊑ B
+}
+
+signature S_30 = {
+	concept C,
+	concept A,
+	concept B,
+	concept E
+}
+
+assert
+decomposition_of signature (T_10, D_10) = (S_30)
+
+/********************************************/
+/*  Test 11                                 */
+/********************************************/
+
+signature D_11 = {
+	relation r,
+	relation s,
+	concept D
+}
+theory T_11 = {
+	F ⊑ ∃s.E,
+	∃r.∃s.E ⊑ E,
+	(B⊓C) ≡ (D⊓C),
+	(A⊓∃s.X⊓∃r.(Y⊓∃s.D⊓(A⊓∃s.D⊓(C⊓B)))) ⊑ (∃s.D⊓A⊓A)
+}
+
+signature S_31 = {
+	concept F,
+	concept E
+}
+signature S_32 = {
+	concept C,
+	concept A,
+	concept B,
+	concept X,
+	concept Y
+}
+
+assert
+decomposition_of signature (T_11, D_11) = (S_31 ⊔ S_32)
+
+
+
+

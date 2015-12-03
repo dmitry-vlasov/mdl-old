@@ -1,0 +1,37 @@
+/*****************************************************************************/
+/* Project name:    nstd - non-standard library                              */
+/* File name:       nstd_memory_allocator.dpp                                */
+/* Description:     declarations for memory allocator module                 */
+/* Copyright:       (c) 2006-2009 Dmitri Vlasov                              */
+/* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
+/* Email:           vlasov at academ.org                                     */
+/* URL:             http://mathdevlanguage.sourceforge.net                   */
+/* Modified by:                                                              */
+/* License:         GNU General Public License Version 3                     */
+/*****************************************************************************/
+
+#ifndef NSTD_MEMORY_ALLOCATOR_DPP_
+#define NSTD_MEMORY_ALLOCATOR_DPP_
+
+namespace nstd {
+namespace memory {
+namespace allocator {
+
+	/// Allocation methods.
+	enum Method {
+		EXACT,          ///< Exact method. Allocates exact amount of bytes.
+		GREEDY,         ///< Used for vectors. May allocate more bytes then it was demanded.
+		DEFAULT = EXACT ///< Default allocation method.
+	};
+
+	class Boxed;
+	class Control;
+	class Direct;
+	class Heap;
+	class Stack;
+	class Standard;
+}
+}
+}
+
+#endif /*NSTD_MEMORY_ALLOCATOR_DPP_*/

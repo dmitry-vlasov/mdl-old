@@ -1,0 +1,37 @@
+/*****************************************************************************/
+/* Project name:    del - mathematics development language                   */
+/* File Name:       del_source.dpp                                             */
+/* Description:     declarations for module for all AST sources                */
+/* Copyright:       (c) 2006-2009 Dmitri Vlasov                              */
+/* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
+/* Email:           vlasov at academ.org                                     */
+/* URL:             http://mathdevlanguage.sourceforge.net                   */
+/* Modified by:                                                              */
+/* License:         GNU General Public License Version 3                     */
+/*****************************************************************************/
+
+#ifndef DEL_SOURCE_DPP_
+#define DEL_SOURCE_DPP_
+
+namespace del {
+namespace source {
+
+	class Answer;
+	class Assertion;
+	class Comments;
+	class Decompose;
+	class Decomposition;
+	template<class A = allocator :: Heap>
+	class Expansion;
+	class Minimize;
+	class Minimization;
+	class Question;
+	template<class A = allocator :: Heap>
+	class Signature;
+	class Solution;
+	class Source;
+	class Theory;
+}
+}
+
+#endif /*DEL_SOURCE_DPP_*/

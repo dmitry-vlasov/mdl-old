@@ -1,0 +1,34 @@
+/*****************************************************************************/
+/* Project name:    smm - verifier for the Simplified MetaMath language      */
+/* File name:       smm_lexer.dpp                                            */
+/* Description:     interface declarations for smm lexer module              */
+/* Copyright:       (c) 2006-2010 Dmitri Vlasov                              */
+/* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
+/* Email:           vlasov at academ.org                                     */
+/* URL:             http://mathdevlanguage.sourceforge.net                   */
+/* Modified by:                                                              */
+/* License:         GNU General Public License Version 3                     */
+/*****************************************************************************/
+
+#ifndef SMM_LEXER_DPP_
+#define SMM_LEXER_DPP_
+
+namespace smm {
+namespace lexer {
+
+	class CommentScaner;
+	class LabelScaner;
+	class IndexScaner;
+	class Lexer;
+	class LiteralScaner;
+	class PathScaner;
+	class Scaner;
+	class Token;
+	class WhilespaceScaner;
+}
+
+	using lexer :: Lexer;
+	using lexer :: Token;
+}
+
+#endif /*SMM_LEXER_DPP_*/

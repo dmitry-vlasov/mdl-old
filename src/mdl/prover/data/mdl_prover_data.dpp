@@ -1,0 +1,34 @@
+/*****************************************************************************/
+/* Project name:    mdl - mathematics development language                   */
+/* File Name:       mdl_prover_data.dpp                                      */
+/* Description:     data for prover statistics                               */
+/* Copyright:       (c) 2006-2009 Dmitri Vlasov                              */
+/* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
+/* Email:           vlasov at academ.org                                     */
+/* URL:             http://mathdevlanguage.sourceforge.net                   */
+/* Modified by:                                                              */
+/* License:         GNU General Public License Version 3                     */
+/*****************************************************************************/
+
+#ifndef MDL_PROVER_DATA_DPP_
+#define MDL_PROVER_DATA_DPP_
+
+namespace mdl {
+namespace prover {
+namespace data {
+
+	class Down;
+	class Root;
+	class Store;
+	class Tree;
+	class Up;
+
+	typedef Tree Data;
+}
+	typedef
+		data :: Data
+		Data;
+}
+}
+
+#endif /*MDL_PROVER_DATA_DPP_*/

@@ -1,0 +1,40 @@
+/*****************************************************************************/
+/* Project name:    del - mathematics development language                   */
+/* File name:       del_model_node_negative.dpp                              */
+/* Description:     negative nodes for model                                 */
+/* Copyright:       (c) 2006-2010 Dmitri Vlasov                              */
+/* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
+/* Email:           vlasov at academ.org                                     */
+/* URL:             http://mathdevlanguage.sourceforge.net                   */
+/* Modified by:                                                              */
+/* License:         GNU General Public License Version 3                     */
+/*****************************************************************************/
+
+#ifndef DEL_MODEL_NODE_NEGATIVE_DPP_
+#define DEL_MODEL_NODE_NEGATIVE_DPP_
+
+namespace del {
+namespace model {
+namespace node {
+namespace negative {
+
+	template<class>
+	class Conjunction;
+	template<class>
+	class ExistsLeft;
+	template<class>
+	class ExistsRight;
+	template<class>
+	class Id;
+	template<class>
+	class Negative;
+	template<class>
+	class Simple;
+	template<class>
+	class Top;
+}
+}
+}
+}
+
+#endif /*DEL_MODEL_NODE_NEGATIVE_DPP_*/

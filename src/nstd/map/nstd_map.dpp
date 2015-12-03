@@ -1,0 +1,32 @@
+/*****************************************************************************/
+/* Project name:    nstd - non-standard library                              */
+/* File name:       nstd_map.dpp                                             */
+/* Description:     declarations for nstd mapping module                     */
+/* Copyright:       (c) 2006-2009 Dmitri Vlasov                              */
+/* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
+/* Email:           vlasov at academ.org                                     */
+/* URL:             http://mathdevlanguage.sourceforge.net                   */
+/* Modified by:                                                              */
+/* License:         GNU General Public License Version 3                     */
+/*****************************************************************************/
+
+#ifndef NSTD_MAP_DPP_
+#define NSTD_MAP_DPP_
+
+namespace nstd {
+namespace map {
+
+	template<class, class, class>
+	class FastVector;
+	template<class, class>
+	class Node;
+	template<class, class, class>
+	class Scalar;
+	template<class, class>
+	class String;
+	template<class, class>
+	class Vector;
+}
+}
+
+#endif /*NSTD_MAP_DPP_*/

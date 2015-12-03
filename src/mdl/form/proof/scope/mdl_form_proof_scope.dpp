@@ -1,0 +1,33 @@
+/*****************************************************************************/
+/* Project name:    mdl - mathematics development language                   */
+/* File Name:       mdl_form_proof_scope.dpp                                 */
+/* Description:     declarations for scope module                            */
+/* Copyright:       (c) 2006-2009 Dmitri Vlasov                              */
+/* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
+/* Email:           vlasov at academ.org                                     */
+/* URL:             http://mathdevlanguage.sourceforge.net                   */
+/* Modified by:                                                              */
+/* License:         GNU General Public License Version 3                     */
+/*****************************************************************************/
+
+#ifndef MDL_FORM_PROOF_SCOPE_DPP_
+#define MDL_FORM_PROOF_SCOPE_DPP_
+
+namespace mdl{
+namespace form {
+namespace proof {
+namespace scope {
+
+	class Assertion;
+	class Claim;
+	class Notation;
+	class Proof;
+	class Scope;
+	class Step;
+	class Variable;
+}
+}
+}
+}
+
+#endif /*MDL_FORM_PROOF_SCOPE_DPP_*/

@@ -1,0 +1,121 @@
+/*****************************************************************************/
+/* Project name:    del - mathematics development language                   */
+/* File Name:       del_interface.dpp                                        */
+/* Description:     declaration interfaces for del abstract interfaces       */
+/* Copyright:       (c) 2006-2009 Dmitri Vlasov                              */
+/* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
+/* Email:           vlasov at academ.org                                     */
+/* URL:             http://mathdevlanguage.sourceforge.net                   */
+/* Modified by:                                                              */
+/* License:         GNU General Public License Version 3                     */
+/*****************************************************************************/
+
+#ifndef DEL_INTERFACE_DPP_
+#define DEL_INTERFACE_DPP_
+
+#include "del/types/del_types.hpp"
+#include "del/interface/model/del_interface_model.dpp"
+
+namespace del {
+namespace interface {
+
+	class Answer;
+	class Assertion;
+	template<class T>
+	class Cloneable;
+	class Comments;
+	class Decompose;
+	class Decomposition;
+	class Expansion;
+	class Formula;
+	class Minimize;
+	class Minimization;
+	class Object;
+	class Question;
+	class Signature;
+	class Source;
+	class Symbol;
+	class Term;
+	class Theory;
+	class Writable;
+}
+
+	using interface :: Answer;
+	using interface :: Assertion;
+	using interface :: Cloneable;
+	using interface :: Comments;
+	using interface :: Decompose;
+	using interface :: Decomposition;
+	using interface :: Expansion;
+	using interface :: Formula;
+	using interface :: Minimize;
+	using interface :: Minimization;
+	using interface :: Object;
+	using interface :: Question;
+	using interface :: Signature;
+	using interface :: Source;
+	using interface :: Symbol;
+	using interface :: Term;
+	using interface :: Theory;
+	using interface :: Writable;
+
+namespace array {
+	typedef
+		Array<del :: Symbol, storage :: ByValue, allocator :: Heap>
+		Symbol;
+}
+
+namespace vector {
+
+	typedef
+		Vector<const del :: Assertion*, storage :: ByValue, allocator :: Heap>
+		Assertion;
+	typedef
+		Vector<const del :: Formula, storage :: ByPointer, allocator :: Heap>
+		Formula;
+	typedef
+		Vector<const del :: Term, storage :: ByPointer, allocator :: Heap>
+		Term;
+	typedef
+		Vector<const del :: Question*, storage :: ByValue, allocator :: Heap>
+		Question;
+	typedef
+		Vector<const del :: Decompose*, storage :: ByValue, allocator :: Heap>
+		Decompose;
+	typedef
+		Vector<const del :: Decomposition*, storage :: ByValue, allocator :: Heap>
+		Decomposition;
+	typedef
+		Vector<const del :: Minimize*, storage :: ByValue, allocator :: Heap>
+		Minimize;
+	typedef
+		Vector<const del :: Theory*, storage :: ByValue, allocator :: Heap>
+		Theory;
+	typedef
+		Vector<const del :: Signature*, storage :: ByValue, allocator :: Heap>
+		Signature;
+	typedef
+		Vector<const del :: Writable, storage :: ByPointer, allocator :: Heap>
+		Writable;
+	typedef
+		Vector<del :: Symbol, storage :: ByValue, allocator :: Heap>
+		Symbol;
+	typedef
+		Vector<value :: Variable, storage :: ByValue, allocator :: Heap>
+		Variable;
+}
+
+namespace set {
+	typedef
+		Set<const del :: Formula*, storage :: ByValue, allocator :: Heap>
+		Formula;
+}
+
+namespace pair {
+	typedef
+		del :: pair :: Pair<del :: Symbol>
+		Symbol;
+}
+}
+
+#endif /*DEL_INTERFACE_DPP_*/
