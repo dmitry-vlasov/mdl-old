@@ -36,8 +36,7 @@ AC_CONFIG_FILES([
 Makefile
 	
 math/Makefile
-	math/prover/Makefile
-
+scripts/Makefile
 metamath/Makefile
 
 src/Makefile

@@ -1,6 +1,0 @@
-benchmark  5m
-tune       5m
-learn      1m
-compress   1m
-prove      1m
-

@@ -1,10 +1,8 @@
 #!/bin/bash
 
 # mm/mdl test for translation of the metamath base to the directory tree
-# 1) first argument - the name of the source file to be 
-#    translated 
-# 2) second argument - the build directory from the top of
-#    the project. By default, it's empty.
+# argument - the name of the source file to be translated 
+# without extension (!!!)
 
 if [ -z $1 ] 
 then echo "NO INPUT FILE."; exit
@@ -12,30 +10,37 @@ fi;
 
 file=$1
 
-if [ -z $2 ] 
-then dir='';
-else dir=$2'/';
-fi;
+# We are located at /usr/share/mdl/scripts
 
-mm_dir='mm/'
-rus_dir='rus/'
-smm_dir='smm/'
+math_dir='../math'; 
+bin_dir='../../../../bin';
+
+mm_dir='mm'
+rus_dir='rus'
+smm_dir='smm'
+
+if ! [ -d ${math_dir} ]
+then
+    mkdir ${math_dir};
+fi;    
+   
+cd ${math_dir};
 
 if ! [ -d $mm_dir ]
 then
     mkdir $mm_dir;
 fi;    
-   
-cd $mm_dir;
 
-ulimit -c unlimited;
+#ulimit -c unlimited;
+
+cd ${mm_dir}
 
 echo "================================================";
-echo "cutting: ${file}.mm --> ${mm_dir}${file}.mm";
+echo "cutting: ${file}.mm --> ${mm_dir}/${file}.mm";
 echo "================================================";
 echo;
 
-../../${dir}src/mm/mm \
+${bin_dir}/mm \
 	-w -v \
 	--mem-all --info-all \
 	--cut-source \
@@ -48,17 +53,17 @@ then echo "TEST FAILED."; exit
 fi;
 
 echo "================================================";
-echo "translation: ${mm_dir}${file}.mm --> ${rus_dir}${file}.rus";
+echo "translation: ${mm_dir}/${file}.mm --> ${rus_dir}/${file}.rus";
 echo "================================================";
 echo;
 
-../../${dir}src/mm/mm \
+${bin_dir}/mm \
 	-v -w -t \
 	--deep-translation \
 	--mem-all --info-all \
 	--correct-grammar ../grammar.corr \
 	--correct-symbol ../symbol.corr \
-	-o ../${rus_dir}${file}.rus \
+	-o ../${rus_dir}/${file}.rus \
 	\
 	${file}.mm;
 
@@ -76,15 +81,15 @@ fi;
 cd $rus_dir;
 
 echo "========================================";
-echo "translation: ${rus_dir}${file}.rus --> ${smm_dir}${file}.smm";
+echo "translation: ${rus_dir}/${file}.rus --> ${smm_dir}/${file}.smm";
 echo "========================================";
 echo;
 
-../../${dir}src/mdl/mdl \
+${bin_dir}/mdl \
 	-t -w -v \
 	--deep-write \
 	--mem-all --info-all \
-	-o ../${smm_dir}${file}.smm \
+	-o ../${smm_dir}/${file}.smm \
 	\
 	${file}.rus;
 
@@ -102,11 +107,11 @@ fi;
 cd $smm_dir;
 
 echo "========================================";
-echo "verifying: ${smm_dir}${file}.smm with smm" ;
+echo "verifying: ${smm_dir}/${file}.smm with smm" ;
 echo "========================================";
 echo;
 
-../../${dir}src/smm/smm \
+${bin_dir}/smm \
 	-v --show-stack \
 	--mem-all --info-all \
 	\

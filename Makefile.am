@@ -3,5 +3,6 @@ EXTRA_DIST = \
 
 SUBDIRS = \
 	math \
+	scripts \
 	src \
 	metamath 
