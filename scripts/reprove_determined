@@ -1,0 +1,125 @@
+#!/bin/sh
+
+# mm/mdl translation test
+# 1) first argument - the name of the source file to be 
+#    translated
+# 2) second argument - the build directory from the top of
+#    the project. By default, it's empty.
+
+if [ -z $1 ] 
+then echo "NO INPUT FILE."; exit
+fi;
+
+file=$1
+
+if [ -z $2 ] 
+then dir='';
+else dir=$2'/';
+fi;
+
+echo "=======================================";
+echo "translation: ${file}.mm --> ${file}.rus";
+echo "=======================================";
+echo;
+../${dir}src/mm/mm \
+	-w -t -v \
+	--correct-grammar grammar.corr \
+	--correct-symbol symbol.corr \
+	--mem-all --info-all \
+	-o ${file}.rus \
+	\
+	${file}.mm;
+
+if [ $? != 0 ] 
+then echo "TEST FAILED."; exit
+fi;
+
+echo "=============================================";
+echo "reducing: ${file}.rus --> ${file}_reduced.rus";
+echo "=============================================";
+echo;
+
+../${dir}src/mdl/mdl \
+	-w -v \
+	--mem-summary --info-all \
+	--refactor \
+	--remove-redundancy \
+	--info-refactoring \
+	-o ${file}_reduced.rus \
+	${file}.rus;
+
+if [ $? != 0 ] 
+then echo "TEST FAILED."; exit
+fi;
+
+echo "================================================";
+echo "reproving: ${file}_reduced.rus --> ${file}_reproved.rus";
+echo "================================================";
+echo;
+
+../${dir}src/mdl/mdl \
+	-w -v \
+	--stack-volume 128m --time-limit 30m \
+	--prove-in-heap \
+	--threads 1 \
+	--reprove \
+	--grow-up-determined \
+	--grow-up-limit 3 \
+	--grow-down-determined \
+	--grow-down-limit 1 \
+	--mem-balance \
+	--mem-summary \
+	--info-all \
+	-o ${file}_reproved.rus \
+	${file}_reduced.rus;
+
+if [ $? != 0 ] 
+then echo "TEST FAILED."; exit
+fi;
+
+echo "================================================";
+echo "translating: ${file}_reproved.rus --> ${file}_reproved.smm";
+echo "================================================";
+echo;
+
+../${dir}src/mdl/mdl \
+	-t -w -v \
+	--mem-all --info-all \
+	-o ${file}_reproved.smm \
+	${file}_reproved.rus;
+
+if [ $? != 0 ] 
+then echo "TEST FAILED."; exit
+fi;
+
+
+echo "====================================";
+echo "verifying: ${file}_reproved.smm with metamath";
+echo "====================================";
+echo;
+
+../${dir}metamath/metamath \
+	"read ${file}_reproved.smm" \
+	'verify proof *' \
+	exit 
+
+if [ $? != 0 ] 
+then echo "TEST FAILED."; exit
+fi;
+
+echo "===============================";
+echo "verifying: ${file}_reproved.smm with smm" ;
+echo "===============================";
+echo;
+
+../${dir}src/smm/smm \
+	-v --show-stack \
+	--mem-all --info-all \
+	\
+	${file}_reproved.smm;
+
+if [ $? != 0 ] 
+then echo "TEST FAILED."; exit
+else echo "\n\nTests successfully passed :)"; 
+fi;
+
