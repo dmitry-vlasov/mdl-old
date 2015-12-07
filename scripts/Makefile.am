@@ -6,6 +6,7 @@ dist_scripts__SCRIPTS = \
 	implicit_step_proving \
 	compression \
 	proving \
+	reprove_determined \
 	\
 	decomposition \
 	solver 

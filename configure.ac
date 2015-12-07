@@ -2,7 +2,7 @@
 # Process this file with autoconf to produce a configure script.
 
 AC_PREREQ(2.64)
-AC_INIT(mdl, 0.8.9-110, vlasov at academ dot org)
+AC_INIT(mdl, 0.9.0, vlasov at academ dot org)
 AC_CONFIG_SRCDIR([config.h.in])
 AC_CONFIG_HEADER([config.h])
 AM_INIT_AUTOMAKE

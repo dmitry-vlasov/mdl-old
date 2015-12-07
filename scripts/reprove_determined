@@ -1,10 +1,7 @@
 #!/bin/sh
 
-# mm/mdl translation test
-# 1) first argument - the name of the source file to be 
-#    translated
-# 2) second argument - the build directory from the top of
-#    the project. By default, it's empty.
+# mm/mdl reproving test
+# argument - the name of the source file to be reproved
 
 if [ -z $1 ] 
 then echo "NO INPUT FILE."; exit
@@ -12,23 +9,21 @@ fi;
 
 file=$1
 
-if [ -z $2 ] 
-then dir='';
-else dir=$2'/';
-fi;
+math_dir='../math'; 
+bin_dir='../../../bin';
 
 echo "=======================================";
 echo "translation: ${file}.mm --> ${file}.rus";
 echo "=======================================";
 echo;
-../${dir}src/mm/mm \
+${bin_dir}/mm \
 	-w -t -v \
-	--correct-grammar grammar.corr \
-	--correct-symbol symbol.corr \
+	--correct-grammar ${math_dir}/grammar.corr \
+	--correct-symbol ${math_dir}/symbol.corr \
 	--mem-all --info-all \
-	-o ${file}.rus \
+	-o ${math_dir}/${file}.rus \
 	\
-	${file}.mm;
+	${math_dir}/${file}.mm;
 
 if [ $? != 0 ] 
 then echo "TEST FAILED."; exit
@@ -39,14 +34,14 @@ echo "reducing: ${file}.rus --> ${file}_reduced.rus";
 echo "=============================================";
 echo;
 
-../${dir}src/mdl/mdl \
+${bin_dir}/mdl \
 	-w -v \
 	--mem-summary --info-all \
 	--refactor \
 	--remove-redundancy \
 	--info-refactoring \
-	-o ${file}_reduced.rus \
-	${file}.rus;
+	-o ${math_dir}/${file}_reduced.rus \
+	${math_dir}/${file}.rus;
 
 if [ $? != 0 ] 
 then echo "TEST FAILED."; exit
@@ -57,21 +52,21 @@ echo "reproving: ${file}_reduced.rus --> ${file}_reproved.rus";
 echo "================================================";
 echo;
 
-../${dir}src/mdl/mdl \
+${bin_dir}/mdl \
 	-w -v \
 	--stack-volume 128m --time-limit 30m \
 	--prove-in-heap \
 	--threads 1 \
 	--reprove \
 	--grow-up-determined \
-	--grow-up-limit 3 \
+	--grow-up-limit 1 \
 	--grow-down-determined \
-	--grow-down-limit 1 \
+	--grow-down-limit 3 \
 	--mem-balance \
 	--mem-summary \
 	--info-all \
-	-o ${file}_reproved.rus \
-	${file}_reduced.rus;
+	-o ${math_dir}/${file}_reproved.rus \
+	${math_dir}/${file}_reduced.rus;
 
 if [ $? != 0 ] 
 then echo "TEST FAILED."; exit
@@ -82,11 +77,11 @@ echo "translating: ${file}_reproved.rus --> ${file}_reproved.smm";
 echo "================================================";
 echo;
 
-../${dir}src/mdl/mdl \
+${bin_dir}/mdl \
 	-t -w -v \
 	--mem-all --info-all \
-	-o ${file}_reproved.smm \
-	${file}_reproved.rus;
+	-o ${math_dir}/${file}_reproved.smm \
+	${math_dir}/${file}_reproved.rus;
 
 if [ $? != 0 ] 
 then echo "TEST FAILED."; exit
@@ -98,8 +93,8 @@ echo "verifying: ${file}_reproved.smm with metamath";
 echo "====================================";
 echo;
 
-../${dir}metamath/metamath \
-	"read ${file}_reproved.smm" \
+${bin_dir}/metamath \
+	"read ${math_dir}/${file}_reproved.smm" \
 	'verify proof *' \
 	exit 
 
@@ -112,11 +107,11 @@ echo "verifying: ${file}_reproved.smm with smm" ;
 echo "===============================";
 echo;
 
-../${dir}src/smm/smm \
+${bin_dir}/smm \
 	-v --show-stack \
 	--mem-all --info-all \
 	\
-	${file}_reproved.smm;
+	${math_dir}/${file}_reproved.smm;
 
 if [ $? != 0 ] 
 then echo "TEST FAILED."; exit
