@@ -24,7 +24,7 @@ namespace tree {
 
 template<class A>
 class Tree :
-	public object :: Object,
+	public interface :: Tree<A>,
 	public Scalar<Tree<A>, A> {
 public :
 	typedef A Allocator_;

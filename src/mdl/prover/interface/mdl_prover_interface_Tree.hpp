@@ -42,8 +42,8 @@ public :
 	virtual void confirm() = 0;
 	virtual bool isProved() = 0;
 
-	virtual void showVolume (String&) const = 0;
-	virtual void showTiming (String&) const = 0;
+	virtual void showVolume (String&, const int indent = 0) const = 0;
+	virtual void showTiming (String&, const int indent = 0) const = 0;
 	virtual Data* getData() const = 0;
 
 	static Tree* get();

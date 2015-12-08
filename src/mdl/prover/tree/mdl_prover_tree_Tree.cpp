@@ -66,14 +66,14 @@ namespace tree {
 	template<class A>
 	Tree<A> :: ~ Tree()
 	{
-		deleteAggregateObject (premiseTree_);
-		deleteAggregateObject (premiseVector_);
-		deleteAggregateObject (expressionTree_);
-		deleteAggregateObject (variables_);
-		deleteAggregateObject (timers_);
-		deleteAggregateObject (root_);
-		deleteAggregateObject (up_);
-		deleteAggregateObject (down_);
+		object :: Object :: deleteAggregateObject (premiseTree_);
+		object :: Object :: deleteAggregateObject (premiseVector_);
+		object :: Object :: deleteAggregateObject (expressionTree_);
+		object :: Object :: deleteAggregateObject (variables_);
+		object :: Object :: deleteAggregateObject (timers_);
+		object :: Object :: deleteAggregateObject (root_);
+		object :: Object :: deleteAggregateObject (up_);
+		object :: Object :: deleteAggregateObject (down_);
 	}
 
 using manipulator :: space;
@@ -607,14 +607,14 @@ using manipulator :: underline;
 	Tree<A> :: getVolume() const
 	{
 		Size_t volume = 0;
-		volume += getAggregateVolume (premiseTree_);
-		volume += getAggregateVolume (premiseVector_);
-		volume += getAggregateVolume (expressionTree_);
-		volume += getAggregateVolume (variables_);
-		volume += getAggregateVolume (timers_);
-		volume += getAggregateVolume (root_);
-		volume += getAggregateVolume (up_);
-		volume += getAggregateVolume (down_);
+		volume += object :: Object :: getAggregateVolume (premiseTree_);
+		volume += object :: Object :: getAggregateVolume (premiseVector_);
+		volume += object :: Object :: getAggregateVolume (expressionTree_);
+		volume += object :: Object :: getAggregateVolume (variables_);
+		volume += object :: Object :: getAggregateVolume (timers_);
+		volume += object :: Object :: getAggregateVolume (root_);
+		volume += object :: Object :: getAggregateVolume (up_);
+		volume += object :: Object :: getAggregateVolume (down_);
 		return volume;
 	}
 	template<class A>
