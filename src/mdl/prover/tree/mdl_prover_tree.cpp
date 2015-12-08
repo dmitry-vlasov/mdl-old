@@ -17,7 +17,6 @@
 #include "mdl/prover/tree/up/mdl_prover_tree_up.cpp"
 
 #include "mdl/prover/tree/mdl_prover_tree_Root.cpp"
-#include "mdl/prover/tree/mdl_prover_tree_Timers.cpp"
 #include "mdl/prover/tree/mdl_prover_tree_Tree.cpp"
 
 #endif /*MDL_PROVER_TREE_CPP_*/

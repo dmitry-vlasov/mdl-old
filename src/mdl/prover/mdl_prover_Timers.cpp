@@ -1,6 +1,6 @@
 /*****************************************************************************/
 /* Project name:    mdl - mathematics development language                   */
-/* File Name:       mdl_prover_tree_Timers.cpp                               */
+/* File Name:       mdl_prover_Timers.cpp                                    */
 /* Description:     timers for proving process                               */
 /* Copyright:       (c) 2006-2009 Dmitri Vlasov                              */
 /* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
@@ -10,20 +10,19 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_PROVER_TREE_TIMERS_CPP_
-#define MDL_PROVER_TREE_TIMERS_CPP_
+#ifndef MDL_PROVER_TIMERS_CPP_
+#define MDL_PROVER_TIMERS_CPP_
 
 namespace mdl {
 namespace prover {
-namespace tree {
 
 	/****************************
 	 *		Public members
 	 ****************************/
 
-	template<class A>
+
 	inline
-	Timers<A> :: Timers () :
+	Timers :: Timers () :
 	isOn_ (true),
 	limitFirst_ (Config :: getTimeLimit()),
 	limitSecond_ (Config :: getTimeLimit()),
@@ -38,13 +37,12 @@ namespace tree {
 		growDown_.setShowCumulativeTime();
 		refresh_.start();
 	}
-	template<class A>
-	Timers<A> :: ~ Timers() {
+	Timers :: ~ Timers() {
 	}
 
-	template<class A>
+
 	bool
-	Timers<A> :: refresh()
+	Timers :: refresh()
 	{
 		if (!isOn_) {
 			return false;
@@ -57,18 +55,16 @@ namespace tree {
 			return false;
 		}
 	}
-	template<class A>
 	inline bool
-	Timers<A> :: timeIsOver() const
+	Timers :: timeIsOver() const
 	{
 		prove_.mark();
 		const Time timePassed = prove_.getSeconds();
 		return (timePassed > limitSecond_);
 	}
 
-	template<class A>
 	void
-	Timers<A> :: start()
+	Timers :: start()
 	{
 		prove_.start();
 		refresh_.start();
@@ -76,22 +72,19 @@ namespace tree {
 		recounted_ = false;
 		refreshed_ = false;
 	}
-	template<class A>
 	inline void
-	Timers<A> :: mark() {
+	Timers :: mark() {
 		prove_.mark();
 	}
-	template<class A>
 	inline void
-	Timers<A> :: stop()
+	Timers :: stop()
 	{
 		prove_.stop();
 		refresh_.stop();
 		limitSecond_ = limitFirst_;
 	}
-	template<class A>
 	void
-	Timers<A> :: recount()
+	Timers :: recount()
 	{
 		if (recounted_) {
 			return;
@@ -111,66 +104,55 @@ namespace tree {
 		}
 	}
 
-	template<class A>
 	inline void
-	Timers<A> :: switchOff() {
+	Timers :: switchOff() {
 		isOn_ = false;
 	}
-	template<class A>
 	inline void
-	Timers<A> :: switchOn() {
+	Timers :: switchOn() {
 		isOn_ = true;
 	}
 
-	template<class A>
 	void
-	Timers<A> :: setLimit (const Time timeLimit)
+	Timers :: setLimit (const Time timeLimit)
 	{
 		limitFirst_ = timeLimit;
 		limitSecond_ = timeLimit;
 	}
 
-	template<class A>
 	inline Time
-	Timers<A> :: limit() const {
+	Timers :: limit() const {
 		return limitSecond_;
 	}
 
-	template<class A>
 	inline Timer&
-	Timers<A> :: growUp() {
+	Timers :: growUp() {
 		return growUp_;
 	}
-	template<class A>
 	inline Timer&
-	Timers<A> :: growDown() {
+	Timers :: growDown() {
 		return growDown_;
 	}
 
-	template<class A>
 	inline const Timer&
-	Timers<A> :: prove() const {
+	Timers :: prove() const {
 		return prove_;
 	}
-	template<class A>
 	inline const Timer&
-	Timers<A> :: refresh() const {
+	Timers :: refresh() const {
 		return refresh_;
 	}
-	template<class A>
 	inline const Timer&
-	Timers<A> :: growUp() const {
+	Timers :: growUp() const {
 		return growUp_;
 	}
-	template<class A>
 	inline const Timer&
-	Timers<A> :: growDown() const {
+	Timers :: growDown() const {
 		return growDown_;
 	}
 
-	template<class A>
 	inline bool
-	Timers<A> :: wasRefreshed() const
+	Timers :: wasRefreshed() const
 	{
 		if (!isOn_) {
 			return false;
@@ -184,14 +166,12 @@ using manipulator :: iterate;
 using manipulator :: mode;
 
 	// object :: Object implementation
-	template<class A>
 	void
-	Timers<A> :: commitSuicide() {
+	Timers :: commitSuicide() {
 		delete this;
 	}
-	template<class A>
 	Size_t
-	Timers<A> :: getVolume() const
+	Timers :: getVolume() const
 	{
 		Size_t volume = 0;
 		volume += prove_.getVolume();
@@ -200,14 +180,12 @@ using manipulator :: mode;
 		volume += growDown_.getVolume();
 		return volume;
 	}
-	template<class A>
 	Size_t
-	Timers<A> :: getSizeOf() const {
+	Timers :: getSizeOf() const {
 		return sizeof (Timers);
 	}
-	template<class A>
 	void
-	Timers<A> :: show (String& string) const
+	Timers :: show (String& string) const
 	{
 		const Mode mode (string);
 		//string << "running: ";
@@ -223,15 +201,13 @@ using manipulator :: mode;
 	 *		Overloaded operators
 	 ********************************/
 
-	template<class A>
 	inline String&
-	operator << (String& string, const Timers<A>& timers)
+	operator << (String& string, const Timers& timers)
 	{
 		timers.show (string);
 		return string;
 	}
 }
 }
-}
 
-#endif /*MDL_PROVER_PROVER_TREE_TIMERS_CPP_*/
+#endif /*MDL_PROVER_PROVER_TIMERS_CPP_*/

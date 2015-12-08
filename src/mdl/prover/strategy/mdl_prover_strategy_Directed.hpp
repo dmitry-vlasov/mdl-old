@@ -27,9 +27,6 @@ class Directed :
 public :
 	typedef A Allocator_;
 	typedef
-		typename tree :: Timers<Allocator_>
-		Timers_;
-	typedef
 		Types<Allocator_> Types_;
 	typedef
 		typename Types_ :: Tree_

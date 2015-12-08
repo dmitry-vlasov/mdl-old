@@ -23,8 +23,6 @@ namespace tree {
 	template<class>
 	class Root;
 	template<class>
-	class Timers;
-	template<class>
 	class Tree;
 }
 }

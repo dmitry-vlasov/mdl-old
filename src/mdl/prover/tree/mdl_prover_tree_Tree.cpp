@@ -389,7 +389,7 @@ using manipulator :: underline;
 		if (timers_ != NULL) {
 			return;
 		}
-		timers_ = new Timers_ ();
+		timers_ = new Timers();
 		premiseTree_ = new PremiseTree_();
 		premiseVector_ = new PremiseVector_ (INITIAL_PREMISE_VECTOR_CAPACITY);
 		expressionTree_ = new ExpressionTree_();
@@ -539,12 +539,12 @@ using manipulator :: underline;
 		}
 	}
 	template<class A>
-	inline const typename Tree<A> :: Timers_*
+	inline const Timers*
 	Tree<A> :: getTimers() const {
 		return timers_;
 	}
 	template<class A>
-	inline typename Tree<A> :: Timers_*
+	inline Timers*
 	Tree<A> :: getTimers() {
 		return timers_;
 	}

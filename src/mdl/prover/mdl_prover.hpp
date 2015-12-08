@@ -25,5 +25,6 @@
 #include "mdl/prover/mdl_prover_Exception.hpp"
 #include "mdl/prover/mdl_prover_Mode.hpp"
 #include "mdl/prover/mdl_prover_Prover.hpp"
+#include "mdl/prover/mdl_prover_Timers.hpp"
 
 #endif /*MDL_PROVER_HPP_*/

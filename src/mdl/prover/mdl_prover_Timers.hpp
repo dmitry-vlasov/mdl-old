@@ -1,6 +1,6 @@
 /*****************************************************************************/
 /* Project name:    mdl - mathematics development language                   */
-/* File Name:       mdl_prover_tree_Timers.hpp                               */
+/* File Name:       mdl_prover_Timers.hpp                                    */
 /* Description:     timers for proving process                               */
 /* Copyright:       (c) 2006-2009 Dmitri Vlasov                              */
 /* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
@@ -10,22 +10,18 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_PROVER_TREE_TIMERS_HPP_
-#define MDL_PROVER_TREE_TIMERS_HPP_
+#ifndef MDL_PROVER_TIMERS_HPP_
+#define MDL_PROVER_TIMERS_HPP_
 
 #include "mdl/types/mdl_types.hpp"
 
 namespace mdl {
 namespace prover {
-namespace tree {
 
-template<class A>
 class Timers :
 	public object :: Object,
-	public Scalar<Timers<A>, A> {
+	public Scalar<Timers, allocator :: Heap> {
 public :
-	typedef A Allocator_;
-
 	Timers();
 	virtual ~ Timers();
 
@@ -74,11 +70,9 @@ private :
 	bool  refreshed_;
 };
 
-	template<class A>
 	String&
-	operator << (String&, const Timers<A>&);
-}
+	operator << (String&, const Timers&);
 }
 }
 
-#endif /*MDL_PROVER_TREE_TIMERS_HPP_*/
+#endif /*MDL_PROVER_TIMERS_HPP_*/

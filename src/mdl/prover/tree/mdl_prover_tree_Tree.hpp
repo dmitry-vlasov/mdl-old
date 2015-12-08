@@ -29,7 +29,6 @@ class Tree :
 public :
 	typedef A Allocator_;
 	typedef Root<Allocator_> Root_;
-	typedef Timers<Allocator_> Timers_;
 	typedef
 		typename up :: Tree<Allocator_>
 		UpTree_;
@@ -105,8 +104,8 @@ public :
 		const char* message = "",
 		const bool forceStatus = false
 	) const;
-	const Timers_* getTimers() const;
-	Timers_* getTimers();
+	const Timers* getTimers() const;
+	Timers* getTimers();
 	void showInGML() const;
 	void showInGML (const String& fileName) const;
 
@@ -156,7 +155,7 @@ private :
 
 	Format& format_;
 	Format& subFormat_;
-	Timers_* timers_;
+	Timers* timers_;
 	mdl :: Assertion*           problem_;
 	const mdl :: proof :: Step* hint_;
 	mdl :: proof :: Question*   question_;

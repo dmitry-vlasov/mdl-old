@@ -31,6 +31,7 @@ namespace prover {
 	class Exception;
 	class Mode;
 	class Prover;
+	class Timers;
 
 	using exception :: OutOfMemory;
 }
