@@ -23,7 +23,7 @@ namespace strategy {
 
 	template<class A>
 	inline
-	Directed<A> :: Directed (Tree_* tree) :
+	Directed<A> :: Directed (Tree* tree) :
 	tree_(tree) { }
 
 	template<class A>

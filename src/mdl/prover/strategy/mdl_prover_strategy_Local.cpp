@@ -23,7 +23,7 @@ namespace strategy {
 
 	template<class A>
 	inline
-	Local<A> :: Local (Tree_* tree) : tree_(tree) { }
+	Local<A> :: Local (Tree* tree) : tree_(tree) { }
 
 	template<class A>
 	inline

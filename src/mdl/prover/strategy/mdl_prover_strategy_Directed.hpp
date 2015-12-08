@@ -53,7 +53,7 @@ public :
 		typename Types_ :: Expression_
 		Expression_;
 
-	Directed (Tree_* tree);
+	Directed (Tree* tree);
 	virtual ~ Directed();
 
 	// prover :: Strategy interface
@@ -66,7 +66,7 @@ public :
 	virtual void show (String&) const;
 
 private :
-	Tree_* tree_;
+	Tree* tree_;
 };
 
 }
