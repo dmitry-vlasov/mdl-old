@@ -33,6 +33,8 @@ namespace interface {
 	template<class A>
 	class Proof;
 	template<class A>
+	class Strategy;
+	template<class A>
 	class Trainee;
 	template<class A = allocator :: Boxed>
 	class Types;
@@ -45,6 +47,7 @@ namespace interface {
 	using interface :: Experience;
 	using interface :: Node;
 	using interface :: Proof;
+	using interface :: Strategy;
 	using interface :: Trainee;
 	using interface :: Types;
 	using interface :: Tree;

@@ -18,6 +18,7 @@
 #include "mdl/prover/interface/mdl_prover_interface.dpp"
 #include "mdl/prover/node/mdl_prover_node.dpp"
 #include "mdl/prover/proof/mdl_prover_proof.dpp"
+#include "mdl/prover/strategy/mdl_prover_strategy.dpp"
 #include "mdl/prover/tree/mdl_prover_tree.dpp"
 
 namespace mdl {

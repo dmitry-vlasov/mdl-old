@@ -170,6 +170,7 @@ src/mdl/Makefile
 		src/mdl/prover/interface/Makefile
 		src/mdl/prover/node/Makefile
 		src/mdl/prover/proof/Makefile
+		src/mdl/prover/strategy/Makefile
 		src/mdl/prover/tree/Makefile
 			src/mdl/prover/tree/down/Makefile
 			src/mdl/prover/tree/up/Makefile

@@ -4,6 +4,7 @@ SUBDIRS = \
 	interface \
 	node \
 	proof \
+	strategy \
 	tree
 
 noinst_HEADERS = \
