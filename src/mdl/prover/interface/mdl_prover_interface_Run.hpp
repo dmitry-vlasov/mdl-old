@@ -1,7 +1,7 @@
 /*****************************************************************************/
 /* Project name:    mdl - mathematics development language                   */
-/* File Name:       mdl_prover_interface_Tree.hpp                            */
-/* Description:     main prover tree interface                               */
+/* File Name:       mdl_prover_interface_Run.hpp                             */
+/* Description:     main prover single run interface                         */
 /* Copyright:       (c) 2006-2009 Dmitri Vlasov                              */
 /* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
 /* Email:           vlasov at academ.org                                     */
@@ -10,8 +10,8 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_PROVER_INTERFACE_TREE_HPP_
-#define MDL_PROVER_INTERFACE_TREE_HPP_
+#ifndef MDL_RUN_INTERFACE_RUN_HPP_
+#define MDL_RUN_INTERFACE_RUN_HPP_
 
 #include "mdl/interface/object/mdl_interface_object.hpp"
 
@@ -19,16 +19,8 @@ namespace mdl {
 namespace prover {
 namespace interface {
 
-template<class A>
-class Tree : public object :: Object {
+class Run : public object :: Object {
 public :
-	typedef A Allocator_;
-	typedef Base<Allocator_> Base_;
-	typedef Node<Allocator_> Node_;
-
-	Tree();
-	virtual ~ Tree();
-
 	// Prove automatically
 	virtual bool prove (const Time) = 0;
 
@@ -45,15 +37,10 @@ public :
 	virtual void showVolume (String&) const = 0;
 	virtual void showTiming (String&) const = 0;
 	virtual Data* getData() const = 0;
-
-	static Tree* get();
-
-private :
-	static Tree* tree_;
 };
 
 }
 }
 }
 
-#endif /*MDL_PROVER_INTERFACE_TREE_HPP_*/
+#endif /*MDL_RUN_INTERFACE_RUN_HPP_*/

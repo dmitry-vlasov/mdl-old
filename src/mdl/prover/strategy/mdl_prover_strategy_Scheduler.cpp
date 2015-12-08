@@ -23,7 +23,7 @@ namespace strategy {
 
 	template<class A>
 	inline
-	Scheduler<A> :: Scheduler (Tree* tree) : tree_(tree) { }
+	Scheduler<A> :: Scheduler (Tree_* tree) : tree_(tree) { }
 
 	template<class A>
 	inline

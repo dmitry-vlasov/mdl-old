@@ -2,7 +2,7 @@
 # Process this file with autoconf to produce a configure script.
 
 AC_PREREQ(2.64)
-AC_INIT(mdl, 0.9.0, vlasov at academ dot org)
+AC_INIT(mdl, 0.9.1, vlasov at academ dot org)
 AC_CONFIG_SRCDIR([config.h.in])
 AC_CONFIG_HEADER([config.h])
 AM_INIT_AUTOMAKE
@@ -170,6 +170,7 @@ src/mdl/Makefile
 		src/mdl/prover/interface/Makefile
 		src/mdl/prover/node/Makefile
 		src/mdl/prover/proof/Makefile
+		src/mdl/prover/run/Makefile
 		src/mdl/prover/strategy/Makefile
 		src/mdl/prover/tree/Makefile
 			src/mdl/prover/tree/down/Makefile

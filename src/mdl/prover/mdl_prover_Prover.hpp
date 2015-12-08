@@ -23,8 +23,7 @@ public :
 	Prover (Format&);
 	virtual ~ Prover();
 
-	Tree* tree();
-	const Tree* getTree() const;
+	bool provingIsStarted() const;
 	bool prove (const Time timeLimit, mdl :: proof :: Step* = NULL);
 	bool reprove (const Time timeLimit, mdl :: proof :: Step* = NULL);
 
@@ -71,7 +70,7 @@ private :
 	Format format_;
 	Format subFormat_;
 	Format subSubFormat_;
-	Tree* tree_;
+	Run* run_;
 	data :: Store dataStore_;
 	static Prover* prover_;
 };

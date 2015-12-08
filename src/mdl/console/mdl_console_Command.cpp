@@ -305,11 +305,11 @@ using manipulator :: tab;
 			message << "command '";	showId (message); message << "' presumes target path defined." << endLine;
 			isSane_ = false;
 		}
-		if ((sanityTests & MUST_HAVE_PROVER_TREE) && (Tree :: get() == NULL)) {
+		if ((sanityTests & MUST_HAVE_PROVER_TREE) && (Prover :: get() == NULL || !Prover :: get()->provingIsStarted())) {
 			message << "command '";	showId (message); message << "' presumes prover tree already build." << endLine;
 			isSane_ = false;
 		}
-		if ((sanityTests & MUST_NOT_HAVE_PROVER_TREE) && (Tree :: get() != NULL)) {
+		if ((sanityTests & MUST_NOT_HAVE_PROVER_TREE) && (Prover :: get() == NULL || !Prover :: get()->provingIsStarted())) {
 			message << "command '";	showId (message); message << "' presumes that there is no proof tree." << endLine;
 			isSane_ = false;
 		}

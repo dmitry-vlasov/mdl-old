@@ -1,6 +1,6 @@
 /*****************************************************************************/
 /* Project name:    mdl - mathematics development language                   */
-/* File Name:       mdl_prover_tree_Boxed.hpp                                */
+/* File Name:       mdl_prover_run_Boxed.hpp                                 */
 /* Description:     main prover tree class using boxed memory                */
 /* Copyright:       (c) 2006-2009 Dmitri Vlasov                              */
 /* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
@@ -10,18 +10,18 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_PROVER_TREE_BOXED_HPP_
-#define MDL_PROVER_TREE_BOXED_HPP_
+#ifndef MDL_PROVER_RUN_BOXED_HPP_
+#define MDL_PROVER_RUN_BOXED_HPP_
 
 #include "mdl/interface/mdl_interface.hpp"
 #include "mdl/prover/interface/mdl_prover_interface.hpp"
 
 namespace mdl {
 namespace prover {
-namespace tree {
+namespace run {
 
 class Boxed :
-	public mdl :: Tree,
+	public Run,
 	public Scalar<Boxed> {
 public :
 	typedef
@@ -38,7 +38,7 @@ public :
 	Boxed (Format&, Format&, mdl :: proof :: Question*);
 	virtual ~ Boxed();
 
-	// prover :: Tree interface
+	// prover :: Run interface
 	virtual bool prove (const Time);
 	virtual void start (String& message);
 	virtual void grow  ();
@@ -68,4 +68,4 @@ private :
 }
 }
 
-#endif /*MDL_PROVER_TREE_BOXED_HPP_*/
+#endif /*MDL_PROVER_RUN_BOXED_HPP_*/

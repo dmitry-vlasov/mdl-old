@@ -1,7 +1,7 @@
 /*****************************************************************************/
 /* Project name:    mdl - mathematics development language                   */
-/* File Name:       mdl_prover_tree_Heap.cpp                                 */
-/* Description:     main prover tree class using heap memory                 */
+/* File Name:       mdl_prover_run_Heap.cpp                                  */
+/* Description:     main prover class using heap memory                      */
 /* Copyright:       (c) 2006-2009 Dmitri Vlasov                              */
 /* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
 /* Email:           vlasov at academ.org                                     */
@@ -10,12 +10,12 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_PROVER_TREE_HEAP_CPP_
-#define MDL_PROVER_TREE_HEAP_CPP_
+#ifndef MDL_PROVER_RUN_HEAP_CPP_
+#define MDL_PROVER_RUN_HEAP_CPP_
 
 namespace mdl {
 namespace prover {
-namespace tree {
+namespace run {
 
 	/****************************
 	 *		Public members
@@ -42,7 +42,7 @@ using manipulator :: endLine;
 using manipulator :: underline;
 using manipulator :: mode;
 
-	// prover :: Tree implementation
+	// prover :: Run implementation
 	bool
 	Heap :: prove (const Time timeLimit)
 	{
@@ -170,4 +170,4 @@ using manipulator :: space;
 }
 }
 
-#endif /*MDL_PROVER_TREE_HEAP_PROVER_TREE_HEAP_CPP_*/
+#endif /*MDL_PROVER_RUN_HEAP_PROVER_RUN_HEAP_CPP_*/

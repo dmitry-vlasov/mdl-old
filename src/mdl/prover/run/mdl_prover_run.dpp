@@ -1,7 +1,7 @@
 /*****************************************************************************/
 /* Project name:    mdl - mathematics development language                   */
-/* File Name:       mdl_prover_tree.hpp                                      */
-/* Description:     prover tree module                                       */
+/* File Name:       mdl_prover.dpp                                           */
+/* Description:     declarations for prover module                           */
 /* Copyright:       (c) 2006-2009 Dmitri Vlasov                              */
 /* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
 /* Email:           vlasov at academ.org                                     */
@@ -10,14 +10,17 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_PROVER_TREE_HPP_
-#define MDL_PROVER_TREE_HPP_
+#ifndef MDL_PROVER_RUN_DPP_
+#define MDL_PROVER_RUN_DPP_
 
-#include "mdl/prover/tree/down/mdl_prover_tree_down.hpp"
-#include "mdl/prover/tree/up/mdl_prover_tree_up.hpp"
+namespace mdl {
+namespace prover {
+namespace run {
 
-#include "mdl/prover/tree/mdl_prover_tree_Root.hpp"
-#include "mdl/prover/tree/mdl_prover_tree_Timers.hpp"
-#include "mdl/prover/tree/mdl_prover_tree_Tree.hpp"
+	class Boxed;
+	class Heap;
+}
+}
+}
 
-#endif /*MDL_PROVER_TREE_HPP_*/
+#endif /*MDL_PROVER_RUN_DPP_*/

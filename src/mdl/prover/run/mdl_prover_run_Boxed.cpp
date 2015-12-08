@@ -1,7 +1,7 @@
 /*****************************************************************************/
 /* Project name:    mdl - mathematics development language                   */
-/* File Name:       mdl_prover_tree_Boxed.cpp                                */
-/* Description:     main prover tree class using boxed memory                */
+/* File Name:       mdl_prover_run_Boxed.cpp                                 */
+/* Description:     main prover class using boxed memory                     */
 /* Copyright:       (c) 2006-2009 Dmitri Vlasov                              */
 /* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
 /* Email:           vlasov at academ.org                                     */
@@ -10,12 +10,12 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_PROVER_TREE_BOXED_CPP_
-#define MDL_PROVER_TREE_BOXED_CPP_
+#ifndef MDL_PROVER_RUN_BOXED_CPP_
+#define MDL_PROVER_RUN_BOXED_CPP_
 
 namespace mdl {
 namespace prover {
-namespace tree {
+namespace run {
 
 	/****************************
 	 *		Public members
@@ -42,7 +42,7 @@ using manipulator :: endLine;
 using manipulator :: underline;
 using manipulator :: mode;
 
-	// prover :: Tree implementation
+	// prover :: Run implementation
 	bool
 	Boxed :: prove (const Time timeLimit)
 	{
@@ -65,10 +65,10 @@ using manipulator :: mode;
 		if (Config :: growUpMode() == Config :: GROW_UP_DETERMINED) {
  			deleteAggregateObject (question_);
  		}
-		#ifdef DEBUG_PROVER_TREE_BOXED_MEMORY
+		#ifdef DEBUG_PROVER_RUN_BOXED_MEMORY
 		volume_.verify();
  		#endif
-		#ifdef DEBUG_BOXED_MEMORY_LEAKS
+		#ifdef DEBUG_RUN_BOXED_MEMORY_LEAKS
 		Memory :: boxed().map().show (std :: cout, true);
  		#endif
 
@@ -191,4 +191,4 @@ using manipulator :: space;
 }
 }
 
-#endif /*MDL_PROVER_TREE_BOXED_CPP_*/
+#endif /*MDL_PROVER_RUN_BOXED_CPP_*/

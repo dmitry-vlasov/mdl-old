@@ -24,13 +24,13 @@ namespace prover {
 	void
 	Prover :: setupTarget<mdl :: proof :: Question> (mdl :: proof :: Question* question)
 	{
-		if (tree_ != NULL) {
-			tree_->commitSuicide();
+		if (run_ != NULL) {
+			run_->commitSuicide();
 		}
 		if (Config :: proveInHeap()) {
-			tree_ = new tree :: Heap (format_, subFormat_, question);
+			run_ = new run :: Heap (format_, subFormat_, question);
 		} else {
-			tree_ = new tree :: Boxed (format_, subFormat_, question);
+			run_ = new run :: Boxed (format_, subFormat_, question);
 		}
 	}
 	template<>
@@ -50,7 +50,7 @@ namespace prover {
 	format_ (format, true),
 	subFormat_ (format_, true),
 	subSubFormat_ (subFormat_, true),
-	tree_ (NULL),
+	run_ (NULL),
 	dataStore_ ()
 	{
 		if (prover_ != NULL) {
@@ -61,7 +61,7 @@ namespace prover {
 	}
 	inline
 	Prover :: ~ Prover () {
-		deleteAggregateObject (tree_);
+		deleteAggregateObject (run_);
 	}
 
 	void
@@ -90,20 +90,16 @@ namespace prover {
 		if (prover_ == NULL) {
 			return;
 		}
-		if (prover_->tree_ == NULL) {
+		if (prover_->run_ == NULL) {
 			return;
 		}
-		prover_->tree_->commitSuicide();
-		prover_->tree_ = NULL;
+		prover_->run_->commitSuicide();
+		prover_->run_ = NULL;
 	}
 
-	inline Tree*
-	Prover :: tree() {
-		return tree_;
-	}
-	inline const Tree*
-	Prover :: getTree() const {
-		return tree_;
+	bool
+	Prover :: provingIsStarted() const {
+		return prover_->run_ != NULL;
 	}
 	bool
 	Prover :: prove (const Time timeLimit, mdl :: proof :: Step* step)
@@ -137,24 +133,24 @@ namespace prover {
 	}
 	inline void
 	Prover :: growTree () {
-		tree_->grow();
+		run_->grow();
 	}
 	void
 	Prover :: fellTree()
 	{
-		Data* data = tree_->getData();
+		Data* data = run_->getData();
 		dataStore_.add (data);
-		tree_->stop();
-		tree_->commitSuicide();
-		tree_ = NULL;
+		run_->stop();
+		run_->commitSuicide();
+		run_ = NULL;
 	}
 	void
 	Prover :: infoTree (String& outputBuffer) {
-		tree_->info (outputBuffer);
+		run_->info (outputBuffer);
 	}
 	inline void
 	Prover :: confirmProof() {
-		tree_->confirm();
+		run_->confirm();
 	}
 
 	inline void
@@ -175,7 +171,7 @@ namespace prover {
 	Prover :: getVolume() const
 	{
 		Size_t volume = 0;
-		volume += getAggregateVolume (tree_);
+		volume += getAggregateVolume (run_);
 		volume += format_.getVolume();
 		volume += subFormat_.getVolume();
 		volume += subSubFormat_.getVolume();
@@ -213,8 +209,8 @@ namespace prover {
 		} else {
 			setupTarget<Target> (step);
 		}
-		bool result = tree_->prove (timeLimit);
-		Data* data = tree_->getData();
+		bool result = run_->prove (timeLimit);
+		Data* data = run_->getData();
 		dataStore_.add (data);
 		return result;
 	}
@@ -228,7 +224,7 @@ namespace prover {
 			target = find<Target>();
 		if (target != NULL) {
 			setupTarget<Target> (target);
-			tree_->start (format_.message());
+			run_->start (format_.message());
 			format_.showMessage();
 		} else {
 			format_.message() << "nothing to prove";

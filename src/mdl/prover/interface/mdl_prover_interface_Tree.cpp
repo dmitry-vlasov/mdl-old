@@ -21,7 +21,8 @@ namespace interface {
 	 *		Public members
 	 ****************************/
 
-	Tree :: Tree()
+	template<class A>
+	Tree<A> :: Tree()
 	{
 		if (tree_ != NULL) {
 			Error* error = new Error(Error :: SEMANTIC, "double instance of prover tree");
@@ -29,12 +30,14 @@ namespace interface {
 		}
 		tree_ = this;
 	}
-	Tree :: ~ Tree() {
+	template<class A>
+	Tree<A> :: ~ Tree() {
 		tree_ = NULL;
 	}
 
-	inline Tree*
-	Tree :: get() {
+	template<class A>
+	inline Tree<A>*
+	Tree<A> :: get() {
 		return tree_;
 	}
 
@@ -42,7 +45,8 @@ namespace interface {
 	 *		Static private members
 	 *********************************/
 
-	Tree* Tree :: tree_ = NULL;
+	template<class A>
+	Tree<A>* Tree<A> :: tree_ = NULL;
 }
 }
 }

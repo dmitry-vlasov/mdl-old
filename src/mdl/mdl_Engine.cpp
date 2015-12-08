@@ -697,7 +697,7 @@ using manipulator :: tab;
 	void
 	Engine :: doPlantTree()
 	{
-		if (Tree :: get() != NULL) {
+		if (Prover :: get() == NULL || !Prover :: get()->provingIsStarted()) {
 			Engine :: get()->subFormat_.message() << "starting prover failed: prover is already started";
 			Engine :: get()->subFormat_.showMessage();
 			return;
@@ -713,7 +713,7 @@ using manipulator :: tab;
 	void
 	Engine :: doGrowTree()
 	{
-		if (Tree :: get() == NULL) {
+		if (Prover :: get() == NULL || !Prover :: get()->provingIsStarted()) {
 			Engine :: get()->subFormat_.message() << "growing the tree failed: prover was not start";
 			Engine :: get()->subFormat_.showMessage();
 			return;
@@ -728,7 +728,7 @@ using manipulator :: tab;
 	void
 	Engine :: doFellTree()
 	{
-		if (Tree :: get() == NULL) {
+		if (Prover :: get() == NULL || !Prover :: get()->provingIsStarted()) {
 			if (Config :: verbosity() > Config :: VERBOSE_MED) {
 				Engine :: get()->subFormat_.message() << "stopping prover fails: prover was not start";
 				Engine :: get()->subFormat_.showMessage();
@@ -745,7 +745,7 @@ using manipulator :: tab;
 	void
 	Engine :: doInfoTree()
 	{
-		if (Tree :: get() == NULL) {
+		if (Prover :: get() == NULL || !Prover :: get()->provingIsStarted()) {
 			Engine :: get()->subFormat_.message() << "info failed: prover was not start";
 			Engine :: get()->subFormat_.showMessage();
 			return;
@@ -764,7 +764,7 @@ using manipulator :: tab;
 	void
 	Engine :: doConfirmProof()
 	{
-		if (Tree :: get() == NULL) {
+		if (Prover :: get() == NULL || !Prover :: get()->provingIsStarted()) {
 			Engine :: get()->subFormat_.message() << "proving was not start." << endLine;
 			Engine :: get()->subFormat_.showMessage();
 			return;

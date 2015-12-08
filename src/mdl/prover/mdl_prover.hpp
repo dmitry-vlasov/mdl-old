@@ -18,6 +18,7 @@
 #include "mdl/prover/interface/mdl_prover_interface.hpp"
 #include "mdl/prover/node/mdl_prover_node.hpp"
 #include "mdl/prover/proof/mdl_prover_proof.hpp"
+#include "mdl/prover/run/mdl_prover_run.hpp"
 #include "mdl/prover/strategy/mdl_prover_strategy.hpp"
 #include "mdl/prover/tree/mdl_prover_tree.hpp"
 

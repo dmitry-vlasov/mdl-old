@@ -53,7 +53,7 @@ public :
 		typename Types_ :: Expression_
 		Expression_;
 
-	Scheduler (Tree* tree);
+	Scheduler (Tree_* tree);
 	virtual ~ Scheduler();
 
 	// prover :: Strategy interface
@@ -66,7 +66,7 @@ public :
 	virtual void show (String&) const;
 
 private :
-	Tree* tree_;
+	Tree_* tree_;
 };
 
 }

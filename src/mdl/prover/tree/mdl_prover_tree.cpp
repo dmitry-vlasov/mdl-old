@@ -16,8 +16,6 @@
 #include "mdl/prover/tree/down/mdl_prover_tree_down.cpp"
 #include "mdl/prover/tree/up/mdl_prover_tree_up.cpp"
 
-#include "mdl/prover/tree/mdl_prover_tree_Boxed.cpp"
-#include "mdl/prover/tree/mdl_prover_tree_Heap.cpp"
 #include "mdl/prover/tree/mdl_prover_tree_Root.cpp"
 #include "mdl/prover/tree/mdl_prover_tree_Timers.cpp"
 #include "mdl/prover/tree/mdl_prover_tree_Tree.cpp"

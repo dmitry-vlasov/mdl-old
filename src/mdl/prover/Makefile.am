@@ -4,6 +4,7 @@ SUBDIRS = \
 	interface \
 	node \
 	proof \
+	run \
 	strategy \
 	tree
 
