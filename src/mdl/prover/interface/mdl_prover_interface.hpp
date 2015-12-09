@@ -21,7 +21,6 @@
 #include "mdl/prover/interface/mdl_prover_interface_Proof.hpp"
 #include "mdl/prover/interface/mdl_prover_interface_Run.hpp"
 #include "mdl/prover/interface/mdl_prover_interface_Strategy.hpp"
-#include "mdl/prover/interface/mdl_prover_interface_Trainee.hpp"
 #include "mdl/prover/interface/mdl_prover_interface_Types.hpp"
 #include "mdl/prover/interface/mdl_prover_interface_Tree.hpp"
 

@@ -11,7 +11,6 @@ noinst_HEADERS = \
 	mdl_prover_interface_Proof.cpp \
 	mdl_prover_interface_Run.hpp \
 	mdl_prover_interface_Strategy.hpp \
-	mdl_prover_interface_Trainee.hpp \
 	mdl_prover_interface_Tree.hpp \
 	mdl_prover_interface_Tree.cpp \
 	mdl_prover_interface_Types.hpp \
