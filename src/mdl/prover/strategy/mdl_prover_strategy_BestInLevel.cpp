@@ -1,6 +1,6 @@
 /*****************************************************************************/
 /* Project name:    mdl - mathematics development language                   */
-/* File Name:       mdl_prover_strategy_Directed.hpp                         */
+/* File Name:       mdl_prover_strategy_BestInLevel.hpp                        */
 /* Description:     directed strategy                                        */
 /* Copyright:       (c) 2006-2009 Dmitri Vlasov                              */
 /* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
@@ -10,8 +10,8 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_PROVER_STRATEGY_DIRECTED_HPP_
-#define MDL_PROVER_STRATEGY_DIRECTED_HPP_
+#ifndef MDL_PROVER_STRATEGY_BEST_IN_LEVEL_HPP_
+#define MDL_PROVER_STRATEGY_BEST_IN_LEVEL_HPP_
 
 namespace mdl {
 namespace prover {
@@ -23,20 +23,20 @@ namespace strategy {
 
 	template<class A>
 	inline
-	Directed<A> :: Directed (Tree_* tree) :
-	tree_(tree),
-	proofFragment_ (new ProofFrament (tree)){ }
+	BestInLevel<A> :: BestInLevel (Tree_* tree) :
+	tree_(tree) {
+	}
 
 	template<class A>
 	inline
-	Directed<A> :: ~ Directed() {
+	BestInLevel<A> :: ~ BestInLevel() {
 		tree_ = NULL;
 	}
 
 	// prover :: Strategy implementation
 	template<class A>
 	void
-	Directed<A> :: use (const Time limit) {
+	BestInLevel<A> :: use (const Time limit) {
 
 
 	}
@@ -44,26 +44,26 @@ namespace strategy {
 	// object :: Object implementation
 	template<class A>
 	void
-	Directed<A> :: commitSuicide() {
+	BestInLevel<A> :: commitSuicide() {
 		delete this;
 	}
 	template<class A>
 	Size_t
-	Directed<A> :: getVolume() const {
+	BestInLevel<A> :: getVolume() const {
 		return 0;
 	}
 	template<class A>
 	Size_t
-	Directed<A> :: getSizeOf() const {
-		return sizeof (Directed);
+	BestInLevel<A> :: getSizeOf() const {
+		return sizeof (BestInLevel);
 	}
 	template<class A>
 	void
-	Directed<A> :: show (String&) const {
+	BestInLevel<A> :: show (String&) const {
 	}
 }
 }
 }
 
 
-#endif /*MDL_PROVER_STRATEGY_DIRECTED_HPP_*/
+#endif /*MDL_PROVER_STRATEGY_BEST_IN_LEVEL_HPP_*/

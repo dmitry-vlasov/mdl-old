@@ -23,11 +23,24 @@ namespace strategy {
 
 	template<class A>
 	inline
-	Scheduler<A> :: Scheduler (Tree_* tree) : tree_(tree) { }
+	Scheduler<A> :: Scheduler (Tree_* tree) :
+	tree_(tree), timers_(), strategies_()
+	{
+		strategies_[DIRECTED]      = new Directed_ (tree_);
+		strategies_[BEST_IN_ALL]   = new BestInAll_ (tree_);
+		strategies_[BEST_IN_LEVEL] = new BestInLevel_(tree_);
+	}
 
 	template<class A>
 	inline
-	Scheduler<A> :: ~ Scheduler() {
+	Scheduler<A> :: ~ Scheduler()
+	{
+		for (int i = 0; i < STRATEGY_NUM; ++ i) {
+			if (strategies_[i] != NULL) {
+				delete strategies_[i];
+				strategies_[i] = NULL;
+			}
+		}
 		tree_ = NULL;
 	}
 
@@ -46,8 +59,15 @@ namespace strategy {
 	}
 	template<class A>
 	Size_t
-	Scheduler<A> :: getVolume() const {
-		return 0;
+	Scheduler<A> :: getVolume() const
+	{
+		Size_t volume = 0;
+		for (int i = 0; i < STRATEGY_NUM; ++ i) {
+			if (strategies_[i] != NULL) {
+				volume += getAggregateVolume (strategies_[i]);
+			}
+		}
+		return volume;
 	}
 	template<class A>
 	Size_t

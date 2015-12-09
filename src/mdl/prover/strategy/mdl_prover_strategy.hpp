@@ -13,6 +13,8 @@
 #ifndef MDL_PROVER_STRATEGY_HPP_
 #define MDL_PROVER_STRATEGY_HPP_
 
+#include "mdl/prover/strategy/mdl_prover_strategy_BestInAll.hpp"
+#include "mdl/prover/strategy/mdl_prover_strategy_BestInLevel.hpp"
 #include "mdl/prover/strategy/mdl_prover_strategy_Directed.hpp"
 #include "mdl/prover/strategy/mdl_prover_strategy_Local.hpp"
 #include "mdl/prover/strategy/mdl_prover_strategy_Scheduler.hpp"

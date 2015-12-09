@@ -1,7 +1,7 @@
 /*****************************************************************************/
 /* Project name:    mdl - mathematics development language                   */
-/* File Name:       mdl_prover_strategy_Scheduler.hpp                        */
-/* Description:     general strategy scheduler                               */
+/* File Name:       mdl_prover_strategy_BestInLevel.hpp                        */
+/* Description:     directed strategy                                        */
 /* Copyright:       (c) 2006-2009 Dmitri Vlasov                              */
 /* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
 /* Email:           vlasov at academ.org                                     */
@@ -10,27 +10,26 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_PROVER_STRATEGY_SCHEDULER_HPP_
-#define MDL_PROVER_STRATEGY_SCHEDULER_HPP_
+#ifndef MDL_PROVER_STRATEGY_BEST_IN_LEVEL_HPP_
+#define MDL_PROVER_STRATEGY_BEST_IN_LEVEL_HPP_
 
 #include "mdl/interface/mdl_interface.hpp"
 #include "mdl/prover/mdl_prover.dpp"
-#include "mdl/prover/mdl_prover_Timers.hpp"
 
 namespace mdl {
 namespace prover {
 namespace strategy {
 
 template<class A>
-class Scheduler :
+class BestInLevel :
 	public Strategy<A>,
-	public Scalar<Scheduler<A>, A>{
+	public Scalar<BestInLevel<A>, A>{
 public :
 	typedef A Allocator_;
 	typedef
-		Types<Allocator_> Types_;
-	typedef
 		Strategy<Allocator_> Strategy_;
+	typedef
+		Types<Allocator_> Types_;
 	typedef
 		typename Types_ :: Tree_
 		Tree_;
@@ -53,8 +52,8 @@ public :
 		typename Types_ :: Expression_
 		Expression_;
 
-	Scheduler (Tree_* tree);
-	virtual ~ Scheduler();
+	BestInLevel (Tree_* tree);
+	virtual ~ BestInLevel();
 
 	// prover :: Strategy interface
 	virtual void use (const Time limit);
@@ -66,24 +65,11 @@ public :
 	virtual void show (String&) const;
 
 private :
-	enum {
-		DIRECTED       = 0,
-		BEST_IN_ALL    = 1,
-		BEST_IN_LEVEL  = 2,
-		STRATEGY_NUM   = 3
-	};
-
-	typedef Directed<Allocator_>    Directed_;
-	typedef BestInAll<Allocator_>   BestInAll_;
-	typedef BestInLevel<Allocator_> BestInLevel_;
-
 	Tree_*     tree_;
-	Timers     timers_;
-	Strategy_* startegies_ [STRATEGY_NUM];
 };
 
 }
 }
 }
 
-#endif /*MDL_PROVER_STRATEGY_SCHEDULER_HPP_*/
+#endif /*MDL_PROVER_STRATEGY_BEST_IN_LEVEL_HPP_*/

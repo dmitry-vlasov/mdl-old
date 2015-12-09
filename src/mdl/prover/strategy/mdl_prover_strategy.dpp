@@ -18,6 +18,12 @@ namespace prover {
 namespace strategy {
 
 	template<class>
+	class BestInAll;
+
+	template<class>
+	class BestInLevel;
+
+	template<class>
 	class Directed;
 
 	template<class>

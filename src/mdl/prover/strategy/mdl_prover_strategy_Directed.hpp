@@ -27,6 +27,8 @@ class Directed :
 public :
 	typedef A Allocator_;
 	typedef
+		Strategy<Allocator_> Strategy_;
+	typedef
 		Types<Allocator_> Types_;
 	typedef
 		typename Types_ :: Tree_
@@ -63,7 +65,9 @@ public :
 	virtual void show (String&) const;
 
 private :
-	Tree_* tree_;
+	Tree_*     tree_;
+	Strategy_* proofFragment_;
+
 };
 
 }
