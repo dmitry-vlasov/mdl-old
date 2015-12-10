@@ -10,8 +10,8 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_PROVER_STRATEGY_LOCAL_HPP_
-#define MDL_PROVER_STRATEGY_LOCAL_HPP_
+#ifndef MDL_PROVER_STRATEGY_LOCAL_CPP_
+#define MDL_PROVER_STRATEGY_LOCAL_CPP_
 
 namespace mdl {
 namespace prover {
@@ -52,7 +52,7 @@ namespace strategy {
 	template<class A>
 	Size_t
 	Local<A> :: getSizeOf() const {
-		return sizeof (Directed);
+		return sizeof (Local);
 	}
 	template<class A>
 	void
@@ -63,4 +63,4 @@ namespace strategy {
 }
 
 
-#endif /*MDL_PROVER_STRATEGY_LOCAL_HPP_*/
+#endif /*MDL_PROVER_STRATEGY_LOCAL_CPP_*/

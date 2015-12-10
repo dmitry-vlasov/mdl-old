@@ -10,8 +10,8 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_PROVER_STRATEGY_BEST_IN_LEVEL_HPP_
-#define MDL_PROVER_STRATEGY_BEST_IN_LEVEL_HPP_
+#ifndef MDL_PROVER_STRATEGY_BEST_IN_LEVEL_CPP_
+#define MDL_PROVER_STRATEGY_BEST_IN_LEVEL_CPP_
 
 namespace mdl {
 namespace prover {
@@ -74,7 +74,7 @@ namespace strategy {
 		if (index_ + 1 <= Constraints :: get().maxHeight()) {
 			++ index_;
 		} else {
-			index_ = Prover :: get()->getTree().getCrown().getMinHeight();
+			index_ = Tree_ :: up()->getHeight();
 		}
 	}
 }
@@ -82,4 +82,4 @@ namespace strategy {
 }
 
 
-#endif /*MDL_PROVER_STRATEGY_BEST_IN_LEVEL_HPP_*/
+#endif /*MDL_PROVER_STRATEGY_BEST_IN_LEVEL_CPP_*/

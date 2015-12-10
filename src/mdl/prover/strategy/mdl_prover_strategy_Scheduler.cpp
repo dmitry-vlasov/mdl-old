@@ -10,8 +10,8 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_PROVER_STRATEGY_SCHEDULER_HPP_
-#define MDL_PROVER_STRATEGY_SCHEDULER_HPP_
+#ifndef MDL_PROVER_STRATEGY_SCHEDULER_CPP_
+#define MDL_PROVER_STRATEGY_SCHEDULER_CPP_
 
 namespace mdl {
 namespace prover {
@@ -55,11 +55,11 @@ namespace strategy {
 			if (!strategy->use()) {
 				break;
 			}
-			if (Tree :: get()->isProved()) {
+			if (tree_->isProved()) {
 				break;
 			}
 		}
-		timers.stop();
+		timers_.stop();
 	}
 
 	// object :: Object implementation
@@ -90,14 +90,18 @@ namespace strategy {
 	Scheduler<A> :: show (String&) const {
 	}
 
+	/****************************
+	 *		Private members
+	 ****************************/
+
 	template<class A>
 	typename Scheduler<A> :: Strategy_*
 	Scheduler<A> :: chooseStrategy() {
 		return strategies_ [BEST_IN_LEVEL];
 	}
 }
-}rgshgh
+}
 }
 
 
-#endif /*MDL_PROVER_STRATEGY_SCHEDULER_HPP_*/
+#endif /*MDL_PROVER_STRATEGY_SCHEDULER_CPP_*/

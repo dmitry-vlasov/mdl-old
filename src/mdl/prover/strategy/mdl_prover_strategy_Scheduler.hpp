@@ -80,7 +80,7 @@ private :
 
 	Tree_*     tree_;
 	Timers     timers_;
-	Strategy_* startegies_ [STRATEGY_NUM];
+	Strategy_* strategies_ [STRATEGY_NUM];
 };
 
 }

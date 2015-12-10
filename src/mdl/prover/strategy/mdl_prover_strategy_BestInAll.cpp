@@ -10,8 +10,8 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_PROVER_STRATEGY_BEST_IN_ALL_HPP_
-#define MDL_PROVER_STRATEGY_BEST_IN_ALL_HPP_
+#ifndef MDL_PROVER_STRATEGY_BEST_IN_ALL_CPP_
+#define MDL_PROVER_STRATEGY_BEST_IN_ALL_CPP_
 
 namespace mdl {
 namespace prover {
@@ -66,4 +66,4 @@ namespace strategy {
 }
 
 
-#endif /*MDL_PROVER_STRATEGY_BEST_IN_ALL_HPP_*/
+#endif /*MDL_PROVER_STRATEGY_BEST_IN_ALL_CPP_*/

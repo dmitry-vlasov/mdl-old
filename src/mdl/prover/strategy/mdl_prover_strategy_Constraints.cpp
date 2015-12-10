@@ -10,8 +10,8 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_PROVER_STRATEGY_CONSTRAINTS_HPP_
-#define MDL_PROVER_STRATEGY_CONSTRAINTS_HPP_
+#ifndef MDL_PROVER_STRATEGY_CONSTRAINTS_CPP_
+#define MDL_PROVER_STRATEGY_CONSTRAINTS_CPP_
 
 namespace mdl {
 namespace prover {
@@ -43,11 +43,12 @@ namespace strategy {
 	inline void
 	Constraints :: setMaxHeight()
 	{
-		if (Prover :: get() != NULL) {
+		// TODO: not implemented
+		/*if (Prover :: get() != NULL) {
 			if (Prover :: get()->getTree() != NULL) {
 				maxHeight_ = Prover :: get()->getTree()->getHeight();
 			}
-		}
+		}*/
 	}
 	inline void
 	Constraints :: setMaxHeight (value :: Integer maxHeight) {
@@ -94,4 +95,4 @@ namespace strategy {
 }
 
 
-#endif /*MDL_PROVER_STRATEGY_CONSTRAINTS_HPP_*/
+#endif /*MDL_PROVER_STRATEGY_CONSTRAINTS_CPP_*/

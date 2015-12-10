@@ -10,8 +10,8 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_PROVER_STRATEGY_DIRECTED_HPP_
-#define MDL_PROVER_STRATEGY_DIRECTED_HPP_
+#ifndef MDL_PROVER_STRATEGY_DIRECTED_CPP_
+#define MDL_PROVER_STRATEGY_DIRECTED_CPP_
 
 namespace mdl {
 namespace prover {
@@ -25,7 +25,8 @@ namespace strategy {
 	inline
 	Directed<A> :: Directed (Tree_* tree) :
 	tree_(tree),
-	proofFragment_ (new ProofFrament (tree)){ }
+	proofFragment_ (NULL) {
+	}
 
 	template<class A>
 	inline
@@ -66,4 +67,4 @@ namespace strategy {
 }
 
 
-#endif /*MDL_PROVER_STRATEGY_DIRECTED_HPP_*/
+#endif /*MDL_PROVER_STRATEGY_DIRECTED_CPP_*/
