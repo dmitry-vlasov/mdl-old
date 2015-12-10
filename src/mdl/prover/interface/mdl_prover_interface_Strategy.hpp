@@ -25,7 +25,7 @@ public :
 	typedef A Allocator_;
 	virtual ~ Strategy() { }
 
-	virtual void use (const Time limit) = 0;
+	virtual bool use() = 0;
 };
 
 }

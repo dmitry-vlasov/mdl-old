@@ -23,7 +23,7 @@ namespace strategy {
 
 template<class A>
 class Scheduler :
-	public Strategy<A>,
+	public object :: Object,
 	public Scalar<Scheduler<A>, A>{
 public :
 	typedef A Allocator_;
@@ -56,8 +56,7 @@ public :
 	Scheduler (Tree_* tree);
 	virtual ~ Scheduler();
 
-	// prover :: Strategy interface
-	virtual void use (const Time limit);
+	void run (const Time limit);
 
 	// object :: Object interface
 	virtual void commitSuicide();
@@ -76,6 +75,8 @@ private :
 	typedef Directed<Allocator_>    Directed_;
 	typedef BestInAll<Allocator_>   BestInAll_;
 	typedef BestInLevel<Allocator_> BestInLevel_;
+
+	Strategy_* chooseStrategy();
 
 	Tree_*     tree_;
 	Timers     timers_;

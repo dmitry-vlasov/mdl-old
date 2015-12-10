@@ -35,8 +35,8 @@ namespace strategy {
 
 	// prover :: Strategy implementation
 	template<class A>
-	void
-	BestInAll<A> :: use (const Time limit) {
+	bool
+	BestInAll<A> :: use() {
 
 
 	}

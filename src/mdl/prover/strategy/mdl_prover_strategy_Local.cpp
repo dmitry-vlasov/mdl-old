@@ -33,8 +33,8 @@ namespace strategy {
 
 	// prover :: Strategy implementation
 	template<class A>
-	void
-	Local<A> :: use (const Time limit) {
+	bool
+	Local<A> :: use() {
 
 	}
 

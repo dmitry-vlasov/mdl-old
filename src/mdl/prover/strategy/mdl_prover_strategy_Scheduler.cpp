@@ -47,8 +47,19 @@ namespace strategy {
 	// prover :: Strategy implementation
 	template<class A>
 	void
-	Scheduler<A> :: use (const Time limit) {
-		strategies_ [BEST_IN_LEVEL]->use (limit);
+	Scheduler<A> :: run (const Time limit)
+	{
+		timers_.start();
+		while (timers_.prove().getSeconds() < limit) {
+			Strategy_* strategy = chooseStrategy();
+			if (!strategy->use()) {
+				break;
+			}
+			if (Tree :: get()->isProved()) {
+				break;
+			}
+		}
+		timers.stop();
 	}
 
 	// object :: Object implementation
@@ -78,8 +89,14 @@ namespace strategy {
 	void
 	Scheduler<A> :: show (String&) const {
 	}
+
+	template<class A>
+	typename Scheduler<A> :: Strategy_*
+	Scheduler<A> :: chooseStrategy() {
+		return strategies_ [BEST_IN_LEVEL];
+	}
 }
-}
+}rgshgh
 }
 
 

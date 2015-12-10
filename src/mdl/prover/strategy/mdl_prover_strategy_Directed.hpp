@@ -56,7 +56,7 @@ public :
 	virtual ~ Directed();
 
 	// prover :: Strategy interface
-	virtual void use (const Time limit);
+	virtual bool use();
 
 	// object :: Object interface
 	virtual void commitSuicide();

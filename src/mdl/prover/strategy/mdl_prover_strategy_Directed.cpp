@@ -35,8 +35,8 @@ namespace strategy {
 
 	// prover :: Strategy implementation
 	template<class A>
-	void
-	Directed<A> :: use (const Time limit) {
+	bool
+	Directed<A> :: use() {
 
 
 	}
