@@ -31,6 +31,8 @@ namespace strategy {
 
 	template<class>
 	class Scheduler;
+
+	class Constraints;
 }
 }
 }

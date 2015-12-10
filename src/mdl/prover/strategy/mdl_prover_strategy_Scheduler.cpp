@@ -48,7 +48,7 @@ namespace strategy {
 	template<class A>
 	void
 	Scheduler<A> :: use (const Time limit) {
-
+		strategies_ [BEST_IN_LEVEL]->use (limit);
 	}
 
 	// object :: Object implementation

@@ -65,7 +65,10 @@ public :
 	virtual void show (String&) const;
 
 private :
-	Tree_*     tree_;
+	void incIndex();
+
+	Tree_* tree_;
+	value :: Integer index_; // Index of the current level
 };
 
 }

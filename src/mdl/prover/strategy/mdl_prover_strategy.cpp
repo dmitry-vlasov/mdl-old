@@ -15,6 +15,7 @@
 
 #include "mdl/prover/strategy/mdl_prover_strategy_BestInAll.cpp"
 #include "mdl/prover/strategy/mdl_prover_strategy_BestInLevel.cpp"
+#include "mdl/prover/strategy/mdl_prover_strategy_Constraints.cpp"
 #include "mdl/prover/strategy/mdl_prover_strategy_Directed.cpp"
 #include "mdl/prover/strategy/mdl_prover_strategy_Local.cpp"
 #include "mdl/prover/strategy/mdl_prover_strategy_Scheduler.cpp"

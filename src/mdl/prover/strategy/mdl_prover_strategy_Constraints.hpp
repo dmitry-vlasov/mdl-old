@@ -1,7 +1,7 @@
 /*****************************************************************************/
 /* Project name:    mdl - mathematics development language                   */
-/* File Name:       mdl_prover_strategy_Local.hpp                            */
-/* Description:     local strategy                                           */
+/* File Name:       mdl_prover_strategy_Constraints.hpp                      */
+/* Description:     constraints on proof search tree                         */
 /* Copyright:       (c) 2006-2009 Dmitri Vlasov                              */
 /* Author:          Dmitri Yurievich Vlasov, Novosibirsk, Russia             */
 /* Email:           vlasov at academ.org                                     */
@@ -10,8 +10,8 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_PROVER_STRATEGY_LOCAL_HPP_
-#define MDL_PROVER_STRATEGY_LOCAL_HPP_
+#ifndef MDL_PROVER_STRATEGY_CONSTRAINTS_HPP_
+#define MDL_PROVER_STRATEGY_CONSTRAINTS_HPP_
 
 #include "mdl/interface/mdl_interface.hpp"
 #include "mdl/prover/mdl_prover.dpp"
@@ -20,41 +20,19 @@ namespace mdl {
 namespace prover {
 namespace strategy {
 
-template<class A>
-class Local :
-	public Strategy<A>,
-	public Scalar<Local<A>, A>{
+class Constraints :
+	public object :: Object,
+	public Scalar<Constraints, allocator :: Heap>{
 public :
-	typedef A Allocator_;
-	typedef
-		Types<Allocator_> Types_;
-	typedef
-		typename Types_ :: Tree_
-		Tree_;
-	typedef
-		typename Types_ :: Node_
-		Node_;
-	typedef
-		typename Types_ :: Evidence_
-		Evidence_;
-	typedef
-		typename Types_ :: PremiseTree_
-		PremiseTree_;
-	typedef
-		typename Types_ :: PremiseVector_
-		PremiseVector_;
-	typedef
-		typename Types_ :: ExpressionTree_
-		ExpressionTree_;
-	typedef
-		typename Types_ :: Expression_
-		Expression_;
+	value :: Integer maxComplexity() const;
+	value :: Integer maxHeight() const;
 
-	Local(Tree_* tree);
-	virtual ~ Local();
+	void setMaxComplexity();
+	void setMaxComplexity(value :: Integer);
+	void setMaxHeight();
+	void setMaxHeight(value :: Integer);
 
-	// prover :: Strategy interface
-	virtual void use (const Time limit);
+	static Constraints& get();
 
 	// object :: Object interface
 	virtual void commitSuicide();
@@ -63,11 +41,15 @@ public :
 	virtual void show (String&) const;
 
 private :
-	Tree_* tree_;
+	Constraints();
+	~Constraints();
+
+	value :: Integer maxComplexity_;
+	value :: Integer maxHeight_;
 };
 
 }
 }
 }
 
-#endif /*MDL_PROVER_STRATEGY_LOCAL_HPP_*/
+#endif /*MDL_PROVER_STRATEGY_CONSTRAINTS_HPP_*/

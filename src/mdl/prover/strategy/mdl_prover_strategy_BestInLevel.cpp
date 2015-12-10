@@ -24,7 +24,8 @@ namespace strategy {
 	template<class A>
 	inline
 	BestInLevel<A> :: BestInLevel (Tree_* tree) :
-	tree_(tree) {
+	tree_(tree),
+	index_ (0) {
 	}
 
 	template<class A>
@@ -60,6 +61,21 @@ namespace strategy {
 	template<class A>
 	void
 	BestInLevel<A> :: show (String&) const {
+	}
+
+	/****************************
+	 *		Private members
+	 ****************************/
+
+	template<class A>
+	inline void
+	BestInLevel<A> :: incIndex()
+	{
+		if (index_ + 1 <= Constraints :: get().maxHeight()) {
+			++ index_;
+		} else {
+			index_ = Prover :: get()->getTree().getCrown().getMinHeight();
+		}
 	}
 }
 }
