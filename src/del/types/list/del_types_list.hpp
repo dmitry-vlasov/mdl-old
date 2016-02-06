@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_TYPES_LIST_HPP_
-#define DEL_TYPES_LIST_HPP_
+#pragma once
 
 #include "types/storage/del_types_storage.hpp"
 #include "types/list/connectivity/del_types_list_connectivity.hpp"
@@ -23,4 +22,4 @@ namespace list {
 }
 }
 
-#endif /*DEL_TYPES_LIST_HPP_*/
+

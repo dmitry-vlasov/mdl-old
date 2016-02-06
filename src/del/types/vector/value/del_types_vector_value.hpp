@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_TYPES_VECTOR_VALUE_HPP_
-#define DEL_TYPES_VECTOR_VALUE_HPP_
+#pragma once
 
 namespace del {
 namespace vector {
@@ -42,4 +41,4 @@ namespace value {
 }
 }
 
-#endif /*DEL_TYPES_VECTOR_VALUE_HPP_*/
+

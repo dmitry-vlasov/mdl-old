@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_AUXILIARY_CPP_
-#define DEL_AUXILIARY_CPP_
+#pragma once
 
 #include "del/auxiliary/del_auxiliary_Config.cpp"
 #include "del/auxiliary/del_auxiliary_Error.cpp"
@@ -23,4 +22,4 @@
 #include "del/auxiliary/del_auxiliary_Timers.cpp"
 #include "del/auxiliary/del_auxiliary_Volume.cpp"
 
-#endif /*DEL_AUXILIARY_CPP_*/
+

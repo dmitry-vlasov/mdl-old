@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_SOURCE_FORMULA_EQUIV_PRIMITIVE_CPP_
-#define DEL_SOURCE_FORMULA_EQUIV_PRIMITIVE_CPP_
+#pragma once
 
 #include "del/lexer/del_lexer.hpp"
 
@@ -124,4 +123,4 @@ namespace equiv {
 }
 }
 
-#endif /*DEL_SOURCE_FORMULA_EQUIV_PRIMITIVE_CPP_*/
+

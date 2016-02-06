@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_OWL_FUNC_PARSER_HPP_
-#define DEL_OWL_FUNC_PARSER_HPP_
+#pragma once
 
 #include "del/owl/func/parser/del_owl_func_parser_Annotation.hpp"
 #include "del/owl/func/parser/del_owl_func_parser_AnnotationAssertion.hpp"
@@ -26,4 +25,4 @@
 #include "del/owl/func/parser/del_owl_func_parser_Term.hpp"
 #include "del/owl/func/parser/del_owl_func_parser_Unrecognized.hpp"
 
-#endif /*DEL_OWL_FUNC_PARSER_HPP_*/
+

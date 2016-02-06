@@ -10,10 +10,9 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_TYPES_CPP_
-#define DEL_TYPES_CPP_
+#pragma once
 
 #include "del/types/del_types.hpp"
 #include "del/types/pair/del_types_pair.cpp"
 
-#endif /*DEL_TYPES_CPP_*/
+

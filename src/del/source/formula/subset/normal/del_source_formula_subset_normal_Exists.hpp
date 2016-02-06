@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_SOURCE_FORMULA_SUBSET_NORMAL_EXISTS_HPP_
-#define DEL_SOURCE_FORMULA_SUBSET_NORMAL_EXISTS_HPP_
+#pragma once
 
 #include "del/source/formula/subset/normal/del_source_formula_subset_normal_Normal.hpp"
 
@@ -66,4 +65,4 @@ private :
 }
 }
 
-#endif /*DEL_SOURCE_FORMULA_SUBSET_NORMAL_EXISTS_HPP_*/
+

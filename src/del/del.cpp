@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_CPP_
-#define DEL_CPP_
+#pragma once
 
 #include "del/auxiliary/del_auxiliary.cpp"
 #include "del/interface/del_interface.cpp"
@@ -25,4 +24,4 @@
 
 #include "del/del_Del.cpp"
 
-#endif /*DEL_CPP_*/
+

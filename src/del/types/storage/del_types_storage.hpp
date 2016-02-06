@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_TYPES_STORAGE_HPP_
-#define DEL_TYPES_STORAGE_HPP_
+#pragma once
 
 namespace del {
 namespace storage {
@@ -22,4 +21,4 @@ namespace storage {
 }
 }
 
-#endif /*DEL_TYPES_STORAGE_HPP_*/
+

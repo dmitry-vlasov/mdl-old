@@ -10,10 +10,9 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_MODEL_QUEUE_DOMAIN_CPP_
-#define DEL_MODEL_QUEUE_DOMAIN_CPP_
+#pragma once
 
 #include "del/model/queue/domain/del_model_queue_domain_Exists.cpp"
 #include "del/model/queue/domain/del_model_queue_domain_Simple.cpp"
 
-#endif /*DEL_MODEL_QUEUE_DOMAIN_CPP_*/
+

@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_AUXILIARY_OUTPUT_CPP_
-#define DEL_AUXILIARY_OUTPUT_CPP_
+#pragma once
 
 #include "del/interface/del_interface.hpp"
 #include "del/auxiliary/del_auxiliary.hpp"
@@ -106,4 +105,4 @@ using manipulator :: endLine;
 }
 }
 
-#endif /*DEL_AUXILIARY_OUTPUT_CPP_*/
+

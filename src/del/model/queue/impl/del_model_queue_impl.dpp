@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_MODEL_QUEUE_IMPL_DPP_
-#define DEL_MODEL_QUEUE_IMPL_DPP_
+#pragma once
 
 namespace del {
 namespace model {
@@ -35,4 +34,4 @@ namespace impl {
 }
 }
 
-#endif /*DEL_MODEL_QUEUE_IMPL_DPP_*/
+

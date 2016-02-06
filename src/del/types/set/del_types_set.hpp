@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_TYPES_SET_HPP_
-#define DEL_TYPES_SET_HPP_
+#pragma once
 
 #include "types/storage/del_types_storage.hpp"
 #include "types/value/del_types_value.hpp"
@@ -26,5 +25,5 @@ namespace set {
 #include "types/set/index/del_types_set_index.hpp"
 #include "types/set/value/del_types_set_value.hpp"
 
-#endif /*DEL_TYPES_SET_HPP_*/
+
 

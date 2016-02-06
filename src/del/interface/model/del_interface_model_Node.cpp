@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_INTERFACE_MODEL_NODE_CPP_
-#define DEL_INTERFACE_MODEL_NODE_CPP_
+#pragma once
 
 namespace del {
 namespace interface {
@@ -91,4 +90,4 @@ namespace model {
 }
 }
 
-#endif /*DEL_INTERFACE_MODEL_NODE_CPP_*/
+

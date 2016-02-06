@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_TYPES_LIST_CONNECTIVITY_HPP_
-#define DEL_TYPES_LIST_CONNECTIVITY_HPP_
+#pragma once
 
 namespace del {
 namespace list {
@@ -23,4 +22,4 @@ namespace connectivity {
 }
 }
 
-#endif /* DEL_TYPES_LIST_CONNECTIVITY_HPP_ */
+

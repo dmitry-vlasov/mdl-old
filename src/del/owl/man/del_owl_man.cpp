@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_OWL_MAN_CPP_
-#define DEL_OWL_MAN_CPP_
+#pragma once
 
 #include "del/owl/man/lexer/del_owl_man_lexer.cpp"
 #include "del/owl/man/parser/del_owl_man_parser.cpp"
@@ -19,4 +18,4 @@
 
 #include "del/owl/man/del_owl_man_Owl.cpp"
 
-#endif /*DEL_OWL_MAN_CPP_*/
+

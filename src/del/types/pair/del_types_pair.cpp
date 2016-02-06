@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_TYPES_PAIR_CPP_
-#define DEL_TYPES_PAIR_CPP_
+#pragma once
 
 namespace del {
 namespace pair {
@@ -70,4 +69,4 @@ namespace pair {
 }
 }
 
-#endif /*DEL_TYPES_PAIR_CPP_*/
+

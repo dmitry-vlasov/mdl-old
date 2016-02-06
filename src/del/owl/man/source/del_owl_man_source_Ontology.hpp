@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_OWL_MAN_SOURCE_ONTOLOGY_HPP_
-#define DEL_OWL_MAN_SOURCE_ONTOLOGY_HPP_
+#pragma once
 
 #include "del/interface/del_interface.hpp"
 #include "del/owl/man/source/del_owl_man_source.dpp"
@@ -48,4 +47,4 @@ private :
 }
 }
 
-#endif /*DEL_OWL_MAN_SOURCE_ONTOLOGY_HPP_*/
+

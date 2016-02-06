@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_MATH_MATH_CPP_
-#define DEL_MATH_MATH_CPP_
+#pragma once
 
 #include "del/math/del_math.hpp"
 
@@ -65,5 +64,5 @@ using manipulator :: endLine;
 }
 }
 
-#endif /*DEL_MATH_MATH_CPP_*/
+
 

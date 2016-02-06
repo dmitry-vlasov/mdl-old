@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_INTERFACE_OBJECT_HPP_
-#define DEL_INTERFACE_OBJECT_HPP_
+#pragma once
 
 #include "del/interface/del_interface.dpp"
 #include "del/auxiliary/del_auxiliary.dpp"
@@ -45,4 +44,4 @@ private :
 }
 }
 
-#endif /*DEL_INTERFACE_OBJECT_HPP_*/
+

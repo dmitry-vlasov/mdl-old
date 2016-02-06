@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_LEXER_HPP_
-#define DEL_LEXER_HPP_
+#pragma once
 
 #include "del/lexer/del_lexer_CommentScaner.hpp"
 #include "del/lexer/del_lexer_Lexer.hpp"
@@ -21,4 +20,4 @@
 #include "del/lexer/del_lexer_Token.hpp"
 #include "del/lexer/del_lexer_WhitespaceScaner.hpp"
 
-#endif /*DEL_LEXER_HPP_*/
+

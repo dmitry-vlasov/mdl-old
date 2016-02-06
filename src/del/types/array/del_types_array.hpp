@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_TYPES_ARRAY_HPP_
-#define DEL_TYPES_ARRAY_HPP_
+#pragma once
 
 #include "types/storage/del_types_storage.hpp"
 #include "types/value/del_types_value.hpp"
@@ -32,5 +31,5 @@ namespace array {
 }
 }
 
-#endif /*DEL_TYPES_ARRAY_HPP_*/
+
 

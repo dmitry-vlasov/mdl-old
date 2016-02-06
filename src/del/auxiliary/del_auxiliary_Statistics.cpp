@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_AUXILIARY_STATISTICS_CPP_
-#define DEL_AUXILIARY_STATISTICS_CPP_
+#pragma once
 
 #include "del/del_Del.hpp"
 
@@ -71,4 +70,4 @@ using manipulator :: tab;
 }
 }
 
-#endif /*DEL_AUXILIARY_STATISTICS_CPP_*/
+

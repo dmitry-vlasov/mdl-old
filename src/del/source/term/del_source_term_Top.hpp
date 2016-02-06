@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_SOURCE_TERM_TOP_HPP_
-#define DEL_SOURCE_TERM_TOP_HPP_
+#pragma once
 
 #include "del/interface/del_interface.hpp"
 #include "del/source/term/del_source_term_Term.hpp"
@@ -83,4 +82,4 @@ private :
 }
 }
 
-#endif /*DEL_SOURCE_TERM_TOP_HPP_*/
+

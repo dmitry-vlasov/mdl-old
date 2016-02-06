@@ -10,10 +10,9 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_MODEL_NODE_CPP_
-#define DEL_MODEL_NODE_CPP_
+#pragma once
 
 #include "del/model/node/negative/del_model_node_negative.cpp"
 #include "del/model/node/positive/del_model_node_positive.cpp"
 
-#endif /*DEL_MODEL_NODE_CPP_*/
+

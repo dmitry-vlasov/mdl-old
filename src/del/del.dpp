@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_DPP_
-#define DEL_DPP_
+#pragma once
 
 #include "del/auxiliary/del_auxiliary.dpp"
 #include "del/interface/del_interface.dpp"
@@ -27,4 +26,4 @@ namespace del {
 	class Del;
 }
 
-#endif /*DEL_DPP_*/
+

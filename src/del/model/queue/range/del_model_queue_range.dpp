@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_MODEL_QUEUE_RANGE_DPP_
-#define DEL_MODEL_QUEUE_RANGE_DPP_
+#pragma once
 
 namespace del {
 namespace model {
@@ -29,4 +28,4 @@ namespace range {
 }
 }
 
-#endif /*DEL_MODEL_QUEUE_RANGE_DPP_*/
+

@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_INTERFACE_MODEL_QUEUE_RANGE_CPP_
-#define DEL_INTERFACE_MODEL_QUEUE_RANGE_CPP_
+#pragma once
 
 #include "del/interface/model/queue/del_interface_model_queue_Element.hpp"
 
@@ -76,4 +75,4 @@ namespace queue {
 }
 }
 
-#endif /*DEL_INTERFACE_MODEL_QUEUE_RANGE_CPP_*/
+

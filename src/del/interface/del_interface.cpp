@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_INTERFACE_CPP_
-#define DEL_INTERFACE_CPP_
+#pragma once
 
 #include "del/interface/model/del_interface_model.cpp"
 
@@ -20,4 +19,4 @@
 #include "del/interface/del_interface_Symbol.cpp"
 #include "del/interface/del_interface_Writable.cpp"
 
-#endif /*DEL_INTERFACE_CPP_*/
+

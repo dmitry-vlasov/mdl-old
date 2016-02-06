@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_SOURCE_FORMULA_EQUIV_PRIMITIVE_HPP_
-#define DEL_SOURCE_FORMULA_EQUIV_PRIMITIVE_HPP_
+#pragma once
 
 #include "del/source/formula/equiv/del_source_formula_equiv_Equivalence.hpp"
 
@@ -60,4 +59,4 @@ protected :
 }
 }
 
-#endif /*DEL_SOURCE_FORMULA_EQUIV_PRIMITIVE_HPP_*/
+

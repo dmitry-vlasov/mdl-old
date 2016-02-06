@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_TYPES_HPP_
-#define DEL_TYPES_HPP_
+#pragma once
 
 #include <nstd>
 
@@ -81,5 +80,5 @@ namespace container {
 #include "del/types/value/del_types_value.hpp"
 #include "del/types/vector/del_types_vector.hpp"
 
-#endif /*DEL_TYPES_HPP_*/
+
 

@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_MODEL_MODE_HPP_
-#define DEL_MODEL_MODE_HPP_
+#pragma once
 
 namespace del {
 namespace model {
@@ -32,4 +31,4 @@ public :
 }
 }
 
-#endif /*DEL_MODEL_MODE_HPP_*/
+

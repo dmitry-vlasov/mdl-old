@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_OWL_FUNC_SOURCE_SOURCE_CPP_
-#define DEL_OWL_FUNC_SOURCE_SOURCE_CPP_
+#pragma once
 
 #include "del/owl/del_owl.hpp"
 
@@ -242,4 +241,4 @@ using manipulator :: tab;
 }
 }
 
-#endif /*DEL_OWL_FUNC_SOURCE_SOURCE_CPP_*/
+

@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_OWL_MAN_PARSER_DISJOINT_WITH_HPP_
-#define DEL_OWL_MAN_PARSER_DISJOINT_WITH_HPP_
+#pragma once
 
 #include "del/owl/man/lexer/del_owl_man_lexer.hpp"
 #include "del/owl/man/parser/del_owl_man_parser.dpp"
@@ -50,4 +49,4 @@ private :
 }
 }
 
-#endif /*DEL_OWL_MAN_PARSER_DISJOINT_WITH_HPP_*/
+

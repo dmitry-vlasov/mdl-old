@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_LEXER_SCANER_CPP_
-#define DEL_LEXER_SCANER_CPP_
+#pragma once
 
 #include "del/lexer/del_lexer.hpp"
 
@@ -128,4 +127,4 @@ namespace lexer {
 }
 }
 
-#endif /*DEL_LEXER_SCANER_CPP_*/
+

@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_AUXILIARY_OUTPUT_HPP_
-#define DEL_AUXILIARY_OUTPUT_HPP_
+#pragma once
 
 #include "del/interface/del_interface.dpp"
 
@@ -54,4 +53,4 @@ private :
 }
 }
 
-#endif /*DEL_AUXILIARY_OUTPUT_HPP_*/
+

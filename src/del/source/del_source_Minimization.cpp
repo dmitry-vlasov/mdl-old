@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_SOURCE_MINIMIZATION_CPP_
-#define DEL_SOURCE_MINIMIZATION_CPP_
+#pragma once
 
 #include "del/lexer/del_lexer.hpp"
 #include "del/source/del_source_Minimization.hpp"
@@ -139,4 +138,4 @@ using manipulator :: endLine;
 }
 }
 
-#endif /*DEL_SOURCE_MINIMIZATION_CPP_*/
+

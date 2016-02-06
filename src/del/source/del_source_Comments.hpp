@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_SOURCE_COMMENTS_HPP_
-#define DEL_SOURCE_COMMENTS_HPP_
+#pragma once
 
 #include "del/interface/del_interface.hpp"
 #include "del/lexer/del_lexer.hpp"
@@ -58,4 +57,4 @@ private :
 }
 }
 
-#endif /*DEL_SOURCE_COMMENTS_HPP_*/
+

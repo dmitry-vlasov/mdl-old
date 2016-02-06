@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_INTERFACE_MINIMIZATION_HPP_
-#define DEL_INTERFACE_MINIMIZATION_HPP_
+#pragma once
 
 #include "del/interface/del_interface_Writable.hpp"
 
@@ -27,4 +26,4 @@ public :
 }
 }
 
-#endif /*DEL_INTERFACE_MINIMIZATION_HPP_*/
+

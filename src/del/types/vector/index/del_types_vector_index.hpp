@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_TYPES_VECTOR_INDEX_HPP_
-#define DEL_TYPES_VECTOR_INDEX_HPP_
+#pragma once
 
 namespace del {
 namespace vector {
@@ -30,4 +29,4 @@ namespace index {
 }
 }
 
-#endif /*DEL_TYPES_VECTOR_INDEX_HPP_*/
+

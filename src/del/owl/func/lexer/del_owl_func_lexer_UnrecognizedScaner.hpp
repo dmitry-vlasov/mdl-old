@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_OWL_FUNC_LEXER_UNRECOGNIZED_SCANER_HPP_
-#define DEL_OWL_FUNC_LEXER_UNRECOGNIZED_SCANER_HPP_
+#pragma once
 
 #include "del/owl/func/lexer/del_owl_func_lexer_Token.hpp"
 
@@ -78,4 +77,4 @@ private :
 }
 }
 
-#endif /*DEL_OWL_FUNC_LEXER_UNRECOGNIZED_SCANER_HPP_*/
+

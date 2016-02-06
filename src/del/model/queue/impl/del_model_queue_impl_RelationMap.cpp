@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_MODEL_QUEUE_IMPL_RELATION_MAP_CPP_
-#define DEL_MODEL_QUEUE_IMPL_RELATION_MAP_CPP_
+#pragma once
 
 #include "del/interface/del_interface.hpp"
 
@@ -96,4 +95,4 @@ namespace impl {
 }
 }
 
-#endif /*DEL_MODEL_QUEUE_IMPL_RELATION_MAP_CPP_*/
+

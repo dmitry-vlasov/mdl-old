@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_TYPES_MAP_HPP_
-#define DEL_TYPES_MAP_HPP_
+#pragma once
 
 namespace del {
 namespace map {
@@ -21,4 +20,4 @@ namespace map {
 }
 }
 
-#endif /*DEL_TYPES_MAP_HPP_*/
+

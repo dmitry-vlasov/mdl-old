@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_SOURCE_TERM_TERM_CPP_
-#define DEL_SOURCE_TERM_TERM_CPP_
+#pragma once
 
 #include "del/lexer/del_lexer.hpp"
 
@@ -510,4 +509,4 @@ namespace term {
 }
 }
 
-#endif /*DEL_SOURCE_TERM_TERM_CPP_*/
+

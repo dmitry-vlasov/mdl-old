@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_MODEL_QUEUE_IMPL_RELATION_PAIR_HPP_
-#define DEL_MODEL_QUEUE_IMPL_RELATION_PAIR_HPP_
+#pragma once
 
 #include "del/interface/del_interface.hpp"
 
@@ -50,4 +49,4 @@ public :
 }
 }
 
-#endif /*DEL_MODEL_QUEUE_IMPL_RELATION_PAIR_HPP_*/
+

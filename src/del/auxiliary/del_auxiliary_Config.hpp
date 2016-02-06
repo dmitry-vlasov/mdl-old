@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_AUXILIARY_CONFIG_HPP_
-#define DEL_AUXILIARY_CONFIG_HPP_
+#pragma once
 
 #include "del/types/del_types.hpp"
 
@@ -199,4 +198,4 @@ private :
 }
 }
 
-#endif /*DEL_AUXILIARY_CONFIG_HPP_*/
+

@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_SOURCE_FORMULA_SUBSET_NORMAL_CONJUNCTION_CPP_
-#define DEL_SOURCE_FORMULA_SUBSET_NORMAL_CONJUNCTION_CPP_
+#pragma once
 
 #include "del/lexer/del_lexer.hpp"
 #include "del/source/del_source.hpp"
@@ -555,4 +554,4 @@ namespace normal {
 }
 }
 
-#endif /*DEL_SOURCE_FORMULA_SUBSET_NORMAL_CONJUNCTION_CPP_*/
+

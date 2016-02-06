@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_MODEL_QUEUE_IMPL_CPP_
-#define DEL_MODEL_QUEUE_IMPL_CPP_
+#pragma once
 
 #include "del/model/queue/impl/del_model_queue_impl_Map.cpp"
 #include "del/model/queue/impl/del_model_queue_impl_Model.cpp"
@@ -21,4 +20,4 @@
 #include "del/model/queue/impl/del_model_queue_impl_Relation_Pair.cpp"
 #include "del/model/queue/impl/del_model_queue_impl_RelationMap.cpp"
 
-#endif /*DEL_MODEL_QUEUE_IMPL_CPP_*/
+

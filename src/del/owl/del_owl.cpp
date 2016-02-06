@@ -10,10 +10,9 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_OWL_CPP_
-#define DEL_OWL_CPP_
+#pragma once
 
 #include "del/owl/func/del_owl_func.cpp"
 #include "del/owl/man/del_owl_man.cpp"
 
-#endif /*DEL_OWL_CPP_*/
+

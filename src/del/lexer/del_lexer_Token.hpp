@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_LEXER_TOKEN_HPP_
-#define DEL_LEXER_TOKEN_HPP_
+#pragma once
 
 namespace del {
 namespace lexer {
@@ -150,4 +149,4 @@ private :
 #include "del/lexer/del_lexer_Token.ipp"
 #include "del/lexer/del_lexer_Token.cpp"
 
-#endif /*DEL_LEXER_TOKEN_HPP_*/
+

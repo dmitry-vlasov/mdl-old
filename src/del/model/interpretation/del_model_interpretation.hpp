@@ -10,12 +10,11 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_MODEL_INTERPRETATIONS_HPP_
-#define DEL_MODEL_INTERPRETATIONS_HPP_
+#pragma once
 
 #include "del/model/interpretation/del_model_interpretation_Predicate.hpp"
 #include "del/model/interpretation/del_model_interpretation_PredicateMap.hpp"
 #include "del/model/interpretation/del_model_interpretation_Relation.hpp"
 #include "del/model/interpretation/del_model_interpretation_RelationMap.hpp"
 
-#endif /*DEL_MODEL_INTERPRETATIONS_HPP_*/
+

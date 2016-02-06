@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_INTERFACE_MODEL_QUEUE_DPP_
-#define DEL_INTERFACE_MODEL_QUEUE_DPP_
+#pragma once
 
 #include "del/types/del_types.hpp"
 
@@ -69,4 +68,4 @@ namespace set {
 
 }
 
-#endif /*DEL_INTERFACE_MODEL_QUEUE_DPP_*/
+

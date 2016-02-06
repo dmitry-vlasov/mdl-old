@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_TYPES_CHARS_HPP_
-#define DEL_TYPES_CHARS_HPP_
+#pragma once
 
 namespace del {
 namespace chars {
@@ -22,4 +21,4 @@ namespace chars {
 }
 }
 
-#endif /*DEL_TYPES_CHARS_HPP_*/
+

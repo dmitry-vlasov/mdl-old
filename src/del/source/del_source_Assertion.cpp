@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_SOURCE_ASSERTION_CPP_
-#define DEL_SOURCE_ASSERTION_CPP_
+#pragma once
 
 #include "del/auxiliary/del_auxiliary.hpp"
 #include "del/source/del_source.hpp"
@@ -141,4 +140,4 @@ using manipulator :: endLine;
 }
 }
 
-#endif /*DEL_SOURCE_ASSERTION_CPP_*/
+

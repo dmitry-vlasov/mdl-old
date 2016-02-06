@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_PARSER_TERM_CPP_
-#define DEL_PARSER_TERM_CPP_
+#pragma once
 
 #include "del/lexer/del_lexer.hpp"
 #include "del/source/del_source.hpp"
@@ -148,4 +147,4 @@ namespace parser {
 }
 }
 
-#endif /*DEL_PARSER_TERM_CPP_*/
+

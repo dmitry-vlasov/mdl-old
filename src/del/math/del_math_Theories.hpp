@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_MATH_THEORIES_HPP_
-#define DEL_MATH_THEORIES_HPP_
+#pragma once
 
 #include "del/interface/del_interface.hpp"
 #include "del/math/del_math.dpp"
@@ -46,4 +45,4 @@ private :
 
 #include "del/math/del_math_Theories.ipp"
 
-#endif /*DEL_MATH_THEORIES_HPP_*/
+

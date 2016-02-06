@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_AUXILIARY_LOG_CPP_
-#define DEL_AUXILIARY_LOG_CPP_
+#pragma once
 
 namespace del {
 namespace auxiliary {
@@ -280,4 +279,4 @@ using manipulator :: endLine;
 }
 }
 
-#endif /*DEL_AUXILIARY_LOG_CPP_*/
+

@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_MODEL_INTERPRETATION_PREDICATE_MAP_CPP_
-#define DEL_MODEL_INTERPRETATION_PREDICATE_MAP_CPP_
+#pragma once
 
 #include "del/model/del_model.hpp"
 
@@ -252,4 +251,4 @@ using manipulator :: tab;
 }
 }
 
-#endif /*DEL_MODEL_INTERPRETATION_PREDICATE_MAP_CPP_*/
+

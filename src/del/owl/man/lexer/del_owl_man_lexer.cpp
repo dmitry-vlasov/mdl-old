@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_OWL_MAN_LEXER_CPP_
-#define DEL_OWL_MAN_LEXER_CPP_
+#pragma once
 
 #include "del/owl/man/lexer/del_owl_man_lexer_CommentScaner.cpp"
 #include "del/owl/man/lexer/del_owl_man_lexer_Lexer.cpp"
@@ -19,4 +18,4 @@
 #include "del/owl/man/lexer/del_owl_man_lexer_Token.cpp"
 #include "del/owl/man/lexer/del_owl_man_lexer_WhitespaceScaner.cpp"
 
-#endif /*DEL_OWL_MAN_LEXER_CPP_*/
+

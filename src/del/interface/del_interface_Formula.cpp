@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_INTERFACE_FORMULA_CPP_
-#define MDL_INTERFACE_FORMULA_CPP_
+#pragma once
 
 namespace del {
 namespace interface {
@@ -126,4 +125,4 @@ namespace interface {
 }
 }
 
-#endif /*MDL_INTERFACE_FORMULA_CPP_*/
+

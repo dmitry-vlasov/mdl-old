@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_MODEL_QUEUE_IMPL_MODEL_CPP_
-#define DEL_MODEL_QUEUE_IMPL_MODEL_CPP_
+#pragma once
 
 #include "del/auxiliary/del_auxiliary.hpp"
 #include "del/source/del_source.hpp"
@@ -476,4 +475,4 @@ using manipulator :: endLine;
 }
 }
 
-#endif /*DEL_MODEL_QUEUE_IMPL_MODEL_CPP_*/
+

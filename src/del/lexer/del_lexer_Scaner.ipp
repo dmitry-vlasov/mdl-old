@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_LEXER_SCANER_IPP_
-#define DEL_LEXER_SCANER_IPP_
+#pragma once
 
 namespace del {
 namespace lexer {
@@ -737,4 +736,4 @@ namespace lexer {
 }
 }
 
-#endif /*DEL_LEXER_SCANER_IPP_*/
+

@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_INTERFACE_MODEL_PREDICATE_MAP_HPP_
-#define DEL_INTERFACE_MODEL_PREDICATE_MAP_HPP_
+#pragma once
 
 #include "del/interface/del_interface_Object.hpp"
 #include "del/interface/model/del_interface_model.dpp"
@@ -35,4 +34,4 @@ public :
 }
 }
 
-#endif /*DEL_INTERFACE_MODEL_PREDICATE_MAP_HPP_*/
+

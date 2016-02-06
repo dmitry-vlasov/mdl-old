@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_SOURCE_COMMENTS_CPP_
-#define DEL_SOURCE_COMMENTS_CPP_
+#pragma once
 
 #include "del/auxiliary/del_auxiliary.hpp"
 #include "del/lexer/del_lexer.hpp"
@@ -83,4 +82,4 @@ using manipulator :: space;
 }
 }
 
-#endif /*DEL_SOURCE_COMMENTS_CPP_*/
+

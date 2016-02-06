@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_MATH_SOURCE_IPP_
-#define DEL_MATH_SOURCE_IPP_
+#pragma once
 
 namespace del {
 namespace math {
@@ -31,4 +30,4 @@ namespace math {
 }
 }
 
-#endif /*DEL_MATH_SOURCE_IPP_*/
+

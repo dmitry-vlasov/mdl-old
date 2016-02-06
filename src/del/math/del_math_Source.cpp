@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_MATH_SOURCE_CPP_
-#define DEL_MATH_SOURCE_CPP_
+#pragma once
 
 #include "auxiliary/del_auxiliary.hpp"
 #include "math/del_math.hpp"
@@ -56,4 +55,4 @@ using manipulator :: space;
 }
 }
 
-#endif /*DEL_MATH_SOURCE_CPP_*/
+

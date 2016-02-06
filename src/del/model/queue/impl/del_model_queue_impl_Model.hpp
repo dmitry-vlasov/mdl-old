@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_MODEL_QUEUE_IMPL_MODEL_HPP_
-#define DEL_MODEL_QUEUE_IMPL_MODEL_HPP_
+#pragma once
 
 #include "del/interface/del_interface.hpp"
 #include "del/model/interpretation/del_model_interpretation.hpp"
@@ -103,4 +102,4 @@ private :
 }
 }
 
-#endif /*DEL_MODEL_QUEUE_IMPL_MODEL_HPP_*/
+

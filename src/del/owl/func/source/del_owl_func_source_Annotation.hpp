@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_OWL_FUNC_SOURCE_ANNOTATION_HPP_
-#define DEL_OWL_FUNC_SOURCE_ANNOTATION_HPP_
+#pragma once
 
 #include "del/interface/del_interface.hpp"
 #include "del/owl/func/source/del_owl_func_source.dpp"
@@ -52,4 +51,4 @@ private :
 }
 }
 
-#endif /*DEL_OWL_FUNC_SOURCE_ANNOTATION_HPP_*/
+

@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_INTERFACE_DPP_
-#define DEL_INTERFACE_DPP_
+#pragma once
 
 #include "del/types/del_types.hpp"
 #include "del/interface/model/del_interface_model.dpp"
@@ -118,4 +117,4 @@ namespace pair {
 }
 }
 
-#endif /*DEL_INTERFACE_DPP_*/
+

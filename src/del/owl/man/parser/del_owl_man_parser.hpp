@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_OWL_MAN_PARSER_HPP_
-#define DEL_OWL_MAN_PARSER_HPP_
+#pragma once
 
 #include "del/owl/man/parser/del_owl_man_parser_Annotations.hpp"
 #include "del/owl/man/parser/del_owl_man_parser_Class.hpp"
@@ -24,4 +23,4 @@
 #include "del/owl/man/parser/del_owl_man_parser_Subclass.hpp"
 #include "del/owl/man/parser/del_owl_man_parser_Term.hpp"
 
-#endif /*DEL_OWL_MAN_PARSER_HPP_*/
+

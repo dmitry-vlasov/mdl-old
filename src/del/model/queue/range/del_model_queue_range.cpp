@@ -10,11 +10,10 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_MODEL_QUEUE_RANGE_CPP_
-#define DEL_MODEL_QUEUE_RANGE_CPP_
+#pragma once
 
 #include "del/model/queue/range/del_model_queue_range_Conjunction.cpp"
 #include "del/model/queue/range/del_model_queue_range_Exists.cpp"
 #include "del/model/queue/range/del_model_queue_range_Simple.cpp"
 
-#endif /*DEL_MODEL_QUEUE_RANGE_CPP_*/
+

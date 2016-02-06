@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_AUXILIARY_TIMERS_IPP_
-#define DEL_AUXILIARY_TIMERS_IPP_
+#pragma once
 
 namespace del {
 namespace auxiliary {
@@ -217,4 +216,4 @@ namespace auxiliary {
 }
 }
 
-#endif /*DEL_AUXILIARY_TIMERS_IPP_*/
+

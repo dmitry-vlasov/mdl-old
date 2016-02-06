@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_PARSER_DPP_
-#define DEL_PARSER_DPP_
+#pragma once
 
 namespace del {
 namespace parser {
@@ -31,4 +30,4 @@ namespace parser {
 }
 }
 
-#endif /*DEL_PARSER_DPP_*/
+

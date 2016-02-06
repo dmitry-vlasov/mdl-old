@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_LEXER_LEXER_CPP_
-#define DEL_LEXER_LEXER_CPP_
+#pragma once
 
 #include "del/lexer/del_lexer.hpp"
 
@@ -125,4 +124,4 @@ using manipulator :: endLine;
 }
 }
 
-#endif /*DEL_LEXER_LEXER_CPP_*/
+

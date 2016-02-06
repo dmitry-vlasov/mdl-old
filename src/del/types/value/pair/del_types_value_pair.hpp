@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_TYPES_VALUE_PAIR_HPP_
-#define DEL_TYPES_VALUE_PAIR_HPP_
+#pragma once
 
 #include "del/types/pair/del_types_pair.hpp"
 
@@ -57,4 +56,4 @@ namespace pair {
 }
 }
 
-#endif /*DEL_TYPES_VALUE_PAIR_HPP_*/
+

@@ -10,11 +10,10 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_SOURCE_FORMULA_SUBSET_HPP_
-#define DEL_SOURCE_FORMULA_SUBSET_HPP_
+#pragma once
 
 #include "del/source/formula/subset/normal/del_source_formula_subset_normal.hpp"
 
 #include "del/source/formula/subset/del_source_formula_subset_Subset.hpp"
 
-#endif /*DEL_SOURCE_FORMULA_SUBSET_HPP_*/
+

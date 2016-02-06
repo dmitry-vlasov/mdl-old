@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_INTERFACE_CLONEABLE_HPP_
-#define DEL_INTERFACE_CLONEABLE_HPP_
+#pragma once
 
 #include "del/interface/del_interface.dpp"
 
@@ -27,4 +26,4 @@ public :
 }
 }
 
-#endif /*DEL_INTERFACE_CLONEABLE_HPP_*/
+

@@ -10,12 +10,11 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_MATH_HPP_
-#define DEL_MATH_HPP_
+#pragma once
 
 #include "del/math/del_math_Math.hpp"
 #include "del/math/del_math_Signatures.hpp"
 #include "del/math/del_math_Source.hpp"
 #include "del/math/del_math_Theories.hpp"
 
-#endif /*DEL_MATH_HPP_*/
+

@@ -10,12 +10,11 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_MATH_CPP_
-#define DEL_MATH_CPP_
+#pragma once
 
 #include "del/math/del_math_Math.cpp"
 #include "del/math/del_math_Signatures.cpp"
 #include "del/math/del_math_Source.cpp"
 #include "del/math/del_math_Theories.cpp"
 
-#endif /*DEL_MATH_CPP_*/
+

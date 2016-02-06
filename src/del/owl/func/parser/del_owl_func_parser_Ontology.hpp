@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_OWL_FUNC_PARSER_ONTOLOGY_HPP_
-#define DEL_OWL_FUNC_PARSER_ONTOLOGY_HPP_
+#pragma once
 
 #include "del/owl/func/lexer/del_owl_func_lexer.hpp"
 #include "del/owl/func/parser/del_owl_func_parser.dpp"
@@ -61,4 +60,4 @@ private :
 }
 }
 
-#endif /*DEL_OWL_FUNC_PARSER_ONTOLOGY_HPP_*/
+

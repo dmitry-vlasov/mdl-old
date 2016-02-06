@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_AUXILIARY_ERROR_CPP_
-#define DEL_AUXILIARY_ERROR_CPP_
+#pragma once
 
 #include "del/auxiliary/del_auxiliary_Config.hpp"
 #include "del/auxiliary/del_auxiliary_Error.hpp"
@@ -107,4 +106,4 @@ namespace auxiliary {
 }
 }
 
-#endif /* DEL_AUXILIARY_ERROR_CPP_ */
+

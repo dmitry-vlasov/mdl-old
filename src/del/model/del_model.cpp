@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_MODEL_CPP_
-#define DEL_MODEL_CPP_
+#pragma once
 
 #include "del/model/interpretation/del_model_interpretation.cpp"
 #include "del/model/node/del_model_node.cpp"
@@ -20,4 +19,4 @@
 #include "del/model/del_model_Mode.cpp"
 #include "del/model/del_model_Structure.cpp"
 
-#endif /*DEL_MODEL_CPP_*/
+

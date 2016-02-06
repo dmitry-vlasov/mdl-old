@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_OWL_MAN_SOURCE_CHARACTERISTICS_CPP_
-#define DEL_OWL_MAN_SOURCE_CHARACTERISTICS_CPP_
+#pragma once
 
 #include "del/lexer/del_lexer.hpp"
 #include "del/source/del_source.hpp"
@@ -53,4 +52,4 @@ namespace source {
 }
 }
 
-#endif /*DEL_OWL_MAN_SOURCE_CHARACTERISTICS_CPP_*/
+

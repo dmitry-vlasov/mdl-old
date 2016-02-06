@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_OWL_MAN_LEXER_OWL_LEXER_CPP_
-#define DEL_OWL_MAN_LEXER_OWL_LEXER_CPP_
+#pragma once
 
 #include "del/owl/man/lexer/del_owl_man_lexer.hpp"
 
@@ -54,4 +53,4 @@ namespace lexer {
 }
 }
 
-#endif /*DEL_OWL_MAN_LEXER_OWL_LEXER_CPP_*/
+

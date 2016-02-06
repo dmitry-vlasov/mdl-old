@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_SOURCE_FORMULA_SUBSET_NORMAL_NORMAL_HPP_
-#define DEL_SOURCE_FORMULA_SUBSET_NORMAL_NORMAL_HPP_
+#pragma once
 
 #include "del/source/formula/del_source_formula_Termal.hpp"
 
@@ -82,4 +81,4 @@ protected :
 }
 }
 
-#endif /*DEL_SOURCE_FORMULA_SUBSET_NORMAL_NORMAL_HPP_*/
+

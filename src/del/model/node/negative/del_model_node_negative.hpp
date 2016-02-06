@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_MODEL_NODE_NEGATIVE_HPP_
-#define DEL_MODEL_NODE_NEGATIVE_HPP_
+#pragma once
 
 #include "del/model/node/negative/del_model_node_negative_Conjunction.hpp"
 #include "del/model/node/negative/del_model_node_negative_ExistsLeft.hpp"
@@ -21,4 +20,4 @@
 #include "del/model/node/negative/del_model_node_negative_Simple.hpp"
 #include "del/model/node/negative/del_model_node_negative_Top.hpp"
 
-#endif /*DEL_MODEL_NODE_NEGATIVE_HPP_*/
+

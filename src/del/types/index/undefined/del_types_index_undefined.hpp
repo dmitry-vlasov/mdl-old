@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_TYPES_INDEX_UDEFINED_HPP_
-#define DEL_TYPES_INDEX_UDEFINED_HPP_
+#pragma once
 
 namespace del {
 namespace index {
@@ -31,4 +30,4 @@ namespace undefined {
 }
 }
 
-#endif /*DEL_TYPES_INDEX_UDEFINED_HPP_*/
+

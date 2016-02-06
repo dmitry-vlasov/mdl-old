@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_LEXER_SCANER_HPP_
-#define DEL_LEXER_SCANER_HPP_
+#pragma once
 
 #include "del/lexer/del_lexer.dpp"
 #include "del/lexer/del_lexer_NameScaner.hpp"
@@ -163,4 +162,4 @@ private :
 
 #include "del/lexer/del_lexer_Scaner.ipp"
 
-#endif /*DEL_LEXER_SCANER_HPP_*/
+

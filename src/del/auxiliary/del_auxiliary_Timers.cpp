@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_AUXILIARY_TIMERS_CPP_
-#define DEL_AUXILIARY_TIMERS_CPP_
+#pragma once
 
 #include "del/auxiliary/del_auxiliary.hpp"
 
@@ -236,4 +235,4 @@ using manipulator :: tab;
 }
 }
 
-#endif /*DEL_AUXILIARY_TIMERS_CPP_*/
+

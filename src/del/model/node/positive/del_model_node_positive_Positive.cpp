@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_MODEL_NODE_POSITIVE_POSITIVE_CPP_
-#define DEL_MODEL_NODE_POSITIVE_POSITIVE_CPP_
+#pragma once
 
 #include "del/interface/del_interface.hpp"
 
@@ -351,4 +350,4 @@ namespace positive {
 }
 }
 
-#endif /*DEL_MODEL_NODE_POSITIVE_POSITIVE_CPP_*/
+

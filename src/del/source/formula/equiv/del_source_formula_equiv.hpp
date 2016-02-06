@@ -10,12 +10,11 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_SOURCE_FORMULA_EQUIV_HPP_
-#define DEL_SOURCE_FORMULA_EQUIV_HPP_
+#pragma once
 
 #include "del/source/formula/equiv/del_source_formula_equiv_Definition.hpp"
 #include "del/source/formula/equiv/del_source_formula_equiv_Equivalence.hpp"
 #include "del/source/formula/equiv/del_source_formula_equiv_Identity.hpp"
 #include "del/source/formula/equiv/del_source_formula_equiv_Primitive.hpp"
 
-#endif /*DEL_SOURCE_FORMULA_EQUIV_HPP_*/
+

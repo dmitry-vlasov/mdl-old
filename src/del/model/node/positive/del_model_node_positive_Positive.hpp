@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_MODEL_NODE_POSITIVE_POSITIVE_HPP_
-#define DEL_MODEL_NODE_POSITIVE_POSITIVE_HPP_
+#pragma once
 
 #include "del/interface/del_interface.hpp"
 #include "del/model/node/negative/del_model_node_negative.dpp"
@@ -104,4 +103,4 @@ protected :
 }
 }
 
-#endif /*DEL_MODEL_NODE_POSITIVE_POSITIVE_HPP_*/
+

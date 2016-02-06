@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_MODEL_NODE_NEGATIVE_EXISTS_LEFT_CPP_
-#define DEL_MODEL_NODE_NEGATIVE_EXISTS_LEFT_CPP_
+#pragma once
 
 #include "del/interface/del_interface.hpp"
 
@@ -192,4 +191,4 @@ namespace negative {
 }
 }
 
-#endif /*DEL_MODEL_NODE_NEGATIVE_EXISTS_LEFT_CPP_*/
+

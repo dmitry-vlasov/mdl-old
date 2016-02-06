@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_MODEL_INTERPRETATION_RELATION_HPP_
-#define DEL_MODEL_INTERPRETATION_RELATION_HPP_
+#pragma once
 
 #include "del/interface/del_interface.hpp"
 #include "del/model/del_model.dpp"
@@ -77,4 +76,4 @@ private :
 }
 }
 
-#endif /*DEL_MODEL_INTERPRETATION_RELATION_HPP_*/
+

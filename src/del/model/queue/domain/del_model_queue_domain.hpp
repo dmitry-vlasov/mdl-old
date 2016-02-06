@@ -10,10 +10,9 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_MODEL_QUEUE_DOMAIN_HPP_
-#define DEL_MODEL_QUEUE_DOMAIN_HPP_
+#pragma once
 
 #include "del/model/queue/domain/del_model_queue_domain_Exists.hpp"
 #include "del/model/queue/domain/del_model_queue_domain_Simple.hpp"
 
-#endif /*DEL_MODEL_QUEUE_DOMAIN_HPP_*/
+

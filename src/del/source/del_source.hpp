@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_SOURCE_HPP_
-#define DEL_SOURCE_HPP_
+#pragma once
 
 #include "del/source/formula/del_source_formula.hpp"
 #include "del/source/term/del_source_term.hpp"
@@ -29,4 +28,4 @@
 #include "del/source/del_source_Source.hpp"
 #include "del/source/del_source_Theory.hpp"
 
-#endif /*DEL_SOURCE_HPP_*/
+

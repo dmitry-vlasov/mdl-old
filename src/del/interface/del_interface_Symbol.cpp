@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_INTERFACE_SYMBOL_CPP_
-#define DEL_INTERFACE_SYMBOL_CPP_
+#pragma once
 
 #include "del/interface/del_interface.hpp"
 #include "del/lexer/del_lexer_Token.hpp"
@@ -340,4 +339,4 @@ using manipulator :: endLine;
 }
 }
 
-#endif /*DEL_INTERFACE_SYMBOL_CPP_*/
+

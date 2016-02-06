@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_SOURCE_TERM_DPP_
-#define DEL_SOURCE_TERM_DPP_
+#pragma once
 
 namespace del {
 namespace source {
@@ -26,4 +25,4 @@ namespace term {
 }
 }
 
-#endif /*DEL_SOURCE_TERM_DPP_*/
+

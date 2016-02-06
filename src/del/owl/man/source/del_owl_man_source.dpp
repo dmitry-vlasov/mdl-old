@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_OWL_MAN_SOURCE_DPP_
-#define DEL_OWL_MAN_SOURCE_DPP_
+#pragma once
 
 namespace del {
 namespace owl {
@@ -62,4 +61,4 @@ typedef
 }
 }
 
-#endif /*DEL_OWL_MAN_SOURCE_DPP_*/
+

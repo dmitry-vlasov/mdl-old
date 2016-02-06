@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_OWL_FUNC_SOURCE_HPP_
-#define DEL_OWL_FUNC_SOURCE_HPP_
+#pragma once
 
 #include "del/owl/func/source/del_owl_func_source_Annotation.hpp"
 #include "del/owl/func/source/del_owl_func_source_AnnotationAssertion.hpp"
@@ -24,4 +23,4 @@
 #include "del/owl/func/source/del_owl_func_source_TransitiveObjectProperty.hpp"
 #include "del/owl/func/source/del_owl_func_source_Unrecognized.hpp"
 
-#endif /*DEL_OWL_FUNC_SOURCE_HPP_*/
+

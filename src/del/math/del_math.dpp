@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_MATH_DPP_
-#define DEL_MATH_DPP_
+#pragma once
 
 namespace del {
 namespace math {
@@ -24,4 +23,4 @@ namespace math {
 	using math :: Math;
 }
 
-#endif /*DEL_MATH_DPP_*/
+

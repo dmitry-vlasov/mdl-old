@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_TYPES_LEXER_HPP_
-#define DEL_TYPES_LEXER_HPP_
+#pragma once
 
 namespace del {
 namespace lexer {
@@ -38,4 +37,4 @@ namespace lexer {
 	using lexer :: Location;
 }
 
-#endif /*DEL_TYPES_LEXER_HPP_*/
+

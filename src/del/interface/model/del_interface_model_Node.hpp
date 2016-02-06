@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_INTERFACE_MODEL_NODE_HPP_
-#define DEL_INTERFACE_MODEL_NODE_HPP_
+#pragma once
 
 #include "del/interface/del_interface_Object.hpp"
 #include "del/interface/del_interface_Cloneable.hpp"
@@ -63,4 +62,4 @@ private :
 }
 }
 
-#endif /*DEL_INTERFACE_MODEL_NODE_HPP_*/
+

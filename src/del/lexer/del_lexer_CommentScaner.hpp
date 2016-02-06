@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_LEXER_COMMENT_SCANER_HPP_
-#define DEL_LEXER_COMMENT_SCANER_HPP_
+#pragma once
 
 #include "del/lexer/del_lexer_Token.hpp"
 
@@ -47,4 +46,4 @@ private :
 }
 }
 
-#endif /*DEL_LEXER_COMMENT_SCANER_HPP_*/
+

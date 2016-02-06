@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_INTERFACE_MODEL_QUEUE_DOMAIN_HPP_
-#define DEL_INTERFACE_MODEL_QUEUE_DOMAIN_HPP_
+#pragma once
 
 #include "del/interface/model/queue/del_interface_model_queue_Element.hpp"
 
@@ -40,4 +39,4 @@ public :
 }
 }
 
-#endif /*DEL_INTERFACE_MODEL_QUEUE_DOMAIN_HPP_*/
+

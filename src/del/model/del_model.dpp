@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_MODEL_DPP_
-#define DEL_MODEL_DPP_
+#pragma once
 
 #include "del/model/interpretation/del_model_interpretation.dpp"
 #include "del/model/node/del_model_node.dpp"
@@ -26,4 +25,4 @@ namespace model {
 }
 }
 
-#endif /*DEL_MODEL_DPP_*/
+

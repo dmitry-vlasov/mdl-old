@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_OWL_MAN_OWL_HPP_
-#define DEL_OWL_MAN_OWL_HPP_
+#pragma once
 
 #include "del/parser/del_parser.hpp"
 
@@ -54,4 +53,4 @@ private :
 }
 }
 
-#endif /*DEL_OWL_MAN_OWL_HPP_*/
+

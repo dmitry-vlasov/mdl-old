@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_MODEL_NODE_NEGATIVE_CONJUNCTION_CPP_
-#define DEL_MODEL_NODE_NEGATIVE_CONJUNCTION_CPP_
+#pragma once
 
 #include "del/interface/del_interface.hpp"
 
@@ -198,4 +197,4 @@ namespace negative {
 }
 }
 
-#endif /*DEL_MODEL_NODE_NEGATIVE_CONJUNCTION_CPP_*/
+

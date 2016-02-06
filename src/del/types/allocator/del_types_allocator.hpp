@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_TYPES_ALLOCATOR_HPP_
-#define DEL_TYPES_ALLOCATOR_HPP_
+#pragma once
 
 namespace del {
 namespace allocator {
@@ -35,4 +34,4 @@ namespace memory {
 	};
 }
 
-#endif /*DEL_TYPES_ALLOCATOR_HPP_*/
+

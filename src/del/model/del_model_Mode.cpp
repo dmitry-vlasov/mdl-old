@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_MODEL_MODE_CPP_
-#define DEL_MODEL_MODE_CPP_
+#pragma once
 
 namespace del {
 namespace model {
@@ -35,4 +34,4 @@ namespace model {
 }
 }
 
-#endif /*DEL_MODEL_MODE_CPP_*/
+

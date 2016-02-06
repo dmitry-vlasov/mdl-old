@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_MODEL_NODE_POSITIVE_SINGLETON_HPP_
-#define DEL_MODEL_NODE_POSITIVE_SINGLETON_HPP_
+#pragma once
 
 #include "del/interface/del_interface.hpp"
 #include "del/model/node/positive/del_model_node_positive_Positive.hpp"
@@ -99,4 +98,4 @@ private :
 }
 }
 
-#endif /*DEL_MODEL_NODE_POSITIVE_SINGLETON_HPP_*/
+

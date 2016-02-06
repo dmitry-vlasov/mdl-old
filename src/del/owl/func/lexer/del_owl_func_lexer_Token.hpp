@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_OWL_FUNC_LEXER_TOKEN_HPP_
-#define DEL_OWL_FUNC_LEXER_TOKEN_HPP_
+#pragma once
 
 namespace del {
 namespace owl {
@@ -111,4 +110,4 @@ private :
 #include "del/owl/func/lexer/del_owl_func_lexer_Token.ipp"
 #include "del/owl/func/lexer/del_owl_func_lexer_Token.cpp"
 
-#endif /*DEL_OWL_FUNC_LEXER_TOKEN_HPP_*/
+

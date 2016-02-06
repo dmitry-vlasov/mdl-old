@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_INTERFACE_HPP_
-#define DEL_INTERFACE_HPP_
+#pragma once
 
 #include "del/interface/model/del_interface_model.hpp"
 
@@ -34,4 +33,4 @@
 #include "del/interface/del_interface_Theory.hpp"
 #include "del/interface/del_interface_Writable.hpp"
 
-#endif /*DEL_INTERFACE_HPP_*/
+

@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_SOURCE_FORMULA_SUBSET_NORMAL_HPP_
-#define DEL_SOURCE_FORMULA_SUBSET_NORMAL_HPP_
+#pragma once
 
 #include "del/source/formula/subset/normal/del_source_formula_subset_normal_Conjunction.hpp"
 #include "del/source/formula/subset/normal/del_source_formula_subset_normal_Exists.hpp"
@@ -22,4 +21,4 @@
 #include "del/source/formula/subset/normal/del_source_formula_subset_normal_RightExists.hpp"
 #include "del/source/formula/subset/normal/del_source_formula_subset_normal_Simple.hpp"
 
-#endif /*DEL_SOURCE_FORMULA_SUBSET_NORMAL_HPP_*/
+

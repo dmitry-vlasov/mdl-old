@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_SOURCE_TERM_VARIABLE_CPP_
-#define DEL_SOURCE_TERM_VARIABLE_CPP_
+#pragma once
 
 #include "del/lexer/del_lexer.hpp"
 
@@ -212,4 +211,4 @@ using manipulator :: tab;
 }
 }
 
-#endif /*DEL_SOURCE_TERM_VARIABLE_CPP_*/
+

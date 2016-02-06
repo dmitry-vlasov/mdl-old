@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_TYPES_MANIPULATOR_HPP_
-#define DEL_TYPES_MANIPULATOR_HPP_
+#pragma once
 
 namespace del {
 namespace manipulator {
@@ -28,4 +27,4 @@ namespace manipulator {
 }
 }
 
-#endif /* DEL_TYPES_MANIPULATOR_HPP_ */
+

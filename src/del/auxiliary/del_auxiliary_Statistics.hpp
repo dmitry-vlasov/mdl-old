@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_AUXILIARY_STATISTICS_HPP_
-#define DEL_AUXILIARY_STATISTICS_HPP_
+#pragma once
 
 #include "del/interface/del_interface_Object.hpp"
 #include "del/del.dpp"
@@ -57,4 +56,4 @@ private :
 }
 }
 
-#endif /*DEL_AUXILIARY_STATISTICS_HPP_*/
+

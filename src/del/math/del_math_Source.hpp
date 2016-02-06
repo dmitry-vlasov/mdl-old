@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_MATH_SOURCE_HPP_
-#define DEL_MATH_SOURCE_HPP_
+#pragma once
 
 #include "del/interface/del_interface.hpp"
 #include "del/math/del_math.dpp"
@@ -43,4 +42,4 @@ private :
 
 #include "del/math/del_math_Source.ipp"
 
-#endif /*DEL_MATH_SOURCE_HPP_*/
+

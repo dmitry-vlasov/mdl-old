@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_OWL_MAN_LEXER_LEXER_HPP_
-#define DEL_OWL_MAN_LEXER_LEXER_HPP_
+#pragma once
 
 #include "del/owl/man/lexer/del_owl_man_lexer_Scaner.hpp"
 
@@ -189,4 +188,4 @@ private :
 
 #include "del/owl/man/lexer/del_owl_man_lexer_Lexer.ipp"
 
-#endif /*DEL_OWL_MAN_LEXER_LEXER_HPP_*/
+

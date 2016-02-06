@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_PARSER_MINIMIZE_HPP_
-#define DEL_PARSER_MINIMIZE_HPP_
+#pragma once
 
 #include "del/interface/del_interface.hpp"
 #include "del/lexer/del_lexer.hpp"
@@ -45,4 +44,4 @@ private :
 }
 }
 
-#endif /*DEL_PARSER_MINIMIZE_HPP_*/
+

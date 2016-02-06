@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_SOURCE_FORMULA_SUBSET_DPP_
-#define DEL_SOURCE_FORMULA_SUBSET_DPP_
+#pragma once
 
 #include "del/source/formula/subset/normal/del_source_formula_subset_normal.dpp"
 
@@ -27,4 +26,4 @@ namespace subset {
 }
 }
 
-#endif /*DEL_SOURCE_FORMULA_SUBSET_DPP_*/
+

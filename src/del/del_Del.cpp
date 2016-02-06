@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_DEL_CPP_
-#define DEL_DEL_CPP_
+#pragma once
 
 #include <exception>
 
@@ -507,4 +506,4 @@ using manipulator :: tab;
 	Del* Del :: del_ = NULL;
 }
 
-#endif /*DEL_DEL_CPP_*/
+

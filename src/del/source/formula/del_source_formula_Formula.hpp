@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_SOURCE_FORMULA_FORMULA_HPP_
-#define DEL_SOURCE_FORMULA_FORMULA_HPP_
+#pragma once
 
 #include "del/interface/del_interface.hpp"
 
@@ -105,4 +104,4 @@ protected :
 }
 }
 
-#endif /*DEL_SOURCE_FORMULA_FORMULA_HPP_*/
+

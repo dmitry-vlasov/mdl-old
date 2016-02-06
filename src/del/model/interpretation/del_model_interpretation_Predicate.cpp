@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_MODEL_INTERPRETATION_PREDICATE_CPP_
-#define DEL_MODEL_INTERPRETATION_PREDICATE_CPP_
+#pragma once
 
 #include "del/interface/del_interface.hpp"
 
@@ -268,4 +267,4 @@ using manipulator :: endLine;
 }
 }
 
-#endif /*DEL_MODEL_INTERPRETATION_PREDICATE_CPP_*/
+

@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_HPP_
-#define DEL_HPP_
+#pragma once
 
 #include "del/auxiliary/del_auxiliary.hpp"
 #include "del/interface/del_interface.hpp"
@@ -25,4 +24,4 @@
 
 #include "del/del_Del.hpp"
 
-#endif /*DEL_HPP_*/
+

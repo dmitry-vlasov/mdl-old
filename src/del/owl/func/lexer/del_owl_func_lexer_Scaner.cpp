@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_OWL_FUNC_LEXER_SCANER_CPP_
-#define DEL_OWL_FUNC_LEXER_SCANER_CPP_
+#pragma once
 
 #include "del/owl/func/lexer/del_owl_func_lexer.hpp"
 
@@ -147,4 +146,4 @@ namespace lexer {
 }
 }
 
-#endif /*DEL_OWL_FUNC_LEXER_SCANER_CPP_*/
+

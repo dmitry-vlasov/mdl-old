@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_TYPES_SET_VALUE_HPP_
-#define DEL_TYPES_SET_VALUE_HPP_
+#pragma once
 
 namespace del {
 namespace set {
@@ -36,4 +35,4 @@ namespace value {
 }
 }
 
-#endif /*DEL_TYPES_SET_VALUE_HPP_*/
+

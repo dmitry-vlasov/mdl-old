@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_OWL_MAN_LEXER_HPP_
-#define DEL_OWL_MAN_LEXER_HPP_
+#pragma once
 
 #include "del/owl/man/lexer/del_owl_man_lexer_CommentScaner.hpp"
 #include "del/owl/man/lexer/del_owl_man_lexer_Lexer.hpp"
@@ -23,4 +22,4 @@
 #include "del/owl/man/lexer/del_owl_man_lexer_UpToEmptyLineScaner.hpp"
 #include "del/owl/man/lexer/del_owl_man_lexer_WhitespaceScaner.hpp"
 
-#endif /*DEL_OWL_MAN_LEXER_HPP_*/
+

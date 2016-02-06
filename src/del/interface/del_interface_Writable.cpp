@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_INTERFACE_WRITABLE_CPP_
-#define DEL_INTERFACE_WRITABLE_CPP_
+#pragma once
 
 #include "del/auxiliary/del_auxiliary_Output.hpp"
 #include "del/interface/del_interface_Writable.hpp"
@@ -41,4 +40,4 @@ namespace interface {
 }
 }
 
-#endif /*DEL_INTERFACE_WRITABLE_CPP_*/
+

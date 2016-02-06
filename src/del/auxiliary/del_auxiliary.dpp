@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_AUXILIARY_DPP_
-#define DEL_AUXILIARY_DPP_
+#pragma once
 
 namespace del {
 namespace auxiliary {
@@ -36,4 +35,4 @@ namespace auxiliary {
 }
 
 
-#endif /*DEL_AUXILIARY_DPP_*/
+

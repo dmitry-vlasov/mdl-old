@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_AUXILIARY_HPP_
-#define DEL_AUXILIARY_HPP_
+#pragma once
 
 #include "del/auxiliary/del_auxiliary_Config.hpp"
 #include "del/auxiliary/del_auxiliary_Error.hpp"
@@ -23,4 +22,4 @@
 #include "del/auxiliary/del_auxiliary_Timers.hpp"
 #include "del/auxiliary/del_auxiliary_Volume.hpp"
 
-#endif /*DEL_AUXILIARY_HPP_*/
+

@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_OWL_MAN_SOURCE_HPP_
-#define DEL_OWL_MAN_SOURCE_HPP_
+#pragma once
 
 #include "del/owl/man/source/del_owl_man_source_Annotation.hpp"
 #include "del/owl/man/source/del_owl_man_source_Annotations.hpp"
@@ -24,4 +23,4 @@
 #include "del/owl/man/source/del_owl_man_source_Source.hpp"
 #include "del/owl/man/source/del_owl_man_source_Subclass.hpp"
 
-#endif /*DEL_OWL_MAN_SOURCE_HPP_*/
+

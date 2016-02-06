@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_MODEL_INTERPRETATION_RELATION_CPP_
-#define DEL_MODEL_INTERPRETATION_RELATION_CPP_
+#pragma once
 
 #include "del/interface/del_interface.hpp"
 
@@ -210,4 +209,4 @@ namespace interpretation {
 }
 }
 
-#endif /*DEL_MODEL_INTERPRETATION_RELATION_CPP_*/
+

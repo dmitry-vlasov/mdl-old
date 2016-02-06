@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_SOURCE_SOURCE_CPP_
-#define DEL_SOURCE_SOURCE_CPP_
+#pragma once
 
 #include "del/source/del_source_Source.hpp"
 
@@ -399,4 +398,4 @@ using manipulator :: endLine;
 }
 }
 
-#endif /*DEL_SOURCE_SOURCE_CPP_*/
+

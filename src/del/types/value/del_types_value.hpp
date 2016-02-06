@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_TYPES_VALUE_HPP_
-#define DEL_TYPES_VALUE_HPP_
+#pragma once
 
 namespace del {
 namespace value {
@@ -65,4 +64,4 @@ namespace value {
 
 #include "types/value/pair/del_types_value_pair.hpp"
 
-#endif /*DEL_TYPES_VALUE_HPP_*/
+

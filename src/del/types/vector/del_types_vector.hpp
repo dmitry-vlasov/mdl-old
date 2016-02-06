@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_TYPES_VECTOR_HPP_
-#define DEL_TYPES_VECTOR_HPP_
+#pragma once
 
 #include "types/storage/del_types_storage.hpp"
 #include "types/value/del_types_value.hpp"
@@ -45,5 +44,5 @@ namespace vector {
 #include "types/vector/index/del_types_vector_index.hpp"
 #include "types/vector/value/del_types_vector_value.hpp"
 
-#endif /*DEL_TYPES_VECTOR_HPP_*/
+
 

@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_OWL_MAN_PARSER_DISJOINT_WITH_CPP_
-#define DEL_OWL_MAN_PARSER_DISJOINT_WITH_CPP_
+#pragma once
 
 #include "del/owl/man/lexer/del_owl_man_lexer.hpp"
 #include "del/owl/man/source/del_owl_man_source.hpp"
@@ -71,4 +70,4 @@ namespace parser {
 }
 }
 
-#endif /*DEL_OWL_MAN_PARSER_DISJOINT_WITH_CPP_*/
+

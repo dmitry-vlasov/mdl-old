@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_INTERFACE_MODEL_PREDICATE_CPP_
-#define DEL_INTERFACE_MODEL_PREDICATE_CPP_
+#pragma once
 
 namespace del {
 namespace interface {
@@ -41,4 +40,4 @@ namespace model {
 }
 }
 
-#endif /*DEL_INTERFACE_MODEL_PREDICATE_CPP_*/
+

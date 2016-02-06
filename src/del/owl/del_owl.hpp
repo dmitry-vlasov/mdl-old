@@ -10,10 +10,9 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_OWL_HPP_
-#define DEL_OWL_HPP_
+#pragma once
 
 #include "del/owl/func/del_owl_func.hpp"
 #include "del/owl/man/del_owl_man.hpp"
 
-#endif /*DEL_OWL_HPP_*/
+

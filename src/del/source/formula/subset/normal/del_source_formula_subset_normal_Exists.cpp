@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_SOURCE_FORMULA_SUBSET_NORMAL_EXISTS_CPP_
-#define DEL_SOURCE_FORMULA_SUBSET_NORMAL_EXISTS_CPP_
+#pragma once
 
 #include "del/lexer/del_lexer.hpp"
 #include "del/source/del_source.hpp"
@@ -378,4 +377,4 @@ using manipulator :: tab;
 }
 }
 
-#endif /*DEL_SOURCE_FORMULA_SUBSET_NORMAL_EXISTS_CPP_*/
+

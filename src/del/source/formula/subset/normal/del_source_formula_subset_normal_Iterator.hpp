@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_SOURCE_FORMULA_SUBSET_NORMAL_ITERATOR_HPP_
-#define DEL_SOURCE_FORMULA_SUBSET_NORMAL_ITERATOR_HPP_
+#pragma once
 
 #include "del/interface/del_interface.hpp"
 
@@ -57,4 +56,4 @@ private :
 }
 }
 
-#endif /*DEL_SOURCE_FORMULA_SUBSET_NORMAL_ITERATOR_HPP_*/
+

@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_TYPES_SET_INDEX_HPP_
-#define DEL_TYPES_SET_INDEX_HPP_
+#pragma once
 
 namespace del {
 namespace set {
@@ -33,4 +32,4 @@ namespace index {
 }
 }
 
-#endif /*DEL_TYPES_SET_INDEX_HPP_*/
+

@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_TYPES_PAIR_HPP_
-#define DEL_TYPES_PAIR_HPP_
+#pragma once
 
 namespace del {
 namespace pair {
@@ -41,4 +40,4 @@ struct Pair : public Scalar<Pair<T>, A> {
 }
 }
 
-#endif /*DEL_TYPES_PAIR_HPP_*/
+

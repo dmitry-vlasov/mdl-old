@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_LEXER_LEXER_IPP_
-#define DEL_LEXER_LEXER_IPP_
+#pragma once
 
 #include "del/auxiliary/del_auxiliary.hpp"
 
@@ -559,4 +558,4 @@ using manipulator :: endLine;
 }
 }
 
-#endif /*DEL_LEXER_LEXER_IPP_*/
+

@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_INTERFACE_ASSERTION_HPP_
-#define DEL_INTERFACE_ASSERTION_HPP_
+#pragma once
 
 #include "del/interface/del_interface_Decompose.hpp"
 #include "del/interface/del_interface_Decomposition.hpp"
@@ -29,4 +28,4 @@ public :
 }
 }
 
-#endif /*DEL_INTERFACE_ASSERTION_HPP_*/
+

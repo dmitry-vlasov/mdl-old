@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_DEL_HPP_
-#define DEL_DEL_HPP_
+#pragma once
 
 #include "del/parser/del_parser.hpp"
 #include "del/owl/del_owl.hpp"
@@ -99,4 +98,4 @@ private :
 
 }
 
-#endif /*DEL_DEL_HPP_*/
+

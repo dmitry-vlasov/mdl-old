@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_PARSER_HPP_
-#define DEL_PARSER_HPP_
+#pragma once
 
 #include "del/parser/del_parser_Answer.hpp"
 #include "del/parser/del_parser_Assertion.hpp"
@@ -26,4 +25,4 @@
 #include "del/parser/del_parser_Term.hpp"
 #include "del/parser/del_parser_Theory.hpp"
 
-#endif /*DEL_PARSER_HPP_*/
+

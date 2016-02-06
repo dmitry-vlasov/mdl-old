@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_SOURCE_TERM_HPP_
-#define DEL_SOURCE_TERM_HPP_
+#pragma once
 
 #include "del/source/term/del_source_term_Exists.hpp"
 #include "del/source/term/del_source_term_Intersect.hpp"
@@ -19,4 +18,4 @@
 #include "del/source/term/del_source_term_Top.hpp"
 #include "del/source/term/del_source_term_Variable.hpp"
 
-#endif /*DEL_SOURCE_TERM_HPP_*/
+

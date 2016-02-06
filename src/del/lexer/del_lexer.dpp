@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_LEXER_DPP__
-#define DEL_LEXER_DPP__
+#pragma once
 
 namespace del {
 namespace lexer {
@@ -28,4 +27,4 @@ namespace lexer {
 	using lexer :: Token;
 }
 
-#endif /*DEL_LEXER_DPP__*/
+

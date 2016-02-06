@@ -10,12 +10,11 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_INTERFACE_MODEL_CPP_
-#define DEL_INTERFACE_MODEL_CPP_
+#pragma once
 
 #include "del/interface/model/queue/del_interface_model_queue.cpp"
 
 #include "del/interface/model/del_interface_model_Node.cpp"
 #include "del/interface/model/del_interface_model_Predicate.cpp"
 
-#endif /*DEL_INTERFACE_MODEL_CPP_*/
+

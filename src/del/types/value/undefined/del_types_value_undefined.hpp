@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_TYPES_VALUE_UNDEFINED_HPP_
-#define DEL_TYPES_VALUE_UNDEFINED_HPP_
+#pragma once
 
 namespace del {
 namespace value {
@@ -35,4 +34,4 @@ namespace undefined {
 }
 }
 
-#endif /*DEL_TYPES_VALUE_UNDEFINEDHPP_*/
+

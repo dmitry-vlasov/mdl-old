@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_MODEL_NODE_NEGATIVE_DPP_
-#define DEL_MODEL_NODE_NEGATIVE_DPP_
+#pragma once
 
 namespace del {
 namespace model {
@@ -37,4 +36,4 @@ namespace negative {
 }
 }
 
-#endif /*DEL_MODEL_NODE_NEGATIVE_DPP_*/
+

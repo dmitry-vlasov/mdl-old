@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_INTERFACE_SIGNATURE_HPP_
-#define MDL_INTERFACE_SIGNATURE_HPP_
+#pragma once
 
 #include "del/interface/del_interface_Cloneable.hpp"
 #include "del/interface/del_interface_Writable.hpp"
@@ -48,4 +47,4 @@ public :
 }
 }
 
-#endif /*MDL_INTERFACE_SIGNATURE_HPP_*/
+

@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_SOURCE_FORMULA_TERMAL_HPP_
-#define DEL_SOURCE_FORMULA_TERMAL_HPP_
+#pragma once
 
 #include "del/source/formula/del_source_formula_Formula.hpp"
 
@@ -97,4 +96,4 @@ private :
 }
 }
 
-#endif /*DEL_SOURCE_FORMULA_TERMAL_HPP_*/
+

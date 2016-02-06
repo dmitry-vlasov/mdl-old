@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_OWL_MAN_LEXER_STRING_SCANER_HPP_
-#define DEL_OWL_MAN_LEXER_STRING_SCANER_HPP_
+#pragma once
 
 #include "del/lexer/del_lexer_Token.hpp"
 
@@ -45,4 +44,4 @@ public :
 }
 }
 
-#endif /*DEL_OWL_MAN_LEXER_STRING_SCANER_HPP_*/
+

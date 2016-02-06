@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_AUXILIARY_TIMERS_HPP_
-#define DEL_AUXILIARY_TIMERS_HPP_
+#pragma once
 
 #include "del/interface/del_interface_Object.hpp"
 #include "del/auxiliary/del_auxiliary.dpp"
@@ -134,4 +133,4 @@ private :
 
 #include "del/auxiliary/del_auxiliary_Timers.ipp"
 
-#endif /*DEL_AUXILIARY_TIMERS_HPP_*/
+

@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_OWL_FUNC_OWL_CPP_
-#define DEL_OWL_FUNC_OWL_CPP_
+#pragma once
 
 #include "del/auxiliary/del_auxiliary.hpp"
 #include "del/math/del_math.hpp"
@@ -164,4 +163,4 @@ using manipulator :: tab;
 }
 }
 
-#endif /*DEL_OWL_FUNC_OWL_CPP_*/
+

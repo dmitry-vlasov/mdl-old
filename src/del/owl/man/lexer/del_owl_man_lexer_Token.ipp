@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_OWL_MAN_LEXER_TOKEN_IPP_
-#define DEL_OWL_MAN_LEXER_TOKEN_IPP_
+#pragma once
 
 namespace del {
 namespace owl {
@@ -67,4 +66,4 @@ namespace lexer {
 }
 }
 
-#endif /*DEL_OWL_MAN_LEXER_TOKEN_IPP_*/
+

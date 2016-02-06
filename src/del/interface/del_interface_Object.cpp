@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_INTERFACE_OBJECT_CPP_
-#define MDL_INTERFACE_OBJECT_CPP_
+#pragma once
 
 #include "del/interface/del_interface_Object.hpp"
 
@@ -92,4 +91,4 @@ namespace interface {
 }
 }
 
-#endif /*MDL_INTERFACE_OBJECT_CPP_*/
+

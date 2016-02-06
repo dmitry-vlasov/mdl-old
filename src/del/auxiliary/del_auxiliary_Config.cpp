@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef DEL_AUXILIARY_CONFIG_CPP_
-#define DEL_AUXILIARY_CONFIG_CPP_
+#pragma once
 
 #include "del/auxiliary/del_auxiliary_Config.hpp"
 
@@ -656,4 +655,4 @@ using std :: endl;
 }
 }
 
-#endif /*DEL_AUXILIARY_CONFIG_CPP_*/
+
