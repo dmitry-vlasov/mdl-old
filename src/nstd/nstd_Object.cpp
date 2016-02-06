@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_OBJECT_CPP_
-#define NSTD_OBJECT_CPP_
+#pragma once
 
 #include "nstd_Object.hpp"
 
@@ -150,4 +149,4 @@ namespace nstd {
 	String<>* Object :: string_ = NULL;
 }
 
-#endif /*NSTD_OBJECT_CPP_*/
+

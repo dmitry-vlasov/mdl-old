@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_MEMORY_EXCEPTION_MEMORY_LEAKS_CPP_
-#define NSTD_MEMORY_EXCEPTION_MEMORY_LEAKS_CPP_
+#pragma once
 
 #include "memory/exception/nstd_memory_exception_Exception.hpp"
 
@@ -48,4 +47,4 @@ namespace exception {
 }
 }
 
-#endif /*NSTD_MEMORY_EXCEPTION_MEMORY_LEAKS_CPP_*/
+

@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_MEMORY_HPP_
-#define NSTD_MEMORY_HPP_
+#pragma once
 
 #include "memory/nstd_memory_debug.hpp"
 
@@ -29,4 +28,4 @@
 #include "memory/nstd_memory_Unit.hpp"
 #include "memory/nstd_memory_UsageMessage.hpp"
 
-#endif /*NSTD_MEMORY_HPP_*/
+

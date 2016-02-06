@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_CONTAINER_STORAGE_BY_INHERITANCE_CPP_
-#define NSTD_CONTAINER_STORAGE_BY_INHERITANCE_CPP_
+#pragma once
 
 namespace nstd {
 namespace container {
@@ -112,4 +111,4 @@ namespace storage {
 }
 }
 
-#endif /*NSTD_CONTAINER_STORAGE_BY_INHERITANCE_CPP_*/
+

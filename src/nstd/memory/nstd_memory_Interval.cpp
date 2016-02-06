@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_MEMORY_INTERVAL_CPP_
-#define NSTD_MEMORY_INTERVAL_CPP_
+#pragma once
 
 namespace nstd {
 namespace memory {
@@ -435,4 +434,4 @@ namespace memory {
 }
 }
 
-#endif /*NSTD_MEMORY_INTERVAL_CPP_*/
+

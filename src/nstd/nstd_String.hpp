@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_STRING_HPP_
-#define NSTD_STRING_HPP_
+#pragma once
 
 #include "nstd_manipulator.hpp"
 
@@ -139,4 +138,4 @@ private :
 
 }
 
-#endif /*NSTD_STRING_HPP_*/
+

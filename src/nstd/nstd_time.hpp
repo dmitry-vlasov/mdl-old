@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_TIME_HPP_
-#define NSTD_TIME_HPP_
+#pragma once
 
 namespace nstd {
 namespace time {
@@ -35,4 +34,4 @@ namespace time {
 	using time :: Time;
 }
 
-#endif /*NSTD_TIME_HPP_*/
+

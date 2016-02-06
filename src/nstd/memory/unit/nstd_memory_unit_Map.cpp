@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_MEMORY_UNIT_MAP_CPP_
-#define NSTD_MEMORY_UNIT_MAP_CPP_
+#pragma once
 
 #include <cxxabi.h>
 
@@ -325,4 +324,4 @@ namespace unit {
 }
 }
 
-#endif /*NSTD_MEMORY_UNIT_MAP_CPP_*/
+

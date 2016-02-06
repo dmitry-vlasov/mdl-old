@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_CONFIG_OPTION_OPTION_CPP_
-#define NSTD_CONFIG_OPTION_OPTION_CPP_
+#pragma once
 
 namespace nstd {
 namespace config {
@@ -741,4 +740,4 @@ namespace option {
 }
 }
 
-#endif /*NSTD_CONFIG_OPTION_OPTION_CPP_*/
+

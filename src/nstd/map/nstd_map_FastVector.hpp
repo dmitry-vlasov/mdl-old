@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_MAP_FAST_VECTOR_HPP_
-#define NSTD_MAP_FAST_VECTOR_HPP_
+#pragma once
 
 namespace nstd {
 namespace map {
@@ -116,4 +115,4 @@ private :
 }
 }
 
-#endif /*NSTD_MAP_FAST_VECTOR_HPP_*/
+

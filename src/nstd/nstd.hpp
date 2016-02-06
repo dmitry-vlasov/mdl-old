@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_HPP_
-#define NSTD_HPP_
+#pragma once
 
 #include "nstd_chars.hpp"
 
@@ -35,4 +34,4 @@
 #include "config/nstd_config.hpp"
 #include "misc/nstd_misc.hpp"
 
-#endif /*NSTD_HPP_*/
+

@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_MEMORY_INTERVAL_HPP_
-#define NSTD_MEMORY_INTERVAL_HPP_
+#pragma once
 
 #include "memory/exception/nstd_memory_exception.hpp"
 
@@ -129,4 +128,4 @@ private :
 }
 }
 
-#endif /*NSTD_MEMORY_INTERVAL_HPP_*/
+

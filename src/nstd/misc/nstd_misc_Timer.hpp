@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_MISC_TIMER_HPP_
-#define NSTD_MISC_TIMER_HPP_
+#pragma once
 
 namespace nstd {
 namespace misc {
@@ -103,4 +102,4 @@ private :
 }
 }
 
-#endif /*NSTD_MISC_TIMER_HPP_*/
+

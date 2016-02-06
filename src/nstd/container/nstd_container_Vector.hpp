@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_CONTAINER_VECTOR_HPP_
-#define NSTD_CONTAINER_VECTOR_HPP_
+#pragma once
 
 #include "container/continual/nstd_container_continual_Resizable.hpp"
 
@@ -82,4 +81,4 @@ public :
 }
 }
 
-#endif /*NSTD_CONTAINER_VECTOR_HPP_*/
+

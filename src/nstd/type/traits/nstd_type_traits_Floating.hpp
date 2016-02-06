@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_TYPE_TRAITS_FLOATING_HPP_
-#define NSTD_TYPE_TRAITS_FLOATING_HPP_
+#pragma once
 
 #include "type/traits/indicator/nstd_type_traits_indicator_floatings.hpp"
 
@@ -39,4 +38,4 @@ public :
 }
 }
 
-#endif /*NSTD_TYPE_TRAITS_FLOATING_HPP_*/
+

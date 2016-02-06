@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_INTERPOLATION_CPP_
-#define NSTD_INTERPOLATION_CPP_
+#pragma once
 
 #include "nstd/interpolation/nstd_interpolation_Approximation_1.cpp"
 #include "nstd/interpolation/nstd_interpolation_Approximation_2.cpp"
@@ -26,4 +25,4 @@
 #include "nstd/interpolation/nstd_interpolation_Tuner_1.cpp"
 #include "nstd/interpolation/nstd_interpolation_Tuner_2.cpp"
 
-#endif /*NSTD_INTERPOLATION_CPP_*/
+

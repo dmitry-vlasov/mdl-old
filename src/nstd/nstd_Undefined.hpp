@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_UNDEFINED_HPP_
-#define NSTD_UNDEFINED_HPP_
+#pragma once
 
 namespace nstd {
 
@@ -21,4 +20,4 @@ class Undefined : public type :: undefined :: Type <T> {
 
 }
 
-#endif /*NSTD_UNDEFINED_HPP_*/
+

@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_CONFIG_LIST_HPP_
-#define NSTD_CONFIG_LIST_HPP_
+#pragma once
 
 #include "config/nstd_config.dpp"
 
@@ -50,4 +49,4 @@ protected :
 }
 }
 
-#endif /*NSTD_CONFIG_LIST_HPP_*/
+

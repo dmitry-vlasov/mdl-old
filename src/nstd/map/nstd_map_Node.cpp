@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_MAP_NODE_CPP_
-#define NSTD_MAP_NODE_CPP_
+#pragma once
 
 namespace nstd {
 namespace map {
@@ -357,5 +356,5 @@ namespace map {
 }
 }
 
-#endif /*NSTD_MAP_NODE_CPP_*/
+
 

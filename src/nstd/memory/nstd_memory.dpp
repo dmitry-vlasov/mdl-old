@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_MEMORY_DPP_
-#define NSTD_MEMORY_DPP_
+#pragma once
 
 #include "memory/allocator/nstd_memory_allocator.dpp"
 #include "memory/exception/nstd_memory_exception.dpp"
@@ -31,4 +30,4 @@ namespace memory {
 }
 }
 
-#endif /*NSTD_MEMORY_DPP_*/
+

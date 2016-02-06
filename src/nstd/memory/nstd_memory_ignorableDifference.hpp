@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_MEMORY_IGNORABLE_DIFFERENCE_HPP_
-#define NSTD_MEMORY_IGNORABLE_DIFFERENCE_HPP_
+#pragma once
 
 namespace nstd {
 namespace memory {
@@ -30,4 +29,4 @@ bool ignorableDifference
 }
 }
 
-#endif /*NSTD_MEMORY_IGNORABLE_DIFFERENCE_HPP_*/
+

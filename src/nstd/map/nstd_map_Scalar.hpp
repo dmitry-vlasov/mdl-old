@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_MAP_SCALAR_HPP_
-#define NSTD_MAP_SCALAR_HPP_
+#pragma once
 
 #include "container/nstd_container_Vector.hpp"
 #include "container/nstd_container_Set.hpp"
@@ -109,4 +108,4 @@ private :
 }
 }
 
-#endif /*NSTD_MAP_SCALAR_HPP_*/
+

@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_TYPE_EQUALITY_HPP_
-#define NSTD_TYPE_EQUALITY_HPP_
+#pragma once
 
 namespace nstd {
 namespace type {
@@ -31,4 +30,4 @@ public :
 }
 }
 
-#endif /* NSTD_TYPE_EQUALITY_HPP_ */
+

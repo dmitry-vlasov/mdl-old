@@ -10,12 +10,11 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_SAMPLER_HPP_
-#define NSTD_SAMPLER_HPP_
+#pragma once
 
 #include "nstd/sampler/nstd_sampler_FoldNx2.hpp"
 #include "nstd/sampler/nstd_sampler_LeaveOneOut.hpp"
 #include "nstd/sampler/nstd_sampler_Sample.hpp"
 #include "nstd/sampler/nstd_sampler_Sampler.hpp"
 
-#endif /*NSTD_SAMPLER_HPP_*/
+

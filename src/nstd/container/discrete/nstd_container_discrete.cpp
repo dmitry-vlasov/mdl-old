@@ -10,10 +10,9 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_CONTAINER_DISCRETE_CPP_
-#define NSTD_CONTAINER_DISCRETE_CPP_
+#pragma once
 
 #include "container/discrete/nstd_container_discrete_Bidirectional.cpp"
 #include "container/discrete/nstd_container_discrete_Unidirectional.cpp"
 
-#endif /* NSTD_CONTAINER_DISCRETE_CPP_ */
+

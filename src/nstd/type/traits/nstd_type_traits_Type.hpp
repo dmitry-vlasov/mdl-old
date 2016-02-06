@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_TYPE_TRAITS_TYPE_HPP_
-#define NSTD_TYPE_TRAITS_TYPE_HPP_
+#pragma once
 
 #include "type/traits/nstd_type_traits_Bool.hpp"
 #include "type/traits/nstd_type_traits_Empty.hpp"
@@ -50,4 +49,4 @@ public :
 }
 }
 
-#endif /*NSTD_TYPE_TRAITS_TYPE_HPP_*/
+

@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_EQUATION_BOUNDARIES_HPP_
-#define NSTD_EQUATION_BOUNDARIES_HPP_
+#pragma once
 
 #include "equation/nstd_equation_Interval.hpp"
 
@@ -37,4 +36,4 @@ private :
 }
 }
 
-#endif /*NSTD_EQUATION_BOUNDARIES_HPP_*/
+

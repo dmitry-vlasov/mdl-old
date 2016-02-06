@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_MISC_COUNTER_HPP_
-#define NSTD_MISC_COUNTER_HPP_
+#pragma once
 
 namespace nstd {
 namespace misc {
@@ -56,4 +55,4 @@ private :
 }
 }
 
-#endif /*NSTD_MISC_COUNTER_HPP_*/
+

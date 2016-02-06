@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_MEMORY_EXCEPTION_LIMIT_REACHED_HPP_
-#define NSTD_MEMORY_EXCEPTION_LIMIT_REACHED_HPP_
+#pragma once
 
 #include "memory/exception/nstd_memory_exception_Exception.hpp"
 
@@ -30,4 +29,4 @@ public :
 }
 }
 
-#endif /*NSTD_MEMORY_EXCEPTION_LIMIT_REACHED_HPP_*/
+

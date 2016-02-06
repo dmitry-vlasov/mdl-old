@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_CONTAINER_HPP_
-#define NSTD_CONTAINER_HPP_
+#pragma once
 
 #include "container/continual/nstd_container_continual.hpp"
 #include "container/discrete/nstd_container_discrete.hpp"
@@ -25,4 +24,4 @@
 #include "container/nstd_container_Stack.hpp"
 #include "container/nstd_container_Vector.hpp"
 
-#endif /*NSTD_CONTAINER_HPP_*/
+

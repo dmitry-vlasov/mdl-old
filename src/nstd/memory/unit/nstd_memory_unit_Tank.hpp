@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_MEMORY_UNIT_TANK_HPP_
-#define NSTD_MEMORY_UNIT_TANK_HPP_
+#pragma once
 
 namespace nstd {
 namespace memory {
@@ -54,4 +53,4 @@ protected :
 }
 }
 
-#endif /*NSTD_MEMORY_UNIT_TANK_HPP_*/
+

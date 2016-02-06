@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_LEXER_INDENT_CPP_
-#define NSTD_LEXER_INDENT_CPP_
+#pragma once
 
 namespace nstd {
 namespace lexer {
@@ -123,4 +122,4 @@ using manipulator :: endLine;
 }
 }
 
-#endif /* NSTD_LEXER_INDENT_CPP_ */
+

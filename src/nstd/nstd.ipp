@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_CPP_
-#define NSTD_CPP_
+#pragma once
 
 #include "config/nstd_config.cpp"
 #include "container/nstd_container.cpp"
@@ -30,4 +29,4 @@
 #include "nstd_String.cpp"
 #include "nstd_Static.cpp"
 
-#endif /*NSTD_HPP_*/
+

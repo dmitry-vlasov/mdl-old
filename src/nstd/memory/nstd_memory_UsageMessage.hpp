@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_MEMORY_USAGE_MESSAGE_HPP_
-#define NSTD_MEMORY_USAGE_MESSAGE_HPP_
+#pragma once
 
 #include "memory/nstd_memory_Unit.hpp"
 
@@ -50,4 +49,4 @@ private :
 }
 }
 
-#endif /*NSTD_MEMORY_USAGE_MESSAGE_HPP_*/
+

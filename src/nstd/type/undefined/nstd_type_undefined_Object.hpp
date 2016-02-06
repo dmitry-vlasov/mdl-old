@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_TYPE_UNDEFINED_OBJECT_HPP_
-#define NSTD_TYPE_UNDEFINED_OBJECT_HPP_
+#pragma once
 
 #include "type/constant/nstd_type_constant.hpp"
 #include "type/traits/nstd_type_traits_Type.hpp"
@@ -48,4 +47,4 @@ class Object<T, false> {
 }
 }
 
-#endif /*NSTD_TYPE_UNDEFINED_OBJECT_HPP_*/
+

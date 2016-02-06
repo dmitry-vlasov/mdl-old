@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_STATIC_HPP_
-#define NSTD_STATIC_HPP_
+#pragma once
 
 #include <ostream>
 
@@ -58,4 +57,4 @@ private :
 
 }
 
-#endif /*NSTD_STATIC_HPP_*/
+

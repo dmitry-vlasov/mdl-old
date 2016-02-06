@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_CONFIG_PROGRAM_INFO_CPP_
-#define NSTD_CONFIG_PROGRAM_INFO_CPP_
+#pragma once
 
 #ifdef HAVE_CONFIG_H
 #include <config.h>
@@ -195,4 +194,4 @@ namespace config {
 }
 }
 
-#endif /*NSTD_CONFIG_PROGRAM_INFO_CPP_*/
+

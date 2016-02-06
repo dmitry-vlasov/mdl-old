@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_MEMORY_EXCEPTION_MEMORY_INIT_FAILURE_CPP_
-#define NSTD_MEMORY_EXCEPTION_MEMORY_INIT_FAILURE_CPP_
+#pragma once
 
 namespace nstd {
 namespace memory {
@@ -35,4 +34,4 @@ namespace exception {
 }
 }
 
-#endif /*NSTD_MEMORY_EXCEPTION_MEMORY_INIT_FAILURE_CPP_*/
+

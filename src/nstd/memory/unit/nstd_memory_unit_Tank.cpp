@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_MEMORY_UNIT_TANK_CPP_
-#define NSTD_MEMORY_UNIT_TANK_CPP_
+#pragma once
 
 namespace nstd {
 namespace memory {
@@ -145,4 +144,4 @@ namespace unit {
 }
 }
 
-#endif /*NSTD_MEMORY_UNIT_TANK_CPP_*/
+

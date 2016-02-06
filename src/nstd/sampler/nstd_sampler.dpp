@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_SAMPLER_DPP_
-#define NSTD_SAMPLER_DPP_
+#pragma once
 
 namespace nstd {
 namespace sampler {
@@ -30,4 +29,4 @@ namespace sampler {
 }
 }
 
-#endif /*NSTD_SAMPLER_DPP_*/
+

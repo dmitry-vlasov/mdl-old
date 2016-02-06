@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_SAMPLER_LEAVE_ONE_OUT_HPP_
-#define NSTD_SAMPLER_LEAVE_ONE_OUT_HPP_
+#pragma once
 
 namespace nstd {
 namespace sampler {
@@ -52,4 +51,4 @@ private :
 }
 }
 
-#endif /*NSTD_SAMPLER_LEAVE_ONE_OUT_HPP_*/
+

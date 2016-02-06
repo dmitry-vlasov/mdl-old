@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_MANIPULATOR_CPP_
-#define NSTD_MANIPULATOR_CPP_
+#pragma once
 
 #include "nstd_chars.hpp"
 
@@ -92,4 +91,4 @@ namespace manipulator {
 }
 }
 
-#endif /*NSTD_MANIPULATOR_CPP_*/
+

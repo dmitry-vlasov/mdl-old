@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_TYPE_UNDEFINED_POINTER_HPP_
-#define NSTD_TYPE_UNDEFINED_POINTER_HPP_
+#pragma once
 
 #include "type/constant/nstd_type_constant.hpp"
 #include "type/traits/nstd_type_traits_Type.hpp"
@@ -41,4 +40,4 @@ class Pointer<T, false> {
 }
 }
 
-#endif /*NSTD_TYPE_UNDEFINED_POINTER_HPP_*/
+

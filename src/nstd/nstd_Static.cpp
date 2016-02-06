@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_STATIC_CPP_
-#define NSTD_STATIC_CPP_
+#pragma once
 
 namespace nstd {
 
@@ -165,4 +164,4 @@ namespace nstd {
 
 }
 
-#endif /*NSTD_STATIC_CPP_*/
+

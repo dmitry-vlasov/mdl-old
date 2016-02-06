@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_MISC_DPP_
-#define NSTD_MISC_DPP_
+#pragma once
 
 namespace nstd {
 namespace misc {
@@ -32,4 +31,4 @@ namespace misc {
 	using misc :: Timer;
 }
 
-#endif /*NSTD_MISC_DPP_*/
+

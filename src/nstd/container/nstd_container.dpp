@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_CONTAINER_DPP_
-#define NSTD_CONTAINER_DPP_
+#pragma once
 
 #include "container/continual/nstd_container_continual.dpp"
 #include "container/discrete/nstd_container_discrete.dpp"
@@ -43,4 +42,4 @@ namespace container {
 }
 }
 
-#endif /*NSTD_CONTAINER_DPP_*/
+

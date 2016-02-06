@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_EQUATION_DPP_
-#define NSTD_EQUATION_DPP_
+#pragma once
 
 //#define DEBUG_EQUATION_MONOTONIC
 //#define DEBUG_EQUATION_LINEAR
@@ -31,4 +30,4 @@ namespace equation {
 }
 }
 
-#endif /*NSTD_EQUATION_DPP_*/
+

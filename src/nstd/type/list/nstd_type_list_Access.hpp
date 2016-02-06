@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_TYPE_LIST_ACCESS_HPP_
-#define NSTD_TYPE_LIST_ACCESS_HPP_
+#pragma once
 
 #include "type/list/nstd_type_list.dpp"
 #include "type/list/nstd_type_list_List.hpp"
@@ -36,4 +35,4 @@ struct Access<List<H, T>, i> {
 }
 }
 
-#endif /*NSTD_TYPE_LIST_ACCESS_HPP_*/
+

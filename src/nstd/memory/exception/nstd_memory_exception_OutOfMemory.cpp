@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_MEMORY_EXCEPTION_OUT_OF_MEMORY_CPP_
-#define NSTD_MEMORY_EXCEPTION_OUT_OF_MEMORY_CPP_
+#pragma once
 
 namespace nstd {
 namespace memory {
@@ -103,4 +102,4 @@ namespace exception {
 }
 }
 
-#endif /*NSTD_MEMORY_EXCEPTION_OUT_OF_MEMORY_CPP_*/
+

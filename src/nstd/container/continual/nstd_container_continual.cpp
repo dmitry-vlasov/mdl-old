@@ -10,11 +10,10 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_CONTAINER_CONTINUAL_CPP_
-#define NSTD_CONTAINER_CONTINUAL_CPP_
+#pragma once
 
 #include "container/continual/nstd_container_continual_Block.cpp"
 #include "container/continual/nstd_container_continual_Collection.cpp"
 #include "container/continual/nstd_container_continual_Resizable.cpp"
 
-#endif /*NSTD_CONTAINER_CONTINUAL_CPP_*/
+

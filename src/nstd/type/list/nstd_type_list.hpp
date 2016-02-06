@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_TYPE_LIST_HPP_
-#define NSTD_TYPE_LIST_HPP_
+#pragma once
 
 #include "type/list/nstd_type_list_Access.hpp"
 #include "type/list/nstd_type_list_Append.hpp"
@@ -25,4 +24,4 @@
 #include "type/list/nstd_type_list_Replace.hpp"
 #include "type/list/nstd_type_list_ReplaceAll.hpp"
 
-#endif /*NSTD_TYPE_LIST_HPP_*/
+

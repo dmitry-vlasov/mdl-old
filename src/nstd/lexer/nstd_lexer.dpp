@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_LEXER_DPP_
-#define NSTD_LEXER_DPP_
+#pragma once
 
 namespace nstd {
 namespace lexer {
@@ -32,4 +31,4 @@ namespace lexer {
 }
 }
 
-#endif /*NSTD_LEXER_DPP_*/
+

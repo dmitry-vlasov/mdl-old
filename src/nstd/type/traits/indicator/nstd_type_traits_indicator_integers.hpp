@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_TYPE_TRAITS_INDICATOR_INTEGERS_HPP_
-#define NSTD_TYPE_TRAITS_INDICATOR_INTEGERS_HPP_
+#pragma once
 
 #include "type/traits/indicator/nstd_type_traits_indicator_char.hpp"
 #include "type/traits/indicator/nstd_type_traits_indicator_int.hpp"
@@ -22,4 +21,4 @@
 #include "type/traits/indicator/nstd_type_traits_indicator_signed.hpp"
 #include "type/traits/indicator/nstd_type_traits_indicator_digits.hpp"
 
-#endif /*NSTD_TYPE_TRAITS_INDICATOR_INTEGERS_HPP_*/
+

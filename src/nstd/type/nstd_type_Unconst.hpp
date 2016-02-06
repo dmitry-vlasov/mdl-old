@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_TYPE_UNCONST_HPP_
-#define NSTD_TYPE_UNCONST_HPP_
+#pragma once
 
 namespace nstd {
 namespace type {
@@ -31,4 +30,4 @@ struct Unconst<const T> {
 }
 }
 
-#endif /*NSTD_TYPE_UNCONST_HPP_*/
+

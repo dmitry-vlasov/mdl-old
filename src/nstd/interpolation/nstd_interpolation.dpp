@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_INTERPOLATION_DPP_
-#define NSTD_INTERPOLATION_DPP_
+#pragma once
 
 namespace nstd {
 namespace interpolation {
@@ -45,4 +44,4 @@ namespace interpolation {
 }
 }
 
-#endif /*NSTD_INTERPOLATION_DPP_*/
+

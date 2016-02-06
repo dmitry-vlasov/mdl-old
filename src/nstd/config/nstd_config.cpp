@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_CONFIG_CPP_
-#define NSTD_CONFIG_CPP_
+#pragma once
 
 #include "nstd/config/option/nstd_config_option.cpp"
 
@@ -23,4 +22,4 @@
 #include "nstd/config/nstd_config_Paths.cpp"
 #include "nstd/config/nstd_config_ProgramInfo.cpp"
 
-#endif /*NSTD_CONFIG_CPP_*/
+

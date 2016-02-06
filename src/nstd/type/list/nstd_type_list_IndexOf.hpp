@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_TYPE_LIST_INDEX_OF_HPP_
-#define NSTD_TYPE_LIST_INDEX_OF_HPP_
+#pragma once
 
 #include "type/constant/nstd_type_constant.hpp"
 #include "type/list/nstd_type_list.dpp"
@@ -54,4 +53,4 @@ public :
 }
 }
 
-#endif /*NSTD_TYPE_LIST_INDEX_OF_HPP_*/
+

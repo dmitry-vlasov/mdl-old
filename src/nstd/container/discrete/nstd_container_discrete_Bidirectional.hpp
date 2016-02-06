@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_CONTAINER_DISCRETE_BIDIRECTIONAL_HPP_
-#define NSTD_CONTAINER_DISCRETE_BIDIRECTIONAL_HPP_
+#pragma once
 
 #include "container/discrete/nstd_container_discrete_Unidirectional.hpp"
 
@@ -70,4 +69,4 @@ protected :
 }
 }
 
-#endif /* NSTD_CONTAINER_DISCRETE_BIDIRECTIONAL_HPP_ */
+

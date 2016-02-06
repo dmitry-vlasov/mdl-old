@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_CONTAINER_DISCRETE_DPP_
-#define NSTD_CONTAINER_DISCRETE_DPP_
+#pragma once
 
 namespace nstd {
 namespace container {
@@ -25,4 +24,4 @@ namespace discrete {
 }
 }
 
-#endif /* NSTD_CONTAINER_DISCRETE_DPP_ */
+

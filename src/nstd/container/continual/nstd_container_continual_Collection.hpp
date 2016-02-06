@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_CONTAINER_CONTINUAL_COLLECTION_HPP_
-#define NSTD_CONTAINER_CONTINUAL_COLLECTION_HPP_
+#pragma once
 
 namespace nstd {
 namespace container {
@@ -115,4 +114,4 @@ protected :
 }
 }
 
-#endif /*NSTD_CONTAINER_CONTINUAL_COLLECTION_HPP_*/
+

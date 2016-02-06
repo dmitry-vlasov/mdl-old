@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_TYPE_ASSERT_HPP_
-#define NSTD_TYPE_ASSERT_HPP_
+#pragma once
 
 namespace nstd {
 namespace type {
@@ -23,4 +22,4 @@ class Assert<true> {
 }
 }
 
-#endif /*NSTD_TYPE_ASSERT_HPP_*/
+

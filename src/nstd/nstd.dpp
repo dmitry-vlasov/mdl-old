@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_DPP_
-#define NSTD_DPP_
+#pragma once
 
 #include "container/nstd_container.dpp"
 #include "map/nstd_map.dpp"
@@ -38,4 +37,4 @@ namespace nstd {
 #include "config/nstd_config.dpp"
 #include "misc/nstd_misc.dpp"
 
-#endif /*NSTD_DPP_*/
+

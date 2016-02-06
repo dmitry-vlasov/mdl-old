@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_SAMPLER_FOLD_NX2_CPP_
-#define NSTD_SAMPLER_FOLD_NX2_CPP_
+#pragma once
 
 namespace nstd {
 namespace sampler {
@@ -169,4 +168,4 @@ using manipulator :: tab;
 }
 }
 
-#endif /*NSTD_SAMPLER_FOLD_NX2_CPP_*/
+

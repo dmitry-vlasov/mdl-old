@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_TYPE_CONSTANT_DPP_
-#define NSTD_TYPE_CONSTANT_DPP_
+#pragma once
 
 namespace nstd {
 namespace type {
@@ -26,4 +25,4 @@ namespace constant {
 }
 }
 
-#endif /*NSTD_TYPE_CONSTANT_DPP_*/
+

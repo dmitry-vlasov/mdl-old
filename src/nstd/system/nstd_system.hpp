@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_SYSTEM_HPP_
-#define NSTD_SYSTEM_HPP_
+#pragma once
 
 namespace nstd {
 namespace system {
@@ -27,4 +26,4 @@ namespace system {
 }
 }
 
-#endif /*NSTD_SYSTEM_HPP_*/
+

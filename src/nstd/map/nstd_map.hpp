@@ -10,12 +10,11 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_MAP_HPP_
-#define NSTD_MAP_HPP_
+#pragma once
 
 #include "map/nstd_map_FastVector.hpp"
 #include "map/nstd_map_Scalar.hpp"
 #include "map/nstd_map_String.hpp"
 #include "map/nstd_map_Vector.hpp"
 
-#endif /*NSTD_MAP_HPP_*/
+

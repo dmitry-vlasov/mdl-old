@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_EQUATION_HPP_
-#define NSTD_EQUATION_HPP_
+#pragma once
 
 #include "nstd/equation/nstd_equation_Boundaries.hpp"
 #include "nstd/equation/nstd_equation_Interval.hpp"
@@ -19,4 +18,4 @@
 #include "nstd/equation/nstd_equation_Monotonic.hpp"
 #include "nstd/equation/nstd_equation_ValueInf.hpp"
 
-#endif /*NSTD_EQUATION_HPP_*/
+

@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_MEMORY_UNIT_CPP__
-#define NSTD_MEMORY_UNIT_CPP__
+#pragma once
 
 #include "memory/unit/nstd_memory_unit_Block.cpp"
 #include "memory/unit/nstd_memory_unit_Boxed.cpp"
@@ -24,4 +23,4 @@
 #include "memory/unit/nstd_memory_unit_Standard.cpp"
 #include "memory/unit/nstd_memory_unit_Tank.cpp"
 
-#endif /*NSTD_MEMORY_UNIT_CPP__*/
+

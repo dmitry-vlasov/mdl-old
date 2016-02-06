@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_INTERPOLATION_SAMPLE_2_HPP_
-#define NSTD_INTERPOLATION_SAMPLE_2_HPP_
+#pragma once
 
 #include "nstd/sampler/nstd_sampler_Sample.hpp"
 
@@ -89,4 +88,4 @@ private :
 }
 }
 
-#endif /*NSTD_INTERPOLATION_SAMPLE_2_HPP_*/
+

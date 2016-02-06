@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_INTERPOLATION_APPROXIMATION_1_HPP_
-#define NSTD_INTERPOLATION_APPROXIMATION_1_HPP_
+#pragma once
 
 #include "nstd/interpolation/nstd_interpolation_Polynomial_1.hpp"
 
@@ -70,4 +69,4 @@ private :
 }
 }
 
-#endif /*NSTD_INTERPOLATION_APPROXIMATION_1_HPP_*/
+

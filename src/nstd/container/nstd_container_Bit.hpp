@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_CONTAINER_BIT_HPP_
-#define NSTD_CONTAINER_BIT_HPP_
+#pragma once
 
 namespace nstd {
 namespace container {
@@ -55,4 +54,4 @@ private :
 }
 }
 
-#endif /*NSTD_CONTAINER_BIT_HPP_*/
+

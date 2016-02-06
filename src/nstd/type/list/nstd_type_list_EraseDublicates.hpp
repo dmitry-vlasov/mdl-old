@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_TYPE_LIST_ERASE_DUBLICATES_HPP_
-#define NSTD_TYPE_LIST_ERASE_DUBLICATES_HPP_
+#pragma once
 
 #include "type/list/nstd_type_list_Erase.hpp"
 #include "type/list/nstd_type_list.dpp"
@@ -44,4 +43,4 @@ public :
 }
 }
 
-#endif /*NSTD_TYPE_LIST_ERASE_DUBLICATES_HPP_*/
+

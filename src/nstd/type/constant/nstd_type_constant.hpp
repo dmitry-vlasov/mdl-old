@@ -10,11 +10,10 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_TYPE_CONSTANT_HPP_
-#define NSTD_TYPE_CONSTANT_HPP_
+#pragma once
 
 #include "type/constant/nstd_type_constant.dpp"
 #include "type/constant/nstd_type_constant_Null.hpp"
 #include "type/constant/nstd_type_constant_Empty.hpp"
 
-#endif /*NSTD_TYPE_CONSTANT_HPP_*/
+

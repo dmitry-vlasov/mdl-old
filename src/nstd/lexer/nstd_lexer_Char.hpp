@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_LEXER_CHAR_HPP_
-#define NSTD_LEXER_CHAR_HPP_
+#pragma once
 
 namespace nstd {
 namespace lexer {
@@ -53,4 +52,4 @@ private :
 }
 }
 
-#endif /*NSTD_LEXER_CHAR_HPP_*/
+

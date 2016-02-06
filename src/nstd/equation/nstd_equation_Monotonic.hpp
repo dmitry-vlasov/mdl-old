@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_EQUATION_MONOTONIC_HPP_
-#define NSTD_EQUATION_MONOTONIC_HPP_
+#pragma once
 
 namespace nstd {
 namespace equation {
@@ -82,4 +81,4 @@ private :
 }
 }
 
-#endif /*NSTD_EQUATION_MONOTONIC_HPP_*/
+

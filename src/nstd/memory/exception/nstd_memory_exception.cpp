@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_MEMORY_EXCEPTION_CPP_
-#define NSTD_MEMORY_EXCEPTION_CPP_
+#pragma once
 
 #include "memory/exception/nstd_memory_exception_EmptyStackPop.cpp"
 #include "memory/exception/nstd_memory_exception_Exception.cpp"
@@ -21,4 +20,4 @@
 #include "memory/exception/nstd_memory_exception_OutOfMemory.cpp"
 #include "memory/exception/nstd_memory_exception_StackOverflow.cpp"
 
-#endif /*NSTD_MEMORY_EXCEPTION_CPP_*/
+

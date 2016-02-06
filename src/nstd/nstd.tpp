@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_TPP_
-#define NSTD_TPP_
+#pragma once
 
 #include <exception>
 #include <ostream>
@@ -79,4 +78,4 @@ namespace nstd {
 		OutputFileStream;
 }
 
-#endif /*NSTD_TPP_*/
+

@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_MAP_CPP_
-#define NSTD_MAP_CPP_
+#pragma once
 
 #include "map/nstd_map_FastVector.cpp"
 #include "map/nstd_map_Node.cpp"
@@ -19,4 +18,4 @@
 #include "map/nstd_map_String.cpp"
 #include "map/nstd_map_Vector.cpp"
 
-#endif /*NSTD_MAP_CPP_*/
+

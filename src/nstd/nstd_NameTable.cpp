@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_NAME_TABLE_CPP_
-#define NSTD_NAME_TABLE_CPP_
+#pragma once
 
 namespace nstd {
 
@@ -306,4 +305,4 @@ using manipulator :: space;
 	}
 }
 
-#endif /*NSTD_NAME_TABLE_CPP_*/
+

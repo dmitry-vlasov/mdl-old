@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_TYPE_LIST_GENERATORS_HPP_
-#define NSTD_TYPE_LIST_GENERATORS_HPP_
+#pragma once
 
 #include "type/constant/nstd_type_constant.hpp"
 #include "type/list/nstd_type_list.dpp"
@@ -60,4 +59,4 @@ struct Generator_5 {
 }
 }
 
-#endif /*NSTD_TYPE_LIST_GENERATORS_HPP_*/
+

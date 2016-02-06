@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_CONTAINER_STORAGE_BY_AGGREATION_CPP_
-#define NSTD_CONTAINER_STORAGE_BY_AGGREATION_CPP_
+#pragma once
 
 #include "nstd_Undefined.hpp"
 
@@ -153,4 +152,4 @@ namespace storage {
 }
 }
 
-#endif /*NSTD_CONTAINER_STORAGE_BY_AGGREATION_CPP_*/
+

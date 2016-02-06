@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_TYPE_LIST_LIST_HPP_
-#define NSTD_TYPE_LIST_LIST_HPP_
+#pragma once
 
 namespace nstd {
 namespace type {
@@ -27,4 +26,4 @@ struct List {
 }
 }
 
-#endif /*NSTD_TYPE_LIST_LIST_HPP_*/
+

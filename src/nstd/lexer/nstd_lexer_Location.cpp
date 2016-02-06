@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_LEXER_LOCATION_CPP_
-#define NSTD_LEXER_LOCATION_CPP_
+#pragma once
 
 namespace nstd {
 namespace lexer {
@@ -266,4 +265,4 @@ namespace lexer {
 }
 }
 
-#endif /*NSTD_LEXER_LOCATION_CPP_*/
+

@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_CONTAINER_STORAGE_NONE_HPP_
-#define NSTD_CONTAINER_STORAGE_NONE_HPP_
+#pragma once
 
 namespace nstd {
 namespace container {
@@ -58,4 +57,4 @@ public :
 }
 }
 
-#endif /*NSTD_CONTAINER_STORAGE_NONE_HPP_*/
+

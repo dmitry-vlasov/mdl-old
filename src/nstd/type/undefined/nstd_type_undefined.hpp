@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_TYPE_UNDEFINED_HPP_
-#define NSTD_TYPE_UNDEFINED_HPP_
+#pragma once
 
 #include "type/undefined/nstd_type_undefined_Bool.hpp"
 #include "type/undefined/nstd_type_undefined_Char.hpp"
@@ -25,4 +24,4 @@
 #include "type/undefined/nstd_type_undefined_Type.hpp"
 #include "type/undefined/nstd_type_undefined_Defined.hpp"
 
-#endif /*NSTD_TYPE_UNDEFINED_HPP_*/
+

@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_MEMORY_CPP_
-#define NSTD_MEMORY_CPP_
+#pragma once
 
 #include "memory/allocator/nstd_memory_allocator.cpp"
 #include "memory/exception/nstd_memory_exception.cpp"
@@ -25,4 +24,4 @@
 #include "memory/nstd_memory_Unit.cpp"
 #include "memory/nstd_memory_UsageMessage.cpp"
 
-#endif /*NSTD_MEMORY_CPP_*/
+

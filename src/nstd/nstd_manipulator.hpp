@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_MANIPULATOR_HPP_
-#define NSTD_MANIPULATOR_HPP_
+#pragma once
 
 #include "nstd.dpp"
 
@@ -43,4 +42,4 @@ namespace manipulator {
 }
 }
 
-#endif /*NSTD_MANIPULATOR_HPP_*/
+

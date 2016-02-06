@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_INTERPOLATION_HPP_
-#define NSTD_INTERPOLATION_HPP_
+#pragma once
 
 #include "nstd/interpolation/nstd_interpolation_Approximation_1.hpp"
 #include "nstd/interpolation/nstd_interpolation_Approximation_2.hpp"
@@ -26,4 +25,4 @@
 #include "nstd/interpolation/nstd_interpolation_Tuner_1.hpp"
 #include "nstd/interpolation/nstd_interpolation_Tuner_2.hpp"
 
-#endif /*NSTD_INTERPOLATION_HPP_*/
+

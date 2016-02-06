@@ -10,11 +10,10 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_MEMORY_STORAGE_HPP_
-#define NSTD_MEMORY_STORAGE_HPP_
+#pragma once
 
 #include "memory/storage/nstd_memory_storage_Array.hpp"
 #include "memory/storage/nstd_memory_storage_Scalar.hpp"
 #include "memory/storage/nstd_memory_storage_Vector.hpp"
 
-#endif /*NSTD_MEMORY_STORAGE_HPP_*/
+

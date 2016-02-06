@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_MEMORY_STORAGE_ARRAY_HPP_
-#define NSTD_MEMORY_STORAGE_ARRAY_HPP_
+#pragma once
 
 #include "memory/storage/nstd_memory_storage_Scalar.hpp"
 
@@ -37,4 +36,4 @@ protected :
 }
 }
 
-#endif /*NSTD_MEMORY_STORAGE_ARRAY_HPP_*/
+

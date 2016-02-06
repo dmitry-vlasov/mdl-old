@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_MEMORY_STORAGE_VECTOR_CPP_
-#define NSTD_MEMORY_STORAGE_VECTOR_CPP_
+#pragma once
 
 namespace nstd {
 namespace memory {
@@ -94,4 +93,4 @@ namespace storage {
 }
 }
 
-#endif /*NSTD_MEMORY_STORAGE_VECTOR_CPP_*/
+

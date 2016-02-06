@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_LEXER_LOCATION_HPP_
-#define NSTD_LEXER_LOCATION_HPP_
+#pragma once
 
 #include "lexer/nstd_lexer_Indent.hpp"
 #include "lexer/nstd_lexer_Position.hpp"
@@ -91,4 +90,4 @@ private :
 }
 }
 
-#endif /*NSTD_LEXER_LOCATION_HPP_*/
+

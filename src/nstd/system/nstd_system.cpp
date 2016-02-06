@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_SYSTEM_CPP_
-#define NSTD_SYSTEM_CPP_
+#pragma once
 
 #ifdef __WIN32__
 //#include <windows.h>
@@ -89,4 +88,4 @@ namespace system {
 }
 }
 
-#endif /*NSTD_SYSTEM_CPP_*/
+

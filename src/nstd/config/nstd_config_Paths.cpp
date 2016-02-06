@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_CONFIG_PATHS_CPP_
-#define NSTD_CONFIG_PATHS_CPP_
+#pragma once
 
 #include "system/nstd_system.hpp"
 #include "config/nstd_config_Paths.hpp"
@@ -341,4 +340,4 @@ using std :: cout;
 }
 }
 
-#endif /*NSTD_CONFIG_PATHS_CPP_*/
+

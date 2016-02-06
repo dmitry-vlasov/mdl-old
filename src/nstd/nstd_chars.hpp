@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_CHARS_HPP_
-#define NSTD_CHARS_HPP_
+#pragma once
 
 namespace nstd {
 namespace chars {
@@ -43,4 +42,4 @@ namespace chars {
 }
 }
 
-#endif /*NSTD_CHARS_HPP_*/
+

@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_LEXER_CPP_
-#define NSTD_LEXER_CPP_
+#pragma once
 
 #include "lexer/nstd_lexer_Buffer.cpp"
 #include "lexer/nstd_lexer_Char.cpp"
@@ -21,4 +20,4 @@
 #include "lexer/nstd_lexer_Position.cpp"
 #include "lexer/nstd_lexer_Source.cpp"
 
-#endif /* NSTD_LEXER_CPP_ */
+

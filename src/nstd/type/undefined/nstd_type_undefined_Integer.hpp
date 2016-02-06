@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_TYPE_UNDEFINED_INTEGER_HPP_
-#define NSTD_TYPE_UNDEFINED_INTEGER_HPP_
+#pragma once
 
 #include "type/traits/nstd_type_traits_Type.hpp"
 #include "type/undefined/nstd_type_undefined.dpp"
@@ -47,4 +46,4 @@ class Integer<T, false> {
 }
 }
 
-#endif /*NSTD_TYPE_UNDEFINED_INTEGER_HPP_*/
+

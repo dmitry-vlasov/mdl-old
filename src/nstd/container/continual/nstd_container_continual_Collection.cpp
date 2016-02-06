@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_CONTAINER_CONTINUAL_COLLECTION_CPP_
-#define NSTD_CONTAINER_CONTINUAL_COLLECTION_CPP_
+#pragma once
 
 #include "nstd_Undefined.hpp"
 
@@ -439,4 +438,4 @@ namespace continual {
 }
 }
 
-#endif /*NSTD_CONTAINER_CONTINUAL_COLLECTION_CPP_*/
+

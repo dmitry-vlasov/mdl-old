@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_TYPE_LIST_REPLACE_HPP_
-#define NSTD_TYPE_LIST_REPLACE_HPP_
+#pragma once
 
 #include "type/constant/nstd_type_constant.hpp"
 #include "type/list/nstd_type_list.dpp"
@@ -44,4 +43,4 @@ struct Replace<List<H, T>, S_1, S_2> {
 }
 }
 
-#endif /*NSTD_TYPE_LIST_REPLACE_HPP_*/
+

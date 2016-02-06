@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_TYPE_CONSTANT_EMPTY_HPP_
-#define NSTD_TYPE_CONSTANT_EMPTY_HPP_
+#pragma once
 
 namespace nstd {
 namespace type {
@@ -24,4 +23,4 @@ class Empty {
 }
 }
 
-#endif /*NSTD_TYPE_CONSTANT_EMPTY_HPP_*/
+

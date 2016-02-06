@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_TYPE_UNDEFINED_BOOL_HPP_
-#define NSTD_TYPE_UNDEFINED_BOOL_HPP_
+#pragma once
 
 #include "type/traits/nstd_type_traits_Type.hpp"
 
@@ -38,4 +37,4 @@ public :
 }
 }
 
-#endif /*NSTD_TYPE_UNDEFINED_BOOL_HPP_*/
+

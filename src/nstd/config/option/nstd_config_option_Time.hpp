@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_CONFIG_OPTION_TIME_HPP_
-#define NSTD_CONFIG_OPTION_TIME_HPP_
+#pragma once
 
 namespace nstd {
 namespace config {
@@ -70,4 +69,4 @@ private :
 }
 }
 
-#endif /*NSTD_CONFIG_OPTION_TIME_HPP_*/
+

@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_TYPE_SELECTOR_HPP_
-#define NSTD_TYPE_SELECTOR_HPP_
+#pragma once
 
 #include "type/nstd_type.dpp"
 
@@ -33,4 +32,4 @@ public :
 }
 }
 
-#endif /*NSTD_TYPE_SELECTOR_HPP_*/
+

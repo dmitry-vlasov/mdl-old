@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_CONTAINER_STORAGE_BY_WEAK_POINTER_HPP_
-#define NSTD_CONTAINER_STORAGE_BY_WEAK_POINTER_HPP_
+#pragma once
 
 #include "container/storage/nstd_container_storage_ByAggregation.hpp"
 
@@ -87,4 +86,4 @@ public :
 }
 }
 
-#endif /*NSTD_CONTAINER_STORAGE_BY_WEAK_POINTER_HPP_*/
+

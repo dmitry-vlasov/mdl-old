@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_SIZE_HPP_
-#define NSTD_SIZE_HPP_
+#pragma once
 
 namespace nstd {
 namespace size {
@@ -32,4 +31,4 @@ namespace size {
 	using size :: Size;
 }
 
-#endif /*NSTD_SIZE_HPP_*/
+

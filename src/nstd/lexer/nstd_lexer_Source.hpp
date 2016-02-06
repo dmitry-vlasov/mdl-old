@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_LEXER_SOURCE_HPP_
-#define NSTD_LEXER_SOURCE_HPP_
+#pragma once
 
 #include "lexer/nstd_lexer_Char.hpp"
 #include "lexer/nstd_lexer_Location.hpp"
@@ -87,4 +86,4 @@ private :
 }
 }
 
-#endif /*NSTD_LEXER_SOURCE_HPP_*/
+

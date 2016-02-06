@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_OBJECT_HPP_
-#define NSTD_OBJECT_HPP_
+#pragma once
 
 #include "nstd_String.hpp"
 
@@ -74,4 +73,4 @@ namespace nstd {
 	operator << (String<A>&, const Object&);
 }
 
-#endif /*NSTD_OBJECT_HPP_*/
+

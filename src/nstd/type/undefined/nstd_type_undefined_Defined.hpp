@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_TYPE_UNDEFINED_DEFINED_HPP_
-#define NSTD_TYPE_UNDEFINED_DEFINED_HPP_
+#pragma once
 
 #include "type/undefined/nstd_type_undefined_Type.hpp"
 
@@ -32,4 +31,4 @@ public :
 }
 }
 
-#endif /*NSTD_TYPE_UNDEFINED_DEFINED_HPP_*/
+

@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_CONTAINER_SET_HPP_
-#define NSTD_CONTAINER_SET_HPP_
+#pragma once
 
 #include "container/continual/nstd_container_continual_Resizable.hpp"
 
@@ -103,4 +102,4 @@ private :
 }
 }
 
-#endif /*NSTD_CONTAINER_SET_HPP_*/
+

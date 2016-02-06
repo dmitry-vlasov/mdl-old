@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_INTERPOLATION_TUNER_1_CPP_
-#define NSTD_INTERPOLATION_TUNER_1_CPP_
+#pragma once
 
 namespace nstd {
 namespace interpolation {
@@ -226,4 +225,4 @@ using manipulator :: tab;
 }
 }
 
-#endif /*NSTD_INTERPOLATION_TUNER_1_CPP_*/
+

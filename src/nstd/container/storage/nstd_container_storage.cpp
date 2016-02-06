@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_CONTAINER_STORAGE_CPP_
-#define NSTD_CONTAINER_STORAGE_CPP_
+#pragma once
 
 #include "container/storage/nstd_container_storage_ByAggregation.cpp"
 #include "container/storage/nstd_container_storage_ByInheritance.cpp"
@@ -20,4 +19,4 @@
 #include "container/storage/nstd_container_storage_ByWeakPointer.cpp"
 #include "container/storage/nstd_container_storage_None.cpp"
 
-#endif /*NSTD_CONTAINER_STORAGE_CPP_*/
+

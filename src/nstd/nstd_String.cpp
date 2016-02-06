@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_STRING_CPP_
-#define NSTD_STRING_CPP_
+#pragma once
 
 #include <sstream>
 
@@ -661,4 +660,4 @@ namespace nstd {
 	Size_t String<A> :: mode_ = 0;
 }
 
-#endif /*NSTD_STRING_CPP_*/
+

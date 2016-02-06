@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_MISC_ERROR_HPP_
-#define NSTD_MISC_ERROR_HPP_
+#pragma once
 
 #include "lexer/nstd_lexer_Location.hpp"
 
@@ -81,4 +80,4 @@ private :
 }
 }
 
-#endif /*NSTD_MISC_ERROR_HPP_*/
+

@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_CONFIG_PROGRAM_INFO_HPP_
-#define NSTD_CONFIG_PROGRAM_INFO_HPP_
+#pragma once
 
 #include "config/nstd_config_Base.hpp"
 
@@ -74,4 +73,4 @@ private :
 }
 }
 
-#endif /*NSTD_CONFIG_PROGRAM_INFO_HPP_*/
+

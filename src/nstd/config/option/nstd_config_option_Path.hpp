@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_CONFIG_OPTION_PATH_HPP_
-#define NSTD_CONFIG_OPTION_PATH_HPP_
+#pragma once
 
 #include "nstd/config/option/nstd_config_option_Option.hpp"
 #include "nstd/misc/nstd_misc_Path.hpp"
@@ -60,4 +59,4 @@ private :
 }
 }
 
-#endif /*NSTD_CONFIG_OPTION_PATH_HPP_*/
+

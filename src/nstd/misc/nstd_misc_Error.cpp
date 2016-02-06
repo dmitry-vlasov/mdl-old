@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_MISC_ERROR_CPP_
-#define NSTD_MISC_ERROR_CPP_
+#pragma once
 
 namespace nstd {
 namespace misc {
@@ -128,4 +127,4 @@ using manipulator :: endLine;
 }
 }
 
-#endif /*NSTD_MISC_ERROR_CPP_*/
+

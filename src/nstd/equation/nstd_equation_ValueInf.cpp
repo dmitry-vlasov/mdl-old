@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_EQUATION_VALUE_INF_CPP_
-#define NSTD_EQUATION_VALUE_INF_CPP_
+#pragma once
 
 namespace nstd {
 namespace equation {
@@ -145,4 +144,4 @@ namespace equation {
 }
 }
 
-#endif /*NSTD_EQUATION_VALUE_INF_CPP_*/
+

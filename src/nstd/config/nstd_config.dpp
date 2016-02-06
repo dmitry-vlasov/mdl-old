@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_CONFIG_DPP_
-#define NSTD_CONFIG_DPP_
+#pragma once
 
 #include "nstd/config/option/nstd_config_option.dpp"
 
@@ -30,4 +29,4 @@ namespace config {
 	using config :: Config;
 }
 
-#endif /* NSTD_CONFIG_DPP_ */
+

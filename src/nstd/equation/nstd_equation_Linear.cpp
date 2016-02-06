@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_EQUATION_LINEAR_CPP_
-#define NSTD_EQUATION_LINEAR_CPP_
+#pragma once
 
 namespace nstd {
 namespace equation {
@@ -241,4 +240,4 @@ using manipulator :: tab;
 }
 }
 
-#endif /*NSTD_EQUATION_LINEAR_CPP_*/
+

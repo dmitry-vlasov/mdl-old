@@ -10,12 +10,11 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_CONFIG_OPTION_HPP_
-#define NSTD_CONFIG_OPTION_HPP_
+#pragma once
 
 #include "nstd/config/option/nstd_config_option_Option.hpp"
 #include "nstd/config/option/nstd_config_option_Path.hpp"
 #include "nstd/config/option/nstd_config_option_Size.hpp"
 #include "nstd/config/option/nstd_config_option_Time.hpp"
 
-#endif /*NSTD_CONFIG_OPTION_HPP_*/
+

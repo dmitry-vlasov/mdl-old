@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_MEMORY_UNIT_STANDARD_HPP_
-#define NSTD_MEMORY_UNIT_STANDARD_HPP_
+#pragma once
 
 #include "memory/unit/nstd_memory_unit_Map.hpp"
 
@@ -60,4 +59,4 @@ private :
 }
 }
 
-#endif /*NSTD_MEMORY_UNIT_STANDARD_HPP_*/
+

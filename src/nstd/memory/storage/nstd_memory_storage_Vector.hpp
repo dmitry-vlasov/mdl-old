@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_MEMORY_STORAGE_VECTOR_HPP_
-#define NSTD_MEMORY_STORAGE_VECTOR_HPP_
+#pragma once
 
 #include "memory/storage/nstd_memory_storage_Scalar.hpp"
 
@@ -53,4 +52,4 @@ private :
 }
 }
 
-#endif /*NSTD_MEMORY_VECTOR_STORAGE_HPP_*/
+

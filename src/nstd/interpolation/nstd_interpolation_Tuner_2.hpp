@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_INTERPOLATION_TUNER_2_HPP_
-#define NSTD_INTERPOLATION_TUNER_2_HPP_
+#pragma once
 
 namespace nstd {
 namespace interpolation {
@@ -108,4 +107,4 @@ private :
 }
 }
 
-#endif /*NSTD_INTERPOLATION_TUNER_2_HPP_*/
+

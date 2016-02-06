@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_MISC_MODE_CPP_
-#define NSTD_MISC_MODE_CPP_
+#pragma once
 
 namespace nstd {
 namespace misc {
@@ -100,4 +99,4 @@ namespace misc {
 }
 }
 
-#endif /*NSTD_MISC_MODE_CPP_*/
+

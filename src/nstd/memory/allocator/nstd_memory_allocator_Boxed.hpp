@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_MEMORY_ALLOCATOR_BOXED_HPP_
-#define NSTD_MEMORY_ALLOCATOR_BOXED_HPP_
+#pragma once
 
 #include "memory/allocator/nstd_memory_allocator_Control.hpp"
 
@@ -38,4 +37,4 @@ private :
 }
 }
 
-#endif /*NSTD_MEMORY_ALLOCATOR_BOXED_HPP_*/
+

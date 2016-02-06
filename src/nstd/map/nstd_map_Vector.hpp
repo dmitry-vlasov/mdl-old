@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_MAP_VECTOR_HPP_
-#define NSTD_MAP_VECTOR_HPP_
+#pragma once
 
 #include "map/nstd_map_Node.hpp"
 
@@ -74,4 +73,4 @@ private :
 }
 }
 
-#endif /*NSTD_MAP_VECTOR_HPP_*/
+

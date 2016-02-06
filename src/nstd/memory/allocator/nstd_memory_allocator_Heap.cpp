@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_MEMORY_ALLOCATOR_HEAP_CPP_
-#define NSTD_MEMORY_ALLOCATOR_HEAP_CPP_
+#pragma once
 
 namespace nstd {
 namespace memory {
@@ -126,4 +125,4 @@ namespace allocator {
 }
 }
 
-#endif /*NSTD_MEMORY_ALLOCATOR_HEAP_CPP_*/
+

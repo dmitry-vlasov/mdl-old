@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_CONTAINER_CONTINUAL_RESIZABLE_CPP_
-#define NSTD_CONTAINER_CONTINUAL_RESIZABLE_CPP_
+#pragma once
 
 namespace nstd {
 namespace container {
@@ -383,4 +382,4 @@ namespace continual {
 }
 }
 
-#endif /*NSTD_CONTAINER_CONTINUAL_RESIZABLE_CPP_*/
+

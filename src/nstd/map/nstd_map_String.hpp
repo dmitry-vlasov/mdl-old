@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_MAP_STRING_HPP_
-#define NSTD_MAP_STRING_HPP_
+#pragma once
 
 #include "nstd_String.hpp"
 #include "map/nstd_map_Vector.hpp"
@@ -57,4 +56,4 @@ public :
 }
 }
 
-#endif /*NSTD_MAP_STRING_HPP_*/
+

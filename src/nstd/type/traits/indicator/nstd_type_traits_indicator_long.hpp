@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_TYPE_TRAITS_INDICATOR_LONG_HPP_
-#define NSTD_TYPE_TRAITS_INDICATOR_LONG_HPP_
+#pragma once
 
 namespace nstd {
 namespace type {
@@ -44,4 +43,4 @@ namespace indicator {
 }
 }
 
-#endif /*NSTD_TYPE_TRAITS_INDICATOR_LONG_HPP_*/
+

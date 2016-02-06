@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_TYPE_UNDEFINED_DPP_
-#define NSTD_TYPE_UNDEFINED_DPP_
+#pragma once
 
 namespace nstd {
 namespace type {
@@ -41,4 +40,4 @@ namespace undefined {
 }
 }
 
-#endif /*NSTD_TYPE_UNDEFINED_DPP_*/
+

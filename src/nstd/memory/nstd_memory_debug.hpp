@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_MEMORY_DEBUG_HPP_
-#define NSTD_MEMORY_DEBUG_HPP_
+#pragma once
 
 /*****************************************************************************/
 /*       Memory debugging flags                                              */
@@ -85,4 +84,4 @@
 	#define MAP_IS_INITIALLY_ON
 #endif
 
-#endif /*NSTD_MEMORY_DEBUG_HPP_*/
+

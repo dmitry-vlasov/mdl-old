@@ -10,11 +10,10 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_CONTAINER_DISCRETE_HPP_
-#define NSTD_CONTAINER_DISCRETE_HPP_
+#pragma once
 
 #include "container/discrete/nstd_container_discrete_Direction.hpp"
 #include "container/discrete/nstd_container_discrete_Bidirectional.hpp"
 #include "container/discrete/nstd_container_discrete_Unidirectional.hpp"
 
-#endif /* NSTD_CONTAINER_DISCRETE_HPP_ */
+

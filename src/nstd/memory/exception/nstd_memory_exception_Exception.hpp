@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_MEMORY_EXCEPTION_EXCEPTION_HPP_
-#define NSTD_MEMORY_EXCEPTION_EXCEPTION_HPP_
+#pragma once
 
 namespace nstd {
 namespace memory {
@@ -37,4 +36,4 @@ protected :
 }
 }
 
-#endif /*NSTD_MEMORY_EXCEPTION_EXCEPTION_HPP_*/
+

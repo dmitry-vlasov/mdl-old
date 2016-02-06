@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_MISC_HPP_
-#define NSTD_MISC_HPP_
+#pragma once
 
 #include "nstd/misc/nstd_misc_Counter.hpp"
 #include "nstd/misc/nstd_misc_Error.hpp"
@@ -19,4 +18,4 @@
 #include "nstd/misc/nstd_misc_Path.hpp"
 #include "nstd/misc/nstd_misc_Timer.hpp"
 
-#endif /*NSTD_MISC_HPP_*/
+

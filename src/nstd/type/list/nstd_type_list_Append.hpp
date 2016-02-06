@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_TYPE_LIST_APPEND_HPP_
-#define NSTD_TYPE_LIST_APPEND_HPP_
+#pragma once
 
 #include "type/constant/nstd_type_constant.hpp"
 #include "type/list/nstd_type_list.dpp"
@@ -51,4 +50,4 @@ struct Append<List<H, T>, C> {
 }
 }
 
-#endif /*NSTD_TYPE_LIST_APPEND_HPP_*/
+

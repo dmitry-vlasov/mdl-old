@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_EQUATION_INTERVAL_HPP_
-#define NSTD_EQUATION_INTERVAL_HPP_
+#pragma once
 
 #include "equation/nstd_equation_ValueInf.hpp"
 
@@ -43,4 +42,4 @@ private :
 }
 }
 
-#endif /*NSTD_EQUATION_INTERVAL_HPP_*/
+

@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_CONTAINER_LIST_HPP_
-#define NSTD_CONTAINER_LIST_HPP_
+#pragma once
 
 #include "container/discrete/nstd_container_discrete.hpp"
 
@@ -98,4 +97,4 @@ private :
 }
 }
 
-#endif /* NSTD_CONTAINER_LIST_HPP_ */
+

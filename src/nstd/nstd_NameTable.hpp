@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_NAME_TABLE_HPP_
-#define NSTD_NAME_TABLE_HPP_
+#pragma once
 
 #include "nstd_Object.hpp"
 
@@ -119,4 +118,4 @@ protected :
 
 }
 
-#endif /*NSTD_NAME_TABLE_HPP_*/
+

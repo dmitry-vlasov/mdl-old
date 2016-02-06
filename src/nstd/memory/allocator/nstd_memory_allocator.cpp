@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef NSTD_MEMORY_ALLOCATOR_CPP_
-#define NSTD_MEMORY_ALLOCATOR_CPP_
+#pragma once
 
 #include "memory/allocator/nstd_memory_allocator_Boxed.cpp"
 #include "memory/allocator/nstd_memory_allocator_Control.cpp"
@@ -20,4 +19,4 @@
 #include "memory/allocator/nstd_memory_allocator_Stack.cpp"
 #include "memory/allocator/nstd_memory_allocator_Standard.cpp"
 
-#endif /*NSTD_MEMORY_ALLOCATOR_CPP_*/
+
