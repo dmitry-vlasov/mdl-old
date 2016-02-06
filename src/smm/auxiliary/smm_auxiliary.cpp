@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef SMM_AUXILIARY_CPP_
-#define SMM_AUXILIARY_CPP_
+#pragma once
 
 #include "smm/auxiliary/smm_auxiliary_Config.cpp"
 #include "smm/auxiliary/smm_auxiliary_Error.cpp"
@@ -19,4 +18,4 @@
 #include "smm/auxiliary/smm_auxiliary_Timers.cpp"
 #include "smm/auxiliary/smm_auxiliary_Volume.cpp"
 
-#endif /*SMM_AUXILIARY_CPP_*/
+

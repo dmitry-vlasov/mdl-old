@@ -10,12 +10,11 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef SMM_PARSER_CPP_
-#define SMM_PARSER_CPP_
+#pragma once
 
 #include "smm/parser/smm_parser_Assertion.cpp"
 #include "smm/parser/smm_parser_Inclusion.cpp"
 #include "smm/parser/smm_parser_Proof.cpp"
 #include "smm/parser/smm_parser_Source.cpp"
 
-#endif /*SMM_PARSER_CPP_*/
+

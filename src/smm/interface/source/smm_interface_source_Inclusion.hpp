@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef SMM_INTERFACE_SOURCE_INCLUSION_HPP_
-#define SMM_INTERFACE_SOURCE_INCLUSION_HPP_
+#pragma once
 
 #include "smm/interface/object/smm_interface_object.hpp"
 
@@ -28,4 +27,4 @@ public :
 }
 }
 
-#endif /*SMM_INTERFACE_SOURCE_INCLUSION_HPP_*/
+

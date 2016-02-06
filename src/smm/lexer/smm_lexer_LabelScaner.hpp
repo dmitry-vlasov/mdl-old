@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef SMM_LEXER_LABEL_SCANER_HPP_
-#define SMM_LEXER_LABEL_SCANER_HPP_
+#pragma once
 
 #include "lexer/smm_lexer.dpp"
 #include "lexer/smm_lexer_Token.hpp"
@@ -41,4 +40,4 @@ public :
 }
 }
 
-#endif /*SMM_LEXER_LABEL_SCANER_HPP_*/
+

@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef SMM_TYPES_EXCEPTION_HPP_
-#define SMM_TYPES_EXCEPTION_HPP_
+#pragma once
 
 namespace smm {
 namespace exception {
@@ -20,4 +19,4 @@ namespace exception {
 }
 }
 
-#endif /*SMM_TYPES_EXCEPTION_HPP_*/
+

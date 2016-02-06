@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef SMM_AUXILIARY_TIMERS_HPP_
-#define SMM_AUXILIARY_TIMERS_HPP_
+#pragma once
 
 #include "smm/interface/object/smm_interface_object_Object.hpp"
 #include "smm/auxiliary/smm_auxiliary.dpp"
@@ -51,4 +50,4 @@ private :
 
 #include "smm/auxiliary/smm_auxiliary_Timers.ipp"
 
-#endif /*SMM_AUXILIARY_TIMERS_HPP_*/
+

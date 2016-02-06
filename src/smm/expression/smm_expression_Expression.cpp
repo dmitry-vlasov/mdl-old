@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef SMM_EXPRESSION_EXPRESSION_CPP_
-#define SMM_EXPRESSION_EXPRESSION_CPP_
+#pragma once
 
 #include "smm/math/smm_math.hpp"
 #include "smm/expression/smm_expression.hpp"
@@ -43,4 +42,4 @@ namespace expression {
 }
 }
 
-#endif /* SMM_EXPRESSION_EXPRESSION_CPP_ */
+

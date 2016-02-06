@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef SMM_TYPES_VALUE_HPP_
-#define SMM_TYPES_VALUE_HPP_
+#pragma once
 
 namespace smm {
 namespace value {
@@ -27,4 +26,4 @@ namespace value {
 
 #include "smm/types/value/undefined/smm_types_value_undefined.hpp"
 
-#endif /*SMM_TYPES_VALUE_HPP_*/
+

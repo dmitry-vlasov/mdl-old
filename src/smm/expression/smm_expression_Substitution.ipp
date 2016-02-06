@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef SMM_EXPRESSION_SUBSTITUTION_IPP_
-#define SMM_EXPRESSION_SUBSTITUTION_IPP_
+#pragma once
 
 namespace smm {
 namespace expression {
@@ -107,4 +106,4 @@ using manipulator :: space;
 }
 }
 
-#endif /* SMM_EXPRESSION_SUBSTITUTION_IPP_ */
+

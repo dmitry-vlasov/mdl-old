@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef SMM_AUXILIARY_CONFIG_HPP_
-#define SMM_AUXILIARY_CONFIG_HPP_
+#pragma once
 
 #include "smm/types/smm_types.hpp"
 #include "smm/auxiliary/smm_auxiliary.dpp"
@@ -69,4 +68,4 @@ private :
 
 #include "smm/auxiliary/smm_auxiliary_Config.ipp"
 
-#endif /*SMM_AUXILIARY_CONFIG_HPP_*/
+

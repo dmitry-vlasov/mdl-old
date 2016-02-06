@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef SMM_AUXILIARY_ERROR_CPP_
-#define SMM_AUXILIARY_ERROR_CPP_
+#pragma once
 
 #include "smm/auxiliary/smm_auxiliary_Config.hpp"
 #include "smm/auxiliary/smm_auxiliary_Error.hpp"
@@ -107,5 +106,5 @@ namespace auxiliary {
 }
 }
 
-#endif /* SMM_AUXILIARY_ERROR_CPP_ */
+
 

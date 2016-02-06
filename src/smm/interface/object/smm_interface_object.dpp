@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef SMM_INTERFACE_OBJECT_DPP_
-#define SMM_INTERFACE_OBJECT_DPP_
+#pragma once
 
 #include "smm/types/smm_types.hpp"
 
@@ -59,4 +58,4 @@ namespace object {
 }
 }
 
-#endif /* SMM_INTERFACE_OBJECT_DPP_ */
+

@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef SMM_EXPRESSION_EXPRESSION_IPP_
-#define SMM_EXPRESSION_EXPRESSION_IPP_
+#pragma once
 
 namespace smm {
 namespace expression {
@@ -137,4 +136,4 @@ namespace expression {
 }
 }
 
-#endif /* SMM_EXPRESSION_EXPRESSION_IPP_ */
+

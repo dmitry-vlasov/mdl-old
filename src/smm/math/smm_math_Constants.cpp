@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef SMM_MATH_CONSTANTS_CPP_
-#define SMM_MATH_CONSTANTS_CPP_
+#pragma once
 
 #include "smm/auxiliary/smm_auxiliary.hpp"
 #include "smm/math/smm_math.hpp"
@@ -71,4 +70,4 @@ using manipulator :: space;
 }
 }
 
-#endif /*SMM_MATH_CONSTANTS_CPP_*/
+

@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef SMM_AUXILIARY_TABLE_CPP_
-#define SMM_AUXILIARY_TABLE_CPP_
+#pragma once
 
 #include "smm/auxiliary/smm_auxiliary_Table.hpp"
 
@@ -87,4 +86,4 @@ using manipulator :: endLine;
 }
 }
 
-#endif /*SMM_AUXILIARY_TABLE_CPP_*/
+

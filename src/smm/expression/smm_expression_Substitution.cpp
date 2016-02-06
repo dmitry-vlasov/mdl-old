@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef SMM_EXPRESSION_SUBSTITUTION_CPP_
-#define SMM_EXPRESSION_SUBSTITUTION_CPP_
+#pragma once
 
 #include "expression/smm_expression_Substitution.hpp"
 
@@ -176,4 +175,4 @@ using manipulator :: space;
 }
 }
 
-#endif /* SMM_EXPRESSION_SUBSTITUTION_CPP_ */
+

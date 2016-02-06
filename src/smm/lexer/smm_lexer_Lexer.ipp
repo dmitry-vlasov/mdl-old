@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef SMM_LEXER_LEXER_IPP_
-#define SMM_LEXER_LEXER_IPP_
+#pragma once
 
 namespace smm {
 namespace lexer {
@@ -151,4 +150,4 @@ using manipulator :: tab;
 }
 }
 
-#endif /*SMM_LEXER_LEXER_IPP_*/
+

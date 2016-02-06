@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef SMM_AUXILIARY_VOLUME_CPP_
-#define SMM_AUXILIARY_VOLUME_CPP_
+#pragma once
 
 #include "smm/smm_Smm.hpp"
 
@@ -135,4 +134,4 @@ using manipulator :: tab;
 }
 }
 
-#endif /* SMM_AUXILIARY_VOLUME_CPP_ */
+

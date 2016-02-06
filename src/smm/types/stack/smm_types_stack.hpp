@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef SMM_TYPES_STACK_HPP_
-#define SMM_TYPES_STACK_HPP_
+#pragma once
 
 namespace smm {
 namespace stack {
@@ -21,4 +20,4 @@ namespace stack {
 	using stack :: Stack;
 }
 
-#endif /*SMM_TYPES_STACK_HPP_*/
+

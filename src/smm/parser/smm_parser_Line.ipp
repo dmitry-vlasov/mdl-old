@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef SMM_PARSER_LINE_IPP_
-#define SMM_PARSER_LINE_IPP_
+#pragma once
 
 #include "smm/lexer/smm_lexer.hpp"
 #include "smm/parser/smm_parser.hpp"
@@ -90,4 +89,4 @@ using manipulator :: tab;
 }
 }
 
-#endif /*SMM_PARSER_LINE_IPP_*/
+

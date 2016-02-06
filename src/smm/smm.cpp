@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef SMM_CPP_
-#define SMM_CPP_
+#pragma once
 
 #include "smm/auxiliary/smm_auxiliary.cpp"
 #include "smm/expression/smm_expression.cpp"
@@ -23,4 +22,4 @@
 
 #include "smm/smm_Smm.cpp"
 
-#endif /*SMM_CPP_*/
+

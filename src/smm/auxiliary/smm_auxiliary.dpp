@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef SMM_AUXILIARY_DPP_
-#define SMM_AUXILIARY_DPP_
+#pragma once
 
 namespace smm {
 namespace auxiliary {
@@ -30,4 +29,4 @@ namespace auxiliary {
 	using auxiliary :: Volume;
 }
 
-#endif /*SMM_AUXILIARY_DPP_*/
+

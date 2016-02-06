@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef SMM_MATH_ASSERTIONS_HPP_
-#define SMM_MATH_ASSERTIONS_HPP_
+#pragma once
 
 #include "smm/interface/smm_interface.hpp"
 #include "smm/math/smm_math.dpp"
@@ -49,4 +48,4 @@ private :
 
 #include "smm/math/smm_math_Assertions.ipp"
 
-#endif /*SMM_MATH_ASSERTIONS_HPP_*/
+

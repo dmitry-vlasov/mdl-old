@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef SMM_LEXER_TOKEN_CPP_
-#define SMM_LEXER_TOKEN_CPP_
+#pragma once
 
 namespace smm {
 namespace lexer {
@@ -90,4 +89,4 @@ namespace lexer {
 }
 }
 
-#endif /* SMM_LEXER_TOKEN_CPP_ */
+

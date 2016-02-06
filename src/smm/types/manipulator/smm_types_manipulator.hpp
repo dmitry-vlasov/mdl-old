@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef SMM_TYPES_MANIPULATOR_HPP_
-#define SMM_TYPES_MANIPULATOR_HPP_
+#pragma once
 
 namespace smm {
 namespace manipulator {
@@ -26,4 +25,4 @@ namespace manipulator {
 }
 }
 
-#endif /*SMM_TYPES_MANIPULATOR_HPP_*/
+

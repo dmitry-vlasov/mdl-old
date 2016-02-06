@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef SMM_EXPRESSION_SYMBOL_IPP_
-#define SMM_EXPRESSION_SYMBOL_IPP_
+#pragma once
 
 #include "smm/auxiliary/smm_auxiliary.hpp"
 
@@ -122,4 +121,4 @@ using manipulator :: space;
 }
 }
 
-#endif /* SMM_EXPRESSION_SYMBOL_IPP_ */
+

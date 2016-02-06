@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef SMM_TYPES_LEXER_HPP_
-#define SMM_TYPES_LEXER_HPP_
+#pragma once
 
 namespace smm {
 namespace lexer {
@@ -34,4 +33,4 @@ namespace lexer {
 	using lexer :: Location;
 }
 
-#endif /*SMM_TYPES_LEXER_HPP_*/
+

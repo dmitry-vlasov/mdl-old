@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef SMM_DPP_
-#define SMM_DPP_
+#pragma once
 
 #include "smm/auxiliary/smm_auxiliary.dpp"
 #include "smm/expression/smm_expression.dpp"
@@ -26,4 +25,4 @@ namespace smm {
 	class Smm;
 }
 
-#endif /* SMM_DPP_ */
+

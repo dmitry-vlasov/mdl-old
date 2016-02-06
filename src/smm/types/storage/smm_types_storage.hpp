@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef SMM_TYPES_STORAGE_HPP_
-#define SMM_TYPES_STORAGE_HPP_
+#pragma once
 
 namespace smm {
 namespace storage {
@@ -22,4 +21,4 @@ namespace storage {
 }
 }
 
-#endif /*SMM_TYPES_STORAGE_HPP_*/
+

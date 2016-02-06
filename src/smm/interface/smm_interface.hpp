@@ -10,10 +10,9 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef SMM_INTERFACE_HPP_
-#define SMM_INTERFACE_HPP_
+#pragma once
 
 #include "smm/interface/object/smm_interface_object.hpp"
 #include "smm/interface/source/smm_interface_source.hpp"
 
-#endif /*SMM_INTERFACE_HPP_*/
+

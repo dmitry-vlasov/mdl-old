@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef SMM_TYPES_INDEX_UNDEFINED_HPP_
-#define SMM_TYPES_INDEX_UNDEFINED_HPP_
+#pragma once
 
 namespace smm {
 namespace index {
@@ -31,4 +30,4 @@ namespace undefined {
 }
 }
 
-#endif /*SMM_TYPES_INDEX_UNDEFINED_HPP_*/
+

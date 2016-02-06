@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef SMM_LEXER_TOKEN_IPP_
-#define SMM_LEXER_TOKEN_IPP_
+#pragma once
 
 namespace smm {
 namespace lexer {
@@ -50,4 +49,4 @@ namespace lexer {
 }
 }
 
-#endif /*SMM_LEXER_TOKEN_IPP_*/
+

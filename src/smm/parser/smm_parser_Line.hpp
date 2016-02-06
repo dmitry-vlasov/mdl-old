@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef SMM_PARSER_LINE_HPP_
-#define SMM_PARSER_LINE_HPP_
+#pragma once
 
 #include "smm/interface/smm_interface.hpp"
 #include "smm/parser/smm_parser.dpp"
@@ -61,4 +60,4 @@ private :
 
 #include "smm/parser/smm_parser_Line.ipp"
 
-#endif /*SMM_PARSER_LINE_HPP_*/
+

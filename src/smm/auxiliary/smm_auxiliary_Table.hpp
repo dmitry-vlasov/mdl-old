@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef SMM_AUXILIARY_TABLE_HPP_
-#define SMM_AUXILIARY_TABLE_HPP_
+#pragma once
 
 #include "smm/types/smm_types.hpp"
 
@@ -56,4 +55,4 @@ private :
 }
 }
 
-#endif /*SMM_AUXILIARY_TABLE_HPP_*/
+

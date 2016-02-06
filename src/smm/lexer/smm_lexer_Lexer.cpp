@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef SMM_LEXER_LEXER_CPP_
-#define SMM_LEXER_LEXER_CPP_
+#pragma once
 
 #include "smm/lexer/smm_lexer.hpp"
 
@@ -53,4 +52,4 @@ using manipulator :: endLine;
 }
 }
 
-#endif /*SMM_LEXER_LEXER_CPP_*/
+

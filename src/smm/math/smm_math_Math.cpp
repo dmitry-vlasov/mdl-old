@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef SMM_MATH_MATH_CPP_
-#define SMM_MATH_MATH_CPP_
+#pragma once
 
 #include "smm/math/smm_math.hpp"
 
@@ -68,5 +67,5 @@ using manipulator :: endLine;
 }
 }
 
-#endif /*SMM_MATH_MATH_CPP_*/
+
 

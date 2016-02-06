@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef SMM_TYPES_LIST_HPP_
-#define SMM_TYPES_LIST_HPP_
+#pragma once
 
 #include "smm/types/list/connectivity/smm_types_list_connectivity.hpp"
 
@@ -23,4 +22,4 @@ namespace list {
 	using list :: List;
 }
 
-#endif /*SMM_TYPES_LIST_HPP_*/
+

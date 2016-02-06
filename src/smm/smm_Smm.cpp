@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef SMM_SMM_CPP_
-#define SMM_SMM_CPP_
+#pragma once
 
 #include <exception>
 
@@ -260,4 +259,4 @@ using manipulator :: tab;
 	}
 }
 
-#endif /*SMM_SMM_CPP_*/
+

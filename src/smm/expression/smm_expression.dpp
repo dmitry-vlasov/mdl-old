@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef SMM_EXPRESSION_DPP_
-#define SMM_EXPRESSION_DPP_
+#pragma once
 
 #include "smm/types/smm_types.hpp"
 
@@ -50,4 +49,4 @@ namespace stack {
 }
 }
 
-#endif /*SMM_EXPRESSION_DPP_*/
+

@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef SMM_EXPRESSION_EXPRESSION_HPP_
-#define SMM_EXPRESSION_EXPRESSION_HPP_
+#pragma once
 
 #include "smm/interface/smm_interface.dpp"
 #include "smm/expression/smm_expression_Symbol.hpp"
@@ -79,4 +78,4 @@ namespace vector {
 
 #include "expression/smm_expression_Expression.ipp"
 
-#endif /* SMM_EXPRESSION_EXPRESSION_HPP_ */
+

@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef SMM_LEXER_HPP_
-#define SMM_LEXER_HPP_
+#pragma once
 
 #include "smm/lexer/smm_lexer_CommentScaner.hpp"
 #include "smm/lexer/smm_lexer_IndexScaner.hpp"
@@ -23,4 +22,4 @@
 #include "smm/lexer/smm_lexer_Token.hpp"
 #include "smm/lexer/smm_lexer_WhitespaceScaner.hpp"
 
-#endif /*SMM_LEXER_HPP_*/
+

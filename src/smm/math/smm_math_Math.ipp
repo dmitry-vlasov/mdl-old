@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef SMM_MATH_MATH_IPP_
-#define SMM_MATH_MATH_IPP_
+#pragma once
 
 namespace smm {
 namespace math {
@@ -37,4 +36,4 @@ namespace math {
 }
 }
 
-#endif /*SMM_MATH_MATH_IPP_*/
+

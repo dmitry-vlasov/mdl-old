@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef SMM_SOURCE_INCLUSION_CPP_
-#define SMM_SOURCE_INCLUSION_CPP_
+#pragma once
 
 #include "smm/auxiliary/smm_auxiliary.hpp"
 #include "smm/lexer/smm_lexer.hpp"
@@ -74,4 +73,4 @@ using manipulator :: tab;
 }
 }
 
-#endif /*SMM_SOURCE_INCLUSION_CPP_*/
+

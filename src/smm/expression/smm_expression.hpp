@@ -10,11 +10,10 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef SMM_EXPRESSION_HPP_
-#define SMM_EXPRESSION_HPP_
+#pragma once
 
 #include "smm/expression/smm_expression_Expression.hpp"
 #include "smm/expression/smm_expression_Substitution.hpp"
 #include "smm/expression/smm_expression_Symbol.hpp"
 
-#endif /*SMM_EXPRESSION_HPP_*/
+

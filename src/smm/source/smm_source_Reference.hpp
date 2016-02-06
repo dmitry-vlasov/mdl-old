@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef SMM_SOURCE_REFERENCE_HPP_
-#define SMM_SOURCE_REFERENCE_HPP_
+#pragma once
 
 #include "smm/lexer/smm_lexer.hpp"
 #include "smm/interface/smm_interface.hpp"
@@ -68,4 +67,4 @@ namespace vector{
 
 #include "smm/source/smm_source_Reference.ipp"
 
-#endif /*SMM_SOURCE_REFERENCE_HPP_*/
+

@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef SMM_AUXILIARY_VOLUME_HPP_
-#define SMM_AUXILIARY_VOLUME_HPP_
+#pragma once
 
 #include "smm/interface/object/smm_interface_object_Object.hpp"
 #include "smm/smm.dpp"
@@ -54,4 +53,4 @@ private :
 }
 }
 
-#endif /* SMM_AUXILIARY_VOLUME_HPP_ */
+

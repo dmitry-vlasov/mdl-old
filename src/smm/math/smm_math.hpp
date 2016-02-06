@@ -10,11 +10,10 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef SMM_MATH_HPP_
-#define SMM_MATH_HPP_
+#pragma once
 
 #include "smm/math/smm_math_Assertions.hpp"
 #include "smm/math/smm_math_Constants.hpp"
 #include "smm/math/smm_math_Math.hpp"
 
-#endif /*SMM_MATH_HPP_*/
+

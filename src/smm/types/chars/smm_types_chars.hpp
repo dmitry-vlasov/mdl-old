@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef SMM_TYPES_CHARS_HPP_
-#define SMM_TYPES_CHARS_HPP_
+#pragma once
 
 namespace smm {
 namespace chars {
@@ -20,4 +19,4 @@ namespace chars {
 }
 }
 
-#endif /*SMM_TYPES_CHARS_HPP_*/
+

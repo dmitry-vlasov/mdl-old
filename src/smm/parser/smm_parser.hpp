@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef SMM_PARSER_HPP_
-#define SMM_PARSER_HPP_
+#pragma once
 
 #include "smm/parser/smm_parser_Assertion.hpp"
 #include "smm/parser/smm_parser_Inclusion.hpp"
@@ -20,4 +19,4 @@
 #include "smm/parser/smm_parser_Source.hpp"
 #include "smm/parser/smm_parser_Vector.hpp"
 
-#endif /*SMM_PARSER_HPP_*/
+

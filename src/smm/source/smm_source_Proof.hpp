@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef SMM_SOURCE_PROOF_HPP_
-#define SMM_SOURCE_PROOF_HPP_
+#pragma once
 
 #include "smm/interface/smm_interface.hpp"
 #include "smm/source/smm_source_Reference.hpp"
@@ -64,4 +63,4 @@ private :
 }
 }
 
-#endif /*SMM_SOURCE_PROOF_HPP_*/
+

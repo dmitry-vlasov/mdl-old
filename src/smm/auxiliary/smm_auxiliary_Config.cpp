@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef SMM_AUXILIARY_CONFIG_CPP_
-#define SMM_AUXILIARY_CONFIG_CPP_
+#pragma once
 
 #include "smm/auxiliary/smm_auxiliary_Config.hpp"
 
@@ -212,4 +211,4 @@ using std :: endl;
 }
 }
 
-#endif /*SMM_AUXILIARY_CONFIG_CPP_*/
+

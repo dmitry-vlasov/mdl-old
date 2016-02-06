@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef SMM_PARSER_ASSERTION_CPP_
-#define SMM_PARSER_ASSERTION_CPP_
+#pragma once
 
 #include "smm/lexer/smm_lexer.hpp"
 #include "smm/source/smm_source.hpp"
@@ -161,4 +160,4 @@ using manipulator :: endLine;
 }
 }
 
-#endif /*SMM_PARSER_ASSERTION_CPP_*/
+

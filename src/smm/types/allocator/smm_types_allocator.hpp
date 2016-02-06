@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef SMM_TYPES_ALLOCATOR_HPP_
-#define SMM_TYPES_ALLOCATOR_HPP_
+#pragma once
 
 namespace smm {
 namespace allocator {
@@ -33,4 +32,4 @@ namespace memory {
 	};
 }
 
-#endif /*SMM_TYPES_ALLOCATOR_HPP_*/
+

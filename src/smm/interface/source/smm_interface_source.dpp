@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef SMM_INTERFACE_SOURCE_DPP_
-#define SMM_INTERFACE_SOURCE_DPP_
+#pragma once
 
 namespace smm {
 namespace interface {
@@ -42,4 +41,4 @@ namespace  vector {
 }
 }
 
-#endif /*SMM_INTERFACE_SOURCE_DPP_*/
+

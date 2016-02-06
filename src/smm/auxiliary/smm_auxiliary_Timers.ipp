@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef SMM_AUXILIARY_TIMERS_IPP_
-#define SMM_AUXILIARY_TIMERS_IPP_
+#pragma once
 
 namespace smm {
 namespace auxiliary {
@@ -65,4 +64,4 @@ namespace auxiliary {
 }
 }
 
-#endif /*SMM_AUXILIARY_TIMERS_IPP_*/
+

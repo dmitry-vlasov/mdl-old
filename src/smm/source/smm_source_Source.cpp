@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef SMM_SOURCE_SOURCE_CPP_
-#define SMM_SOURCE_SOURCE_CPP_
+#pragma once
 
 #include "smm/auxiliary/smm_auxiliary.hpp"
 #include "smm/source/smm_source.hpp"
@@ -85,4 +84,4 @@ namespace source {
 }
 }
 
-#endif /*SMM_SOURCE_SOURCE_CPP_*/
+

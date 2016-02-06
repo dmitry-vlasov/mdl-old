@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef SMM_SOURCE_HPP_
-#define SMM_SOURCE_HPP_
+#pragma once
 
 #include "smm/source/smm_source_Assertion.hpp"
 #include "smm/source/smm_source_Constants.hpp"
@@ -20,4 +19,4 @@
 #include "smm/source/smm_source_Reference.hpp"
 #include "smm/source/smm_source_Source.hpp"
 
-#endif /*SMM_SOURCE_HPP_*/
+

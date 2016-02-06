@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef SMM_TYPES_VECTOR_HPP_
-#define SMM_TYPES_VECTOR_HPP_
+#pragma once
 
 namespace smm {
 
@@ -25,4 +24,4 @@ namespace vector {
 }
 }
 
-#endif /*SMM_TYPES_VECTOR_HPP_*/
+

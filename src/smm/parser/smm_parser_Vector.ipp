@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef SMM_PARSER_VECTOR_IPP_
-#define SMM_PARSER_VECTOR_IPP_
+#pragma once
 
 #include "smm/lexer/smm_lexer.hpp"
 #include "smm/auxiliary/smm_auxiliary.hpp"
@@ -78,4 +77,4 @@ namespace parser {
 }
 }
 
-#endif /*SMM_PARSER_VECTOR_IPP_*/
+

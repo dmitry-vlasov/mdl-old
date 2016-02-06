@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef SMM_SOURCE_REFERENCE_IPP_
-#define SMM_SOURCE_REFERENCE_IPP_
+#pragma once
 
 namespace smm {
 namespace source {
@@ -92,4 +91,4 @@ namespace source {
 }
 }
 
-#endif /*SMM_SOURCE_REFERENCE_IPP_*/
+

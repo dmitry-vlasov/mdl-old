@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef SMM_EXPRESSION_SUBSTITUTION_HPP_
-#define SMM_EXPRESSION_SUBSTITUTION_HPP_
+#pragma once
 
 #include "smm/expression/smm_expression_Expression.hpp"
 
@@ -88,4 +87,4 @@ private :
 
 #include "smm/expression/smm_expression_Substitution.ipp"
 
-#endif /* SMM_EXPRESSION_SUBSTITUTION_HPP_ */
+

@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef SMM_PARSER_DPP_
-#define SMM_PARSER_DPP_
+#pragma once
 
 #include "smm/lexer/smm_lexer.hpp"
 
@@ -29,4 +28,4 @@ namespace parser {
 }
 }
 
-#endif /*SMM_PARSER_DPP_*/
+

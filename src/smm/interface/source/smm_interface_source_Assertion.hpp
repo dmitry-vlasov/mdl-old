@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef SMM_INTERFACE_SOURCE_ASSERTION_HPP_
-#define SMM_INTERFACE_SOURCE_ASSERTION_HPP_
+#pragma once
 
 #include "smm/interface/object/smm_interface_object.hpp"
 #include "smm/expression/smm_expression.hpp"
@@ -46,4 +45,4 @@ public :
 }
 }
 
-#endif /*SMM_INTERFACE_SOURCE_ASSERTION_HPP_*/
+

@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef SMM_HPP_
-#define SMM_HPP_
+#pragma once
 
 #include "smm/auxiliary/smm_auxiliary.hpp"
 #include "smm/expression/smm_expression.hpp"
@@ -22,4 +21,4 @@
 #include "smm/source/smm_source.hpp"
 #include "smm/types/smm_types.hpp"
 
-#endif /*SMM_HPP_*/
+
