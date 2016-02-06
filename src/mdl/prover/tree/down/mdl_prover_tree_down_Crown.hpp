@@ -103,6 +103,8 @@ private :
 		bool& hintHasGrown
 	);
 
+	value :: Integer getHintIndex();
+
 	index :: Step getMinHeight() const;
 
 	template<class>

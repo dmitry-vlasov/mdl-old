@@ -180,6 +180,95 @@ using manipulator :: iterate;
 			return result;
 		}
 	}
+	/*
+	template<class A>
+	bool
+	Crown<A> :: growStep (index :: Step& minHeight)
+	{
+		if (Config :: growDownMode() == Config :: GROW_DOWN_DETERMINED) {
+			// At first, provide growth to the hint
+			const value :: Integer hintIndex = getHintIndex();
+			if (hintIndex == value :: undefined :: INTEGER) {
+				// No hints are available, so statement must be proved
+				assert (mainTree_->isProved());
+				return false;
+			} else {
+				Evidence_* evidence = evidences_.getValue (hintIndex);
+				if (evidence->getMinHeight() <= minHeight) {
+					evidences_.remove (hintIndex);
+					if (!evidence->growDown()) {
+						throw new Exception("HINT EVIDENCE MUST GROW DOWN !!!");
+					}
+					if (minHeight == index :: undefined :: STEP) {
+						minHeight = evidence->getMinHeight();
+					}
+				}
+			}
+		}
+		value :: Integer counter = 0;
+		for (value :: Integer i = 0; i < evidences_.getSize(); ++ i) {
+			Evidence_* evidence = evidences_.getValue (i);
+			if (evidence->getMinHeight() <= minHeight) {
+				evidences_.remove (i);
+				if (evidence->growDown()) {
+					//if (minHeight == index :: undefined :: STEP) {
+						minHeight = evidence->getMinHeight();
+					//}
+					++ counter;
+					if (counter >= Config :: growDownLimit()) {
+						return true;
+					}
+				} else {
+					evidences_.add (evidence);
+				}
+			} else {
+				break;
+			}
+		}
+		return false;
+	}
+
+	template<class A>
+	bool
+	Crown<A> :: mayGrowDown
+	(
+		const Evidence_* evidence,
+		value :: Integer& counter,
+		bool& hintHasGrown
+	)
+	{
+		if (Config :: growDownMode() == Config :: GROW_DOWN_DETERMINED) {
+			if (evidence->isHint()) {
+				hintHasGrown = true;
+				++ counter;
+				return true;
+			}
+			if (counter + (hintHasGrown ? 0 : 1) < Config :: growDownLimit()) {
+				++ counter;
+				return true;
+			} else {
+				return false;
+			}
+		} else {
+			return true;
+		}
+	}
+	*/
+	template<class A>
+	value :: Integer
+	Crown<A> :: getHintIndex()
+	{
+		for (value :: Integer i = 0; i < evidences_.getSize(); ++ i) {
+			Evidence_* evidence = evidences_.getValue (i);
+			if (evidence->isHint()) {
+				return i;
+			}
+		}
+		return value :: undefined :: INTEGER;
+	}
+
+
+
 	template<class A>
 	bool
 	Crown<A> :: growStep (index :: Step& minHeight)
@@ -233,6 +322,7 @@ using manipulator :: iterate;
 			return true;
 		}
 	}
+
 
 	template<class A>
 	index :: Step

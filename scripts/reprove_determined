@@ -54,12 +54,12 @@ echo;
 
 ${bin_dir}/mdl \
 	-w -v \
-	--stack-volume 128m --time-limit 30m \
+	--stack-volume 128m --time-limit 2m \
 	--prove-in-heap \
 	--threads 1 \
 	--reprove \
 	--grow-up-determined \
-	--grow-up-limit 1 \
+	--grow-up-limit 3 \
 	--grow-down-determined \
 	--grow-down-limit 3 \
 	--mem-balance \
