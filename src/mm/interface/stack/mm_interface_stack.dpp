@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_INTERFACE_STACK_DPP_
-#define MM_INTERFACE_STACK_DPP_
+#pragma once
 
 namespace mm {
 namespace interface {
@@ -38,4 +37,4 @@ namespace stack {
 	using stack :: Stack;
 }
 
-#endif /* MM_INTERFACE_STACK_DPP_ */
+

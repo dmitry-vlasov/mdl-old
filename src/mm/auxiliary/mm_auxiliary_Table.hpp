@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_AUXILIARY_TABLE_HPP_
-#define MM_AUXILIARY_TABLE_HPP_
+#pragma once
 
 #include "mm/auxiliary/mm_auxiliary_Name.hpp"
 #include "mm/auxiliary/mm_auxiliary_Symbol.hpp"
@@ -71,4 +70,4 @@ private :
 
 #include "mm/auxiliary/mm_auxiliary_Table.ipp"
 
-#endif /*MM_AUXILIARY_TABLE_HPP_*/
+

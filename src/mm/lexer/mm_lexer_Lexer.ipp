@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_LEXER_LEXER_IPP_
-#define MM_LEXER_LEXER_IPP_
+#pragma once
 
 #include "auxiliary/mm_auxiliary.hpp"
 
@@ -143,4 +142,4 @@ using manipulator :: tab;
 }
 }
 
-#endif /*MM_LEXER_LEXER_IPP_*/
+

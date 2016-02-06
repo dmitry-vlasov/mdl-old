@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_CPP_
-#define MM_CPP_
+#pragma once
 
 #include "mm/ast/mm_ast.cpp"
 #include "mm/auxiliary/mm_auxiliary.cpp"
@@ -24,4 +23,4 @@
 
 #include "mm/mm_Mm.cpp"
 
-#endif /* MM_HPP_ */
+

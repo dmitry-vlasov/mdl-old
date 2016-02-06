@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_CUT_LEXER_WHITESPACE_SCANER_CPP_
-#define MM_CUT_LEXER_WHITESPACE_SCANER_CPP_
+#pragma once
 
 #include "mm/cut/lexer/mm_cut_lexer.hpp"
 
@@ -64,4 +63,4 @@ namespace lexer {
 }
 }
 
-#endif /*MM_CUT_LEXER_WHITESPACE_SCANER_CPP_*/
+

@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_TYPES_EXCEPTION_HPP_
-#define MM_TYPES_EXCEPTION_HPP_
+#pragma once
 
 namespace mm {
 namespace exception {
@@ -20,4 +19,4 @@ namespace exception {
 }
 }
 
-#endif /*MM_TYPES_EXCEPTION_HPP_*/
+

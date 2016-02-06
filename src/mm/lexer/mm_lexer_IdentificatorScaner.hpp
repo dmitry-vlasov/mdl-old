@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_LEXER_IDENTIFICATOR_SCANER_HPP_
-#define MM_LEXER_IDENTIFICATOR_SCANER_HPP_
+#pragma once
 
 #include "lexer/mm_lexer.dpp"
 #include "lexer/mm_lexer_Token.hpp"
@@ -41,4 +40,4 @@ public :
 }
 }
 
-#endif /*MM_LEXER_IDENTIFICATOR_SCANER_HPP_*/
+

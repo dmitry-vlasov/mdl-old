@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_INTERFACE_SOURCE_DPP_
-#define MM_INTERFACE_SOURCE_DPP_
+#pragma once
 
 namespace mm {
 namespace interface {
@@ -65,4 +64,4 @@ namespace source {
 }
 }
 
-#endif /* MM_INTERFACE_SOURCE_DPP_ */
+

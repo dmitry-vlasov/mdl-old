@@ -10,9 +10,8 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_INTERFACE_STACK_HPP_
-#define MM_INTERFACE_STACK_HPP_
+#pragma once
 
 #include "interface/stack/mm_interface_stack_Line.hpp"
 
-#endif /* MM_INTERFACE_STACK_HPP_ */
+

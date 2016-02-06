@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_AST_TARGET_HEADER_PROPOSITION_DPP_
-#define MM_AST_TARGET_HEADER_PROPOSITION_DPP_
+#pragma once
 
 namespace mm {
 namespace ast {
@@ -34,4 +33,4 @@ namespace proposition {
 }
 }
 
-#endif /* MM_AST_TARGET_HEADER_PROPOSITION_DPP_ */
+

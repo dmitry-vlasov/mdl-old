@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_EXPRESSION_SUBSTITUTION_CPP_
-#define MM_EXPRESSION_SUBSTITUTION_CPP_
+#pragma once
 
 #include "expression/mm_expression_Substitution.hpp"
 
@@ -172,4 +171,4 @@ using manipulator :: space;
 }
 }
 
-#endif /* MM_EXPRESSION_SUBSTITUTION_CPP_ */
+

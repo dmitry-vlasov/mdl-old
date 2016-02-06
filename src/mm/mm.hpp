@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_HPP_
-#define MM_HPP_
+#pragma once
 
 #include "mm/types/mm_types.hpp"
 
@@ -26,4 +25,4 @@
 
 #include "mm/mm_Mm.hpp"
 
-#endif /* MM_HPP_ */
+

@@ -10,9 +10,8 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_CUT_INTERFACE_HPP_
-#define MM_CUT_INTERFACE_HPP_
+#pragma once
 
 #include "mm/cut/interface/mm_cut_interface_Includable.hpp"
 
-#endif /* MM_CUT_INTERFACE_HPP_ */
+

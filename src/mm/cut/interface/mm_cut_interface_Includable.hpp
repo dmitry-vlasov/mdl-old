@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_CUT_INTERFACE_INCLUDABLE_HPP_
-#define MM_CUT_INTERFACE_INCLUDABLE_HPP_
+#pragma once
 
 #include "mm/interface/mm_interface.hpp"
 
@@ -30,4 +29,4 @@ public :
 }
 }
 
-#endif /* MM_CUT_INTERFACE_INCLUDABLE_HPP_ */
+

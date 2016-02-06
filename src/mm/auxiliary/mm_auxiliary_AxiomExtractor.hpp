@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_AUXILIARY_AXIOM_EXTRACTOR_HPP_
-#define MM_AUXILIARY_AXIOM_EXTRACTOR_HPP_
+#pragma once
 
 #include "types/mm_types.hpp"
 #include "auxiliary/mm_auxiliary.dpp"
@@ -57,4 +56,4 @@ private :
 }
 }
 
-#endif /*MM_AUXILIARY_AXIOM_EXTRACTOR_HPP_*/
+

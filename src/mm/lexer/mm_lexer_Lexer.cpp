@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_LEXER_LEXER_CPP_
-#define MM_LEXER_LEXER_CPP_
+#pragma once
 
 #include "lexer/mm_lexer.hpp"
 
@@ -48,4 +47,4 @@ using manipulator :: endLine;
 }
 }
 
-#endif /*MM_LEXER_LEXER_CPP_*/
+

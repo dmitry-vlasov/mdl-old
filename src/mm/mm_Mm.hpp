@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_MM_HPP_
-#define MM_MM_HPP_
+#pragma once
 
 #include "parser/mm_parser.hpp"
 
@@ -88,4 +87,4 @@ private :
 
 }
 
-#endif /*MM_MM_HPP_*/
+

@@ -10,12 +10,11 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_AST_TARGET_STEP_HPP_
-#define MM_AST_TARGET_STEP_HPP_
+#pragma once
 
 #include "ast/target/step/mm_ast_target_step_Assertion.hpp"
 #include "ast/target/step/mm_ast_target_step_Declaration.hpp"
 #include "ast/target/step/mm_ast_target_step_Hypothesis.hpp"
 #include "ast/target/step/mm_ast_target_step_Qed.hpp"
 
-#endif /* MM_AST_TARGET_STEP_HPP_ */
+

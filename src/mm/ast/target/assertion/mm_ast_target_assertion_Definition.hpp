@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_AST_TARGET_ASSERTION_DEFINITION_HPP_
-#define MM_AST_TARGET_ASSERTION_DEFINITION_HPP_
+#pragma once
 
 #include "ast/target/assertion/mm_ast_target_assertion_Statement.hpp"
 
@@ -66,4 +65,4 @@ private :
 }
 }
 
-#endif /*MM_AST_TARGET_ASSERTION_DEFINITION_HPP_*/
+

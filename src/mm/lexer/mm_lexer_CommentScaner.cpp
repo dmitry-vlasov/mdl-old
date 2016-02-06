@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_LEXER_COMMENT_SCANER_CPP_
-#define MM_LEXER_COMMENT_SCANER_CPP_
+#pragma once
 
 #include "auxiliary/mm_auxiliary.hpp"
 #include "lexer/mm_lexer.hpp"
@@ -85,4 +84,4 @@ namespace lexer {
 }
 }
 
-#endif /*MM_LEXER_COMMENT_SCANER_CPP_*/
+

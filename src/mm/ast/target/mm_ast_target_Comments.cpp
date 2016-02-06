@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_AST_TARGET_COMMENTS_CPP_
-#define MM_AST_TARGET_COMMENTS_CPP_
+#pragma once
 
 #include "auxiliary/mm_auxiliary.hpp"
 #include "mdl/lexer/mdl_lexer_Token.hpp"
@@ -87,4 +86,4 @@ using manipulator :: indent;
 }
 }
 
-#endif /* MM_AST_TARGET_COMMENTS_CPP_ */
+

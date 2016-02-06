@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_INTERFACE_OBJECT_OBJECT_CPP_
-#define MM_INTERFACE_OBJECT_OBJECT_CPP_
+#pragma once
 
 #include "interface/object/mm_interface_object_Object.hpp"
 
@@ -86,4 +85,4 @@ namespace object {
 }
 }
 
-#endif /*MM_INTERFACE_OBJECT_OBJECT_CPP_*/
+

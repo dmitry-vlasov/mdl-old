@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_CUT_SOURCE_CPP_
-#define MM_CUT_SOURCE_CPP_
+#pragma once
 
 #include "mm/cut/source/mm_cut_source_Chapter.cpp"
 #include "mm/cut/source/mm_cut_source_Content.cpp"
@@ -19,4 +18,4 @@
 #include "mm/cut/source/mm_cut_source_Section.cpp"
 #include "mm/cut/source/mm_cut_source_Source.cpp"
 
-#endif /*MM_CUT_SOURCE_CPP_*/
+

@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_CUT_LEXER_LEXER_CPP_
-#define MM_CUT_LEXER_LEXER_CPP_
+#pragma once
 
 #include "mm/cut/lexer/mm_cut_lexer.hpp"
 
@@ -103,4 +102,4 @@ using manipulator :: endLine;
 }
 }
 
-#endif /*MM_CUT_LEXER_LEXER_CPP_*/
+

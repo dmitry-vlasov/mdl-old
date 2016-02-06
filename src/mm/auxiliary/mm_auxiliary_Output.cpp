@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_AUXILIARY_OUTPUT_CPP_
-#define MM_AUXILIARY_OUTPUT_CPP_
+#pragma once
 
 #include "interface/mm_interface.hpp"
 #include "auxiliary/mm_auxiliary.hpp"
@@ -99,4 +98,4 @@ using manipulator :: endLine;
 }
 }
 
-#endif /*MM_AUXILIARY_OUTPUT_CPP_*/
+

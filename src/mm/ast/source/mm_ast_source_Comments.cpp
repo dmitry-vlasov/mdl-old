@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_AST_SOURCE_COMMENTS_CPP_
-#define MM_AST_SOURCE_COMMENTS_CPP_
+#pragma once
 
 #include "auxiliary/mm_auxiliary.hpp"
 #include "lexer/mm_lexer.hpp"
@@ -137,4 +136,4 @@ using manipulator :: tab;
 }
 }
 
-#endif /* MM_AST_SOURCE_COMMENTS_CPP_ */
+

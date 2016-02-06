@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_AUXILIARY_OUTPUT_HPP_
-#define MM_AUXILIARY_OUTPUT_HPP_
+#pragma once
 
 #include "auxiliary/mm_auxiliary.dpp"
 #include "interface/object/mm_interface_object_Object.hpp"
@@ -54,4 +53,4 @@ private :
 }
 }
 
-#endif /*MM_AUXILIARY_OUTPUT_HPP_*/
+

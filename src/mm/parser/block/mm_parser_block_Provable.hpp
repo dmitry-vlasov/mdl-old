@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_PARSER_BLOCK_PROVABLE_HPP_
-#define MM_PARSER_BLOCK_PROVABLE_HPP_
+#pragma once
 
 #include "parser/block/mm_parser_block_Assertion.hpp"
 
@@ -46,4 +45,4 @@ private :
 }
 }
 
-#endif /*MM_PARSER_BLOCK_PROVABLE_HPP_*/
+

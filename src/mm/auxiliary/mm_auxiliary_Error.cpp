@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_AUXILIARY_ERROR_CPP_
-#define MM_AUXILIARY_ERROR_CPP_
+#pragma once
 
 #include "auxiliary/mm_auxiliary_Config.hpp"
 #include "auxiliary/mm_auxiliary_Error.hpp"
@@ -113,5 +112,5 @@ namespace auxiliary {
 }
 }
 
-#endif /* MM_AUXILIARY_ERROR_CPP_ */
+
 

@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_AST_TARGET_DPP_
-#define MM_AST_TARGET_DPP_
+#pragma once
 
 #include "ast/target/assertion/mm_ast_target_assertion.dpp"
 #include "ast/target/header/mm_ast_target_header.dpp"
@@ -33,4 +32,4 @@ namespace target {
 }
 }
 
-#endif /* MM_AST_TARGET_DPP_ */
+

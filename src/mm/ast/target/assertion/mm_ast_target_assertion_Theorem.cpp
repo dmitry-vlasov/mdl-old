@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_AST_TARGET_ASSERTION_THEOREM_CPP_
-#define MM_AST_TARGET_ASSERTION_THEOREM_CPP_
+#pragma once
 
 #include "mdl/lexer/mdl_lexer_Token.hpp"
 #include "auxiliary/mm_auxiliary.hpp"
@@ -115,4 +114,4 @@ using manipulator :: tab;
 }
 }
 
-#endif /*MM_AST_TARGET_ASSERTION_THEOREM_CPP_*/
+

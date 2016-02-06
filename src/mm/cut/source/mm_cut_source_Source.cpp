@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_CUT_SOURCE_SOURCE_CPP_
-#define MM_CUT_SOURCE_SOURCE_CPP_
+#pragma once
 
 #include "mm/auxiliary/mm_auxiliary.hpp"
 #include "mm/cut/source/mm_cut_source.hpp"
@@ -170,4 +169,4 @@ namespace source {
 }
 }
 
-#endif /*MM_CUT_SOURCE_SOURCE_CPP_*/
+

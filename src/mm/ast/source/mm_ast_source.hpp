@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_AST_SOURCE_HPP_
-#define MM_AST_SOURCE_HPP_
+#pragma once
 
 #include "ast/source/hypothesis/mm_ast_source_hypothesis.hpp"
 #include "ast/source/reference/mm_ast_source_reference.hpp"
@@ -28,4 +27,4 @@
 #include "ast/source/mm_ast_source_Source.hpp"
 #include "ast/source/mm_ast_source_Variables.hpp"
 
-#endif /* MM_AST_SOURCE_HPP_ */
+

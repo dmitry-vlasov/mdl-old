@@ -10,7 +10,6 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_INTERFACE_SOURCE_CPP_
-#define MM_INTERFACE_SOURCE_CPP_
+#pragma once
 
-#endif /* MM_INTERFACE_SOURCE_CPP_ */
+

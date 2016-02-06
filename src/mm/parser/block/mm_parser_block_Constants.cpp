@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_PARSER_BLOCK_CONSTANTS_CPP_
-#define MM_PARSER_BLOCK_CONSTANTS_CPP_
+#pragma once
 
 #include "mm/lexer/mm_lexer.hpp"
 #include "mm/auxiliary/mm_auxiliary.hpp"
@@ -77,4 +76,4 @@ namespace block {
 }
 }
 
-#endif /*MM_PARSER_BLOCK_CONSTANTS_CPP_*/
+

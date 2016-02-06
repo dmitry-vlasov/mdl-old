@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_CUT_SOURCE_DPP_
-#define MM_CUT_SOURCE_DPP_
+#pragma once
 
 #include "mm/types/mm_types.hpp"
 
@@ -29,4 +28,4 @@ namespace source {
 }
 }
 
-#endif /*MM_CUT_SOURCE_DPP_*/
+

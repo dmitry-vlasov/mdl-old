@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_INTERFACE_SOURCE_HPP_
-#define MM_INTERFACE_SOURCE_HPP_
+#pragma once
 
 #include "interface/source/mm_interface_source_Assertion.hpp"
 #include "interface/source/mm_interface_source_Block.hpp"
@@ -25,4 +24,4 @@
 #include "interface/source/mm_interface_source_Source.hpp"
 #include "interface/source/mm_interface_source_Variables.hpp"
 
-#endif /* MM_INTERFACE_SOURCE_HPP_ */
+

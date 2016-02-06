@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_CUT_LEXER_TOKEN_IPP_
-#define MM_CUT_LEXER_TOKEN_IPP_
+#pragma once
 
 namespace mm {
 namespace cut {
@@ -52,4 +51,4 @@ namespace lexer {
 }
 }
 
-#endif /*MM_CUT_LEXER_TOKEN_IPP_*/
+

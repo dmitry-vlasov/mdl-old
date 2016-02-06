@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_AST_TARGET_HEADER_HYPOTHESIS_HPP_
-#define MM_AST_TARGET_HEADER_HYPOTHESIS_HPP_
+#pragma once
 
 #include "ast/target/header/mm_ast_target_header_Line.hpp"
 
@@ -51,4 +50,4 @@ public :
 }
 }
 
-#endif /* MM_AST_TARGET_HEADER_HYPOTHESIS_HPP_ */
+

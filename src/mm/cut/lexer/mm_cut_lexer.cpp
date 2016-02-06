@@ -10,11 +10,10 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_CUT_LEXER_CPP_
-#define MM_CUT_LEXER_CPP_
+#pragma once
 
 #include "mm/cut/lexer/mm_cut_lexer_Lexer.cpp"
 #include "mm/cut/lexer/mm_cut_lexer_Token.cpp"
 #include "mm/cut/lexer/mm_cut_lexer_WhitespaceScaner.cpp"
 
-#endif /*MM_CUT_LEXER_CPP_*/
+

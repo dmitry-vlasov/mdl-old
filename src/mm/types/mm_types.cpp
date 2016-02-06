@@ -10,10 +10,9 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_TYPES_CPP_
-#define MM_TYPES_CPP_
+#pragma once
 
 #include "mm/types/mm_types.hpp"
 #include <nsgl.cpp>
 
-#endif /*MM_TYPES_CPP_*/
+

@@ -10,11 +10,10 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_EXPRESSION_HPP_
-#define MM_EXPRESSION_HPP_
+#pragma once
 
 #include "expression/mm_expression_Expression.hpp"
 #include "expression/mm_expression_Substitution.hpp"
 #include "expression/mm_expression_Symbol.hpp"
 
-#endif /* MM_EXPRESSION_HPP_ */
+

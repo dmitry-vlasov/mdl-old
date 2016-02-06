@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_AST_TARGET_PROOF_CPP_
-#define MM_AST_TARGET_PROOF_CPP_
+#pragma once
 
 #include "mdl/lexer/mdl_lexer_Token.hpp"
 #include "ast/mm_ast.hpp"
@@ -122,4 +121,4 @@ namespace target {
 }
 }
 
-#endif /* MM_AST_TARGET_PROOF_CPP_ */
+

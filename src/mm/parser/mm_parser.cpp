@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_PARSER_CPP__
-#define MM_PARSER_CPP__
+#pragma once
 
 #include "parser/block/mm_parser_block.cpp"
 
@@ -19,4 +18,4 @@
 #include "parser/mm_parser_Include.cpp"
 #include "parser/mm_parser_Source.cpp"
 
-#endif /* MM_PARSER_CPP__ */
+

@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_INTERFACE_OBJECT_WRITABLE_CPP_
-#define MM_INTERFACE_OBJECT_WRITABLE_CPP_
+#pragma once
 
 #include "interface/object/mm_interface_object_Writable.hpp"
 
@@ -42,4 +41,4 @@ namespace object {
 }
 }
 
-#endif /*MM_INTERFACE_OBJECT_WRITABLE_CPP_*/
+

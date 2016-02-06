@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_PARSER_BLOCK_AXIOMATIC_HPP_
-#define MM_PARSER_BLOCK_AXIOMATIC_HPP_
+#pragma once
 
 #include "parser/block/mm_parser_block_Assertion.hpp"
 
@@ -39,4 +38,4 @@ public :
 }
 }
 
-#endif /*MM_PARSER_BLOCK_AXIOMATIC_HPP_*/
+

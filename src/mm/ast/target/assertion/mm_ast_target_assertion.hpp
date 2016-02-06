@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_AST_TARGET_ASSERTION_HPP_
-#define MM_AST_TARGET_ASSERTION_HPP_
+#pragma once
 
 #include "ast/target/assertion/mm_ast_target_assertion_Assertion.hpp"
 #include "ast/target/assertion/mm_ast_target_assertion_Axiom.hpp"
@@ -21,4 +20,4 @@
 #include "ast/target/assertion/mm_ast_target_assertion_Super.hpp"
 #include "ast/target/assertion/mm_ast_target_assertion_Theorem.hpp"
 
-#endif /* MM_AST_TARGET_ASSERTION_HPP_ */
+

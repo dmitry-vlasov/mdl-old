@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_PARSER_BLOCK_PROVABLE_CPP_
-#define MM_PARSER_BLOCK_PROVABLE_CPP_
+#pragma once
 
 #include "ast/mm_ast.hpp"
 #include "parser/mm_parser.hpp"
@@ -76,4 +75,4 @@ namespace block {
 }
 }
 
-#endif /*MM_PARSER_BLOCK_PROVABLE_CPP_*/
+

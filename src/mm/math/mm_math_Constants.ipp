@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_MATH_CONSTANTS_IPP_
-#define MM_MATH_CONSTANTS_IPP_
+#pragma once
 
 namespace mm {
 namespace math {
@@ -64,4 +63,4 @@ namespace math {
 }
 }
 
-#endif /*MM_MATH_CONSTANTS_IPP_*/
+

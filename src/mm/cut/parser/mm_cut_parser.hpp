@@ -10,11 +10,10 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_CUT_PARSER_HPP_
-#define MM_CUT_PARSER_HPP_
+#pragma once
 
 #include "mm/cut/parser/mm_cut_parser_Chapter.hpp"
 #include "mm/cut/parser/mm_cut_parser_Section.hpp"
 #include "mm/cut/parser/mm_cut_parser_Source.hpp"
 
-#endif /*MM_CUT_PARSER_HPP_*/
+

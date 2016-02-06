@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_MATH_CONSTANTS_HPP_
-#define MM_MATH_CONSTANTS_HPP_
+#pragma once
 
 #include "interface/mm_interface.hpp"
 #include "math/mm_math.dpp"
@@ -92,4 +91,4 @@ private :
 
 #include "math/mm_math_Constants.ipp"
 
-#endif /*MM_MATH_CONSTANTS_HPP_*/
+

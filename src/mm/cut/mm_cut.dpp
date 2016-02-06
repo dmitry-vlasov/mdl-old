@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_CUT_DPP_
-#define MM_CUT_DPP_
+#pragma once
 
 #include "mm/cut/auxiliary/mm_cut_auxiliary.dpp"
 #include "mm/cut/interface/mm_cut_interface.dpp"
@@ -19,4 +18,4 @@
 #include "mm/cut/parser/mm_cut_parser.dpp"
 #include "mm/cut/source/mm_cut_source.dpp"
 
-#endif /* MM_CUT_DPP_ */
+

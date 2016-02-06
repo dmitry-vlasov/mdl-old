@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_CUT_LEXER_LEXER_HPP_
-#define MM_CUT_LEXER_LEXER_HPP_
+#pragma once
 
 #include "mm/cut/auxiliary/mm_cut_auxiliary.hpp"
 #include "mm/cut/lexer/mm_cut_lexer_Token.hpp"
@@ -88,4 +87,4 @@ private :
 
 #include "mm/cut/lexer/mm_cut_lexer_Lexer.ipp"
 
-#endif /*MM_CUT_LEXER_LEXER_HPP_*/
+

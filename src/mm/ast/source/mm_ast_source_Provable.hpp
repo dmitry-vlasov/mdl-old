@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_AST_SOURCE_PROVABLE_HPP_
-#define MM_AST_SOURCE_PROVABLE_HPP_
+#pragma once
 
 #include "ast/source/mm_ast_source_Assertion.hpp"
 
@@ -82,4 +81,4 @@ private :
 }
 }
 
-#endif /*MM_AST_SOURCE_PROVABLE_HPP_*/
+

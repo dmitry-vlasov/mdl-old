@@ -10,10 +10,9 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_AST_SOURCE_HYPOTHESIS_HPP_
-#define MM_AST_SOURCE_HYPOTHESIS_HPP_
+#pragma once
 
 #include "ast/source/hypothesis/mm_ast_source_hypothesis_Essential.hpp"
 #include "ast/source/hypothesis/mm_ast_source_hypothesis_Floating.hpp"
 
-#endif /* MM_AST_SOURCE_HYPOTHESIS_HPP_ */
+

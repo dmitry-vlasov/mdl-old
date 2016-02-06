@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_AUXILIARY_CORRECTOR_CPP_
-#define MM_AUXILIARY_CORRECTOR_CPP_
+#pragma once
 
 #include <iostream>
 
@@ -57,4 +56,4 @@ namespace auxiliary {
 }
 }
 
-#endif /*MM_AUXILIARY_CORRECTOR_CPP_*/
+

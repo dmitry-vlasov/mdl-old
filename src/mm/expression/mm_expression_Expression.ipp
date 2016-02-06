@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_EXPRESSION_EXPRESSION_IPP_
-#define MM_EXPRESSION_EXPRESSION_IPP_
+#pragma once
 
 namespace mm {
 namespace expression {
@@ -134,4 +133,4 @@ namespace expression {
 }
 }
 
-#endif /* MM_EXPRESSION_EXPRESSION_IPP_ */
+

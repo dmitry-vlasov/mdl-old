@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_AST_SOURCE_COMMENTS_HPP_
-#define MM_AST_SOURCE_COMMENTS_HPP_
+#pragma once
 
 #include "mm/interface/mm_interface.hpp"
 #include "mm/lexer/mm_lexer.hpp"
@@ -71,4 +70,4 @@ private :
 }
 }
 
-#endif /* MM_AST_SOURCE_COMMENTS_HPP_ */
+

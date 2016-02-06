@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_CUT_AUXILIARY_ERROR_HPP_
-#define MM_CUT_AUXILIARY_ERROR_HPP_
+#pragma once
 
 #include "mm/types/mm_types.hpp"
 #include "mm/cut/auxiliary/mm_cut_auxiliary.dpp"
@@ -69,4 +68,4 @@ private :
 }
 }
 
-#endif /* MM_CUT_AUXILIARY_ERROR_HPP_ */
+

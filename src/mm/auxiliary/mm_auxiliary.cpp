@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_AUXILIARY_CPP_
-#define MM_AUXILIARY_CPP_
+#pragma once
 
 //#include "auxiliary/mm_auxiliary_AxiomExtractor.cpp"
 #include "mm/auxiliary/mm_auxiliary_Config.cpp"
@@ -24,4 +23,4 @@
 #include "mm/auxiliary/mm_auxiliary_Timers.cpp"
 #include "mm/auxiliary/mm_auxiliary_Volume.cpp"
 
-#endif /* MM_AUXILIARY_CPP_ */
+

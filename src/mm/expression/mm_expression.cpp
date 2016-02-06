@@ -10,10 +10,9 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_EXPRESSION_CPP_
-#define MM_EXPRESSION_CPP_
+#pragma once
 
 #include "expression/mm_expression_Expression.cpp"
 #include "expression/mm_expression_Substitution.cpp"
 
-#endif /* MM_EXPRESSION_CPP_ */
+

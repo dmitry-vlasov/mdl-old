@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_INTERFACE_OBJECT_WRITABLE_HPP_
-#define MM_INTERFACE_OBJECT_WRITABLE_HPP_
+#pragma once
 
 #include "interface/object/mm_interface_object_Object.hpp"
 
@@ -32,4 +31,4 @@ public :
 }
 }
 
-#endif /*MM_INTERFACE_OBJECT_WRITABLE_HPP_*/
+

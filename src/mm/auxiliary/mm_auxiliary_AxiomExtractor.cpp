@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_AUXILIARY_AXIOM_EXTRACTOR_CPP_
-#define MM_AUXILIARY_AXIOM_EXTRACTOR_CPP_
+#pragma once
 
 #include "lexer/mm_lexer.hpp"
 #include "auxiliary/mm_auxiliary.hpp"
@@ -209,4 +208,4 @@ using nstd :: endl;
 }
 }
 
-#endif /*MM_AUXILIARY_AXIOM_EXTRACTOR_CPP_*/
+

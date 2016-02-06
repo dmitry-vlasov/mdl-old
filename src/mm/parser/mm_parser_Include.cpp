@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_PARSER_INCLUDE_CPP_
-#define MM_PARSER_INCLUDE_CPP_
+#pragma once
 
 #include "lexer/mm_lexer.hpp"
 #include "ast/mm_ast.hpp"
@@ -65,4 +64,4 @@ namespace parser {
 }
 }
 
-#endif /*MM_PARSER_INCLUDE_CPP_*/
+

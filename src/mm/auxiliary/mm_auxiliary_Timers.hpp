@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_AUXILIARY_TIMERS_HPP_
-#define MM_AUXILIARY_TIMERS_HPP_
+#pragma once
 
 #include "interface/object/mm_interface_object_Object.hpp"
 #include "auxiliary/mm_auxiliary.dpp"
@@ -59,4 +58,4 @@ private :
 
 #include "auxiliary/mm_auxiliary_Timers.ipp"
 
-#endif /*MM_AUXILIARY_TIMERS_HPP_*/
+

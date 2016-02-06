@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_AUXILIARY_TIMERS_CPP_
-#define MM_AUXILIARY_TIMERS_CPP_
+#pragma once
 
 #include "auxiliary/mm_auxiliary.hpp"
 
@@ -59,4 +58,4 @@ using manipulator :: tab;
 }
 }
 
-#endif /*MM_AUXILIARY_TIMERS_CPP_*/
+

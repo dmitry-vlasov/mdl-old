@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_CUT_SOURCE_CONTENT_CPP_
-#define MM_CUT_SOURCE_CONTENT_CPP_
+#pragma once
 
 #include "mm/auxiliary/mm_auxiliary.hpp"
 #include "mm/cut/lexer/mm_cut_lexer.hpp"
@@ -71,5 +70,5 @@ using manipulator :: tab;
 }
 }
 
-#endif /*MM_CUT_SOURCE_CONTENT_CPP_*/
+
 

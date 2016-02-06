@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_CUT_PARSER_CHAPTER_CPP_
-#define MM_CUT_PARSER_CHAPTER_CPP_
+#pragma once
 
 #include "mm/cut/parser/mm_cut_parser.hpp"
 
@@ -71,4 +70,4 @@ namespace parser {
 }
 }
 
-#endif /*MM_CUT_PARSER_CHAPTER_CPP_*/
+

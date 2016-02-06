@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_AUXILIARY_CONFIG_CPP_
-#define MM_AUXILIARY_CONFIG_CPP_
+#pragma once
 
 #include "mdl/auxiliary/config/mdl_auxiliary_config.hpp"
 
@@ -473,4 +472,4 @@ using std :: endl;
 }
 }
 
-#endif /*MM_AUXILIARY_CONFIG_CPP_*/
+

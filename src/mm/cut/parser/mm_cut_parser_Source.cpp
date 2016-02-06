@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_CUT_PARSER_SOURCE_CPP_
-#define MM_CUT_PARSER_SOURCE_CPP_
+#pragma once
 
 #include "mm/cut/parser/mm_cut_parser.hpp"
 
@@ -166,4 +165,4 @@ using manipulator :: endLine;
 }
 }
 
-#endif /*MM_CUT_PARSER_SOURCE_CPP_*/
+

@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_AST_TARGET_HEADER_LINE_HPP_
-#define MM_AST_TARGET_HEADER_LINE_HPP_
+#pragma once
 
 #include "interface/mm_interface.hpp"
 
@@ -57,4 +56,4 @@ protected :
 }
 }
 
-#endif /* MM_AST_TARGET_HEADER_LINE_HPP_ */
+

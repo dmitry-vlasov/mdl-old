@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_AST_SOURCE_ASSERTION_CPP_
-#define MM_AST_SOURCE_ASSERTION_CPP_
+#pragma once
 
 #include "auxiliary/mm_auxiliary.hpp"
 #include "lexer/mm_lexer.hpp"
@@ -367,5 +366,5 @@ namespace source {
 }
 }
 
-#endif /*MM_AST_SOURCE_ASSERTION_CPP_*/
+
 

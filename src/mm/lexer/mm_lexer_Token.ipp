@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_LEXER_TOKEN_IPP_
-#define MM_LEXER_TOKEN_IPP_
+#pragma once
 
 namespace mm {
 namespace lexer {
@@ -54,4 +53,4 @@ namespace lexer {
 }
 }
 
-#endif /*MM_LEXER_TOKEN_IPP_*/
+

@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_CUT_LEXER_LEXER_IPP_
-#define MM_CUT_LEXER_LEXER_IPP_
+#pragma once
 
 namespace mm {
 namespace cut {
@@ -204,4 +203,4 @@ using manipulator :: tab;
 }
 }
 
-#endif /*MM_CUT_LEXER_LEXER_IPP_*/
+

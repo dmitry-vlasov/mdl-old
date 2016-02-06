@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_LEXER_LEXER_HPP_
-#define MM_LEXER_LEXER_HPP_
+#pragma once
 
 #include "lexer/mm_lexer_Scaner.hpp"
 
@@ -76,4 +75,4 @@ private :
 
 #include "lexer/mm_lexer_Lexer.ipp"
 
-#endif /*MM_LEXER_LEXER_HPP_*/
+

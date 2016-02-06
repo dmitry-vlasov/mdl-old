@@ -10,12 +10,11 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_AST_TARGET_HEADER_TERM_CPP_
-#define MM_AST_TARGET_HEADER_TERM_CPP_
+#pragma once
 
 #include "ast/target/header/term/mm_ast_target_header_term_Defiendum.cpp"
 #include "ast/target/header/term/mm_ast_target_header_term_Definiens.cpp"
 #include "ast/target/header/term/mm_ast_target_header_term_Rule.cpp"
 #include "ast/target/header/term/mm_ast_target_header_term_Term.cpp"
 
-#endif /* MM_AST_TARGET_HEADER_TERM_CPP_ */
+

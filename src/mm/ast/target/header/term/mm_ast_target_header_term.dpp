@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_AST_TARGET_HEADER_TERM_DPP_
-#define MM_AST_TARGET_HEADER_TERM_DPP_
+#pragma once
 
 namespace mm {
 namespace ast {
@@ -35,4 +34,4 @@ namespace term {
 }
 }
 
-#endif /* MM_AST_TARGET_HEADER_TERM_DPP_ */
+

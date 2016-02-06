@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_TYPES_LEXER_HPP_
-#define MM_TYPES_LEXER_HPP_
+#pragma once
 
 namespace mm {
 namespace lexer {
@@ -36,4 +35,4 @@ namespace lexer {
 	using lexer :: Location;
 }
 
-#endif /*MM_TYPES_LEXER_HPP_*/
+

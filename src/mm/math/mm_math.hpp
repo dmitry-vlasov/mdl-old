@@ -10,11 +10,10 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_MATH_HPP_
-#define MM_MATH_HPP_
+#pragma once
 
 #include "math/mm_math_Assertions.hpp"
 #include "math/mm_math_Constants.hpp"
 #include "math/mm_math_Math.hpp"
 
-#endif /* MM_MATH_HPP_ */
+

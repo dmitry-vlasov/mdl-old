@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_AST_TARGET_HEADER_LINE_CPP_
-#define MM_AST_TARGET_HEADER_LINE_CPP_
+#pragma once
 
 #include "math/mm_math.hpp"
 #include "ast/target/header/mm_ast_target_header_Line.hpp"
@@ -137,4 +136,4 @@ namespace header {
 }
 }
 
-#endif /* MM_AST_TARGET_HEADER_LINE_CPP_ */
+

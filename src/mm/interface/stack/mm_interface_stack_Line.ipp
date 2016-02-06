@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_INTERFACE_STACK_LINE_IPP_
-#define MM_INTERFACE_STACK_LINE_IPP_
+#pragma once
 
 namespace mm {
 namespace interface {
@@ -98,4 +97,4 @@ namespace stack {
 }
 }
 
-#endif /* MM_INTERFACE_STACK_LINE_IPP_ */
+

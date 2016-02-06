@@ -10,11 +10,10 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_MATH_CPP_
-#define MM_MATH_CPP_
+#pragma once
 
 #include "math/mm_math_Assertions.cpp"
 #include "math/mm_math_Constants.cpp"
 #include "math/mm_math_Math.cpp"
 
-#endif /* MM_MATH_CPP_ */
+

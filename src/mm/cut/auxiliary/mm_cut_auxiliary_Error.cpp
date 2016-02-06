@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_CUT_AUXILIARY_ERROR_CPP_
-#define MM_CUT_AUXILIARY_ERROR_CPP_
+#pragma once
 
 namespace mm {
 namespace cut {
@@ -112,5 +111,5 @@ namespace auxiliary {
 }
 }
 
-#endif /* MM_CUT_AUXILIARY_ERROR_CPP_ */
+
 

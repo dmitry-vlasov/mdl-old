@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_TYPES_VALUE_HPP_
-#define MM_TYPES_VALUE_HPP_
+#pragma once
 
 namespace mm {
 namespace value {
@@ -27,4 +26,4 @@ namespace value {
 
 #include "types/value/undefined/mm_types_value_undefined.hpp"
 
-#endif /*MM_TYPES_VALUE_HPP_*/
+

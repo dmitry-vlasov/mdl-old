@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_AUXILIARY_VOLUME_HPP_
-#define MM_AUXILIARY_VOLUME_HPP_
+#pragma once
 
 #include "interface/object/mm_interface_object_Object.hpp"
 #include "mm.dpp"
@@ -57,4 +56,4 @@ private :
 }
 }
 
-#endif /* MM_AUXILIARY_VOLUME_HPP_ */
+

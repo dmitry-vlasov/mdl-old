@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_INTERFACE_OBJECT_LABELED_HPP_
-#define MM_INTERFACE_OBJECT_LABELED_HPP_
+#pragma once
 
 #include "types/mm_types.hpp"
 
@@ -28,4 +27,4 @@ public :
 }
 }
 
-#endif /* MM_INTERFACE_OBJECT_LABELED_HPP_ */
+

@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_PARSER_BLOCK_AXIOMATIC_CPP_
-#define MM_PARSER_BLOCK_AXIOMATIC_CPP_
+#pragma once
 
 #include "lexer/mm_lexer.hpp"
 #include "ast/mm_ast.hpp"
@@ -70,4 +69,4 @@ namespace block {
 }
 }
 
-#endif /*MM_PARSER_BLOCK_AXIOMATIC_CPP_*/
+

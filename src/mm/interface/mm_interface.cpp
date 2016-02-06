@@ -10,12 +10,11 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_INTERFACE_CPP_
-#define MM_INTERFACE_CPP_
+#pragma once
 
 #include "interface/object/mm_interface_object.cpp"
 #include "interface/source/mm_interface_source.cpp"
 #include "interface/stack/mm_interface_stack.cpp"
 #include "interface/target/mm_interface_target.cpp"
 
-#endif /* MM_INTERFACE_CPP_ */
+

@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_AUXILIARY_VOLUME_CPP_
-#define MM_AUXILIARY_VOLUME_CPP_
+#pragma once
 
 #include "mm_Mm.hpp"
 
@@ -143,4 +142,4 @@ using manipulator :: tab;
 }
 }
 
-#endif /* MM_AUXILIARY_VOLUME_CPP_ */
+

@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_LEXER_WHITESPACE_SCANER_HPP_
-#define MM_LEXER_WHITESPACE_SCANER_HPP_
+#pragma once
 
 #include "lexer/mm_lexer_CommentScaner.hpp"
 
@@ -46,4 +45,4 @@ private :
 }
 }
 
-#endif /*MM_LEXER_WHITESPACE_SCANER_HPP_*/
+

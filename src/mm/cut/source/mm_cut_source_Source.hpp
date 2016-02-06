@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_CUT_SOURCE_SOURCE_HPP_
-#define MM_CUT_SOURCE_SOURCE_HPP_
+#pragma once
 
 #include "mm/interface/mm_interface.hpp"
 #include "mm/cut/source/mm_cut_source.dpp"
@@ -81,4 +80,4 @@ private :
 }
 }
 
-#endif /*MM_CUT_SOURCE_SOURCE_HPP_*/
+

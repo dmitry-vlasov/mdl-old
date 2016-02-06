@@ -10,10 +10,9 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_INTERFACE_OBJECT_CPP_
-#define MM_INTERFACE_OBJECT_CPP_
+#pragma once
 
 #include "interface/object/mm_interface_object_Object.cpp"
 #include "interface/object/mm_interface_object_Writable.cpp"
 
-#endif /* MM_INTERFACE_OBJECT_CPP_ */
+

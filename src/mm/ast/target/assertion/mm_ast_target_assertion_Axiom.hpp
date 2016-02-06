@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_AST_TARGET_ASSERTION_AXIOM_HPP_
-#define MM_AST_TARGET_ASSERTION_AXIOM_HPP_
+#pragma once
 
 #include "ast/target/assertion/mm_ast_target_assertion_Statement.hpp"
 
@@ -58,4 +57,4 @@ public :
 }
 }
 
-#endif /*MM_AST_TARGET_ASSERTION_AXIOM_HPP_*/
+

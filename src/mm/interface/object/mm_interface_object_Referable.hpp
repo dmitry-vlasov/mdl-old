@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_INTERFACE_OBJECT_REFERABLE_HPP_
-#define MM_INTERFACE_OBJECT_REFERABLE_HPP_
+#pragma once
 
 #include "interface/mm_interface.dpp"
 #include "interface/object/mm_interface_object_Targetive.hpp"
@@ -30,4 +29,4 @@ public :
 }
 }
 
-#endif /*MM_INTERFACE_OBJECT_REFERABLE_HPP_*/
+

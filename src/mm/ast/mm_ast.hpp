@@ -10,10 +10,9 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_AST_HPP_
-#define MM_AST_HPP_
+#pragma once
 
 #include "ast/source/mm_ast_source.hpp"
 #include "ast/target/mm_ast_target.hpp"
 
-#endif /* MM_AST_HPP_ */
+

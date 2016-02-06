@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_AUXILIARY_CORRECTOR_GRAMMAR_CPP_
-#define MM_AUXILIARY_CORRECTOR_GRAMMAR_CPP_
+#pragma once
 
 #include <iostream>
 
@@ -138,4 +137,4 @@ using manipulator :: endLine;
 }
 }
 
-#endif /*MM_AUXILIARY_CORRECTOR_GRAMMAR_CPP_*/
+

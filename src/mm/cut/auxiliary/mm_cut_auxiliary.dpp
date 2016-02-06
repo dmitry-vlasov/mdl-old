@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_CUT_AUXILIARY_DPP_
-#define MM_CUT_AUXILIARY_DPP_
+#pragma once
 
 namespace mm {
 namespace cut {
@@ -24,4 +23,4 @@ namespace auxiliary {
 }
 }
 
-#endif /* MM_CUT_AUXILIARY_DPP_ */
+

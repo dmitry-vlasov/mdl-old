@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_AST_SOURCE_ASSERTION_IPP_
-#define MM_AST_SOURCE_ASSERTION_IPP_
+#pragma once
 
 namespace mm {
 namespace ast {
@@ -70,4 +69,4 @@ namespace source {
 }
 }
 
-#endif /*MM_AST_SOURCE_ASSERTION_IPP_*/
+

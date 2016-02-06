@@ -10,12 +10,11 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_CUT_CPP_
-#define MM_CUT_CPP_
+#pragma once
 
 #include "mm/cut/auxiliary/mm_cut_auxiliary.cpp"
 #include "mm/cut/lexer/mm_cut_lexer.cpp"
 #include "mm/cut/parser/mm_cut_parser.cpp"
 #include "mm/cut/source/mm_cut_source.cpp"
 
-#endif /*MM_CUT_CPP_*/
+

@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_AST_SOURCE_HYPOTHESIS_DPP_
-#define MM_AST_SOURCE_HYPOTHESIS_DPP_
+#pragma once
 
 namespace mm {
 namespace ast {
@@ -28,4 +27,4 @@ namespace hypothesis {
 }
 }
 
-#endif /* MM_AST_SOURCE_HYPOTHESIS_DPP_ */
+

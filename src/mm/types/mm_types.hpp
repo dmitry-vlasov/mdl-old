@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_TYPES_HPP_
-#define MM_TYPES_HPP_
+#pragma once
 
 #include <nstd>
 
@@ -63,4 +62,4 @@ namespace mm {
 		Memory;
 }
 
-#endif /*MM_TYPES_HPP_*/
+

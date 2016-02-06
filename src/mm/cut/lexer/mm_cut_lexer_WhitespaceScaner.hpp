@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_CUT_LEXER_WHITESPACE_SCANER_HPP_
-#define MM_CUT_LEXER_WHITESPACE_SCANER_HPP_
+#pragma once
 
 #include "mm/cut/lexer/mm_cut_lexer.dpp"
 
@@ -40,4 +39,4 @@ private :
 }
 }
 
-#endif /*MM_CUT_LEXER_WHITESPACE_SCANER_HPP_*/
+

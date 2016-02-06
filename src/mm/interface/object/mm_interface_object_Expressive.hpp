@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_INTERFACE_OBJECT_EXPRESSIVE_HPP_
-#define MM_INTERFACE_OBJECT_EXPRESSIVE_HPP_
+#pragma once
 
 #include "expression/mm_expression.hpp"
 
@@ -29,4 +28,4 @@ public :
 }
 }
 
-#endif /* MM_INTERFACE_OBJECT_EXPRESSIVE_HPP_ */
+

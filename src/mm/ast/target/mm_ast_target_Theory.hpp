@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_AST_TARGET_THEORY_HPP_
-#define MM_AST_TARGET_THEORY_HPP_
+#pragma once
 
 #include "interface/mm_interface.hpp"
 
@@ -50,4 +49,4 @@ private :
 }
 }
 
-#endif /*MM_AST_TARGET_THEORY_HPP_*/
+

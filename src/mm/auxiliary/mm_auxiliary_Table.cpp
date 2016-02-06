@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_AUXILIARY_TABLE_CPP_
-#define MM_AUXILIARY_TABLE_CPP_
+#pragma once
 
 namespace mm {
 namespace auxiliary {
@@ -84,4 +83,4 @@ using manipulator :: tab;
 }
 }
 
-#endif /*MM_AUXILIARY_TABLE_CPP_*/
+

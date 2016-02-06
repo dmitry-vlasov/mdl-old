@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_EXPRESSION_SYMBOL_IPP_
-#define MM_EXPRESSION_SYMBOL_IPP_
+#pragma once
 
 #include "auxiliary/mm_auxiliary.hpp"
 
@@ -136,4 +135,4 @@ using manipulator :: space;
 }
 }
 
-#endif /* MM_EXPRESSION_SYMBOL_IPP_ */
+

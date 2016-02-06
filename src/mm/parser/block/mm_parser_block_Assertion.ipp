@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_PARSER_BLOCK_ASSERTION_IPP_
-#define MM_PARSER_BLOCK_ASSERTION_IPP_
+#pragma once
 
 #include "parser/mm_parser_Block.hpp"
 
@@ -74,4 +73,4 @@ namespace block {
 }
 }
 
-#endif /*MM_PARSER_BLOCK_ASSERTION_IPP_*/
+

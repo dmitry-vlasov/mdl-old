@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_MM_CPP_
-#define MM_MM_CPP_
+#pragma once
 
 #include <exception>
 
@@ -357,4 +356,4 @@ using manipulator :: tab;
 	}
 }
 
-#endif /*MM_MM_CPP_*/
+

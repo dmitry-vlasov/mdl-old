@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_AST_SOURCE_ASSERTION_HPP_
-#define MM_AST_SOURCE_ASSERTION_HPP_
+#pragma once
 
 #include "interface/mm_interface.hpp"
 #include "ast/mm_ast.dpp"
@@ -129,4 +128,4 @@ private :
 
 #include "ast/source/mm_ast_source_Assertion.ipp"
 
-#endif /*MM_AST_SOURCE_ASSERTION_HPP_*/
+

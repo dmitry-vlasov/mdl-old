@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_LEXER_TOKEN_CPP_
-#define MM_LEXER_TOKEN_CPP_
+#pragma once
 
 #include "mm/lexer/mm_lexer.hpp"
 
@@ -90,5 +89,5 @@ namespace lexer {
 }
 }
 
-#endif /*MM_LEXER_TOKEN_CPP_*/
+
 

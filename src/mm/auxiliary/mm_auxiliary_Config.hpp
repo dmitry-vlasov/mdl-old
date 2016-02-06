@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_AUXILIARY_CONFIG_HPP_
-#define MM_AUXILIARY_CONFIG_HPP_
+#pragma once
 
 #include "types/mm_types.hpp"
 #include "auxiliary/mm_auxiliary.dpp"
@@ -124,4 +123,4 @@ private :
 
 #include "mm/auxiliary/mm_auxiliary_Config.ipp"
 
-#endif /*MM_AUXILIARY_CONFIG_HPP_*/
+

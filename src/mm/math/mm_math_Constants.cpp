@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_MATH_CONSTANTS_CPP_
-#define MM_MATH_CONSTANTS_CPP_
+#pragma once
 
 #include "auxiliary/mm_auxiliary.hpp"
 #include "math/mm_math.hpp"
@@ -125,4 +124,4 @@ using manipulator :: space;
 }
 }
 
-#endif /*MM_MATH_CONSTANTS_CPP_*/
+

@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_PARSER_BLOCK_HPP__
-#define MM_PARSER_BLOCK_HPP__
+#pragma once
 
 #include "parser/block/mm_parser_block_Assertion.hpp"
 #include "parser/block/mm_parser_block_Axiomatic.hpp"
@@ -24,4 +23,4 @@
 #include "parser/block/mm_parser_block_Reference.hpp"
 #include "parser/block/mm_parser_block_Variables.hpp"
 
-#endif /* MM_PARSER_BLOCK_HPP__ */
+

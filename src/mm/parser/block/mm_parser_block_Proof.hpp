@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_PARSER_BLOCK_PROOF_HPP_
-#define MM_PARSER_BLOCK_PROOF_HPP_
+#pragma once
 
 #include "interface/mm_interface.hpp"
 #include "parser/mm_parser.dpp"
@@ -45,4 +44,4 @@ private :
 }
 }
 
-#endif /*MM_PARSER_BLOCK_PROOF_HPP_*/
+

@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_TYPES_INDEX_UNDEFINED_HPP_
-#define MM_TYPES_INDEX_UNDEFINED_HPP_
+#pragma once
 
 namespace mm {
 namespace index {
@@ -33,4 +32,4 @@ namespace undefined {
 }
 }
 
-#endif /*MM_TYPES_INDEX_UNDEFINED_HPP_*/
+

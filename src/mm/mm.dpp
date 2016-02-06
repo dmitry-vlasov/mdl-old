@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_DPP_
-#define MM_DPP_
+#pragma once
 
 #include "mm/ast/mm_ast.dpp"
 #include "mm/auxiliary/mm_auxiliary.dpp"
@@ -27,4 +26,4 @@ namespace mm {
 	class Mm;
 }
 
-#endif /* MM_DPP_ */
+

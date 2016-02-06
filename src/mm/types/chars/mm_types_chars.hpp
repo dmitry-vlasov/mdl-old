@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_TYPES_CHARS_HPP_
-#define MM_TYPES_CHARS_HPP_
+#pragma once
 
 namespace mm {
 namespace chars {
@@ -20,4 +19,4 @@ namespace chars {
 }
 }
 
-#endif /*MM_TYPES_CHARS_HPP_*/
+

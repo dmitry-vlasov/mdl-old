@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_TYPES_ALLOCATOR_HPP_
-#define MM_TYPES_ALLOCATOR_HPP_
+#pragma once
 
 namespace mm {
 namespace allocator {
@@ -33,4 +32,4 @@ namespace memory {
 	};
 }
 
-#endif /*MM_TYPES_ALLOCATOR_HPP_*/
+

@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_INTERFACE_TARGET_THEOREM_HPP_
-#define MM_INTERFACE_TARGET_THEOREM_HPP_
+#pragma once
 
 #include "interface/target/mm_interface_target_Statement.hpp"
 
@@ -28,4 +27,4 @@ public :
 }
 }
 
-#endif /* MM_INTERFACE_TARGET_THEOREM_HPP_ */
+

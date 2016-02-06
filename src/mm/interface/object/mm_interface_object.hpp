@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_INTERFACE_OBJECT_HPP__
-#define MM_INTERFACE_OBJECT_HPP__
+#pragma once
 
 #include "interface/object/mm_interface_object_Expressive.hpp"
 #include "interface/object/mm_interface_object_Labeled.hpp"
@@ -22,4 +21,4 @@
 #include "interface/object/mm_interface_object_Verifiable.hpp"
 #include "interface/object/mm_interface_object_Writable.hpp"
 
-#endif /* MM_INTERFACE_OBJECT_HPP__ */
+

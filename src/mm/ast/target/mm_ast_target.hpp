@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_AST_TARGET_HPP_
-#define MM_AST_TARGET_HPP_
+#pragma once
 
 #include "ast/target/assertion/mm_ast_target_assertion.hpp"
 #include "ast/target/header/mm_ast_target_header.hpp"
@@ -26,4 +25,4 @@
 #include "ast/target/mm_ast_target_Theory.hpp"
 #include "ast/target/mm_ast_target_Type.hpp"
 
-#endif /* MM_AST_TARGET_HPP_ */
+

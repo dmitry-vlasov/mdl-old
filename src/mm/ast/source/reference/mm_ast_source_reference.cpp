@@ -10,10 +10,9 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_AST_SOURCE_REFERENCE_CPP_
-#define MM_AST_SOURCE_REFERENCE_CPP_
+#pragma once
 
 #include "ast/source/reference/mm_ast_source_reference_Assertion.cpp"
 #include "ast/source/reference/mm_ast_source_reference_Hypothesis.cpp"
 
-#endif /* MM_AST_SOURCE_REFERENCE_CPP_ */
+

@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_CUT_LEXER_TOKEN_HPP_
-#define MM_CUT_LEXER_TOKEN_HPP_
+#pragma once
 
 namespace mm {
 namespace cut {
@@ -76,4 +75,4 @@ private :
 
 #include "mm/cut/lexer/mm_cut_lexer_Token.ipp"
 
-#endif /*MM_CUT_LEXER_TOKEN_HPP_*/
+

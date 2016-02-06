@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_AUXILIARY_CORRECTOR_HPP_
-#define MM_AUXILIARY_CORRECTOR_HPP_
+#pragma once
 
 #include "mm/types/mm_types.hpp"
 #include "mm/auxiliary/mm_auxiliary_Name.hpp"
@@ -49,4 +48,4 @@ private :
 }
 }
 
-#endif /*MM_AUXILIARY_CORRECTOR_HPP_*/
+

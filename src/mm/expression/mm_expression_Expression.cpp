@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_EXPRESSION_EXPRESSION_CPP_
-#define MM_EXPRESSION_EXPRESSION_CPP_
+#pragma once
 
 #include "math/mm_math.hpp"
 #include "ast/mm_ast.hpp"
@@ -112,4 +111,4 @@ using manipulator :: space;
 }
 }
 
-#endif /* MM_EXPRESSION_EXPRESSION_CPP_ */
+

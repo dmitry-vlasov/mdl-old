@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_PARSER_BLOCK_IPP_
-#define MM_PARSER_BLOCK_IPP_
+#pragma once
 
 namespace mm {
 namespace parser {
@@ -27,4 +26,4 @@ namespace parser {
 }
 }
 
-#endif /*MM_PARSER_BLOCK_IPP_*/
+

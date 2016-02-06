@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_AST_SOURCE_REFERENCE_DPP_
-#define MM_AST_SOURCE_REFERENCE_DPP_
+#pragma once
 
 namespace mm {
 namespace ast {
@@ -25,4 +24,4 @@ namespace reference {
 }
 }
 
-#endif /* MM_AST_SOURCE_REFERENCE_DPP_ */
+

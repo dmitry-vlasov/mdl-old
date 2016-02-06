@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_AST_TARGET_HEADER_CPP_
-#define MM_AST_TARGET_HEADER_CPP_
+#pragma once
 
 #include "ast/target/header/proposition/mm_ast_target_header_proposition.cpp"
 #include "ast/target/header/term/mm_ast_target_header_term.cpp"
@@ -23,4 +22,4 @@
 #include "ast/target/header/mm_ast_target_header_Variable.cpp"
 #include "ast/target/header/mm_ast_target_header_Variables.cpp"
 
-#endif /* MM_AST_TARGET_HEADER_CPP_ */
+

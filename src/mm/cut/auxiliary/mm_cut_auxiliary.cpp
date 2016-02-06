@@ -10,9 +10,8 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_CUT_AUXILIARY_CPP_
-#define MM_CUT_AUXILIARY_CPP_
+#pragma once
 
 #include "mm/cut/auxiliary/mm_cut_auxiliary_Error.cpp"
 
-#endif /* MM_CUT_AUXILIARY_CPP_ */
+

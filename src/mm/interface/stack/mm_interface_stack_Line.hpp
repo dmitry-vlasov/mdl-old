@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_INTERFACE_STACK_LINE_HPP_
-#define MM_INTERFACE_STACK_LINE_HPP_
+#pragma once
 
 #include "expression/mm_expression.hpp"
 #include "interface/object/mm_interface_object.hpp"
@@ -61,4 +60,4 @@ private :
 
 #include "interface/stack/mm_interface_stack_Line.ipp"
 
-#endif /* MM_INTERFACE_STACK_LINE_HPP_ */
+

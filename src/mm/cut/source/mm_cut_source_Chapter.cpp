@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_CUT_SOURCE_CHAPTER_CPP_
-#define MM_CUT_SOURCE_CHAPTER_CPP_
+#pragma once
 
 #include "mm/auxiliary/mm_auxiliary.hpp"
 #include "mm/lexer/mm_lexer_Token.hpp"
@@ -166,4 +165,4 @@ using manipulator :: space;
 }
 }
 
-#endif /*MM_CUT_SOURCE_CHAPTER_CPP_*/
+

@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_EXPRESSION_EXPRESSION_HPP_
-#define MM_EXPRESSION_EXPRESSION_HPP_
+#pragma once
 
 #include "interface/mm_interface.dpp"
 #include "expression/mm_expression_Symbol.hpp"
@@ -88,4 +87,4 @@ namespace vector {
 
 #include "expression/mm_expression_Expression.ipp"
 
-#endif /* MM_EXPRESSION_EXPRESSION_HPP_ */
+

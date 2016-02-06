@@ -10,11 +10,10 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_AST_TARGET_HEADER_PROPOSITION_CPP_
-#define MM_AST_TARGET_HEADER_PROPOSITION_CPP_
+#pragma once
 
 #include "ast/target/header/proposition/mm_ast_target_header_proposition_Definition.cpp"
 #include "ast/target/header/proposition/mm_ast_target_header_proposition_Proposition.cpp"
 #include "ast/target/header/proposition/mm_ast_target_header_proposition_Statement.cpp"
 
-#endif /* MM_AST_TARGET_HEADER_PROPOSITION_CPP_ */
+

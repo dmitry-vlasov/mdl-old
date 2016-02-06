@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_PARSER_BLOCK_REFERENCE_CPP_
-#define MM_PARSER_BLOCK_REFERENCE_CPP_
+#pragma once
 
 #include "mm/auxiliary/mm_auxiliary.hpp"
 #include "mm/lexer/mm_lexer.hpp"
@@ -116,4 +115,4 @@ using manipulator :: endLine;
 }
 }
 
-#endif /*MM_PARSER_BLOCK_REFERENCE_CPP_*/
+

@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_AUXILIARY_SYMBOL_IPP_
-#define MM_AUXILIARY_SYMBOL_IPP_
+#pragma once
 
 namespace mm {
 namespace auxiliary {
@@ -145,4 +144,4 @@ using manipulator :: endLine;
 }
 }
 
-#endif /*MM_AUXILIARY_SYMBOL_IPP_*/
+

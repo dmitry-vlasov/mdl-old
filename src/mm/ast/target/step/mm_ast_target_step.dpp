@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_AST_TARGET_STEP_DPP_
-#define MM_AST_TARGET_STEP_DPP_
+#pragma once
 
 namespace mm {
 namespace ast {
@@ -27,4 +26,4 @@ namespace step {
 }
 }
 
-#endif /* MM_AST_TARGET_STEP_DPP_ */
+

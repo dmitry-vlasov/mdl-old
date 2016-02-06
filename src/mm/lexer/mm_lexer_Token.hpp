@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_LEXER_TOKEN_HPP_
-#define MM_LEXER_TOKEN_HPP_
+#pragma once
 
 namespace mm {
 namespace lexer {
@@ -102,4 +101,4 @@ private :
 #include "mm/lexer/mm_lexer_Token.ipp"
 #include "mm/lexer/mm_lexer_Token.cpp"
 
-#endif /*MM_LEXER_TOKEN_HPP_*/
+

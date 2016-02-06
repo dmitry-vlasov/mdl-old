@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_AST_SOURCE_SOURCE_CPP_
-#define MM_AST_SOURCE_SOURCE_CPP_
+#pragma once
 
 #include "auxiliary/mm_auxiliary.hpp"
 #include "ast/mm_ast.hpp"
@@ -130,4 +129,4 @@ namespace source {
 }
 }
 
-#endif /*MM_AST_SOURCE_SOURCE_CPP_*/
+

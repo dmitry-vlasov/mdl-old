@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MM_TYPES_STORAGE_HPP_
-#define MM_TYPES_STORAGE_HPP_
+#pragma once
 
 namespace mm {
 namespace storage {
@@ -22,4 +21,4 @@ namespace storage {
 }
 }
 
-#endif /*MM_TYPES_STORAGE_HPP_*/
+
