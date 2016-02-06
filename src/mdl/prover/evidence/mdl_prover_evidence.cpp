@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_PROVER_EVIDENCE_CPP_
-#define MDL_PROVER_EVIDENCE_CPP_
+#pragma once
 
 #include "mdl/prover/evidence/mdl_prover_evidence_Hyp.cpp"
 #include "mdl/prover/evidence/mdl_prover_evidence_Prop.cpp"
@@ -21,4 +20,4 @@
 #include "mdl/prover/evidence/mdl_prover_evidence_Vector.cpp"
 
 
-#endif /*MDL_PROVER_EVIDENCE_CPP_*/
+

@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_INTERFACE_OBJECT_OBJECT_CPP_
-#define MDL_INTERFACE_OBJECT_OBJECT_CPP_
+#pragma once
 
 #include "mdl/interface/object/mdl_interface_object_Object.hpp"
 
@@ -141,4 +140,4 @@ using manipulator :: mode;
 }
 }
 
-#endif /*MDL_INTERFACE_OBJECT_OBJECT_CPP_*/
+

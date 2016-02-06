@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_MATH_CONSTANTS_CPP_
-#define MDL_MATH_CONSTANTS_CPP_
+#pragma once
 
 #include "mdl/auxiliary/mdl_auxiliary.hpp"
 #include "mdl/math/mdl_math_Constants.hpp"
@@ -93,4 +92,4 @@ using manipulator :: space;
 }
 }
 
-#endif /*MDL_MATH_CONSTANTS_HPP_*/
+

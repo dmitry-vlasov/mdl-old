@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_INTERFACE_OBJECT_VERIFIABLE_HPP_
-#define MDL_INTERFACE_OBJECT_VERIFIABLE_HPP_
+#pragma once
 
 #include "mdl/interface/object/mdl_interface_object_Buildable.hpp"
 
@@ -42,4 +41,4 @@ protected :
 }
 }
 
-#endif /*MDL_INTERFACE_OBJECT_VERIFIABLE_HPP_*/
+

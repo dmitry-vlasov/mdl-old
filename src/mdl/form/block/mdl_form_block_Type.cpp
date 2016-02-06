@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_FORM_BLOCK_TYPE_CPP_
-#define MDL_FORM_BLOCK_TYPE_CPP_
+#pragma once
 
 namespace mdl {
 namespace form {
@@ -382,4 +381,4 @@ using manipulator :: iterate;
 }
 }
 
-#endif /*MDL_FORM_BLOCK_TYPE_CPP_*/
+

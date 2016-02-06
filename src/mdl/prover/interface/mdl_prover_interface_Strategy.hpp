@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_PROVER_INTERFACE_STRATEGY_HPP_
-#define MDL_PROVER_INTERFACE_STRATEGY_HPP_
+#pragma once
 
 #include "mdl/interface/object/mdl_interface_object.hpp"
 
@@ -33,4 +32,4 @@ public :
 }
 
 
-#endif /*MDL_PROVER_INTERFACE_STRATEGY_HPP_*/
+

@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_AUXILIARY_PARAMETER_DESCRIPTION_HPP_
-#define MDL_AUXILIARY_PARAMETER_DESCRIPTION_HPP_
+#pragma once
 
 #include "mdl/interface/object/mdl_interface_object_Object.hpp"
 
@@ -67,4 +66,4 @@ private :
 }
 }
 
-#endif /*MDL_AUXILIARY_PARAMETER_DESCRIPTION_HPP_*/
+

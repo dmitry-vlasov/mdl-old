@@ -10,9 +10,8 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_TYPES_CPP_
-#define MDL_TYPES_CPP_
+#pragma once
 
 #include "mdl/types/mdl_types.hpp"
 
-#endif /*MDL_TYPES_CPP_*/
+

@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_EXPRESSION_PARSE_TREE_IPP_
-#define MDL_EXPRESSION_PARSE_TREE_IPP_
+#pragma once
 
 #include "mdl/interface/mdl_interface.dpp"
 
@@ -83,4 +82,4 @@ namespace parse {
 }
 }
 
-#endif /*MDL_EXPRESSION_PARSE_TREE_IPP_*/
+

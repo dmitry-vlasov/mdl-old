@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_FORM_PROOF_LINK_CPP_
-#define MDL_FORM_PROOF_LINK_CPP_
+#pragma once
 
 namespace mdl {
 namespace form {
@@ -283,4 +282,4 @@ using manipulator :: underline;
 }
 }
 
-#endif /*MDL_FORM_PROOF_LINK_CPP_*/
+

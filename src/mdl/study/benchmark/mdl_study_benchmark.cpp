@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_STUDY_BENCHMARK_CPP_
-#define MDL_STUDY_BENCHMARK_CPP_
+#pragma once
 
 #include "mdl/study/benchmark/mdl_study_benchmark_Benchmark.cpp"
 #include "mdl/study/benchmark/mdl_study_benchmark_Data_1.cpp"
@@ -20,4 +19,4 @@
 #include "mdl/study/benchmark/mdl_study_benchmark_Optimization.cpp"
 #include "mdl/study/benchmark/mdl_study_benchmark_Sample.cpp"
 
-#endif /*MDL_STUDY_BENCHMARK_CPP_*/
+

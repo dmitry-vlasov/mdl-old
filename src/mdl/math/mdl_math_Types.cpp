@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_MATH_TYPES_CPP_
-#define MDL_MATH_TYPES_CPP_
+#pragma once
 
 #include "mdl/math/mdl_math_Types.hpp"
 
@@ -92,4 +91,4 @@ using manipulator :: space;
 }
 }
 
-#endif /*MDL_MATH_TYPES_CPP_*/
+

@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_FORM_PROOF_NOTATION_MEANING_HPP_
-#define MDL_FORM_PROOF_NOTATION_MEANING_HPP_
+#pragma once
 
 #include "mdl/interface/mdl_interface.hpp"
 #include "mdl/form/mdl_form.hpp"
@@ -45,4 +44,4 @@ public :
 }
 }
 
-#endif /*MDL_FORM_PROOF_NOTATION_MEANING_HPP_*/
+

@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_EXPRESSION_NODE_PROTOTYPE_BUSH_HPP_
-#define MDL_EXPRESSION_NODE_PROTOTYPE_BUSH_HPP_
+#pragma once
 
 #include "mdl/expression/node/prototype/mdl_expression_node_prototype_Tree.hpp"
 
@@ -79,4 +78,4 @@ private :
 }
 }
 
-#endif /*MDL_EXPRESSION_NODE_PROTOTYPE_BUSH_HPP_*/
+

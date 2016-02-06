@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_EXPRESSION_ITERATOR_CONSTANT_TREE_HPP_
-#define MDL_EXPRESSION_ITERATOR_CONSTANT_TREE_HPP_
+#pragma once
 
 #include "mdl/expression/iterator/constant/mdl_expression_iterator_constant_Linear.hpp"
 
@@ -46,4 +45,4 @@ public :
 }
 }
 
-#endif /*MDL_EXPRESSION_ITERATOR_CONSTANT_TREE_HPP_*/
+

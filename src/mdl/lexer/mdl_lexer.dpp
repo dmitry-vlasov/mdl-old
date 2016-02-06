@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_LEXER_DPP__
-#define MDL_LEXER_DPP__
+#pragma once
 
 namespace mdl {
 namespace lexer {
@@ -31,4 +30,4 @@ namespace lexer {
 	using lexer :: Token;
 }
 
-#endif /*MDL_LEXER_DPP__*/
+

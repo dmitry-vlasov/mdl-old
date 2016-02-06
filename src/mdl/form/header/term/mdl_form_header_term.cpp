@@ -10,12 +10,11 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_FORM_HEADER_TERM_CPP_
-#define MDL_FORM_HEADER_TERM_CPP_
+#pragma once
 
 #include "mdl/form/header/term/mdl_form_header_term_Defiendum.cpp"
 #include "mdl/form/header/term/mdl_form_header_term_Definiens.cpp"
 #include "mdl/form/header/term/mdl_form_header_term_Definition.cpp"
 #include "mdl/form/header/term/mdl_form_header_term_Rule.cpp"
 
-#endif /*MDL_FORM_HEADER_TERM_CPP_*/
+

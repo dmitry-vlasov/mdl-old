@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_AUXILIARY_PARAMETER_DESCRIPTION_CPP_
-#define MDL_AUXILIARY_PARAMETER_DESCRIPTION_CPP_
+#pragma once
 
 #include "mdl/interface/mdl_interface.hpp"
 #include "mdl/auxiliary/mdl_auxiliary.hpp"
@@ -131,4 +130,4 @@ using manipulator :: endLine;
 }
 }
 
-#endif /*MDL_AUXILIARY_PARAMETER_DESCRIPTION_CPP_*/
+

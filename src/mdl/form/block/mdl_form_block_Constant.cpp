@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_FORM_BLOCK_CONSTANT_CPP_
-#define MDL_FORM_BLOCK_CONSTANT_CPP_
+#pragma once
 
 namespace mdl {
 namespace form {
@@ -263,4 +262,4 @@ using nstd :: manipulator :: iterate;
 }
 }
 
-#endif /*MDL_FORM_BLOCK_CONSTANT_CPP_*/
+

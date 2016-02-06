@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_EXPRESSION_ITERATOR_MODIFIER_IPP_
-#define MDL_EXPRESSION_ITERATOR_MODIFIER_IPP_
+#pragma once
 
 #include "mdl/expression/iterator/modifier/mdl_expression_iterator_modifier_Array.ipp"
 #include "mdl/expression/iterator/modifier/mdl_expression_iterator_modifier_Identity.ipp"
@@ -21,4 +20,4 @@
 #include "mdl/expression/iterator/modifier/mdl_expression_iterator_modifier_Pair.ipp"
 #include "mdl/expression/iterator/modifier/mdl_expression_iterator_modifier_Trace.ipp"
 
-#endif /*MDL_EXPRESSION_ITERATOR_MODIFIER_IPP_*/
+

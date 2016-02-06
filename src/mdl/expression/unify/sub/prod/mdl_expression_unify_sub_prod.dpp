@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_EXPRESSION_UNIFY_SUB_PROD_DPP_
-#define MDL_EXPRESSION_UNIFY_SUB_PROD_DPP_
+#pragma once
 
 #include "mdl/expression/unify/mdl_expression_unify_policy_Type.hpp"
 #include "mdl/expression/unify/mdl_expression_unify_kind_Type.hpp"
@@ -45,4 +44,4 @@ namespace prod {
 }
 }
 
-#endif /*MDL_EXPRESSION_UNIFY_SUB_PROD_DPP_*/
+

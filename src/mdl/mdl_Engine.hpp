@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_ENGINE_HPP_
-#define MDL_ENGINE_HPP_
+#pragma once
 
 #include "mdl/parser/mdl_parser.hpp"
 
@@ -185,4 +184,4 @@ void showInfo
 
 }
 
-#endif /*MDL_ENGINE_HPP_*/
+

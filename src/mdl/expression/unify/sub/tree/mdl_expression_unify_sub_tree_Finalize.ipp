@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_EXPRESSION_UNIFY_SUB_TREE_FINALIZE_IPP_
-#define MDL_EXPRESSION_UNIFY_SUB_TREE_FINALIZE_IPP_
+#pragma once
 
 #include "mdl/expression/unify/sub/mdl_expression_unify_sub_Finaly.hpp"
 
@@ -129,4 +128,4 @@ namespace tree {
 }
 }
 
-#endif /*MDL_EXPRESSION_UNIFY_SUB_TREE_FINALIZE_IPP_*/
+

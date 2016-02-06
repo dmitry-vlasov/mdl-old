@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_FORM_EVALUATION_TERM_FORKING_CPP_
-#define MDL_FORM_EVALUATION_TERM_FORKING_CPP_
+#pragma once
 
 namespace mdl {
 namespace form {
@@ -74,4 +73,4 @@ using manipulator :: endLine;
 }
 }
 
-#endif /*MDL_FORM_EVALUATION_TERM_FORKING_CPP_*/
+

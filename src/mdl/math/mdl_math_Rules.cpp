@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_MATH_RULES_CPP_
-#define MDL_MATH_RULES_CPP_
+#pragma once
 
 #include "mdl/math/mdl_math_Rules.hpp"
 
@@ -69,4 +68,4 @@ using manipulator :: space;
 }
 }
 
-#endif /*MDL_MATH_RULES_CPP_*/
+

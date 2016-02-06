@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_PARSER_BLOCK_CONSTANT_CPP_
-#define MDL_PARSER_BLOCK_CONSTANT_CPP_
+#pragma once
 
 #include "mdl/lexer/mdl_lexer.hpp"
 #include "mdl/form/mdl_form.hpp"
@@ -142,4 +141,4 @@ using manipulator :: space;
 }
 }
 
-#endif /*MDL_PARSER_BLOCK_CONSTANT_CPP_*/
+

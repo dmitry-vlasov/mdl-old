@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_PARSER_BLOCK_TYPE_CPP_
-#define MDL_PARSER_BLOCK_TYPE_CPP_
+#pragma once
 
 #include "mdl/lexer/mdl_lexer.hpp"
 #include "mdl/form/mdl_form.hpp"
@@ -91,4 +90,4 @@ namespace block {
 }
 }
 
-#endif /*MDL_PARSER_BLOCK_TYPE_CPP_*/
+

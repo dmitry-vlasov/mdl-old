@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_FORM_EVALUATION_LEXP_FACTORS_CPP_
-#define MDL_FORM_EVALUATION_LEXP_FACTORS_CPP_
+#pragma once
 
 namespace mdl {
 namespace form {
@@ -111,4 +110,4 @@ namespace lexp {
 }
 }
 
-#endif /*MDL_FORM_EVALUATION_LEXP_FACTORS_CPP_*/
+

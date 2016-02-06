@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_AUXILIARY_STATISTICS_STATISTICS_HPP_
-#define MDL_AUXILIARY_STATISTICS_STATISTICS_HPP_
+#pragma once
 
 namespace mdl {
 namespace auxiliary {
@@ -48,4 +47,4 @@ private :
 }
 }
 
-#endif /*MDL_AUXILIARY_STATISTICS_STATISTICS_HPP_*/
+

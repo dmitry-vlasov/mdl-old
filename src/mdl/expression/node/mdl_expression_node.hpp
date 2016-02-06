@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_EXPRESSION_NODE_HPP_
-#define MDL_EXPRESSION_NODE_HPP_
+#pragma once
 
 #include "mdl/expression/node/container/mdl_expression_node_container.hpp"
 #include "mdl/expression/node/prototype/mdl_expression_node_prototype.hpp"
@@ -23,4 +22,4 @@
 #include "mdl/expression/node/mdl_expression_node_List.hpp"
 #include "mdl/expression/node/mdl_expression_node_Tree.hpp"
 
-#endif /*MDL_EXPRESSION_NODE_HPP_*/
+

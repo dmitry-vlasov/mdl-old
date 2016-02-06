@@ -10,12 +10,11 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_EXPRESSION_ITERATOR_CONSTANT_IPP_
-#define MDL_EXPRESSION_ITERATOR_CONSTANT_IPP_
+#pragma once
 
 #include "mdl/expression/iterator/constant/mdl_expression_iterator_constant_Forest.ipp"
 #include "mdl/expression/iterator/constant/mdl_expression_iterator_constant_Linear.ipp"
 #include "mdl/expression/iterator/constant/mdl_expression_iterator_constant_Singleton.ipp"
 #include "mdl/expression/iterator/constant/mdl_expression_iterator_constant_Tree.ipp"
 
-#endif /*MDL_EXPRESSION_ITERATOR_CONSTANT_IPP_*/
+

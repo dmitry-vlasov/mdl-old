@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_PROVER_CPP_
-#define MDL_PROVER_CPP_
+#pragma once
 
 #include "mdl/prover/data/mdl_prover_data.cpp"
 #include "mdl/prover/evidence/mdl_prover_evidence.cpp"
@@ -27,4 +26,4 @@
 #include "mdl/prover/mdl_prover_Prover.cpp"
 #include "mdl/prover/mdl_prover_Timers.cpp"
 
-#endif /*MDL_PROVER_CPP_*/
+

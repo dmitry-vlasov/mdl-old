@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_FORM_PROOF_SCOPE_CLAIM_CPP_
-#define MDL_FORM_PROOF_SCOPE_CLAIM_CPP_
+#pragma once
 
 #include "mdl/form/mdl_form.hpp"
 
@@ -135,4 +134,4 @@ namespace scope {
 }
 }
 
-#endif /*MDL_FORM_PROOF_SCOPE_CLAIM_CPP_*/
+

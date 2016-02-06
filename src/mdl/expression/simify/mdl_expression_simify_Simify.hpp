@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_EXPRESSION_SIMIFY_SIMIFY_HPP_
-#define MDL_EXPRESSION_SIMIFY_SIMIFY_HPP_
+#pragma once
 
 namespace mdl {
 namespace expression {
@@ -30,4 +29,4 @@ class Simify : public Simifier<Unit<T_1, T_2>, A> {
 }
 }
 
-#endif /*MDL_EXPRESSION_SIMIFY_SIMIFY_HPP_*/
+

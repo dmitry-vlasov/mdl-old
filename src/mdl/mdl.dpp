@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_DPP_
-#define MDL_DPP_
+#pragma once
 
 #include "mdl/mdl_macro.hpp"
 
@@ -32,4 +31,4 @@ namespace mdl {
 	class Engine;
 }
 
-#endif /*MDL_DPP_*/
+

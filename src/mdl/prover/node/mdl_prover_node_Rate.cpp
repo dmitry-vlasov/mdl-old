@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_PROVER_RATE_RATE_CPP_
-#define MDL_PROVER_RATE_RATE_CPP_
+#pragma once
 
 namespace mdl {
 namespace prover {
@@ -118,4 +117,4 @@ namespace node {
 }
 }
 
-#endif /*MDL_PROVER_RATE_RATE_CPP_*/
+

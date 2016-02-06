@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_EXPRESSION_SYMBOL_CPP_
-#define MDL_EXPRESSION_SYMBOL_CPP_
+#pragma once
 
 #include "mdl/auxiliary/mdl_auxiliary.hpp"
 #include "mdl/math/mdl_math.hpp"
@@ -131,4 +130,4 @@ using manipulator :: underline;
 }
 }
 
-#endif /*MDL_EXPRESSION_SYMBOL_CPP_*/
+

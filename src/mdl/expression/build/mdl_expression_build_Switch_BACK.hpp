@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_EXPRESSION_BUILD_SWITCH_BACK_HPP_
-#define MDL_EXPRESSION_BUILD_SWITCH_BACK_HPP_
+#pragma once
 
 #include "mdl/expression/build/mdl_expression_build.dpp"
 
@@ -82,4 +81,4 @@ struct Switch<B, BACK> {
 }
 }
 
-#endif /*MDL_EXPRESSION_BUILD_SWITCH_BACK_HPP_*/
+

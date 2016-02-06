@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_EXPRESSION_ITERATOR_SINGLETON_HPP_
-#define MDL_EXPRESSION_ITERATOR_SINGLETON_HPP_
+#pragma once
 
 #include "mdl/expression/mdl_expression.dpp"
 
@@ -64,4 +63,4 @@ protected :
 }
 }
 
-#endif /*MDL_EXPRESSION_ITERATOR_SINGLETON_HPP_*/
+

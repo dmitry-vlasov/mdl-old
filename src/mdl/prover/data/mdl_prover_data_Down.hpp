@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_PROVER_DATA_DOWN_HPP_
-#define MDL_PROVER_DATA_DOWN_HPP_
+#pragma once
 
 #include "mdl/interface/mdl_interface.hpp"
 #include "mdl/prover/mdl_prover.dpp"
@@ -74,4 +73,4 @@ private :
 }
 }
 
-#endif /*MDL_PROVER_DATA_DOWN_HPP_*/
+

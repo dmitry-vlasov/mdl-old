@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_EXPRESSION_ARRAY_IPP_
-#define MDL_EXPRESSION_ARRAY_IPP_
+#pragma once
 
 #include "mdl/auxiliary/mdl_auxiliary.hpp"
 
@@ -393,4 +392,4 @@ using manipulator :: space;
 }
 }
 
-#endif /*MDL_EXPRESSION_ARRAY_IPP_*/
+

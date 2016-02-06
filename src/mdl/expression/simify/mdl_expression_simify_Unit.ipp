@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_EXPRESSION_SIMIFY_UNIT_IPP_
-#define MDL_EXPRESSION_SIMIFY_UNIT_IPP_
+#pragma once
 
 namespace mdl {
 namespace expression {
@@ -130,4 +129,4 @@ using manipulator :: endLine;
 }
 }
 
-#endif /*MDL_EXPRESSION_SIMIFY_UNIT_IPP_*/
+

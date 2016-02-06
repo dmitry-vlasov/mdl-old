@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_LEXER_SCANER_IPP_
-#define MDL_LEXER_SCANER_IPP_
+#pragma once
 
 namespace mdl {
 namespace lexer {
@@ -1569,4 +1568,4 @@ namespace lexer {
 }
 }
 
-#endif /*MDL_LEXER_SCANER_IPP_*/
+

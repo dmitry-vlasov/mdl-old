@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_FORM_HEADER_STATEMENT_EXPERIENCE_HPP_
-#define MDL_FORM_HEADER_STATEMENT_EXPERIENCE_HPP_
+#pragma once
 
 namespace mdl {
 namespace form {
@@ -55,4 +54,4 @@ private :
 }
 }
 
-#endif /*MDL_FORM_HEADER_STATEMENT_EXPERIENCE_HPP_*/
+

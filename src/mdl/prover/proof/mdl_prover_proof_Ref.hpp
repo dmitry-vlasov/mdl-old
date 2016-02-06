@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_PROVER_PROOF_REF_HPP_
-#define MDL_PROVER_PROOF_REF_HPP_
+#pragma once
 
 #include "mdl/prover/mdl_prover.dpp"
 
@@ -99,4 +98,4 @@ private :
 }
 }
 
-#endif /*MDL_PROVER_PROOF_REF_HPP_*/
+

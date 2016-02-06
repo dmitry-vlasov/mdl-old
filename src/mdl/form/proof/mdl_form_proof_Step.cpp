@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_FORM_PROOF_STEP_CPP_
-#define MDL_FORM_PROOF_STEP_CPP_
+#pragma once
 
 #include "mdl/math/mdl_math.hpp"
 #include "mdl/form/proof/mdl_form_proof_Step.hpp"
@@ -318,4 +317,4 @@ using manipulator :: space;
 }
 }
 
-#endif /*MDL_FORM_PROOF_STEP_CPP_*/
+

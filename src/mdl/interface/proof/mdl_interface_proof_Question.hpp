@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_INTERFACE_PROOF_QUESTION_HPP_
-#define MDL_INTERFACE_PROOF_QUESTION_HPP_
+#pragma once
 
 #include "mdl/interface/proof/mdl_interface_proof_Step.hpp"
 
@@ -40,4 +39,4 @@ public :
 }
 }
 
-#endif /*MDL_INTERFACE_PROOF_QUESTION_HPP_*/
+

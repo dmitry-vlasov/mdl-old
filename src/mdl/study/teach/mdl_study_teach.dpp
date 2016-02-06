@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_STUDY_TEACH_DPP_
-#define MDL_STUDY_TEACH_DPP_
+#pragma once
 
 namespace mdl {
 namespace study {
@@ -25,4 +24,4 @@ namespace teach {
 }
 }
 
-#endif /*MDL_STUDY_TEACH_DPP_*/
+

@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_PROVER_RUN_HEAP_CPP_
-#define MDL_PROVER_RUN_HEAP_CPP_
+#pragma once
 
 namespace mdl {
 namespace prover {
@@ -170,4 +169,4 @@ using manipulator :: space;
 }
 }
 
-#endif /*MDL_PROVER_RUN_HEAP_PROVER_RUN_HEAP_CPP_*/
+

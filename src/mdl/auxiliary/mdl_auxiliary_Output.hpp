@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_AUXILIARY_OUTPUT_HPP_
-#define MDL_AUXILIARY_OUTPUT_HPP_
+#pragma once
 
 #include "mdl/interface/mdl_interface.dpp"
 
@@ -54,4 +53,4 @@ private :
 }
 }
 
-#endif /*MDL_AUXILIARY_OUTPUT_HPP_*/
+

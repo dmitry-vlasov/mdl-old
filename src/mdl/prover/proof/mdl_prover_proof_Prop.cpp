@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_PROVER_PROOF_PROP_CPP_
-#define MDL_PROVER_PROOF_PROP_CPP_
+#pragma once
 
 namespace mdl {
 namespace prover {
@@ -555,4 +554,4 @@ using manipulator :: endLine;
 }
 }
 
-#endif /*MDL_PROVER_PROOF_PROP_CPP_*/
+

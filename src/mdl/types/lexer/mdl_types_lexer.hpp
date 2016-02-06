@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_TYPES_LEXER_HPP_
-#define MDL_TYPES_LEXER_HPP_
+#pragma once
 
 namespace mdl {
 namespace lexer {
@@ -38,4 +37,4 @@ namespace lexer {
 	using lexer :: Location;
 }
 
-#endif /*MDL_TYPES_LEXER_HPP_*/
+

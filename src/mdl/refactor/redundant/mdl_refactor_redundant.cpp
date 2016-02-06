@@ -10,11 +10,10 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_REFACTOR_REDUNDANT_CPP_
-#define MDL_REFACTOR_REDUNDANT_CPP_
+#pragma once
 
 #include "mdl_refactor_redundant_Hypotheses.cpp"
 #include "mdl_refactor_redundant_Steps.cpp"
 #include "mdl/refactor/redundant/mdl_refactor_redundant_Variables.cpp"
 
-#endif /*MDL_REFACTOR_REDUNDANT_CPP_*/
+

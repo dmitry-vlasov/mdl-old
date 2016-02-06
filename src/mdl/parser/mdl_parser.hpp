@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_PARSER_HPP_
-#define MDL_PARSER_HPP_
+#pragma once
 
 #include "mdl/parser/block/mdl_parser_block.hpp"
 #include "mdl/parser/evaluation/mdl_parser_evaluation.hpp"
@@ -25,4 +24,4 @@
 #include "mdl/parser/mdl_parser_Source.hpp"
 #include "mdl/parser/mdl_parser_Theory.hpp"
 
-#endif /*MDL_PARSER_HPP_*/
+

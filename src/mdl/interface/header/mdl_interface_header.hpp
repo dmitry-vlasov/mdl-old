@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_INTERFACE_HEADER_HPP_
-#define MDL_INTERFACE_HEADER_HPP_
+#pragma once
 
 #include "mdl/interface/header/statement/mdl_interface_header_statement.hpp"
 #include "mdl/interface/header/term/mdl_interface_header_term.hpp"
@@ -22,4 +21,4 @@
 #include "mdl/interface/header/mdl_interface_header_Variable.hpp"
 #include "mdl/interface/header/mdl_interface_header_Variables.hpp"
 
-#endif /*MDL_INTERFACE_HEADER_HPP_*/
+

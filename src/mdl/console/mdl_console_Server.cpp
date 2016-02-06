@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_CONSOLE_SERVER_CPP_
-#define MDL_CONSOLE_SERVER_CPP_
+#pragma once
 
 #include <iostream>
 #include <stdio.h>
@@ -312,4 +311,4 @@ using manipulator :: tab;
 }
 }
 
-#endif /*MDL_CONSOLE_SERVER_CPP_*/
+

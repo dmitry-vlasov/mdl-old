@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_FORM_EVALUATION_TERM_CPP_
-#define MDL_FORM_EVALUATION_TERM_CPP_
+#pragma once
 
 #include "mdl/form/evaluation/term/mdl_form_evaluation_term_Barrier.cpp"
 #include "mdl/form/evaluation/term/mdl_form_evaluation_term_Case.cpp"
@@ -28,4 +27,4 @@
 #include "mdl/form/evaluation/term/mdl_form_evaluation_term_Sum.cpp"
 #include "mdl/form/evaluation/term/mdl_form_evaluation_term_WeightedSum.cpp"
 
-#endif /*MDL_FORM_EVALUATION_TERM_CPP_*/
+

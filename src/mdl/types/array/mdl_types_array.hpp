@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_TYPES_ARRAY_HPP_
-#define MDL_TYPES_ARRAY_HPP_
+#pragma once
 
 #include "mdl/types/storage/mdl_types_storage.hpp"
 #include "mdl/types/value/mdl_types_value.hpp"
@@ -25,5 +24,5 @@ namespace array {
 
 #include "mdl/types/array/value/mdl_types_array_value.hpp"
 
-#endif /*MDL_TYPES_ARRAY_HPP_*/
+
 

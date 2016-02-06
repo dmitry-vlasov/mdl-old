@@ -11,8 +11,7 @@
 /*****************************************************************************/
 
 
-#ifndef MDL_PROVER_TREE_DOWN_CROWN_DPP__
-#define MDL_PROVER_TREE_DOWN_CROWN_DPP__
+#pragma once
 
 namespace mdl {
 namespace prover {
@@ -28,4 +27,4 @@ namespace crown {
 }
 }
 
-#endif /*MDL_PROVER_TREE_DOWN_CROWN_DPP__*/
+

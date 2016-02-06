@@ -10,11 +10,10 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_EXPRESSION_UNIFY_IPP_
-#define MDL_EXPRESSION_UNIFY_IPP_
+#pragma once
 
 #include "mdl/expression/unify/exp/mdl_expression_unify_exp.ipp"
 #include "mdl/expression/unify/fact/mdl_expression_unify_fact.ipp"
 #include "mdl/expression/unify/sub/mdl_expression_unify_sub.ipp"
 
-#endif /*MDL_EXPRESSION_UNIFY_IPP_*/
+

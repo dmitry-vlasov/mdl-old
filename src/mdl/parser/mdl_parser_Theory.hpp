@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_PARSER_THEORY_HPP_
-#define MDL_PARSER_THEORY_HPP_
+#pragma once
 
 #include "mdl/interface/mdl_interface.hpp"
 #include "mdl/lexer/mdl_lexer.hpp"
@@ -45,4 +44,4 @@ private :
 }
 }
 
-#endif /*MDL_PARSER_THEORY_HPP_*/
+

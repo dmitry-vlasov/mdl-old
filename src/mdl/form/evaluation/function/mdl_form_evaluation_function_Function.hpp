@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_FORM_EVALUATION_FUNCTION_FUNCTION_HPP_
-#define MDL_FORM_EVALUATION_FUNCTION_FUNCTION_HPP_
+#pragma once
 
 namespace mdl {
 namespace form {
@@ -78,4 +77,4 @@ protected :
 }
 }
 
-#endif /*MDL_FORM_EVALUATION_FUNCTION_FUNCTION_HPP_*/
+

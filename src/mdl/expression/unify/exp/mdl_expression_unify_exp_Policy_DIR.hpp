@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_EXPRESSION_UNIFY_EXP_POLICY_DIR_HPP_
-#define MDL_EXPRESSION_UNIFY_EXP_POLICY_DIR_HPP_
+#pragma once
 
 #include "mdl/expression/unify/mdl_expression_unify.dpp"
 
@@ -85,4 +84,4 @@ public :
 }
 }
 
-#endif /*MDL_EXPRESSION_UNIFY_EXP_POLICY_DIR_HPP_*/
+

@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_AUXILIARY_DPP_
-#define MDL_AUXILIARY_DPP_
+#pragma once
 
 #include "mdl/auxiliary/config/mdl_auxiliary_config.dpp"
 #include "mdl/auxiliary/parameter/mdl_auxiliary_parameter.dpp"
@@ -46,4 +45,4 @@ namespace auxiliary {
 	using auxiliary :: Volume;
 }
 
-#endif /*MDL_AUXILIARY_DPP_*/
+

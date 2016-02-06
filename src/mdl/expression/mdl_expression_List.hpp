@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_EXPRESSION_LIST_HPP_
-#define MDL_EXPRESSION_LIST_HPP_
+#pragma once
 
 #include "mdl/auxiliary/mdl_auxiliary_Pool.hpp"
 #include "mdl/expression/mdl_expression_Linear.hpp"
@@ -120,5 +119,5 @@ public :
 }
 }
 
-#endif /*MDL_EXPRESSION_LIST_HPP_*/
+
 

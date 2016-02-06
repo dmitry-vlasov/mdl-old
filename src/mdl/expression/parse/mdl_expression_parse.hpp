@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_EXPRESSION_PARSE_HPP_
-#define MDL_EXPRESSION_PARSE_HPP_
+#pragma once
 
 namespace mdl {
 namespace expression {
@@ -42,4 +41,4 @@ namespace parse {
 #include "mdl/expression/parse/mdl_expression_parse_Tree.hpp"
 #include "mdl/expression/parse/mdl_expression_parse_Unit.hpp"
 
-#endif /*MDL_EXPRESSION_PARSE_HPP_*/
+

@@ -10,12 +10,11 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_EXPRESSION_SIMIFY_IPP_
-#define MDL_EXPRESSION_SIMIFY_IPP_
+#pragma once
 
 #include "mdl/expression/simify/mdl_expression_simify_Lengthirator.ipp"
 #include "mdl/expression/simify/mdl_expression_simify_Simifier.ipp"
 #include "mdl/expression/simify/mdl_expression_simify_Similarity.ipp"
 #include "mdl/expression/simify/mdl_expression_simify_Unit.ipp"
 
-#endif /*MDL_EXPRESSION_SIMIFY_IPP_*/
+

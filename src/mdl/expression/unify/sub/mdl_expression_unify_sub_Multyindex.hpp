@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_EXPRESSION_UNIFY_SUB_MULTYINDEX_HPP_
-#define MDL_EXPRESSION_UNIFY_SUB_MULTYINDEX_HPP_
+#pragma once
 
 #include "mdl/prover/interface/mdl_prover_interface.dpp"
 
@@ -80,4 +79,4 @@ protected :
 }
 }
 
-#endif /*MDL_EXPRESSION_UNIFY_SUB_MULTYINDEX_HPP_*/
+

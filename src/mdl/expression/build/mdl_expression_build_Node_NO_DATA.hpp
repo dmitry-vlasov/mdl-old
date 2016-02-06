@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_EXPRESSION_BUILD_NODE_NO_DATA_HPP_
-#define MDL_EXPRESSION_BUILD_NODE_NO_DATA_HPP_
+#pragma once
 
 #include "mdl/expression/build/mdl_expression_build.dpp"
 
@@ -48,4 +47,4 @@ struct Node<B, NO_DATA> {
 }
 }
 
-#endif /*MDL_EXPRESSION_BUILD_NODE_NO_DATA_HPP_*/
+

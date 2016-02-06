@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_INTERFACE_EVALUATION_TERM_CPP_
-#define MDL_INTERFACE_EVALUATION_TERM_CPP_
+#pragma once
 
 namespace mdl {
 namespace interface {
@@ -67,4 +66,4 @@ namespace evaluation {
 }
 
 
-#endif /*MDL_INTERFACE_EVALUATION_TERM_CPP_*/
+

@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_CONSOLE_DPP_
-#define MDL_CONSOLE_DPP_
+#pragma once
 
 namespace mdl {
 namespace console {
@@ -24,4 +23,4 @@ namespace console {
 	using console :: Server;
 }
 
-#endif /*MDL_CONSOLE_DPP_*/
+

@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_EXPRESSION_BUILD_BUILDER_HPP_
-#define MDL_EXPRESSION_BUILD_BUILDER_HPP_
+#pragma once
 
 #include "mdl/types/mdl_types.hpp"
 #include "mdl/expression/mdl_expression.dpp"
@@ -129,4 +128,4 @@ private :
 }
 }
 
-#endif /*MDL_EXPRESSION_BUILD_BUILDER_HPP_*/
+

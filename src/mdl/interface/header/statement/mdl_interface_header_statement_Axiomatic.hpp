@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_INTERFACE_HEADER_STATEMENT_AXIOMATIC_HPP_
-#define MDL_INTERFACE_HEADER_STATEMENT_AXIOMATIC_HPP_
+#pragma once
 
 #include "mdl/interface/header/statement/mdl_interface_header_statement_Proposition.hpp"
 
@@ -28,4 +27,4 @@ class Axiomatic : virtual public Proposition {
 }
 }
 
-#endif /*MDL_INTERFACE_HEADER_STATEMENT_AXIOMATIC_HPP_*/
+

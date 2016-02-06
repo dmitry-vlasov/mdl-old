@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_EXPRESSION_ITERATOR_DPP_
-#define MDL_EXPRESSION_ITERATOR_DPP_
+#pragma once
 
 #include "mdl/expression/iterator/constant/mdl_expression_iterator_constant.dpp"
 #include "mdl/expression/iterator/modifier/mdl_expression_iterator_modifier.dpp"
@@ -32,4 +31,4 @@ namespace iterator {
 }
 }
 
-#endif /*MDL_EXPRESSION_ITERATOR_DPP_*/
+

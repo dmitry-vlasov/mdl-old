@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_FORM_BLOCK_HPP_
-#define MDL_FORM_BLOCK_HPP_
+#pragma once
 
 #include "mdl/form/block/mdl_form_block_Assertion.hpp"
 #include "mdl/form/block/mdl_form_block_Axiom.hpp"
@@ -24,4 +23,4 @@
 #include "mdl/form/block/mdl_form_block_Theorem.hpp"
 #include "mdl/form/block/mdl_form_block_Type.hpp"
 
-#endif /*MDL_FORM_BLOCK_HPP_*/
+

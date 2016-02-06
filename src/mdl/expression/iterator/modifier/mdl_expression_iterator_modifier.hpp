@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_EXPRESSION_ITERATOR_MODIFIER_HPP_
-#define MDL_EXPRESSION_ITERATOR_MODIFIER_HPP_
+#pragma once
 
 #include "mdl/expression/iterator/modifier/mdl_expression_iterator_modifier_Array.hpp"
 #include "mdl/expression/iterator/modifier/mdl_expression_iterator_modifier_Identity.hpp"
@@ -21,4 +20,4 @@
 #include "mdl/expression/iterator/modifier/mdl_expression_iterator_modifier_Pair.hpp"
 #include "mdl/expression/iterator/modifier/mdl_expression_iterator_modifier_Trace.hpp"
 
-#endif /*MDL_EXPRESSION_ITERATOR_MODIFIER_HPP_*/
+

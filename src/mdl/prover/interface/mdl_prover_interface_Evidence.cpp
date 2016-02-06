@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_PROVER_INTERFACE_EVIDENCE_CPP_
-#define MDL_PROVER_INTERFACE_EVIDENCE_CPP_
+#pragma once
 
 #include "mdl/interface/mdl_interface.dpp"
 #include "mdl/prover/evidence/mdl_prover_evidence.hpp"
@@ -410,4 +409,4 @@ using manipulator :: iterate;
 }
 }
 
-#endif /*MDL_PROVER_INTERFACE_EVIDENCE_CPP_*/
+

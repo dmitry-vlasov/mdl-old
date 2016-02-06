@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_LEXER_LEXER_IPP_
-#define MDL_LEXER_LEXER_IPP_
+#pragma once
 
 #include "mdl/auxiliary/mdl_auxiliary.hpp"
 
@@ -851,4 +850,4 @@ using manipulator :: space;
 }
 }
 
-#endif /*MDL_LEXER_LEXER_IPP_*/
+

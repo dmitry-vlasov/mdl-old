@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_EXPRESSION_UNIFY_SUB_DPP_
-#define MDL_EXPRESSION_UNIFY_SUB_DPP_
+#pragma once
 
 #include "mdl/expression/unify/sub/prod/mdl_expression_unify_sub_prod.dpp"
 #include "mdl/expression/unify/sub/tree/mdl_expression_unify_sub_tree.dpp"
@@ -30,4 +29,4 @@ namespace sub {
 }
 }
 
-#endif /*MDL_EXPRESSION_UNIFY_SUB_DPP_*/
+

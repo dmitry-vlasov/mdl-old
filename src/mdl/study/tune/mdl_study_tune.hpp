@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_STUDY_TUNE_HPP_
-#define MDL_STUDY_TUNE_HPP_
+#pragma once
 
 #include "mdl/study/tune/mdl_study_tune_Grouping.hpp"
 #include "mdl/study/tune/mdl_study_tune_Precision.hpp"
@@ -22,4 +21,4 @@
 #include "mdl/study/tune/mdl_study_tune_Tuner_Estimating.hpp"
 #include "mdl/study/tune/mdl_study_tune_Tuner_Timing.hpp"
 
-#endif /*MDL_STUDY_TUNE_HPP_*/
+

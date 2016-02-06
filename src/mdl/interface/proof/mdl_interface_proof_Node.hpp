@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_INTERFACE_PROOF_NODE_HPP_
-#define MDL_INTERFACE_PROOF_NODE_HPP_
+#pragma once
 
 #include "mdl/interface/object/mdl_interface_object.hpp"
 #include "mdl/lexer/mdl_lexer_Token.hpp"
@@ -41,4 +40,4 @@ public :
 }
 }
 
-#endif /*MDL_INTERFACE_PROOF_NODE_HPP_*/
+

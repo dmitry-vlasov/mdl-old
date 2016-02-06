@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_EXPRESSION_IPP_
-#define MDL_EXPRESSION_IPP_
+#pragma once
 
 #include "mdl/expression/build/mdl_expression_build.ipp"
 #include "mdl/expression/direction/mdl_expression_direction.ipp"
@@ -36,4 +35,4 @@
 
 #include "mdl/expression/mdl_expression.tpp"
 
-#endif /*MDL_EXPRESSION_IPP_*/
+

@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_EXPRESSION_UNIFY_SUB_PROD_IPP_
-#define MDL_EXPRESSION_UNIFY_SUB_PROD_IPP_
+#pragma once
 
 #include "mdl/expression/unify/sub/prod/mdl_expression_unify_sub_prod_Finalize.ipp"
 #include "mdl/expression/unify/sub/prod/mdl_expression_unify_sub_prod_Matrix.ipp"
@@ -19,4 +18,4 @@
 #include "mdl/expression/unify/sub/prod/mdl_expression_unify_sub_prod_Vector.ipp"
 #include "mdl/expression/unify/sub/prod/mdl_expression_unify_sub_prod_Unit.ipp"
 
-#endif /*MDL_EXPRESSION_UNIFY_SUB_PROD_IPP_*/
+

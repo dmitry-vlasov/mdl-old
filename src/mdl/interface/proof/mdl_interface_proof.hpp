@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_INTERFACE_PROOF_HPP_
-#define MDL_INTERFACE_PROOF_HPP_
+#pragma once
 
 #include "mdl/interface/proof/mdl_interface_proof_Assertion.hpp"
 #include "mdl/interface/proof/mdl_interface_proof_Claim.hpp"
@@ -30,4 +29,4 @@
 #include "mdl/interface/proof/mdl_interface_proof_Step.hpp"
 #include "mdl/interface/proof/mdl_interface_proof_Variable.hpp"
 
-#endif /*MDL_INTERFACE_PROOF_HPP_*/
+

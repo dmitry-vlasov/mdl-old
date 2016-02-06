@@ -10,10 +10,9 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_AUXILIARY_STATISTICS_HPP_
-#define MDL_AUXILIARY_STATISTICS_HPP_
+#pragma once
 
 #include "mdl/auxiliary/statistics/mdl_auxiliary_statistics_Sample.hpp"
 #include "mdl/auxiliary/statistics/mdl_auxiliary_statistics_Statistics.hpp"
 
-#endif /*MDL_AUXILIARY_STATISTICS_HPP_*/
+

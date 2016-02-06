@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_INTERFACE_HEADER_STATEMENT_HPP__
-#define MDL_INTERFACE_HEADER_STATEMENT_HPP__
+#pragma once
 
 #include "mdl/interface/header/statement/mdl_interface_header_statement_Axiomatic.hpp"
 #include "mdl/interface/header/statement/mdl_interface_header_statement_Definition.hpp"
@@ -21,4 +20,4 @@
 #include "mdl/interface/header/statement/mdl_interface_header_statement_Provable.hpp"
 #include "mdl/interface/header/statement/mdl_interface_header_statement_Statement.hpp"
 
-#endif /*MDL_INTERFACE_HEADER_STATEMENT_HPP__*/
+

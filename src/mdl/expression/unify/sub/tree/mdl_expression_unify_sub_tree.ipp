@@ -10,12 +10,11 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_EXPRESSION_UNIFY_SUB_TREE_IPP_
-#define MDL_EXPRESSION_UNIFY_SUB_TREE_IPP_
+#pragma once
 
 #include "mdl/expression/unify/sub/tree/mdl_expression_unify_sub_tree_Finalize.ipp"
 #include "mdl/expression/unify/sub/tree/mdl_expression_unify_sub_tree_Unifier.ipp"
 #include "mdl/expression/unify/sub/tree/mdl_expression_unify_sub_tree_Unify.ipp"
 #include "mdl/expression/unify/sub/tree/mdl_expression_unify_sub_tree_Unit.ipp"
 
-#endif /*MDL_EXPRESSION_UNIFY_SUB_TREE_IPP_*/
+

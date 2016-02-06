@@ -10,11 +10,10 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_EXPRESSION_NODE_VALUED_IPP_
-#define MDL_EXPRESSION_NODE_VALUED_IPP_
+#pragma once
 
 #include "mdl/expression/node/valued/mdl_expression_node_valued_Bush.ipp"
 #include "mdl/expression/node/valued/mdl_expression_node_valued_Forest.ipp"
 #include "mdl/expression/node/valued/mdl_expression_node_valued_Tree.ipp"
 
-#endif /*MDL_EXPRESSION_NODE_VALUED_IPP_*/
+

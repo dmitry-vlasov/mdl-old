@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_MATH_CONTAINER_IPP_
-#define MDL_MATH_CONTAINER_IPP_
+#pragma once
 
 namespace mdl {
 namespace math {
@@ -88,4 +87,4 @@ using manipulator :: endLine;
 }
 }
 
-#endif /*MDL_MATH_CONTAINER_IPP_*/
+

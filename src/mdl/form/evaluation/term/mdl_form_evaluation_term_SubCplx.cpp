@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_FORM_EVALUATION_TERM_SUB_CPLX_CPP_
-#define MDL_FORM_EVALUATION_TERM_SUB_CPLX_CPP_
+#pragma once
 
 namespace mdl {
 namespace form {
@@ -75,4 +74,4 @@ using manipulator :: endLine;
 }
 }
 
-#endif /*MDL_FORM_EVALUATION_TERM_SUB_CPLX_CPP_*/
+

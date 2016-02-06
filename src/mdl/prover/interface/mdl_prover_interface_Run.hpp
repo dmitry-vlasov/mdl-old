@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_RUN_INTERFACE_RUN_HPP_
-#define MDL_RUN_INTERFACE_RUN_HPP_
+#pragma once
 
 #include "mdl/interface/object/mdl_interface_object.hpp"
 
@@ -43,4 +42,4 @@ public :
 }
 }
 
-#endif /*MDL_RUN_INTERFACE_RUN_HPP_*/
+

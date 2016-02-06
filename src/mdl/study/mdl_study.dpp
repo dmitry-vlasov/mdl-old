@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_STUDY_DPP_
-#define MDL_STUDY_DPP_
+#pragma once
 
 #include "mdl/study/benchmark/mdl_study_benchmark.dpp"
 #include "mdl/study/lexp/mdl_study_lexp.dpp"
@@ -51,4 +50,4 @@ namespace study {
 }
 }
 
-#endif /*MDL_STUDY_DPP_*/
+

@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_PARSER_BLOCK_THEOREM_HPP_
-#define MDL_PARSER_BLOCK_THEOREM_HPP_
+#pragma once
 
 #include "mdl/parser/block/mdl_parser_block_Assertion.hpp"
 
@@ -44,4 +43,4 @@ private :
 }
 }
 
-#endif /*MDL_PARSER_BLOCK_THEOREM_HPP_*/
+

@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_EXPRESSION_NODE_CONTAINER_SINGLETON_HPP_
-#define MDL_EXPRESSION_NODE_CONTAINER_SINGLETON_HPP_
+#pragma once
 
 namespace mdl {
 namespace expression {
@@ -58,4 +57,4 @@ private :
 
 #include "mdl/expression/node/container/mdl_expression_node_container_Singleton_Node.hpp"
 
-#endif /*MDL_EXPRESSION_NODE_CONTAINER_SINGLETON_HPP_*/
+

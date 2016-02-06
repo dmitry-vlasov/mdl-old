@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_INTERFACE_EVALUATION_DPP_
-#define MDL_INTERFACE_EVALUATION_DPP_
+#pragma once
 
 namespace mdl {
 namespace interface {
@@ -94,4 +93,4 @@ namespace vector {
 
 }
 
-#endif /*MDL_INTERFACE_EVALUATION_DPP_*/
+

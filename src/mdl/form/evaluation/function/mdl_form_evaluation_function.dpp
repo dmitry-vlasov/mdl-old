@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_FORM_EVALUATION_FUNCTION_DPP_
-#define MDL_FORM_EVALUATION_FUNCTION_DPP_
+#pragma once
 
 namespace mdl {
 namespace form {
@@ -25,4 +24,4 @@ namespace function {
 }
 }
 
-#endif /*MDL_FORM_EVALUATION_FUNCTION_DPP_*/
+

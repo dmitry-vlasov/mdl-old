@@ -10,11 +10,10 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_INTERFACE_EVALUATION_HPP__
-#define MDL_INTERFACE_EVALUATION_HPP__
+#pragma once
 
 #include "mdl/interface/evaluation/mdl_interface_evaluation_Case.hpp"
 #include "mdl/interface/evaluation/mdl_interface_evaluation_Function.hpp"
 #include "mdl/interface/evaluation/mdl_interface_evaluation_Term.hpp"
 
-#endif /*MDL_INTERFACE_EVALUATION_HPP__*/
+

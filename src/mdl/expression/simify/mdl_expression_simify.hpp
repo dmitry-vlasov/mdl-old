@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_EXPRESSION_SIMIFY_HPP_
-#define MDL_EXPRESSION_SIMIFY_HPP_
+#pragma once
 
 #include "mdl/expression/simify/mdl_expression_simify_Lengthirator.hpp"
 #include "mdl/expression/simify/mdl_expression_simify_Simifier.hpp"
@@ -19,4 +18,4 @@
 #include "mdl/expression/simify/mdl_expression_simify_Similarity.hpp"
 #include "mdl/expression/simify/mdl_expression_simify_Unit.hpp"
 
-#endif /*MDL_EXPRESSION_SIMIFY_HPP_*/
+

@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_STUDY_LEXP_CPP_
-#define MDL_STUDY_LEXP_CPP_
+#pragma once
 
 #include "mdl/study/lexp/mdl_study_lexp_Config.cpp"
 #include "mdl/study/lexp/mdl_study_lexp_Dot.cpp"
@@ -21,4 +20,4 @@
 #include "mdl/study/lexp/mdl_study_lexp_Teacher.cpp"
 #include "mdl/study/lexp/mdl_study_lexp_Tuner.cpp"
 
-#endif /*MDL_STUDY_LEXP_CPP_*/
+

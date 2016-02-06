@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_EXPRESSION_ITERATOR_LINEAR_HPP_
-#define MDL_EXPRESSION_ITERATOR_LINEAR_HPP_
+#pragma once
 
 #include "mdl/expression/direction/mdl_expression_direction.hpp"
 #include "mdl/expression/iterator/mdl_expression_iterator_Singleton.hpp"
@@ -44,4 +43,4 @@ public :
 }
 }
 
-#endif /*MDL_EXPRESSION_ITERATOR_LINEAR_HPP_*/
+

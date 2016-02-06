@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_PROVER_INTERFACE_EVIDENCES_HPP_
-#define MDL_PROVER_INTERFACE_EVIDENCES_HPP_
+#pragma once
 
 #include "mdl/interface/mdl_interface.dpp"
 
@@ -51,4 +50,4 @@ public :
 }
 }
 
-#endif /*MDL_PROVER_INTERFACE_EVIDENCES_HPP_*/
+

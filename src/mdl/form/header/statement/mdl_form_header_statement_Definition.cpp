@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_FORM_HEADER_STATEMENT_DEFINITION_CPP_
-#define MDL_FORM_HEADER_STATEMENT_DEFINITION_CPP_
+#pragma once
 
 namespace mdl {
 namespace form {
@@ -307,5 +306,5 @@ using manipulator :: tab;
 }
 }
 
-#endif /*MDL_FORM_HEADER_STATEMENT_DEFINITION_CPP_*/
+
 

@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_EXPRESSION_SYMBOL_IPP_
-#define MDL_EXPRESSION_SYMBOL_IPP_
+#pragma once
 
 namespace mdl {
 namespace expression {
@@ -188,4 +187,4 @@ namespace expression {
 }
 }
 
-#endif /*MDL_EXPRESSION_SYMBOL_IPP_*/
+

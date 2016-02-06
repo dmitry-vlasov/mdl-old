@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_TYPES_STORAGE_HPP_
-#define MDL_TYPES_STORAGE_HPP_
+#pragma once
 
 namespace mdl {
 namespace storage {
@@ -23,4 +22,4 @@ namespace storage {
 }
 }
 
-#endif /*MDL_TYPES_STORAGE_HPP_*/
+

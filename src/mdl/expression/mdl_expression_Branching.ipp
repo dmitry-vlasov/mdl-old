@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_EXPRESSION_BRANCHING_IPP_
-#define MDL_EXPRESSION_BRANCHING_IPP_
+#pragma once
 
 #include "mdl/auxiliary/mdl_auxiliary.hpp"
 
@@ -462,4 +461,4 @@ using manipulator :: tab;
 }
 }
 
-#endif /*MDL_EXPRESSION_BRANCHING_IPP_*/
+

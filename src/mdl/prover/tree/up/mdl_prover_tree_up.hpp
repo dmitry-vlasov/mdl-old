@@ -10,11 +10,10 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_PROVER_TREE_UP_HPP_
-#define MDL_PROVER_TREE_UP_HPP_
+#pragma once
 
 #include "mdl/prover/tree/up/mdl_prover_tree_up_Crown.hpp"
 #include "mdl/prover/tree/up/mdl_prover_tree_up_Level.hpp"
 #include "mdl/prover/tree/up/mdl_prover_tree_up_Tree.hpp"
 
-#endif /*MDL_PROVER_TREE_UP_HPP_*/
+

@@ -10,9 +10,8 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_PROVER_TREE_DOWN_CROWN_HPP__
-#define MDL_PROVER_TREE_DOWN_CROWN_HPP__
+#pragma once
 
 #include "mdl/prover/tree/down/crown/mdl_prover_tree_down_crown_Sequental.hpp"
 
-#endif /*MDL_PROVER_TREE_DOWN_CROWN_HPP__*/
+

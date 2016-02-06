@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_CONSOLE_COMMAND_CPP_
-#define MDL_CONSOLE_COMMAND_CPP_
+#pragma once
 
 namespace mdl {
 namespace console {
@@ -488,4 +487,4 @@ using manipulator :: tab;
 }
 }
 
-#endif /*MDL_CONSOLE_COMMAND_CPP_*/
+

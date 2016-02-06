@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_FORM_EVALUATION_TERM_BARRIER_CPP_
-#define MDL_FORM_EVALUATION_TERM_BARRIER_CPP_
+#pragma once
 
 #include <math.h>
 
@@ -159,4 +158,4 @@ using manipulator :: space;
 }
 }
 
-#endif /*MDL_FORM_EVALUATION_TERM_BARRIER_CPP_*/
+

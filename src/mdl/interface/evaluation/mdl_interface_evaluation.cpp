@@ -10,9 +10,8 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_INTERFACE_EVALUATION_CPP_
-#define MDL_INTERFACE_EVALUATION_CPP_
+#pragma once
 
 #include "mdl/interface/evaluation/mdl_interface_evaluation_Term.cpp"
 
-#endif /*MDL_INTERFACE_EVALUATION_CPP_*/
+

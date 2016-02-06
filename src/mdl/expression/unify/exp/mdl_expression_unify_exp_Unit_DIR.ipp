@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_EXPRESSION_UNIFY_EXP_UNIT_DIR_IPP_
-#define MDL_EXPRESSION_UNIFY_EXP_UNIT_DIR_IPP_
+#pragma once
 
 namespace mdl {
 namespace expression {
@@ -355,4 +354,4 @@ using manipulator :: iterate;
 }
 }
 
-#endif /*MDL_EXPRESSION_UNIFY_EXP_UNIT_DIR_IPP_*/
+

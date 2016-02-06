@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_EXPRESSION_UNIFY_SUB_IPP_
-#define MDL_EXPRESSION_UNIFY_SUB_IPP_
+#pragma once
 
 #include "mdl/expression/unify/sub/prod/mdl_expression_unify_sub_prod.ipp"
 #include "mdl/expression/unify/sub/tree/mdl_expression_unify_sub_tree.ipp"
@@ -19,4 +18,4 @@
 #include "mdl/expression/unify/sub/mdl_expression_unify_sub_Finaly.ipp"
 #include "mdl/expression/unify/sub/mdl_expression_unify_sub_Multyindex.ipp"
 
-#endif /*MDL_EXPRESSION_UNIFY_SUB_IPP_*/
+

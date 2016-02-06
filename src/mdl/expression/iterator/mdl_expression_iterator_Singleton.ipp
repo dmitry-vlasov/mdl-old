@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_EXPRESSION_ITERATOR_SINGLETON_IPP_
-#define MDL_EXPRESSION_ITERATOR_SINGLETON_IPP_
+#pragma once
 
 namespace mdl {
 namespace expression {
@@ -164,4 +163,4 @@ namespace iterator {
 }
 }
 
-#endif /*MDL_EXPRESSION_ITERATOR_SINGLETON_IPP_*/
+

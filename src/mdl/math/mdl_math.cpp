@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_MATH_CPP_
-#define MDL_MATH_CPP_
+#pragma once
 
 #include "mdl/math/mdl_math_Assertions.cpp"
 #include "mdl/math/mdl_math_Constants.cpp"
@@ -26,4 +25,4 @@
 #include "mdl/math/mdl_math_Theories.cpp"
 #include "mdl/math/mdl_math_Types.cpp"
 
-#endif /*MDL_MATH_СPP_*/
+

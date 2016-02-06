@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_STUDY_TEACH_TEACHER_TIMING_HPP_
-#define MDL_STUDY_TEACH_TEACHER_TIMING_HPP_
+#pragma once
 
 #include "mdl/interface/mdl_interface.hpp"
 
@@ -54,4 +53,4 @@ private :
 }
 }
 
-#endif /*MDL_STUDY_TEACH_TEACHER_TIMING_HPP_*/
+

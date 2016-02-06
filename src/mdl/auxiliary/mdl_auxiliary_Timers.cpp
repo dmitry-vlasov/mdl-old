@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_AUXILIARY_TIMERS_CPP_
-#define MDL_AUXILIARY_TIMERS_CPP_
+#pragma once
 
 #include "mdl/auxiliary/mdl_auxiliary.hpp"
 
@@ -287,4 +286,4 @@ using manipulator :: tab;
 }
 }
 
-#endif /*MDL_AUXILIARY_TIMERS_CPP_*/
+

@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_AUXILIARY_LOG_CPP_
-#define MDL_AUXILIARY_LOG_CPP_
+#pragma once
 
 namespace mdl {
 namespace auxiliary {
@@ -242,4 +241,4 @@ using manipulator :: endLine;
 }
 }
 
-#endif /*MDL_AUXILIARY_LOG_CPP_*/
+

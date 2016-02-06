@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_PARSER_DPP_
-#define MDL_PARSER_DPP_
+#pragma once
 
 #include "mdl/parser/block/mdl_parser_block.dpp"
 #include "mdl/parser/evaluation/mdl_parser_evaluation.dpp"
@@ -32,4 +31,4 @@ namespace parser {
 	typedef parser :: Source Parser;
 }
 
-#endif /*MDL_PARSER_DPP_*/
+

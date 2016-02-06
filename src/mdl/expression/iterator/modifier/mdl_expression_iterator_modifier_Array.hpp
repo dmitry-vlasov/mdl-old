@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_EXPRESSION_ITERATOR_MODIFIER_ARRAY_HPP_
-#define MDL_EXPRESSION_ITERATOR_MODIFIER_ARRAY_HPP_
+#pragma once
 
 #include "mdl/expression/iterator/modifier/mdl_expression_iterator_modifier_Memory.hpp"
 
@@ -85,4 +84,4 @@ private :
 }
 }
 
-#endif /*MDL_EXPRESSION_ITERATOR_MODIFIER_ARRAY_HPP_*/
+

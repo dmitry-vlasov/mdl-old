@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_MATH_RULES_HPP_
-#define MDL_MATH_RULES_HPP_
+#pragma once
 
 #include "mdl/interface/mdl_interface.hpp"
 #include "mdl/math/mdl_math_Container.hpp"
@@ -48,4 +47,4 @@ private :
 }
 }
 
-#endif /*MDL_MATH_RULES_HPP_*/
+

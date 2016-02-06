@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_EXPRESSION_BUSH_HPP_
-#define MDL_EXPRESSION_BUSH_HPP_
+#pragma once
 
 #include "mdl/interface/object/mdl_interface_object_Object.hpp"
 #include "mdl/expression/node/mdl_expression_node.hpp"
@@ -98,4 +97,4 @@ public :
 }
 }
 
-#endif /*MDL_EXPRESSION_BUSH_HPP_*/
+

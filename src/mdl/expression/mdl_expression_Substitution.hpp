@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_EXPRESSION_SUBSTITUTION_HPP_
-#define MDL_EXPRESSION_SUBSTITUTION_HPP_
+#pragma once
 
 #include "mdl/expression/mdl_expression_Symbol.hpp"
 #include "mdl/expression/mdl_expression_Substiunit.hpp"
@@ -196,4 +195,4 @@ private :
 }
 }
 
-#endif /*MDL_EXPRESSION_SUBSTITUTION_HPP_*/
+

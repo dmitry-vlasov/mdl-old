@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_EXPRESSION_NODE_TERMS_BRANCHING_HPP_
-#define MDL_EXPRESSION_NODE_TERMS_BRANCHING_HPP_
+#pragma once
 
 #include "mdl/types/mdl_types.hpp"
 #include "mdl/expression/node/terms/mdl_expression_node_terms_List.hpp"
@@ -81,4 +80,4 @@ private :
 }
 }
 
-#endif /*MDL_EXPRESSION_NODE_TERMS_BRANCHING_HPP_*/
+

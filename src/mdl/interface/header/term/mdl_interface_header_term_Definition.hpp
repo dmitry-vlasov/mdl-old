@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_INTERFACE_HEADER_TERM_DEFINITION_HPP_
-#define MDL_INTERFACE_HEADER_TERM_DEFINITION_HPP_
+#pragma once
 
 #include "mdl/interface/header/term/mdl_interface_header_term_Term.hpp"
 
@@ -30,4 +29,4 @@ public :
 }
 }
 
-#endif /*MDL_INTERFACE_HEADER_TERM_DEFINITION_HPP_*/
+

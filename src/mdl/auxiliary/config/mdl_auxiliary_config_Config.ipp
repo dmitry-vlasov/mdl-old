@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_AUXILIARY_CONFIG_CONFIG_IPP_
-#define MDL_AUXILIARY_CONFIG_CONFIG_IPP_
+#pragma once
 
 namespace mdl {
 namespace auxiliary {
@@ -29,4 +28,4 @@ namespace config {
 }
 }
 
-#endif /*MDL_AUXILIARY_CONFIG_CONFIG_IPP_*/
+

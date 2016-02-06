@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_PROOF_DPP_
-#define MDL_PROOF_DPP_
+#pragma once
 
 #include "mdl/form/proof/node/mdl_form_proof_node.dpp"
 #include "mdl/form/proof/notation/mdl_form_proof_notation.dpp"
@@ -33,4 +32,4 @@ namespace proof {
 }
 }
 
-#endif /*MDL_PROOF_DPP_*/
+

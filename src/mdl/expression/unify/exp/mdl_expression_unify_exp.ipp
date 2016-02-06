@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_EXPRESSION_UNIFY_EXP_IPP_
-#define MDL_EXPRESSION_UNIFY_EXP_IPP_
+#pragma once
 
 #include "mdl/expression/unify/exp/mdl_expression_unify_exp_Replacer_DIR.ipp"
 #include "mdl/expression/unify/exp/mdl_expression_unify_exp_Replacer_SYM.ipp"
@@ -22,4 +21,4 @@
 #include "mdl/expression/unify/exp/mdl_expression_unify_exp_Unit_DIR.ipp"
 #include "mdl/expression/unify/exp/mdl_expression_unify_exp_Unit_SYM.ipp"
 
-#endif /*MDL_EXPRESSION_UNIFY_EXP_IPP_*/
+

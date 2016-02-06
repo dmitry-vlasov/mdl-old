@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_EXPRESSION_UNIFY_SUB_PROD_MATRIX_HPP_
-#define MDL_EXPRESSION_UNIFY_SUB_PROD_MATRIX_HPP_
+#pragma once
 
 #include "mdl/expression/unify/sub/prod/mdl_expression_unify_sub_prod_Vector.hpp"
 #include "mdl/expression/mdl_expression_List.hpp"
@@ -137,4 +136,4 @@ private :
 }
 }
 
-#endif /*MDL_EXPRESSION_UNIFY_SUB_PROD_MATRIX_HPP_*/
+

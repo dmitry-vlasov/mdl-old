@@ -10,11 +10,10 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_FORM_EVALUATION_DPP_
-#define MDL_FORM_EVALUATION_DPP_
+#pragma once
 
 #include "mdl/form/evaluation/function/mdl_form_evaluation_function.dpp"
 #include "mdl/form/evaluation/lexp/mdl_form_evaluation_lexp.dpp"
 #include "mdl/form/evaluation/term/mdl_form_evaluation_term.dpp"
 
-#endif /*MDL_FORM_EVALUATION_DPP_*/
+

@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_EXPRESSION_SYMBOL_HPP_
-#define MDL_EXPRESSION_SYMBOL_HPP_
+#pragma once
 
 #include "mdl/types/mdl_types.hpp"
 #include "mdl/interface/mdl_interface.dpp"
@@ -85,4 +84,4 @@ private :
 }
 }
 
-#endif /*MDL_EXPRESSION_SYMBOL_HPP_*/
+

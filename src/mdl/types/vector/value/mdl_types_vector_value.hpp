@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_TYPES_VECTOR_VALUE_HPP_
-#define MDL_TYPES_VECTOR_VALUE_HPP_
+#pragma once
 
 namespace mdl {
 namespace vector {
@@ -39,4 +38,4 @@ namespace value {
 }
 }
 
-#endif /*MDL_TYPES_VECTOR_VALUE_HPP_*/
+

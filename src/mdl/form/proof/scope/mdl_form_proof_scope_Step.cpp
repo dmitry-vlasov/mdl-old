@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_FORM_STEP_SCOPE_STEP_CPP_
-#define MDL_FORM_STEP_SCOPE_STEP_CPP_
+#pragma once
 
 #include "mdl/form/mdl_form.hpp"
 
@@ -117,4 +116,4 @@ namespace scope {
 }
 }
 
-#endif /*MDL_FORM_STEP_SCOPE_STEP_CPP_*/
+

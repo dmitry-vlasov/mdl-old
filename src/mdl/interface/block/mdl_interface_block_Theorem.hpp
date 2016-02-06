@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_INTERFACE_BLOCK_THEOREM_HPP_
-#define MDL_INTERFACE_BLOCK_THEOREM_HPP_
+#pragma once
 
 #include "mdl/interface/block/mdl_interface_block_Assertion.hpp"
 
@@ -28,4 +27,4 @@ class Theorem :
 }
 }
 
-#endif /*MDL_INTERFACE_BLOCK_THEOREM_HPP_*/
+

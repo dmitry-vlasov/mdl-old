@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_REFACTOR_DPP_
-#define MDL_REFACTOR_DPP_
+#pragma once
 
 #include "mdl/refactor/redundant/mdl_refactor_redundant.dpp"
 
@@ -23,4 +22,4 @@ namespace refactor {
 	using refactor :: Refactorer;
 }
 
-#endif /*MDL_REFACTOR_DPP_*/
+

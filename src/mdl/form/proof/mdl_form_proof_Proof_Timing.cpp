@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_FORM_PROOF_PROOF_TIMING_CPP_
-#define MDL_FORM_PROOF_PROOF_TIMING_CPP_
+#pragma once
 
 namespace mdl {
 namespace form {
@@ -202,4 +201,4 @@ namespace proof {
 }
 }
 
-#endif /*MDL_FORM_PROOF_PROOF_TIMING_CPP_*/
+

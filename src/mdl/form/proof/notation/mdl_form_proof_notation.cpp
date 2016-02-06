@@ -10,12 +10,11 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_FORM_PROOF_NOTATION_CPP__
-#define MDL_FORM_PROOF_NOTATION_CPP__
+#pragma once
 
 #include "mdl/form/proof/notation/mdl_form_proof_notation_Abbreviation.cpp"
 #include "mdl/form/proof/notation/mdl_form_proof_notation_Meaning.cpp"
 #include "mdl/form/proof/notation/mdl_form_proof_notation_Notation.cpp"
 #include "mdl/form/proof/notation/mdl_form_proof_notation_Term.cpp"
 
-#endif /*MDL_FORM_PROOF_NOTATION_CPP__*/
+

@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_INTERFACE_BLOCK_TYPE_HPP_
-#define MDL_INTERFACE_BLOCK_TYPE_HPP_
+#pragma once
 
 #include "mdl/interface/object/mdl_interface_object.hpp"
 #include "mdl/expression/mdl_expression.hpp"
@@ -46,4 +45,4 @@ public :
 }
 }
 
-#endif /*MDL_INTERFACE_BLOCK_TYPE_HPP_*/
+

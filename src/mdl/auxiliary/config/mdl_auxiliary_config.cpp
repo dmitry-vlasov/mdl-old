@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_AUXILIARY_CONFIG_CPP_
-#define MDL_AUXILIARY_CONFIG_CPP_
+#pragma once
 
 #include "mdl/auxiliary/config/mdl_auxiliary_config_Concurrency.cpp"
 #include "mdl/auxiliary/config/mdl_auxiliary_config_Config.cpp"
@@ -30,4 +29,4 @@
 #include "mdl/auxiliary/config/mdl_auxiliary_config_String.cpp"
 #include "mdl/auxiliary/config/mdl_auxiliary_config_Timing.cpp"
 
-#endif /*MDL_AUXILIARY_CONFIG_CPP_*/
+

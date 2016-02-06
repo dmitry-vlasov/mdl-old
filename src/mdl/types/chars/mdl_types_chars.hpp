@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_TYPES_CHARS_HPP_
-#define MDL_TYPES_CHARS_HPP_
+#pragma once
 
 namespace mdl {
 namespace chars {
@@ -20,4 +19,4 @@ namespace chars {
 }
 }
 
-#endif /*MDL_TYPES_CHARS_HPP_*/
+

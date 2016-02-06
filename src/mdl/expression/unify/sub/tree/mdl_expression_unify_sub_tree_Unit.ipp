@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_EXPRESSION_UNIFY_SUB_TREE_UNIT_IPP_
-#define MDL_EXPRESSION_UNIFY_SUB_TREE_UNIT_IPP_
+#pragma once
 
 namespace mdl {
 namespace expression {
@@ -862,4 +861,4 @@ using manipulator :: space;
 }
 }
 
-#endif /*MDL_EXPRESSION_UNIFY_SUB_TREE_UNIT_IPP_*/
+

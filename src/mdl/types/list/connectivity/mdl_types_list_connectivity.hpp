@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_TYPES_LIST_CONNECTIVITY_HPP_
-#define MDL_TYPES_LIST_CONNECTIVITY_HPP_
+#pragma once
 
 namespace mdl {
 namespace list {
@@ -23,4 +22,4 @@ namespace connectivity {
 }
 }
 
-#endif /* MDL_TYPES_LIST_CONNECTIVITY_HPP_ */
+

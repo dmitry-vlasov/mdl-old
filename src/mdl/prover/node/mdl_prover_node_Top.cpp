@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_PROVER_NODE_TOP_CPP_
-#define MDL_PROVER_NODE_TOP_CPP_
+#pragma once
 
 #include "mdl/prover/node/mdl_prover_node.hpp"
 
@@ -454,4 +453,4 @@ using manipulator :: mode;
 }
 }
 
-#endif /*MDL_PROVER_NODE_TOP_CPP_*/
+

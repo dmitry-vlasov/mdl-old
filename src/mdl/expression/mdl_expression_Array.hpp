@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_EXPRESSION_ARRAY_HPP_
-#define MDL_EXPRESSION_ARRAY_HPP_
+#pragma once
 
 #include "mdl/expression/mdl_expression_Linear.hpp"
 #include "mdl/expression/node/mdl_expression_node_Array.hpp"
@@ -111,4 +110,4 @@ private :
 }
 }
 
-#endif /*MDL_EXPRESSION_ARRAY_HPP_*/
+

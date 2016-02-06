@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_EXPRESSION_ITERATOR_CONSTANT_LINEAR_IPP_
-#define MDL_EXPRESSION_ITERATOR_CONSTANT_LINEAR_IPP_
+#pragma once
 
 namespace mdl {
 namespace expression {
@@ -67,4 +66,4 @@ namespace constant {
 }
 }
 
-#endif /*MDL_EXPRESSION_ITERATOR_CONSTANT_LINEAR_IPP_*/
+

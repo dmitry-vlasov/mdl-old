@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_AUXILIARY_POOL_UNIVERSAL_IPP_
-#define MDL_AUXILIARY_POOL_UNIVERSAL_IPP_
+#pragma once
 
 namespace mdl {
 namespace auxiliary {
@@ -46,4 +45,4 @@ namespace pool {
 }
 }
 
-#endif /*MDL_AUXILIARY_POOL_UNIVERSAL_IPP_*/
+

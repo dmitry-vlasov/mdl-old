@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_STUDY_LEXP_TEACHER_CPP_
-#define MDL_STUDY_LEXP_TEACHER_CPP_
+#pragma once
 
 namespace mdl {
 namespace study {
@@ -229,4 +228,4 @@ using manipulator :: endLine;
 }
 }
 
-#endif /*MDL_STUDY_LEXP_TEACHER_CPP_*/
+

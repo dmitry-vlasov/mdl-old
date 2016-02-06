@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_PROVER_NODE_HPP_
-#define MDL_PROVER_NODE_HPP_
+#pragma once
 
 #include "mdl/prover/node/mdl_prover_node_Hyp.hpp"
 #include "mdl/prover/node/mdl_prover_node_Prop.hpp"
@@ -19,4 +18,4 @@
 #include "mdl/prover/node/mdl_prover_node_Ref.hpp"
 #include "mdl/prover/node/mdl_prover_node_Top.hpp"
 
-#endif /*MDL_PROVER_NODE_HPP_*/
+

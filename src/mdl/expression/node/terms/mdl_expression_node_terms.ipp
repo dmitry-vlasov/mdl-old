@@ -10,12 +10,11 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_EXPRESSION_NODE_TERMS_IPP_
-#define MDL_EXPRESSION_NODE_TERMS_IPP_
+#pragma once
 
 #include "mdl/expression/node/terms/mdl_expression_node_terms_Branching.ipp"
 #include "mdl/expression/node/terms/mdl_expression_node_terms_Linear.ipp"
 #include "mdl/expression/node/terms/mdl_expression_node_terms_List.ipp"
 #include "mdl/expression/node/terms/mdl_expression_node_terms_Singleton.ipp"
 
-#endif /*MDL_EXPRESSION_NODE_TERMS_IPP_*/
+

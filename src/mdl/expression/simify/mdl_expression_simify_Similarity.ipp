@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_EXPRESSION_SIMIFY_SIMILARITY_IPP_
-#define MDL_EXPRESSION_SIMIFY_SIMILARITY_IPP_
+#pragma once
 
 namespace mdl {
 namespace expression {
@@ -90,4 +89,4 @@ namespace simify {
 }
 }
 
-#endif /*MDL_EXPRESSION_SIMIFY_SIMILARITY_IPP_*/
+

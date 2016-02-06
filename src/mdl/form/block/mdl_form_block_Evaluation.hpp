@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_FORM_BLOCK_EVALUATION_HPP_
-#define MDL_FORM_BLOCK_EVALUATION_HPP_
+#pragma once
 
 #include "mdl/interface/mdl_interface.hpp"
 #include "mdl/form/mdl_form_Identifiable.hpp"
@@ -76,4 +75,4 @@ private :
 }
 }
 
-#endif /*MDL_FORM_BLOCK_EVALUATION_HPP_*/
+

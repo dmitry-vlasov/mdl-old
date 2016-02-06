@@ -10,11 +10,10 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_REFACTOR_HPP_
-#define MDL_REFACTOR_HPP_
+#pragma once
 
 #include "mdl/refactor/redundant/mdl_refactor_redundant.hpp"
 
 #include "mdl_refactor_Refactorer.hpp"
 
-#endif /*MDL_REFACTOR_HPP_*/
+

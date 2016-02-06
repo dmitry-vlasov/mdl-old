@@ -10,9 +10,8 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_EXPRESSION_SIMIFY_CPP_
-#define MDL_EXPRESSION_SIMIFY_CPP_
+#pragma once
 
 #include "mdl/expression/simify/mdl_expression_simify_Simifier.cpp"
 
-#endif /*MDL_EXPRESSION_SIMIFY_CPP_*/
+

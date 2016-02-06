@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_FORM_EVALUATION_LEXP_CPP_
-#define MDL_FORM_EVALUATION_LEXP_CPP_
+#pragma once
 
 #include "mdl/form/evaluation/lexp/mdl_form_evaluation_lexp_Downhood.cpp"
 #include "mdl/form/evaluation/lexp/mdl_form_evaluation_lexp_Downhood_Tree.cpp"
@@ -21,4 +20,4 @@
 #include "mdl/form/evaluation/lexp/mdl_form_evaluation_lexp_Uphood.cpp"
 #include "mdl/form/evaluation/lexp/mdl_form_evaluation_lexp_Vector.cpp"
 
-#endif /*MDL_FORM_EVALUATION_LEXP_CPP_*/
+

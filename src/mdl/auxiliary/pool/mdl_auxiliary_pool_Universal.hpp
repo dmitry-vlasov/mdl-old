@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_AUXILIARY_POOL_UNIVERSAL_HPP_
-#define MDL_AUXILIARY_POOL_UNIVERSAL_HPP_
+#pragma once
 
 #include "mdl/auxiliary/pool/mdl_auxiliary_pool_Unit.hpp"
 
@@ -52,4 +51,4 @@ private :
 
 #include "mdl/auxiliary/pool/mdl_auxiliary_pool_Universal.ipp"
 
-#endif /*MDL_AUXILIARY_POOL_UNIVERSAL_HPP_*/
+

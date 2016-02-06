@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_EXPRESSION_NODE_FOREST_HPP_
-#define MDL_EXPRESSION_NODE_FOREST_HPP_
+#pragma once
 
 #include "mdl/expression/node/prototype/mdl_expression_node_prototype_Forest.hpp"
 #include "mdl/expression/node/terms/mdl_expression_node_terms.hpp"
@@ -104,4 +103,4 @@ public :
 }
 }
 
-#endif /*MDL_EXPRESSION_NODE_FOREST_HPP_*/
+

@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_FORM_PROOF_REFERENCE_CPP_
-#define MDL_FORM_PROOF_REFERENCE_CPP_
+#pragma once
 
 namespace mdl {
 namespace form {
@@ -145,4 +144,4 @@ using nstd :: manipulator :: tab;
 }
 }
 
-#endif /*MDL_FORM_PROOF_REFERENCE_CPP_*/
+

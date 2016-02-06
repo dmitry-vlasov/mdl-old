@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_STUDY_TUNE_TUNER_CPP_
-#define MDL_STUDY_TUNE_TUNER_CPP_
+#pragma once
 
 namespace mdl {
 namespace study {
@@ -223,4 +222,4 @@ using manipulator :: mode;
 }
 }
 
-#endif /*MDL_STUDY_TUNE_TUNER_CPP_*/
+

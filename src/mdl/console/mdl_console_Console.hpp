@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_CONSOLE_CONSOLE_HPP_
-#define MDL_CONSOLE_CONSOLE_HPP_
+#pragma once
 
 namespace mdl {
 namespace console {
@@ -58,4 +57,4 @@ private :
 }
 }
 
-#endif /*MDL_CONSOLE_CONSOLE_HPP_*/
+

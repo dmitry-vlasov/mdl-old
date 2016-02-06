@@ -10,11 +10,10 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_PARSER_EVALUATION_CPP_
-#define MDL_PARSER_EVALUATION_CPP_
+#pragma once
 
 #include "mdl/parser/evaluation/mdl_parser_evaluation_Case.cpp"
 #include "mdl/parser/evaluation/mdl_parser_evaluation_Function.cpp"
 #include "mdl/parser/evaluation/mdl_parser_evaluation_Term.cpp"
 
-#endif /*MDL_PARSER_EVALUATION_CPP_*/
+

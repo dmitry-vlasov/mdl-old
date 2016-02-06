@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_PROVER_STRATEGY_HPP_
-#define MDL_PROVER_STRATEGY_HPP_
+#pragma once
 
 #include "mdl/prover/strategy/mdl_prover_strategy_BestInAll.hpp"
 #include "mdl/prover/strategy/mdl_prover_strategy_BestInLevel.hpp"
@@ -20,4 +19,4 @@
 #include "mdl/prover/strategy/mdl_prover_strategy_Local.hpp"
 #include "mdl/prover/strategy/mdl_prover_strategy_Scheduler.hpp"
 
-#endif /*MDL_PROVER_STRATEGY_HPP_*/
+

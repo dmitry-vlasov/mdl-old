@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_FORM_DPP_
-#define MDL_FORM_DPP_
+#pragma once
 
 #include "mdl/form/block/mdl_form_block.dpp"
 #include "mdl/form/evaluation/mdl_form_evaluation.dpp"
@@ -32,4 +31,4 @@ namespace form {
 	typedef form :: Source Source;
 }
 
-#endif /*MDL_FORM_DPP_*/
+

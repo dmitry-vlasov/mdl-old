@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_FORM_EVALUATION_LEXP_UPHOOD_CPP_
-#define MDL_FORM_EVALUATION_LEXP_UPHOOD_CPP_
+#pragma once
 
 namespace mdl {
 namespace form {
@@ -159,4 +158,4 @@ using manipulator :: space;
 }
 }
 
-#endif /*MDL_FORM_EVALUATION_LEXP_UPHOOD_CPP_*/
+

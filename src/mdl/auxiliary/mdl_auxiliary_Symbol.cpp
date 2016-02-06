@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_AUXILIARY_SYMBOL_CPP_
-#define MDL_AUXILIARY_SYMBOL_CPP_
+#pragma once
 
 namespace mdl {
 namespace auxiliary {
@@ -126,4 +125,4 @@ namespace auxiliary {
 }
 }
 
-#endif /*MDL_AUXILIARY_SYMBOL_CPP_*/
+

@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_MATH_THEORIES_CPP_
-#define MDL_MATH_THEORIES_CPP_
+#pragma once
 
 #include "mdl/form/mdl_form.hpp"
 #include "mdl/math/mdl_math_Theories.hpp"
@@ -94,4 +93,4 @@ using manipulator :: space;
 }
 }
 
-#endif /*MDL_MATH_THEORIES_CPP_*/
+

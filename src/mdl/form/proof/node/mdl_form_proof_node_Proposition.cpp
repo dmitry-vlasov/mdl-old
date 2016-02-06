@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_FORM_PROOF_NODE_PROPOSITION_CPP_
-#define MDL_FORM_PROOF_NODE_PROPOSITION_CPP_
+#pragma once
 
 #include "mdl/form/mdl_form.hpp"
 
@@ -60,4 +59,4 @@ namespace node {
 }
 }
 
-#endif /*MDL_FORM_PROOF_NODE_PROPOSITION_CPP_*/
+

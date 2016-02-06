@@ -10,9 +10,8 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_INTERFACE_HEADER_CPP_
-#define MDL_INTERFACE_HEADER_CPP_
+#pragma once
 
 #include "mdl/interface/header/statement/mdl_interface_header_statement.cpp"
 
-#endif /*MDL_INTERFACE_HEADER_CPP_*/
+

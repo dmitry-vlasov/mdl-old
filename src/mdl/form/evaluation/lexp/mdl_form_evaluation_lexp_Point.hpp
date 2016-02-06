@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_FORM_EVALUATION_LEXP_POINT_HPP_
-#define MDL_FORM_EVALUATION_LEXP_POINT_HPP_
+#pragma once
 
 #include "mdl/form/evaluation/lexp/mdl_form_evaluation_lexp_Factors.hpp"
 
@@ -75,4 +74,4 @@ private :
 }
 }
 
-#endif /*MDL_FORM_EVALUATION_LEXP_POINT_HPP_*/
+

@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_FORM_PROOF_SCOPE_DPP_
-#define MDL_FORM_PROOF_SCOPE_DPP_
+#pragma once
 
 namespace mdl{
 namespace form {
@@ -30,4 +29,4 @@ namespace scope {
 }
 }
 
-#endif /*MDL_FORM_PROOF_SCOPE_DPP_*/
+

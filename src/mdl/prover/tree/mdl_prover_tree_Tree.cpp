@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_PROVER_TREE_TREE_CPP_
-#define MDL_PROVER_TREE_TREE_CPP_
+#pragma once
 
 namespace mdl {
 namespace prover {
@@ -884,4 +883,4 @@ using manipulator :: underline;
 }
 }
 
-#endif /*MDL_PROVER_TREE_TREE_CPP_*/
+

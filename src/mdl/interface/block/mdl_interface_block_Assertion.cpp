@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_INTERFACE_BLOCK_ASSERTION_CPP_
-#define MDL_INTERFACE_BLOCK_ASSERTION_CPP_
+#pragma once
 
 namespace mdl {
 namespace interface {
@@ -56,4 +55,4 @@ namespace block {
 }
 }
 
-#endif /*MDL_INTERFACE_BLOCK_ASSERTION_CPP_*/
+

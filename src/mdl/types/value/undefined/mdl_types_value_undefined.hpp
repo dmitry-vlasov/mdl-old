@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_TYPES_VALUE_UNDEFINED_HPP_
-#define MDL_TYPES_VALUE_UNDEFINED_HPP_
+#pragma once
 
 namespace mdl {
 namespace value {
@@ -31,4 +30,4 @@ namespace undefined {
 }
 }
 
-#endif /*MDL_TYPES_VALUE_UNDEFINEDHPP_*/
+

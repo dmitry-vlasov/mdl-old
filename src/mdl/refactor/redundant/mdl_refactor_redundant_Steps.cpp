@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_REFACTOR_REDUNDANT_STEPS_CPP_
-#define MDL_REFACTOR_REDUNDANT_STEPS_CPP_
+#pragma once
 
 namespace mdl {
 namespace refactor {
@@ -366,4 +365,4 @@ namespace redundant {
 }
 }
 
-#endif /*MDL_REFACTOR_REDUNDANT_STEPS_CPP_*/
+

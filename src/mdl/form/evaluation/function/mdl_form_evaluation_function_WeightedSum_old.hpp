@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_FORM_EVALUATION_FUNCTION_WEIGHTED_SUM_HPP_
-#define MDL_FORM_EVALUATION_FUNCTION_WEIGHTED_SUM_HPP_
+#pragma once
 
 #include "mdl/form/evaluation/function/mdl_form_evaluation_function_Function.hpp"
 
@@ -89,4 +88,4 @@ private :
 }
 }
 
-#endif /*MDL_FORM_EVALUATION_FUNCTION_WEIGHTED_SUM_HPP_*/
+

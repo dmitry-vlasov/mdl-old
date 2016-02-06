@@ -10,7 +10,6 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_EXPRESSION_DIRECTION_IPP_
-#define MDL_EXPRESSION_DIRECTION_IPP_
+#pragma once
 
-#endif /*MDL_EXPRESSION_DIRECTION_IPP_*/
+

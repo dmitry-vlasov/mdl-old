@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_REFACTOR_REFACTORER_CPP_
-#define MDL_REFACTOR_REFACTORER_CPP_
+#pragma once
 
 namespace mdl {
 namespace refactor {
@@ -291,4 +290,4 @@ using manipulator :: tab;
 }
 }
 
-#endif /*MDL_REFACTOR_REFACTORER_CPP_*/
+

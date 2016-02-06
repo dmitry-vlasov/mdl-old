@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_INTERFACE_IDENTIFICATOR_HPP_
-#define MDL_INTERFACE_IDENTIFICATOR_HPP_
+#pragma once
 
 #include "mdl/interface/object/mdl_interface_object_Writable.hpp"
 
@@ -29,4 +28,4 @@ public :
 }
 }
 
-#endif /*MDL_INTERFACE_IDENTIFICATOR_HPP_*/
+

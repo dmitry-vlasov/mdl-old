@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_FORM_HEADER_TERM_RULE_CPP_
-#define MDL_FORM_HEADER_TERM_RULE_CPP_
+#pragma once
 
 #include "mdl/math/mdl_math.hpp"
 #include "mdl/form/header/term/mdl_form_header_term_Rule.hpp"
@@ -177,4 +176,4 @@ using manipulator :: tab;
 }
 }
 
-#endif /*MDL_FORM_HEADER_TERM_RULE_CPP_*/
+

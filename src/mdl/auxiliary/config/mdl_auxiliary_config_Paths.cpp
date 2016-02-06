@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_AUXILIARY_CONFIG_PATHS_CPP_
-#define MDL_AUXILIARY_CONFIG_PATHS_CPP_
+#pragma once
 
 namespace mdl {
 namespace auxiliary {
@@ -160,4 +159,4 @@ using std :: cout;
 }
 }
 
-#endif /*MDL_AUXILIARY_CONFIG_PATHS_CPP_*/
+

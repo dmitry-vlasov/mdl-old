@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_PROVER_EVIDENCE_HPP_
-#define MDL_PROVER_EVIDENCE_HPP_
+#pragma once
 
 #include "mdl/prover/evidence/mdl_prover_evidence_Hyp.hpp"
 #include "mdl/prover/evidence/mdl_prover_evidence_Prop.hpp"
@@ -20,4 +19,4 @@
 #include "mdl/prover/evidence/mdl_prover_evidence_Top.hpp"
 #include "mdl/prover/evidence/mdl_prover_evidence_Vector.hpp"
 
-#endif /*MDL_PROVER_EVIDENCE_HPP_*/
+

@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_LEXER_WHITESPACE_SCANER_CPP_
-#define MDL_LEXER_WHITESPACE_SCANER_CPP_
+#pragma once
 
 #include "mdl/lexer/mdl_lexer.hpp"
 
@@ -92,4 +91,4 @@ namespace lexer {
 }
 }
 
-#endif /*MDL_LEXER_WHITESPACE_SCANER_CPP_*/
+

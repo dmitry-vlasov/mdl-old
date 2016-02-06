@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_PROVER_ROOT_ROOT_CPP_
-#define MDL_PROVER_ROOT_ROOT_CPP_
+#pragma once
 
 namespace mdl {
 namespace prover {
@@ -692,4 +691,4 @@ using manipulator :: iterate;
 }
 }
 
-#endif /*MDL_PROVER_ROOT_ROOT_CPP_*/
+

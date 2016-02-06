@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_TYPES_HPP_
-#define MDL_TYPES_HPP_
+#pragma once
 
 #include <nstd>
 
@@ -95,5 +94,5 @@ namespace container {
 #include "mdl/types/value/mdl_types_value.hpp"
 #include "mdl/types/vector/mdl_types_vector.hpp"
 
-#endif /*MDL_TYPES_HPP_*/
+
 

@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_INTERFACE_DPP_
-#define MDL_INTERFACE_DPP_
+#pragma once
 
 #include "mdl/types/mdl_types.hpp"
 
@@ -59,4 +58,4 @@ namespace parser {
 }
 }
 
-#endif /*MDL_INTERFACE_DPP_*/
+

@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_EXPRESSION_ITERATOR_MODIFIER_LINFOREST_IPP_
-#define MDL_EXPRESSION_ITERATOR_MODIFIER_LINFOREST_IPP_
+#pragma once
 
 namespace mdl {
 namespace expression {
@@ -53,4 +52,4 @@ namespace modifier {
 }
 }
 
-#endif /*MDL_EXPRESSION_ITERATOR_MODIFIER_LINFOREST_HPP_*/
+

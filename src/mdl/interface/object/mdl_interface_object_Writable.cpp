@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_INTERFACE_OBJECT_WRITABLE_CPP_
-#define MDL_INTERFACE_OBJECT_WRITABLE_CPP_
+#pragma once
 
 #include "mdl/auxiliary/mdl_auxiliary_Output.hpp"
 #include "mdl/interface/object/mdl_interface_object_Writable.hpp"
@@ -51,4 +50,4 @@ namespace object {
 }
 }
 
-#endif /*MDL_INTERFACE_OBJECT_WRITABLE_CPP_*/
+

@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_FORM_SOURCE_CPP_
-#define MDL_FORM_SOURCE_CPP_
+#pragma once
 
 #include "mdl/math/mdl_math.hpp"
 #include "mdl/form/mdl_form_Source.hpp"
@@ -370,4 +369,4 @@ using manipulator :: endLine;
 }
 }
 
-#endif /*MDL_FORM_SOURCE_CPP_*/
+

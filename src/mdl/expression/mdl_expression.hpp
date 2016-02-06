@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_EXPRESSION_HPP_
-#define MDL_EXPRESSION_HPP_
+#pragma once
 
 #include "mdl/expression/build/mdl_expression_build.hpp"
 #include "mdl/expression/direction/mdl_expression_direction.hpp"
@@ -37,4 +36,4 @@
 #include "mdl/expression/unify/mdl_expression_unify.hpp"
 #include "mdl/expression/simify/mdl_expression_simify.hpp"
 
-#endif /*MDL_EXPRESSION_HPP_*/
+

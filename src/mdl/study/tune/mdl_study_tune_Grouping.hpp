@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_STUDY_TUNE_GROUPING__HPP_
-#define MDL_STUDY_TUNE_GROUPING__HPP_
+#pragma once
 
 #include "mdl/interface/mdl_interface.hpp"
 
@@ -90,4 +89,4 @@ private :
 }
 }
 
-#endif /*MDL_STUDY_TUNE_GROUPING__HPP_*/
+

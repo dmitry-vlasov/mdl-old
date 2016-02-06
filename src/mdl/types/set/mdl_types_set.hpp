@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_TYPES_SET_HPP_
-#define MDL_TYPES_SET_HPP_
+#pragma once
 
 #include "mdl/types/storage/mdl_types_storage.hpp"
 #include "mdl/types/value/mdl_types_value.hpp"
@@ -26,5 +25,5 @@ namespace set {
 #include "mdl/types/set/index/mdl_types_set_index.hpp"
 #include "mdl/types/set/value/mdl_types_set_value.hpp"
 
-#endif /*MDL_TYPES_SET_HPP_*/
+
 

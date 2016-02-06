@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_CPP_
-#define MDL_CPP_
+#pragma once
 
 #include "mdl/auxiliary/mdl_auxiliary.cpp"
 #include "mdl/console/mdl_console.cpp"
@@ -28,4 +27,4 @@
 
 #include "mdl/mdl_Engine.cpp"
 
-#endif /*MDL_CPP_*/
+

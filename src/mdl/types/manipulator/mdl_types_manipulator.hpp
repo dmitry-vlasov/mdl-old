@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_TYPES_MANIPULATOR_HPP_
-#define MDL_TYPES_MANIPULATOR_HPP_
+#pragma once
 
 namespace mdl {
 namespace manipulator {
@@ -28,4 +27,4 @@ namespace manipulator {
 }
 }
 
-#endif /* MDL_TYPES_MANIPULATOR_HPP_ */
+

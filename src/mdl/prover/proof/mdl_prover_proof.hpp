@@ -10,12 +10,11 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_PROVER_PROOF_HPP_
-#define MDL_PROVER_PROOF_HPP_
+#pragma once
 
 #include "mdl/prover/proof/mdl_prover_proof_Hyp.hpp"
 #include "mdl/prover/proof/mdl_prover_proof_Prop.hpp"
 #include "mdl/prover/proof/mdl_prover_proof_Ref.hpp"
 #include "mdl/prover/proof/mdl_prover_proof_Top.hpp"
 
-#endif /*MDL_PROVER_PROOF_HPP_*/
+

@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_STUDY_BENCHMARK_DPP_
-#define MDL_STUDY_BENCHMARK_DPP_
+#pragma once
 
 namespace mdl {
 namespace study {
@@ -32,4 +31,4 @@ namespace benchmark {
 }
 }
 
-#endif /*MDL_STUDY_BENCHMARK_DPP_*/
+

@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_PROVER_EXCEPTION_HPP_
-#define MDL_PROVER_EXCEPTION_HPP_
+#pragma once
 
 #include <ostream>
 #include <exception>
@@ -36,4 +35,4 @@ private :
 }
 }
 
-#endif /*MDL_PROVER_EXCEPTION_HPP_*/
+

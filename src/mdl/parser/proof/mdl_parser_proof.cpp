@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_PARSER_PROOF_CPP_
-#define MDL_PARSER_PROOF_CPP_
+#pragma once
 
 #include "mdl/parser/proof/mdl_parser_proof_Link.cpp"
 #include "mdl/parser/proof/mdl_parser_proof_Notation.cpp"
@@ -22,4 +21,4 @@
 #include "mdl/parser/proof/mdl_parser_proof_Step.cpp"
 #include "mdl/parser/proof/mdl_parser_proof_Variable.cpp"
 
-#endif /*MDL_PARSER_PROOF_CPP_*/
+

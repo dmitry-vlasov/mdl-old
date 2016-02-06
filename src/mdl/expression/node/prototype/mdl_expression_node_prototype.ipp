@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_EXPRESSION_NODE_PROTOTYPE_IPP_
-#define MDL_EXPRESSION_NODE_PROTOTYPE_IPP_
+#pragma once
 
 #include "mdl/expression/node/prototype/mdl_expression_node_prototype_Bush.ipp"
 #include "mdl/expression/node/prototype/mdl_expression_node_prototype_Forest.ipp"
@@ -19,4 +18,4 @@
 #include "mdl/expression/node/prototype/mdl_expression_node_prototype_Singleton.ipp"
 #include "mdl/expression/node/prototype/mdl_expression_node_prototype_Tree.ipp"
 
-#endif /*MDL_EXPRESSION_NODE_PROTOTYPE_IPP_*/
+

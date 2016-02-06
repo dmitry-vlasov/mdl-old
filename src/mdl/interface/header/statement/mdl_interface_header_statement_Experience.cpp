@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_INTERFACE_HEADER_STATEMENT_EXPERIENCE_CPP_
-#define MDL_INTERFACE_HEADER_STATEMENT_EXPERIENCE_CPP_
+#pragma once
 
 namespace mdl {
 namespace interface {
@@ -27,4 +26,4 @@ namespace statement {
 }
 
 
-#endif /*MDL_INTERFACE_HEADER_STATEMENT_EXPERIENCE_CPP_*/
+

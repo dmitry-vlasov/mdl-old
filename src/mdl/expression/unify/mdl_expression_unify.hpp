@@ -10,11 +10,10 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_EXPRESSION_UNIFY_HPP_
-#define MDL_EXPRESSION_UNIFY_HPP_
+#pragma once
 
 #include "mdl/expression/unify/sub/mdl_expression_unify_sub.hpp"
 #include "mdl/expression/unify/exp/mdl_expression_unify_exp.hpp"
 #include "mdl/expression/unify/fact/mdl_expression_unify_fact.hpp"
 
-#endif /*MDL_EXPRESSION_UNIFY_HPP_*/
+

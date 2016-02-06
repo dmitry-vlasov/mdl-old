@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_STUDY_LEXP_FRIS_CPP_
-#define MDL_STUDY_LEXP_FRIS_CPP_
+#pragma once
 
 namespace mdl {
 namespace study {
@@ -187,4 +186,4 @@ using manipulator :: space;
 }
 }
 
-#endif /*MDL_STUDY_LEXP_FRIS_CPP_*/
+

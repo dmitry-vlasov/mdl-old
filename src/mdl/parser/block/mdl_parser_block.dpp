@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_PARSER_BLOCK_DPP_
-#define MDL_PARSER_BLOCK_DPP_
+#pragma once
 
 namespace mdl {
 namespace parser {
@@ -42,4 +41,4 @@ namespace block {
 }
 }
 
-#endif /*MDL_PARSER_BLOCK_DPP_*/
+

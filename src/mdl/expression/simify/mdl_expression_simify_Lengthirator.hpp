@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_EXPRESSION_SIMIFY_LENGTHIRATOR_HPP_
-#define MDL_EXPRESSION_SIMIFY_LENGTHIRATOR_HPP_
+#pragma once
 
 namespace mdl {
 namespace expression {
@@ -42,4 +41,4 @@ private :
 }
 }
 
-#endif /*MDL_EXPRESSION_SIMIFY_LENGTHIRATOR_HPP_*/
+

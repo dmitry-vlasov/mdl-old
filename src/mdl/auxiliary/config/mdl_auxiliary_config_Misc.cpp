@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_AUXILIARY_CONFIG_MISC_CPP_
-#define MDL_AUXILIARY_CONFIG_MISC_CPP_
+#pragma once
 
 namespace mdl {
 namespace auxiliary {
@@ -205,4 +204,4 @@ namespace config {
 }
 }
 
-#endif /*MDL_AUXILIARY_CONFIG_MISC_CPP_*/
+

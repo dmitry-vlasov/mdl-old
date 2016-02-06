@@ -12,8 +12,7 @@
 
 #include "mdl/types/mdl_types.hpp"
 
-#ifndef MDL_AUXILIARY_PARAMETER_DPP_
-#define MDL_AUXILIARY_PARAMETER_DPP_
+#pragma once
 
 namespace mdl {
 namespace auxiliary {
@@ -65,4 +64,4 @@ namespace array {
 	using parameter :: Parameter;
 }
 
-#endif /*MDL_AUXILIARY_PARAMETER_DPP_*/
+

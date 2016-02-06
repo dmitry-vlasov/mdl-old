@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_FORM_PROOF_NODE_STATEMENT_CPP_
-#define MDL_FORM_PROOF_NODE_STATEMENT_CPP_
+#pragma once
 
 #include "mdl/form/mdl_form.hpp"
 
@@ -124,4 +123,4 @@ using manipulator :: underline;
 }
 }
 
-#endif /*MDL_FORM_PROOF_NODE_STATEMENT_CPP_*/
+

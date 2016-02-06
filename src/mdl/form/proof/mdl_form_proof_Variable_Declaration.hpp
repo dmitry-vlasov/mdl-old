@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_FORM_PROOF_VARIABLE_DECLARATION_HPP_
-#define MDL_FORM_PROOF_VARIABLE_DECLARATION_HPP_
+#pragma once
 
 #include "mdl/form/header/mdl_form_header_Variable.hpp"
 
@@ -41,4 +40,4 @@ public :
 }
 }
 
-#endif /*MDL_FORM_PROOF_VARIABLE_DECLARATION_HPP_*/
+

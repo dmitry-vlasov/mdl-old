@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_EXPRESSION_NODE_CONTAINER_VECTOR_HPP_
-#define MDL_EXPRESSION_NODE_CONTAINER_VECTOR_HPP_
+#pragma once
 
 #include "mdl/types/mdl_types.hpp"
 
@@ -62,4 +61,4 @@ private :
 }
 }
 
-#endif /*MDL_EXPRESSION_NODE_CONTAINER_VECTOR_HPP_*/
+

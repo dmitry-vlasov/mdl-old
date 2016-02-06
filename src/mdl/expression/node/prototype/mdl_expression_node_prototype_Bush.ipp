@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_EXPRESSION_NODE_PROTOTYPE_BUSH_IPP_
-#define MDL_EXPRESSION_NODE_PROTOTYPE_BUSH_IPP_
+#pragma once
 
 namespace mdl {
 namespace expression {
@@ -163,4 +162,4 @@ using manipulator :: tab;
 }
 }
 
-#endif /*MDL_EXPRESSION_NODE_PROTOTYPE_BUSH_IPP_*/
+

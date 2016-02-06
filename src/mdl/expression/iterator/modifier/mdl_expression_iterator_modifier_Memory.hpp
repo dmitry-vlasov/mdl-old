@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_EXPRESSION_ITERATOR_MODIFIER_MEMORY_HPP_
-#define MDL_EXPRESSION_ITERATOR_MODIFIER_MEMORY_HPP_
+#pragma once
 
 namespace mdl {
 namespace expression {
@@ -49,4 +48,4 @@ private :
 }
 }
 
-#endif /*MDL_EXPRESSION_ITERATOR_MODIFIER_MEMORY_HPP_*/
+

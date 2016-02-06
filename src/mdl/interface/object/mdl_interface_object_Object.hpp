@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_INTERFACE_OBJECT_OBJECT_HPP_
-#define MDL_INTERFACE_OBJECT_OBJECT_HPP_
+#pragma once
 
 #include "mdl/interface/mdl_interface.dpp"
 #include "mdl/auxiliary/mdl_auxiliary.dpp"
@@ -50,4 +49,4 @@ protected :
 }
 }
 
-#endif /*MDL_INTERFACE_OBJECT_OBJECT_HPP_*/
+

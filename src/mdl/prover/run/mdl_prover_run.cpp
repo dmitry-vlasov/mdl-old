@@ -10,10 +10,9 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_PROVER_RUN_CPP_
-#define MDL_PROVER_RUN_CPP_
+#pragma once
 
 #include "mdl/prover/run/mdl_prover_run_Boxed.cpp"
 #include "mdl/prover/run/mdl_prover_run_Heap.cpp"
 
-#endif /*MDL_PROVER_RUN_CPP_*/
+

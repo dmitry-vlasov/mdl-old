@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_CONSOLE_COMMAND_HPP_
-#define MDL_CONSOLE_COMMAND_HPP_
+#pragma once
 
 #include "mdl/console/mdl_console.dpp"
 
@@ -132,4 +131,4 @@ private :
 }
 }
 
-#endif /*MDL_CONSOLE_COMMAND_HPP_*/
+

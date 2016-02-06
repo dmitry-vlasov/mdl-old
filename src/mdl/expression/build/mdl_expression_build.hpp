@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_EXPRESSION_BUILD_HPP_
-#define MDL_EXPRESSION_BUILD_HPP_
+#pragma once
 
 #include "mdl/expression/build/mdl_expression_build_Builder.hpp"
 #include "mdl/expression/build/mdl_expression_build_Direction.hpp"
@@ -21,4 +20,4 @@
 #include "mdl/expression/build/mdl_expression_build_Switch_BACK.hpp"
 #include "mdl/expression/build/mdl_expression_build_Switch_FORTH.hpp"
 
-#endif /*MDL_EXPRESSION_BUILD_HPP_*/
+

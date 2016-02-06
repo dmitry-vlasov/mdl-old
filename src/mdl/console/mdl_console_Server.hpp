@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_CONSOLE_SERVER_HPP_
-#define MDL_CONSOLE_SERVER_HPP_
+#pragma once
 
 #include <sys/types.h>
 #include <sys/socket.h>
@@ -83,4 +82,4 @@ private :
 }
 }
 
-#endif /*MDL_CONSOLE_SERVER_HPP_*/
+

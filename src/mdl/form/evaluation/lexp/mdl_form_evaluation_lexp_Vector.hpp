@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_FORM_EVALUATION_LEXP_VECTOR_HPP_
-#define MDL_FORM_EVALUATION_LEXP_VECTOR_HPP_
+#pragma once
 
 namespace mdl {
 namespace form {
@@ -70,4 +69,4 @@ private :
 }
 }
 
-#endif /*MDL_FORM_EVALUATION_LEXP_VECTOR_HPP_*/
+

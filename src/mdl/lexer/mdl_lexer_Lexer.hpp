@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_LEXER_LEXER_HPP_
-#define MDL_LEXER_LEXER_HPP_
+#pragma once
 
 #include "mdl/lexer/mdl_lexer_Scaner.hpp"
 
@@ -249,4 +248,4 @@ private :
 
 #include "mdl/lexer/mdl_lexer_Lexer.ipp"
 
-#endif /*MDL_LEXER_LEXER_HPP_*/
+

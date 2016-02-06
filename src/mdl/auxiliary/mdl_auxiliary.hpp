@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_AUXILIARY_HPP_
-#define MDL_AUXILIARY_HPP_
+#pragma once
 
 #include "mdl/auxiliary/config/mdl_auxiliary_config.hpp"
 #include "mdl/auxiliary/parameter/mdl_auxiliary_parameter.hpp"
@@ -28,4 +27,4 @@
 #include "mdl/auxiliary/mdl_auxiliary_Timers.hpp"
 #include "mdl/auxiliary/mdl_auxiliary_Volume.hpp"
 
-#endif /*MDL_AUXILIARY_HPP_*/
+

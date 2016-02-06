@@ -10,11 +10,10 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_EXPRESSION_DIRECTION_HPP_
-#define MDL_EXPRESSION_DIRECTION_HPP_
+#pragma once
 
 #include "mdl/expression/direction/mdl_expression_direction_Direction.hpp"
 #include "mdl/expression/direction/mdl_expression_direction_Linear.hpp"
 #include "mdl/expression/direction/mdl_expression_direction_Tree.hpp"
 
-#endif /*MDL_EXPRESSION_DIRECTION_HPP_*/
+

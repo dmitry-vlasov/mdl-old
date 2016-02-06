@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_STUDY_LEXP_TEACHER_HPP_
-#define MDL_STUDY_LEXP_TEACHER_HPP_
+#pragma once
 
 namespace mdl {
 namespace study {
@@ -71,4 +70,4 @@ private :
 }
 }
 
-#endif /*MDL_STUDY_LEXP_TEACHER_HPP_*/
+

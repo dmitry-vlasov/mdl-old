@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_INTERFACE_HEADER_TERM_DPP_
-#define MDL_INTERFACE_HEADER_TERM_DPP_
+#pragma once
 
 namespace mdl {
 namespace interface {
@@ -33,4 +32,4 @@ namespace term {
 	using interface :: header :: term :: Term;
 }
 
-#endif /*MDL_INTERFACE_HEADER_TERM_DPP_*/
+

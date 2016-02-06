@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_MATH_DEFIENDUMS_HPP_
-#define MDL_MATH_DEFIENDUMS_HPP_
+#pragma once
 
 #include "mdl/math/mdl_math_Container.hpp"
 
@@ -47,4 +46,4 @@ private :
 }
 }
 
-#endif /*MDL_MATH_DEFIENDUMS_HPP_*/
+

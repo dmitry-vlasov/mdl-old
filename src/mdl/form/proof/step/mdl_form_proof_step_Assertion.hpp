@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_FORM_PROOF_STEP_ASSERTION_HPP_
-#define MDL_FORM_PROOF_STEP_ASSERTION_HPP_
+#pragma once
 
 #include "mdl/interface/mdl_interface.hpp"
 #include "mdl/form/proof/mdl_form_proof_Step.hpp"
@@ -135,4 +134,4 @@ protected :
 }
 }
 
-#endif /*MDL_FORM_PROOF_STEP_ASSERTION_HPP_*/
+

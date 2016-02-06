@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_EXPRESSION_DIRECTION_LINEAR_HPP_
-#define MDL_EXPRESSION_DIRECTION_LINEAR_HPP_
+#pragma once
 
 #include "mdl/expression/mdl_expression.dpp"
 
@@ -32,4 +31,4 @@ struct Linear {
 }
 }
 
-#endif /*MDL_EXPRESSION_DIRECTION_LINEAR_HPP_*/
+

@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_PROVER_PROOF_CPP__
-#define MDL_PROVER_PROOF_CPP__
+#pragma once
 
 #include "mdl/prover/proof/mdl_prover_proof_Hyp.cpp"
 #include "mdl/prover/proof/mdl_prover_proof_Prop.cpp"
@@ -19,4 +18,4 @@
 #include "mdl/prover/proof/mdl_prover_proof_Top.cpp"
 
 
-#endif /*MDL_PROVER_PROOF_CPP__*/
+

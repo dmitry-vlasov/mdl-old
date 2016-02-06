@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_FORM_HEADER_STATEMENT_PROPOSITION_HPP_
-#define MDL_FORM_HEADER_STATEMENT_PROPOSITION_HPP_
+#pragma once
 
 #include "mdl/form/header/statement/mdl_form_header_statement_Statement.hpp"
 
@@ -94,4 +93,4 @@ private :
 }
 }
 
-#endif /*MDL_FORM_HEADER_STATEMENT_PROPOSITION_HPP_*/
+

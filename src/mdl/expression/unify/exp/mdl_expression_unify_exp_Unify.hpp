@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_EXPRESSION_UNIFY_EXP_UNIFY_HPP_
-#define MDL_EXPRESSION_UNIFY_EXP_UNIFY_HPP_
+#pragma once
 
 namespace mdl {
 namespace expression {
@@ -34,4 +33,4 @@ class Unify : public Unifier<Unit<T_1, T_2, P, T>, A, P> {
 }
 }
 
-#endif /*MDL_EXPRESSION_UNIFY_EXP_UNIFY_HPP_*/
+

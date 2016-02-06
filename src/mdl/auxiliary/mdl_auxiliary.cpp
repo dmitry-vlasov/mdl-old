@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_AUXILIARY_CPP_
-#define MDL_AUXILIARY_CPP_
+#pragma once
 
 #include "mdl/auxiliary/config/mdl_auxiliary_config.cpp"
 #include "mdl/auxiliary/parameter/mdl_auxiliary_parameter.cpp"
@@ -26,4 +25,4 @@
 #include "mdl/auxiliary/mdl_auxiliary_Timers.cpp"
 #include "mdl/auxiliary/mdl_auxiliary_Volume.cpp"
 
-#endif /*MDL_AUXILIARY_CPP_*/
+

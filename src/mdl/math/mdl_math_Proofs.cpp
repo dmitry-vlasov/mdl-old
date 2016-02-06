@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_MATH_PROOFS_CPP_
-#define MDL_MATH_PROOFS_CPP_
+#pragma once
 
 namespace mdl {
 namespace math {
@@ -72,4 +71,4 @@ using manipulator :: space;
 }
 }
 
-#endif /*MDL_MATH_PROOFS_CPP_*/
+

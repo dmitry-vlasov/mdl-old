@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_FORM_HEADER_STATEMENT_HPP_
-#define MDL_FORM_HEADER_STATEMENT_HPP_
+#pragma once
 
 #include "mdl/form/header/statement/mdl_form_header_statement_Axiomatic.hpp"
 #include "mdl/form/header/statement/mdl_form_header_statement_Definition.hpp"
@@ -22,4 +21,4 @@
 #include "mdl/form/header/statement/mdl_form_header_statement_Provable.hpp"
 #include "mdl/form/header/statement/mdl_form_header_statement_Statement.hpp"
 
-#endif /*MDL_FORM_HEADER_STATEMENT_HPP_*/
+

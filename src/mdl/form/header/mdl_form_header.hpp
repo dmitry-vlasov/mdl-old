@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_FORM_HEADER_HPP_
-#define MDL_FORM_HEADER_HPP_
+#pragma once
 
 #include "mdl/form/header/statement/mdl_form_header_statement.hpp"
 #include "mdl/form/header/term/mdl_form_header_term.hpp"
@@ -22,4 +21,4 @@
 #include "mdl/form/header/mdl_form_header_Variable.hpp"
 #include "mdl/form/header/mdl_form_header_Variables.hpp"
 
-#endif /*MDL_FORM_HEADER_HPP_*/
+

@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_STUDY_LEXP_STOLP_HPP_
-#define MDL_STUDY_LEXP_STOLP_HPP_
+#pragma once
 
 #include "mdl/study/lexp/mdl_study_lexp_Fris.hpp"
 #include "mdl/study/lexp/mdl_study_lexp_Config.hpp"
@@ -151,4 +150,4 @@ private :
 }
 }
 
-#endif /*MDL_STUDY_LEXP_STOLP_HPP_*/
+

@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_FORM_IMPORT_CPP_
-#define MDL_FORM_IMPORT_CPP_
+#pragma once
 
 #include "mdl/lexer/mdl_lexer.hpp"
 #include "mdl/form/mdl_form_Identificator.hpp"
@@ -186,4 +185,4 @@ using manipulator :: tab;
 }
 }
 
-#endif /*MDL_FORM_IMPORT_CPP_*/
+

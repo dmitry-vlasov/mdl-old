@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_PARSER_EXPRESSION_CPP_
-#define MDL_PARSER_EXPRESSION_CPP_
+#pragma once
 
 #include "mdl/lexer/mdl_lexer.hpp"
 #include "mdl/form/mdl_form.hpp"
@@ -77,4 +76,4 @@ namespace parser {
 }
 }
 
-#endif /*MDL_PARSER_EXPRESSION_CPP_*/
+

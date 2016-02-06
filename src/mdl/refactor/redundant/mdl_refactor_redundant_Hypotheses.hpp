@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_REFACTOR_REDUNDANT_HYPOTHESES_HPP_
-#define MDL_REFACTOR_REDUNDANT_HYPOTHESES_HPP_
+#pragma once
 
 namespace mdl {
 namespace refactor {
@@ -70,4 +69,4 @@ private :
 }
 }
 
-#endif /*MDL_REFACTOR_REDUNDANT_HYPOTHESES_HPP_*/
+

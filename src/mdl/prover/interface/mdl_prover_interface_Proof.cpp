@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_PROVER_INTERFACE_PROOF_CPP_
-#define MDL_PROVER_INTERFACE_PROOF_CPP_
+#pragma once
 
 
 namespace mdl {
@@ -51,4 +50,4 @@ namespace interface {
 }
 }
 
-#endif /*MDL_PROVER_INTERFACE_PROOF_CPP_*/
+

@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_EXPRESSION_MODE_HPP_
-#define MDL_EXPRESSION_MODE_HPP_
+#pragma once
 
 namespace mdl {
 namespace expression {
@@ -39,4 +38,4 @@ public :
 }
 }
 
-#endif /*MDL_EXPRESSION_MODE_HPP_*/
+

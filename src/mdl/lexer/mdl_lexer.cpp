@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_LEXER_CPP_
-#define MDL_LEXER_CPP_
+#pragma once
 
 #include "mdl/lexer/mdl_lexer_CommentScaner.cpp"
 #include "mdl/lexer/mdl_lexer_Lexer.cpp"
@@ -19,4 +18,4 @@
 #include "mdl/lexer/mdl_lexer_Token.cpp"
 #include "mdl/lexer/mdl_lexer_WhitespaceScaner.cpp"
 
-#endif /*MDL_LEXER_CPP_*/
+

@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_INTERFACE_BLOCK_HPP__
-#define MDL_INTERFACE_BLOCK_HPP__
+#pragma once
 
 #include "mdl/interface/block/mdl_interface_block_Assertion.hpp"
 #include "mdl/interface/block/mdl_interface_block_Constant.hpp"
@@ -23,4 +22,4 @@
 #include "mdl/interface/block/mdl_interface_block_Theorem.hpp"
 #include "mdl/interface/block/mdl_interface_block_Type.hpp"
 
-#endif /*MDL_INTERFACE_BLOCK_HPP__*/
+

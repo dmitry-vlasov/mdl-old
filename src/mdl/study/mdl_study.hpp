@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_STUDY_HPP_
-#define MDL_STUDY_HPP_
+#pragma once
 
 #include "mdl/study/benchmark/mdl_study_benchmark.hpp"
 #include "mdl/study/teach/mdl_study_teach.hpp"
@@ -22,4 +21,4 @@
 #include "mdl/study/mdl_study_Fitness.hpp"
 #include "mdl/study/mdl_study_Sample.hpp"
 
-#endif /*MDL_STUDY_HPP_*/
+

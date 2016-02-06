@@ -10,11 +10,10 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_EXPRESSION_NODE_VALUED_HPP_
-#define MDL_EXPRESSION_NODE_VALUED_HPP_
+#pragma once
 
 #include "mdl/expression/node/valued/mdl_expression_node_valued_Bush.hpp"
 #include "mdl/expression/node/valued/mdl_expression_node_valued_Forest.hpp"
 #include "mdl/expression/node/valued/mdl_expression_node_valued_Tree.hpp"
 
-#endif /*MDL_EXPRESSION_NODE_VALUED_HPP_*/
+

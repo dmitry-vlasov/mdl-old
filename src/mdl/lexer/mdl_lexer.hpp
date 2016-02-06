@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_LEXER_HPP_
-#define MDL_LEXER_HPP_
+#pragma once
 
 #include "mdl/lexer/mdl_lexer_CommentScaner.hpp"
 #include "mdl/lexer/mdl_lexer_HorisontalBarScaner.hpp"
@@ -24,4 +23,4 @@
 #include "mdl/lexer/mdl_lexer_Token.hpp"
 #include "mdl/lexer/mdl_lexer_WhitespaceScaner.hpp"
 
-#endif /*MDL_LEXER_HPP_*/
+

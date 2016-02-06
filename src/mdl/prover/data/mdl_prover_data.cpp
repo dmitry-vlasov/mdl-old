@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_PROVER_DATA_CPP_
-#define MDL_PROVER_DATA_CPP_
+#pragma once
 
 #include "mdl/prover/data/mdl_prover_data_Down.cpp"
 #include "mdl/prover/data/mdl_prover_data_Root.cpp"
@@ -19,4 +18,4 @@
 #include "mdl/prover/data/mdl_prover_data_Tree.cpp"
 #include "mdl/prover/data/mdl_prover_data_Up.cpp"
 
-#endif /*MDL_PROVER_DATA_CPP_*/
+

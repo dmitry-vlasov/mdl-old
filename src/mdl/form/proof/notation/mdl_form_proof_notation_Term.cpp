@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_FORM_PROOF_NOTATION_TERM_CPP_
-#define MDL_FORM_PROOF_NOTATION_TERM_CPP_
+#pragma once
 
 namespace mdl {
 namespace form {
@@ -97,4 +96,4 @@ namespace notation {
 }
 }
 
-#endif /*MDL_FORM_PROOF_NOTATION_NOTTERM_CPP_*/
+

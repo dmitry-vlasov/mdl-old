@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_PARSER_HEADER_LINE_CPP_
-#define MDL_PARSER_HEADER_LINE_CPP_
+#pragma once
 
 namespace mdl {
 namespace parser {
@@ -78,4 +77,4 @@ namespace header {
 }
 }
 
-#endif /*MDL_PARSER_HEADER_LINE_CPP_*/
+

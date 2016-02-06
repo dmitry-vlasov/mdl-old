@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_EXPRESSION_PARSE_UNIT_HPP_
-#define MDL_EXPRESSION_PARSE_UNIT_HPP_
+#pragma once
 
 #include "mdl/expression/iterator/mdl_expression_iterator.hpp"
 #include "mdl/expression/parse/mdl_expression_parse_Parser.hpp"
@@ -104,4 +103,4 @@ private :
 }
 }
 
-#endif /*MDL_EXPRESSION_PARSE_UNIT_HPP_*/
+

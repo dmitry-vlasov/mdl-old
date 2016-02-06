@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_LEXER_COMMENT_SCANER_HPP_
-#define MDL_LEXER_COMMENT_SCANER_HPP_
+#pragma once
 
 #include "mdl/lexer/mdl_lexer_Token.hpp"
 
@@ -47,4 +46,4 @@ private :
 }
 }
 
-#endif /*MDL_LEXER_COMMENT_SCANER_HPP_*/
+

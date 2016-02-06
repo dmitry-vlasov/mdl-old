@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_MATH_MATH_CPP_
-#define MDL_MATH_MATH_CPP_
+#pragma once
 
 #include "mdl/math/mdl_math.hpp"
 
@@ -197,4 +196,4 @@ using manipulator :: endLine;
 }
 }
 
-#endif /*MDL_MATH_MATH_CPP_*/
+

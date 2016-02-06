@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_EXPRESSION_UNIFY_EXP_UNIT_DIR_HPP_
-#define MDL_EXPRESSION_UNIFY_EXP_UNIT_DIR_HPP_
+#pragma once
 
 #include "mdl/expression/iterator/mdl_expression_iterator.hpp"
 
@@ -158,4 +157,4 @@ private :
 }
 }
 
-#endif /*MDL_EXPRESSION_UNIFY_EXP_UNIT_DIR_HPP_*/
+

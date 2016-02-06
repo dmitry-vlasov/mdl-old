@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_EXPRESSION_NODE_DPP_
-#define MDL_EXPRESSION_NODE_DPP_
+#pragma once
 
 #include "mdl/expression/node/container/mdl_expression_node_container.dpp"
 #include "mdl/expression/node/prototype/mdl_expression_node_prototype.dpp"
@@ -34,4 +33,4 @@ namespace node {
 }
 }
 
-#endif /*MDL_EXPRESSION_NODE_DPP_*/
+

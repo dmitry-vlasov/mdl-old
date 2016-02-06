@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_EXPRESSION_NODE_CONTAINER_HPP_
-#define MDL_EXPRESSION_NODE_CONTAINER_HPP_
+#pragma once
 
 #include "mdl/expression/node/container/mdl_expression_node_container_Counter.hpp"
 #include "mdl/expression/node/container/mdl_expression_node_container_List.hpp"
@@ -19,4 +18,4 @@
 #include "mdl/expression/node/container/mdl_expression_node_container_Singleton.hpp"
 #include "mdl/expression/node/container/mdl_expression_node_container_Vector.hpp"
 
-#endif /*MDL_EXPRESSION_NODE_CONTAINER_HPP_*/
+

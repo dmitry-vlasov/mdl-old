@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_FORM_IDENTIFICATOR_CPP_
-#define MDL_FORM_IDENTIFICATOR_CPP_
+#pragma once
 
 #include "mdl/lexer/mdl_lexer.hpp"
 #include "mdl/form/mdl_form_Identificator.hpp"
@@ -195,4 +194,4 @@ using manipulator :: underline;
 }
 }
 
-#endif /*MDL_FORM_IDENTIFICATOR_CPP_*/
+

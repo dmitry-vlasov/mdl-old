@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_EXPRESSION_SIMIFY_SIMIFIER_CPP_
-#define MDL_EXPRESSION_SIMIFY_SIMIFIER_CPP_
+#pragma once
 
 namespace mdl {
 namespace expression {
@@ -40,4 +39,4 @@ namespace simify {
 }
 }
 
-#endif /*MDL_EXPRESSION_SIMIFY_SIMIFIER_CPP_*/
+

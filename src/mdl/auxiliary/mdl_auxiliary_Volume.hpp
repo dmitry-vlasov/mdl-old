@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_AUXILIARY_VOLUME_HPP_
-#define MDL_AUXILIARY_VOLUME_HPP_
+#pragma once
 
 #include "mdl/interface/object/mdl_interface_object_Object.hpp"
 #include "mdl/mdl.dpp"
@@ -73,4 +72,4 @@ private :
 }
 }
 
-#endif /*MDL_AUXILIARY_VOLUME_HPP_*/
+

@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_INTERFACE_HEADER_STATEMENT_PROPOSITION_HPP_
-#define MDL_INTERFACE_HEADER_STATEMENT_PROPOSITION_HPP_
+#pragma once
 
 #include "mdl/interface/header/statement/mdl_interface_header_statement_Statement.hpp"
 
@@ -58,4 +57,4 @@ private :
 }
 }
 
-#endif /*MDL_INTERFACE_HEADER_STATEMENT_PROPOSITION_HPP_*/
+

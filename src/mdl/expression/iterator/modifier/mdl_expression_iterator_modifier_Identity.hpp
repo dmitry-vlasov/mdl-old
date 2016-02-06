@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_EXPRESSION_ITERATOR_MODIFIER_IDENTITY_HPP_
-#define MDL_EXPRESSION_ITERATOR_MODIFIER_IDENTITY_HPP_
+#pragma once
 
 namespace mdl {
 namespace expression {
@@ -33,4 +32,4 @@ public :
 }
 }
 
-#endif /*MDL_EXPRESSION_ITERATOR_MODIFIER_IDENTITY_HPP_*/
+

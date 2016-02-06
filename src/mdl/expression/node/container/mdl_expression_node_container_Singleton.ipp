@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_EXPRESSION_NODE_CONTAINER_SINGLETON_IPP_
-#define MDL_EXPRESSION_NODE_CONTAINER_SINGLETON_IPP_
+#pragma once
 
 namespace mdl {
 namespace expression {
@@ -149,4 +148,4 @@ using manipulator :: space;
 
 #include "mdl/expression/node/container/mdl_expression_node_container_Singleton_Node.ipp"
 
-#endif /*MDL_EXPRESSION_NODE_CONTAINER_SINGLETON_IPP_*/
+

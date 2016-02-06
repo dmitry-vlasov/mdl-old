@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_INTERFACE_PROOF_LINE_HPP_
-#define MDL_INTERFACE_PROOF_LINE_HPP_
+#pragma once
 
 #include "mdl/interface/object/mdl_interface_object.hpp"
 #include "mdl/interface/proof/mdl_interface_proof_Scoping.hpp"
@@ -46,4 +45,4 @@ public :
 }
 }
 
-#endif /*MDL_INTERFACE_PROOF_LINE_HPP_*/
+

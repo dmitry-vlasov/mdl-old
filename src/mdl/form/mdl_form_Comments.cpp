@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_FORM_COMMENTS_CPP_
-#define MDL_FORM_COMMENTS_CPP_
+#pragma once
 
 #include "mdl/auxiliary/mdl_auxiliary.hpp"
 #include "mdl/lexer/mdl_lexer.hpp"
@@ -103,4 +102,4 @@ using manipulator :: space;
 }
 }
 
-#endif /*MDL_FORM_COMMENTS_CPP_*/
+

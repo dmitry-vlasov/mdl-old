@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_STUDY_TUNE_DPP_
-#define MDL_STUDY_TUNE_DPP_
+#pragma once
 
 //#define DEBUG_TUNER_ESTIMATING
 
@@ -34,4 +33,4 @@ namespace tune {
 }
 }
 
-#endif /*MDL_STUDY_TUNE_DPP_*/
+

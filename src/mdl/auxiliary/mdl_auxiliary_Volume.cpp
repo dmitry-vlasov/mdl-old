@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_AUXILIARY_VOLUME_CPP_
-#define MDL_AUXILIARY_VOLUME_CPP_
+#pragma once
 
 #include "mdl/mdl_Engine.hpp"
 
@@ -173,4 +172,4 @@ namespace auxiliary {
 }
 }
 
-#endif /*MDL_AUXILIARY_VOLUME_CPP_*/
+

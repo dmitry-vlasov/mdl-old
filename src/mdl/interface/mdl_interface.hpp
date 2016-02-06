@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_INTERFACE_HPP_
-#define MDL_INTERFACE_HPP_
+#pragma once
 
 #include "mdl/interface/block/mdl_interface_block.hpp"
 #include "mdl/interface/evaluation/mdl_interface_evaluation.hpp"
@@ -27,4 +26,4 @@
 #include "mdl/interface/mdl_interface_Source.hpp"
 #include "mdl/interface/mdl_interface_Theory.hpp"
 
-#endif /*MDL_INTERFACE_HPP_*/
+

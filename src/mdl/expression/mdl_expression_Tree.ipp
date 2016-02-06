@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_EXPRESSION_TREE_IPP_
-#define MDL_EXPRESSION_TREE_IPP_
+#pragma once
 
 namespace mdl {
 namespace expression {
@@ -136,4 +135,4 @@ using manipulator :: endLine;
 }
 }
 
-#endif /*MDL_EXPRESSION_TREE_HPP_*/
+

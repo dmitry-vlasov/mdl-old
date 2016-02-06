@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_FORM_PROOF_NODE_PROPOSITION_HPP_
-#define MDL_FORM_PROOF_NODE_PROPOSITION_HPP_
+#pragma once
 
 #include "mdl/form/proof/node/mdl_form_proof_node_Statement.hpp"
 
@@ -46,4 +45,4 @@ public :
 }
 }
 
-#endif /*MDL_FORM_PROOF_NODE_PROPOSITION_HPP_*/
+

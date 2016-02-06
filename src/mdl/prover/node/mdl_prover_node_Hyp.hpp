@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_PROVER_NODE_HYP_HPP_
-#define MDL_PROVER_NODE_HYP_HPP_
+#pragma once
 
 #include "mdl/prover/mdl_prover.dpp"
 #include "mdl/prover/evidence/mdl_prover_evidence_Vector.hpp"
@@ -239,4 +238,4 @@ private :
 }
 }
 
-#endif /*MDL_PROVER_NODE_HYP_HPP_*/
+

@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_TYPES_MAP_HPP_
-#define MDL_TYPES_MAP_HPP_
+#pragma once
 
 namespace mdl {
 namespace map {
@@ -21,4 +20,4 @@ namespace map {
 }
 }
 
-#endif /*MDL_TYPES_MAP_HPP_*/
+

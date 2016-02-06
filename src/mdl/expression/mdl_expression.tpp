@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_EXPRESSION_TPP_
-#define MDL_EXPRESSION_TPP_
+#pragma once
 
 namespace mdl {
 namespace array {
@@ -218,4 +217,4 @@ void dump (const unify :: sub :: tree :: BoxedCell :: Term_&);
 
 }
 
-#endif /*MDL_EXPRESSION_TPP_*/
+

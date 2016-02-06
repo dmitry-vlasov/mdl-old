@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_EXPRESSION_UNIFY_EXP_SUBSTIRATOR_DIR_IPP_
-#define MDL_EXPRESSION_UNIFY_EXP_SUBSTIRATOR_DIR_IPP_
+#pragma once
 
 namespace mdl {
 namespace expression {
@@ -136,4 +135,4 @@ using manipulator :: space;
 }
 }
 
-#endif /*MDL_EXPRESSION_UNIFY_EXP_SUBSTIRATOR_DIR_IPP_*/
+

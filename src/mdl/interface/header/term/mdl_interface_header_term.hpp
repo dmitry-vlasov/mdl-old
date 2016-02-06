@@ -10,11 +10,10 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_INTERFACE_HEADER_TERM_HPP_
-#define MDL_INTERFACE_HEADER_TERM_HPP_
+#pragma once
 
 #include "mdl/interface/header/term/mdl_interface_header_term_Definition.hpp"
 #include "mdl/interface/header/term/mdl_interface_header_term_Rule.hpp"
 #include "mdl/interface/header/term/mdl_interface_header_term_Term.hpp"
 
-#endif /*MDL_INTERFACE_HEADER_TERM_HPP_*/
+

@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_EXPRESSION_PARSE_DPP_
-#define MDL_EXPRESSION_PARSE_DPP_
+#pragma once
 
 namespace mdl {
 namespace expression {
@@ -29,4 +28,4 @@ namespace parse {
 }
 }
 
-#endif /*MDL_EXPRESSION_PARSE_DPP_*/
+

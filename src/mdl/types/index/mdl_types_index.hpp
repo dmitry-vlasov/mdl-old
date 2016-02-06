@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_TYPES_INDEX_HPP_
-#define MDL_TYPES_INDEX_HPP_
+#pragma once
 
 namespace mdl {
 namespace index {
@@ -60,4 +59,4 @@ namespace index {
 
 #include "mdl/types/index/undefined/mdl_types_index_undefined.hpp"
 
-#endif /*MDL_TYPES_INDEX_HPP_*/
+

@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_AUXILIARY_CONFIG_HPP_
-#define MDL_AUXILIARY_CONFIG_HPP_
+#pragma once
 
 #include "mdl/auxiliary/config/mdl_auxiliary_config.dpp"
 
@@ -32,4 +31,4 @@
 #include "mdl/auxiliary/config/mdl_auxiliary_config_String.hpp"
 #include "mdl/auxiliary/config/mdl_auxiliary_config_Timing.hpp"
 
-#endif /*MDL_AUXILIARY_CONFIG_HPP_*/
+

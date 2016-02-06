@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_INTERFACE_OBJECT_TYPING_HPP_
-#define MDL_INTERFACE_OBJECT_TYPING_HPP_
+#pragma once
 
 #include "mdl/interface/object/mdl_interface_object_Buildable.hpp"
 
@@ -40,4 +39,4 @@ public :
 }
 }
 
-#endif /*MDL_INTERFACE_OBJECT_TYPING_HPP_*/
+

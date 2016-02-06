@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_PROVER_TREE_HPP_
-#define MDL_PROVER_TREE_HPP_
+#pragma once
 
 #include "mdl/prover/tree/down/mdl_prover_tree_down.hpp"
 #include "mdl/prover/tree/up/mdl_prover_tree_up.hpp"
@@ -19,4 +18,4 @@
 #include "mdl/prover/tree/mdl_prover_tree_Root.hpp"
 #include "mdl/prover/tree/mdl_prover_tree_Tree.hpp"
 
-#endif /*MDL_PROVER_TREE_HPP_*/
+

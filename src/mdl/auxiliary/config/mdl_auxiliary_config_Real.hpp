@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_AUXILIARY_CONFIG_REAL_HPP_
-#define MDL_AUXILIARY_CONFIG_REAL_HPP_
+#pragma once
 
 #include "mdl/types/mdl_types.hpp"
 #include "mdl/auxiliary/config/mdl_auxiliary_config.dpp"
@@ -101,4 +100,4 @@ private :
 }
 }
 
-#endif /*MDL_AUXILIARY_CONFIG_REAL_HPP_*/
+

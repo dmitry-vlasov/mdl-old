@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_AUXILIARY_ERROR_CPP_
-#define MDL_AUXILIARY_ERROR_CPP_
+#pragma once
 
 #include "mdl/auxiliary/mdl_auxiliary_Error.hpp"
 
@@ -134,4 +133,4 @@ namespace auxiliary {
 }
 }
 
-#endif /* MDL_AUXILIARY_ERROR_CPP_ */
+

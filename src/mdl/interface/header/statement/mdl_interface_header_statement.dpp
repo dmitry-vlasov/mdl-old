@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_INTERFACE_HEADER_STATEMENT_DPP_
-#define MDL_INTERFACE_HEADER_STATEMENT_DPP_
+#pragma once
 
 namespace mdl {
 namespace interface {
@@ -144,4 +143,4 @@ namespace parser {
 }
 }
 
-#endif /*MDL_INTERFACE_HEADER_STATEMENT_DPP_*/
+

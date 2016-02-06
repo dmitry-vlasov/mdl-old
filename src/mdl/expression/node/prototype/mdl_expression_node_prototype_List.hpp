@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_EXPRESSION_NODE_PROTOTYPE_LIST_HPP_
-#define MDL_EXPRESSION_NODE_PROTOTYPE_LIST_HPP_
+#pragma once
 
 #include "mdl/expression/node/prototype/mdl_expression_node_prototype_Singleton.hpp"
 
@@ -106,4 +105,4 @@ protected :
 }
 }
 
-#endif /*MDL_EXPRESSION_NODE_PROTOTYPE_LIST_HPP_*/
+

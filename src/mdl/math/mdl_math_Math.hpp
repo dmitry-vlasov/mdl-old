@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_MATH_MATH_HPP_
-#define MDL_MATH_MATH_HPP_
+#pragma once
 
 namespace mdl {
 namespace math {
@@ -59,4 +58,4 @@ private :
 }
 }
 
-#endif /*MDL_MATH_MATH_HPP_*/
+

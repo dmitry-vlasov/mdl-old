@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_EXPRESSION_UNIFY_SUB_TREE_UNIFIER_IPP_
-#define MDL_EXPRESSION_UNIFY_SUB_TREE_UNIFIER_IPP_
+#pragma once
 
 namespace mdl {
 namespace expression {
@@ -333,5 +332,5 @@ namespace tree {
 }
 }
 
-#endif /*MDL_EXPRESSION_UNIFY_SUB_TREE_UNIFIER_IPP_*/
+
 

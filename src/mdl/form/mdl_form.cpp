@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_FORM_CPP_
-#define MDL_FORM_CPP_
+#pragma once
 
 #include "smm/lexer/smm_lexer_Token.hpp"
 
@@ -28,4 +27,4 @@
 #include "mdl/form/mdl_form_Source.cpp"
 #include "mdl/form/mdl_form_Theory.cpp"
 
-#endif /*MDL_FORM_CPP_*/
+

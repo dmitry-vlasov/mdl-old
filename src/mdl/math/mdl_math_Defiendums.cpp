@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_MATH_DEFIENDUMS_CPP_
-#define MDL_MATH_DEFIENDUMS_CPP_
+#pragma once
 
 namespace mdl {
 namespace math {
@@ -80,4 +79,4 @@ namespace math {
 }
 }
 
-#endif /*MDL_MATH_DEFIENDUMS_CPP_*/
+

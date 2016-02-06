@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_FORM_HEADER_LINE_CPP_
-#define MDL_FORM_HEADER_LINE_CPP_
+#pragma once
 
 namespace mdl {
 namespace form {
@@ -176,4 +175,4 @@ using manipulator :: endLine;
 }
 }
 
-#endif /*MDL_FORM_HEADER_LINE_CPP_*/
+

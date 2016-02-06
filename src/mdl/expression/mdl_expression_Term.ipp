@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_EXPRESSION_TERM_IPP_
-#define MDL_EXPRESSION_TERM_IPP_
+#pragma once
 
 #include "mdl/expression/mdl_expression_Mode.hpp"
 
@@ -1414,4 +1413,4 @@ using manipulator :: mode;
 }
 }
 
-#endif /*MDL_EXPRESSION_TERM_IPP_*/
+

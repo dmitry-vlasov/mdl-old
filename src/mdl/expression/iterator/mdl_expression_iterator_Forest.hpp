@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_EXPRESSION_ITERATOR_FOREST_HPP_
-#define MDL_EXPRESSION_ITERATOR_FOREST_HPP_
+#pragma once
 
 #include "mdl/expression/iterator/mdl_expression_iterator_Tree.hpp"
 
@@ -42,4 +41,4 @@ public :
 }
 }
 
-#endif /*MDL_EXPRESSION_ITERATOR_FOREST_HPP_*/
+

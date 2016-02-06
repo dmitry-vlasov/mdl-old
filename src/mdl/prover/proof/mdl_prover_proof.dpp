@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_PROVER_PROOF_DPP_
-#define MDL_PROVER_PROOF_DPP_
+#pragma once
 
 namespace mdl {
 namespace prover {
@@ -29,4 +28,4 @@ namespace proof {
 }
 }
 
-#endif /*MDL_PROVER_PROOF_DPP_*/
+

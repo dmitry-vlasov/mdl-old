@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_FORM_HPP_
-#define MDL_FORM_HPP_
+#pragma once
 
 #include "mdl/form/mdl_form.dpp"
 
@@ -28,4 +27,4 @@
 #include "mdl/form/mdl_form_Source.hpp"
 #include "mdl/form/mdl_form_Theory.hpp"
 
-#endif /*MDL_FORM_HPP_*/
+

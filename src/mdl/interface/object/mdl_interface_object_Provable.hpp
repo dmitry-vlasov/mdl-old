@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_INTERFACE_OBJECT_PROVABLE_HPP_
-#define MDL_INTERFACE_OBJECT_PROVABLE_HPP_
+#pragma once
 
 namespace mdl {
 namespace interface {
@@ -34,4 +33,4 @@ public :
 }
 }
 
-#endif /*MDL_INTERFACE_OBJECT_PROVABLE_HPP_*/
+

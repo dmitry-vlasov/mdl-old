@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_PROVER_HPP_
-#define MDL_PROVER_HPP_
+#pragma once
 
 #include "mdl/prover/data/mdl_prover_data.hpp"
 #include "mdl/prover/evidence/mdl_prover_evidence.hpp"
@@ -27,4 +26,4 @@
 #include "mdl/prover/mdl_prover_Prover.hpp"
 #include "mdl/prover/mdl_prover_Timers.hpp"
 
-#endif /*MDL_PROVER_HPP_*/
+

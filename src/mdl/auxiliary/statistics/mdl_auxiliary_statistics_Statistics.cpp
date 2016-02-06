@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_AUXILIARY_STATISTICS_STATISTICS_CPP_
-#define MDL_AUXILIARY_STATISTICS_STATISTICS_CPP_
+#pragma once
 
 namespace mdl {
 namespace auxiliary {
@@ -72,4 +71,4 @@ using manipulator :: space;
 }
 }
 
-#endif /*MDL_AUXILIARY_STATISTICS_STATISTICS_CPP_*/
+

@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_FORM_EVALUATION_FUNCTION_WEIGHTED_SUM_CPP_
-#define MDL_FORM_EVALUATION_FUNCTION_WEIGHTED_SUM_CPP_
+#pragma once
 
 namespace mdl {
 namespace form {
@@ -206,4 +205,4 @@ using manipulator :: endLine;
 }
 }
 
-#endif /*MDL_FORM_EVALUATION_FUNCTION_WEIGHTED_SUM_CPP_*/
+

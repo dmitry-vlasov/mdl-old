@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_EXPRESSION_BUILD_IPP_
-#define MDL_EXPRESSION_BUILD_IPP_
+#pragma once
 
 #include "mdl/expression/build/mdl_expression_build_Builder.ipp"
 #include "mdl/expression/build/mdl_expression_build_Node_ADD_DATA.ipp"
@@ -19,4 +18,4 @@
 #include "mdl/expression/build/mdl_expression_build_Switch_BACK.ipp"
 #include "mdl/expression/build/mdl_expression_build_Switch_FORTH.ipp"
 
-#endif /*MDL_EXPRESSION_BUILD_IPP_*/
+

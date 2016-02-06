@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_EXPRESSION_FOREST_IPP_
-#define MDL_EXPRESSION_FOREST_IPP_
+#pragma once
 
 #include "mdl/expression/direction/mdl_expression_direction.hpp"
 
@@ -199,4 +198,4 @@ using manipulator :: endLine;
 }
 }
 
-#endif /*MDL_EXPRESSION_FOREST_HPP_*/
+

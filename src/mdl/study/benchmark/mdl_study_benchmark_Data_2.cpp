@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_STUDY_BENCHMARK_DATA_2_CPP_
-#define MDL_STUDY_BENCHMARK_DATA_2_CPP_
+#pragma once
 
 namespace mdl {
 namespace study {
@@ -204,4 +203,4 @@ using manipulator :: tab;
 }
 }
 
-#endif /*MDL_STUDY_BENCHMARK_DATA_2_CPP_*/
+

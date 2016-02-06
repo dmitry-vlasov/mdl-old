@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_INTERFACE_OBJECT_IDENTIFIABLE_CPP_
-#define MDL_INTERFACE_OBJECT_IDENTIFIABLE_CPP_
+#pragma once
 
 namespace mdl {
 namespace interface {
@@ -33,4 +32,4 @@ namespace object {
 }
 }
 
-#endif /*MDL_INTERFACE_OBJECT_IDENTIFIABLE_CPP_*/
+

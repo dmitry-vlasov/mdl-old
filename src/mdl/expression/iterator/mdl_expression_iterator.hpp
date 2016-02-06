@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_EXPRESSION_ITERATOR_HPP_
-#define MDL_EXPRESSION_ITERATOR_HPP_
+#pragma once
 
 #include "mdl/expression/iterator/constant/mdl_expression_iterator_constant.hpp"
 #include "mdl/expression/iterator/modifier/mdl_expression_iterator_modifier.hpp"
@@ -21,4 +20,4 @@
 #include "mdl/expression/iterator/mdl_expression_iterator_Singleton.hpp"
 #include "mdl/expression/iterator/mdl_expression_iterator_Tree.hpp"
 
-#endif /*MDL_EXPRESSION_ITERATOR_HPP_*/
+

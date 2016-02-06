@@ -10,12 +10,11 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_AUXILIARY_PARAMETER_CPP_
-#define MDL_AUXILIARY_PARAMETER_CPP_
+#pragma once
 
 #include "mdl/auxiliary/parameter/mdl_auxiliary_parameter_Description.cpp"
 #include "mdl/auxiliary/parameter/mdl_auxiliary_parameter_Iterator.cpp"
 #include "mdl/auxiliary/parameter/mdl_auxiliary_parameter_Parameter.cpp"
 #include "mdl/auxiliary/parameter/mdl_auxiliary_parameter_Triple.cpp"
 
-#endif /*MDL_AUXILIARY_PARAMETER_CPP_*/
+

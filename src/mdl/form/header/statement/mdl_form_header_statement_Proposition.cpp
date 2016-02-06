@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_FORM_HEADER_STATEMENT_PROPOSITION_CPP_
-#define MDL_FORM_HEADER_STATEMENT_PROPOSITION_CPP_
+#pragma once
 
 #include "mdl/math/mdl_math.hpp"
 #include "mdl/form/mdl_form.hpp"
@@ -237,4 +236,4 @@ using manipulator :: underline;
 }
 }
 
-#endif /*MDL_FORM_HEADER_STATEMENT_PROPOSITION_CPP_*/
+

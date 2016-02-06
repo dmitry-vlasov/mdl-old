@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_LEXER_TOKEN_HPP_
-#define MDL_LEXER_TOKEN_HPP_
+#pragma once
 
 namespace mdl {
 namespace lexer {
@@ -226,4 +225,4 @@ private :
 #include "mdl/lexer/mdl_lexer_Token.ipp"
 #include "mdl/lexer/mdl_lexer_Token.cpp"
 
-#endif /*MDL_LEXER_TOKEN_HPP_*/
+

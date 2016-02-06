@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_PROVER_DPP_
-#define MDL_PROVER_DPP_
+#pragma once
 
 #include "mdl/prover/data/mdl_prover_data.dpp"
 #include "mdl/prover/evidence/mdl_prover_evidence.dpp"
@@ -38,4 +37,4 @@ namespace prover {
 	using prover :: Prover;
 }
 
-#endif /*MDL_PROVER_DPP_*/
+

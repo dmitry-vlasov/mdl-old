@@ -10,11 +10,10 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_FORM_PROOF_STEP_HPP__
-#define MDL_FORM_PROOF_STEP_HPP__
+#pragma once
 
 #include "mdl/form/proof/step/mdl_form_proof_step_Assertion.hpp"
 #include "mdl/form/proof/step/mdl_form_proof_step_Claim.hpp"
 #include "mdl/form/proof/step/mdl_form_proof_step_Question.hpp"
 
-#endif /*MDL_FORM_PROOF_STEP_HPP__*/
+

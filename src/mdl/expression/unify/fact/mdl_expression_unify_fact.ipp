@@ -10,12 +10,11 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_EXPRESSION_UNIFY_FACT_IPP_
-#define MDL_EXPRESSION_UNIFY_FACT_IPP_
+#pragma once
 
 #include "mdl/expression/unify/fact/mdl_expression_unify_fact_Replacer_SYM.ipp"
 #include "mdl/expression/unify/fact/mdl_expression_unify_fact_Result.ipp"
 #include "mdl/expression/unify/fact/mdl_expression_unify_fact_Unifier.ipp"
 #include "mdl/expression/unify/fact/mdl_expression_unify_fact_Unit_SYM.ipp"
 
-#endif /*MDL_EXPRESSION_UNIFY_FACT_IPP_*/
+

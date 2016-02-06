@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_TYPES_EXCEPTION_HPP_
-#define MDL_TYPES_EXCEPTION_HPP_
+#pragma once
 
 namespace mdl {
 namespace exception {
@@ -20,4 +19,4 @@ namespace exception {
 }
 }
 
-#endif /*MDL_TYPES_EXCEPTION_HPP_*/
+

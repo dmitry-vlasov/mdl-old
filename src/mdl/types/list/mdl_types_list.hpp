@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_TYPES_LIST_HPP_
-#define MDL_TYPES_LIST_HPP_
+#pragma once
 
 #include "mdl/types/storage/mdl_types_storage.hpp"
 #include "mdl/types/list/connectivity/mdl_types_list_connectivity.hpp"
@@ -23,4 +22,4 @@ namespace list {
 }
 }
 
-#endif /*MDL_TYPES_LIST_HPP_*/
+

@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_HPP_
-#define MDL_HPP_
+#pragma once
 
 #include "mdl/types/mdl_types.hpp"
 #include "mdl/auxiliary/mdl_auxiliary.hpp"
@@ -28,4 +27,4 @@
 
 #include "mdl/mdl_Engine.hpp"
 
-#endif /*MDL_HPP_*/
+

@@ -11,8 +11,7 @@
 /*****************************************************************************/
 
 
-#ifndef MDL_FORM_CONTENTS_HPP_
-#define MDL_FORM_CONTENTS_HPP_
+#pragma once
 
 #include "mdl/interface/mdl_interface.hpp"
 #include "mdl/form/mdl_form_Identifiable.hpp"
@@ -122,4 +121,4 @@ private :
 }
 }
 
-#endif /*MDL_FORM_CONTENTS_HPP_*/
+

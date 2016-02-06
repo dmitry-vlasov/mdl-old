@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_FORM_PROOF_STEP_DPP_
-#define MDL_FORM_PROOF_STEP_DPP_
+#pragma once
 
 namespace mdl{
 namespace form {
@@ -26,4 +25,4 @@ namespace step {
 }
 }
 
-#endif /*MDL_FORM_PROOF_STEP_DPP_*/
+

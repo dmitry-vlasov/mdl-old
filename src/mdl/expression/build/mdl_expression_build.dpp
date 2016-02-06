@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_EXPRESSION_BUILD_DPP_
-#define MDL_EXPRESSION_BUILD_DPP_
+#pragma once
 
 #include "mdl/expression/direction/mdl_expression_direction.dpp"
 #include "mdl/expression/build/mdl_expression_build_Direction.hpp"
@@ -33,4 +32,4 @@ namespace build {
 }
 }
 
-#endif /*MDL_EXPRESSION_BUILD_DPP_*/
+

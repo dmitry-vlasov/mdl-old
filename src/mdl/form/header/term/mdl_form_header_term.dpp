@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_FORM_HEADER_TERM_DPP_
-#define MDL_FORM_HEADER_TERM_DPP_
+#pragma once
 
 namespace mdl {
 namespace form {
@@ -35,4 +34,4 @@ namespace term {
 }
 }
 
-#endif /*MDL_FORM_HEADER_TERM_DPP_*/
+

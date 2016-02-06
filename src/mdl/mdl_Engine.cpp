@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_ENGINE_CPP_
-#define MDL_ENGINE_CPP_
+#pragma once
 
 #include <exception>
 
@@ -880,4 +879,4 @@ using manipulator :: tab;
 	}
 }
 
-#endif /*MDL_ENGINE_CPP_*/
+

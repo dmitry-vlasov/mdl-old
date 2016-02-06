@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_STUDY_LEXP_DOT_HPP_
-#define MDL_STUDY_LEXP_DOT_HPP_
+#pragma once
 
 #include "mdl/interface/mdl_interface.hpp"
 
@@ -66,4 +65,4 @@ private :
 }
 }
 
-#endif /*MDL_STUDY_LEXP_DOT_HPP_*/
+

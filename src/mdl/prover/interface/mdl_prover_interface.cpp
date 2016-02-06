@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_PROVER_INTERFACE_CPP_
-#define MDL_PROVER_INTERFACE_CPP_
+#pragma once
 
 #include "mdl/prover/interface/mdl_prover_interface_Evidence.cpp"
 #include "mdl/prover/interface/mdl_prover_interface_Evidences.cpp"
@@ -19,4 +18,4 @@
 #include "mdl/prover/interface/mdl_prover_interface_Proof.cpp"
 #include "mdl/prover/interface/mdl_prover_interface_Tree.cpp"
 
-#endif /*MDL_PROVER_INTERFACE_CPP_*/
+

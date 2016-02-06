@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_EXPRESSION_CPP_
-#define MDL_EXPRESSION_CPP_
+#pragma once
 
 #include "mdl/expression/mdl_expression.ipp"
 #include "mdl/expression/simify/mdl_expression_simify.cpp"
@@ -71,4 +70,4 @@ void dump (const unify :: sub :: tree :: BoxedCell :: Term_& x) { x.dump();  }
 
 }
 
-#endif /*MDL_EXPRESSION_CPP_*/
+

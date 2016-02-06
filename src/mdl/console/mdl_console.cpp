@@ -10,11 +10,10 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_CONSOLE_CPP_
-#define MDL_CONSOLE_CPP_
+#pragma once
 
 #include "mdl/console/mdl_console_Command.cpp"
 #include "mdl/console/mdl_console_Console.cpp"
 #include "mdl/console/mdl_console_Server.cpp"
 
-#endif /*MDL_CONSOLE_CPP_*/
+

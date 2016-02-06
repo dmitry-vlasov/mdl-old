@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_FORM_HEADER_TERM_DEFINITION_HPP_
-#define MDL_FORM_HEADER_TERM_DEFINITION_HPP_
+#pragma once
 
 #include "mdl/interface/mdl_interface.hpp"
 #include "mdl/form/header/mdl_form_header_Line.hpp"
@@ -64,4 +63,4 @@ protected :
 }
 }
 
-#endif /*MDL_FORM_HEADER_TERM_DEFINITION_HPP_*/
+

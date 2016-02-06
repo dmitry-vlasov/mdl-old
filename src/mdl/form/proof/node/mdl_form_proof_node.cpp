@@ -10,12 +10,11 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_FORM_PROOF_NODE_CPP_
-#define MDL_FORM_PROOF_NODE_CPP_
+#pragma once
 
 #include "mdl/form/proof/node/mdl_form_proof_node_Hypothesis.cpp"
 #include "mdl/form/proof/node/mdl_form_proof_node_Proposition.cpp"
 #include "mdl/form/proof/node/mdl_form_proof_node_Provable.cpp"
 #include "mdl/form/proof/node/mdl_form_proof_node_Statement.cpp"
 
-#endif /*MDL_FORM_PROOF_NODE_CPP_*/
+

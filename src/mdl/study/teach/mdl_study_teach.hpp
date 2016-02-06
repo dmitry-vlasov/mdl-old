@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_STUDY_TEACH_HPP_
-#define MDL_STUDY_TEACH_HPP_
+#pragma once
 
 #include "mdl/study/teach/mdl_study_teach_Optimization.hpp"
 #include "mdl/study/teach/mdl_study_teach_Teacher.hpp"
@@ -19,4 +18,4 @@
 #include "mdl/study/teach/mdl_study_teach_Teacher_Timing.hpp"
 #include "mdl/study/teach/mdl_study_teach_Terms.hpp"
 
-#endif /*MDL_STUDY_TEACH_HPP_*/
+

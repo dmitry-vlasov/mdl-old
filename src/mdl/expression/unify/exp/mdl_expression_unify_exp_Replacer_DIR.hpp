@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_EXPRESSION_UNIFY_EXP_REPLACER_DIR_HPP_
-#define MDL_EXPRESSION_UNIFY_EXP_REPLACER_DIR_HPP_
+#pragma once
 
 #include "mdl/expression/unify/exp/mdl_expression_unify_exp.dpp"
 
@@ -63,4 +62,4 @@ private :
 }
 }
 
-#endif /*MDL_EXPRESSION_UNIFY_EXP_REPLACER_DIR_HPP_*/
+

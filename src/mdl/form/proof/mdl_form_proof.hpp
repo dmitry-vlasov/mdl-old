@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_FORM_PROOF_HPP_
-#define MDL_FORM_PROOF_HPP_
+#pragma once
 
 #include "mdl/form/proof/node/mdl_form_proof_node.hpp"
 #include "mdl/form/proof/notation/mdl_form_proof_notation.hpp"
@@ -29,4 +28,4 @@
 #include "mdl/form/proof/mdl_form_proof_Variable.hpp"
 #include "mdl/form/proof/mdl_form_proof_Variable_Declaration.hpp"
 
-#endif /*MDL_FORM_PROOF_HPP_*/
+

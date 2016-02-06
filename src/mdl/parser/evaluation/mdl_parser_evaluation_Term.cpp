@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_PARSER_EVALUATION_TERM_CPP_
-#define MDL_PARSER_EVALUATION_TERM_CPP_
+#pragma once
 
 namespace mdl {
 namespace parser {
@@ -265,4 +264,4 @@ namespace evaluation {
 }
 }
 
-#endif /*MDL_PARSER_EVALUATION_TERM_CPP_*/
+

@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_PARSER_PROOF_REFERENCE_CPP_
-#define MDL_PARSER_PROOF_REFERENCE_CPP_
+#pragma once
 
 namespace mdl {
 namespace parser {
@@ -63,4 +62,4 @@ namespace proof {
 }
 }
 
-#endif /*MDL_PARSER_PROOF_REFERENCE_CPP_*/
+

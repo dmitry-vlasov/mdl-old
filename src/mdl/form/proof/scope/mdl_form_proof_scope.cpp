@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_FORM_PROOF_SCOPE_CPP__
-#define MDL_FORM_PROOF_SCOPE_CPP__
+#pragma once
 
 #include "mdl/form/proof/scope/mdl_form_proof_scope_Assertion.cpp"
 #include "mdl/form/proof/scope/mdl_form_proof_scope_Claim.cpp"
@@ -21,4 +20,4 @@
 #include "mdl/form/proof/scope/mdl_form_proof_scope_Step.cpp"
 #include "mdl/form/proof/scope/mdl_form_proof_scope_Variable.cpp"
 
-#endif /*MDL_FORM_PROOF_SCOPE_CPP__*/
+

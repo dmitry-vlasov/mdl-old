@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_FORM_EVALUATION_TERM_SUM_CPP_
-#define MDL_FORM_EVALUATION_TERM_SUM_CPP_
+#pragma once
 
 namespace mdl {
 namespace form {
@@ -130,4 +129,4 @@ namespace term {
 }
 }
 
-#endif /*MDL_FORM_EVALUATION_TERM_SUM_CPP_*/
+

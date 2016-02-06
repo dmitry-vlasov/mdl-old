@@ -10,8 +10,7 @@
 /* License:         GNU General Public License Version 3                     */
 /*****************************************************************************/
 
-#ifndef MDL_EXPRESSION_UNIFY_SUB_TREE_FINALIZE_HPP_
-#define MDL_EXPRESSION_UNIFY_SUB_TREE_FINALIZE_HPP_
+#pragma once
 
 namespace mdl {
 namespace expression {
@@ -67,4 +66,4 @@ private :
 }
 }
 
-#endif /*MDL_EXPRESSION_UNIFY_SUB_TREE_FINALIZE_HPP_*/
+
